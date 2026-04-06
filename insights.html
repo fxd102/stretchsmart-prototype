@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights Library</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Insights</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item active">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div class="page-content">
+          <h2>Progressive Insight Arcs</h2>
+          <p style="font-size:13px;color:#888;margin-bottom:16px;">
+            Each exercise has a 24-session insight journey. As you repeat an exercise over weeks,
+            the insights build on each other — getting more detailed and reinforcing your progress.
+            Tap an exercise to expand its arc.
+          </p>
+          
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;cursor:pointer;" onclick="this.parentElement.querySelector('.arc-steps').style.display = this.parentElement.querySelector('.arc-steps').style.display === 'none' ? 'block' : 'none';">
+                <h3 style="margin:0;color:#e94560;font-size:17px;">Wall Angels</h3>
+                <span style="font-size:13px;color:#888;">24 insights &mdash; tap to expand</span>
+              </div>
+              <div class="arc-steps" style="display:none;">
+                <div style="border-left:2px solid #0f3460;margin-left:28px;padding-left:16px;">
+                  
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 1</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Sitting rounds your upper back forward. Wall Angels force your spine into extension — the opposite of your desk posture. You're pressing 'undo' right now.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 2</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your shoulder blades should glide freely on your ribcage. If this feels hard, it means adhesions have formed between layers of tissue. Each rep is breaking those up.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 3</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Notice how far your arms go before your lower back wants to arch off the wall? That gap is your thoracic mobility deficit. It'll shrink.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 4</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Thoracic stiffness forces your neck and lower back to compensate. That nagging neck ache? It might not be a neck problem — it's a mid-back problem. This is the fix.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 5</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your ribcage needs to expand in all directions for a full breath. A stiff thoracic spine restricts the back ribs. You're unlocking lung capacity you didn't know you'd lost.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 6</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Fun fact: your diaphragm attaches to your lower ribs AND your lumbar spine. When your thoracic spine is stiff, your diaphragm can't descend fully. Shallow breathing becomes the default.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 7</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">One week in. Your nervous system is already learning that this range of motion is safe. The 'tightness' you feel isn't damage — it's your brain's protective limit. You're expanding it.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 8</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Hyperkyphosis — excessive rounding of the upper back — is associated with 44% higher mortality risk. It compresses organs, impairs balance, and restricts breathing. You're actively fighting it.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 9</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Check in: can your arms slide a little higher on the wall than day 1? Even a centimeter is real structural change in your shoulder girdle.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 10</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your rotator cuff muscles work best when your shoulder blades are properly positioned. Wall Angels train scapular retraction and upward rotation — the foundation of healthy shoulders for life.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 11</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Pneumonia is a leading cause of death in adults over 75. Recovery depends on lung capacity and cough strength — both require thoracic mobility. This exercise is future-proofing your respiratory system.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 12</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Slouching compresses your vagus nerve, keeping your stress response slightly elevated all day. An open chest posture activates the parasympathetic nervous system. You're not just stretching — you're regulating your nervous system.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 13</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Two weeks of consistent Wall Angels. The muscles between your shoulder blades (rhomboids and lower traps) are getting stronger. These are the muscles that hold good posture WITHOUT you thinking about it.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 14</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">People around you may start commenting that you look taller or more confident. You haven't grown — you've just stopped shrinking into your desk.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 15</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your thoracic spine has 12 vertebrae, each capable of small rotational and extension movements. When they stiffen, your lumbar spine takes on rotation it wasn't designed for. Low back pain often starts in the mid-back.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 16</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Bone density responds to load direction (Wolff's Law). The compressive forces of good upright posture tell your vertebrae to stay strong. Slouching sends the opposite signal.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 17</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Notice how this feels more natural now? That's motor learning — your brain is building a dedicated neural circuit for this movement pattern. Soon it won't require conscious effort.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 18</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Chest-breathing (shallow, upper-chest) uses neck accessory muscles and burns 30% more energy than diaphragmatic breathing. By freeing your thoracic spine, you're making every breath more efficient.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 19</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your posture affects your mood. Studies show upright posture improves self-esteem, reduces fatigue, and decreases self-focus in people with depression. The body shapes the mind.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 20</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Three weeks. The fascia around your thoracic spine is remodeling — collagen fibers are realigning along the new movement vectors you've introduced. This is structural change, not just stretching.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 21</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Older adults with better thoracic mobility have fewer falls. Why? Balance requires your trunk to make rapid corrections. A stiff upper back can't respond fast enough. You're training your save-yourself reflex.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 22</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your shoulder mobility now supports overhead reaching — putting things on shelves, changing lightbulbs, playing with grandkids. These sound small until you lose them.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 23</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Nearly there. What started as an exercise is becoming posture. The difference: exercise is something you do, posture is something you ARE. You're rewriting your body's default setting.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 24</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">24 sessions. Your thoracic spine is more mobile, your shoulders sit back naturally, your breathing is deeper, and your brain has automated the pattern. This is habitualized. You've permanently upgraded your body's operating posture.</div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;cursor:pointer;" onclick="this.parentElement.querySelector('.arc-steps').style.display = this.parentElement.querySelector('.arc-steps').style.display === 'none' ? 'block' : 'none';">
+                <h3 style="margin:0;color:#e94560;font-size:17px;">Shoulder Shrugs</h3>
+                <span style="font-size:13px;color:#888;">24 insights &mdash; tap to expand</span>
+              </div>
+              <div class="arc-steps" style="display:none;">
+                <div style="border-left:2px solid #0f3460;margin-left:28px;padding-left:16px;">
+                  
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 1</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your upper traps are probably the most overworked muscles in your body. Stress, typing, phone scrolling — they're all 'shoulders up' activities. This move teaches them to let go.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 2</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">The 'hold and drop' pattern is called contract-relax. It's a neurological trick — tensing a muscle first makes it relax more deeply than it could otherwise. You're hacking your own nervous system.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 3</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Chronic trap tension restricts blood flow to your brain through the vertebral arteries that run through your neck. Releasing your traps literally improves cerebral circulation.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 4</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Notice that satisfying 'drop' when you release? That's your Golgi tendon organs firing — sensors in your tendons that tell the muscle 'you're safe, you can let go.' Each rep calibrates them.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 5</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Tension headaches aren't caused by your head — they're caused by your shoulders. The upper traps attach to the base of your skull. When they're tight, they pull on your head. Literally.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 6</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Desk workers hold their shoulders elevated by 1-3cm all day without realizing it. That's like carrying invisible grocery bags for 8 hours. No wonder you're tired at 3pm.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 7</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">One week. You're retraining your shoulder resting position. The goal isn't strong traps — it's smart traps that know when to fire and when to rest. That distinction prevents a lifetime of neck pain.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 8</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your traps have three sections: upper (elevate), middle (retract), and lower (depress). Desk work over-activates the upper and weakens the lower. Shrugs and drops restore the balance.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 9</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Check in: are you noticing tension in your shoulders at random moments during the day? That's awareness — the first step. You can't release what you don't notice. The noticing IS progress.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 10</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Shoulder tension is one of the body's primary stress storage sites. Therapists call it 'armoring' — your body bracing against perceived threat. This exercise is a physical un-bracing.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 11</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your neck's range of motion is directly limited by upper trap tension. Tight traps = can't turn your head fully. This matters when driving, cycling, or catching something in your peripheral vision.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 12</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Jaw tension and shoulder tension are neurologically linked — they share nerve pathways. If you clench your jaw, try dropping your shoulders right now. Feel how one releases the other? They're connected.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 13</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Two weeks of consistent shoulder resets. The neural pathway from 'notice tension → release' is getting faster. Eventually it becomes subconscious — your body will auto-correct without prompting.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 14</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Poor shoulder posture compresses the brachial plexus — the nerve bundle that runs from your neck through your shoulder to your arm. Tingling or numbness in your hands? Could be your shoulders, not your wrists.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 15</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Sleep quality improves when you release shoulder tension before bed. Elevated shoulders activate your sympathetic nervous system (fight-or-flight). Dropped shoulders signal safety to your brain.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 16</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your breathing pattern changes when your shoulders drop. Elevated shoulders recruit accessory breathing muscles in your neck. Relaxed shoulders let your diaphragm do the work. That's 30% more efficient.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 17</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">This is becoming automatic now. You might catch yourself doing a micro-shrug-and-drop at your desk without thinking about it. That's the habit forming — your body reminding itself.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 18</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Chronic shoulder elevation changes your fascia over time — the connective tissue literally shortens and thickens. But it also responds to consistent release. You're remodeling tissue right now.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 19</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Voice professionals (singers, speakers, teachers) know this secret: shoulder tension affects vocal quality. Tight traps restrict laryngeal movement. Relaxed shoulders = a more resonant voice.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 20</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Three weeks. Other people may have started noticing you look more relaxed. They can't pinpoint what changed, but your resting shoulder position broadcasts calm confidence.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 21</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Upper trap dominance contributes to shoulder impingement — one of the most common orthopedic complaints in adults over 40. By balancing your trap activation now, you're avoiding a problem that sidelines millions.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 22</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Your body's stress response has a physical signature: shoulders up, breath shallow, jaw tight. By training the opposite pattern, you're giving yourself a physical off-switch for stress. You own the override.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 23</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">Nearly habitualized. The 'shrug and drop' has gone from exercise to reflex. Your resting shoulder position is measurably lower than it was 23 sessions ago. That's less compression, less pain, less tension — permanently.</div>
+                </div>
+                <div style="display:flex;gap:12px;margin-bottom:10px;">
+                  <div style="min-width:40px;text-align:right;font-size:12px;font-weight:700;color:#e94560;">Day 24</div>
+                  <div style="font-size:13px;line-height:1.5;color:#ccc;">24 sessions complete. Your upper traps have a new default: engaged when needed, relaxed when not. You've broken a tension pattern that most desk workers carry to their grave. This is yours now — it doesn't go away.</div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <h2 style="margin-top:32px;">General Insights (20 drafts)</h2>
+          <p style="font-size:13px;color:#888;margin-bottom:16px;">
+            Standalone motivation content — these need to be shortened to 2-3 sentences for the final app.
+          </p>
+          
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#1</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Slouching reduces your lung capacity by up to 30%. Over decades, this means less oxygen reaching your brain, muscles, and organs. Pneumonia is the 8th leading cause of death in the US, and older adults with reduced lung capacity are far less able to fight it off. Every time you sit up straight, you're training your body to breathe fully — and that breathing capacity could save your life in your 80s.</p>
+              <div style="margin-top:8px;"><span class="tag breathing">breathing</span><span class="tag lungs">lungs</span><span class="tag longevity">longevity</span></div>
+              <div class="source">Zafar et al., BioMed Research International, 2018; CDC mortality data</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#2</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">After a hip fracture, 22% of people over 65 die within one year. Men over 80 face an 8-fold increase in mortality risk. The #1 predictor of hip fractures? Falls. The #1 predictor of falls? Poor balance and tight hip muscles. A 10-week lower-body stretching routine improves balance by 20-30%. Your hip flexor stretch today is literally life insurance.</p>
+              <div style="margin-top:8px;"><span class="tag hips">hips</span><span class="tag falls">falls</span><span class="tag mortality">mortality</span></div>
+              <div class="source">PMC3118151; PMC5003582; World J Orthop systematic review</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#3</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your vital lung capacity drops about 200ml every decade after age 30. By 70, you've lost roughly 25% of what you had. But here's the thing: thoracic spine stiffness accelerates that loss. People with forward-head posture show measurably weaker diaphragms. Chest openers and thoracic mobility work slow this decline — keeping your ribcage mobile keeps your lungs working.</p>
+              <div style="margin-top:8px;"><span class="tag spine">spine</span><span class="tag breathing">breathing</span><span class="tag aging">aging</span></div>
+              <div class="source">Frontiers in Immunology, 2024; PMC6077663</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#4</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">28-35% of adults over 65 fall each year. Over 70, that jumps to 42%. Falls are the leading cause of injury death in older adults — and most are preventable. Studies show that regular stretching improves gait speed, single-leg balance, and joint range of motion. You're not stretching to touch your toes. You're stretching to stay on your feet.</p>
+              <div style="margin-top:8px;"><span class="tag falls">falls</span><span class="tag balance">balance</span><span class="tag independence">independence</span></div>
+              <div class="source">PMC10435089; WHO Global Report on Falls Prevention</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#5</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Tight hip flexors from sitting pull your pelvis forward, compressing your lower back and shortening your stride. Over years, this changes how you walk — shorter steps, less stability, more shuffling. Gait speed in your 70s is one of the strongest predictors of longevity. Researchers call it 'the sixth vital sign.' Keeping your hips mobile now keeps you walking confidently later.</p>
+              <div style="margin-top:8px;"><span class="tag hips">hips</span><span class="tag walking">walking</span><span class="tag longevity">longevity</span></div>
+              <div class="source">Journal of the American Medical Association, gait speed meta-analysis; PMC systematic review on flexibility and functional ability</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#6</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Forward head posture adds up to 30 pounds of effective weight on your cervical spine for every inch your head drifts forward. This compresses nerves, restricts blood flow, and weakens the muscles that keep your airway open. In older adults, this contributes to dysphagia (difficulty swallowing) — a major risk factor for aspiration pneumonia, which has a mortality rate over 30% in those over 75.</p>
+              <div style="margin-top:8px;"><span class="tag neck">neck</span><span class="tag breathing">breathing</span><span class="tag swallowing">swallowing</span></div>
+              <div class="source">Hansraj, Surgical Technology International, 2014; PMC11258512</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#7</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your ankle flexibility determines how well you can recover from a stumble. When you trip, your ankle needs to dorsiflex quickly to catch you. Tight calves limit this motion. Studies show that calf stretching and ankle mobility exercises significantly improve reactive balance — your body's ability to save itself from a fall before your brain even processes what happened.</p>
+              <div style="margin-top:8px;"><span class="tag ankles">ankles</span><span class="tag falls">falls</span><span class="tag balance">balance</span></div>
+              <div class="source">PMC5003582; Healthcare MDPI, 2024</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#8</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your shoulder's range of motion starts declining in your 30s, but you won't notice until you can't reach a high shelf or fasten something behind your back. By 70, many people have lost 25-30% of shoulder mobility. This isn't just inconvenience — loss of upper body function is a leading reason older adults lose independence and need assisted living. Wall angels today = reaching your own dishes at 80.</p>
+              <div style="margin-top:8px;"><span class="tag shoulders">shoulders</span><span class="tag independence">independence</span><span class="tag daily function">daily function</span></div>
+              <div class="source">Journal of Shoulder and Elbow Surgery, age-related ROM studies; PMC3503322</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#9</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Kyphosis — that rounded upper back — isn't just cosmetic. It reduces rib expansion, compresses abdominal organs, and impairs balance. People with hyperkyphosis have a 44% greater risk of mortality compared to those with normal spinal curves. Thoracic extension exercises directly counteract this curve. You're not just improving your posture — you're reshaping your skeleton's relationship with gravity.</p>
+              <div style="margin-top:8px;"><span class="tag spine">spine</span><span class="tag kyphosis">kyphosis</span><span class="tag mortality">mortality</span></div>
+              <div class="source">Kado et al., Journal of the American Geriatrics Society, 2004</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#10</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Hamstring flexibility directly affects your pelvis position, which affects your spine, which affects everything above it. Tight hamstrings tilt your pelvis backward, flattening your lumbar curve and increasing disc pressure. Over time, this leads to chronic low back pain — the #1 cause of disability worldwide. A 20-second hamstring stretch changes the mechanical chain all the way up to your neck.</p>
+              <div style="margin-top:8px;"><span class="tag hamstrings">hamstrings</span><span class="tag back pain">back pain</span><span class="tag spine">spine</span></div>
+              <div class="source">Global Burden of Disease Study; Journal of Physical Therapy Science</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#11</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your spine has 33 vertebrae and over 100 joints. When you sit all day, those joints stop moving through their full range. Unused joints lose synovial fluid — their natural lubricant. Within months, stiffness becomes the new normal. Cat-cow and spinal rotation exercises pump fluid back into those joints. Think of it as oil for your spine. Machines that don't get lubricated seize up.</p>
+              <div style="margin-top:8px;"><span class="tag spine">spine</span><span class="tag joints">joints</span><span class="tag desk work">desk work</span></div>
+              <div class="source">Clinical Biomechanics; Physiopedia spinal health reviews</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#12</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Diaphragmatic breathing — the kind you can only do with good posture — activates your vagus nerve, lowering cortisol and heart rate. Chronic shallow breathing from slouching keeps your nervous system in low-grade fight-or-flight. This isn't woo — it's measurable. Slouchers show higher resting cortisol and heart rates. Sitting up and breathing deeply is a free, instant stress intervention.</p>
+              <div style="margin-top:8px;"><span class="tag breathing">breathing</span><span class="tag stress">stress</span><span class="tag nervous system">nervous system</span></div>
+              <div class="source">Frontiers in Human Neuroscience, vagus nerve stimulation; PMC respiratory posture studies</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#13</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">The average office worker sits 10+ hours a day. After just 30 minutes of sitting, your hip flexors begin to shorten and tighten. After years, this becomes structural — your psoas literally remodels to its shortened position. But it's reversible. Consistent hip flexor stretching can restore length and function at any age. Your muscles are more adaptable than you think.</p>
+              <div style="margin-top:8px;"><span class="tag hips">hips</span><span class="tag sitting">sitting</span><span class="tag desk work">desk work</span></div>
+              <div class="source">Annals of Internal Medicine, sedentary behavior study; PMC hip flexor remodeling</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#14</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Wrist and hand mobility might seem minor until you can't open a jar, grip a railing, or catch yourself during a fall. Grip strength is so strongly correlated with overall health that researchers use it as a proxy for biological age. People with weak grip strength have double the risk of cardiovascular death. Wrist circles and grip exercises aren't just for carpal tunnel — they're a vital sign.</p>
+              <div style="margin-top:8px;"><span class="tag wrists">wrists</span><span class="tag grip">grip</span><span class="tag longevity">longevity</span></div>
+              <div class="source">The Lancet, grip strength and mortality meta-analysis, 2015</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#15</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Children breathe with their belly. Adults breathe with their chest. The difference? Decades of sitting and slouching have turned off your diaphragm and activated your neck and shoulder muscles as backup breathers. This is why desk workers get tension headaches — their neck muscles are doing double duty. Relearning diaphragmatic breathing takes the load off your neck and gives your lungs back their full capacity.</p>
+              <div style="margin-top:8px;"><span class="tag breathing">breathing</span><span class="tag neck">neck</span><span class="tag headaches">headaches</span></div>
+              <div class="source">Journal of Bodywork and Movement Therapies; PMC breathing pattern disorders</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#16</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Muscle stiffness isn't about the muscle itself — it's about your nervous system. Your brain sets a 'tension thermostat' based on perceived threat. Consistent, gentle stretching teaches your nervous system that a longer muscle is safe. This is why aggressive stretching backfires — you're fighting your brain's protective reflex. Slow, relaxed holds are neurological retraining, not just tissue lengthening.</p>
+              <div style="margin-top:8px;"><span class="tag neuroscience">neuroscience</span><span class="tag stretching">stretching</span><span class="tag nervous system">nervous system</span></div>
+              <div class="source">Weppler & Magnusson, Physical Therapy, 2010; Journal of Neurophysiology</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#17</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your glutes are the largest muscles in your body, but sitting all day turns them off — a phenomenon trainers call 'gluteal amnesia.' When your glutes stop firing, your lower back and hamstrings compensate, leading to pain and injury. Glute bridges wake these muscles back up. Strong glutes protect your knees, support your spine, and power every step you take.</p>
+              <div style="margin-top:8px;"><span class="tag glutes">glutes</span><span class="tag back pain">back pain</span><span class="tag sitting">sitting</span></div>
+              <div class="source">Journal of Strength and Conditioning Research; PMC gluteal activation studies</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag posture">posture</span>
+                <span style="font-size:11px;color:#555;">#18</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Your body builds bone where it's stressed and removes bone where it's not — this is Wolff's Law. Weight-bearing postures and standing tall put healthy stress on your spine and hips, stimulating bone density. Chronic slouching changes the stress distribution, leading to bone loss in the wrong places. Good posture isn't just about looking confident — it's telling your skeleton where to stay strong.</p>
+              <div style="margin-top:8px;"><span class="tag bones">bones</span><span class="tag osteoporosis">osteoporosis</span><span class="tag skeleton">skeleton</span></div>
+              <div class="source">Wolff's Law; Journal of Bone and Mineral Research, mechanical loading studies</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag flexibility">flexibility</span>
+                <span style="font-size:11px;color:#555;">#19</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Fascia — the connective tissue wrapping every muscle — can become sticky and dehydrated without movement, creating that 'stiff all over' feeling when you wake up. Unlike muscles, fascia responds best to slow, sustained stretches held for 90+ seconds. Even 2 minutes of gentle full-body stretching in the morning rehydrates your fascia and can transform how you feel for the rest of the day.</p>
+              <div style="margin-top:8px;"><span class="tag fascia">fascia</span><span class="tag morning">morning</span><span class="tag stiffness">stiffness</span></div>
+              <div class="source">Schleip, Journal of Bodywork and Movement Therapies, 2003; Fascia Research Congress findings</div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="tag mobility">mobility</span>
+                <span style="font-size:11px;color:#555;">#20</span>
+              </div>
+              <p style="font-size:14px;line-height:1.6;color:#ccc;">Balance isn't a talent — it's a skill that deteriorates without practice. Your proprioceptors (sensors in your joints that tell your brain where your body is in space) weaken with age and inactivity. But they respond rapidly to training. Just 10 seconds of single-leg standing per day measurably improves proprioception within weeks. An inability to stand on one leg for 10 seconds is associated with double the risk of death within 10 years.</p>
+              <div style="margin-top:8px;"><span class="tag balance">balance</span><span class="tag proprioception">proprioception</span><span class="tag longevity">longevity</span></div>
+              <div class="source">British Journal of Sports Medicine, 2022; Araujo et al., one-leg balance and mortality</div>
+            </div>
+        </div>
+</body>
+</html>

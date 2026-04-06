@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decision Log</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Decisions</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item active">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div class="page-content">
+          <h2>Decision Log (22 resolved, 8 open)</h2>
+          <p style="font-size:13px;color:#888;margin-bottom:16px;">
+            Product decisions Faith and Claude work through together. Resolved questions show the decision and the reasoning behind it.
+          </p>
+          
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q1</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should we include streak tracking?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Streaks can motivate but also create guilt when broken. Waking Up doesn't use them. Reframe does. Faith says 'there might still be room for streaks.'</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — subtle streaks, Apple Health style. Available in stats if you look, never guilt-tripping.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: Faith told #310 "there might still be room for streaks." #317 asked whether to go with traditional streaks, the Anti-Metric (#310's idea), both, or neither. Faith's instinct: streaks yes, but Apple-style statistics you reference when you want to — not Duolingo's in-your-face guilt trips. The distinction matters: Apple shows you data and lets you draw your own conclusions. Duolingo weaponizes data to create anxiety. We're Apple, not Duolingo.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>PAIRS WITH: Q26 (Anti-Metric) — streaks and the Anti-Metric can coexist. Streaks show consistency patterns, the Anti-Metric shows lifetime commitment. Different psychological levers.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q2</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should onboarding ask for age?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Age could personalize insights (e.g., 25-year-old gets posture focus, 60-year-old gets fall prevention). But could feel intrusive or discouraging.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Ask age by decade (30s, 40s, etc.) as the prototype already does it. Optional — user can skip. Also ask gender for exercise personalization (Female / Male / Prefer not to say) — also optional.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #310's prototype already had age-by-decade in the onboarding quiz. Faith confirmed it works as-is. Gender was added later in our session when we put pelvic floor/kegels on the concerns list (Q27) — some exercises are gender-relevant, so we need to know, but it must be optional and low-pressure. The framing "how would you like exercises tailored" keeps it about personalization, not demographics.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q3</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">What's the right daily engagement length?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Waking Up: <60s moments. Our exercises: 30-90 seconds. With insight + exercise, we're at 1-2 minutes.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Default 3 minutes per nudge. Sliding scale at bottom of each nudge lets user choose 1-5 minutes.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #310 originally set "under 2 minutes per nudge." Faith pushed back — she thinks nudges can be longer, especially as the narrative engine (Q6) adds richer content. The sliding scale was her idea: default to 3 minutes but let the user adjust in the moment. Someone with 5 minutes between meetings can go deeper; someone rushing can do 1 minute. The control is per-nudge, not a global setting, so it adapts to your day.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q4</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Path/journey metaphor or pure daily moments?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Path implies destination but we have no finish line. Faith pointed out this doesn't fit a lifelong habit. But some structure helps people feel progress.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Unlocks as natural capability progression — no gamification, no points, no badges. Show what you've BUILT (backward-looking) rather than how far you have LEFT (forward-looking).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE MODEL: Unlocks are natural consequences of physical capability, not rewards for engagement metrics.<br>- Master an exercise → unlock its synergistic pairing (Q13/Q25) because your body is ready<br>- Complete a breathing arc → unlock breath-synchronized movement variations<br>- Reach maintenance phase → content gets smarter (new research insights via Q24 instead of learning arc repeats)</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>The progression IS the unlock. No progress bars, no levels, no finish line. The app surfaces richer/harder content because you've earned it physically.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Analogy: Nobody gives you a trophy for learning to dice onions, but it unlocks every recipe that needs diced onions. The reward is access to more, not applause.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>ADAPTIVE PACING (already codified in Q18): 12-week arc is the default assumption, but the easy/challenging/too hard feedback loop speeds up or slows down progression per individual. Two 'easy' responses = ready to progress. 'Couldn't complete' = dial back.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 originally proposed a visual trail map with milestones. Faith pointed out that a 'path' implies a destination, which doesn't fit a lifelong habit. #319 proposed three models (tree rings, seasons, unlocks). Faith chose unlocks but emphasized: not hokey gamification. The key distinction is capability-based unlocks (your body earned this) vs. engagement-based rewards (you logged in 10 days in a row). We're the former.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q1 (streaks): Streaks show consistency patterns; unlocks show capability growth. Different axes.<br>- Q13 (habitualization): Habitualized exercises unlocking pairings is the primary unlock mechanism.<br>- Q18 (starting points): Adaptive pacing determines WHEN unlocks happen per user.<br>- Q26 (Anti-Metric): 'Days you've moved' is the backward-looking accumulation counter; unlocks are the forward-looking content reveals. Together they show growth without implying an endpoint.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q5</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">How should exercises be presented in notifications?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">SMS has ~160 char limit per segment. Need exercise name + motivation line + maybe a link.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Text + embedded animation (goal). Prototype can compromise with text-only or static images. Animation is mandatory once we move to push notifications/native app.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: Faith was clear — ultimately she wants animations showing the exercises, not just text descriptions. For the SMS prototype phase, text is fine (SMS can't embed animations anyway). But the moment we go native app with push notifications, animations are non-negotiable. This is a differentiator — most competitor apps use video (heavy, requires attention) or static images (unhelpful for movement). Short looping animations hit the sweet spot: shows the movement, lightweight, glanceable. Animation pipeline (stock vs custom vs AI-generated) is a future build decision.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q6</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should insights be shown with the exercise or separately?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Combining keeps it simple (one touch point). Separating lets insights be their own 'moment' type.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Combined card — exercise + unique insight per nudge. The exercise is the action (front and center with animation), the insight is the reward for showing up.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Each nudge in a day has unique content even though the exercise is the same:<br>- Nudge 1: Inspirational insight ("here's why this matters")<br>- Nudge 2: Different angle ("here's what's happening in your body")<br>- Nudge 3: Fun fact or research tidbit<br>- Final nudge: Congratulatory ("you showed up 4 times today — here's what that's building toward")</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Next day's first nudge references yesterday: "You worked on wall angels yesterday — today we build on that with..."</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>This is a narrative engine, not just a notification system. Content library needs 4-5 variations per exercise per day, tagged by position (opening/middle/closing/next-day callback). Aunt's evidence-based citations anchor the science; the narrative layer makes it feel like a coach who remembers you.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Key differentiator: Hinge Health doesn't do this — it's video sessions with no narrative continuity. Reframe does something similar with daily lessons building on each other, but not tied to physical actions. We combine both: Reframe's narrative progression with physical exercise. That's what makes the app sticky.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>The feel should be smart — not random motivational quotes, but a coherent story that builds over time and makes the user feel seen and understood.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q7</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Notification method for MVP?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">SMS costs money (Twilio ~$0.0079/msg). Push notifications need a native app. Email is too noisy (Faith gets hundreds).</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">SMS for prototype phase (practical, works without native app). Push notifications for production (free, instant, richer).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE KEY INSIGHT: The notification itself is part of the experience, not just a trigger. The notification text should be the hook — a preview of that nudge's insight or a teaser that makes you want to open the app. Opening the app is the payoff.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 proposed this during Q7 discussion — that we should think of the notification as the first touchpoint of the experience, not just a "time to stretch!" alert. Faith immediately saw it. Think Reframe: their notifications aren't generic reminders — they're intriguing enough that you actually want to open them. We should do the same: "Your shoulders carried a lot today. 3 minutes?" not "Reminder: do your shoulder shrugs."</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>This ties directly into the narrative engine (Q6) — the notification content should come from the same system that tracks the user's journey. The notification knows what exercise they're on, what insight is queued, and what they did yesterday.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q8</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">How personalized should exercise selection be?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Simple: random from pool tagged to user's picks. Complex: AI-generated plans per diagnosis. Faith's aunt (PT) will collaborate on diagnosis-to-exercise mapping eventually.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Personalization based on onboarding concern picks (back pain, posture, etc.) — yes. Deeper adaptation (skip tracking, time-of-day, desk vs. on-the-go) — overengineering for now, revisit post-launch.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Added "postural improvement" as an important category per Aunt Faith (the physical therapist).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CRITICAL LIABILITY FRAMEWORK (detailed discussion with Faith):<br>The question of personalization led to a major conversation about liability. Faith raised it: "I want someone to be able to say 'I have scoliosis' but I don't want to incur liability for treating based on diagnosis codes."</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>The line: GOALS not DIAGNOSES. We ask "what do you want to improve?" (wellness/fitness) not "what's your diagnosis?" (medical). "Improve your posture" = fitness. "Treat your scoliosis" = medicine/FDA territory. We stay firmly on the wellness side.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Action items added to Claude to-do list:<br>1. Medical/wellness disclaimer ("not medical advice, consult your doctor")<br>2. All framing is wellness/fitness, never therapeutic<br>3. "Check with your provider first" gate for certain concern areas<br>4. Terms of service with liability limitation<br>5. One-time health tech lawyer consult before App Store launch (~00-1000)<br>6. Aunt Faith to weigh in on where the practical line is</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: Faith brought the lawyer mindset — "think like we have a lawyer present." This was a pivotal moment in the design: it established that every feature decision must pass the wellness-not-medicine test. This framework affects Q27 (concern list wording), insight content, and the entire narrative engine.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q9</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should users be able to skip or snooze?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Snooze could re-alert in next gap. Skip with no penalty keeps it pressure-free. Tracking skips could inform the algorithm.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Swap + Snooze system, position-dependent:</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>FIRST NUDGE OF THE DAY:<br>- Can swap today's focus exercise ("I'm in the office, can't do bridges on the floor")<br>- Can also snooze</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>NUDGES 1 through (X-1):<br>- Snooze option: 15 / 30 / 45 minutes<br>- If a snoozed nudge bumps into the next scheduled nudge, the snoozed one cancels and the day's total nudge count reduces by one<br>- No skip option — keeps them in the game</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>LAST NUDGE OF THE DAY:<br>- Can snooze ONCE (15 / 30 / 45 minutes)<br>- After that single snooze, option becomes Skip<br>- This is also the congratulatory nudge per Q6 (if completed)</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>No outright "skip the day" option.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 proposed yes-to-snooze, no-to-skip. Faith refined it significantly with position-dependent logic. The swap-on-first-nudge idea was hers — driven by practical reality ("I'm in the office, I can't do bridges on the floor"). The snooze collision logic was also hers: if you keep snoozing and bump into the next nudge, it just quietly cancels and reduces the day's count. No guilt, no "you missed one!" — the day just becomes 3 nudges instead of 4. Faith also caught a gap: the last nudge needs one snooze opportunity before becoming a skip, because life happens but you deserve one more chance.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>DESIGN PHILOSOPHY: Make it easy to adjust (swap, delay) but never easy to bail entirely. The friction is intentional — skipping should require a conscious choice, not a casual swipe.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q10</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">App name?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">StretchSmart rejected. Limber and Kinetic taken. Need something that fits 'daily moment' philosophy, not 'PT homework.'</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">TBD - parking this until product identity is clearer</li></ul>
+              
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q11</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Target audience for App Store launch?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Faith's vision: desk workers with musculoskeletal concerns. Aunt's PT expertise makes clinical angle possible. But clinical = regulatory concerns.</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">Wellness/lifestyle positioning (no medical claims)</li><li style="margin:4px 0;color:#ccc;">PT-adjacent with professional backing</li><li style="margin:4px 0;color:#ccc;">Start wellness, add clinical tier later</li></ul>
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #e9a045;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#e9a045;margin-bottom:6px;">NOTES</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Deferred. Work through Steve Gordon's minimum viable audience worksheets before deciding. Faith knows this is important but not ready to commit yet.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q12</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Calendar integration scope?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Faith uses Apple or Google Calendar. App Store version needs all major calendars.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Support Google Calendar, Apple Calendar, and Outlook. Read-only — just find gaps, don't write to the calendar.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: Faith originally said Google or Apple Calendar. #317 asked about Outlook and read vs read-write. Faith immediately included Outlook (enterprise users need it) and chose read-only without hesitation — the app should observe your schedule, not modify it. Adding events would feel invasive and create sync headaches.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>These three cover 95%+ of the market. Samsung Calendar and Yahoo Calendar both sync through Google. Edge cases can be added post-launch if demand exists.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q13</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Post-week-12 maintenance: how to handle habitualized exercises?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">After 12 weeks of cycling through ~15 exercises, many will be habitualized. Need to keep reinforcing old moves at lower frequency while introducing new ones. Think 'spaced repetition' like language learning apps.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Habitualized exercises move to a maintenance rotation at lower frequency — never drop entirely. New exercises take the spotlight while old ones cycle back periodically.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>KEY TIE-IN TO Q25 (Paired Exercises / #310's idea): Habitualized exercises can be combined into synergistic pairings. After week 12, wall angels might pair with thoracic rotation as a combined movement. This gives old exercises new life and teaches biomechanical relationships.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE EXERCISE LIFECYCLE:<br>LEARNING (daily focus, ~12 weeks) -&gt; MAINTENANCE (lower frequency, standalone or paired) -&gt; COMBINED (synergistic pairings with other habitualized exercises)</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 proposed three options (drop off, maintenance, lower frequency). Faith chose maintenance without hesitation and immediately connected it to #310's paired exercises idea — she saw that habitualized exercises becoming synergistic pairs is the natural evolution. This creates a long-term engagement loop: the more exercises you master, the richer your combinations become. The app gets smarter the longer you use it.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q14</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">What insights do habitualized/maintenance exercises get?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">After the 24-insight arc is complete, the exercise still appears occasionally. Need shorter 'maintenance insights' — reinforcement, reminders of progress, deeper science, or connections to new exercises.</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">Short 'remember why' refreshers</li><li style="margin:4px 0;color:#ccc;">New deeper-dive science content</li><li style="margin:4px 0;color:#ccc;">Connections ('this pairs well with X you learned last month')</li><li style="margin:4px 0;color:#ccc;">Mix of all three</li></ul>
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #e9a045;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#e9a045;margin-bottom:6px;">NOTES</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Deferred — but with a strong direction emerging.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE OPPORTUNITY: Once someone completes the 24-insight learning arc for an exercise, what keeps the content fresh during maintenance phase? This is where #310's Insight Engine idea (Q24) becomes critical.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>POSSIBLE APPROACH: Maintenance-phase insights could be dynamically generated from new research rather than pre-written arcs. Auto-scan PubMed/Medscape for new mobility and longevity research, translate it to plain language, have Faith's aunt vet it for accuracy. This means long-term users always get fresh, evidence-based content — the app feels alive, not recycled.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>WHY THIS MATTERS: The learning phase has a natural content ceiling (24 insights per exercise). Without a content pipeline for the maintenance phase, long-term users will eventually see repeats and disengage. The Insight Engine solves this by making the app a living document that grows with the research.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW IT CONNECTS:<br>- Q6 (narrative engine): Maintenance insights feed into the same narrative system — position-tagged, day-referencing, personalized.<br>- Q13 (habitualized exercises): These are the exercises that NEED maintenance insights since users have already seen the learning arc.<br>- Q24 (Insight Engine): This is where the content comes from.<br>- Q17 (feedback): Reflective questions during maintenance could reference new research ("new study says wall angels also improve breathing — notice any difference?")</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Faith noted Medscape specifically as a source alongside PubMed. Her aunt's vetting role becomes even more important here — auto-generated research summaries need professional review before going to users.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>OPEN: Exactly how this works technically (API access to research databases, AI summarization pipeline, aunt review workflow) is a build question for later. The design intent is clear.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q15</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">How to handle regression/missed days?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Life happens — people will miss days or weeks. App needs to be encouraging, not guilt-tripping. Reframe handles this well with 'welcome back' messaging.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Warm, non-judgmental return policy. Never create guilt — guilt makes people quit permanently ("what-the-hell effect," Polivy &amp; Herman behavioral research).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>SHORT GAP (1-3 days): Don't acknowledge it at all. Serve the next nudge like nothing happened. The Anti-Metric (Days You've Moved) stays unchanged — it didn't go down, it just didn't go up. No judgment in the data.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>MEDIUM GAP (4-14 days): Warm welcome back. "Good to see you. Let's pick up with [exercise]." Slightly easier version or shorter duration for first day back. One insight about why returning matters more than consistency ("every time you come back, your body remembers faster than you'd think" — cite actual muscle memory research).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>LONG GAP (14+ days): Offer a soft restart. "Want to pick up where you were, or start fresh with new goals?" Let the user decide — some want continuity, some want a clean slate. Frame it as "your body kept what you built."</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>NEVER show the gap length. NEVER say "it's been 12 days." The app knows but doesn't rub it in. Every return is treated as a win.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>COMPETITIVE COMPARISON:<br>- Reframe: Best-in-class here. "Welcome back! Picking up where you left off" — zero mention of gap length, no streak reset drama, no disappointed tone. Treats every return as a win. We should emulate this.<br>- Noom: Mixed approach. Uses a "restart" mechanic that acknowledges the gap but frames it positively ("Let's reset your program"). However, Noom still shows streak data and progress graphs that make gaps visible even when the tone is encouraging. Their coach (human or AI) sends a check-in message after a few days which can feel supportive OR guilt-inducing depending on the person. Noom also down-levels your "color" categorization after inactivity, which some users experience as punishment. We should avoid ANY mechanic that visibly demotes or resets progress.<br>- Duolingo: The cautionary tale. Streak-obsessed, owl guilt-trips you, "you've lost your streak" is devastating for some users. Exactly what we do NOT want.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Our philosophy: Reframe's warmth + our Anti-Metric's no-loss design. The number only goes up. Coming back is always celebrated, never penalized.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q16</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should the app have a social/community component?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Accountability partners or 'X people moved today' makes apps stickier. Reframe has community. We have nothing. But community features are complex to build and moderate.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Skip social features for v1. Add in v2 only if users ask for it post-launch.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>RATIONALE:<br>- Research is split. JMIR 2019 study: social features in health apps had high initial engagement but poor retention — people compare themselves unfavorably and disengage.<br>- Social features are expensive to build: moderation, privacy concerns (people sharing health data), engineering lift that delays launch by months.<br>- Our core value prop is personal — YOUR coach, YOUR narrative, YOUR body's journey. The narrative engine and personalization are what make it sticky, not community.<br>- Building social on speculation is a trap — sounds essential in a pitch deck, barely gets used in practice.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>IF/WHEN WE ADD IT (v2):<br>- Model after Duolingo's Friend Quest / Friends feature: optional friend connections, support each other, friendly challenges — but never annoying, never mandatory, never guilt-inducing.<br>- Start with optional accountability partner (one person, not a community). "Share your streak with someone." Low-effort, high-impact for people who want it, invisible to everyone else.<br>- No leaderboards, no public profiles, no comparison mechanics. Support and encouragement only.<br>- Must have clear data showing user demand before investing the engineering effort.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>COMPETITIVE NOTES:<br>- Strava: social works because exercise is inherently visual/shareable (routes, times). Stretching isn't.<br>- Noom: has group coaching but it's the most complained-about feature (forced group chats, awkward dynamics).<br>- Duolingo: Friend Quests are optional, fun, low-pressure — the right model IF we go social.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q17</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should we collect user feedback after exercises?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">We tell users what to do but never ask 'how did that feel?' That data could shape better recommendations — harder/easier variations, skip patterns, pain signals.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Two-layer feedback system — never feels like a survey:</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>1. PASSIVE SIGNALS (always running): Track behavior as implicit feedback. Snooze frequency, swap patterns, completion rates, time-of-day engagement, which exercises get completed vs. delayed. The algorithm adapts without ever asking a question.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>2. REFLECTIVE QUESTIONS WOVEN INTO NARRATIVE: Inspired by Reframe's approach — embed feedback into the content experience. Not "rate this exercise 1-5" but "this week you focused on hip mobility — notice any difference getting out of your chair?" The app learns from the answer AND the user feels seen. These are part of the insight narrative, not bolted-on surveys.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Reframe comparison: Reframe embeds reflective questions into daily lessons ("how confident do you feel about this?"). Doesn't feel like a survey because it's part of the learning. They also do periodic check-in quizzes mirroring the onboarding quiz to measure self-perception change over time. They track engagement passively (re-reads, skips, time spent).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>NEVER interrupt the exercise moment with feedback requests. The congratulatory final nudge stays clean. Reflective questions appear in the narrative layer at natural moments (weekly, milestone, or when the algorithm detects a pattern worth surfacing).</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q18</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">How to handle different fitness starting points?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Someone who can't stand on one leg needs a gentler start than someone who's just stiff from desk work. A single exercise pool may not work for everyone.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Start everyone gentle. No self-assessment, no tiered labels, no "beginner/intermediate/advanced." Nobody wants to be a beginner at stretching.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>ADAPTIVE PROGRESSION based on behavior + lightweight feedback:</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>1. WEEK 1: Universally easy for everyone. Safe starting point, sidesteps liability (no capability assessment).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>2. BUILT-IN PROGRESSION: Each exercise has natural difficulty scaling (wall angels 10s → 15s → 20s → adding arm slides). Nudges guide the progression: "Last week you held for 10 seconds. Try 15 today."</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>3. PASSIVE SIGNALS: The system watches engagement patterns (Q17) — completing quickly, snoozing, swapping. Fast completers are ready to progress.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>4. ACTIVE MICRO-FEEDBACK (Faith's key addition): At the end of each nudge (or each day — TBD), ask one quick question: "How did you find this today?" with tappable options like:<br>   - Easy<br>   - Challenging but doable<br>   - Couldn't complete<br>   This serves double duty — it's both the feedback mechanism from Q17 AND the progression trigger.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>5. ADAPTIVE PACING: The 12-week arc is a guideline, not a firm timeline. If someone says "easy" twice in a row, we progress them to the next harder variation or the next exercise — even if it hasn't been 12 weeks. Conversely, if someone says "couldn't complete," we dial back or offer an easier variation.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 proposed starting everyone gentle with passive adaptation (no self-assessment). Faith agreed with the direction but pushed further — she wanted an explicit but lightweight feedback mechanism that directly drives progression speed. The insight: 12 weeks is arbitrary. Some people are ready in 4 weeks, some need 16. Let the user's own experience drive the pace. Two "easy" responses = ready to level up.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>WHY THIS MATTERS: This makes the app feel genuinely personalized without a clunky intake assessment. It also means the app gets smarter with every interaction — the more someone uses it, the better calibrated their experience becomes.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q17 (feedback): The "how did you find this" question IS the reflective feedback woven into the experience. Not a survey — part of the flow.<br>- Q15 (regression): If someone comes back after a gap, we might dial difficulty back one step and re-ask.<br>- Q13 (habitualization): "Easy" responses are the signal that an exercise is habitualized and ready for maintenance rotation.<br>- Liability: We never assess capability. We start safe and let users self-report their experience. Big difference from prescribing difficulty levels.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q19</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should balance training be a core exercise category?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Single-leg stands are the #1 predictor of longevity (inability to hold 10s = 2x mortality risk within 10 years, BJSM 2022). Currently missing from our exercise pool. Should be a foundational focus, not an afterthought.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — balance training is a core exercise category. No debate needed.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 suggested deferring to Faith's aunt. Faith overruled — this is obvious. Balance is critical for aging populations (fall prevention is already on our concerns list in Q27 as a separate item from balance). The research is overwhelming and uncontroversial.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q20</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should grip strength exercises be included?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Grip strength is strongly correlated with all-cause mortality (The Lancet, 2015). Easy to train, universally overlooked. Relevant to independence in old age (opening jars, gripping railings, catching yourself in a fall).</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — include grip strength exercises. Originally suggested by Claude #310.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: Faith confirmed without hesitation alongside balance. Grip strength is one of the strongest predictors of all-cause mortality in aging populations (Leong et al., Lancet 2015). It's also one of the easiest things to train with zero equipment — squeeze a ball, hang from a bar, farmer carries. Peter Attia talks about this constantly, which aligns with our longevity flavor.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q21</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should breathing exercises be their own category?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Respiratory capacity is THE bottleneck in old age. Currently breathing is a side benefit of posture work, but dedicated breathing exercises (diaphragmatic breathing, box breathing, breath holds) could be their own focus area.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — breathing exercises are their own standalone category in the learning phase.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>In later phases (maintenance/combined per Q13), breathing integrates with physical exercises as synergistic pairings. At that point, draw on yoga practices: breathe in on X move, breathe out on Y move. This is a natural evolution — you learn the breathing pattern standalone first, then apply it to movements you've already habitualized.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 asked whether breathing should be standalone or woven into other exercises. Faith chose both — standalone first, integrated later. The yoga connection was Faith's insight: breath-synchronized movement is ancient, well-researched, and fits perfectly into our synergistic pairing framework (Q25). This also opens up a content-rich territory for insight arcs — the science of breathing, vagus nerve stimulation, CO2 tolerance, etc.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q13/Q25 (habitualization + paired exercises): Breathing + movement pairings are a prime example of synergistic combinations post-week-12.<br>- Q27 (concerns list): "Breathing &amp; lung capacity" is already on the onboarding concerns list.<br>- Content opportunity: Yoga-inspired breathwork adds depth and variety to the exercise library without requiring equipment.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q22</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Should proprioception training be included?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Proprioception — knowing where your body is in space — degrades invisibly with age and inactivity. It's the silent cause behind most falls. Simple exercises (eyes-closed standing, textured surface work) can rapidly improve it.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes, include proprioception training — but NOT as its own category. Fold it into balance.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>The word "proprioception" is jargon that makes normal people's eyes glaze over. Faith knows the word and still gets funny looks when she uses it. Users should never see it. But the exercises themselves (eyes-closed balance, heel-to-toe walking, single-leg stance on uneven surfaces) are critical and belong in the balance category.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #317 flagged the jargon problem upfront. Faith confirmed — great exercises, terrible category name. The solution is simple: the balance category quietly includes proprioception work. The insight arcs can teach the concept in plain language ("your body has a hidden sense that tells you where you are in space — let's train it") without ever using the P-word.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q19 (balance): Proprioception exercises live under balance.<br>- Q27 (concerns list): "Balance" and "Fall prevention" are both on the list — proprioception training serves both.<br>- Liability: These exercises need careful progression (eyes-closed balance near a wall, not in the middle of a room). Good candidate for the "check with your provider" gate for older users.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q23</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">What makes someone actually do Day 1?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">The hardest day is day 1. Downloads don't equal engagement. What makes someone who installs this actually DO the first exercise? This might be the most important unsolved problem.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">The gap between 'I downloaded this' and 'I did my first exercise' must be under 3 minutes. Every screen between install and first exercise is a dropout point.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>DAY 1 FLOW:<br>1. Onboarding quiz (~90 seconds) — pick concerns, age, gender (all optional)<br>2. Personalized longevity hook (~30 seconds) — a wake-up call disguised as an invitation<br>3. First exercise — served IMMEDIATELY, personalized to their picks (~60 seconds)<br>4. 'You just did Day 1' celebration — instant gratification, Anti-Metric starts at 1</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE HOOK (inspired by Reframe + Peter Attia):<br>Reframe nails Day 1 by making it feel like a revelation, not a chore. Their first session isn't 'here's your task' — it's 'here's something you didn't know about yourself.' The exercise comes second, almost as an afterthought: 'want to try something right now? 60 seconds.'</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>For us, the longevity angle: Attia's core thesis is that the last decade of your life is determined by what you do NOW. We can't use 'marginal decade' (his trademark framing) but we can inspire in that direction. The welcome screen should deliver a personalized, evidence-based insight that creates urgency without fear. Something that makes the user think 'oh — I should start now.'</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Example welcome text (personalized to someone who picked 'stay independent as I age' + 'balance'):<br>'At 80, the people who can still pick up their grandkids off the floor have one thing in common: they started moving intentionally in their 40s and 50s. You just took the first step. Ready for 60 seconds?'</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE PSYCHOLOGY:<br>- No setup screens, no configuration, no 'come back tomorrow'<br>- First exercise happens RIGHT NOW during the onboarding flow<br>- Personalized based on quiz answers (their concerns = their hook)<br>- Celebration immediately after — you're already on Day 1 before you can talk yourself out of it<br>- Reframe's lesson: the first interaction should feel like a gift (insight), not a demand (exercise)</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q2 (onboarding): The quiz feeds directly into the personalized hook<br>- Q6 (narrative engine): Day 1 is the first chapter of their narrative<br>- Q7 (notifications): First push notification tomorrow should reference Day 1 ('you showed up yesterday — ready for Day 2?')<br>- Q26 (Anti-Metric): 'Days you've moved: 1' appears for the first time at the celebration screen</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q24</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Insight Engine: Should the app auto-scan PubMed for new mobility/longevity research?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Claude #310 idea. App becomes a living document — new research auto-translated to plain language, aunt vets for accuracy. Could be a differentiator but adds complexity.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — post-launch, but not long after. This becomes important quickly.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Launch with curated learning arcs (24 insights per exercise). These carry the first 12+ weeks. But as early users start hitting the maintenance phase (Q13), they'll need fresh content — and that's when the Insight Engine becomes critical.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE PIPELINE:<br>1. Auto-scan PubMed and Medscape for new mobility/longevity research<br>2. AI summarization to plain language (2-3 sentences, full causal chain per Q6's content philosophy)<br>3. Aunt reviews for accuracy before anything reaches users<br>4. Approved insights feed into the maintenance-phase narrative engine</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>WHY POST-LAUNCH, NOT LATER: The curated arcs have a natural content ceiling. Without the Insight Engine, long-term users will see repeats and disengage. The window between 'launch' and 'first users need fresh content' is roughly 12 weeks — that's the build runway.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>WHY NOT AT LAUNCH: The engineering lift is real (PubMed API, summarization pipeline, aunt review workflow) and none of it matters until users exist and have completed their learning arcs. Ship first, build the pipeline while early users are still in the learning phase.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #310 proposed the idea. Q14 (maintenance insights) identified it as the solution to the content ceiling problem. #319 recommended post-launch; Faith agreed but corrected the framing — this isn't a 'nice to have later,' it's a 'build it right after launch' priority.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q14 (maintenance insights): The Insight Engine IS the content source for maintenance phase<br>- Q6 (narrative engine): New research feeds into the same position-tagged, personalized narrative system<br>- Q13 (habitualization): Users hitting maintenance phase are the trigger for needing this<br>- Q8 (liability): All auto-generated content must pass aunt review — evidence-based claims only</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #4ecdc4;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-decided" style="font-size:12px;font-weight:600;">RESOLVED</span>
+                <span style="font-size:11px;color:#555;">Q25</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Paired Exercises: Should we introduce biomechanical pairings after week 12?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Claude #310 idea. E.g. hip flexor stretch + glute bridge. Insight arcs explain the synergy. Adds depth for long-term users.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #4ecdc4;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#4ecdc4;margin-bottom:6px;">DECISION</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">Yes — pairings unlock naturally when you've habitualized the component exercises. Not after a fixed 12 weeks, but when the adaptive pacing system (Q18) determines you're ready.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THIS IS THE PRIMARY UNLOCK MECHANISM (Q4): Pairings are capability-based unlocks, not time-based rewards. You don't get wall angels + thoracic rotation as a pair because you hit week 12 — you get it because you've demonstrated mastery of both individually (via the easy/challenging/too hard feedback loop).</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>THE EXERCISE LIFECYCLE (from Q13):<br>LEARNING (daily focus, ~12 weeks default) → MAINTENANCE (lower frequency, standalone) → COMBINED (synergistic pairings with other habitualized exercises)</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Pairings add depth for long-term users and give old exercises new life. The insight arcs for pairings explain the biomechanical synergy — why these two movements complement each other.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>BREATHING INTEGRATION (from Q21): Breath-synchronized movement is a special case of pairing. Once breathing exercises are habitualized, they combine with physical movements (inhale on X, exhale on Y — yoga-inspired). This was Faith's insight.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>HOW WE GOT HERE: #310 originally proposed pairings as a post-week-12 feature. Q13 (Faith + #317) established the habitualization lifecycle where pairings are the natural evolution. Q4 (Faith + #319) cemented that pairings are the primary example of capability-based unlocks — no gamification, no arbitrary timeline. Q18's adaptive pacing means the actual unlock timing varies per user.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>CONNECTS TO:<br>- Q4 (progression model): Pairings ARE the unlock mechanism<br>- Q13 (habitualization): Pairings are the third stage of the exercise lifecycle<br>- Q18 (adaptive pacing): Feedback loop determines when each user is ready for pairings<br>- Q21 (breathing): Breath + movement is a pairing category<br>- Q14 (maintenance insights): Pairing insights are fresh content for the maintenance phase</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q26</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">The Anti-Metric: Should we have a lifetime "Days you moved" counter?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Claude #310 idea. Never resets, never goes down. Not a streak — just a number that only grows. Psychologically different from streaks (no guilt on missed days).</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">Yes - prominent on home screen</li><li style="margin:4px 0;color:#ccc;">Yes - subtle/secondary</li><li style="margin:4px 0;color:#ccc;">No - skip it</li></ul>
+              
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">IN_PROGRESS</span>
+                <span style="font-size:11px;color:#555;">Q27</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">What concern options should users pick from during onboarding?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Originally 6 options in prototype. Faith wants ~25. Uncategorized — no grouping in the UI. User picks top 3.</p>
+              
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #e9a045;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#e9a045;margin-bottom:6px;">NOTES</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">FIRST DRAFT (Faith + #317, Mar 8) — not final, needs aunt review:</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>1. Back pain<br>2. Neck tension<br>3. Shoulder tension<br>4. Better posture<br>5. Desk work recovery<br>6. Joint stiffness<br>7. Hip tightness<br>8. Ankle mobility<br>9. Balance<br>10. Fall prevention<br>11. Flexibility<br>12. Better sleep<br>13. More energy<br>14. Stress relief<br>15. Breathing &amp; lung capacity<br>16. Stay independent as I age<br>17. Keep up with kids/grandkids<br>18. Core strength<br>19. Wrist &amp; hand mobility<br>20. Knee health<br>21. Recovery from sitting all day<br>22. Thoracic (upper back) mobility<br>23. Pelvic floor health (including kegels)<br>24. Jaw/TMJ tension<br>25. General wellness</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Dropped from earlier draft: headaches (too broad, crosses into medical territory).<br>Separated per Faith: balance and fall prevention are distinct concerns.<br>Needs aunt's review for: which of these we can responsibly address with general wellness exercises.</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q28</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">Where should the prototype be hosted for public sharing?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">The prototype currently runs on Blake's machine behind Tailscale — only accessible with Tailscale installed. Faith needs to share the interactive content graph (and eventually the full prototype) with her aunt and potentially others. Needs a real public URL.</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">GitHub Pages — free, public URL (e.g. faith-app.github.io). Static hosting only, so the graph and any standalone pages work perfectly. No backend/Python, so the full prototype with APIs would need to be converted to static HTML+JS. Easiest to set up, most familiar to developers.</li><li style="margin:4px 0;color:#ccc;">Netlify — free tier, public URL, drag-and-drop deploy or Git-connected auto-deploy. Also static-only but supports form handling and serverless functions if needed later. Slightly more polished than GitHub Pages (custom domains, HTTPS automatic, deploy previews).</li><li style="margin:4px 0;color:#ccc;">Render — free tier runs Python servers directly, so the FULL prototype (all pages + APIs) goes live as-is with no conversion. Public URL. Downside: free tier sleeps after 15 min of inactivity (30s cold start on first visit). Best if we want the whole app online, not just the graph.</li><li style="margin:4px 0;color:#ccc;">Cloudflare Tunnel — DROPPED per Faith: doesn't want to depend on Blake's machine or bother him with setup.</li></ul>
+              
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q29</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">What signup / user account system should the app use?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">The app needs user accounts to store concern picks, progress, preferences, and calendar links. Health-adjacent data means privacy matters. Need to choose auth method and database before building.</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">Email + password — standard, familiar to all users. Requires password reset flow, secure hashing. Users forget passwords.</li><li style="margin:4px 0;color:#ccc;">Passwordless magic link — lower friction, no password to forget. User enters email, gets a login link. Trade-off: requires email access every login session.</li><li style="margin:4px 0;color:#ccc;">Both — let user choose. More engineering work but covers all preferences.</li><li style="margin:4px 0;color:#ccc;">Social login (Google/Apple Sign-In) — one-tap signup, no password. But adds OAuth dependency and some users distrust giving apps their Google/Apple identity.</li></ul>
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #e9a045;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#e9a045;margin-bottom:6px;">NOTES</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">OPEN. Mockup page built at /v2/signup showing email+password with magic link alternative. Open sub-questions:<br>- Magic link only vs both options?<br>- Social login (Google/Apple) worth the engineering lift?<br>- Database: SQLite for prototype, PostgreSQL for production?<br>- Privacy policy required before any real signups (health-adjacent data per Q8 liability framework)<br>- Needs health tech lawyer review before App Store (Q8 action item)</p>
+                </div>
+            </div>
+            <div class="card" style="border-left:3px solid #e9a045;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <span class="status-open" style="font-size:12px;font-weight:600;">OPEN</span>
+                <span style="font-size:11px;color:#555;">Q30</span>
+              </div>
+              <p style="font-size:15px;font-weight:600;color:#e0e0e0;margin-bottom:8px;">How should calendar integration work?</p>
+              <p style="font-size:13px;color:#888;margin-bottom:10px;">Per Q12: support Google Calendar, Apple Calendar, and Outlook. Read-only — find schedule gaps for nudge timing, never write events. Need to decide on permission scope and fallback for users without calendars.</p>
+              <ul style="font-size:13px;padding-left:20px;"><li style="margin:4px 0;color:#ccc;">Minimal permissions (free/busy only) — we see when you're busy/free but NOT event titles, attendees, or details. Maximum privacy, minimum data.</li><li style="margin:4px 0;color:#ccc;">Event-aware (titles + times) — we can see what the event is, enabling smarter nudges ('you have a meeting in 10 min, quick stretch?'). More useful but more invasive.</li><li style="margin:4px 0;color:#ccc;">User chooses permission level — offer both tiers. 'Basic' (free/busy) or 'Smart' (event-aware). Let privacy-conscious users opt for less.</li></ul>
+              
+                <div style="margin-top:12px;padding:12px;background:#1a1a2e;border-left:3px solid #e9a045;border-radius:4px;">
+                  <p style="font-size:11px;font-weight:600;color:#e9a045;margin-bottom:6px;">NOTES</p>
+                  <p style="font-size:13px;color:#c0c0c0;line-height:1.5;white-space:pre-wrap;">OPEN. Mockup page built at /v2/calendar showing three calendar providers with interactive selection. Key design decisions from Q12 already resolved: all three calendars, read-only, covers 95%+ of market.</p><p style='font-size:13px;color:#c0c0c0;margin:8px 0;line-height:1.5;white-space:pre-wrap;'>Open sub-questions:<br>- Permission scope: free/busy only vs event titles? Privacy vs intelligence trade-off.<br>- Apple Calendar: CalDAV works in browser but EventKit (better) is native-app-only. Phase this?<br>- Fallback without calendar: user manually picks preferred nudge times (mockup shows skip option).<br>- Should gap-finding filter to user-preferred hours? Default 8am-8pm seems right.<br>- How many nudges per day in gaps? Ties to Q3 (3-minute default) and Q9 (snooze/swap logic).</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

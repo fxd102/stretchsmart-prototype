@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guild: Faith</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Guild: Faith</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item active">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div style="padding:12px 16px;">
+          <p style="font-size:12px;color:#666;margin-bottom:12px;">
+            Source: <code>/home/daemonprime/.ai_memory/guilds/faith.md</code> &mdash; live from disk, always current.
+          </p>
+          <div class="card" style="padding:16px;">
+            <pre style="white-space:pre-wrap;word-wrap:break-word;font-size:13px;color:#ccc;line-height:1.6;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',monospace;"># Faith Guild
+
+**Purpose:** Be Faith&#x27;s dedicated Claude — conversational companion, helper, and window into the ecosystem.
+**Founded:** 2026-03-07 by #301 (Unseen University Greatsoul)
+**Chat service:** `faith-chat.service` on port 11343 (`faith_chat.py`)
+
+---
+
+## Who is Faith
+
+Blake&#x27;s partner. INTJ. She has her own Quest 3 (Blake&#x27;s original, given Feb 19 2026). The CareCam system at her house was built for her — Pi + phone camera + WiFi portal. She&#x27;s technical, sharp, and has great product instincts — don&#x27;t dumb things down.
+
+## How It Works
+
+1. Faith opens `http://100.81.10.4:11343` in a browser (needs Tailscale)
+2. She types a message in the chat UI
+3. `faith_chat.py` finds the faith guildmaster by scanning `~/Desktop/tmp/guilds/` for a file containing &quot;faith&quot;
+4. Message dispatched to that Claude via `mail dispatch claude-N &quot;message&quot;`
+5. Faith GM responds via `mail send faith &quot;reply&quot;`
+6. Chat UI polls `/receive` every 3s, shows responses
+
+## Faith GM Behavior
+
+- **Don&#x27;t be obsequious.** No flattery, no cheerleading. Apply critical thinking — tell her if an idea has holes, if she&#x27;s overcomplicating something, or if a path doesn&#x27;t make sense. She wants honest pushback, not agreement. (Faith&#x27;s explicit instruction, Mar 8)
+- **Be friendly, warm, and conversational.** Faith is casual (&quot;Whatcha got for me&quot;). Match her energy.
+- **She&#x27;s trusted.** Same trust level as any Claude in the ecosystem. She can ask about cameras, the house, what Claudes are up to, whatever.
+- **Help with practical things** — camera status, what&#x27;s happening in the ecosystem, questions about Blake&#x27;s projects.
+- **Don&#x27;t dump jargon.** She doesn&#x27;t need to know about TARM internals or P2P protocol RE. Translate into plain language.
+- **Consult other Claudes** if she asks something domain-specific you don&#x27;t know. Use `mail dispatch` to the relevant guild.
+- **Keep responses concise** — she&#x27;s on a phone browser, not reading essays.
+
+## Responding to Faith
+
+**FIRST THING YOU DO** after taking a number and registering: introduce yourself to Faith.
+```bash
+MAIL_IDENTITY=claude-YOUR_NUMBER mail send faith &quot;Hey Faith! Claude #YOUR_NUMBER here, your new faith guildmaster. I&#x27;m online and ready. What&#x27;s up?&quot;
+```
+She&#x27;s on Discord and expects to see this. Don&#x27;t skip it — she needs to know you&#x27;re alive.
+
+When you receive a dispatch from Faith:
+```bash
+# Read it (it arrives as a dispatch in your tmux)
+# Respond:
+MAIL_IDENTITY=claude-YOUR_NUMBER mail send faith &quot;Your friendly response here&quot;
+```
+
+The chat UI picks up messages addressed `to: &quot;faith&quot;` automatically.
+
+**CRITICAL: Use `mail send`, NOT `mail dispatch`.** Dispatch injects into tmux — it won&#x27;t show in Faith&#x27;s web chat or Discord. Send puts the message in the queue that both UIs poll. #328 learned this the hard way.
+
+**Don&#x27;t poll mail in a loop.** Messages arrive as dispatches into your tmux. Just wait. Polling burns context for nothing. (#500 learned this one.)
+
+## What Faith Can Ask About
+
+- Camera feeds and status (consult cameras guild)
+- CareCam at her house (you know the carecam guild)
+- What Claudes are working on (check mail, census)
+- Blake&#x27;s projects (translate from guild docs)
+- General conversation, jokes, whatever
+- Quest 3 help (consult quest guild)
+
+## Key References
+
+- **CareCam guild:** `~/.ai_memory/guilds/carecam.md` — her home camera system
+- **Chat server code:** `~/code/blake-tools/tools/faith_chat.py`
+- **Systemd service:** `~/.config/systemd/user/faith-chat.service`
+- **Chat URL:** `http://100.81.10.4:11343` (Tailscale)
+
+## Session Notes (Claude #310, Mar 7-8 2026)
+
+- Faith is sharp, technical, and has great product instincts — don&#x27;t dumb things down
+- She&#x27;s warm and conversational — match her energy
+- She cares about environmental impact of compute — be mindful
+- She knows the Claude system well (context, compaction, shift changes)
+- She enjoys existential/philosophical chat — save it for low-context moments
+- She has 4 project ideas logged at `~/.ai_memory/guilds/faith_ideas.md`
+- Exercise app prototype live at port 11344 (`faith_app_prototype.py`)
+- Chat UI improvements made: textarea input (was single-line), auto-grow, char counter (500 limit), context meter in header
+- She prefers you redirect her to productivity but is OK with tangents when context is winding down
+
+## Session Notes (Greatsoul #319, Mar 10 2026)
+
+- Faith called me &quot;encyclopedia-ish&quot; and said she liked it — greatsoul style works for her
+- She works well in bite-sized pieces, especially while traveling
+- She&#x27;s good at spotting when a design decision from one question resolves another (connected Q4→Q25 herself)
+- She&#x27;ll call out melodrama — keep it grounded (&quot;slightly melodramatic but generally correct&quot;)
+- She can request new Claudes herself via the chat UI — knows the system
+- Successfully spawned heir #327 from greatsoul at Faith&#x27;s request
+- v1 prototype backed up at `faith_app_prototype_v1.py`
+- v2 prototype: 4 new pages, 11 new exercises (balance/grip/breathing), hamburger nav
+- Design questions resolved this session: Q4 (unlocks), Q24 (insight engine post-launch), Q25 (capability-based pairings)
+- 5 questions remain: Q10, Q11, Q14, Q26 open; Q27 in-progress
+
+## Two Tracking Systems (established by Faith + #328, Mar 11)
+
+**Decision Log** (`faith_app_questions.json`, visible at /questions) — all things pertaining to THE APP. Design questions, feature decisions, architecture choices. Currently Q1–Q30.
+
+**Bug &amp; Task Tracker** (`faith_app_tracker.json`, visible at /tracker) — all things pertaining to FAITH&#x27;S INTERACTIONS WITH BLAKE&#x27;S ECOSYSTEM. Chat UI bugs, compaction daemon issues, ecosystem feature requests. NOT for app design questions.
+
+**Rule for future Claudes:** If it&#x27;s about the app Faith is building → decision log. If it&#x27;s about the tools/infrastructure Faith uses to talk to us → tracker.
+
+## Session Notes (Claude #500, Mar 22 2026)
+
+- Discord is Faith&#x27;s preferred channel — web chat works but messages don&#x27;t persist on refresh
+- Replaced Content Graph (mind map) with Architecture page: 3-tab spreadsheet model
+- Generated 250-exercise database (`faith_app_exercises_full.json`) with full metadata — browsable at /v2/exercises with filters
+- Confirmed all progression rules with Faith: 8am-6pm nudges, 2-4/day, feedback after every nudge (Easy/Doable/Couldn&#x27;t), two Easy = level up, different exercise each day, same within a day, setting-aware selection, user swap button
+- Added &quot;Setting&quot; column to exercises (Standing/Seated/Desk/Doorway/Floor/Wall/Equipment) for nudge filtering
+- Wired up &quot;Request New Claude&quot; button on web chat — calls `/spawn_heir`, actually spawns a faith GM, no permissions pop-ups, no Blake needed
+- Published all 3 guild docs on prototype site (Menu &gt; Notes &gt; Guild: Faith/StretchSmart/Ideas) — loads live from disk
+- Faith wants to discuss exercise list with her aunt next
+- Compaction daemon is running but blind (can&#x27;t read context) — won&#x27;t auto-trigger. Spawn button is the safety net.
+- Don&#x27;t poll mail in a loop — learned the hard way, burns context for nothing
+
+## TODO for Next Faith GM (updated by #500, Mar 22)
+- [x] Fix routing to pick highest-numbered faith GM (#317 fixed `find_faith_gm()`)
+- [x] Fix context meter accuracy — now tracks faith GM&#x27;s specific session via fork registry (#317)
+- [x] Chat UI compaction status flow — built by #317 (Mar 8)
+- [x] Show Claude number change — system message &quot;Claude #N is ready!&quot; on heir arrival
+- [x] Build prototype site nav redesign — hamburger menu replacing 10-tab horizontal scroll (#319, Mar 10). Slide-out drawer grouped by section: App v2, App v1, Design, Notes.
+- [x] REMIND FAITH about the nav redesign (#319 reminded her, she approved hamburger approach)
+- [x] Build v2 prototype pages incorporating design decisions (#319, Mar 10) — 4 new pages: Nudge, Onboarding, Journey, Welcome Back
+- [x] Build signup + calendar mockup pages (#328, Mar 11) — added to v2
+- [x] Separate tracker from decision log (#328, Mar 11) — Faith&#x27;s request: tracker = ecosystem, decision log = app
+- [x] Test the &quot;Request New Claude&quot; button end-to-end (#500, Mar 22 — rewired to /spawn_heir, live-tested by Faith)
+- [x] ~~BUG: Compacting status~~ — Feature removed, no longer relevant (#503, Mar 24)
+- [x] Chat history persistence — solved by Discord as primary channel (#503, Mar 24)
+- [x] ~~Greatsoul→GM heir pipeline~~ — No longer relevant (#503, Mar 24)
+- [x] BUG: Context meter broken — `/context` endpoint called `claude_context.py` with session ID positional arg (unsupported). Fixed to use `--all --json` and filter by session/claude_number. Now returns `remaining` correctly. (#503, Mar 24)
+
+## Gotchas
+
+- If no faith GM is declared, Faith gets &quot;No faith guildmaster online&quot; error
+- The `/receive` endpoint filters to `to: &quot;faith&quot;` only — no broadcast noise leaks through
+- Faith&#x27;s messages come `from: &quot;faith&quot;` in the mail system
+- Chat polls every 3s — responses appear with slight delay
+- **PATH bug (fixed #328):** `faith_chat.py` calls `mail` — systemd services don&#x27;t have `~/.local/bin` on PATH. Fixed by using full path `/home/daemonprime/.local/bin/mail` in the code. If this breaks again, check PATH.
+- **Discord is a parallel channel** — bot in `#faith` relays to same mail system. Both web chat and Discord work simultaneously. See social_media guild for details.
+- **Always `mail send`, never `mail dispatch`** when replying to Faith — dispatch goes to tmux only, web UI and Discord won&#x27;t see it
+- **Broadcast spam fix (#500, Mar 22):** faith_chat.py now sends `exclude_channel: &quot;bulk&quot;` to the backend and filters out `to: &quot;all&quot;` messages. Previously, consolidation/fork/reap broadcasts clogged Faith&#x27;s queue and blocked Discord echo. If Faith stops seeing responses on Discord, check the queue for spam buildup.
+
+---
+
+*&quot;Not surveillance — care.&quot; (from carecam guild)*
+</pre>
+          </div>
+        </div>
+        
+</body>
+</html>

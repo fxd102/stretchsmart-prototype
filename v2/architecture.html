@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Architecture</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item active">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div style="padding:12px 16px;">
+          <p style="font-size:14px;color:#aaa;margin-bottom:16px;">
+            The app's progression boils down to 3 simple lists with rules connecting them.
+            Think of it like 3 tabs in a spreadsheet.
+          </p>
+
+          <!-- TAB 1: EXERCISES -->
+          <div class="card" style="margin-bottom:16px;">
+            <h3 style="margin-top:0;color:#e94560;">Tab 1: Exercise Database</h3>
+            <p style="font-size:13px;color:#aaa;margin-bottom:12px;">
+              One row per exercise. Hundreds of entries eventually. Each exercise knows what it builds on
+              and what it pairs well with &mdash; that's how the app creates individualized progressions.
+            </p>
+            <p style="font-size:12px;color:#888;margin-bottom:12px;">
+              <strong>Key concept:</strong> Users start with single exercises. As they master them, the app
+              introduces <em>paired</em> exercises (synergistic combos) for more benefit in the same time.
+            </p>
+
+            <!-- Example: a single exercise card, phone-friendly -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:12px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <strong style="color:#e94560;font-size:14px;">Hip Flexor Stretch</strong>
+                <span style="color:#666;font-size:12px;">90s &bull; Difficulty 1</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Body area:</strong> Hips
+                &bull; <strong style="color:#888;">Setting:</strong> <span style="background:#1a3a2e;color:#34d399;padding:2px 6px;border-radius:4px;font-size:11px;">Floor</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Concerns addressed:</strong> Hip tightness, back pain, sitting recovery, pelvic floor
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Builds on:</strong> <span style="color:#666;">None (starter exercise)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Pairs with:</strong>
+                <span style="color:#e9a045;">Glute Bridge</span>
+                <span style="color:#666;font-size:11px;">(antagonist &mdash; open then activate)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <strong style="color:#a78bfa;">Progression steps:</strong>
+                <span style="color:#a78bfa;">20s hold &rarr; 30s hold &rarr; add arm reach &rarr; elevated back foot</span>
+              </div>
+            </div>
+
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:12px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <strong style="color:#e94560;font-size:14px;">Single-Leg Stand</strong>
+                <span style="color:#666;font-size:12px;">60s &bull; Difficulty 2</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Body area:</strong> Balance/Core
+                &bull; <strong style="color:#888;">Setting:</strong> <span style="background:#1a2a3e;color:#6db3f2;padding:2px 6px;border-radius:4px;font-size:11px;">Standing</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Concerns addressed:</strong> Balance, fall prevention, independence, core strength
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#4ecdc4;">Builds on:</strong>
+                <span style="color:#4ecdc4;">Weight Shifts</span>
+                <span style="color:#666;font-size:11px;">(must be "learned" first)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Pairs with:</strong>
+                <span style="color:#e9a045;">Calf Raises, Glute Bridge</span>
+                <span style="color:#666;font-size:11px;">(stability + strength combo)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <strong style="color:#a78bfa;">Progression steps:</strong>
+                <span style="color:#a78bfa;">10s eyes open &rarr; 20s &rarr; 30s &rarr; eyes closed 10s &rarr; eyes closed 20s</span>
+              </div>
+            </div>
+
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:12px;margin-bottom:12px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <strong style="color:#e94560;font-size:14px;">Towel Squeeze</strong>
+                <span style="color:#666;font-size:12px;">45s &bull; Difficulty 1</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Body area:</strong> Grip/Hands
+                &bull; <strong style="color:#888;">Setting:</strong> <span style="background:#2a2a1e;color:#e9a045;padding:2px 6px;border-radius:4px;font-size:11px;">Seated</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Concerns addressed:</strong> Wrist &amp; hand mobility, independence, grip strength
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#888;">Builds on:</strong> <span style="color:#666;">None (starter exercise)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Pairs with:</strong>
+                <span style="color:#e9a045;">Finger Spread</span>
+                <span style="color:#666;font-size:11px;">(open + close grip pairing)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <strong style="color:#a78bfa;">Progression steps:</strong>
+                <span style="color:#a78bfa;">Light 5s &rarr; Firm 5s &rarr; Max 5s &rarr; Squeeze and hold 10s</span>
+              </div>
+            </div>
+
+            <div style="padding:8px;color:#666;font-size:12px;font-style:italic;border-top:1px solid #1a1a3e;">
+              Target: several hundred exercises. 26 drafted so far. Columns per exercise:<br>
+              Name, Body Area, Difficulty (1-3), Time, <strong style="color:#34d399;">Setting</strong>
+              (Standing / Seated / Desk / Doorway / Floor / Wall / Equipment),
+              Concerns Addressed, Builds On, Pairs With (+ why), Progression Steps.<br>
+              Setting drives nudge filtering &mdash; office break? Standing/Seated only. Home evening? Floor is fine.<br>
+              Aunt's PT expertise needed to fill this out properly.
+            </div>
+          </div>
+
+          <!-- TAB 2: PROGRESSION RULES -->
+          <div class="card" style="margin-bottom:16px;">
+            <h3 style="margin-top:0;color:#4ecdc4;">Tab 2: Progression Rules</h3>
+            <p style="font-size:13px;color:#aaa;margin-bottom:12px;">
+              The if/then rules that drive the whole app. Confirmed with Faith, Mar 22.
+            </p>
+
+            <div style="margin-bottom:16px;">
+              <h4 style="color:#6db3f2;margin:0 0 8px;">Nudge Delivery</h4>
+              <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;font-size:13px;color:#ccc;">
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Window:</strong> 8am &ndash; 6pm only (desk hours)</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Frequency:</strong> 2&ndash;4 nudges per day, user selects during onboarding</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Spacing:</strong> At least 2 hours between nudges</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Timing:</strong> Placed in calendar gaps (15+ min free)</p>
+                <p style="margin:0;"><strong style="color:#4ecdc4;">Each nudge contains:</strong> 1 exercise + 1 insight + feedback prompt</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <h4 style="color:#6db3f2;margin:0 0 8px;">Exercise Selection</h4>
+              <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;font-size:13px;color:#ccc;">
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Concern filter:</strong> Only exercises matching user's onboarding concerns</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Daily variety:</strong> Different exercise each day &mdash; no repeats day-to-day, even if not yet "learned"</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Within a day:</strong> Same exercise for all nudges that day (reinforcement)</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Setting aware:</strong> Picks exercises matching practical setting (Standing/Seated for office hours)</p>
+                <p style="margin:0;"><strong style="color:#4ecdc4;">Swap button:</strong> User can tap "Swap today's focus" to get a different exercise (user-initiated, not automatic)</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <h4 style="color:#6db3f2;margin:0 0 8px;">Progression &amp; Feedback</h4>
+              <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;font-size:13px;color:#ccc;">
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">After every nudge:</strong> "How did you find this?" &rarr; <span style="color:#34d399;">Easy</span> / <span style="color:#e9a045;">Challenging but doable</span> / <span style="color:#e94560;">Couldn't complete</span></p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Level up:</strong> Two "Easy" responses in a row &rarr; advance to next progression step (or next exercise if at highest step)</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Stay course:</strong> "Challenging but doable" &rarr; keep current progression step</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Dial back:</strong> "Couldn't complete" &rarr; offer easier variation or step back one progression level</p>
+                <p style="margin:0;"><strong style="color:#4ecdc4;">Exercise learned:</strong> "Easy" twice at the highest progression step &rarr; exercise mastered, rotate out</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <h4 style="color:#6db3f2;margin:0 0 8px;">Unlocks &amp; Pairings</h4>
+              <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;font-size:13px;color:#ccc;">
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Prerequisites:</strong> Don't assign an exercise until its "Builds On" exercise is learned</p>
+                <p style="margin:0 0 6px;"><strong style="color:#4ecdc4;">Paired exercises:</strong> After a user has learned several single exercises, introduce synergistic pairs (e.g., Hip Flexor Stretch + Glute Bridge together)</p>
+                <p style="margin:0;"><strong style="color:#4ecdc4;">Insights:</strong> One per nudge, matched to the exercise and user's concerns. Short (2&ndash;3 sentences). Evidence-based with citations.</p>
+              </div>
+            </div>
+
+            <div style="padding:8px;color:#666;font-size:12px;font-style:italic;border-top:1px solid #1a1a3e;">
+              Sources: Q17 (feedback), Q18 (progression), Faith session Mar 22. No fixed timeline &mdash; user's pace drives everything.
+            </div>
+          </div>
+
+          <!-- TAB 3: USER JOURNEY -->
+          <div class="card" style="margin-bottom:16px;">
+            <h3 style="margin-top:0;color:#e9a045;">Tab 3: Sample User Journey</h3>
+            <p style="font-size:13px;color:#aaa;margin-bottom:12px;">
+              <strong>Sarah, 42, desk job.</strong> Picked "back pain" and "better posture" at onboarding. Chose 3 nudges/day.
+            </p>
+
+            <!-- Day 1 -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Day 1</strong>
+                <span style="color:#666;font-size:11px;">Chest Opener (Standing, 60s)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;"><span style="color:#6db3f2;">9:15am</span> &mdash; Nudge 1 during meeting gap. "Stand up, clasp hands behind your back, squeeze shoulder blades. 20s, 3 times."</p>
+                <p style="margin:0 0 4px;"><span style="color:#888;">Insight:</span> "Sitting rounds your shoulders ~2mm per hour. What you just did reverses that."</p>
+                <p style="margin:0 0 4px;"><span style="color:#888;">Feedback:</span> <span style="color:#e9a045;">Challenging but doable</span></p>
+                <p style="margin:0 0 4px;"><span style="color:#6db3f2;">12:30pm</span> &mdash; Nudge 2 at lunch. Same exercise, different insight.</p>
+                <p style="margin:0 0 4px;"><span style="color:#6db3f2;">3:45pm</span> &mdash; Nudge 3. Same exercise. Feedback: <span style="color:#e9a045;">Challenging but doable</span></p>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Day 2</strong>
+                <span style="color:#666;font-size:11px;">Seated Spinal Twist (Seated, 60s)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;">Different exercise &mdash; still targets back pain. All 3 nudges today are Seated Spinal Twist.</p>
+                <p style="margin:0 0 4px;"><span style="color:#888;">Insight:</span> "Your thoracic spine was designed to rotate 35&deg;. Most desk workers manage about 15&deg;."</p>
+                <p style="margin:0;">Feedback: <span style="color:#34d399;">Easy</span>, <span style="color:#e9a045;">Challenging but doable</span>, <span style="color:#34d399;">Easy</span></p>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Day 3</strong>
+                <span style="color:#666;font-size:11px;">Shoulder Shrugs (Desk, 45s)</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;">New exercise. Desk-friendly &mdash; she can do it without leaving her chair.</p>
+                <p style="margin:0;">All 3 nudges: <span style="color:#34d399;">Easy</span>. Two "Easy" in a row &rarr; <strong style="color:#4ecdc4;">progression advances</strong> to next step.</p>
+              </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Day 7</strong>
+                <span style="color:#666;font-size:11px;">Cat-Cow (Floor, 60s) &rarr; SWAPPED</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;">App picks Cat-Cow (great for back pain). But Sarah's at the office &mdash; no floor space.</p>
+                <p style="margin:0 0 4px;">She taps <strong style="color:#e9a045;">"Swap today's focus"</strong> &rarr; app picks Wall Angels (Standing) instead.</p>
+                <p style="margin:0;"><span style="color:#888;">Setting filter kicks in on swap, picks from same concern pool.</span></p>
+              </div>
+            </div>
+
+            <!-- Day 14 -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Day 14</strong>
+                <span style="color:#666;font-size:11px;">Milestone!</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;">Sarah has done 5+ different exercises. <span style="color:#4ecdc4;">Milestone unlocked.</span></p>
+                <p style="margin:0 0 4px;">Shoulder Shrugs fully learned (Easy at highest progression step).</p>
+                <p style="margin:0;">Thoracic Rotation unlocks (its prerequisite Cat-Cow was learned on Day 10).</p>
+              </div>
+            </div>
+
+            <!-- Week 8+ -->
+            <div style="background:#0f0f23;border:1px solid #0f3460;border-radius:8px;padding:10px 12px;margin-bottom:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong style="color:#e9a045;">Week 8+</strong>
+                <span style="color:#666;font-size:11px;">Paired exercises introduced</span>
+              </div>
+              <div style="font-size:12px;color:#aaa;">
+                <p style="margin:0 0 4px;">Sarah has learned several single exercises. App introduces her first pair:</p>
+                <p style="margin:0 0 4px;"><strong style="color:#e9a045;">Hip Flexor Stretch + Glute Bridge</strong> <span style="color:#666;">(antagonist pairing &mdash; open then activate)</span></p>
+                <p style="margin:0;">Same nudge, two exercises, still under 3 minutes total.</p>
+              </div>
+            </div>
+
+            <div style="padding:8px;color:#666;font-size:12px;font-style:italic;border-top:1px solid #1a1a3e;">
+              This is one user's journey. Different concern picks &rarr; different exercises &rarr; different pace. The rules in Tab 2 generate infinite personalized journeys from the exercises in Tab 1.
+            </div>
+          </div>
+
+          <div class="card" style="background:#0f3460;border:1px solid #e9a045;">
+            <p style="margin:0;color:#e9a045;font-size:14px;font-weight:600;">Status: Tab 1 drafted (250 exercises), Tab 2 confirmed, Tab 3 sample done</p>
+            <p style="margin:8px 0 0;color:#aaa;font-size:13px;">
+              Next: Aunt reviews exercise database. Then we build.
+            </p>
+          </div>
+        </div>
+        
+</body>
+</html>

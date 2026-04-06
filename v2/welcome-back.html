@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v2 Welcome Back</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Welcome Back</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item active">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div class="page-content" style="max-width:440px;margin:0 auto;">
+
+          <div style="text-align:center;margin-bottom:8px;">
+            <span style="font-size:11px;color:#888;letter-spacing:1px;">V2 PROTOTYPE</span>
+          </div>
+
+          <h2>Welcome Back Flows</h2>
+          <p style="font-size:13px;color:#888;margin-bottom:20px;">
+            Every return is a win. Never create guilt — guilt makes people quit permanently.
+          </p>
+
+          <!-- Short gap (1-3 days): say nothing -->
+          <div class="card" style="border-left:3px solid #4ecdc4;">
+            <span style="font-size:11px;color:#4ecdc4;font-weight:600;">SHORT GAP (1-3 DAYS)</span>
+            <div style="text-align:center;padding:20px 0;">
+              <div style="font-size:32px;margin-bottom:12px;">&#x1F44B;</div>
+              <p style="font-size:17px;color:#e0e0e0;font-weight:600;">Your shoulders could use some love. 3 minutes?</p>
+              <p style="font-size:13px;color:#888;margin-top:8px;">— serves the next nudge like nothing happened —</p>
+            </div>
+            <div style="background:#1a1a2e;padding:10px;border-radius:8px;margin-top:12px;">
+              <p style="font-size:11px;color:#666;">
+                <strong>Design:</strong> Don't acknowledge the gap at all. The Anti-Metric didn't go down — it just didn't go up. No judgment in the data.
+              </p>
+            </div>
+          </div>
+
+          <!-- Medium gap (4-14 days): warm welcome -->
+          <div class="card" style="border-left:3px solid #e9a045;">
+            <span style="font-size:11px;color:#e9a045;font-weight:600;">MEDIUM GAP (4-14 DAYS)</span>
+            <div style="text-align:center;padding:20px 0;">
+              <div style="font-size:32px;margin-bottom:12px;">&#x1F31F;</div>
+              <p style="font-size:17px;color:#e0e0e0;font-weight:600;">Good to see you.</p>
+              <p style="font-size:15px;color:#ccc;margin-top:8px;">Let's pick up with wall angels — an easy one to get back in the groove.</p>
+
+              <div style="background:#1a2a1e;border-left:3px solid #4ecdc4;border-radius:4px;padding:12px;margin-top:16px;text-align:left;">
+                <p style="font-size:14px;color:#e0e0e0;line-height:1.5;">
+                  Every time you come back, your body remembers faster than you'd think. Muscle memory isn't a metaphor — it's stored in your cell nuclei and reactivates within days.
+                </p>
+                <p style="font-size:11px;color:#666;margin-top:6px;font-style:italic;">
+                  Gundersen, 2016 — myonuclei retention in skeletal muscle
+                </p>
+              </div>
+            </div>
+            <div style="background:#1a1a2e;padding:10px;border-radius:8px;margin-top:12px;">
+              <p style="font-size:11px;color:#666;">
+                <strong>Design:</strong> Warm, no gap length mentioned. Slightly easier exercise for day 1 back. One insight about why returning matters. Never shows "It's been 12 days."
+              </p>
+            </div>
+          </div>
+
+          <!-- Long gap (14+ days): soft restart offer -->
+          <div class="card" style="border-left:3px solid #e94560;">
+            <span style="font-size:11px;color:#e94560;font-weight:600;">LONG GAP (14+ DAYS)</span>
+            <div style="text-align:center;padding:20px 0;">
+              <div style="font-size:32px;margin-bottom:12px;">&#x1F3E0;</div>
+              <p style="font-size:17px;color:#e0e0e0;font-weight:600;">Welcome home.</p>
+              <p style="font-size:15px;color:#ccc;margin-top:8px;margin-bottom:20px;">Your body kept what you built. Want to pick up where you were, or start fresh?</p>
+
+              <div style="display:flex;gap:8px;justify-content:center;">
+                <button class="btn btn-primary" style="font-size:14px;">Continue where I was</button>
+                <button class="btn btn-secondary" style="font-size:14px;">Fresh start</button>
+              </div>
+
+              <div style="margin-top:16px;padding:12px;background:#1a1a2e;border-radius:12px;display:inline-block;">
+                <p style="font-size:11px;color:#888;margin-bottom:2px;">Days you've moved</p>
+                <p style="font-size:28px;color:#4ecdc4;font-weight:700;">47</p>
+                <p style="font-size:11px;color:#666;">Still here. Still yours.</p>
+              </div>
+            </div>
+            <div style="background:#1a1a2e;padding:10px;border-radius:8px;margin-top:12px;">
+              <p style="font-size:11px;color:#666;">
+                <strong>Design:</strong> "Welcome home" not "Welcome back." User chooses: continuity or clean slate. Anti-Metric prominently displayed — it didn't reset. Gap length NEVER shown. Every return celebrated, never penalized.
+              </p>
+            </div>
+          </div>
+
+          <!-- Competitor comparison -->
+          <div class="card" style="margin-top:20px;">
+            <h3 style="margin-top:0;">How Others Handle This</h3>
+            <div style="font-size:13px;color:#888;line-height:1.6;">
+              <p style="margin-bottom:8px;"><strong style="color:#4ecdc4;">Reframe</strong> (our model): "Welcome back! Picking up where you left off." Zero mention of gap, no streak drama. Treats every return as a win.</p>
+              <p style="margin-bottom:8px;"><strong style="color:#e9a045;">Noom</strong>: "Let's reset your program." Acknowledges gap but down-levels your color after inactivity. Feels like punishment.</p>
+              <p><strong style="color:#e94560;">Duolingo</strong>: "You've lost your streak!" The cautionary tale. Devastating for some users. Exactly what we don't do.</p>
+            </div>
+          </div>
+
+          <!-- Design notes -->
+          <div class="card" style="margin-top:24px;border:1px solid #0f3460;">
+            <p style="font-size:13px;color:#e9a045;font-weight:600;margin-bottom:8px;">V2 RETURN FLOW DECISIONS</p>
+            <div style="font-size:12px;color:#888;line-height:1.6;">
+              <p><strong>Q15:</strong> Three tiers: short (ignore it), medium (warm welcome), long (offer restart). Gap length NEVER displayed.</p>
+              <p><strong>Q1:</strong> Apple-style streaks — available in stats if you look, never guilt-tripping. Return flows don't mention streaks.</p>
+              <p><strong>Q26:</strong> Anti-Metric is the anchor. "47 — still here, still yours." Psychologically different from a reset streak.</p>
+              <p><strong>Research:</strong> "What-the-hell effect" (Polivy & Herman) — guilt after breaking a pattern causes total abandonment. Our design deliberately avoids triggering this.</p>
+            </div>
+          </div>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v2 Journey</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Journey</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item active">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div class="page-content" style="max-width:440px;margin:0 auto;">
+
+          <div style="text-align:center;margin-bottom:8px;">
+            <span style="font-size:11px;color:#888;letter-spacing:1px;">V2 PROTOTYPE</span>
+          </div>
+
+          <!-- Anti-Metric -->
+          <div style="text-align:center;margin-bottom:20px;">
+            <p style="font-size:11px;color:#888;">Days you've moved</p>
+            <p style="font-size:44px;color:#4ecdc4;font-weight:700;">47</p>
+          </div>
+
+          <h2>Your Journey</h2>
+          <p style="font-size:13px;color:#888;margin-bottom:20px;">
+            Every exercise you master unlocks something new. Not points — capability.
+          </p>
+
+          <!-- Learning phase exercises -->
+          <h3 style="color:#e94560;">Learning</h3>
+          <p style="font-size:12px;color:#888;margin-bottom:12px;">Daily focus, building the habit.</p>
+
+          <div class="card" style="border-left:3px solid #e94560;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <p style="font-size:15px;font-weight:600;color:#e0e0e0;">Single-Leg Stand</p>
+                <p style="font-size:12px;color:#888;">Week 3 of ~12 &bull; Balance</p>
+              </div>
+              <div style="text-align:right;">
+                <div style="width:60px;height:6px;background:#2a2a4a;border-radius:3px;overflow:hidden;">
+                  <div style="width:25%;height:100%;background:#e94560;border-radius:3px;"></div>
+                </div>
+                <p style="font-size:10px;color:#888;margin-top:2px;">Variation 2 of 5</p>
+              </div>
+            </div>
+            <p style="font-size:12px;color:#e9a045;margin-top:8px;">Current: Hold 15s each side &bull; Next: Hold 20s</p>
+          </div>
+
+          <div class="card" style="border-left:3px solid #e94560;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <p style="font-size:15px;font-weight:600;color:#e0e0e0;">Diaphragmatic Breathing</p>
+                <p style="font-size:12px;color:#888;">Week 5 of ~12 &bull; Breathing</p>
+              </div>
+              <div style="text-align:right;">
+                <div style="width:60px;height:6px;background:#2a2a4a;border-radius:3px;overflow:hidden;">
+                  <div style="width:42%;height:100%;background:#e94560;border-radius:3px;"></div>
+                </div>
+                <p style="font-size:10px;color:#888;margin-top:2px;">Variation 2 of 4</p>
+              </div>
+            </div>
+            <p style="font-size:12px;color:#e9a045;margin-top:8px;">Current: 4-in, 6-out &bull; Next: 4-in, 8-out</p>
+          </div>
+
+          <div class="card" style="border-left:3px solid #e94560;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <p style="font-size:15px;font-weight:600;color:#e0e0e0;">Towel Squeeze</p>
+                <p style="font-size:12px;color:#888;">Week 1 of ~12 &bull; Grip</p>
+              </div>
+              <div style="text-align:right;">
+                <div style="width:60px;height:6px;background:#2a2a4a;border-radius:3px;overflow:hidden;">
+                  <div style="width:8%;height:100%;background:#e94560;border-radius:3px;"></div>
+                </div>
+                <p style="font-size:10px;color:#888;margin-top:2px;">Variation 1 of 4</p>
+              </div>
+            </div>
+            <p style="font-size:12px;color:#e9a045;margin-top:8px;">Current: Light squeeze 5s &bull; Feedback: 2 "easy" → auto-progress</p>
+          </div>
+
+          <!-- Maintenance phase -->
+          <h3 style="color:#4ecdc4;margin-top:28px;">Maintenance</h3>
+          <p style="font-size:12px;color:#888;margin-bottom:12px;">Mastered. Appears at lower frequency. Content stays fresh via Insight Engine.</p>
+
+          <div class="card" style="border-left:3px solid #4ecdc4;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <p style="font-size:15px;font-weight:600;color:#e0e0e0;">Wall Angels</p>
+                <p style="font-size:12px;color:#888;">Mastered week 10 &bull; Posture</p>
+              </div>
+              <span style="font-size:11px;color:#4ecdc4;font-weight:600;">&#10003; Mastered</span>
+            </div>
+            <p style="font-size:12px;color:#888;margin-top:8px;">Last appeared 4 days ago &bull; Next: when rotation cycles back</p>
+          </div>
+
+          <div class="card" style="border-left:3px solid #4ecdc4;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <p style="font-size:15px;font-weight:600;color:#e0e0e0;">Chest Opener</p>
+                <p style="font-size:12px;color:#888;">Mastered week 8 &bull; Posture</p>
+              </div>
+              <span style="font-size:11px;color:#4ecdc4;font-weight:600;">&#10003; Mastered</span>
+            </div>
+            <p style="font-size:12px;color:#888;margin-top:8px;">Last appeared 6 days ago &bull; Next: when rotation cycles back</p>
+          </div>
+
+          <!-- Unlocked pairings (Q4, Q25) — capability-based, not gamified -->
+          <h3 style="color:#e9a045;margin-top:28px;">Unlocked</h3>
+          <p style="font-size:12px;color:#888;margin-bottom:12px;">You mastered both — now they combine. The unlock IS the progression.</p>
+
+          <div class="card" style="border-left:3px solid #e9a045;background:linear-gradient(135deg, #16213e 0%, #1a2a1e 100%);">
+            <div style="margin-bottom:8px;">
+              <span style="font-size:11px;color:#e9a045;font-weight:600;letter-spacing:1px;">SYNERGISTIC PAIRING</span>
+            </div>
+            <p style="font-size:16px;font-weight:600;color:#e0e0e0;margin-bottom:4px;">Wall Angels + Thoracic Rotation</p>
+            <p style="font-size:13px;color:#ccc;line-height:1.5;margin-bottom:8px;">
+              Wall angels open the front of your chest. Thoracic rotation opens the back. Together, they undo the full slouch pattern from desk work.
+            </p>
+            <p style="font-size:11px;color:#888;font-style:italic;">
+              Unlocked because you mastered both exercises individually. Your body is ready for this.
+            </p>
+          </div>
+
+          <div class="card" style="border-left:3px solid #e9a045;background:linear-gradient(135deg, #16213e 0%, #1a2a1e 100%);">
+            <div style="margin-bottom:8px;">
+              <span style="font-size:11px;color:#e9a045;font-weight:600;letter-spacing:1px;">SYNERGISTIC PAIRING</span>
+            </div>
+            <p style="font-size:16px;font-weight:600;color:#e0e0e0;margin-bottom:4px;">Hip Flexor Stretch + Glute Bridge</p>
+            <p style="font-size:13px;color:#ccc;line-height:1.5;margin-bottom:8px;">
+              The hip flexor stretch releases what sitting shortens. The glute bridge activates what sitting puts to sleep. Together, they rebalance your entire lower half.
+            </p>
+            <p style="font-size:11px;color:#888;font-style:italic;">
+              Unlocked because you mastered both exercises individually.
+            </p>
+          </div>
+
+          <!-- Coming next — shows what's ahead without a finish line -->
+          <h3 style="color:#666;margin-top:28px;">Coming Next</h3>
+          <p style="font-size:12px;color:#666;margin-bottom:12px;">These unlock when you're ready — not on a schedule.</p>
+
+          <div class="card" style="border-left:3px solid #333;opacity:0.6;">
+            <p style="font-size:15px;font-weight:600;color:#888;">Breath-Synchronized Movement</p>
+            <p style="font-size:12px;color:#666;">Master diaphragmatic breathing + any physical exercise → unlock breath-synchronized variations</p>
+          </div>
+
+          <div class="card" style="border-left:3px solid #333;opacity:0.6;">
+            <p style="font-size:15px;font-weight:600;color:#888;">Eyes-Closed Balance</p>
+            <p style="font-size:12px;color:#666;">Master single-leg stand 20s → unlock eyes-closed progression</p>
+          </div>
+
+          <!-- Design notes -->
+          <div class="card" style="margin-top:24px;border:1px solid #0f3460;">
+            <p style="font-size:13px;color:#e9a045;font-weight:600;margin-bottom:8px;">V2 JOURNEY DECISIONS</p>
+            <div style="font-size:12px;color:#888;line-height:1.6;">
+              <p><strong>Q4:</strong> Show what you've BUILT, not how far you have LEFT. No finish line.</p>
+              <p><strong>Q13:</strong> Learning → Maintenance → Combined lifecycle. Exercises never drop entirely.</p>
+              <p><strong>Q18:</strong> "~12 weeks" is adaptive. Two "easy" feedbacks → auto-progress. "Couldn't complete" → dial back.</p>
+              <p><strong>Q25:</strong> Pairings are capability-based unlocks. "Your body is ready for this" not "You earned 500 points."</p>
+              <p><strong>Q21:</strong> Breathing exercises integrate with physical movement as pairings post-mastery.</p>
+              <p><strong>Q26:</strong> Anti-Metric prominent at top. The number only goes up.</p>
+            </div>
+          </div>
+        </div>
+        
+</body>
+</html>

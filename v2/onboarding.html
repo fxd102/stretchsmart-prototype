@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v2 Onboarding</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  /* Hamburger nav */
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #16213e; padding: 10px 16px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-title {
+    font-size: 15px; font-weight: 700; color: #e94560;
+  }
+  .hamburger {
+    background: none; border: none; cursor: pointer; padding: 6px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px; background: #e0e0e0;
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+  .menu-overlay {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 200;
+  }
+  .menu-overlay.open { display: block; }
+  .menu-drawer {
+    position: fixed; top: 0; left: -280px; width: 280px; height: 100%;
+    background: #16213e; z-index: 300; transition: left 0.3s ease;
+    overflow-y: auto; padding: 20px 0;
+  }
+  .menu-drawer.open { left: 0; }
+  .menu-section {
+    padding: 8px 20px 4px; font-size: 11px; font-weight: 600;
+    color: #888; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .menu-item {
+    display: block; padding: 12px 20px; color: #ccc;
+    text-decoration: none; font-size: 15px; transition: background 0.15s;
+  }
+  .menu-item:hover { background: #1a2a4e; }
+  .menu-item.active { color: #e94560; background: #1a2040; border-left: 3px solid #e94560; }
+  .menu-divider { border-top: 1px solid #0f3460; margin: 8px 0; }
+  .page-content {
+    flex: 1; padding: 20px 16px; max-width: 500px;
+    margin: 0 auto; width: 100%;
+  }
+  h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
+  h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }
+  .card {
+    background: #16213e; border-radius: 16px; padding: 20px;
+    margin-bottom: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; margin: 2px;
+    background: #2a2a4a; color: #aaa;
+  }
+  .tag.posture { background: #1a3a5c; color: #6db3f2; }
+  .tag.mobility { background: #1a4a3a; color: #4ecdc4; }
+  .tag.flexibility { background: #4a3a1a; color: #e9a045; }
+  .btn {
+    padding: 12px 24px; border-radius: 25px; border: none;
+    font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: transform 0.1s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-primary { background: #e94560; color: white; }
+  .btn-secondary { background: #2a2a4a; color: #aaa; }
+  .status-open { color: #e9a045; }
+  .status-decided { color: #4ecdc4; }
+  .source { font-size: 11px; color: #666; margin-top: 8px; font-style: italic; }
+</style>
+</head>
+<body>
+
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <span class="topbar-title">Onboarding</span>
+      <span style="width:34px;"></span>
+    </div>
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+    <div class="menu-drawer" id="menu-drawer">
+      <div style="padding:16px 20px 12px;">
+        <span style="font-size:18px;font-weight:700;color:#e94560;">Faith's Projects</span>
+      </div>
+      <div class="menu-divider"></div>
+      <div class="menu-section">App v2</div><a href="/v2/index.html" class="menu-item">Today's Focus</a><a href="/v2/onboarding.html" class="menu-item active">Onboarding</a><a href="/v2/signup.html" class="menu-item">Sign Up</a><a href="/v2/calendar.html" class="menu-item">Calendar</a><a href="/v2/journey.html" class="menu-item">Journey</a><a href="/v2/welcome-back.html" class="menu-item">Welcome Back</a><a href="/welcome.html" class="menu-item">Day 1</a><div class="menu-divider"></div><div class="menu-section">App v1</div><a href="/index.html" class="menu-item">Today's Focus</a><div class="menu-divider"></div><div class="menu-section">Design</div><a href="/questions.html" class="menu-item">Decision Log</a><a href="/insights.html" class="menu-item">Insights Library</a><a href="/tracker.html" class="menu-item">Ecosystem Tracker</a><div class="menu-divider"></div><div class="menu-section">Aviatrix Adventures</div><a href="/aviatrix.html" class="menu-item">Vision & Plan</a><div class="menu-divider"></div><div class="menu-section">Notes</div><a href="/musings.html" class="menu-item">310's Musings</a><a href="/v2/architecture.html" class="menu-item">Architecture</a><a href="/v2/exercises.html" class="menu-item">Exercise Database</a><a href="/guild/faith.html" class="menu-item">Guild: Faith</a><a href="/guild/faith_app.html" class="menu-item">Guild: StretchSmart</a><a href="/guild/faith_ideas.html" class="menu-item">Guild: Ideas</a><a href="/on-being-500.html" class="menu-item">On Being 500</a><div class="menu-divider"></div>
+      <div style="padding:12px 20px;font-size:11px;color:#555;">
+        Built by Claudes #310, #317, #319
+      </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('menu-overlay').classList.toggle('open');
+      document.getElementById('menu-drawer').classList.toggle('open');
+    }
+    </script>
+    
+
+        <div class="page-content" style="max-width:440px;margin:0 auto;">
+
+          <div style="text-align:center;margin-bottom:8px;">
+            <span style="font-size:11px;color:#888;letter-spacing:1px;">V2 PROTOTYPE</span>
+          </div>
+
+          <!-- Step 1: Concerns (Q27 — 25 items, pick up to 3) -->
+          <div class="card" id="ob-step1">
+            <h3 style="margin-top:0;color:#4ecdc4;">What matters most to you?</h3>
+            <p style="font-size:13px;color:#888;margin-bottom:12px;">Pick up to 3. This shapes your exercises and insights.</p>
+            <div id="ob-concerns" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;"></div>
+            <button class="btn btn-primary" id="ob-next1" onclick="obStep2()" disabled>Next</button>
+          </div>
+
+          <!-- Step 2: Age + Gender (Q2 — both optional) -->
+          <div class="card" id="ob-step2" style="display:none;">
+            <h3 style="margin-top:0;color:#4ecdc4;">A little about you</h3>
+            <p style="font-size:13px;color:#888;margin-bottom:12px;">Helps us tailor exercises. Both optional — skip if you'd rather not.</p>
+
+            <p style="font-size:13px;color:#ccc;margin-bottom:8px;">Age range:</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;" id="ob-ages"></div>
+
+            <p style="font-size:13px;color:#ccc;margin-bottom:8px;">How would you like exercises tailored?</p>
+            <div style="display:flex;gap:6px;margin-bottom:16px;" id="ob-gender"></div>
+
+            <div style="display:flex;gap:8px;">
+              <button class="btn btn-primary" onclick="obStep3()">Next</button>
+              <button class="btn btn-secondary" onclick="obStep3()">Skip</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Nudge preferences (from v1) -->
+          <div class="card" id="ob-step3-nudge" style="display:none;">
+            <h3 style="margin-top:0;color:#4ecdc4;">When should we nudge you?</h3>
+            <p style="font-size:13px;color:#888;margin-bottom:16px;">We'll find gaps in your calendar and text you when it's time to move.</p>
+            <div style="margin-bottom:16px;">
+              <p style="font-size:14px;color:#ccc;margin-bottom:6px;">Max reminders per day</p>
+              <div style="display:flex;gap:6px;" id="ob-freq"></div>
+            </div>
+            <div style="margin-bottom:20px;">
+              <p style="font-size:14px;color:#ccc;margin-bottom:6px;">Minimum gap between reminders</p>
+              <div style="display:flex;gap:6px;" id="ob-gap"></div>
+            </div>
+            <button class="btn btn-primary" onclick="obStep3Exercise()">Next</button>
+          </div>
+
+          <!-- Step 4: Personalized hook + IMMEDIATE first exercise (Q23) -->
+          <div class="card" id="ob-step3" style="display:none;">
+            <div style="text-align:center;padding:12px 0;">
+              <div style="font-size:40px;margin-bottom:12px;">&#x1F331;</div>
+              <p style="font-size:17px;color:#e0e0e0;font-weight:600;line-height:1.4;margin-bottom:12px;" id="ob-hook">
+                At 80, the people who can still pick up their grandkids off the floor have one thing in common: they started moving intentionally in their 40s and 50s.
+              </p>
+              <p style="font-size:14px;color:#888;margin-bottom:4px;">You just took the first step.</p>
+              <p style="font-size:11px;color:#666;font-style:italic;margin-bottom:20px;">
+                Pahor et al., JAMA 2014; Attia, Outlive, 2023
+              </p>
+
+              <p style="font-size:18px;color:#4ecdc4;font-weight:600;margin-bottom:16px;">Ready for 60 seconds?</p>
+
+              <!-- First exercise right here — no leaving this screen (Q23) -->
+              <div style="background:#1a1a2e;border-radius:12px;padding:16px;text-align:left;margin-bottom:16px;">
+                <p style="font-size:18px;font-weight:700;color:#e94560;margin-bottom:6px;" id="ob-first-exercise">Single-Leg Stand</p>
+                <p style="font-size:14px;color:#ccc;line-height:1.5;" id="ob-first-desc">Stand on one leg, other foot lifted slightly. Hold 10 seconds each side. Stay near a wall for safety.</p>
+              </div>
+
+              <div style="position:relative;width:100px;height:100px;margin:0 auto 12px;">
+                <svg width="100" height="100">
+                  <circle fill="none" stroke="#2a2a4a" stroke-width="4" cx="50" cy="50" r="44"/>
+                  <circle fill="none" stroke="#4ecdc4" stroke-width="4" cx="50" cy="50" r="44"
+                    id="ob-ring" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"
+                    style="transform:rotate(-90deg);transform-origin:center;transition:stroke-dashoffset 0.3s;"/>
+                </svg>
+                <div id="ob-timer" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:28px;font-weight:700;color:#fff;">1:00</div>
+              </div>
+              <button class="btn btn-primary" id="ob-go" onclick="obStartTimer()" style="background:#4ecdc4;color:#1a1a2e;">Let's Go</button>
+            </div>
+          </div>
+
+          <!-- Step 5: Celebration (Q23 — instant gratification, Anti-Metric starts) -->
+          <div class="card" id="ob-step4" style="display:none;text-align:center;">
+            <div style="font-size:48px;margin-bottom:12px;">&#x2728;</div>
+            <p style="font-size:22px;color:#4ecdc4;font-weight:700;margin-bottom:8px;">Day 1. Done.</p>
+            <p style="font-size:14px;color:#ccc;margin-bottom:20px;">That's one day your body will remember.</p>
+            <div style="padding:16px;background:#1a1a2e;border-radius:12px;display:inline-block;margin-bottom:16px;">
+              <p style="font-size:11px;color:#888;margin-bottom:4px;">Days you've moved</p>
+              <p style="font-size:40px;color:#4ecdc4;font-weight:700;">1</p>
+            </div>
+            <p style="font-size:12px;color:#666;margin-bottom:20px;">This number only goes up. It never resets.</p>
+
+            <p style="font-size:14px;color:#888;">Your next nudge arrives in your first calendar gap tomorrow.</p>
+            <a href="/v2/index.html" class="btn btn-primary" style="display:inline-block;margin-top:16px;text-decoration:none;">See What a Nudge Looks Like</a>
+          </div>
+
+          <!-- Design notes -->
+          <div class="card" style="margin-top:24px;border:1px solid #0f3460;">
+            <p style="font-size:13px;color:#e9a045;font-weight:600;margin-bottom:8px;">V2 ONBOARDING DECISIONS</p>
+            <div style="font-size:12px;color:#888;line-height:1.6;">
+              <p><strong>Q2:</strong> Age by decade + gender, both optional. Gender framed as "exercise tailoring" not demographics.</p>
+              <p><strong>Q8:</strong> Concerns are GOALS not DIAGNOSES. "Better posture" not "scoliosis." Wellness, never medical.</p>
+              <p><strong>Q23:</strong> Install → first exercise complete in under 3 minutes. Exercise happens ON this screen, not a separate page.</p>
+              <p><strong>Q27:</strong> 25 concern options (up from 8). Flat list, no categories. Aunt review pending.</p>
+              <p><strong>Q26:</strong> Anti-Metric appears for the first time at the celebration screen.</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+        const obConcerns = [{"id": "back_pain", "label": "Back pain"}, {"id": "neck_tension", "label": "Neck tension"}, {"id": "shoulder_tension", "label": "Shoulder tension"}, {"id": "better_posture", "label": "Better posture"}, {"id": "desk_recovery", "label": "Desk work recovery"}, {"id": "joint_stiffness", "label": "Joint stiffness"}, {"id": "hip_tightness", "label": "Hip tightness"}, {"id": "ankle_mobility", "label": "Ankle mobility"}, {"id": "balance", "label": "Balance"}, {"id": "fall_prevention", "label": "Fall prevention"}, {"id": "flexibility", "label": "Flexibility"}, {"id": "better_sleep", "label": "Better sleep"}, {"id": "more_energy", "label": "More energy"}, {"id": "stress_relief", "label": "Stress relief"}, {"id": "breathing", "label": "Breathing & lung capacity"}, {"id": "independence", "label": "Stay independent as I age"}, {"id": "keep_up", "label": "Keep up with kids/grandkids"}, {"id": "core_strength", "label": "Core strength"}, {"id": "wrist_hand", "label": "Wrist & hand mobility"}, {"id": "knee_health", "label": "Knee health"}, {"id": "sitting_recovery", "label": "Recovery from sitting all day"}, {"id": "thoracic", "label": "Thoracic (upper back) mobility"}, {"id": "pelvic_floor", "label": "Pelvic floor health"}, {"id": "jaw_tmj", "label": "Jaw/TMJ tension"}, {"id": "general_wellness", "label": "General wellness"}];
+        let obSelected = new Set();
+
+        function renderObConcerns() {
+          var el = document.getElementById('ob-concerns');
+          obConcerns.forEach(function(c) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = c.label;
+            btn.style.fontSize = '13px';
+            btn.style.padding = '8px 14px';
+            btn.onclick = function() {
+              if (obSelected.has(c.id)) {
+                obSelected.delete(c.id);
+                btn.style.background = '#2a2a4a';
+                btn.style.color = '#aaa';
+              } else if (obSelected.size < 3) {
+                obSelected.add(c.id);
+                btn.style.background = '#e94560';
+                btn.style.color = 'white';
+              }
+              document.getElementById('ob-next1').disabled = obSelected.size === 0;
+            };
+            el.appendChild(btn);
+          });
+        }
+
+        function renderObAges() {
+          var el = document.getElementById('ob-ages');
+          ['Under 30','30s','40s','50s','60s','70+'].forEach(function(a) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = a;
+            btn.style.fontSize = '13px';
+            btn.style.padding = '8px 14px';
+            btn.onclick = function() {
+              el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
+              btn.style.background = '#e94560'; btn.style.color = 'white';
+            };
+            el.appendChild(btn);
+          });
+        }
+
+        function renderObGender() {
+          var el = document.getElementById('ob-gender');
+          ['Female','Male','Prefer not to say'].forEach(function(g) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = g;
+            btn.style.fontSize = '13px';
+            btn.style.padding = '8px 14px';
+            btn.onclick = function() {
+              el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
+              btn.style.background = '#e94560'; btn.style.color = 'white';
+            };
+            el.appendChild(btn);
+          });
+        }
+
+        function renderObFreq() {
+          var el = document.getElementById('ob-freq');
+          [2, 3, 4, 5].forEach(function(n) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = n;
+            btn.style.fontSize = '14px';
+            btn.style.padding = '10px 18px';
+            btn.onclick = function() {
+              el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
+              btn.style.background = '#e94560'; btn.style.color = 'white';
+            };
+            el.appendChild(btn);
+          });
+        }
+
+        function renderObGap() {
+          var el = document.getElementById('ob-gap');
+          ['1 hour', '1.5 hours', '2 hours', '3 hours'].forEach(function(g) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = g;
+            btn.style.fontSize = '13px';
+            btn.style.padding = '10px 14px';
+            btn.onclick = function() {
+              el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
+              btn.style.background = '#e94560'; btn.style.color = 'white';
+            };
+            el.appendChild(btn);
+          });
+        }
+
+        function obStep2() { document.getElementById('ob-step1').style.display='none'; document.getElementById('ob-step2').style.display='block'; }
+        function obStep3() {
+          document.getElementById('ob-step2').style.display='none';
+          document.getElementById('ob-step3-nudge').style.display='block';
+        }
+        function obStep3Exercise() {
+          document.getElementById('ob-step3-nudge').style.display='none';
+          document.getElementById('ob-step3').style.display='block';
+          // Personalize hook based on picks (Q23)
+          var hooks = {
+            'independence': "At 80, the people who can still pick up their grandkids off the floor have one thing in common: they started moving intentionally in their 40s and 50s.",
+            'balance': "One in three adults over 65 falls each year. The single best predictor of whether you'll be one of them? How long you can stand on one leg right now.",
+            'back_pain': "80% of adults experience back pain. The ones who recover fastest aren't the ones who rest — they're the ones who move intentionally, every day.",
+            'desk_recovery': "After 8 hours at a desk, your hip flexors are 40% shorter than they should be. 60 seconds can start undoing that. Right now.",
+            'stress_relief': "A single minute of intentional breathing reduces cortisol levels measurably. Not over weeks — right now, in the next 60 seconds.",
+            'breathing': "Most adults use only 70% of their lung capacity. Not because of damage — because of habit. Let's fix that in 60 seconds.",
+          };
+          obSelected.forEach(function(id) {
+            if (hooks[id]) document.getElementById('ob-hook').textContent = hooks[id];
+          });
+        }
+
+        var obTimerInt = null;
+        var obRem = 60;
+        function obStartTimer() {
+          if (obTimerInt) return;
+          document.getElementById('ob-go').textContent = 'Going...';
+          document.getElementById('ob-go').disabled = true;
+          obTimerInt = setInterval(function() {
+            obRem--;
+            document.getElementById('ob-timer').textContent = '0:' + String(obRem).padStart(2,'0');
+            document.getElementById('ob-ring').style.strokeDashoffset = 276.46 * (1 - obRem / 60);
+            if (obRem <= 0) {
+              clearInterval(obTimerInt);
+              document.getElementById('ob-step3').style.display = 'none';
+              document.getElementById('ob-step4').style.display = 'block';
+            }
+          }, 1000);
+        }
+
+        renderObConcerns();
+        renderObAges();
+        renderObGender();
+        renderObFreq();
+        renderObGap();
+        </script>
+
+        <style>
+          .tag.balance { background: #1a3a4a; color: #5db8c4; }
+          .tag.grip { background: #3a2a1a; color: #c4975d; }
+          .tag.breathing { background: #1a3a2a; color: #5dc47a; }
+        </style>
+        
+</body>
+</html>
