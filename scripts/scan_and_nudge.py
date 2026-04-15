@@ -204,7 +204,10 @@ def post_discord(
     req = urlreq.Request(
         webhook_url,
         data=json.dumps({"content": content}).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": "StretchSmart/1.0 (+https://fxd102.github.io/stretchsmart-prototype)",
+        },
         method="POST",
     )
     try:
