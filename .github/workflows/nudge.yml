@@ -1,0 +1,50 @@
+name: StretchSmart Nudge
+
+on:
+  schedule:
+    # Every 10 minutes from 11:00 to 23:00 UTC.
+    # Covers 7am-7pm EDT (UTC-4) and 6am-6pm EST (UTC-5) — safe across DST.
+    - cron: '*/10 11-23 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stretchsmart-nudge
+  cancel-in-progress: false
+
+jobs:
+  nudge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run nudge scanner
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TZ: America/New_York
+        run: python scripts/scan_and_nudge.py
+
+      - name: Commit state if changed
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name "stretchsmart-bot"
+            git config user.email "noreply@stretchsmart.app"
+            git add state/
+            git commit -m "nudge: update state"
+            git pull --rebase origin main || true
+            git push
+          fi
