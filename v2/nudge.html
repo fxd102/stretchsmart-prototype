@@ -110,6 +110,25 @@
     font-size: 12px; color: #888; text-decoration: none;
     margin-top: 28px;
   }
+  .hook {
+    font-size: 15px; color: #ccc; font-style: italic;
+    text-align: center; margin-bottom: 12px;
+    line-height: 1.5; min-height: 22px;
+  }
+  .insight-card {
+    display: none; background: #16213e; border-radius: 16px;
+    padding: 18px; width: 100%; margin-bottom: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border-left: 3px solid #4ecdc4;
+  }
+  .insight-card.show { display: block; }
+  .insight-text {
+    font-size: 14px; color: #ccc; line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .insight-src {
+    font-size: 11px; color: #888; font-style: italic;
+  }
   .illustration {
     width: 160px; height: 160px;
     margin: 0 auto 16px;
@@ -123,6 +142,7 @@
 <body>
   <div class="container">
     <div class="eyebrow">StretchSmart</div>
+    <p class="hook" id="hook"></p>
     <h1 id="ex-name">Loading…</h1>
     <div class="duration-hint" id="ex-duration"></div>
 
@@ -157,6 +177,11 @@
       <button class="fb-btn couldnt" onclick="submitFeedback('couldnt')">Couldn't</button>
     </div>
 
+    <div class="insight-card" id="insight-card">
+      <p class="insight-text" id="insight-text"></p>
+      <p class="insight-src" id="insight-src"></p>
+    </div>
+
     <div class="done-msg" id="done-msg">
       ✓ Logged. Same exercise on your next nudge today.
     </div>
@@ -173,6 +198,38 @@ let timerId = null;
 let audioCtx = null;
 
 const POSITION_LABELS = {seated: 'Seated', standing: 'Standing', floor: 'Floor'};
+
+const HOOKS = {
+  morning: [
+    "Your body's been waiting for this. Ready?",
+    "Good morning to your muscles.",
+    "You know what feels better than sitting? This.",
+    "Start the day by showing up for yourself.",
+  ],
+  midday: [
+    "Quick check-in with your body. Just a minute.",
+    "Halfway through your day. Time to move.",
+    "Your future self thanks you for this one.",
+    "You've been great today. Keep the streak.",
+  ],
+  afternoon: [
+    "One more today. This is the one that compounds.",
+    "Almost done for the day. Let's close it out.",
+    "You've already shown up. One more round.",
+    "Last stretch of the day. Make it count.",
+  ],
+};
+
+const CATEGORY_MAP = {
+  'Neck': 'posture', 'Shoulders': 'posture', 'Upper Back': 'posture',
+  'Chest': 'posture', 'Lower Back': 'flexibility', 'Core': 'mobility',
+  'Hips': 'mobility', 'Glutes': 'flexibility', 'Quads': 'flexibility',
+  'Hamstrings': 'flexibility', 'Calves/Ankles': 'mobility',
+  'Wrists/Hands': 'mobility', 'Balance': 'mobility',
+  'Breathing': 'posture', 'Full Body': 'mobility',
+};
+
+let insights = [];
 
 function exerciseSlug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
@@ -202,7 +259,19 @@ async function loadExercise() {
   const img = document.createElement('img');
   img.src = '/stretchsmart-prototype/img/exercises/' + slug + '.svg';
   img.alt = exercise.name;
+  img.onerror = function() { this.style.display = 'none'; };
   document.getElementById('ex-illust').appendChild(img);
+
+  // Hook text based on time of day
+  const hr = new Date().getHours();
+  const period = hr < 11 ? 'morning' : hr < 14 ? 'midday' : 'afternoon';
+  const hookList = HOOKS[period];
+  document.getElementById('hook').textContent = hookList[Math.floor(Math.random() * hookList.length)];
+
+  // Load insights for post-exercise display
+  try {
+    insights = await fetch('/stretchsmart-prototype/api/insights.json').then(r => r.json());
+  } catch (e) { insights = []; }
 
   buildChoosers();
 }
@@ -318,6 +387,19 @@ function submitFeedback(val) {
   log.push({ t: new Date().toISOString(), exercise: exercise.name, rating: val });
   localStorage.setItem('ss_feedback', JSON.stringify(log));
   document.getElementById('feedback').classList.remove('show');
+
+  // Show a relevant insight if available
+  const area = exercise.body_area || '';
+  const cat = CATEGORY_MAP[area] || '';
+  let matched = insights.filter(i => i.category === cat);
+  if (!matched.length) matched = insights;
+  if (matched.length) {
+    const pick = matched[Math.floor(Math.random() * matched.length)];
+    document.getElementById('insight-text').textContent = pick.text;
+    document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
+    document.getElementById('insight-card').classList.add('show');
+  }
+
   document.getElementById('done-msg').classList.add('show');
 }
 
