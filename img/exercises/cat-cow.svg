@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head looking slightly down -->
+    <circle cx="55" cy="80" r="12"/>
+    <!-- Neck -->
+    <line x1="65" y1="85" x2="75" y2="90"/>
+    <!-- Spine arched up (cat position) -->
+    <path d="M 75 90 Q 100 60 140 90" />
+    <!-- Arms (hands on floor) -->
+    <line x1="75" y1="90" x2="70" y2="130"/>
+    <line x1="70" y1="130" x2="68" y2="155"/>
+    <!-- Legs (knees on floor) -->
+    <line x1="140" y1="90" x2="140" y2="130"/>
+    <line x1="140" y1="130" x2="145" y2="155"/>
+    <!-- Hands and knees -->
+    <circle cx="68" cy="155" r="3" fill="#e0e0e0"/>
+    <circle cx="145" cy="155" r="3" fill="#e0e0e0"/>
+  </g>
+  <!-- Ground -->
+  <line x1="45" y1="158" x2="165" y2="158" stroke="#3a3a5a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Up/down arrow at spine peak showing alternating motion -->
+  <line x1="107" y1="55" x2="107" y2="35" stroke="#4ecdc4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="102,38 107,28 112,38" fill="#4ecdc4"/>
+  <line x1="107" y1="55" x2="107" y2="75" stroke="#4ecdc4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="102,72 107,82 112,72" fill="#4ecdc4"/>
+</svg>

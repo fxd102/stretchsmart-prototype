@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Ground -->
+  <line x1="15" y1="160" x2="185" y2="160" stroke="#3a3a5a" stroke-width="2" stroke-linecap="round"/>
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head on floor -->
+    <circle cx="35" cy="145" r="12"/>
+    <!-- Neck to shoulders -->
+    <line x1="47" y1="145" x2="58" y2="145"/>
+    <!-- Upper back on floor -->
+    <line x1="58" y1="145" x2="70" y2="155"/>
+    <!-- Back arched up (bridge) -->
+    <line x1="70" y1="155" x2="85" y2="130"/>
+    <!-- Hips lifted -->
+    <line x1="85" y1="130" x2="110" y2="115"/>
+    <!-- To pelvis -->
+    <line x1="110" y1="115" x2="120" y2="120"/>
+    <!-- Upper legs (thighs angled down to knees) -->
+    <line x1="120" y1="120" x2="145" y2="135"/>
+    <!-- Lower legs (shin vertical) -->
+    <line x1="145" y1="135" x2="148" y2="158"/>
+    <!-- Feet on floor -->
+    <line x1="148" y1="158" x2="158" y2="160"/>
+    <!-- Arms flat on floor -->
+    <line x1="65" y1="148" x2="55" y2="158"/>
+    <line x1="75" y1="148" x2="85" y2="158"/>
+  </g>
+  <!-- Upward arrow at hips -->
+  <line x1="105" y1="112" x2="105" y2="88" stroke="#4ecdc4" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="100,91 105,81 110,91" fill="#4ecdc4"/>
+</svg>

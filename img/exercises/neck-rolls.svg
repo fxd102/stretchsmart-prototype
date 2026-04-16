@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Chair seat -->
+    <line x1="70" y1="140" x2="130" y2="140" stroke="#3a3a5a" stroke-width="3"/>
+    <!-- Chair back -->
+    <line x1="125" y1="100" x2="130" y2="140" stroke="#3a3a5a" stroke-width="3"/>
+    <!-- Torso -->
+    <line x1="100" y1="90" x2="100" y2="140"/>
+    <!-- Head tilted to right -->
+    <circle cx="112" cy="72" r="14"/>
+    <!-- Neck -->
+    <line x1="100" y1="90" x2="108" y2="78"/>
+    <!-- Arms resting on thighs -->
+    <line x1="100" y1="105" x2="78" y2="130"/>
+    <line x1="100" y1="105" x2="122" y2="130"/>
+    <!-- Upper legs -->
+    <line x1="100" y1="140" x2="80" y2="170"/>
+    <line x1="100" y1="140" x2="120" y2="170"/>
+    <!-- Lower legs -->
+    <line x1="80" y1="170" x2="78" y2="190"/>
+    <line x1="120" y1="170" x2="122" y2="190"/>
+  </g>
+  <!-- Circular arrow around head -->
+  <path d="M 130 60 A 25 25 0 1 1 112 48" stroke="#4ecdc4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="112,43 112,53 120,48" fill="#4ecdc4"/>
+</svg>

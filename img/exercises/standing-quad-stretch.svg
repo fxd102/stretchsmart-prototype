@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Wall for balance -->
+  <line x1="55" y1="20" x2="55" y2="190" stroke="#3a3a5a" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head -->
+    <circle cx="100" cy="38" r="14"/>
+    <!-- Neck -->
+    <line x1="100" y1="52" x2="100" y2="60"/>
+    <!-- Torso -->
+    <line x1="100" y1="60" x2="100" y2="120"/>
+    <!-- Left arm on wall -->
+    <line x1="100" y1="72" x2="75" y2="80"/>
+    <line x1="75" y1="80" x2="55" y2="75"/>
+    <!-- Right arm reaching back to foot -->
+    <line x1="100" y1="72" x2="120" y2="90"/>
+    <line x1="120" y1="90" x2="130" y2="120"/>
+    <!-- Standing leg -->
+    <line x1="100" y1="120" x2="95" y2="160"/>
+    <line x1="95" y1="160" x2="93" y2="190"/>
+    <!-- Bent leg pulled back -->
+    <line x1="100" y1="120" x2="115" y2="145"/>
+    <line x1="115" y1="145" x2="130" y2="120"/>
+    <!-- Foot -->
+    <line x1="85" y1="190" x2="100" y2="190"/>
+  </g>
+  <!-- Arrow showing pull toward glute -->
+  <path d="M 135 130 A 15 15 0 0 1 135 112" stroke="#4ecdc4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="131,115 140,110 137,120" fill="#4ecdc4"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Low step/block -->
+  <rect x="45" y="155" width="40" height="15" rx="3" stroke="#3a3a5a" stroke-width="2.5" fill="none"/>
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head leaning forward -->
+    <circle cx="82" cy="38" r="13"/>
+    <!-- Neck -->
+    <line x1="86" y1="50" x2="90" y2="58"/>
+    <!-- Torso leaning forward from hips -->
+    <line x1="90" y1="58" x2="110" y2="108"/>
+    <!-- Arms reaching toward extended foot -->
+    <line x1="92" y1="70" x2="72" y2="85"/>
+    <line x1="72" y1="85" x2="60" y2="110"/>
+    <line x1="92" y1="70" x2="85" y2="90"/>
+    <line x1="85" y1="90" x2="70" y2="115"/>
+    <!-- Extended leg on step (heel on block) -->
+    <line x1="110" y1="108" x2="80" y2="135"/>
+    <line x1="80" y1="135" x2="65" y2="155"/>
+    <!-- Standing leg -->
+    <line x1="110" y1="108" x2="120" y2="150"/>
+    <line x1="120" y1="150" x2="122" y2="185"/>
+    <!-- Foot -->
+    <line x1="115" y1="185" x2="130" y2="185"/>
+  </g>
+  <!-- Ground -->
+  <line x1="40" y1="185" x2="140" y2="185" stroke="#3a3a5a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Arrow showing lean forward at hips -->
+  <path d="M 95 65 A 30 30 0 0 0 78 50" stroke="#4ecdc4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="74,53 75,43 82,50" fill="#4ecdc4"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g stroke="#3a3a5a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Chair seat -->
+    <line x1="60" y1="120" x2="130" y2="120"/>
+    <!-- Chair back -->
+    <line x1="125" y1="80" x2="130" y2="120"/>
+    <!-- Chair legs -->
+    <line x1="65" y1="120" x2="60" y2="185"/>
+    <line x1="125" y1="120" x2="130" y2="185"/>
+  </g>
+  <g stroke="#e0e0e0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Head leaning slightly forward -->
+    <circle cx="95" cy="50" r="14"/>
+    <!-- Neck -->
+    <line x1="95" y1="64" x2="97" y2="72"/>
+    <!-- Torso leaning forward slightly -->
+    <line x1="97" y1="72" x2="100" y2="120"/>
+    <!-- Arms on crossed knee -->
+    <line x1="97" y1="85" x2="78" y2="100"/>
+    <line x1="78" y1="100" x2="75" y2="125"/>
+    <line x1="97" y1="85" x2="110" y2="100"/>
+    <line x1="110" y1="100" x2="95" y2="125"/>
+    <!-- Left leg (planted foot) -->
+    <line x1="100" y1="120" x2="85" y2="150"/>
+    <line x1="85" y1="150" x2="83" y2="185"/>
+    <!-- Right leg crossed over (figure 4) -->
+    <line x1="100" y1="120" x2="115" y2="135"/>
+    <line x1="115" y1="135" x2="80" y2="140"/>
+    <!-- Crossed ankle rests on opposite knee -->
+    <circle cx="80" cy="140" r="3" fill="#e0e0e0"/>
+  </g>
+  <!-- Arrow showing lean forward -->
+  <path d="M 88 55 A 20 20 0 0 0 78 70" stroke="#4ecdc4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <polygon points="74,67 76,77 82,70" fill="#4ecdc4"/>
+</svg>
