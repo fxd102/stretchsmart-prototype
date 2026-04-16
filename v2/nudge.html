@@ -220,15 +220,6 @@ const HOOKS = {
   ],
 };
 
-const CATEGORY_MAP = {
-  'Neck': 'posture', 'Shoulders': 'posture', 'Upper Back': 'posture',
-  'Chest': 'posture', 'Lower Back': 'flexibility', 'Core': 'mobility',
-  'Hips': 'mobility', 'Glutes': 'flexibility', 'Quads': 'flexibility',
-  'Hamstrings': 'flexibility', 'Calves/Ankles': 'mobility',
-  'Wrists/Hands': 'mobility', 'Balance': 'mobility',
-  'Breathing': 'posture', 'Full Body': 'mobility',
-};
-
 let insights = [];
 
 function exerciseSlug(name) {
@@ -388,13 +379,25 @@ function submitFeedback(val) {
   localStorage.setItem('ss_feedback', JSON.stringify(log));
   document.getElementById('feedback').classList.remove('show');
 
-  // Show a relevant insight if available
-  const area = exercise.body_area || '';
-  const cat = CATEGORY_MAP[area] || '';
-  let matched = insights.filter(i => i.category === cat);
-  if (!matched.length) matched = insights;
-  if (matched.length) {
-    const pick = matched[Math.floor(Math.random() * matched.length)];
+  // Match insight by tag overlap with exercise concerns/tags
+  const exTags = [...(exercise.concerns || []), ...(exercise.tags || [])].map(t => t.toLowerCase());
+  if (insights.length && exTags.length) {
+    const scored = insights.map(ins => {
+      const iTags = (ins.tags || []).map(t => t.toLowerCase());
+      const overlap = iTags.filter(it =>
+        exTags.some(et => et.includes(it) || it.includes(et))
+      ).length;
+      return {ins, score: overlap};
+    });
+    const maxScore = Math.max(...scored.map(s => s.score));
+    const best = scored.filter(s => s.score === maxScore && s.score > 0);
+    const pool = best.length ? best : scored;
+    const pick = pool[Math.floor(Math.random() * pool.length)].ins;
+    document.getElementById('insight-text').textContent = pick.text;
+    document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
+    document.getElementById('insight-card').classList.add('show');
+  } else if (insights.length) {
+    const pick = insights[Math.floor(Math.random() * insights.length)];
     document.getElementById('insight-text').textContent = pick.text;
     document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
     document.getElementById('insight-card').classList.add('show');
