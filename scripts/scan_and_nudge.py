@@ -192,9 +192,12 @@ def post_discord(
 ) -> bool:
     time_str = now.strftime("%-I:%M %p")
     nudge_url = f"{SITE_BASE}/v2/nudge.html?e={exercise_idx}"
+    dur = exercise.get("duration") or sum(
+        p.get("seconds", 0) for p in exercise.get("phases", [])
+    )
     content = (
         f"**StretchSmart** — {time_str}\n"
-        f"**{exercise['name']}** · {exercise.get('duration', 60)}s\n"
+        f"**{exercise['name']}** · {dur}s\n"
         f"{exercise.get('desc', '')}\n"
         f"→ {nudge_url}"
     )

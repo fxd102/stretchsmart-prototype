@@ -1,1 +1,176 @@
-[{"name": "Neck Rolls", "duration": 60, "desc": "Slowly roll your head in a full circle. 5 times each direction. Keep your shoulders relaxed.", "tags": ["posture", "neck"]}, {"name": "Shoulder Shrugs", "duration": 45, "desc": "Raise both shoulders up toward your ears, hold 3 seconds, then drop. Repeat 10 times.", "tags": ["posture", "shoulders"]}, {"name": "Chest Opener", "duration": 60, "desc": "Clasp hands behind your back, straighten arms, and lift gently while squeezing shoulder blades together. Hold 20 seconds, repeat 3 times.", "tags": ["posture", "breathing"]}, {"name": "Seated Spinal Twist", "duration": 60, "desc": "Sitting up straight, twist to one side with your opposite hand on your knee. Hold 15 seconds each side, repeat twice.", "tags": ["mobility", "spine"]}, {"name": "Wrist Circles", "duration": 30, "desc": "Extend arms forward, make fists, and circle your wrists 10 times in each direction.", "tags": ["mobility", "wrists"]}, {"name": "Standing Quad Stretch", "duration": 60, "desc": "Stand on one leg, pull the other foot toward your glute. Hold 20 seconds each side. Use a wall for balance.", "tags": ["flexibility", "legs"]}, {"name": "Calf Raises", "duration": 45, "desc": "Stand with feet hip-width apart, rise onto your toes, hold 2 seconds, lower slowly. Repeat 15 times.", "tags": ["mobility", "ankles"]}, {"name": "Hip Flexor Stretch", "duration": 90, "desc": "Step one foot forward into a lunge, drop the back knee to the floor. Push hips forward gently. Hold 30 seconds each side.", "tags": ["flexibility", "hips"]}, {"name": "Cat-Cow", "duration": 60, "desc": "On all fours, arch your back up (cat), then dip it down (cow). Move slowly with your breath. 10 cycles.", "tags": ["mobility", "spine"]}, {"name": "Wall Angels", "duration": 60, "desc": "Stand with back flat against a wall, arms in goalpost position. Slide arms up and down slowly. 10 reps.", "tags": ["posture", "shoulders"]}, {"name": "Figure-4 Stretch", "duration": 60, "desc": "Sit in a chair, cross one ankle over the opposite knee. Lean forward gently until you feel a stretch in your hip. 20 seconds each side.", "tags": ["flexibility", "hips"]}, {"name": "Doorway Chest Stretch", "duration": 60, "desc": "Stand in a doorway, arms on the frame at 90 degrees. Step forward until you feel a stretch across your chest. Hold 20 seconds.", "tags": ["posture", "breathing"]}, {"name": "Hamstring Stretch", "duration": 60, "desc": "Stand and place one heel on a low step or chair. Keep your leg straight and lean forward from the hips. 20 seconds each side.", "tags": ["flexibility", "legs"]}, {"name": "Deep Breathing", "duration": 60, "desc": "Sit comfortably. Breathe in for 4 counts, hold for 4, out for 6. Repeat 5 times. Let your shoulders drop.", "tags": ["posture", "breathing"]}, {"name": "Glute Bridge", "duration": 60, "desc": "Lie on your back, knees bent, feet flat. Lift your hips toward the ceiling, squeeze glutes at the top. Hold 3 seconds. 10 reps.", "tags": ["mobility", "hips"]}]
+[
+  {
+    "name": "Neck Rolls",
+    "position": "seated",
+    "tags": ["posture", "neck"],
+    "desc": "Slowly roll your head in a full circle. Keep your shoulders relaxed.",
+    "phases": [
+      {"label": "Roll clockwise — 5 circles", "seconds": 15},
+      {"label": "Switch direction", "seconds": 3},
+      {"label": "Roll counter-clockwise — 5 circles", "seconds": 15}
+    ]
+  },
+  {
+    "name": "Shoulder Shrugs",
+    "position": "seated",
+    "tags": ["posture", "shoulders"],
+    "desc": "Raise both shoulders up toward your ears, hold 3 seconds, then drop.",
+    "phases": [
+      {"label": "10 shrugs — up, hold 3s, drop", "seconds": 45}
+    ]
+  },
+  {
+    "name": "Chest Opener",
+    "position": "standing",
+    "tags": ["posture", "breathing"],
+    "desc": "Clasp hands behind your back, straighten arms, and lift gently while squeezing shoulder blades together.",
+    "phases": [
+      {"label": "Hold — squeeze shoulder blades", "seconds": 20},
+      {"label": "Relax", "seconds": 5},
+      {"label": "Hold again — go deeper", "seconds": 20},
+      {"label": "Relax", "seconds": 5},
+      {"label": "Final hold", "seconds": 20}
+    ]
+  },
+  {
+    "name": "Seated Spinal Twist",
+    "position": "seated",
+    "tags": ["mobility", "spine"],
+    "desc": "Sitting up straight, twist to one side with your opposite hand on your knee.",
+    "phases": [
+      {"label": "Twist right — hold", "seconds": 15},
+      {"label": "Return to center", "seconds": 3},
+      {"label": "Twist left — hold", "seconds": 15},
+      {"label": "Return to center", "seconds": 3},
+      {"label": "Twist right — deeper", "seconds": 15},
+      {"label": "Return to center", "seconds": 3},
+      {"label": "Twist left — deeper", "seconds": 15}
+    ]
+  },
+  {
+    "name": "Wrist Circles",
+    "position": "seated",
+    "tags": ["mobility", "wrists"],
+    "desc": "Extend arms forward, make fists, and circle your wrists.",
+    "phases": [
+      {"label": "Circle outward — 10 times", "seconds": 15},
+      {"label": "Switch direction", "seconds": 3},
+      {"label": "Circle inward — 10 times", "seconds": 15}
+    ]
+  },
+  {
+    "name": "Standing Quad Stretch",
+    "position": "standing",
+    "tags": ["flexibility", "legs"],
+    "desc": "Stand on one leg, pull the other foot toward your glute. Use a wall for balance.",
+    "phases": [
+      {"label": "Left leg — hold", "seconds": 20},
+      {"label": "Switch legs", "seconds": 5},
+      {"label": "Right leg — hold", "seconds": 20}
+    ]
+  },
+  {
+    "name": "Calf Raises",
+    "position": "standing",
+    "tags": ["mobility", "ankles"],
+    "desc": "Stand with feet hip-width apart. Rise onto your toes, hold 2 seconds, lower slowly.",
+    "phases": [
+      {"label": "15 reps — rise, hold 2s, lower", "seconds": 45}
+    ]
+  },
+  {
+    "name": "Hip Flexor Stretch",
+    "position": "floor",
+    "tags": ["flexibility", "hips"],
+    "desc": "Step one foot forward into a lunge, drop the back knee to the floor. Push hips forward gently.",
+    "phases": [
+      {"label": "Left side — push hips forward", "seconds": 30},
+      {"label": "Switch sides", "seconds": 5},
+      {"label": "Right side — push hips forward", "seconds": 30}
+    ]
+  },
+  {
+    "name": "Cat-Cow",
+    "position": "floor",
+    "tags": ["mobility", "spine"],
+    "desc": "On all fours, arch your back up (cat), then dip it down (cow). Move slowly with your breath.",
+    "phases": [
+      {"label": "10 cycles — arch up, dip down, breathe", "seconds": 60}
+    ]
+  },
+  {
+    "name": "Wall Angels",
+    "position": "standing",
+    "tags": ["posture", "shoulders"],
+    "desc": "Stand with back flat against a wall, arms in goalpost position. Slide arms up and down slowly.",
+    "phases": [
+      {"label": "10 reps — slide up, slide down", "seconds": 60}
+    ]
+  },
+  {
+    "name": "Figure-4 Stretch",
+    "position": "seated",
+    "tags": ["flexibility", "hips"],
+    "desc": "Sit in a chair, cross one ankle over the opposite knee. Lean forward gently until you feel a stretch.",
+    "phases": [
+      {"label": "Right ankle over left knee — lean forward", "seconds": 20},
+      {"label": "Switch sides", "seconds": 5},
+      {"label": "Left ankle over right knee — lean forward", "seconds": 20}
+    ]
+  },
+  {
+    "name": "Doorway Chest Stretch",
+    "position": "standing",
+    "tags": ["posture", "breathing"],
+    "desc": "Stand in a doorway, arms on the frame at 90 degrees. Step forward until you feel a stretch across your chest.",
+    "phases": [
+      {"label": "Hold stretch", "seconds": 20},
+      {"label": "Relax — step back", "seconds": 5},
+      {"label": "Hold again — step deeper", "seconds": 20},
+      {"label": "Relax", "seconds": 5}
+    ]
+  },
+  {
+    "name": "Hamstring Stretch",
+    "position": "standing",
+    "tags": ["flexibility", "legs"],
+    "desc": "Stand and place one heel on a low step or chair. Keep your leg straight and lean forward from the hips.",
+    "phases": [
+      {"label": "Left leg — lean forward", "seconds": 20},
+      {"label": "Switch legs", "seconds": 5},
+      {"label": "Right leg — lean forward", "seconds": 20}
+    ]
+  },
+  {
+    "name": "Deep Breathing",
+    "position": "seated",
+    "tags": ["posture", "breathing"],
+    "desc": "Sit comfortably. Let your shoulders drop.",
+    "phases": [
+      {"label": "Breathe in — 4 counts", "seconds": 4},
+      {"label": "Hold", "seconds": 4},
+      {"label": "Breathe out — 6 counts", "seconds": 6},
+      {"label": "Breathe in — 4 counts", "seconds": 4},
+      {"label": "Hold", "seconds": 4},
+      {"label": "Breathe out — 6 counts", "seconds": 6},
+      {"label": "Breathe in — 4 counts", "seconds": 4},
+      {"label": "Hold", "seconds": 4},
+      {"label": "Breathe out — 6 counts", "seconds": 6},
+      {"label": "Breathe in — 4 counts", "seconds": 4},
+      {"label": "Hold", "seconds": 4},
+      {"label": "Breathe out — 6 counts", "seconds": 6},
+      {"label": "Breathe in — 4 counts", "seconds": 4},
+      {"label": "Hold", "seconds": 4},
+      {"label": "Breathe out — slow", "seconds": 6}
+    ]
+  },
+  {
+    "name": "Glute Bridge",
+    "position": "floor",
+    "tags": ["mobility", "hips"],
+    "desc": "Lie on your back, knees bent, feet flat. Lift your hips toward the ceiling, squeeze glutes at the top.",
+    "phases": [
+      {"label": "10 reps — lift, squeeze 3s, lower", "seconds": 60}
+    ]
+  }
+]

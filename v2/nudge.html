@@ -22,7 +22,7 @@
     text-transform: uppercase; margin-bottom: 8px;
   }
   h1 {
-    font-size: 30px; font-weight: 700; color: #e94560;
+    font-size: 28px; font-weight: 700; color: #e94560;
     text-align: center; margin-bottom: 6px; line-height: 1.2;
   }
   .duration-hint {
@@ -55,27 +55,39 @@
     flex: 1; padding: 14px 6px;
     background: #2a2a4a; color: #aaa;
     border: 1px solid #3a3a5a; border-radius: 18px;
-    font-size: 13px; font-weight: 600;
+    font-size: 12px; font-weight: 600;
     cursor: pointer; transition: all 0.15s;
+    text-align: center;
   }
-  .chooser:hover, .chooser.active {
+  .chooser:hover {
     background: #1a3a5c; color: #6db3f2; border-color: #4ecdc4;
   }
   .timer-wrap {
     display: none; width: 100%; text-align: center;
   }
   .timer-wrap.show { display: block; }
-  .timer-ring {
-    width: 220px; height: 220px; position: relative;
-    margin: 16px auto 8px;
+  .phase-label {
+    font-size: 16px; font-weight: 600; color: #e9a045;
+    margin-bottom: 8px; min-height: 24px;
   }
+  .phase-progress {
+    font-size: 11px; color: #888; margin-bottom: 4px;
+  }
+  .timer-ring {
+    width: 200px; height: 200px; position: relative;
+    margin: 8px auto;
+  }
+  .timer-ring svg { transform: rotate(-90deg); }
   .timer-text {
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 52px; font-weight: 700; color: #fff;
+    font-size: 48px; font-weight: 700; color: #fff;
+  }
+  .total-remaining {
+    font-size: 12px; color: #666; margin-top: 4px;
   }
   .feedback {
-    display: none; gap: 8px; width: 100%; margin-top: 8px;
+    display: none; gap: 8px; width: 100%; margin-top: 16px;
   }
   .feedback.show { display: flex; }
   .fb-btn {
@@ -85,7 +97,7 @@
     font-size: 13px; font-weight: 600;
     cursor: pointer; transition: all 0.15s;
   }
-  .fb-btn.easy { border-color: #4ecdc4; }
+  .fb-btn.too-easy { border-color: #4ecdc4; }
   .fb-btn.doable { border-color: #e9a045; }
   .fb-btn.couldnt { border-color: #e94560; }
   .fb-btn:active { transform: scale(0.96); }
@@ -113,29 +125,27 @@
 
     <div id="pre-start" style="width:100%;display:flex;flex-direction:column;align-items:center;">
       <button class="start-btn" id="start-btn" onclick="startTimer()">Let's Go</button>
-      <div class="choosers" id="choosers">
-        <button class="chooser" data-setting="seated" onclick="choose(this)">Seated</button>
-        <button class="chooser" data-setting="standing" onclick="choose(this)">Standing</button>
-        <button class="chooser" data-setting="full" onclick="choose(this)">Full Body</button>
-      </div>
+      <div class="choosers" id="choosers"></div>
     </div>
 
     <div class="timer-wrap" id="timer-wrap">
+      <div class="phase-label" id="phase-label"></div>
+      <div class="phase-progress" id="phase-progress"></div>
       <div class="timer-ring">
-        <svg width="220" height="220">
-          <circle cx="110" cy="110" r="100" fill="none" stroke="#2a2a4a" stroke-width="8"/>
-          <circle id="ring" cx="110" cy="110" r="100" fill="none" stroke="#e94560" stroke-width="8"
-            stroke-linecap="round" stroke-dasharray="628.3" stroke-dashoffset="0"
-            style="transform: rotate(-90deg); transform-origin: center; transition: stroke-dashoffset 1s linear;"/>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#2a2a4a" stroke-width="8"/>
+          <circle id="ring" cx="100" cy="100" r="90" fill="none" stroke="#e94560" stroke-width="8"
+            stroke-linecap="round" stroke-dasharray="565.5" stroke-dashoffset="0"/>
         </svg>
         <div class="timer-text" id="timer-text">—</div>
       </div>
+      <div class="total-remaining" id="total-remaining"></div>
     </div>
 
     <div class="feedback" id="feedback">
-      <button class="fb-btn easy" onclick="feedback('easy')">Easy</button>
-      <button class="fb-btn doable" onclick="feedback('doable')">Doable</button>
-      <button class="fb-btn couldnt" onclick="feedback('couldnt')">Couldn't</button>
+      <button class="fb-btn too-easy" onclick="submitFeedback('too-easy')">Too Easy</button>
+      <button class="fb-btn doable" onclick="submitFeedback('doable')">Doable</button>
+      <button class="fb-btn couldnt" onclick="submitFeedback('couldnt')">Couldn't</button>
     </div>
 
     <div class="done-msg" id="done-msg">
@@ -146,57 +156,145 @@
   </div>
 
 <script>
+const CIRC = 565.5; // 2 * pi * 90
+let exercises = [];
 let exercise = null;
+let currentIdx = 0;
 let timerId = null;
+let audioCtx = null;
+
+const POSITION_LABELS = {seated: 'Seated', standing: 'Standing', floor: 'Floor'};
+
+function totalDuration(ex) {
+  return (ex.phases || []).reduce((s, p) => s + (p.seconds || 0), 0);
+}
 
 async function loadExercise() {
+  exercises = await fetch('/stretchsmart-prototype/api/exercises.json').then(r => r.json());
   const params = new URLSearchParams(location.search);
-  const exercises = await fetch('/stretchsmart-prototype/api/exercises.json').then(r => r.json());
   let idx = parseInt(params.get('e'));
   if (isNaN(idx) || idx < 0 || idx >= exercises.length) {
     const now = new Date();
     const start = new Date(now.getFullYear(), 0, 0);
-    const dayOfYear = Math.floor((now - start) / 86400000);
-    idx = dayOfYear % exercises.length;
+    idx = Math.floor((now - start) / 86400000) % exercises.length;
   }
+  currentIdx = idx;
   exercise = exercises[idx];
+
   document.getElementById('ex-name').textContent = exercise.name;
-  document.getElementById('ex-duration').textContent = exercise.duration + ' seconds';
+  document.getElementById('ex-duration').textContent = totalDuration(exercise) + ' seconds';
   document.getElementById('ex-desc').textContent = exercise.desc;
-  document.getElementById('timer-text').textContent = exercise.duration;
+
+  buildChoosers();
 }
 
-function choose(btn) {
-  document.querySelectorAll('.chooser').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  // v1: choosers are UI acknowledgment only. Future: filter by setting metadata.
+function buildChoosers() {
+  const container = document.getElementById('choosers');
+  container.innerHTML = '';
+  const pos = exercise.position;
+  Object.keys(POSITION_LABELS).forEach(key => {
+    if (key === pos) return;
+    const alts = exercises.filter((e, i) => e.position === key && i !== currentIdx);
+    if (!alts.length) return;
+    const btn = document.createElement('button');
+    btn.className = 'chooser';
+    btn.textContent = 'Switch to ' + POSITION_LABELS[key];
+    btn.onclick = () => switchTo(key);
+    container.appendChild(btn);
+  });
+}
+
+function switchTo(pos) {
+  const alts = exercises
+    .map((e, i) => ({e, i}))
+    .filter(x => x.e.position === pos && x.i !== currentIdx);
+  if (!alts.length) return;
+  const pick = alts[Math.floor(Math.random() * alts.length)];
+  const url = new URL(location);
+  url.searchParams.set('e', pick.i);
+  location.href = url;
+}
+
+function playDing() {
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = 880;
+    gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.4);
+  } catch (e) {}
+  try { navigator.vibrate(200); } catch (e) {}
+}
+
+function remainingFromPhase(phaseIdx, elapsedInPhase) {
+  const phases = exercise.phases;
+  let rem = Math.max(0, phases[phaseIdx].seconds - elapsedInPhase);
+  for (let i = phaseIdx + 1; i < phases.length; i++) rem += phases[i].seconds;
+  return Math.ceil(rem);
 }
 
 function startTimer() {
+  // Unlock audio context on user gesture (mobile Safari)
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+
   document.getElementById('pre-start').style.display = 'none';
   document.getElementById('timer-wrap').classList.add('show');
+  runPhase(0);
+}
 
-  const totalDash = 628.3;
+function runPhase(phaseIdx) {
+  const phases = exercise.phases;
+  if (phaseIdx >= phases.length) {
+    document.getElementById('timer-wrap').classList.remove('show');
+    document.getElementById('feedback').classList.add('show');
+    playDing();
+    return;
+  }
+
+  const phase = phases[phaseIdx];
+  document.getElementById('phase-label').textContent = phase.label;
+  document.getElementById('phase-progress').textContent =
+    phases.length > 1 ? 'Step ' + (phaseIdx + 1) + ' of ' + phases.length : '';
+  document.getElementById('timer-text').textContent = phase.seconds;
+  document.getElementById('ring').style.transition = 'none';
+  document.getElementById('ring').style.strokeDashoffset = '0';
+  // Force reflow so transition reset takes effect
+  void document.getElementById('ring').offsetWidth;
+  document.getElementById('ring').style.transition = 'stroke-dashoffset 0.25s linear';
+
   const startTime = Date.now();
-  const duration = exercise.duration;
 
   function tick() {
     const elapsed = (Date.now() - startTime) / 1000;
-    const left = Math.max(0, Math.ceil(duration - elapsed));
+    const left = Math.max(0, Math.ceil(phase.seconds - elapsed));
     document.getElementById('timer-text').textContent = left;
-    const frac = Math.min(1, elapsed / duration);
-    document.getElementById('ring').style.strokeDashoffset = totalDash * frac;
+    const frac = Math.min(1, elapsed / phase.seconds);
+    document.getElementById('ring').style.strokeDashoffset = (CIRC * frac).toFixed(1);
+    document.getElementById('total-remaining').textContent =
+      remainingFromPhase(phaseIdx, elapsed) + 's total remaining';
+
     if (left <= 0) {
       clearInterval(timerId);
-      document.getElementById('timer-wrap').classList.remove('show');
-      document.getElementById('feedback').classList.add('show');
+      if (phaseIdx < phases.length - 1) {
+        playDing();
+        setTimeout(() => runPhase(phaseIdx + 1), 600);
+      } else {
+        runPhase(phaseIdx + 1);
+      }
     }
   }
   tick();
-  timerId = setInterval(tick, 250);
+  timerId = setInterval(tick, 200);
 }
 
-function feedback(val) {
+function submitFeedback(val) {
   const log = JSON.parse(localStorage.getItem('ss_feedback') || '[]');
   log.push({ t: new Date().toISOString(), exercise: exercise.name, rating: val });
   localStorage.setItem('ss_feedback', JSON.stringify(log));
