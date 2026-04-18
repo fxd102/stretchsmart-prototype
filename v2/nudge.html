@@ -153,6 +153,10 @@
     </div>
 
     <div id="pre-start" style="width:100%;display:flex;flex-direction:column;align-items:center;">
+      <div class="insight-card" id="insight-card" style="margin-bottom:18px;">
+        <p class="insight-text" id="insight-text"></p>
+        <p class="insight-src" id="insight-src"></p>
+      </div>
       <button class="start-btn" id="start-btn" onclick="startTimer()">Let's Go</button>
       <div class="choosers" id="choosers"></div>
     </div>
@@ -175,11 +179,6 @@
       <button class="fb-btn too-easy" onclick="submitFeedback('too-easy')">Too Easy</button>
       <button class="fb-btn doable" onclick="submitFeedback('doable')">Doable</button>
       <button class="fb-btn couldnt" onclick="submitFeedback('couldnt')">Couldn't</button>
-    </div>
-
-    <div class="insight-card" id="insight-card">
-      <p class="insight-text" id="insight-text"></p>
-      <p class="insight-src" id="insight-src"></p>
     </div>
 
     <div class="done-msg" id="done-msg">
@@ -259,10 +258,11 @@ async function loadExercise() {
   const hookList = HOOKS[period];
   document.getElementById('hook').textContent = hookList[Math.floor(Math.random() * hookList.length)];
 
-  // Load insights for post-exercise display
+  // Load insights and show the one most relevant to THIS exercise as motivation before starting
   try {
     insights = await fetch('/stretchsmart-prototype/api/insights.json').then(r => r.json());
   } catch (e) { insights = []; }
+  showRelevantInsight();
 
   buildChoosers();
 }
@@ -373,15 +373,11 @@ function runPhase(phaseIdx) {
   timerId = setInterval(tick, 200);
 }
 
-function submitFeedback(val) {
-  const log = JSON.parse(localStorage.getItem('ss_feedback') || '[]');
-  log.push({ t: new Date().toISOString(), exercise: exercise.name, rating: val });
-  localStorage.setItem('ss_feedback', JSON.stringify(log));
-  document.getElementById('feedback').classList.remove('show');
-
-  // Match insight by tag overlap with exercise concerns/tags
+function showRelevantInsight() {
+  if (!insights.length) return;
   const exTags = [...(exercise.concerns || []), ...(exercise.tags || [])].map(t => t.toLowerCase());
-  if (insights.length && exTags.length) {
+  let pick;
+  if (exTags.length) {
     const scored = insights.map(ins => {
       const iTags = (ins.tags || []).map(t => t.toLowerCase());
       const overlap = iTags.filter(it =>
@@ -392,17 +388,20 @@ function submitFeedback(val) {
     const maxScore = Math.max(...scored.map(s => s.score));
     const best = scored.filter(s => s.score === maxScore && s.score > 0);
     const pool = best.length ? best : scored;
-    const pick = pool[Math.floor(Math.random() * pool.length)].ins;
-    document.getElementById('insight-text').textContent = pick.text;
-    document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
-    document.getElementById('insight-card').classList.add('show');
-  } else if (insights.length) {
-    const pick = insights[Math.floor(Math.random() * insights.length)];
-    document.getElementById('insight-text').textContent = pick.text;
-    document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
-    document.getElementById('insight-card').classList.add('show');
+    pick = pool[Math.floor(Math.random() * pool.length)].ins;
+  } else {
+    pick = insights[Math.floor(Math.random() * insights.length)];
   }
+  document.getElementById('insight-text').textContent = pick.text;
+  document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
+  document.getElementById('insight-card').classList.add('show');
+}
 
+function submitFeedback(val) {
+  const log = JSON.parse(localStorage.getItem('ss_feedback') || '[]');
+  log.push({ t: new Date().toISOString(), exercise: exercise.name, rating: val });
+  localStorage.setItem('ss_feedback', JSON.stringify(log));
+  document.getElementById('feedback').classList.remove('show');
   document.getElementById('done-msg').classList.add('show');
 }
 
