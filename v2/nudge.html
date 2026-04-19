@@ -375,23 +375,55 @@ function runPhase(phaseIdx) {
 
 function showRelevantInsight() {
   if (!insights.length) return;
-  const exTags = [...(exercise.concerns || []), ...(exercise.tags || [])].map(t => t.toLowerCase());
-  let pick;
-  if (exTags.length) {
-    const scored = insights.map(ins => {
-      const iTags = (ins.tags || []).map(t => t.toLowerCase());
-      const overlap = iTags.filter(it =>
-        exTags.some(et => et.includes(it) || it.includes(et))
-      ).length;
-      return {ins, score: overlap};
-    });
-    const maxScore = Math.max(...scored.map(s => s.score));
-    const best = scored.filter(s => s.score === maxScore && s.score > 0);
-    const pool = best.length ? best : scored;
-    pick = pool[Math.floor(Math.random() * pool.length)].ins;
-  } else {
-    pick = insights[Math.floor(Math.random() * insights.length)];
+
+  // Clean up old daily keys and load today's shown-list
+  const today = new Date().toISOString().slice(0, 10);
+  const storageKey = 'ss_shown_insights_' + today;
+  for (let k = 0; k < localStorage.length; k++) {
+    const key = localStorage.key(k);
+    if (key && key.startsWith('ss_shown_insights_') && key !== storageKey) {
+      localStorage.removeItem(key);
+    }
   }
+  const shownMap = JSON.parse(localStorage.getItem(storageKey) || '{}');
+  let shownForEx = shownMap[exercise.name] || [];
+
+  // Score insights by tag overlap, then tiered pools
+  const exTags = [...(exercise.concerns || []), ...(exercise.tags || [])].map(t => t.toLowerCase());
+  const scored = insights.map(ins => {
+    const iTags = (ins.tags || []).map(t => t.toLowerCase());
+    const overlap = exTags.length
+      ? iTags.filter(it => exTags.some(et => et.includes(it) || it.includes(et))).length
+      : 0;
+    return {ins, score: overlap};
+  });
+  // Build tiered pools: highest-score first, then any-positive, then all
+  const tiers = [];
+  const maxScore = Math.max(...scored.map(s => s.score));
+  if (maxScore > 0) {
+    tiers.push(scored.filter(s => s.score === maxScore).map(s => s.ins));
+    const anyMatch = scored.filter(s => s.score > 0 && s.score < maxScore).map(s => s.ins);
+    if (anyMatch.length) tiers.push(anyMatch);
+  }
+  tiers.push(insights); // last resort: full pool
+
+  // Walk tiers preferring unseen insights in each; fall through if exhausted
+  let pick = null;
+  for (const tier of tiers) {
+    const unseen = tier.filter(i => !shownForEx.includes(i.id));
+    if (unseen.length) { pick = unseen[Math.floor(Math.random() * unseen.length)]; break; }
+  }
+  // If every insight has been shown today, reset and pick from top tier
+  if (!pick) {
+    shownForEx = [];
+    pick = tiers[0][Math.floor(Math.random() * tiers[0].length)];
+  }
+
+  // Persist shown-list
+  shownForEx = shownForEx.concat([pick.id]);
+  shownMap[exercise.name] = shownForEx;
+  localStorage.setItem(storageKey, JSON.stringify(shownMap));
+
   document.getElementById('insight-text').textContent = pick.text;
   document.getElementById('insight-src').textContent = pick.source ? '— ' + pick.source : '';
   document.getElementById('insight-card').classList.add('show');

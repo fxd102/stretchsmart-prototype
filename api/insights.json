@@ -218,5 +218,105 @@
       "proprioception",
       "longevity"
     ]
+  },
+  {
+    "category": "strength",
+    "text": "A strong core isn't about looking lean \u2014 it's about your spine's support system. Weak trunk muscles force your back to do the stabilizing, which is why 80% of adults will have low back pain at some point. Every plank, every trunk engagement is literally teaching your core to protect your spine from the inside.",
+    "source": "Hoy et al., Annals of the Rheumatic Diseases, 2014 (global prevalence of low back pain); core stability meta-analyses",
+    "tags": [
+      "core",
+      "core strength",
+      "spine",
+      "back pain",
+      "strength"
+    ],
+    "id": 21
+  },
+  {
+    "category": "strength",
+    "text": "Grip strength predicts all-cause mortality better than systolic blood pressure. Every 5-kilogram decrease in grip strength is associated with a 16% higher risk of death from any cause. It's not that squeezing a hand towel makes you live longer on its own \u2014 grip is a window into whole-body strength, and strength is the window into how well you age.",
+    "source": "Leong et al., The Lancet, 2015 (PURE study, 139,691 adults across 17 countries)",
+    "tags": [
+      "grip",
+      "strength",
+      "longevity",
+      "wrists"
+    ],
+    "id": 22
+  },
+  {
+    "category": "strength",
+    "text": "Your ability to stand up from the floor without using your hands predicts how long you'll live. The sit-to-rise test measures leg strength, flexibility, and balance in one motion \u2014 people who can do it with no support have a 5-6x lower mortality risk over the next 6 years than those who need to lean on something. Leg strength is not vanity. It's your exit plan from the floor.",
+    "source": "Ara\u00fajo et al., European Journal of Preventive Cardiology, 2012",
+    "tags": [
+      "legs",
+      "quads",
+      "strength",
+      "longevity",
+      "functional"
+    ],
+    "id": 23
+  },
+  {
+    "category": "mobility",
+    "text": "Balance isn't a talent \u2014 it's a skill that deteriorates without practice. Your inner ear, your eyes, and the sensors in your feet are having a constant three-way conversation about where you are in space. Every balance exercise trains all three to talk faster. That's why balance peaks in your 30s and declines 1-2% per year after that \u2014 unless you train it.",
+    "source": "Sturnieks et al., Neurophysiologie Clinique, 2008; proprioceptive training reviews",
+    "tags": [
+      "balance",
+      "proprioception",
+      "falls",
+      "longevity"
+    ],
+    "id": 24
+  },
+  {
+    "category": "breathing",
+    "text": "Most adults breathe 12-20 times a minute with their chest. Slow nasal breathing through the diaphragm \u2014 6 breaths a minute or fewer \u2014 shifts your nervous system out of fight-or-flight. It's one of the only voluntary controls you have over your autonomic state. Two minutes of nasal breathing walks is a real intervention, not a throwaway.",
+    "source": "Russo et al., Breathe, 2017; Jerath et al., Medical Hypotheses, 2006",
+    "tags": [
+      "breathing",
+      "nasal breathing",
+      "nervous system",
+      "stress",
+      "walking"
+    ],
+    "id": 25
+  },
+  {
+    "category": "mobility",
+    "text": "Functional movements \u2014 the ones that use multiple joints and large muscle groups together \u2014 build neural coordination that isolated exercises can't. A full-body movement isn't just harder cardio; it's training your brain to orchestrate your whole kinetic chain. That's why complex movement patterns correlate with preserved cognition in aging adults.",
+    "source": "Voelcker-Rehage & Niemann, Neuroscience & Biobehavioral Reviews, 2013",
+    "tags": [
+      "full body",
+      "functional",
+      "coordination",
+      "cognition"
+    ],
+    "id": 26
+  },
+  {
+    "category": "strength",
+    "text": "Glutes are the largest muscles in your body, but for most adults they're chronically underused. Sitting 8+ hours a day means your glutes are relaxed 8+ hours a day, while your hip flexors stay shortened. The result: a pelvis that tilts forward, a lower back that takes the strain, and a body that forgot how to fire its strongest engine. Every glute bridge is a conversation restart.",
+    "source": "Buckthorpe et al., International Journal of Sports Physical Therapy, 2019 (gluteal activation)",
+    "tags": [
+      "glutes",
+      "hips",
+      "core",
+      "posture",
+      "sitting"
+    ],
+    "id": 27
+  },
+  {
+    "category": "mobility",
+    "text": "Ankle mobility is one of the first things to disappear with age, and also one of the most consequential. Stiff ankles change how you walk, load your knees, and recover from stumbles. A 10-degree loss of ankle dorsiflexion roughly triples your fall risk in older adults. Rolling, circling, and stretching at the ankle isn't optional \u2014 it's fall insurance.",
+    "source": "Menz et al., Gait & Posture, 2003; ankle dorsiflexion and fall risk studies",
+    "tags": [
+      "ankles",
+      "mobility",
+      "falls",
+      "balance"
+    ],
+    "id": 28
   }
 ]
