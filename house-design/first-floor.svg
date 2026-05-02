@@ -1,168 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" font-family="-apple-system, sans-serif">
-  <rect width="760" height="540" fill="#f5f1e8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 580" font-family="-apple-system, sans-serif">
+  <rect width="920" height="580" fill="#f5f1e8"/>
 
-  <text x="20" y="32" font-size="20" font-weight="700" fill="#2a2a2a">First Floor — v2</text>
-  <text x="20" y="52" font-size="12" fill="#666">~1,536 sf · entire east wall = open living/glass · bedrooms in W corners</text>
+  <text x="20" y="32" font-size="20" font-weight="700" fill="#2a2a2a">First Floor — v3</text>
+  <text x="20" y="52" font-size="12" fill="#666">mudroom = bumpout west · stairs along N wall (DN W half · UP E half)</text>
 
-  <g transform="translate(700,40)">
+  <g transform="translate(880,40)">
     <circle r="18" fill="#fff" stroke="#888" stroke-width="1"/>
     <text y="-4" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">N</text>
     <text y="14" text-anchor="middle" font-size="9" fill="#666">↑</text>
   </g>
 
-  <!-- Driveway (west, level entry) -->
-  <g transform="translate(20,260)">
-    <rect width="60" height="80" fill="#d4c8a8" stroke="#a89968" stroke-width="1" stroke-dasharray="3,3"/>
-    <text x="30" y="34" text-anchor="middle" font-size="10" fill="#666">driveway</text>
-    <text x="30" y="48" text-anchor="middle" font-size="10" fill="#666">(level)</text>
-    <text x="30" y="62" text-anchor="middle" font-size="9" fill="#888">→ entry</text>
+  <g transform="translate(20,212)">
+    <rect width="16" height="144" fill="#d4c8a8" stroke="#a89968" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="-12" y="76" font-size="10" fill="#666" transform="rotate(-90 -12 76)">driveway</text>
   </g>
 
-  <!-- East deck (view) -->
-  <g transform="translate(656,90)">
-    <rect width="80" height="384" fill="#e8d9b8" stroke="#a89968" stroke-width="1.5" stroke-dasharray="6,3"/>
-    <text x="40" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#7a5a2a" transform="rotate(-90 40 200)">EAST DECK · view side</text>
+  <g transform="translate(740,90)">
+    <rect width="140" height="384" fill="#e8d9b8" stroke="#a89968" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="70" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#7a5a2a" transform="rotate(-90 70 200)">EAST DECK · view</text>
   </g>
 
-  <!-- 2-story east glass wall -->
-  <line x1="656" y1="90" x2="656" y2="474" stroke="#3a8a8a" stroke-width="6" opacity="0.45"/>
+  <line x1="740" y1="90" x2="740" y2="474" stroke="#3a8a8a" stroke-width="6" opacity="0.45"/>
 
-  <!-- Building outline: 48' x 32' = 576 x 384 px @ 12px/ft -->
-  <rect x="80" y="90" width="576" height="384" fill="#fff" stroke="#222" stroke-width="3"/>
+  <!-- MUDROOM BUMPOUT 12'×12' centered on west wall -->
+  <rect x="36" y="212" width="144" height="144" fill="#f0e6d0" stroke="#222" stroke-width="3"/>
+  <text x="108" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5a2a">MUDROOM</text>
+  <text x="108" y="264" text-anchor="middle" font-size="11" font-weight="600" fill="#7a5a2a">/ LAUNDRY</text>
+  <text x="108" y="284" text-anchor="middle" font-size="9" fill="#7a5a2a">12' × 12' bumpout</text>
+  <text x="108" y="300" text-anchor="middle" font-size="9" fill="#7a5a2a">back-entrance vestibule</text>
+  <text x="108" y="316" text-anchor="middle" font-size="9" fill="#7a5a2a">washer + dryer · gear · boots</text>
+  <text x="108" y="332" text-anchor="middle" font-size="9" fill="#7a5a2a">bench · hooks · cubbies</text>
+  <line x1="36" y1="270" x2="36" y2="300" stroke="#fff" stroke-width="3"/>
+  <path d="M 36 270 Q 56 280 50 300" fill="none" stroke="#222" stroke-width="0.8"/>
+  <text x="58" y="290" font-size="9" font-weight="600" fill="#444">entry ↓</text>
+  <line x1="180" y1="270" x2="180" y2="300" stroke="#fff" stroke-width="3"/>
 
-  <!-- ===== WESTERN ZONE: bedrooms + service. x=80..440 (30 ft) ===== -->
+  <!-- MAIN BUILDING 48'×32' -->
+  <rect x="180" y="90" width="576" height="384" fill="#fff" stroke="#222" stroke-width="3"/>
 
-  <!-- NW ADA bedroom (NW corner): x=80-260, y=90-234 (15' × 12') -->
-  <rect x="80" y="90" width="180" height="144" fill="#dde8dd" stroke="#222" stroke-width="1.5"/>
-  <text x="170" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#1a4a3a">NW ADA BEDROOM</text>
-  <text x="170" y="138" text-anchor="middle" font-size="10" fill="#2a5a4a">15' × 12'  ·  aging parent</text>
-  <text x="170" y="152" text-anchor="middle" font-size="9" fill="#2a5a4a">wide doors · no thresholds</text>
-  <text x="170" y="166" text-anchor="middle" font-size="9" fill="#2a5a4a">level driveway access</text>
-  <!-- Closet -->
-  <line x1="80" y1="200" x2="180" y2="200" stroke="#222" stroke-width="1"/>
-  <text x="130" y="218" text-anchor="middle" font-size="9" fill="#2a5a4a">closet</text>
-  <line x1="180" y1="200" x2="180" y2="234" stroke="#222" stroke-width="1"/>
-
-  <!-- ADA bath: x=260-360, y=90-234 (8.3' × 12') -->
-  <rect x="260" y="90" width="100" height="144" fill="#e0e8ec" stroke="#222" stroke-width="1.5"/>
-  <text x="310" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#3a5a8a">ADA BATH</text>
-  <text x="310" y="134" text-anchor="middle" font-size="9" fill="#3a5a8a">8' × 12'</text>
-  <text x="310" y="152" text-anchor="middle" font-size="9" fill="#3a5a8a">roll-in shower</text>
-  <text x="310" y="166" text-anchor="middle" font-size="9" fill="#3a5a8a">grab bars · accessible</text>
-  <text x="310" y="180" text-anchor="middle" font-size="9" fill="#3a5a8a">vanity · accessible WC</text>
-  <text x="310" y="216" text-anchor="middle" font-size="8" font-style="italic" fill="#888">[?] keep ADA bath, or</text>
-  <text x="310" y="226" text-anchor="middle" font-size="8" font-style="italic" fill="#888">drop to shared hall bath?</text>
-
-  <!-- Mudroom / Entry / Laundry: x=80-360, y=234-330 (23' × 8') -->
-  <rect x="80" y="234" width="280" height="96" fill="#f0e6d0" stroke="#222" stroke-width="1.5"/>
-  <text x="220" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#7a5a2a">MUDROOM / ENTRY / LAUNDRY</text>
-  <text x="220" y="280" text-anchor="middle" font-size="10" fill="#7a5a2a">driveway entry door · gear · coats · boots</text>
-  <text x="220" y="295" text-anchor="middle" font-size="10" fill="#7a5a2a">washer + dryer · clothesline access west</text>
-  <text x="220" y="313" text-anchor="middle" font-size="9" font-style="italic" fill="#888">level threshold (continuous accessible path NW bedroom ↔ entry)</text>
-  <!-- Entry door -->
-  <line x1="80" y1="270" x2="80" y2="300" stroke="#fff" stroke-width="3"/>
-  <path d="M 80 270 Q 100 280 92 300" fill="none" stroke="#222" stroke-width="0.8"/>
-  <text x="55" y="290" font-size="9" font-weight="600" fill="#444">entry</text>
-
-  <!-- Stair down to basement: x=360-440, y=234-330 (6.7' × 8') -->
-  <rect x="360" y="234" width="80" height="96" fill="#f5f5e0" stroke="#222" stroke-width="1.5"/>
-  <text x="400" y="258" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a2a">STAIR DN</text>
-  <text x="400" y="272" text-anchor="middle" font-size="9" fill="#7a5a2a">to basement</text>
+  <!-- Stair DN to basement (W half N wall) -->
+  <rect x="252" y="90" width="144" height="48" fill="#f5f5e0" stroke="#222" stroke-width="1.5"/>
+  <text x="324" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a2a">STAIR DN to basement</text>
   <g stroke="#999" stroke-width="0.6">
-    <line x1="365" y1="282" x2="435" y2="282"/>
-    <line x1="365" y1="290" x2="435" y2="290"/>
-    <line x1="365" y1="298" x2="435" y2="298"/>
-    <line x1="365" y1="306" x2="435" y2="306"/>
-    <line x1="365" y1="314" x2="435" y2="314"/>
-    <line x1="365" y1="322" x2="435" y2="322"/>
+    <line x1="262" y1="118" x2="386" y2="118"/>
+    <line x1="262" y1="124" x2="386" y2="124"/>
+    <line x1="262" y1="130" x2="386" y2="130"/>
   </g>
+  <text x="324" y="134" text-anchor="middle" font-size="8" fill="#888">12' × 4' along N wall</text>
 
-  <!-- Stair up to loft: above the bath/master corridor — x=360-440, y=90-234 (6.7' × 12') -->
-  <rect x="360" y="90" width="80" height="144" fill="#fff5e0" stroke="#222" stroke-width="1.5"/>
-  <text x="400" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a2a">STAIR UP</text>
-  <text x="400" y="132" text-anchor="middle" font-size="9" fill="#7a5a2a">to loft</text>
+  <!-- Stair UP to loft (E half N wall) -->
+  <rect x="540" y="90" width="144" height="48" fill="#fff5e0" stroke="#222" stroke-width="1.5"/>
+  <text x="612" y="110" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a2a">STAIR UP to loft</text>
   <g stroke="#999" stroke-width="0.6">
-    <line x1="365" y1="146" x2="435" y2="146"/>
-    <line x1="365" y1="156" x2="435" y2="156"/>
-    <line x1="365" y1="166" x2="435" y2="166"/>
-    <line x1="365" y1="176" x2="435" y2="176"/>
-    <line x1="365" y1="186" x2="435" y2="186"/>
-    <line x1="365" y1="196" x2="435" y2="196"/>
-    <line x1="365" y1="206" x2="435" y2="206"/>
-    <line x1="365" y1="216" x2="435" y2="216"/>
-    <line x1="365" y1="226" x2="435" y2="226"/>
+    <line x1="550" y1="118" x2="674" y2="118"/>
+    <line x1="550" y1="124" x2="674" y2="124"/>
+    <line x1="550" y1="130" x2="674" y2="130"/>
   </g>
+  <text x="612" y="134" text-anchor="middle" font-size="8" fill="#888">12' × 4' along N wall</text>
 
-  <!-- SW master bedroom: x=80-260, y=330-450 (15' × 10') -->
-  <rect x="80" y="330" width="180" height="120" fill="#e8dde0" stroke="#222" stroke-width="1.5"/>
-  <text x="170" y="360" text-anchor="middle" font-size="13" font-weight="700" fill="#5a1a4a">SW MASTER</text>
-  <text x="170" y="378" text-anchor="middle" font-size="10" fill="#5a2a4a">15' × 10'  ·  primary suite</text>
-  <text x="170" y="394" text-anchor="middle" font-size="9" fill="#5a2a4a">south/SE view orientation</text>
-  <text x="170" y="408" text-anchor="middle" font-size="9" font-style="italic" fill="#888">king bed wall on N or S</text>
+  <rect x="396" y="90" width="144" height="48" fill="#f8f4e8" stroke="#bbb" stroke-width="0.8"/>
+  <text x="468" y="115" text-anchor="middle" font-size="10" fill="#888">N wall opening</text>
+  <text x="468" y="128" text-anchor="middle" font-size="8" fill="#aaa">(window or built-in shelving)</text>
 
-  <!-- Walk-in closet: x=260-340, y=330-390 (6.7' × 5') -->
-  <rect x="260" y="330" width="80" height="60" fill="#efe8d8" stroke="#222" stroke-width="1.2"/>
-  <text x="300" y="354" text-anchor="middle" font-size="10" font-weight="700" fill="#7a5a2a">WALK-IN</text>
-  <text x="300" y="368" text-anchor="middle" font-size="9" fill="#7a5a2a">CLOSET</text>
-  <text x="300" y="382" text-anchor="middle" font-size="8" font-style="italic" fill="#888">7'×5'</text>
+  <!-- NW ADA BEDROOM -->
+  <rect x="180" y="138" width="156" height="144" fill="#dde8dd" stroke="#222" stroke-width="1.5"/>
+  <text x="258" y="166" text-anchor="middle" font-size="13" font-weight="700" fill="#1a4a3a">NW ADA BEDROOM</text>
+  <text x="258" y="183" text-anchor="middle" font-size="10" fill="#2a5a4a">13' × 12' · aging parent</text>
+  <text x="258" y="199" text-anchor="middle" font-size="9" fill="#2a5a4a">wide doors · no thresholds</text>
+  <text x="258" y="215" text-anchor="middle" font-size="9" fill="#2a5a4a">level access from mudroom</text>
+  <line x1="180" y1="248" x2="280" y2="248" stroke="#222" stroke-width="1"/>
+  <text x="230" y="266" text-anchor="middle" font-size="9" fill="#2a5a4a">closet</text>
 
-  <!-- Luxury bath: x=260-440, y=390-474 (15' × 7') -->
-  <rect x="260" y="390" width="180" height="84" fill="#e8e0ec" stroke="#222" stroke-width="1.5"/>
-  <text x="350" y="416" text-anchor="middle" font-size="13" font-weight="700" fill="#5a1a4a">LUXURY BATH</text>
-  <text x="350" y="432" text-anchor="middle" font-size="9" fill="#5a2a4a">15' × 7' · multi-head shower · soaking tub</text>
-  <text x="350" y="446" text-anchor="middle" font-size="9" fill="#5a2a4a">double vanity · water closet</text>
+  <!-- ADA BATH -->
+  <rect x="336" y="138" width="96" height="144" fill="#e0e8ec" stroke="#222" stroke-width="1.5"/>
+  <text x="384" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#3a5a8a">ADA BATH</text>
+  <text x="384" y="184" text-anchor="middle" font-size="9" fill="#3a5a8a">8' × 12'</text>
+  <text x="384" y="204" text-anchor="middle" font-size="9" fill="#3a5a8a">roll-in shower</text>
+  <text x="384" y="218" text-anchor="middle" font-size="9" fill="#3a5a8a">grab bars</text>
+  <text x="384" y="232" text-anchor="middle" font-size="9" fill="#3a5a8a">accessible WC</text>
 
-  <!-- Lower west under-bath: x=340-440, y=330-390 — small office or built-in storage -->
-  <rect x="340" y="330" width="100" height="60" fill="#f0e6d0" stroke="#222" stroke-width="1"/>
-  <text x="390" y="356" text-anchor="middle" font-size="10" font-weight="600" fill="#7a5a2a">linen / built-in</text>
-  <text x="390" y="370" text-anchor="middle" font-size="9" fill="#7a5a2a">storage</text>
+  <!-- CENTRAL HALL -->
+  <rect x="180" y="282" width="360" height="48" fill="#fffef5" stroke="#222" stroke-width="1.2"/>
+  <text x="360" y="306" text-anchor="middle" font-size="12" font-weight="700" fill="#5a4a8a">CENTRAL GALLERY HALL</text>
+  <text x="360" y="322" text-anchor="middle" font-size="9" fill="#5a4a8a">connects mudroom ↔ bedrooms ↔ open east living</text>
 
-  <!-- ===== EASTERN ZONE: open living/dining/kitchen. x=440-656 (18 ft) ===== -->
-  <text x="548" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#3a5a8a">OPEN LIVING / DINING / KITCHEN</text>
-  <text x="548" y="135" text-anchor="middle" font-size="10" fill="#3a5a8a">18' × 32' = 576 sf · entire eastern wall = 2-story glass</text>
+  <!-- SW MASTER -->
+  <rect x="180" y="330" width="156" height="120" fill="#e8dde0" stroke="#222" stroke-width="1.5"/>
+  <text x="258" y="358" text-anchor="middle" font-size="13" font-weight="700" fill="#5a1a4a">SW MASTER</text>
+  <text x="258" y="376" text-anchor="middle" font-size="10" fill="#5a2a4a">13' × 10' · primary bedroom</text>
+  <text x="258" y="392" text-anchor="middle" font-size="9" fill="#5a2a4a">south view orientation</text>
 
-  <!-- Kitchen along N wall: x=440-656, y=145-180 -->
-  <rect x="440" y="145" width="216" height="35" fill="#c8c0a0" stroke="#999" stroke-width="0.8"/>
-  <text x="548" y="166" text-anchor="middle" font-size="10" font-weight="600" fill="#3a3a3a">KITCHEN counter / pantry / sized shelving (N wall)</text>
+  <!-- WIC -->
+  <rect x="336" y="330" width="84" height="72" fill="#efe8d8" stroke="#222" stroke-width="1.2"/>
+  <text x="378" y="356" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a2a">WALK-IN</text>
+  <text x="378" y="372" text-anchor="middle" font-size="10" fill="#7a5a2a">CLOSET</text>
+  <text x="378" y="390" text-anchor="middle" font-size="8" fill="#888">7' × 6'</text>
 
-  <!-- Island parallel to kitchen -->
-  <rect x="460" y="200" width="170" height="32" fill="#c8c0a0" stroke="#666" stroke-width="0.8"/>
-  <text x="545" y="220" text-anchor="middle" font-size="10" fill="#3a3a3a">island w/ seating ↓</text>
+  <!-- LUXURY BATH -->
+  <rect x="336" y="402" width="204" height="72" fill="#e8e0ec" stroke="#222" stroke-width="1.5"/>
+  <text x="438" y="424" text-anchor="middle" font-size="13" font-weight="700" fill="#5a1a4a">LUXURY BATH</text>
+  <text x="438" y="440" text-anchor="middle" font-size="9" fill="#5a2a4a">17' × 6' · multi-head shower · soaking tub</text>
+  <text x="438" y="454" text-anchor="middle" font-size="9" fill="#5a2a4a">double vanity · water closet</text>
 
-  <!-- Dining (center) -->
-  <text x="548" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#5a4a8a">DINING</text>
-  <text x="548" y="295" text-anchor="middle" font-size="9" fill="#5a4a8a">casual · 4 expand to 8</text>
-  <ellipse cx="548" cy="320" rx="48" ry="20" fill="none" stroke="#888" stroke-width="0.8"/>
+  <rect x="420" y="330" width="120" height="72" fill="#f0e6d0" stroke="#222" stroke-width="1"/>
+  <text x="480" y="358" text-anchor="middle" font-size="10" font-weight="600" fill="#7a5a2a">linen / built-in</text>
+  <text x="480" y="374" text-anchor="middle" font-size="9" fill="#7a5a2a">storage</text>
+  <text x="480" y="390" text-anchor="middle" font-size="8" fill="#888">+ powder room option</text>
 
-  <!-- Living (south end) -->
-  <text x="548" y="380" text-anchor="middle" font-size="13" font-weight="700" fill="#8a4a3a">LIVING</text>
-  <text x="548" y="395" text-anchor="middle" font-size="9" fill="#8a4a3a">2-story glass east</text>
-  <text x="548" y="410" text-anchor="middle" font-size="8" font-style="italic" fill="#888">[no fireplace this level — fireplace</text>
-  <text x="548" y="422" text-anchor="middle" font-size="8" font-style="italic" fill="#888">moved to basement office per spec]</text>
+  <!-- EASTERN STRIP -->
+  <text x="640" y="166" text-anchor="middle" font-size="15" font-weight="700" fill="#3a5a8a">OPEN LIVING / DINING / KITCHEN</text>
+  <text x="640" y="183" text-anchor="middle" font-size="10" fill="#3a5a8a">17' × 28' · entire east wall = 2-story glass</text>
 
-  <!-- Door to deck -->
-  <line x1="656" y1="350" x2="656" y2="420" stroke="#fff" stroke-width="3"/>
-  <text x="668" y="385" font-size="9" fill="#3a8a8a">→ deck</text>
+  <text x="640" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#3a5a8a">KITCHEN</text>
+  <rect x="546" y="220" width="190" height="22" fill="#c8c0a0" stroke="#999" stroke-width="0.8"/>
+  <text x="640" y="234" text-anchor="middle" font-size="8" fill="#666">counter · pantry · sized shelving</text>
+  <rect x="566" y="260" width="150" height="28" fill="#c8c0a0" stroke="#666" stroke-width="0.8"/>
+  <text x="640" y="278" text-anchor="middle" font-size="9" fill="#3a3a3a">island w/ seating</text>
 
-  <!-- Loft footprint above (dashed) -->
-  <rect x="440" y="90" width="144" height="384" fill="none" stroke="#a060a0" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
-  <text x="512" y="465" text-anchor="middle" font-size="9" fill="#a060a0" opacity="0.85">loft footprint above ↑ (full N-S, 12' deep)</text>
+  <text x="640" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#5a4a8a">DINING</text>
+  <ellipse cx="640" cy="362" rx="46" ry="18" fill="none" stroke="#888" stroke-width="0.8"/>
 
-  <!-- 2-story open-to-above strip (the east 6' below the glass, NOT under loft) -->
-  <text x="620" y="450" text-anchor="middle" font-size="8" fill="#3a8a8a" opacity="0.85" transform="rotate(-90 620 450)">↑ open to above (east 6')</text>
+  <text x="640" y="416" text-anchor="middle" font-size="13" font-weight="700" fill="#8a4a3a">LIVING</text>
+  <text x="640" y="431" text-anchor="middle" font-size="9" fill="#8a4a3a">2-story glass east</text>
 
-  <!-- Dimensions -->
-  <text x="368" y="510" text-anchor="middle" font-size="11" font-weight="600" fill="#444">48'-0" wide (W↔E)</text>
-  <text x="20" y="282" font-size="11" font-weight="600" fill="#444" transform="rotate(-90 20 282)">32'-0" deep (N↔S)</text>
+  <line x1="740" y1="385" x2="740" y2="445" stroke="#fff" stroke-width="3"/>
+  <text x="752" y="418" font-size="9" fill="#3a8a8a">→ deck</text>
 
-  <!-- Legend -->
+  <rect x="540" y="138" width="144" height="336" fill="none" stroke="#a060a0" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.55"/>
+  <text x="612" y="465" text-anchor="middle" font-size="9" fill="#a060a0" opacity="0.85">loft outline above ↑</text>
+
+  <text x="468" y="510" text-anchor="middle" font-size="11" font-weight="600" fill="#444">main: 48'-0" wide (W↔E)  ·  bumpout: +12' west</text>
+  <text x="160" y="282" font-size="11" font-weight="600" fill="#444" transform="rotate(-90 160 282)">32'-0" deep (N↔S)</text>
+
   <g transform="translate(20,490)">
-    <rect width="14" height="10" fill="#dde8dd" stroke="#222" stroke-width="0.5"/><text x="20" y="9" font-size="9" fill="#444">ADA bedroom</text>
-    <rect x="100" width="14" height="10" fill="#e8dde0" stroke="#222" stroke-width="0.5"/><text x="120" y="9" font-size="9" fill="#444">master suite</text>
-    <rect x="200" width="14" height="10" fill="#f0e6d0" stroke="#222" stroke-width="0.5"/><text x="220" y="9" font-size="9" fill="#444">service</text>
-    <rect x="280" width="14" height="10" fill="#fff" stroke="#222" stroke-width="0.5"/><text x="300" y="9" font-size="9" fill="#444">open living</text>
-    <rect x="370" width="14" height="10" fill="#e8d9b8" stroke="#a89968" stroke-width="0.5"/><text x="390" y="9" font-size="9" fill="#444">deck</text>
-    <rect x="430" width="14" height="10" fill="none" stroke="#a060a0" stroke-width="1" stroke-dasharray="3,2"/><text x="450" y="9" font-size="9" fill="#444">loft outline above</text>
+    <rect width="14" height="10" fill="#dde8dd" stroke="#222" stroke-width="0.5"/><text x="20" y="9" font-size="9" fill="#444">ADA bdr</text>
+    <rect x="80" width="14" height="10" fill="#e8dde0" stroke="#222" stroke-width="0.5"/><text x="100" y="9" font-size="9" fill="#444">master</text>
+    <rect x="160" width="14" height="10" fill="#f0e6d0" stroke="#222" stroke-width="0.5"/><text x="180" y="9" font-size="9" fill="#444">service</text>
+    <rect x="240" width="14" height="10" fill="#f5f5e0" stroke="#222" stroke-width="0.5"/><text x="260" y="9" font-size="9" fill="#444">stair DN</text>
+    <rect x="320" width="14" height="10" fill="#fff5e0" stroke="#222" stroke-width="0.5"/><text x="340" y="9" font-size="9" fill="#444">stair UP</text>
+    <rect x="400" width="14" height="10" fill="#fff" stroke="#222" stroke-width="0.5"/><text x="420" y="9" font-size="9" fill="#444">open living</text>
+    <rect x="490" width="14" height="10" fill="none" stroke="#a060a0" stroke-width="1" stroke-dasharray="3,2"/><text x="510" y="9" font-size="9" fill="#444">loft above</text>
   </g>
 </svg>
