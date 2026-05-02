@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Design — v2</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0;
+    min-height: 100vh;
+  }
+  .topbar {
+    background: #16213e; padding: 12px 20px;
+    border-bottom: 2px solid #0f3460;
+    position: sticky; top: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .topbar-title {
+    font-size: 16px; font-weight: 700; color: #e94560;
+  }
+  .topbar-sub { font-size: 11px; color: #888; }
+  .container {
+    max-width: 1100px; margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+  h1 {
+    color: #e94560; font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .lede {
+    font-size: 14px; color: #aaa; margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  h2 {
+    color: #e9a045; font-size: 22px;
+    margin: 40px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid #2a2a4a;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  .floor-meta {
+    font-size: 12px; color: #888;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+  }
+  .plan-frame {
+    background: #f5f1e8;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    margin-bottom: 16px;
+    overflow-x: auto;
+  }
+  .plan-frame svg, .plan-frame object {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 700px;
+  }
+  .floor-notes {
+    font-size: 13px; color: #ccc;
+    line-height: 1.7;
+    background: #16213e;
+    border-left: 3px solid #4ecdc4;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-bottom: 8px;
+  }
+  .floor-notes strong { color: #e0e0e0; }
+  .questions {
+    background: #16213e;
+    border-left: 3px solid #e9a045;
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin-top: 32px;
+  }
+  .questions h3 {
+    color: #e9a045; font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .questions ul {
+    list-style: none;
+    padding: 0;
+  }
+  .questions li {
+    padding: 8px 0;
+    border-bottom: 1px solid #1a2a4a;
+    font-size: 13px; color: #ccc;
+    line-height: 1.6;
+  }
+  .questions li:last-child { border-bottom: none; }
+  .questions strong { color: #e0e0e0; }
+  .footer {
+    margin-top: 48px;
+    font-size: 11px; color: #666;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .footer a { color: #4ecdc4; text-decoration: none; }
+  a.back {
+    color: #888; font-size: 12px; text-decoration: none;
+  }
+  a.back:hover { color: #e94560; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar-title">House Design — v2</span>
+  <span class="topbar-sub">Rural Hillside Residence · NE Pennsylvania</span>
+</div>
+
+<div class="container">
+  <h1>Three Floors, Drawn to Your Spec</h1>
+  <p class="lede">
+    Per your prescriptive direction, May 2. Each level laid out exactly as specified.
+    SVGs are vector — zoom in as far as you want, no pixelation.
+    Open this page on a laptop for the cleanest read; mobile works but plans are wider than a phone screen.
+  </p>
+
+  <h2>First Floor</h2>
+  <div class="floor-meta">~1,536 sf · entire east wall = open living/glass · bedrooms in W corners · level driveway entry W</div>
+  <div class="plan-frame">
+    <object type="image/svg+xml" data="first-floor.svg" aria-label="First floor plan"></object>
+  </div>
+  <div class="floor-notes">
+    <strong>NW corner:</strong> ADA bedroom (15'×12') with private accessible bath next door — roll-in shower, no thresholds, level driveway access through the mudroom.
+    <strong>SW corner:</strong> Master suite (15'×10') + walk-in closet (7'×5') + luxury bath (15'×7') with multi-head shower and soaking tub.
+    <strong>Mudroom/entry/laundry</strong> runs along the rear (west) wall between the two bedrooms — that's where the level driveway meets the house.
+    <strong>Eastern strip (18'×32'):</strong> open living/dining/kitchen with the 2-story east glass wall. Kitchen counter on N wall, island parallel, dining center, living south end.
+    <strong>Stairs</strong> clustered in the central spine: stair down to basement just east of the mudroom, stair up to loft directly above.
+    <strong>No first-floor fireplace</strong> — moved to basement office per your spec.
+  </div>
+
+  <h2>Basement (Walkout)</h2>
+  <div class="floor-meta">east wall = full-width walkout · SE office (fireplace S wall) · NE guest · W half = mech / pantry / bath</div>
+  <div class="plan-frame">
+    <object type="image/svg+xml" data="basement.svg" aria-label="Basement floor plan"></object>
+  </div>
+  <div class="floor-notes">
+    <strong>NE corner:</strong> Guest bedroom (18'×13') with east window/door for daylight, closet built-in.
+    <strong>SE corner:</strong> Office/library (18'×12') with the fieldstone fireplace built into the south wall, east walkout for daylight, acoustic-treated walls for video calls, built-in bookshelves on east + west walls, window seat on east.
+    <strong>Walkout zone between them:</strong> 18'×7' family/media space with patio doors east — connects guest ↔ office ↔ patio.
+    <strong>Western half:</strong> Mechanical room NW (radiant manifold, water heater, panel, future battery), pantry sectioned off just south of mech (15'×7'), full bath, storage along the south wall.
+    Earth-bermed on W/N/S sides, walkout grade on E.
+  </div>
+
+  <h2>Loft / Mezzanine</h2>
+  <div class="floor-meta">~384 sf · directly above east-strip living · full N–S width (32') · 12' deep E–W</div>
+  <div class="plan-frame">
+    <object type="image/svg+xml" data="loft.svg" aria-label="Loft floor plan"></object>
+  </div>
+  <div class="floor-notes">
+    Loft sits directly above the eastern living strip, taking the full N–S length of the east wall as you specified.
+    12' deep (E–W) leaves the eastern 6' open-to-below so the 2-story east glass still reads as a full-height window wall — you walk under the loft and the view opens up overhead.
+    I sketched it as <strong>three zones</strong> (yoga/movement north, reading nook against the glass center, study/meditation south) so the brief's "yoga vs library — TBD" doesn't have to be a binary choice. 384 sf is enough to host all three.
+    Stair lands at the central west edge, matching the first-floor stair below.
+  </div>
+
+  <div class="questions">
+    <h3>Open questions for the next pass</h3>
+    <ul>
+      <li><strong>ADA bath:</strong> I included a private accessible bath next to the NW bedroom. Want it private (drawn) or shared with a hall bath instead?</li>
+      <li><strong>Kitchen flip:</strong> Counter on N wall, island parallel. Could swap to S end of the open zone if you want the living near the N wall instead.</li>
+      <li><strong>Master bath/closet swap:</strong> Closet 7'×5' adjacent to bedroom, bath along south wall. Could swap their positions.</li>
+      <li><strong>First-floor fireplace gone:</strong> Removed per spec (moved to office). Sanity check — the firelight in the main living space is a real architectural gesture, and losing it changes the character of evenings in the living room. Worth keeping a second fireplace upstairs?</li>
+      <li><strong>Stairs:</strong> Both clustered in the central spine for short circulation. Alternative: stair up at one end of the house, stair down at the other. More space-efficient but more walking.</li>
+      <li><strong>Loft access:</strong> Single straight-run stair drawn. Could be open spiral, switchback, or floating-tread design — affects how dramatic the entry to the loft feels.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Drawn by claude-561 · 2026-05-02 · iterating in <a href="https://github.com/fxd102/stretchsmart-prototype/tree/main/house-design">/house-design</a><br>
+    <a class="back" href="/stretchsmart-prototype/">← Back to StretchSmart</a>
+  </div>
+</div>
+
+</body>
+</html>
