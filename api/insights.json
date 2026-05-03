@@ -318,5 +318,124 @@
       "balance"
     ],
     "id": 28
+  },
+  {
+    "category": "neck",
+    "text": "Tension headaches affect 70% of adults at some point, and a huge fraction trace back to muscles you can't see \u2014 the suboccipitals at the base of your skull. Hours staring forward at a screen leaves them in chronic contraction. A few minutes of neck flexion and rotation each day reduces both headache frequency and intensity in clinical trials, more reliably than most painkillers.",
+    "source": "Stovner et al., Cephalalgia, 2022 (global headache prevalence); Page, Manual Therapy, 2011",
+    "tags": [
+      "neck",
+      "neck tension",
+      "headaches",
+      "desk work"
+    ],
+    "id": 29
+  },
+  {
+    "category": "shoulders",
+    "text": "Frozen shoulder ('adhesive capsulitis') affects 2-5% of adults, and once it sets in, recovery takes 12-24 months. Risk factors: diabetes, thyroid issues, and immobility. Prevention: keeping the shoulder joint moving through its full range \u2014 especially overhead and behind-the-back \u2014 every single day. Five minutes of shoulder mobility is cheaper than a year of physical therapy.",
+    "source": "Ramirez, American Family Physician, 2019",
+    "tags": [
+      "shoulders",
+      "mobility",
+      "longevity"
+    ],
+    "id": 30
+  },
+  {
+    "category": "back",
+    "text": "80% of adults experience low back pain at some point \u2014 it's the leading cause of disability worldwide. Most cases are mechanical, not structural \u2014 meaning movement is the medicine. Patients who keep moving recover faster than those who rest, in study after study. Bed rest, the old advice, is now actively contraindicated.",
+    "source": "Vos et al., Lancet, 2020 (Global Burden of Disease); Dahm et al., Cochrane, 2010",
+    "tags": [
+      "lower back",
+      "back pain",
+      "movement"
+    ],
+    "id": 31
+  },
+  {
+    "category": "chest",
+    "text": "Tight pec muscles from typing, driving, and phone-scrolling pull your shoulders forward, hunching the upper back. Over years this remodels the spine itself \u2014 kyphosis becomes structural, not postural. Daily chest opening reverses the soft-tissue adhesion before it locks in. The window for prevention closes around your 50s.",
+    "source": "Kado et al., Journal of the American Geriatrics Society, 2007 (kyphosis & mortality)",
+    "tags": [
+      "chest",
+      "posture",
+      "shoulders",
+      "kyphosis"
+    ],
+    "id": 32
+  },
+  {
+    "category": "legs",
+    "text": "Quad strength is one of the strongest predictors of who walks well into their 80s \u2014 specifically, the ability to rise from a chair without using your hands. Quad atrophy starts in your 50s and accelerates after 70 unless trained. Five sit-to-stands a day, every day, is meaningful \u2014 it's harder than it sounds at age 75 if you haven't been doing it.",
+    "source": "Visser et al., Journal of Gerontology, 2005 (quad strength and disability)",
+    "tags": [
+      "quads",
+      "knees",
+      "legs",
+      "longevity",
+      "functional"
+    ],
+    "id": 33
+  },
+  {
+    "category": "hamstrings",
+    "text": "Tight hamstrings affect more than your stretch \u2014 they tilt your pelvis backward, flatten the lumbar curve, and chronically aggravate the lower back. People with hamstring flexibility under 80 degrees have 2-3x higher rates of chronic low back pain than people with normal range. Lengthening hamstrings is back insurance.",
+    "source": "Sadler et al., BMC Musculoskeletal Disorders, 2017",
+    "tags": [
+      "hamstrings",
+      "lower back",
+      "back pain",
+      "flexibility"
+    ],
+    "id": 34
+  },
+  {
+    "category": "wrists",
+    "text": "Repetitive wrist motions from typing and phones are the modern equivalent of industrial strain injuries. Carpal tunnel affects 4% of adults, and once it goes from intermittent tingling to actual nerve damage, surgery is often the only option. Daily wrist mobility delays the progression \u2014 clinical trials show 30-50% symptom reduction with consistent stretching.",
+    "source": "Dale et al., Scandinavian Journal of Work, Environment & Health, 2013",
+    "tags": [
+      "wrists",
+      "hands",
+      "carpal tunnel",
+      "desk work"
+    ],
+    "id": 35
+  },
+  {
+    "category": "hips",
+    "text": "Hip mobility is the difference between getting up off the floor at 80 vs. needing help. Sit-and-rise tests measure exactly this. The hips are also the biggest joint in your body and carry the most load \u2014 keeping them mobile reduces knee and back compensation. Bilateral hip stretches daily, especially the hip flexors and glutes, slow the natural age-related stiffening.",
+    "source": "Cruz-Ferreira, Geriatric Nursing, 2018",
+    "tags": [
+      "hips",
+      "hip flexors",
+      "mobility",
+      "longevity"
+    ],
+    "id": 36
+  },
+  {
+    "category": "upper back",
+    "text": "Your thoracic spine \u2014 the upper back \u2014 is supposed to rotate and extend, but most adults lose 50% of that range by their 40s from sedentary posture. The cost shows up everywhere: shoulder impingement, neck strain, golf and tennis swings that can't generate power, even reduced lung capacity. Daily thoracic mobility is one of the highest-leverage exercises for whole-body function.",
+    "source": "Heneghan et al., BMJ Open Sport & Exercise Medicine, 2018",
+    "tags": [
+      "upper back",
+      "thoracic spine",
+      "mobility",
+      "posture"
+    ],
+    "id": 37
+  },
+  {
+    "category": "calves",
+    "text": "Strong calves quietly do the work of your second heart \u2014 they pump blood from your legs back up your body when you walk. A sedentary lifestyle weakens this muscle pump, contributing to varicose veins, swollen feet, and poor circulation. Calf raises throughout the day are surprisingly effective; clinical studies show measurable improvements in venous return after just 4 weeks.",
+    "source": "Williams, Vascular Health and Risk Management, 2015",
+    "tags": [
+      "calves",
+      "ankles",
+      "circulation",
+      "varicose veins"
+    ],
+    "id": 38
   }
 ]
