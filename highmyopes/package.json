@@ -1,0 +1,13 @@
+{
+  "name": "highmyopes",
+  "version": "0.0.1",
+  "description": "Symptom triage tool for high myopes (-6 D and above). MVP scaffold.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Static MVP — open index.html. For real /api/triage, deploy to Vercel and set ANTHROPIC_API_KEY.'"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0"
+  }
+}

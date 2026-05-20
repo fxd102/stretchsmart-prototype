@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Myopes — Symptom Triage</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">High Myopes</div>
+  <div class="emergency">
+    <strong>Possible emergency?</strong>
+    Sudden many new floaters, flashes, a curtain or shadow over part of your vision,
+    or sudden vision loss — call your ophthalmologist's emergency line or go to the ER.
+  </div>
+</header>
+
+<main>
+
+<!-- ============ LANDING ============ -->
+<section id="landing" class="screen active">
+  <div class="hero">
+    <h1>You're a high myope.<br>Your eyes deserve specific answers.</h1>
+    <p class="lede">
+      A two-minute triage tool that takes your prescription, history, and current
+      symptoms and gives you plain-English context — including questions to bring
+      to your ophthalmologist.
+    </p>
+    <p class="caveat">
+      This is information, not a diagnosis. It will not tell you what's wrong.
+      It will tell you how urgently to find out.
+    </p>
+    <button class="btn-primary" data-go="form">Start a symptom check</button>
+    <p class="meta">Free · No account · Takes about 2 minutes</p>
+  </div>
+</section>
+
+<!-- ============ FORM ============ -->
+<section id="form" class="screen">
+  <form id="triage-form">
+
+    <fieldset>
+      <legend>Your prescription</legend>
+      <p class="hint">Refractive correction in diopters. Use the higher (more negative) sphere of your two eyes if you're unsure.</p>
+      <label>
+        Sphere (worse eye), diopters
+        <input type="number" name="sphere" min="-30" max="0" step="0.25" value="-8" required>
+      </label>
+      <label>
+        Cylinder (worse eye), diopters
+        <input type="number" name="cylinder" min="-10" max="0" step="0.25" value="0">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>About you</legend>
+      <label>
+        Age
+        <input type="number" name="age" min="10" max="100" value="40" required>
+      </label>
+      <label>
+        Years at your current prescription range
+        <select name="years_at_rx" required>
+          <option value="lt1">Less than a year</option>
+          <option value="1-5">1–5 years</option>
+          <option value="5-15" selected>5–15 years</option>
+          <option value="gt15">More than 15 years</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>History</legend>
+      <p class="hint">Check anything that applies.</p>
+      <label class="check"><input type="checkbox" name="fh_detachment"> Family history of retinal detachment</label>
+      <label class="check"><input type="checkbox" name="prior_surgery"> Prior eye surgery (cataract, refractive, vitrectomy)</label>
+      <label class="check"><input type="checkbox" name="lattice"> Told you have lattice degeneration</label>
+      <label class="check"><input type="checkbox" name="pvd"> Told you have posterior vitreous detachment (PVD)</label>
+      <label class="check"><input type="checkbox" name="prior_detachment"> Prior retinal detachment or tear (either eye)</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What's going on now?</legend>
+      <p class="hint">Check every current symptom.</p>
+      <label class="check"><input type="checkbox" name="s_flashes"> Flashes of light</label>
+      <label class="check"><input type="checkbox" name="s_floaters_new"> New floaters, or a sudden increase</label>
+      <label class="check"><input type="checkbox" name="s_floaters_chronic"> Long-standing floaters, unchanged</label>
+      <label class="check"><input type="checkbox" name="s_curtain"> A curtain, shadow, or dark area in part of your vision</label>
+      <label class="check"><input type="checkbox" name="s_distortion"> Distorted or wavy vision (straight lines look bent)</label>
+      <label class="check"><input type="checkbox" name="s_loss"> Loss of vision, central or peripheral</label>
+      <label class="check"><input type="checkbox" name="s_pain"> Eye pain</label>
+      <label class="check"><input type="checkbox" name="s_none"> No new symptoms — baseline check-in</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Timing</legend>
+      <label>
+        When did anything change?
+        <select name="onset" required>
+          <option value="today">Today / within hours</option>
+          <option value="week">In the last week</option>
+          <option value="month">In the last month</option>
+          <option value="chronic" selected>Long-standing / chronic</option>
+          <option value="none">Nothing has changed</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <button type="submit" class="btn-primary">Get my triage</button>
+  </form>
+</section>
+
+<!-- ============ RESULT ============ -->
+<section id="result" class="screen">
+  <div id="urgency-banner" class="urgency"></div>
+  <div id="result-body">
+    <h2>What this likely means</h2>
+    <p id="result-context"></p>
+
+    <h2>What to do next</h2>
+    <p id="result-action"></p>
+
+    <h2>Questions to bring to your ophthalmologist</h2>
+    <ol id="result-questions"></ol>
+
+    <div class="restart">
+      <button class="btn-secondary" data-go="landing">Start over</button>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <p>
+      This tool provides general information about high myopia and is not a medical
+      diagnosis. It does not replace examination by an ophthalmologist. If you have
+      symptoms suggestive of a retinal tear or detachment — sudden flashes, sudden
+      many floaters, a curtain or shadow in your vision, or sudden vision loss —
+      call your ophthalmologist's emergency line or go to the emergency room.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    <strong>highmyopes.com</strong> · Built by a -12D high myope, for high myopes.
+    <a href="#about">About</a> · <a href="#faq">FAQ</a>
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
