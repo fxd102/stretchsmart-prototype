@@ -1,30 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-05",
-      "time": "2026-05-05T08:08:26.507998-04:00",
-      "exercise": "Resistance Band Overhead Press",
-      "exercise_index": 241
-    },
-    {
-      "date": "2026-05-05",
-      "time": "2026-05-05T11:42:54.379766-04:00",
-      "exercise": "Resistance Band Overhead Press",
-      "exercise_index": 241
-    },
-    {
-      "date": "2026-05-05",
-      "time": "2026-05-05T13:49:41.961110-04:00",
-      "exercise": "Resistance Band Overhead Press",
-      "exercise_index": 241
-    },
-    {
-      "date": "2026-05-05",
-      "time": "2026-05-05T15:50:11.151062-04:00",
-      "exercise": "Resistance Band Overhead Press",
-      "exercise_index": 241
-    },
-    {
       "date": "2026-05-06",
       "time": "2026-05-06T08:03:24.239806-04:00",
       "exercise": "Suitcase Carry",
@@ -215,6 +191,12 @@
       "time": "2026-05-19T08:05:56.194601-04:00",
       "exercise": "Levator Scapulae Stretch",
       "exercise_index": 5
+    },
+    {
+      "date": "2026-05-20",
+      "time": "2026-05-20T08:01:27.562622-04:00",
+      "exercise": "Neck CARs",
+      "exercise_index": 6
     }
   ]
 }
