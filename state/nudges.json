@@ -1,30 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-06",
-      "time": "2026-05-06T08:03:24.239806-04:00",
-      "exercise": "Suitcase Carry",
-      "exercise_index": 242
-    },
-    {
-      "date": "2026-05-06",
-      "time": "2026-05-06T10:03:58.002664-04:00",
-      "exercise": "Suitcase Carry",
-      "exercise_index": 242
-    },
-    {
-      "date": "2026-05-06",
-      "time": "2026-05-06T12:04:20.066067-04:00",
-      "exercise": "Suitcase Carry",
-      "exercise_index": 242
-    },
-    {
-      "date": "2026-05-06",
-      "time": "2026-05-06T14:04:41.464482-04:00",
-      "exercise": "Suitcase Carry",
-      "exercise_index": 242
-    },
-    {
       "date": "2026-05-07",
       "time": "2026-05-07T08:09:18.480920-04:00",
       "exercise": "Quadruped Thoracic Rotation",
@@ -197,6 +173,12 @@
       "time": "2026-05-20T08:01:27.562622-04:00",
       "exercise": "Neck CARs",
       "exercise_index": 6
+    },
+    {
+      "date": "2026-05-21",
+      "time": "2026-05-21T08:07:47.279219-04:00",
+      "exercise": "Isometric Neck Strengthening",
+      "exercise_index": 7
     }
   ]
 }
