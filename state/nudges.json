@@ -1,30 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-10",
-      "time": "2026-05-10T08:09:13.390602-04:00",
-      "exercise": "Dead Hang",
-      "exercise_index": 246
-    },
-    {
-      "date": "2026-05-10",
-      "time": "2026-05-10T10:09:47.661476-04:00",
-      "exercise": "Dead Hang",
-      "exercise_index": 246
-    },
-    {
-      "date": "2026-05-10",
-      "time": "2026-05-10T12:10:19.667919-04:00",
-      "exercise": "Dead Hang",
-      "exercise_index": 246
-    },
-    {
-      "date": "2026-05-10",
-      "time": "2026-05-10T14:10:58.272485-04:00",
-      "exercise": "Dead Hang",
-      "exercise_index": 246
-    },
-    {
       "date": "2026-05-11",
       "time": "2026-05-11T08:05:48.179154-04:00",
       "exercise": "Lateral Lunge",
@@ -125,6 +101,12 @@
       "time": "2026-05-24T08:08:18.041902-04:00",
       "exercise": "Shoulder Shrug Release",
       "exercise_index": 10
+    },
+    {
+      "date": "2026-05-25",
+      "time": "2026-05-25T08:04:40.963592-04:00",
+      "exercise": "Shoulder Rolls",
+      "exercise_index": 11
     }
   ]
 }
