@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-12",
-      "time": "2026-05-12T08:02:13.316786-04:00",
-      "exercise": "Plank to Downward Dog",
-      "exercise_index": 248
-    },
-    {
       "date": "2026-05-13",
       "time": "2026-05-13T08:08:57.462559-04:00",
       "exercise": "Slow Mountain Climber",
@@ -89,6 +83,12 @@
       "time": "2026-05-26T08:51:19.776747-04:00",
       "exercise": "Arm Circles",
       "exercise_index": 12
+    },
+    {
+      "date": "2026-05-27",
+      "time": "2026-05-27T08:08:11.210399-04:00",
+      "exercise": "Cross-Body Shoulder Stretch",
+      "exercise_index": 13
     }
   ]
 }
