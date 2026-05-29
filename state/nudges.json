@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-14",
-      "time": "2026-05-14T08:05:34.175125-04:00",
-      "exercise": "Gentle Neck Nod",
-      "exercise_index": 0
-    },
-    {
       "date": "2026-05-15",
       "time": "2026-05-15T08:02:23.181975-04:00",
       "exercise": "Neck Side Tilt",
@@ -89,6 +83,12 @@
       "time": "2026-05-28T08:04:05.541160-04:00",
       "exercise": "Overhead Reach",
       "exercise_index": 14
+    },
+    {
+      "date": "2026-05-29",
+      "time": "2026-05-29T08:00:18.610736-04:00",
+      "exercise": "Shoulder CARs",
+      "exercise_index": 15
     }
   ]
 }
