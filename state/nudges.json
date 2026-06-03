@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-19",
-      "time": "2026-05-19T08:05:56.194601-04:00",
-      "exercise": "Levator Scapulae Stretch",
-      "exercise_index": 5
-    },
-    {
       "date": "2026-05-20",
       "time": "2026-05-20T08:01:27.562622-04:00",
       "exercise": "Neck CARs",
@@ -89,6 +83,12 @@
       "time": "2026-06-02T08:07:58.042755-04:00",
       "exercise": "External Rotation with Band",
       "exercise_index": 19
+    },
+    {
+      "date": "2026-06-03",
+      "time": "2026-06-03T08:03:13.964404-04:00",
+      "exercise": "Shoulder Internal Rotation Stretch",
+      "exercise_index": 20
     }
   ]
 }
