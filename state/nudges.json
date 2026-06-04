@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-20",
-      "time": "2026-05-20T08:01:27.562622-04:00",
-      "exercise": "Neck CARs",
-      "exercise_index": 6
-    },
-    {
       "date": "2026-05-21",
       "time": "2026-05-21T08:07:47.279219-04:00",
       "exercise": "Isometric Neck Strengthening",
@@ -89,6 +83,12 @@
       "time": "2026-06-03T08:03:13.964404-04:00",
       "exercise": "Shoulder Internal Rotation Stretch",
       "exercise_index": 20
+    },
+    {
+      "date": "2026-06-04",
+      "time": "2026-06-04T08:09:31.794405-04:00",
+      "exercise": "Shoulder Flexion with Dowel",
+      "exercise_index": 21
     }
   ]
 }
