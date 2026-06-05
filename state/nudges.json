@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-21",
-      "time": "2026-05-21T08:07:47.279219-04:00",
-      "exercise": "Isometric Neck Strengthening",
-      "exercise_index": 7
-    },
-    {
       "date": "2026-05-22",
       "time": "2026-05-22T08:04:10.407857-04:00",
       "exercise": "Neck Flexor Strengthening",
@@ -89,6 +83,12 @@
       "time": "2026-06-04T08:09:31.794405-04:00",
       "exercise": "Shoulder Flexion with Dowel",
       "exercise_index": 21
+    },
+    {
+      "date": "2026-06-05",
+      "time": "2026-06-05T08:05:56.840050-04:00",
+      "exercise": "Scapular Squeeze",
+      "exercise_index": 22
     }
   ]
 }
