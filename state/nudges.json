@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-22",
-      "time": "2026-05-22T08:04:10.407857-04:00",
-      "exercise": "Neck Flexor Strengthening",
-      "exercise_index": 8
-    },
-    {
       "date": "2026-05-23",
       "time": "2026-05-23T08:02:04.095514-04:00",
       "exercise": "Suboccipital Release",
@@ -89,6 +83,12 @@
       "time": "2026-06-05T08:05:56.840050-04:00",
       "exercise": "Scapular Squeeze",
       "exercise_index": 22
+    },
+    {
+      "date": "2026-06-06",
+      "time": "2026-06-06T08:01:30.255582-04:00",
+      "exercise": "Thoracic Extension",
+      "exercise_index": 23
     }
   ]
 }
