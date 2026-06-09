@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-25",
-      "time": "2026-05-25T08:04:40.963592-04:00",
-      "exercise": "Shoulder Rolls",
-      "exercise_index": 11
-    },
-    {
       "date": "2026-05-26",
       "time": "2026-05-26T08:51:19.776747-04:00",
       "exercise": "Arm Circles",
@@ -89,6 +83,12 @@
       "time": "2026-06-08T08:05:13.668151-04:00",
       "exercise": "Cat-Cow",
       "exercise_index": 25
+    },
+    {
+      "date": "2026-06-09",
+      "time": "2026-06-09T08:06:07.194066-04:00",
+      "exercise": "Foam Roller Thoracic Extension",
+      "exercise_index": 26
     }
   ]
 }
