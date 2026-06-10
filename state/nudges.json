@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-26",
-      "time": "2026-05-26T08:51:19.776747-04:00",
-      "exercise": "Arm Circles",
-      "exercise_index": 12
-    },
-    {
       "date": "2026-05-27",
       "time": "2026-05-27T08:08:11.210399-04:00",
       "exercise": "Cross-Body Shoulder Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-06-09T08:06:07.194066-04:00",
       "exercise": "Foam Roller Thoracic Extension",
       "exercise_index": 26
+    },
+    {
+      "date": "2026-06-10",
+      "time": "2026-06-10T08:05:46.312886-04:00",
+      "exercise": "Thread the Needle",
+      "exercise_index": 27
     }
   ]
 }
