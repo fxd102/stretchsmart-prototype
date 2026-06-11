@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-27",
-      "time": "2026-05-27T08:08:11.210399-04:00",
-      "exercise": "Cross-Body Shoulder Stretch",
-      "exercise_index": 13
-    },
-    {
       "date": "2026-05-28",
       "time": "2026-05-28T08:04:05.541160-04:00",
       "exercise": "Overhead Reach",
@@ -89,6 +83,12 @@
       "time": "2026-06-10T08:05:46.312886-04:00",
       "exercise": "Thread the Needle",
       "exercise_index": 27
+    },
+    {
+      "date": "2026-06-11",
+      "time": "2026-06-11T08:01:33.352431-04:00",
+      "exercise": "Open Book Stretch",
+      "exercise_index": 28
     }
   ]
 }
