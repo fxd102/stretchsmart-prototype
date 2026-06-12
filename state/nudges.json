@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-28",
-      "time": "2026-05-28T08:04:05.541160-04:00",
-      "exercise": "Overhead Reach",
-      "exercise_index": 14
-    },
-    {
       "date": "2026-05-29",
       "time": "2026-05-29T08:00:18.610736-04:00",
       "exercise": "Shoulder CARs",
@@ -89,6 +83,12 @@
       "time": "2026-06-11T08:01:33.352431-04:00",
       "exercise": "Open Book Stretch",
       "exercise_index": 28
+    },
+    {
+      "date": "2026-06-12",
+      "time": "2026-06-12T08:00:00.847421-04:00",
+      "exercise": "Prone Y Raise",
+      "exercise_index": 29
     }
   ]
 }
