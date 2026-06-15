@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-05-31",
-      "time": "2026-05-31T08:05:40.203484-04:00",
-      "exercise": "Doorway Chest Stretch",
-      "exercise_index": 17
-    },
-    {
       "date": "2026-06-01",
       "time": "2026-06-01T08:03:40.493269-04:00",
       "exercise": "Band Pull-Apart",
@@ -89,6 +83,12 @@
       "time": "2026-06-14T08:02:41.487367-04:00",
       "exercise": "Sphinx Pose",
       "exercise_index": 31
+    },
+    {
+      "date": "2026-06-15",
+      "time": "2026-06-15T08:09:35.912981-04:00",
+      "exercise": "Seated Twist",
+      "exercise_index": 32
     }
   ]
 }
