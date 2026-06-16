@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-01",
-      "time": "2026-06-01T08:03:40.493269-04:00",
-      "exercise": "Band Pull-Apart",
-      "exercise_index": 18
-    },
-    {
       "date": "2026-06-02",
       "time": "2026-06-02T08:07:58.042755-04:00",
       "exercise": "External Rotation with Band",
@@ -89,6 +83,12 @@
       "time": "2026-06-15T08:09:35.912981-04:00",
       "exercise": "Seated Twist",
       "exercise_index": 32
+    },
+    {
+      "date": "2026-06-16",
+      "time": "2026-06-16T08:10:35.916711-04:00",
+      "exercise": "Standing Back Extension",
+      "exercise_index": 33
     }
   ]
 }
