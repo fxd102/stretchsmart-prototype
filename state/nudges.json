@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-02",
-      "time": "2026-06-02T08:07:58.042755-04:00",
-      "exercise": "External Rotation with Band",
-      "exercise_index": 19
-    },
-    {
       "date": "2026-06-03",
       "time": "2026-06-03T08:03:13.964404-04:00",
       "exercise": "Shoulder Internal Rotation Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-06-16T08:10:35.916711-04:00",
       "exercise": "Standing Back Extension",
       "exercise_index": 33
+    },
+    {
+      "date": "2026-06-17",
+      "time": "2026-06-17T08:06:35.389421-04:00",
+      "exercise": "Pelvic Tilt",
+      "exercise_index": 34
     }
   ]
 }
