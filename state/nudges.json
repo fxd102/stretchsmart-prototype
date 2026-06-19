@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-04",
-      "time": "2026-06-04T08:09:31.794405-04:00",
-      "exercise": "Shoulder Flexion with Dowel",
-      "exercise_index": 21
-    },
-    {
       "date": "2026-06-05",
       "time": "2026-06-05T08:05:56.840050-04:00",
       "exercise": "Scapular Squeeze",
@@ -89,6 +83,12 @@
       "time": "2026-06-18T08:02:37.627580-04:00",
       "exercise": "Knee-to-Chest Stretch",
       "exercise_index": 35
+    },
+    {
+      "date": "2026-06-19",
+      "time": "2026-06-19T08:00:36.415307-04:00",
+      "exercise": "Supine Twist",
+      "exercise_index": 36
     }
   ]
 }
