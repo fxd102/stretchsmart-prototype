@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-06",
-      "time": "2026-06-06T08:01:30.255582-04:00",
-      "exercise": "Thoracic Extension",
-      "exercise_index": 23
-    },
-    {
       "date": "2026-06-07",
       "time": "2026-06-07T08:04:08.743436-04:00",
       "exercise": "Thoracic Rotation",
@@ -89,6 +83,12 @@
       "time": "2026-06-20T08:02:32.862387-04:00",
       "exercise": "Bird Dog",
       "exercise_index": 37
+    },
+    {
+      "date": "2026-06-21",
+      "time": "2026-06-21T08:10:34.605285-04:00",
+      "exercise": "Bridge",
+      "exercise_index": 38
     }
   ]
 }
