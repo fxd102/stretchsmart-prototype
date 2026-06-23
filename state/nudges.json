@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-08",
-      "time": "2026-06-08T08:05:13.668151-04:00",
-      "exercise": "Cat-Cow",
-      "exercise_index": 25
-    },
-    {
       "date": "2026-06-09",
       "time": "2026-06-09T08:06:07.194066-04:00",
       "exercise": "Foam Roller Thoracic Extension",
@@ -89,6 +83,12 @@
       "time": "2026-06-22T08:01:39.190497-04:00",
       "exercise": "Child's Pose",
       "exercise_index": 39
+    },
+    {
+      "date": "2026-06-23",
+      "time": "2026-06-23T08:01:34.947596-04:00",
+      "exercise": "Seated Lower Back Flexion",
+      "exercise_index": 40
     }
   ]
 }
