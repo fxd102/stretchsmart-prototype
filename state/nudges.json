@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-09",
-      "time": "2026-06-09T08:06:07.194066-04:00",
-      "exercise": "Foam Roller Thoracic Extension",
-      "exercise_index": 26
-    },
-    {
       "date": "2026-06-10",
       "time": "2026-06-10T08:05:46.312886-04:00",
       "exercise": "Thread the Needle",
@@ -89,6 +83,12 @@
       "time": "2026-06-23T08:01:34.947596-04:00",
       "exercise": "Seated Lower Back Flexion",
       "exercise_index": 40
+    },
+    {
+      "date": "2026-06-24",
+      "time": "2026-06-24T08:10:35.814951-04:00",
+      "exercise": "Prone Press-Up",
+      "exercise_index": 41
     }
   ]
 }
