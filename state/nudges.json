@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-11",
-      "time": "2026-06-11T08:01:33.352431-04:00",
-      "exercise": "Open Book Stretch",
-      "exercise_index": 28
-    },
-    {
       "date": "2026-06-12",
       "time": "2026-06-12T08:00:00.847421-04:00",
       "exercise": "Prone Y Raise",
@@ -89,6 +83,12 @@
       "time": "2026-06-25T08:00:35.888316-04:00",
       "exercise": "Side-Lying Trunk Rotation",
       "exercise_index": 42
+    },
+    {
+      "date": "2026-06-26",
+      "time": "2026-06-26T08:08:38.759467-04:00",
+      "exercise": "Superman Hold",
+      "exercise_index": 43
     }
   ]
 }
