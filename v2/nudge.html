@@ -146,19 +146,30 @@
     font-size: 20px; font-weight: 700; color: #e94560;
     text-align: center; margin-bottom: 4px; line-height: 1.2;
   }
-  /* clinical parameters */
-  .params { width: 100%; display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
-  .param {
-    background: #16213e; border-radius: 14px; padding: 14px 16px;
-    border-left: 3px solid #4ecdc4; text-align: left;
+  /* clinical cues — compact tappable chips that reveal dense text on demand */
+  .cues { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; margin-bottom: 4px; }
+  .cue {
+    padding: 13px 10px; border-radius: 14px;
+    background: #16213e; color: #cfd3dc; border: 1px solid #2a3050;
+    font-size: 13px; font-weight: 600; cursor: pointer; text-align: center;
+    transition: all 0.12s;
   }
-  .param.stop { border-left-color: #e94560; background: #251820; }
-  .param-label {
+  .cue:active { transform: scale(0.97); }
+  .cue.active { border-color: #4ecdc4; color: #4ecdc4; }
+  .cue.stop { border-color: #6e2233; color: #f08aa0; }
+  .cue.stop.active { border-color: #e94560; color: #e94560; }
+  .cue-panel { width: 100%; }
+  .cue-body {
+    background: #16213e; border-radius: 14px; padding: 14px 16px; margin-top: 8px;
+    border-left: 3px solid #4ecdc4; text-align: left;
+    font-size: 14px; line-height: 1.55; color: #ddd;
+  }
+  .cue-body.stop { border-left-color: #e94560; background: #251820; }
+  .cue-title {
     font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
     color: #4ecdc4; font-weight: 700; margin-bottom: 5px;
   }
-  .param.stop .param-label { color: #e94560; }
-  .param-text { font-size: 14px; line-height: 1.55; color: #ddd; }
+  .cue-body.stop .cue-title { color: #e94560; }
   .draft-flag {
     font-size: 11px; color: #888; font-style: italic;
     text-align: center; margin-bottom: 20px; min-height: 14px;
@@ -173,7 +184,6 @@
     <div id="nudge-screen">
       <p class="hook" id="hook"></p>
       <h1 id="ex-name">Loading…</h1>
-      <div class="illustration" id="ex-illust"></div>
       <div class="insight-card" id="insight-card" style="margin-bottom:18px;">
         <p class="insight-text" id="insight-text"></p>
         <p class="insight-src" id="insight-src"></p>
@@ -182,17 +192,13 @@
       <div class="choosers" id="choosers"></div>
     </div>
 
-    <!-- SCREEN 2: the detail — instructions + parameters (after Let's Go) -->
+    <!-- SCREEN 2: the detail — animation + timer above the fold; instructions
+         and clinical cues below (dense text tucked behind tappable cue chips) -->
     <div id="detail-screen">
       <div class="detail-name" id="detail-name"></div>
       <div class="duration-hint" id="ex-duration"></div>
 
-      <div class="card">
-        <p class="desc" id="ex-desc">&nbsp;</p>
-      </div>
-
-      <div class="params" id="ex-params"></div>
-      <div class="draft-flag" id="draft-flag"></div>
+      <div class="illustration" id="ex-illust"></div>
 
       <div class="timer-wrap" id="timer-wrap">
         <div class="phase-label" id="phase-label"></div>
@@ -207,6 +213,14 @@
         </div>
         <div class="total-remaining" id="total-remaining"></div>
       </div>
+
+      <div class="card">
+        <p class="desc" id="ex-desc">&nbsp;</p>
+      </div>
+
+      <div class="cues" id="ex-cues"></div>
+      <div class="cue-panel" id="cue-panel"></div>
+      <div class="draft-flag" id="draft-flag"></div>
 
       <div class="feedback" id="feedback">
         <button class="fb-btn too-easy" onclick="submitFeedback('too-easy')">Too Easy</button>
@@ -279,7 +293,7 @@ async function loadExercise() {
   document.getElementById('detail-name').textContent = exercise.name;
   document.getElementById('ex-duration').textContent = totalDuration(exercise) + ' seconds';
   document.getElementById('ex-desc').textContent = exercise.desc;
-  renderParams();
+  renderCues();
 
   const slug = exerciseSlug(exercise.name);
   const img = document.createElement('img');
@@ -354,33 +368,51 @@ function remainingFromPhase(phaseIdx, elapsedInPhase) {
   return Math.ceil(rem);
 }
 
-// Build the clinical parameter cards from the PT-schema fields, if present.
-function renderParams() {
-  const box = document.getElementById('ex-params');
-  box.innerHTML = '';
-  const fields = [
-    {key: 'form_cue',       label: 'Form cue',       cls: ''},
-    {key: 'stop_condition', label: 'Caution',        cls: 'stop'},
-    {key: 'regression',     label: 'Make it easier', cls: ''},
-    {key: 'remediation',    label: 'Build up first', cls: ''},
-  ];
-  fields.forEach(f => {
-    if (!exercise[f.key]) return;
-    const div = document.createElement('div');
-    div.className = 'param' + (f.cls ? ' ' + f.cls : '');
-    const label = document.createElement('div');
-    label.className = 'param-label';
-    label.textContent = f.label;
-    const text = document.createElement('div');
-    text.className = 'param-text';
-    text.textContent = exercise[f.key];
-    div.appendChild(label);
-    div.appendChild(text);
-    box.appendChild(div);
+// Clinical cue chips: short user-facing labels that expand the dense
+// PT-schema text on demand, so the animation + timer stay above the fold.
+const CUE_FIELDS = [
+  {key: 'form_cue',       chip: 'Form check',       title: 'Form cue',        cls: ''},
+  {key: 'stop_condition', chip: 'Pain or strain?',  title: 'When to stop',    cls: 'stop'},
+  {key: 'regression',     chip: 'Too hard?',        title: 'Make it easier',  cls: ''},
+  {key: 'remediation',    chip: "Can't hold form?", title: 'Build up first',  cls: ''},
+];
+let openCueKey = null;
+
+function renderCues() {
+  const grid = document.getElementById('ex-cues');
+  const panel = document.getElementById('cue-panel');
+  grid.innerHTML = '';
+  panel.innerHTML = '';
+  openCueKey = null;
+  CUE_FIELDS.filter(f => exercise[f.key]).forEach(f => {
+    const chip = document.createElement('button');
+    chip.className = 'cue' + (f.cls ? ' ' + f.cls : '');
+    chip.textContent = f.chip;
+    chip.onclick = () => toggleCue(f, chip);
+    grid.appendChild(chip);
   });
   document.getElementById('draft-flag').textContent =
     exercise.validation === 'draft_pending_pt'
       ? 'Clinical guidance — draft, pending PT review' : '';
+}
+
+function toggleCue(f, chip) {
+  const panel = document.getElementById('cue-panel');
+  document.querySelectorAll('.cue').forEach(c => c.classList.remove('active'));
+  if (openCueKey === f.key) { panel.innerHTML = ''; openCueKey = null; return; }
+  openCueKey = f.key;
+  chip.classList.add('active');
+  const body = document.createElement('div');
+  body.className = 'cue-body' + (f.cls ? ' ' + f.cls : '');
+  const title = document.createElement('div');
+  title.className = 'cue-title';
+  title.textContent = f.title;
+  const text = document.createElement('div');
+  text.textContent = exercise[f.key];
+  body.appendChild(title);
+  body.appendChild(text);
+  panel.innerHTML = '';
+  panel.appendChild(body);
 }
 
 // "Let's Go" → reveal the detail screen (instructions + parameters) and run the timer.
