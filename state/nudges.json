@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-14",
-      "time": "2026-06-14T08:02:41.487367-04:00",
-      "exercise": "Sphinx Pose",
-      "exercise_index": 31
-    },
-    {
       "date": "2026-06-15",
       "time": "2026-06-15T08:09:35.912981-04:00",
       "exercise": "Seated Twist",
@@ -89,6 +83,12 @@
       "time": "2026-06-28T08:00:32.566716-04:00",
       "exercise": "Chest Opener on Wall",
       "exercise_index": 45
+    },
+    {
+      "date": "2026-06-29",
+      "time": "2026-06-29T08:00:35.946983-04:00",
+      "exercise": "Chest Expansion Stretch",
+      "exercise_index": 46
     }
   ]
 }
