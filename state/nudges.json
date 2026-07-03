@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-18",
-      "time": "2026-06-18T08:02:37.627580-04:00",
-      "exercise": "Knee-to-Chest Stretch",
-      "exercise_index": 35
-    },
-    {
       "date": "2026-06-19",
       "time": "2026-06-19T08:00:36.415307-04:00",
       "exercise": "Supine Twist",
@@ -89,6 +83,12 @@
       "time": "2026-07-02T08:08:38.034328-04:00",
       "exercise": "Foam Roller Chest Opener",
       "exercise_index": 49
+    },
+    {
+      "date": "2026-07-03",
+      "time": "2026-07-03T08:09:27.982200-04:00",
+      "exercise": "Wall Push-Up",
+      "exercise_index": 50
     }
   ]
 }
