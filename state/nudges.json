@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-19",
-      "time": "2026-06-19T08:00:36.415307-04:00",
-      "exercise": "Supine Twist",
-      "exercise_index": 36
-    },
-    {
       "date": "2026-06-20",
       "time": "2026-06-20T08:02:32.862387-04:00",
       "exercise": "Bird Dog",
@@ -89,6 +83,12 @@
       "time": "2026-07-03T08:09:27.982200-04:00",
       "exercise": "Wall Push-Up",
       "exercise_index": 50
+    },
+    {
+      "date": "2026-07-04",
+      "time": "2026-07-04T08:00:21.248336-04:00",
+      "exercise": "Dead Bug",
+      "exercise_index": 51
     }
   ]
 }
