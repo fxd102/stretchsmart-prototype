@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-20",
-      "time": "2026-06-20T08:02:32.862387-04:00",
-      "exercise": "Bird Dog",
-      "exercise_index": 37
-    },
-    {
       "date": "2026-06-21",
       "time": "2026-06-21T08:10:34.605285-04:00",
       "exercise": "Bridge",
@@ -89,6 +83,12 @@
       "time": "2026-07-04T08:00:21.248336-04:00",
       "exercise": "Dead Bug",
       "exercise_index": 51
+    },
+    {
+      "date": "2026-07-05",
+      "time": "2026-07-05T08:01:11.372800-04:00",
+      "exercise": "Pallof Press (Band)",
+      "exercise_index": 52
     }
   ]
 }
