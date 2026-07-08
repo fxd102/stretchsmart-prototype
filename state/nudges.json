@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-23",
-      "time": "2026-06-23T08:01:34.947596-04:00",
-      "exercise": "Seated Lower Back Flexion",
-      "exercise_index": 40
-    },
-    {
       "date": "2026-06-24",
       "time": "2026-06-24T08:10:35.814951-04:00",
       "exercise": "Prone Press-Up",
@@ -89,6 +83,12 @@
       "time": "2026-07-07T08:03:58.243832-04:00",
       "exercise": "Side Plank",
       "exercise_index": 54
+    },
+    {
+      "date": "2026-07-08",
+      "time": "2026-07-08T08:09:04.386772-04:00",
+      "exercise": "Seated Core Brace",
+      "exercise_index": 55
     }
   ]
 }
