@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-24",
-      "time": "2026-06-24T08:10:35.814951-04:00",
-      "exercise": "Prone Press-Up",
-      "exercise_index": 41
-    },
-    {
       "date": "2026-06-25",
       "time": "2026-06-25T08:00:35.888316-04:00",
       "exercise": "Side-Lying Trunk Rotation",
@@ -89,6 +83,12 @@
       "time": "2026-07-08T08:09:04.386772-04:00",
       "exercise": "Seated Core Brace",
       "exercise_index": 55
+    },
+    {
+      "date": "2026-07-09",
+      "time": "2026-07-09T08:07:27.203576-04:00",
+      "exercise": "Seated Marching",
+      "exercise_index": 56
     }
   ]
 }
