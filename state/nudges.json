@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-25",
-      "time": "2026-06-25T08:00:35.888316-04:00",
-      "exercise": "Side-Lying Trunk Rotation",
-      "exercise_index": 42
-    },
-    {
       "date": "2026-06-26",
       "time": "2026-06-26T08:08:38.759467-04:00",
       "exercise": "Superman Hold",
@@ -89,6 +83,12 @@
       "time": "2026-07-09T08:07:27.203576-04:00",
       "exercise": "Seated Marching",
       "exercise_index": 56
+    },
+    {
+      "date": "2026-07-10",
+      "time": "2026-07-10T09:01:36.957307-04:00",
+      "exercise": "Bicycle Crunch",
+      "exercise_index": 57
     }
   ]
 }
