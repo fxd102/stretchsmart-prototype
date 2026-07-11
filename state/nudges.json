@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-26",
-      "time": "2026-06-26T08:08:38.759467-04:00",
-      "exercise": "Superman Hold",
-      "exercise_index": 43
-    },
-    {
       "date": "2026-06-27",
       "time": "2026-06-27T08:03:40.032868-04:00",
       "exercise": "Doorway Pec Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-07-10T09:01:36.957307-04:00",
       "exercise": "Bicycle Crunch",
       "exercise_index": 57
+    },
+    {
+      "date": "2026-07-11",
+      "time": "2026-07-11T08:08:17.138739-04:00",
+      "exercise": "Standing Anti-Rotation Hold",
+      "exercise_index": 58
     }
   ]
 }
