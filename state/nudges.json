@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-27",
-      "time": "2026-06-27T08:03:40.032868-04:00",
-      "exercise": "Doorway Pec Stretch",
-      "exercise_index": 44
-    },
-    {
       "date": "2026-06-28",
       "time": "2026-06-28T08:00:32.566716-04:00",
       "exercise": "Chest Opener on Wall",
@@ -89,6 +83,12 @@
       "time": "2026-07-11T08:08:17.138739-04:00",
       "exercise": "Standing Anti-Rotation Hold",
       "exercise_index": 58
+    },
+    {
+      "date": "2026-07-12",
+      "time": "2026-07-12T08:04:17.917199-04:00",
+      "exercise": "Hollow Body Hold",
+      "exercise_index": 59
     }
   ]
 }
