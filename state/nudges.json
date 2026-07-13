@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-06-28",
-      "time": "2026-06-28T08:00:32.566716-04:00",
-      "exercise": "Chest Opener on Wall",
-      "exercise_index": 45
-    },
-    {
       "date": "2026-06-29",
       "time": "2026-06-29T08:00:35.946983-04:00",
       "exercise": "Chest Expansion Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-07-12T08:04:17.917199-04:00",
       "exercise": "Hollow Body Hold",
       "exercise_index": 59
+    },
+    {
+      "date": "2026-07-13",
+      "time": "2026-07-13T08:10:37.195568-04:00",
+      "exercise": "Bear Crawl Hold",
+      "exercise_index": 60
     }
   ]
 }
