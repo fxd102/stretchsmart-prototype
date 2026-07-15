@@ -86,7 +86,12 @@
     "name": "Upper Trap Stretch",
     "reason": "Deepens the lateral neck release"
    }
-  ]
+  ],
+  "form_cue": "Tip the ear toward the shoulder with the face pointing forward — no rotation — and keep both shoulders down; don't lift the opposite shoulder up to meet the head.",
+  "stop_condition": "Ease off with any dizziness, sharp pain, or tingling into the arm. A gentle side-of-neck stretch is the target; don't force the end range.",
+  "regression": "Shrink the tilt, or hold the chair with the opposite hand to keep that shoulder anchored down instead of pulling the head over.",
+  "remediation": "If it feels tight and guarded, warm up with a few gentle neck nods and shoulder rolls first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Rotation",
@@ -215,7 +220,12 @@
     "reason": "Hits the deeper neck-to-shoulder muscle"
    }
   ],
-  "builds_on": "Neck Side Tilt"
+  "builds_on": "Neck Side Tilt",
+  "form_cue": "Anchor the opposite shoulder down (hold the chair) and tilt the head away, letting the stretch come from the lengthening side — not from yanking with the free hand.",
+  "stop_condition": "A gentle pull along the neck-to-shoulder line only; stop with sharp pain, dizziness, or arm tingling.",
+  "regression": "Skip the hand-assist and just tilt the head; the anchored shoulder alone gives a stretch.",
+  "remediation": "If one side is much tighter, spend more time there but never push harder — frequency beats force.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Levator Scapulae Stretch",
@@ -262,7 +272,12 @@
     "reason": "Strengthens what the stretch is lengthening"
    }
   ],
-  "builds_on": "Upper Trap Stretch"
+  "builds_on": "Upper Trap Stretch",
+  "form_cue": "Rotate about 45 degrees, drop the nose toward the armpit, and let the hand add only feather-light guidance — the stretch is in the back corner of the neck, not from cranking the head down.",
+  "stop_condition": "Very gentle only. Stop with pinching, dizziness, or tingling into the arm or hand. If the overpressure hurts, drop the hand entirely.",
+  "regression": "Do it with NO hand pressure — the head position alone stretches the levator for most people.",
+  "remediation": "If the shoulder on that side hikes up, anchor it down (sit on the hand or hold the chair) before adding the stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck CARs",
@@ -348,7 +363,12 @@
     "reason": "Mobility plus strength for complete neck health"
    }
   ],
-  "builds_on": "Chin Tuck"
+  "builds_on": "Chin Tuck",
+  "form_cue": "Push the head into the palm with NO actual movement — it's a static hold. Build the force gradually so the head stays perfectly still; don't jerk into it.",
+  "stop_condition": "Stop with dizziness, sharp pain, or symptoms into the arms. Keep the effort moderate — this isn't a max-force test.",
+  "regression": "Use light pressure (20-30%) and a shorter hold; even gentle isometrics build control.",
+  "remediation": "If holding still is hard, rest the head against a wall or headrest and press lightly into that first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Flexor Strengthening",
@@ -465,7 +485,12 @@
     "name": "Shoulder Rolls",
     "reason": "Both warm up the shoulder girdle"
    }
-  ]
+  ],
+  "form_cue": "Shrug straight up toward the ears, then let them DROP and fully release — the value is in the letting-go, not the lift. Keep breathing.",
+  "stop_condition": "A gentle move; stop with any neck pinch or sharp shoulder pain.",
+  "regression": "Smaller shrug, or do one shoulder at a time.",
+  "remediation": "If the shoulders live up near the ears, pair this with scapular depressions to learn the 'down' position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Rolls",
@@ -1008,7 +1033,12 @@
     "name": "Cat-Cow",
     "reason": "Both mobilize the spine in extension/flexion"
    }
-  ]
+  ],
+  "form_cue": "Arch the UPPER back over the chair edge to open the chest — the movement is in the mid-back, not the low back. Support the head with the hands; don't crank the neck.",
+  "stop_condition": "Keep it gentle and in the mid-back. Stop with low-back pinching (you're arching too low), sharp pain, or dizziness.",
+  "regression": "Reduce the arch, or do it without clasping the head — just open the arms and lift the chest.",
+  "remediation": "If the low back takes over, brace the core lightly and keep the ribs down so the motion stays in the thoracic spine.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Thoracic Rotation",
@@ -1054,7 +1084,12 @@
     "name": "Seated Twist",
     "reason": "Different positions for thoracic rotation"
    }
-  ]
+  ],
+  "form_cue": "Rotate from the mid-back with arms crossed, keeping the hips and pelvis facing forward — turn the ribcage, not the whole body. Sit tall throughout.",
+  "stop_condition": "Gentle rotation only; stop with sharp back pain or anything radiating.",
+  "regression": "Reduce the turn; small controlled range beats forcing depth.",
+  "remediation": "If the hips swivel, plant the feet and squeeze the seat to keep the base still, isolating the mid-back.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Cat-Cow",
@@ -1389,7 +1424,12 @@
     "name": "Side Bend Stretch",
     "reason": "Twist and side bend cover all seated spinal movements"
    }
-  ]
+  ],
+  "form_cue": "Sit tall and rotate the ribcage, using the hand on the knee only as a light gauge — not a lever to wrench yourself around. Grow taller as you turn; don't collapse.",
+  "stop_condition": "Stop with sharp or pinching back pain, or anything shooting down a leg. This is mobility, not a max stretch.",
+  "regression": "Use less rotation and don't pull on the knee; a gentle turn is enough.",
+  "remediation": "Keep the spine long — rotation on a tall spine is safer than cranking on a slumped one.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Back Extension",
@@ -1721,7 +1761,12 @@
     "name": "Seated Twist",
     "reason": "Flexion and rotation cover all seated spine movements"
    }
-  ]
+  ],
+  "form_cue": "Slowly round forward and let the head and arms hang heavy, one segment at a time — a gentle flexion, not a fast flop. Come up slowly, stacking the spine.",
+  "stop_condition": "Stop with sharp pain or any tingling/numbness down the legs. If flexion is your provocative direction, skip it. Rise slowly to avoid dizziness.",
+  "regression": "Round only partway, or rest the hands on the thighs to support some weight on the way down and up.",
+  "remediation": "If standing up makes you lightheaded, pause halfway. If flexion aggravates the back, favor extension-biased moves instead.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prone Press-Up",
@@ -2342,7 +2387,12 @@
     "name": "Seated Marching",
     "reason": "Brace the core, then add limb movement"
    }
-  ]
+  ],
+  "form_cue": "Firm the whole trunk to a moderate 30-40% brace — as if expecting a light poke — and KEEP BREATHING. Don't suck the belly in or hold your breath.",
+  "stop_condition": "Stop if you hold your breath and get lightheaded, or with any sharp back pain. It's a gentle brace, not a max clench.",
+  "regression": "Lighter brace, shorter hold; even a soft co-contraction counts.",
+  "remediation": "If you can't brace and breathe at once, practice diaphragmatic breathing first, then add a light brace on top.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Marching",
@@ -2381,7 +2431,12 @@
     "reason": "Seated then standing progression"
    }
   ],
-  "builds_on": "Seated Core Brace"
+  "builds_on": "Seated Core Brace",
+  "form_cue": "Keep the core lightly braced and the spine tall, and lift each knee without rocking the pelvis or leaning back — the trunk stays quiet while the legs move.",
+  "stop_condition": "Stop with low-back pain, or if you have to swing or lean to lift the knee. Keep it controlled.",
+  "regression": "Lift the knee less high, or slide the heel forward instead of lifting.",
+  "remediation": "If the pelvis rocks, master the Seated Core Brace first so the trunk can stay still.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bicycle Crunch",
@@ -2682,7 +2737,13 @@
     "name": "Figure Four Stretch",
     "reason": "Seated version is quicker, floor version is deeper"
    }
-  ]
+  ],
+  "form_cue": "Cross the ankle over the opposite knee and hinge forward from the HIPS with a flat back — the stretch belongs in the outer hip/glute of the crossed leg, not the knee or low back. Keep the crossed knee relaxed; don't force it down.",
+  "stop_condition": "Stop with any KNEE pain (it should be felt in the hip), sharp groin pain, or low-back pain from rounding. IMPORTANT: after a hip replacement this crossed-leg position can violate hip precautions — skip it unless a surgeon or PT has cleared this range.",
+  "regression": "Don't cross fully — rest the ankle lower on the shin, or hold the shin and hug the knee gently toward the opposite shoulder for a milder version. Hinge less far.",
+  "remediation": "If crossing the leg is limited or pinches in the front of the hip, stay with the gentler knee-hug version and don't force the cross.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Hip CARs",
@@ -3795,7 +3856,12 @@
     "name": "Wall Sit",
     "reason": "Seated extension builds toward more loaded positions"
    }
-  ]
+  ],
+  "form_cue": "Straighten the knee to about parallel with the floor, squeezing the thigh at the top — slow up, slow down, thigh staying on the seat.",
+  "stop_condition": "Stop with sharp knee pain (a mild working effort in the thigh is fine). Ease off if the knee clicks painfully.",
+  "regression": "Straighten only partway, or do fewer reps; a partial extension still works the quad.",
+  "remediation": "If the knee aches at full lock, stop just short of straight and hold there.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bodyweight Squat",
@@ -4320,7 +4386,13 @@
     "reason": "Both help with sciatic-area tension"
    }
   ],
-  "builds_on": "Seated Hamstring Stretch"
+  "builds_on": "Seated Hamstring Stretch",
+  "form_cue": "This is a nerve GLIDE, not a stretch: as the knee straightens look UP, as it bends tuck the chin — the two ends move in opposition, smooth and rhythmic. You should feel gentle tension that comes and goes, never a hard stretch you hold.",
+  "stop_condition": "Nerve tissue must not be forced. Stop with any sharp, shooting, or burning pain or increasing numbness/tingling down the leg — that means too much, not 'good stretch.' Keep it gentle and brief; never hold at the tension end.",
+  "regression": "Reduce the range at both ends (less knee straightening, smaller head movement) and do fewer, slower reps. Small and gentle is the whole point of flossing.",
+  "remediation": "If even a small glide provokes shooting leg symptoms, stop and flag it — that pattern wants a clinician's eyes before continuing, not more reps.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Calf Raise",
@@ -4489,7 +4561,12 @@
     "name": "Calf Raise",
     "reason": "Mobility then strength for the ankles"
    }
-  ]
+  ],
+  "form_cue": "Lift the foot and draw big slow circles from the ankle, through full range both directions — movement at the ankle, not the whole leg.",
+  "stop_condition": "Stop with sharp ankle pain or cramping; a little calf cramp means ease the range.",
+  "regression": "Smaller circles, fewer reps, or keep the heel resting and just move the forefoot.",
+  "remediation": "If the ankle is stiff, warm up with gentle pumps first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Ankle Alphabet",
@@ -4527,7 +4604,12 @@
     "name": "Calf Raise",
     "reason": "Mobility then strength"
    }
-  ]
+  ],
+  "form_cue": "Trace the letters with the big toe, moving from the ankle through its full range — slow and deliberate, letting the ankle explore all directions.",
+  "stop_condition": "Stop with sharp pain or cramping; work within a comfortable range.",
+  "regression": "Trace fewer letters or make them smaller.",
+  "remediation": "If it cramps, point-and-flex a few times first and stay hydrated.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Ankle Dorsiflexion Mobilization",
@@ -4613,7 +4695,12 @@
     "reason": "Toe control improves balance"
    }
   ],
-  "builds_on": "Ankle Circles"
+  "builds_on": "Ankle Circles",
+  "form_cue": "Isolate the toes — lift the big toe while the other four stay down, then reverse. Keep the foot flat and calm; it's about control, not force, and it feels awkward at first.",
+  "stop_condition": "Very low risk; just stop and shake it out if the foot cramps.",
+  "regression": "Work toward the movement even if the toes barely separate at first — the skill builds with practice.",
+  "remediation": "If a cramp hits, massage the arch and do fewer reps.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Toe Spread",
@@ -4651,7 +4738,12 @@
     "name": "Ankle Circles",
     "reason": "Toe and ankle mobility work well together"
    }
-  ]
+  ],
+  "form_cue": "Spread all the toes as wide as comfortable, hold, then relax fully. Keep the foot flat and the effort in the toes.",
+  "stop_condition": "Stop if the foot cramps; ease off and shake out.",
+  "regression": "Assist by hand at first (spread the toes with your fingers) to learn the motion.",
+  "remediation": "Frequent short sets beat long holds for toe control.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Single-Leg Calf Raise",
@@ -4816,7 +4908,12 @@
     "name": "Prayer Stretch",
     "reason": "Circles warm up, prayer stretch deepens the range"
    }
-  ]
+  ],
+  "form_cue": "Make loose fists and circle the wrists through full range both ways — movement at the wrist, forearms still, slow and smooth.",
+  "stop_condition": "Stop with sharp wrist pain or painful clicking; mild stiffness easing is fine.",
+  "regression": "Smaller circles, or unclenched hands.",
+  "remediation": "If stiff, shake the hands out to warm them first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prayer Stretch",
@@ -4854,7 +4951,12 @@
     "name": "Wrist Circles",
     "reason": "Warm up with circles, deepen with prayer stretch"
    }
-  ]
+  ],
+  "form_cue": "Palms pressed flat together at chest height, lower the hands until a gentle stretch appears on the underside of the wrists/forearms — keep the palms together and the elbows lifted.",
+  "stop_condition": "A gentle stretch only; stop with sharp pain or tingling into the hands.",
+  "regression": "Lower the hands less far, or ease the palm pressure.",
+  "remediation": "If very tight, hold higher and build range gradually with frequent short holds.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Reverse Prayer Stretch",
@@ -4893,7 +4995,12 @@
     "reason": "Both stretch the flexor side of the wrist"
    }
   ],
-  "builds_on": "Prayer Stretch"
+  "builds_on": "Prayer Stretch",
+  "form_cue": "Press the backs of the hands together, fingers pointing down, to stretch the top of the wrists/forearms. Keep it gentle and symmetrical.",
+  "stop_condition": "Stop with sharp pain or tingling; a mild top-of-forearm stretch is the goal.",
+  "regression": "Reduce the press, or do one wrist at a time with the other hand assisting gently.",
+  "remediation": "Build tolerance slowly — this position is intense for tight wrists.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Finger Spread",
@@ -4931,7 +5038,12 @@
     "name": "Rubber Band Finger Extension",
     "reason": "Both strengthen finger extensors"
    }
-  ]
+  ],
+  "form_cue": "Spread the fingers as wide as comfortable, then close to a firm (not white-knuckle) fist — smooth open and close.",
+  "stop_condition": "Stop with joint pain; mild effort is fine. Very low risk.",
+  "regression": "Smaller range, fewer reps.",
+  "remediation": "If arthritic joints ache, warm the hands first and reduce the squeeze.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wrist Flexor Stretch",
@@ -5028,7 +5140,12 @@
     "name": "Reverse Prayer Stretch",
     "reason": "Both target wrist extensor tightness"
    }
-  ]
+  ],
+  "form_cue": "Arm forward palm DOWN, gently guide the hand down and back with the other hand until a stretch appears on TOP of the forearm — elbow straight, stretch in the forearm, not jammed into the wrist joint.",
+  "stop_condition": "Stop with sharp pain or tingling into the hand — ease off at once. Gentle pull only.",
+  "regression": "Bend the elbow slightly, or ease the pressure.",
+  "remediation": "Short frequent holds beat long aggressive ones for forearm tissue.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Rubber Band Finger Extension",
@@ -5067,7 +5184,12 @@
     "reason": "Body weight then resistance progression"
    }
   ],
-  "builds_on": "Finger Spread"
+  "builds_on": "Finger Spread",
+  "form_cue": "Open the fingers against the band's resistance slowly, then CONTROL the return — don't let it snap shut. It trains the finger extensors.",
+  "stop_condition": "Stop with joint pain; keep the effort moderate.",
+  "regression": "Use a lighter/looser band, or fewer reps.",
+  "remediation": "Start with plain Finger Spread (no band) if the resistance is too much.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Grip Squeeze",
@@ -5113,7 +5235,12 @@
     "name": "Finger Spread",
     "reason": "Open and close patterns for hand health"
    }
-  ]
+  ],
+  "form_cue": "Squeeze the ball or towel firmly for the hold, then fully release — steady effort, not a painful crush.",
+  "stop_condition": "Stop with joint pain (especially arthritic finger/thumb joints); mild forearm fatigue is fine.",
+  "regression": "Softer object, lighter squeeze, fewer reps.",
+  "remediation": "If arthritic, use a softer ball and less force; warmth first helps.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Tabletop Wrist Stretch",
@@ -5191,7 +5318,12 @@
     "reason": "Mobility and strength for the hands"
    }
   ],
-  "builds_on": "Finger Spread"
+  "builds_on": "Finger Spread",
+  "form_cue": "Move slowly through the five hand positions, pausing at each — these glide the finger tendons through their range. Smooth and controlled.",
+  "stop_condition": "Stop with sharp pain or a finger catching/locking. Mild stretch or pull is fine.",
+  "regression": "Do fewer positions, or hold each briefly; even partial glides help.",
+  "remediation": "This is common in hand therapy for stiffness — if a finger catches or locks, flag it to a clinician.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Thumb Stretch and Opposition",
@@ -5237,7 +5369,12 @@
     "name": "Tendon Glide Sequence",
     "reason": "Both are fine motor hand exercises"
    }
-  ]
+  ],
+  "form_cue": "Touch the thumb to each fingertip in turn (opposition), then gently stretch the thumb away from the palm — precise and controlled, the stretch mild.",
+  "stop_condition": "Stop with pain at the base of the thumb (a common arthritic spot); ease the stretch.",
+  "regression": "Do opposition only and skip the stretch, or reduce the stretch range.",
+  "remediation": "If the thumb base is arthritic or painful, keep it gentle and brief; warmth first helps.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Single-Leg Stand",
@@ -5571,7 +5708,13 @@
     "name": "Step-Up",
     "reason": "Both are functional lower body exercises"
    }
-  ]
+  ],
+  "form_cue": "Scoot forward, feet under you, hinge the chest forward over the toes, and drive up through the heels — stand tall, then lower back down with CONTROL, don't drop. Hands-free is the goal, not a rule.",
+  "stop_condition": "Stop with sharp knee or hip pain, or if you feel unsteady or lightheaded. SAFETY: keep a stable chair behind you and, if balance is at all shaky, a hand near a solid surface — this is a genuine fall-risk movement for frail or elderly users.",
+  "regression": "Use the hands to push off, use a higher/firmer chair (or a cushion to raise the seat), or fewer reps. A higher seat makes it much easier.",
+  "remediation": "If standing hands-free isn't safe yet, keep using the arms and a sturdy surface nearby, and build leg strength before removing support.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Eyes-Closed Balance",
@@ -5787,7 +5930,12 @@
     "reason": "Both are structured relaxation techniques"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Even 4-count in, hold, out, hold — smooth and relaxed, shoulders quiet, belly leading the inhale. Don't force the volume.",
+  "stop_condition": "Ease off with lightheadedness or air hunger; return to natural breathing, then resume gentler. Skip long breath-holds if you have significant heart or lung conditions unless cleared.",
+  "regression": "Shorten the counts (3-3-3-3, or drop the holds) until it's comfortable.",
+  "remediation": "Build with simple diaphragmatic breathing before adding holds.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "4-7-8 Breathing",
@@ -5826,7 +5974,12 @@
     "reason": "Release tension then breathe deeply"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "In for 4, hold for 7, long slow out for 8 — the long exhale is the point. Keep it relaxed; the counts can be quick if 7-8 seconds feels long.",
+  "stop_condition": "It's common to feel lightheaded at first — if so, do fewer rounds and shorten the hold. Don't do it standing or driving. Ease the hold if you have heart or lung concerns.",
+  "regression": "Scale the counts down (keep the exhale the longest phase).",
+  "remediation": "Master a simple long-exhale breath first, then add the hold.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pursed Lip Breathing",
@@ -5864,7 +6017,12 @@
     "name": "Rib Expansion Breathing",
     "reason": "Both improve breathing capacity"
    }
-  ]
+  ],
+  "form_cue": "Inhale gently through the nose, exhale slowly through pursed lips (like cooling soup) about twice as long as the inhale — relaxed, the exhale passive and long.",
+  "stop_condition": "Very safe — just stop with lightheadedness and return to normal. Especially useful for shortness of breath.",
+  "regression": "Shorten the counts; keep the exhale longer than the inhale.",
+  "remediation": "None needed; this is often the easiest breathing pattern to start with.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Rib Expansion Breathing",
@@ -5903,7 +6061,12 @@
     "reason": "Thoracic mobility supports rib expansion"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Hands on the side ribs; breathe so the ribs widen INTO the hands (sideways expansion) rather than the shoulders rising. Feel the ribcage go wide.",
+  "stop_condition": "Stop with lightheadedness. No force — it's about direction of breath, not size.",
+  "regression": "Do it lying down, or with lighter breaths, to feel the rib movement first.",
+  "remediation": "If the shoulders keep rising, soften them and think 'wide,' not 'big.'",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Crocodile Breathing",
@@ -5981,7 +6144,12 @@
     "name": "Diaphragmatic Breathing",
     "reason": "Quick stress relief before structured breathing"
    }
-  ]
+  ],
+  "form_cue": "Full easy breath in through the nose, then a complete audible sigh out through the mouth — let the exhale fully empty and the body soften with it.",
+  "stop_condition": "Very safe; stop only with lightheadedness, and do fewer gentler rounds if so.",
+  "regression": "Smaller breaths; the sigh-out matters more than the size of the in-breath.",
+  "remediation": "None needed.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Alternate Nostril Breathing",
@@ -6020,7 +6188,12 @@
     "reason": "Different breathing patterns for different needs"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Close one nostril, inhale through the open side, switch, exhale through the other — slow, even, unforced, shoulders and face relaxed.",
+  "stop_condition": "Stop with lightheadedness, or if a nostril is too congested to breathe comfortably — don't strain through a blocked side.",
+  "regression": "Skip any breath-holds, shorten the counts, or just do a few rounds.",
+  "remediation": "If congested, do a simpler breathing pattern that day.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side Bend Stretch",
@@ -6276,7 +6449,12 @@
     "name": "Standing Full Body Shake",
     "reason": "Desk reset then stand and shake"
    }
-  ]
+  ],
+  "form_cue": "Move through each mini-exercise gently and in order — it's a mobility reset, not a workout. Follow each component's own gentle, controlled form.",
+  "stop_condition": "Stop any single component that provokes pain, dizziness, or tingling — skip it and continue with the rest.",
+  "regression": "Do fewer of the components, or fewer reps of each.",
+  "remediation": "See each individual exercise's cues if any part feels off.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Morning Wake-Up Flow",
@@ -6663,7 +6841,12 @@
     "name": "Jaw Release",
     "reason": "Jaw is often the most tension-holding muscle"
    }
-  ]
+  ],
+  "form_cue": "Tense each group to a MODERATE (not maximal) level for about 5 seconds, then fully release and notice the contrast. Keep breathing; never clench hard enough to cramp or strain a joint.",
+  "stop_condition": "Stop tensing any area that's injured or wants to cramp, and don't hold the breath.",
+  "regression": "Use lighter tension, or skip any sore/injured group and just relax it.",
+  "remediation": "If a group cramps (calves and feet are common), use gentler tension there.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Jaw Release",
@@ -6701,7 +6884,12 @@
     "name": "Neck Side Tilt",
     "reason": "Jaw and neck tension often go together"
    }
-  ]
+  ],
+  "form_cue": "Let the jaw hang loose and rest the tongue lightly on the roof of the mouth behind the teeth — a passive release into a neutral, relaxed position.",
+  "stop_condition": "Stop with any jaw-joint (TMJ) pain or clicking that hurts. It should feel like a release, not a stretch.",
+  "regression": "Just soften the jaw without any specific tongue placement.",
+  "remediation": "If the jaw is painful or clicky (TMJ issues), keep it very gentle and see a clinician if it persists.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Eye Circles",
@@ -6739,7 +6927,12 @@
     "name": "Chin Tuck",
     "reason": "Eye and neck work together for screen-related tension"
    }
-  ]
+  ],
+  "form_cue": "Keep the head still and move ONLY the eyes in slow full circles — up, out, down, in — smooth tracking, without straining to the very corners.",
+  "stop_condition": "Stop with eye strain, headache, or dizziness — reduce the range and slow down; rest if the eyes feel tired.",
+  "regression": "Smaller circles, fewer reps, blink between sets.",
+  "remediation": "If it triggers dizziness, do fewer and slower, and look at a far point to reset.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lunge Matrix",
@@ -7000,7 +7193,13 @@
     "name": "Pelvic Tilt",
     "reason": "Both engage the deep core system"
    }
-  ]
+  ],
+  "form_cue": "Gently lift the pelvic floor in graded stages (like a slow elevator up), then fully RELAX back down between reps — a lift-and-let-go. Keep breathing; don't clench the glutes or hold your breath.",
+  "stop_condition": "Stop if you can't fully relax between reps, feel pain, or find yourself bearing DOWN instead of lifting. Over-gripping is counterproductive.",
+  "regression": "Use just the first 'floor' (a light lift) and focus on the full release, which matters as much as the lift.",
+  "remediation": "If you're unsure you're finding the right muscles, this is worth checking with a pelvic-health PT — cueing it as a bear-down is a common mistake.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Standing Hip Abduction",
@@ -7084,7 +7283,12 @@
     "name": "Calf Raise",
     "reason": "Pumps are the seated warm-up for standing calf raises"
    }
-  ]
+  ],
+  "form_cue": "Alternate pointing the toes down and pulling them up, pumping through the full ankle range — smooth and rhythmic, feet near the floor.",
+  "stop_condition": "Stop with sharp pain or cramping. (Great for circulation and very low risk.)",
+  "regression": "Smaller, slower pumps; even a little movement aids circulation.",
+  "remediation": "If the calf cramps on the point, favor the pull-up (dorsiflexion) direction.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Chest Fly",
@@ -7584,7 +7788,13 @@
     "reason": "Wave (flexion/extension) plus twist (rotation) for full seated spine mobility"
    }
   ],
-  "builds_on": "Cat-Cow"
+  "builds_on": "Cat-Cow",
+  "form_cue": "Roll into a slouch one segment at a time — low back, then mid, then upper — a smooth wave of flexion, then reverse to stack back up tall. Controlled, not a collapse.",
+  "stop_condition": "Stop with sharp back pain or any tingling down the legs. If forward-rounding is your provocative direction, keep it small or skip it.",
+  "regression": "Move through a smaller range, or just alternate a gentle slouch and sit-tall without the segmental detail.",
+  "remediation": "If segmenting is hard, practice a simple pelvic tilt (rocking the pelvis) to find low-back movement first.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Wall Hamstring Stretch",
@@ -7975,7 +8185,13 @@
     "name": "Hip Flexor Stretch (Half-Kneel)",
     "reason": "Seated version for when you can't get on the floor"
    }
-  ]
+  ],
+  "form_cue": "Let the leg drop back and down off the chair edge, tucking the pelvis slightly (posterior tilt) so the stretch lands in the FRONT of the hip/thigh, not the low back. Sit tall and stay stable on the seat.",
+  "stop_condition": "Stop with low-back pinching (tuck the pelvis more), sharp groin pain, or if you feel unstable on the edge of the chair.",
+  "regression": "Let the leg drop back only slightly; a small range still reaches the hip flexor, and hold the chair for stability.",
+  "remediation": "If the low back arches to 'fake' the stretch, add a light core brace and tuck the pelvis so the hip does the work.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Lateral Neck Flexion with Resistance",
@@ -8022,7 +8238,13 @@
     "reason": "Strength and mobility together"
    }
   ],
-  "builds_on": "Isometric Neck Strengthening"
+  "builds_on": "Isometric Neck Strengthening",
+  "form_cue": "Press the head sideways INTO the hand while the hand fully resists so NOTHING moves — a pure isometric. Build the push gradually and keep the chin neutral, not poking forward.",
+  "stop_condition": "Stop immediately with dizziness, sharp/shooting pain, or any tingling/numbness into the arm. Keep the force moderate — never a maximal strain on the neck. Skip it entirely if you have current neck pain or nerve symptoms.",
+  "regression": "Use light pressure and short holds; the goal is control, not strength.",
+  "remediation": "Master the gentle Chin Tuck and the forehead Isometric first — those build the base control before adding side-load.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Prone Neck Retraction",
@@ -8376,7 +8598,12 @@
     "reason": "Ankle stability supports balance"
    }
   ],
-  "builds_on": "Ankle Circles"
+  "builds_on": "Ankle Circles",
+  "form_cue": "Roll the soles gently toward each other (inversion) then apart (eversion), moving from the ankle with the heel fairly still — controlled and small, since this is the direction ankles sprain.",
+  "stop_condition": "Stop with sharp pain, especially on the OUTER ankle (inversion is the classic sprain direction). Gentle range only.",
+  "regression": "Very small movements; if recovering from a sprain, work the pain-free direction only.",
+  "remediation": "Build tolerance with pain-free pumps and circles before loading inversion/eversion.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Finger Abduction with Band",
@@ -8423,7 +8650,12 @@
     "reason": "Open and close patterns for hand strength balance"
    }
   ],
-  "builds_on": "Rubber Band Finger Extension"
+  "builds_on": "Rubber Band Finger Extension",
+  "form_cue": "Spread the fingers apart against the band at the middle knuckles, then control the return — it trains the small hand muscles. Slow and deliberate.",
+  "stop_condition": "Stop with joint pain; moderate effort only.",
+  "regression": "Looser band, fewer reps, or plain finger spreads first.",
+  "remediation": "Build with unresisted Finger Spread before adding the band.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Backward Walking",
@@ -8501,7 +8733,12 @@
     "reason": "Breathing plus muscle relaxation for complete calming"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "In for 3, out for 6 — the exhale about double the inhale, which is what down-shifts the nervous system. Smooth and belly-led.",
+  "stop_condition": "Ease off with any lightheadedness and return to natural breathing.",
+  "regression": "Any in:out ratio where the exhale is longer works — scale it to comfort.",
+  "remediation": "None; this is a gentle, high-value pattern.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Shoulder Blade Pinch",
@@ -8539,7 +8776,12 @@
     "name": "Chin Tuck",
     "reason": "Shoulder blades down and chin back together fix desk posture"
    }
-  ]
+  ],
+  "form_cue": "Pull the shoulder blades DOWN and together — 'into the back pockets' — not shrugging up. Chest stays soft; the work is between the blades.",
+  "stop_condition": "Stop if the shoulders rise toward the ears, or with front-of-shoulder pinching or neck strain.",
+  "regression": "A lighter squeeze and a briefer hold.",
+  "remediation": "If the upper traps dominate, practice scapular depression (blades down without squeezing) first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Doorway Lat Stretch",
@@ -8756,7 +8998,13 @@
     "reason": "Both deepen the lateral neck stretch"
    }
   ],
-  "builds_on": "Neck Side Tilt"
+  "builds_on": "Neck Side Tilt",
+  "form_cue": "Tilt the head to the side, then let the hand add only VERY gentle extra pressure — a light assist, never a pull. The stretch should feel mild along the opposite side of the neck.",
+  "stop_condition": "Overpressure on the neck is the higher-risk part — stop the instant you feel pinching, sharp pain, dizziness, or any tingling into the arm. When in doubt, remove the hand.",
+  "regression": "Drop the overpressure entirely and do a plain active tilt (like Neck Side Tilt) — most of the benefit, far less risk.",
+  "remediation": "If your active tilt range is already limited or symptomatic, stay with the gentle active version and skip overpressure until a clinician clears it.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Quadruped Rock Back",
@@ -9020,7 +9268,12 @@
     "name": "Grip Squeeze",
     "reason": "Mobility then strength for the forearm"
    }
-  ]
+  ],
+  "form_cue": "Forearm resting on the desk, hand off the edge; rotate slowly palm-down then palm-up, keeping the elbow and forearm still so the motion is at the forearm, not the shoulder.",
+  "stop_condition": "Stop with sharp wrist or elbow pain. Smooth, controlled rotation only.",
+  "regression": "Smaller range, or hold a light object for feedback (not weight).",
+  "remediation": "If the elbow lifts to cheat, pin it to the desk or your side.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Resisted Hip Flexion",
@@ -9105,7 +9358,12 @@
     "name": "Wall Push-Up",
     "reason": "Isometric builds awareness, push-up builds dynamic strength"
    }
-  ]
+  ],
+  "form_cue": "Press the palms together hard at chest height and hold, feeling the chest work — keep the shoulders DOWN (not shrugging) and KEEP BREATHING through the hold.",
+  "stop_condition": "Stop with shoulder or wrist pain, or if the shoulders creep up to the ears. Don't hold the breath (it can spike blood pressure).",
+  "regression": "Lighter squeeze, shorter hold, hands lower.",
+  "remediation": "If the shoulders shrug, cue them down first; if the wrists complain, press with loose fists instead of flat palms.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Decline Push-Up",
@@ -9474,7 +9732,12 @@
     "reason": "Both are comprehensive wrist/hand mobility exercises"
    }
   ],
-  "builds_on": "Wrist Circles"
+  "builds_on": "Wrist Circles",
+  "form_cue": "Make a fist and draw the biggest slow circle the wrist can, deliberately reaching full flexion, extension, and both sides — controlled rotation, forearm still. Quality and range over speed.",
+  "stop_condition": "Stop with sharp pain or painful clicking; work to the edge of comfortable range, not into pain.",
+  "regression": "Smaller circles; build the range over time.",
+  "remediation": "Warm up with plain wrist circles before pushing full range.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Staggered Stance Balance",
@@ -9876,7 +10139,12 @@
     "reason": "Both explore full neck range of motion"
    }
   ],
-  "builds_on": "Chin Tuck"
+  "builds_on": "Chin Tuck",
+  "form_cue": "Glide the head forward, then draw it straight back into a gentle chin tuck — a horizontal slide, smooth and controlled, not a nod or a forceful jam backward.",
+  "stop_condition": "Stop with dizziness, pinching at the base of the skull, or arm symptoms. Keep the range comfortable; retraction is the useful end.",
+  "regression": "Reduce the range and slow it down; even small glides train the pattern.",
+  "remediation": "If the retraction end pinches, stick with plain Chin Tucks until it settles.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Sphinx to Child's Pose Flow",
@@ -9953,7 +10221,12 @@
     "name": "Shoulder Shrug Release",
     "reason": "Both address elevated-shoulder posture"
    }
-  ]
+  ],
+  "form_cue": "Press the hands into the seat to lightly unweight, driving the shoulder blades DOWN — long neck, ears away from shoulders. A small, controlled lift.",
+  "stop_condition": "Stop with wrist pain, front-of-shoulder pinching, or if you can't keep the shoulders down. Don't hang on locked, shrugged shoulders.",
+  "regression": "Skip the lift — just press lightly and focus on drawing the blades down without leaving the seat.",
+  "remediation": "Build wrist tolerance and the scapular-down pattern before putting body weight through the arms.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wide-Leg Forward Fold",
@@ -10080,7 +10353,13 @@
     "reason": "Ankle strength directly supports balance"
    }
   ],
-  "builds_on": "Ankle Inversion/Eversion"
+  "builds_on": "Ankle Inversion/Eversion",
+  "form_cue": "Move the foot slowly through dorsiflexion, plantarflexion, inversion, and eversion against the band — controlled reps, full but pain-free range, moving only the ankle.",
+  "stop_condition": "Stop with sharp pain (especially outer-ankle on inversion), or if the knee/leg swings to help. Ease the band tension if the movement gets jerky.",
+  "regression": "Lighter band or less range; start with just the pain-free directions, especially if recovering from a sprain.",
+  "remediation": "Master the unloaded ankle circles, pumps, and inversion/eversion first; add the band once those are smooth and pain-free.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Glute-Focused Squat",
@@ -10196,7 +10475,13 @@
     "name": "Upper Trap Stretch",
     "reason": "Both target the back of the neck and upper back"
    }
-  ]
+  ],
+  "form_cue": "Drop the chin toward the chest and let ONLY the weight of the hands (not a pull) gently deepen it — the stretch is along the back of the neck, and it stays mild.",
+  "stop_condition": "Do NOT pull the head down — just rest the hands. Stop with tingling into the arms, sharp pain, or dizziness. Loaded neck flexion is provocative for some, so go easy.",
+  "regression": "Take the hands away and just drop the chin under its own weight — plenty for most people.",
+  "remediation": "If it pulls or tingles, skip the hand weight and work gentle active neck nods first.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Lying Knee Drop",
