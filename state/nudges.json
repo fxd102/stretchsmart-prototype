@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-01",
-      "time": "2026-07-01T09:29:16.127946-04:00",
-      "exercise": "Prone Chest Lift",
-      "exercise_index": 48
-    },
-    {
       "date": "2026-07-02",
       "time": "2026-07-02T08:08:38.034328-04:00",
       "exercise": "Foam Roller Chest Opener",
@@ -89,6 +83,12 @@
       "time": "2026-07-15T08:02:50.495842-04:00",
       "exercise": "Figure Four Stretch",
       "exercise_index": 62
+    },
+    {
+      "date": "2026-07-16",
+      "time": "2026-07-16T08:03:37.094111-04:00",
+      "exercise": "Seated Figure Four",
+      "exercise_index": 63
     }
   ]
 }
