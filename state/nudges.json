@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-02",
-      "time": "2026-07-02T08:08:38.034328-04:00",
-      "exercise": "Foam Roller Chest Opener",
-      "exercise_index": 49
-    },
-    {
       "date": "2026-07-03",
       "time": "2026-07-03T08:09:27.982200-04:00",
       "exercise": "Wall Push-Up",
@@ -89,6 +83,12 @@
       "time": "2026-07-16T08:03:37.094111-04:00",
       "exercise": "Seated Figure Four",
       "exercise_index": 63
+    },
+    {
+      "date": "2026-07-17",
+      "time": "2026-07-17T08:01:00.629371-04:00",
+      "exercise": "Hip CARs",
+      "exercise_index": 64
     }
   ]
 }
