@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-04",
-      "time": "2026-07-04T08:00:21.248336-04:00",
-      "exercise": "Dead Bug",
-      "exercise_index": 51
-    },
-    {
       "date": "2026-07-05",
       "time": "2026-07-05T08:01:11.372800-04:00",
       "exercise": "Pallof Press (Band)",
@@ -89,6 +83,12 @@
       "time": "2026-07-18T08:05:19.884553-04:00",
       "exercise": "90/90 Hip Stretch",
       "exercise_index": 65
+    },
+    {
+      "date": "2026-07-19",
+      "time": "2026-07-19T08:06:07.997134-04:00",
+      "exercise": "Standing Hip Circle",
+      "exercise_index": 66
     }
   ]
 }
