@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-05",
-      "time": "2026-07-05T08:01:11.372800-04:00",
-      "exercise": "Pallof Press (Band)",
-      "exercise_index": 52
-    },
-    {
       "date": "2026-07-06",
       "time": "2026-07-06T08:07:42.304894-04:00",
       "exercise": "Plank Hold",
@@ -89,6 +83,12 @@
       "time": "2026-07-19T08:06:07.997134-04:00",
       "exercise": "Standing Hip Circle",
       "exercise_index": 66
+    },
+    {
+      "date": "2026-07-20",
+      "time": "2026-07-20T08:06:59.887281-04:00",
+      "exercise": "Leg Swing (Front-Back)",
+      "exercise_index": 67
     }
   ]
 }
