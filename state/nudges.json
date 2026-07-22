@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-07",
-      "time": "2026-07-07T08:03:58.243832-04:00",
-      "exercise": "Side Plank",
-      "exercise_index": 54
-    },
-    {
       "date": "2026-07-08",
       "time": "2026-07-08T08:09:04.386772-04:00",
       "exercise": "Seated Core Brace",
@@ -89,6 +83,12 @@
       "time": "2026-07-21T08:07:57.497950-04:00",
       "exercise": "Leg Swing (Side-to-Side)",
       "exercise_index": 68
+    },
+    {
+      "date": "2026-07-22",
+      "time": "2026-07-22T08:08:45.209247-04:00",
+      "exercise": "Standing Adductor Stretch",
+      "exercise_index": 69
     }
   ]
 }
