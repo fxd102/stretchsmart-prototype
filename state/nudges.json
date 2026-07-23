@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-08",
-      "time": "2026-07-08T08:09:04.386772-04:00",
-      "exercise": "Seated Core Brace",
-      "exercise_index": 55
-    },
-    {
       "date": "2026-07-09",
       "time": "2026-07-09T08:07:27.203576-04:00",
       "exercise": "Seated Marching",
@@ -89,6 +83,12 @@
       "time": "2026-07-22T08:08:45.209247-04:00",
       "exercise": "Standing Adductor Stretch",
       "exercise_index": 69
+    },
+    {
+      "date": "2026-07-23",
+      "time": "2026-07-23T08:09:42.811699-04:00",
+      "exercise": "Pigeon Stretch",
+      "exercise_index": 70
     }
   ]
 }
