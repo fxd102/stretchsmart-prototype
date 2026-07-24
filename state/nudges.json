@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-09",
-      "time": "2026-07-09T08:07:27.203576-04:00",
-      "exercise": "Seated Marching",
-      "exercise_index": 56
-    },
-    {
       "date": "2026-07-10",
       "time": "2026-07-10T09:01:36.957307-04:00",
       "exercise": "Bicycle Crunch",
@@ -89,6 +83,12 @@
       "time": "2026-07-23T08:09:42.811699-04:00",
       "exercise": "Pigeon Stretch",
       "exercise_index": 70
+    },
+    {
+      "date": "2026-07-24",
+      "time": "2026-07-24T08:00:32.588066-04:00",
+      "exercise": "Deep Squat Hold",
+      "exercise_index": 71
     }
   ]
 }
