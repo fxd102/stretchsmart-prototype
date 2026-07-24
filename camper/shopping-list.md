@@ -1,19 +1,31 @@
 # Camper Hookup — Shopping List
 
-Two campers (2014 Jayco Jay Flight 32', 30A · Grey Wolf toy hauler ~22', 30A) sharing
-one 50A pedestal and one 1,000-gal in-ground tank. Runs: 3' and 25'.
+Two campers (2014 Jayco Jay Flight 32', 30A · Grey Wolf toy hauler ~22', likely 30A —
+confirm) sharing one shore hookup and one 1,000-gal in-ground tank. Runs: 3' and 25'.
 
 ⚠️ = safety-relevant, don't substitute.
+🔌 **The electrical section has a hard prerequisite — read the STOP box before buying anything electrical.** (Corrected 7/24: I'd assumed a 50A pedestal; you only ever called it a "220 hookup," and that difference is a safety matter.)
 
 ---
 
 ## Electrical
 
+> ⚠️ **STOP — identify the outlet before buying any splitter.** You've called it a "220 hookup," and *which kind* changes what's safe:
+> - **A true RV 50A outlet (NEMA 14-50)** is 120/240V split-phase: **two** 120V hot legs + neutral + ground — **4 slots**. This is the *only* outlet a 50A→dual-30A splitter belongs on.
+> - **A 3-wire 240V outlet** (dryer/welder style — NEMA 6-50, 10-30, etc., **no neutral**) looks similar but a 50→30 splitter on it is **dangerous** — the 30A rigs won't get a proper 120V leg + neutral.
+>
+> **Snap a clear photo of the outlet face (the slot pattern) and send it — I'll ID it before you buy.**
+>
+> Second point, even on a confirmed 14-50: a plain Y-cord puts each 30A rig on a leg protected by the pedestal's **50A** breaker — that's 20A *over* a 30A shore cord's rating, so the cord itself isn't individually protected (each rig's own onboard 30A main is what actually protects everything past the inlet). The common Camco/RVGuard Y-adapter is UL-listed and widely used anyway; the fully code-correct option is per-leg 30A protection (breakered box, or a second real 30A outlet).
+>
+> **Simplest, lowest-risk given you'll juggle A/C:** run **one** camper off the 50A via a plain 50A→30A adapter (protected by that rig's own 30A main), and give the **second** camper a separate 30A — or even a 20A household circuit for lights/charging while its A/C is off. No dual-leg splitter needed at all.
+
 | # | Item | Spec / why | ~Cost |
 |---|------|-----------|-------|
-| 1 | **50A-to-two-30A Y splitter** | NEMA 14-50P → dual TT-30R. **Get 10-gauge / heavy duty** — the pedestal's 50A breaker is protecting this cord's wiring. Camco, RVGuard, or Nilight. | $40–70 |
-| 2 | **30A extension cord** (if needed) | Only if a camper's stock cord won't reach the splitter. TT-30, 10-gauge, 25–30'. Don't use a household extension cord. ⚠️ | $50–70 |
-| 3 | **Surge protector / EMS**, 30A ×2 | Optional but smart — protects against miswired pedestals and surges. Extra worthwhile on a rig that's sat 5 years. Progressive Industries or Camco. | $80–120 ea |
+| 1 | **Splitter — ONLY after outlet confirmed 14-50** | Best: a *listed distribution box with a 30A breaker per outlet*, or have an electrician add a **second 30A outlet** (cleanest). If you use a plain Camco/RVGuard 50A→dual-30A Y-adapter, it must be heavy-gauge and undamaged — but read the STOP box first. | $40–160 / electrician quote |
+| 1b | **Plain 50A→30A adapter** (the simplest path) | If you run just one camper off the 50A leg (see STOP box), this single "dogbone" is all you need on that rig. Camco. | $15–25 |
+| 2 | **30A extension cord** (if needed) | Only if a camper's stock cord won't reach. TT-30, 10-gauge, 25–30'. Never a household extension cord. ⚠️ | $50–70 |
+| 3 | **Surge protector / EMS**, 30A ×2 | Optional but smart — protects against miswired pedestals and surges (worth it on a rig that's sat 5 years, and it'll *tell* you if the pedestal is wired wrong). Progressive Industries or Camco. | $80–120 ea |
 
 ## Sewer
 
