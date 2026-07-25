@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-10",
-      "time": "2026-07-10T09:01:36.957307-04:00",
-      "exercise": "Bicycle Crunch",
-      "exercise_index": 57
-    },
-    {
       "date": "2026-07-11",
       "time": "2026-07-11T08:08:17.138739-04:00",
       "exercise": "Standing Anti-Rotation Hold",
@@ -89,6 +83,12 @@
       "time": "2026-07-24T08:00:32.588066-04:00",
       "exercise": "Deep Squat Hold",
       "exercise_index": 71
+    },
+    {
+      "date": "2026-07-25",
+      "time": "2026-07-25T08:01:14.024018-04:00",
+      "exercise": "Frog Stretch",
+      "exercise_index": 72
     }
   ]
 }
