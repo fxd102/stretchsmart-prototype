@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-11",
-      "time": "2026-07-11T08:08:17.138739-04:00",
-      "exercise": "Standing Anti-Rotation Hold",
-      "exercise_index": 58
-    },
-    {
       "date": "2026-07-12",
       "time": "2026-07-12T08:04:17.917199-04:00",
       "exercise": "Hollow Body Hold",
@@ -89,6 +83,12 @@
       "time": "2026-07-25T08:01:14.024018-04:00",
       "exercise": "Frog Stretch",
       "exercise_index": 72
+    },
+    {
+      "date": "2026-07-26",
+      "time": "2026-07-26T08:21:20.292262-04:00",
+      "exercise": "Glute Bridge",
+      "exercise_index": 73
     }
   ]
 }
