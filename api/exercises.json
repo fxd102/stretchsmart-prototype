@@ -13,10 +13,10 @@
    "desk work recovery",
    "better posture"
   ],
-  "desc": "Slowly nod your head forward and back, bringing chin toward chest then looking up. Move smoothly through the full range.",
+  "desc": "A small, slow 'yes' nod from the very top of your neck — the head gently rocks on the spine while your eyes stay level on the horizon. It's the tiny motion your head makes to say yes, not the deep drop of looking down at a phone. Return to neutral and repeat.",
   "phases": [
    {
-    "label": "Slowly nod your head forward and back, bringing...",
+    "label": "Small 'yes' nod from the top of the neck, eyes level",
     "seconds": 30
    }
   ],
@@ -36,9 +36,9 @@
     "reason": "Releases upper trap tension that restricts neck"
    }
   ],
-  "form_cue": "Move only the head on top of the neck — a small 'yes' nod, jaw relaxed, rest of the spine still. Slow and smooth, no momentum.",
-  "stop_condition": "Stop with any dizziness, sharp pain, or numbness/tingling into the arms, or if looking up reproduces symptoms. This is mobility, not a stretch to push — don't force the end range.",
-  "regression": "Shrink to a tiny nod, or do only the chin-toward-chest half and skip looking up (the more provocative direction for many people).",
+  "form_cue": "Nod from the very top of the neck only — a small 'yes' the head makes rocking on the spine. Key check: your eyes can stay level on the horizon. If your gaze drops toward the floor you've flexed the lower neck (the 'looking at your phone' motion) — that's the posture we're undoing, not the target. Jaw relaxed, rest of the spine still, no momentum.",
+  "stop_condition": "Stop with any dizziness, sharp pain, or numbness/tingling into the arms. This is gentle mobility, not a stretch to push — keep the nod small and don't force range.",
+  "regression": "Make the nod even smaller, or do a few reps and rest — this should never feel like effort or strain.",
   "remediation": "If the range feels stiff or guarded, settle deep-neck-flexor control with chin tucks first, then add range.",
   "validation": "draft_pending_pt"
  },
@@ -995,7 +995,7 @@
   "stop_condition": "Stop if your shoulders rise toward your ears, if you feel pinching in the front of the shoulder, or any neck strain. The work belongs between the shoulder blades, not in the neck or upper traps.",
   "regression": "Reduce the squeeze to a gentle ~30% effort with a brief hold, or do it lying on your back so the floor gives feedback and gravity assists.",
   "remediation": "If the upper traps dominate (shoulders rise), the lower traps / scapular depressors need work first: practice slow scapular depressions (slide the blades down without squeezing) before adding the squeeze.",
-  "validation": "draft_pending_pt"
+  "validation": "pt_approved"
  },
  {
   "name": "Thoracic Extension",
