@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-12",
-      "time": "2026-07-12T08:04:17.917199-04:00",
-      "exercise": "Hollow Body Hold",
-      "exercise_index": 59
-    },
-    {
       "date": "2026-07-13",
       "time": "2026-07-13T08:10:37.195568-04:00",
       "exercise": "Bear Crawl Hold",
@@ -89,6 +83,12 @@
       "time": "2026-07-26T08:21:20.292262-04:00",
       "exercise": "Glute Bridge",
       "exercise_index": 73
+    },
+    {
+      "date": "2026-07-27",
+      "time": "2026-07-27T08:02:50.295311-04:00",
+      "exercise": "Clamshell",
+      "exercise_index": 74
     }
   ]
 }
