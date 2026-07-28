@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-13",
-      "time": "2026-07-13T08:10:37.195568-04:00",
-      "exercise": "Bear Crawl Hold",
-      "exercise_index": 60
-    },
-    {
       "date": "2026-07-14",
       "time": "2026-07-14T08:03:13.691344-04:00",
       "exercise": "Hip Flexor Stretch (Half-Kneel)",
@@ -89,6 +83,12 @@
       "time": "2026-07-27T08:02:50.295311-04:00",
       "exercise": "Clamshell",
       "exercise_index": 74
+    },
+    {
+      "date": "2026-07-28",
+      "time": "2026-07-28T08:28:04.045180-04:00",
+      "exercise": "Side-Lying Leg Raise",
+      "exercise_index": 75
     }
   ]
 }
