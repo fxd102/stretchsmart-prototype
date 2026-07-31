@@ -144,7 +144,7 @@
   },
   {
     "id": 14,
-    "category": "mobility",
+    "category": "wrists",
     "text": "Wrist and hand mobility might seem minor until you can't open a jar, grip a railing, or catch yourself during a fall. Grip strength is so strongly correlated with overall health that researchers use it as a proxy for biological age. People with weak grip strength have double the risk of cardiovascular death. Wrist circles and grip exercises aren't just for carpal tunnel \u2014 they're a vital sign.",
     "source": "The Lancet, grip strength and mortality meta-analysis, 2015",
     "tags": [
@@ -233,12 +233,11 @@
     "id": 21
   },
   {
-    "category": "strength",
+    "category": "wrists",
     "text": "Grip strength predicts all-cause mortality better than systolic blood pressure. Every 5-kilogram decrease in grip strength is associated with a 16% higher risk of death from any cause. It's not that squeezing a hand towel makes you live longer on its own \u2014 grip is a window into whole-body strength, and strength is the window into how well you age.",
     "source": "Leong et al., The Lancet, 2015 (PURE study, 139,691 adults across 17 countries)",
     "tags": [
       "grip",
-      "strength",
       "longevity",
       "wrists"
     ],
