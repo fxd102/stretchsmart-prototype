@@ -2725,7 +2725,7 @@
   "progression": [
    "Sit tall, gentle lean forward",
    "Lean further, hold 30 seconds",
-   "Press the crossed knee down gently with hand",
+   "Deepen only by hinging further from the hips, knee relaxed — don't press or shift the knee down",
    "Progress to floor figure four for deeper stretch"
   ],
   "pairs_with": [
@@ -2738,11 +2738,11 @@
     "reason": "Seated version is quicker, floor version is deeper"
    }
   ],
-  "form_cue": "Cross the ankle over the opposite knee and hinge forward from the HIPS with a flat back — the stretch belongs in the outer hip/glute of the crossed leg, not the knee or low back. Keep the crossed knee relaxed; don't force it down.",
-  "stop_condition": "Stop with any KNEE pain (it should be felt in the hip), sharp groin pain, or low-back pain from rounding. IMPORTANT: after a hip replacement this crossed-leg position can violate hip precautions — skip it unless a surgeon or PT has cleared this range.",
+  "form_cue": "Cross the ankle over the opposite knee and hinge forward from the HIPS with a flat back — the stretch belongs in the outer hip/glute of the crossed leg, not the knee or low back. Keep your weight even on both sit bones (don't collapse or shift toward the stretching side). Keep the crossed knee relaxed and let it hang where it wants — do NOT chase depth by driving the knee toward the floor. Forcing the knee down doesn't deepen the hip stretch; it just torques the knee.",
+  "stop_condition": "Stop with any KNEE pain (this should be felt in the hip, never the knee), sharp groin pain, or low-back pain from rounding. Extra caution if you've ever had knee problems or knee surgery: the crossed knee sits on a long lever, so shifting weight or forcing it down loads the joint hard — keep the knee relaxed and back off at the first knee sensation. IMPORTANT: after a hip replacement this crossed-leg position can violate hip precautions — skip it unless a surgeon or PT has cleared this range.",
   "regression": "Don't cross fully — rest the ankle lower on the shin, or hold the shin and hug the knee gently toward the opposite shoulder for a milder version. Hinge less far.",
   "remediation": "If crossing the leg is limited or pinches in the front of the hip, stay with the gentler knee-hug version and don't force the cross.",
-  "validation": "draft_pending_pt",
+  "validation": "pt_approved",
   "review_priority": "high"
  },
  {
