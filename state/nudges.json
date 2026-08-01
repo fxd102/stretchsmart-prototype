@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-17",
-      "time": "2026-07-17T08:01:00.629371-04:00",
-      "exercise": "Hip CARs",
-      "exercise_index": 64
-    },
-    {
       "date": "2026-07-18",
       "time": "2026-07-18T08:05:19.884553-04:00",
       "exercise": "90/90 Hip Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-07-31T08:01:31.348765-04:00",
       "exercise": "Single-Leg Glute Bridge",
       "exercise_index": 78
+    },
+    {
+      "date": "2026-08-01",
+      "time": "2026-08-01T08:02:13.344471-04:00",
+      "exercise": "Donkey Kick",
+      "exercise_index": 79
     }
   ]
 }
