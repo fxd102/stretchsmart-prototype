@@ -2679,7 +2679,7 @@
   "progression": [
    "Gentle pull, stop at first stretch",
    "Hold 30 seconds, pull a bit closer",
-   "Press the crossed knee away with your elbow",
+   "Deepen only by drawing the bottom thigh closer to your chest — let the crossed knee relax open, don't push it",
    "Progress to pigeon stretch on the floor"
   ],
   "pairs_with": [
@@ -2691,7 +2691,13 @@
     "name": "Knee-to-Chest Stretch",
     "reason": "Both decompress the hip while lying down"
    }
-  ]
+  ],
+  "form_cue": "The stretch comes from pulling the BOTTOM thigh toward your chest — that's what opens the crossed hip/glute. Keep head, shoulders and low back relaxed on the floor and your hips square (don't let the pelvis twist toward the crossed side). Let the crossed knee fall open on its own — do NOT push it away to force more; that just torques the knee without deepening the hip stretch.",
+  "stop_condition": "Stop with any KNEE pain in the crossed leg (this belongs in the hip, never the knee), sharp groin pain, or low-back strain. Extra caution if you've ever had knee problems or knee surgery: the crossed knee is on a long lever, so pushing it open loads the joint hard — let it relax open and back off at the first knee sensation. IMPORTANT: after a hip replacement this crossed-leg position can violate hip precautions — skip it unless a surgeon or PT has cleared this range.",
+  "regression": "Don't cross fully — rest the ankle lower on the shin, or skip the cross and just hug one knee toward the chest. Pull the bottom thigh in less far.",
+  "remediation": "If crossing pinches in the front of the hip, stay with a simple single-knee-to-chest hug and don't force the cross.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Seated Figure Four",
