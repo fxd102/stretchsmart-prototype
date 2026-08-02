@@ -3077,7 +3077,13 @@
     "reason": "Both are deep external rotation stretches"
    }
   ],
-  "builds_on": "Figure Four Stretch"
+  "builds_on": "Figure Four Stretch",
+  "form_cue": "The stretch is deep in the glute/outer hip of the FRONT leg. Keep your hips square to the floor (don't let the back hip roll open), and keep the front shin at a comfortable angle — the closer it is to parallel with the front of the mat, the more intense, so build up gradually. Fold forward from the hips over the front leg with a flat back, only as far as the hip allows.",
+  "stop_condition": "Felt in the outer hip/glute, NOT the knee. Stop with any pain on the inside or front of the FRONT knee (common here — draw the shin back toward you and reduce the angle), sharp groin pain, or low-back strain from rounding. Extra caution with any knee history: the bent front knee is vulnerable in this position. After a hip replacement, deep flexion + external rotation can violate precautions — skip unless a surgeon or PT has cleared it.",
+  "regression": "Do the figure-four version lying on your back instead — same muscles, far gentler on the knee. Or stay tall and skip the forward fold, and keep the front shin closer to your body rather than parallel to the mat.",
+  "remediation": "If the front knee complains or the hip pinches, switch to the supine figure-four — it targets the same glute without loading the knee.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Deep Squat Hold",
@@ -8105,7 +8111,13 @@
     "name": "Pigeon Stretch",
     "reason": "Standing version for when floor isn't available"
    }
-  ]
+  ],
+  "form_cue": "Rest the outer ankle/lower shin on the surface with the knee bent open — the stretch is in the outer hip/glute of that leg. Keep your standing leg soft (slight bend), hips square, and hinge forward from the hips with a flat back to deepen. Hold the table for balance the whole time.",
+  "stop_condition": "Feel it in the outer hip/glute, not the knee. Stop with pain in either knee, the groin, or low back. This is a single-leg balance position — hold something stable, and if you feel unsteady at all, do the seated or floor version instead. Extra caution with knee history or hip-replacement precautions (crossed-leg external rotation) — skip unless cleared.",
+  "regression": "Lower the surface (a chair seat instead of a table), keep more weight on the standing leg and hinge less, or switch to the seated Figure Four or supine version for full stability.",
+  "remediation": "If balance is the limiter, do the seated Figure Four or the supine version — same target muscle without the balance demand.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Wrist Push-Up Position Stretch",
