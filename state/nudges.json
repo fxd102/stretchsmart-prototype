@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-26",
-      "time": "2026-07-26T08:21:20.292262-04:00",
-      "exercise": "Glute Bridge",
-      "exercise_index": 73
-    },
-    {
       "date": "2026-07-27",
       "time": "2026-07-27T08:02:50.295311-04:00",
       "exercise": "Clamshell",
@@ -89,6 +83,12 @@
       "time": "2026-08-09T08:01:33.461748-04:00",
       "exercise": "Sumo Squat",
       "exercise_index": 87
+    },
+    {
+      "date": "2026-08-10",
+      "time": "2026-08-10T08:02:29.930837-04:00",
+      "exercise": "Seated Knee Extension",
+      "exercise_index": 88
     }
   ]
 }
