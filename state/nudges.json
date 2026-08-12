@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-28",
-      "time": "2026-07-28T08:28:04.045180-04:00",
-      "exercise": "Side-Lying Leg Raise",
-      "exercise_index": 75
-    },
-    {
       "date": "2026-07-29",
       "time": "2026-07-29T08:02:36.304116-04:00",
       "exercise": "Standing Glute Squeeze",
@@ -89,6 +83,12 @@
       "time": "2026-08-11T08:03:29.170000-04:00",
       "exercise": "Bodyweight Squat",
       "exercise_index": 89
+    },
+    {
+      "date": "2026-08-12",
+      "time": "2026-08-12T08:04:38.241424-04:00",
+      "exercise": "Split Squat",
+      "exercise_index": 90
     }
   ]
 }
