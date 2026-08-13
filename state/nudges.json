@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-29",
-      "time": "2026-07-29T08:02:36.304116-04:00",
-      "exercise": "Standing Glute Squeeze",
-      "exercise_index": 76
-    },
-    {
       "date": "2026-07-30",
       "time": "2026-07-30T08:01:37.733481-04:00",
       "exercise": "Banded Lateral Walk",
@@ -89,6 +83,12 @@
       "time": "2026-08-12T08:04:38.241424-04:00",
       "exercise": "Split Squat",
       "exercise_index": 90
+    },
+    {
+      "date": "2026-08-13",
+      "time": "2026-08-13T08:05:37.641624-04:00",
+      "exercise": "Terminal Knee Extension",
+      "exercise_index": 91
     }
   ]
 }
