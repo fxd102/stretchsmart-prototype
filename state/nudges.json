@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-07-31",
-      "time": "2026-07-31T08:01:31.348765-04:00",
-      "exercise": "Single-Leg Glute Bridge",
-      "exercise_index": 78
-    },
-    {
       "date": "2026-08-01",
       "time": "2026-08-01T08:02:13.344471-04:00",
       "exercise": "Donkey Kick",
@@ -89,6 +83,12 @@
       "time": "2026-08-14T08:24:31.041250-04:00",
       "exercise": "Standing Hamstring Stretch",
       "exercise_index": 92
+    },
+    {
+      "date": "2026-08-15",
+      "time": "2026-08-15T08:07:03.784455-04:00",
+      "exercise": "Standing Forward Fold",
+      "exercise_index": 93
     }
   ]
 }
