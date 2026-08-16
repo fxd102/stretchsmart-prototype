@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-01",
-      "time": "2026-08-01T08:02:13.344471-04:00",
-      "exercise": "Donkey Kick",
-      "exercise_index": 79
-    },
-    {
       "date": "2026-08-02",
       "time": "2026-08-02T08:03:05.177495-04:00",
       "exercise": "Fire Hydrant",
@@ -89,6 +83,12 @@
       "time": "2026-08-15T08:07:03.784455-04:00",
       "exercise": "Standing Forward Fold",
       "exercise_index": 93
+    },
+    {
+      "date": "2026-08-16",
+      "time": "2026-08-16T08:03:30.479032-04:00",
+      "exercise": "Lying Hamstring Stretch",
+      "exercise_index": 94
     }
   ]
 }
