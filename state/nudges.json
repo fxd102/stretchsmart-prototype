@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-02",
-      "time": "2026-08-02T08:03:05.177495-04:00",
-      "exercise": "Fire Hydrant",
-      "exercise_index": 80
-    },
-    {
       "date": "2026-08-03",
       "time": "2026-08-03T08:03:59.993218-04:00",
       "exercise": "Pistol Squat Progression",
@@ -89,6 +83,12 @@
       "time": "2026-08-16T08:03:30.479032-04:00",
       "exercise": "Lying Hamstring Stretch",
       "exercise_index": 94
+    },
+    {
+      "date": "2026-08-17",
+      "time": "2026-08-17T08:03:28.643306-04:00",
+      "exercise": "Seated Hamstring Stretch",
+      "exercise_index": 95
     }
   ]
 }
