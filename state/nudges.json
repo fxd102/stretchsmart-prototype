@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-03",
-      "time": "2026-08-03T08:03:59.993218-04:00",
-      "exercise": "Pistol Squat Progression",
-      "exercise_index": 81
-    },
-    {
       "date": "2026-08-04",
       "time": "2026-08-04T08:04:35.659540-04:00",
       "exercise": "Standing Quad Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-08-17T08:03:28.643306-04:00",
       "exercise": "Seated Hamstring Stretch",
       "exercise_index": 95
+    },
+    {
+      "date": "2026-08-18",
+      "time": "2026-08-18T08:00:44.841506-04:00",
+      "exercise": "Romanian Deadlift (Bodyweight)",
+      "exercise_index": 96
     }
   ]
 }
