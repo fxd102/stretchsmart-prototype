@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-04",
-      "time": "2026-08-04T08:04:35.659540-04:00",
-      "exercise": "Standing Quad Stretch",
-      "exercise_index": 82
-    },
-    {
       "date": "2026-08-05",
       "time": "2026-08-05T08:05:24.854238-04:00",
       "exercise": "Couch Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-08-18T08:00:44.841506-04:00",
       "exercise": "Romanian Deadlift (Bodyweight)",
       "exercise_index": 96
+    },
+    {
+      "date": "2026-08-19",
+      "time": "2026-08-19T08:09:29.265029-04:00",
+      "exercise": "Good Morning Stretch",
+      "exercise_index": 97
     }
   ]
 }
