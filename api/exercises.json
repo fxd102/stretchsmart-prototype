@@ -4289,10 +4289,10 @@
    "core strength",
    "flexibility"
   ],
-  "desc": "Lie on your back, knees bent, feet flat. Lift hips into a bridge, then slowly walk your feet out until legs are almost straight, then walk them back.",
+  "desc": "Start in a glute bridge — on your back, knees bent, feet flat, hips lifted. KEEPING YOUR HIPS OFF THE FLOOR the whole time, take small steps to walk your feet away from you. As your legs straighten, your body lowers into a long line from shoulders to heels (hips stay up, just lower) and your hamstrings work to hold you there. Then walk your feet back in to the tall bridge. The farther out your feet go, the harder the hamstrings work.",
   "phases": [
    {
-    "label": "Lie on your back, knees bent, feet flat",
+    "label": "Bridge up, then walk feet out and back — hips stay off the floor",
     "seconds": 60
    }
   ],
@@ -4312,7 +4312,12 @@
     "reason": "Strengthen then stretch the hamstrings"
    }
   ],
-  "builds_on": "Glute Bridge"
+  "builds_on": "Glute Bridge",
+  "form_cue": "Drive the hold from your HAMSTRINGS and glutes, not your low back. Keep your ribs down and core gently braced so the lower back doesn't arch as the legs straighten. Only walk out as far as you can keep your hips lifted — if the hips start sagging to the floor, that's your range for today.",
+  "stop_condition": "Stop with any low-back pinching or pain (this belongs in the backs of the thighs and glutes, not the back), or hamstring cramping. Come down if your hips can't stay off the floor. If you feel it in the lower back instead of the hamstrings, shorten the range.",
+  "regression": "Walk out only halfway with the knees more bent, or hold a plain glute bridge first. Shorten the distance your feet travel.",
+  "remediation": "If the hamstrings cramp or tire fast, build the base with glute bridges and short walkouts before extending the range — cramping usually means going too far too soon.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Nordic Curl Eccentric",
