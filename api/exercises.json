@@ -4362,7 +4362,8 @@
   "regression": "Only lower a few inches and push straight back up with your hands, 2-3 reps. Better yet, build the base first with the easier eccentric hamstring moves (Hamstring Walkout, bodyweight Romanian deadlift) — this needs that foundation.",
   "remediation": "If your hamstrings can't control even a small range, you're not ready for Nordics yet — spend several weeks on hamstring walkouts and glute bridges first. Any cramp or 'pull' means stop immediately.",
   "validation": "draft_pending_pt",
-  "review_priority": "high"
+  "review_priority": "high",
+  "review_note": "DESIGN QUESTION for PT — raise during FLOOR-exercise review (per Faith 2026-08-23), not before: should this be gated HARD (athlete-only, strong warning) or CUT entirely? It's athlete-level and injury-prone (real hamstring-strain risk, severe DOMS) and may not fit the app's desk-worker / older-adult audience."
  },
  {
   "name": "Sciatic Nerve Floss",
