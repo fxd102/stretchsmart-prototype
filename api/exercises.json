@@ -2232,7 +2232,7 @@
    "back pain",
    "balance"
   ],
-  "desc": "Anchor a band at chest height. Hold it at your chest, then press it straight out, resisting the rotation.",
+  "desc": "Anchor a band at chest height and stand SIDEWAYS to it — that side-on position is what creates the twisting force. Hold the band with both hands at the center of your chest, brace your core, and press it straight out in front of you without letting your shoulders or hips rotate toward the anchor. Bring it back slowly, then turn around and do the other side.",
   "phases": [
    {
     "label": "First side",
@@ -2490,7 +2490,7 @@
    "balance",
    "back pain"
   ],
-  "desc": "Hold a weight or bag at arm's length in front of you with both hands. Resist rotation while holding for 15 seconds each side.",
+  "desc": "Anchor a band at chest height and stand SIDEWAYS to it, both hands holding the band straight out in front of your chest. The band will try to twist you toward the anchor — hold still and resist that pull for about 15 seconds, keeping your hips and shoulders square. Turn around and repeat facing the other way.",
   "phases": [
    {
     "label": "First side",
@@ -2537,7 +2537,7 @@
    "better posture",
    "flexibility"
   ],
-  "desc": "Lie on your back. Lift shoulders and legs off the floor, arms overhead, forming a banana shape.",
+  "desc": "Lie on your back and press your lower back FIRMLY into the floor (tuck your tailbone slightly to do it). Keeping that contact, lift your shoulder blades, arms, and legs off the floor — only as high as you can WITHOUT letting your lower back arch up. Hold and breathe normally; if your back lifts off the floor, lower your arms and legs until it presses down again.",
   "phases": [
    {
     "label": "Lie on your back",
@@ -3620,7 +3620,7 @@
    "sitting recovery",
    "knee health"
   ],
-  "desc": "Kneel with your back shin flat against a wall. Place the other foot forward in a lunge.",
+  "desc": "Kneel with your back shin flat up against a wall (toes pointing up), and step your other foot forward into a lunge. Keeping your torso tall, gently ease your hips forward and down until you feel a strong stretch in the front of the back thigh and hip. Ease off if it turns sharp, then switch sides.",
   "phases": [
    {
     "label": "First side",
@@ -4106,7 +4106,7 @@
    "flexibility",
    "hip tightness"
   ],
-  "desc": "Lie on your back. Lift one leg and loop a towel or strap around the foot.",
+  "desc": "Lie on your back with one knee bent and that foot flat on the floor. Loop a towel or strap around the other foot, then gently draw that leg up toward you and straighten the knee until you feel a comfortable stretch up the back of the thigh. Hold, then switch legs.",
   "phases": [
    {
     "label": "First side",
@@ -5319,7 +5319,7 @@
    "joint stiffness",
    "desk work recovery"
   ],
-  "desc": "Move through five hand positions: straight fingers, hook fist, full fist, tabletop (fingers bent at knuckles), straight fist. Hold each 5 seconds.",
+  "desc": "Move your hand slowly through five shapes, holding each about 5 seconds: (1) fingers straight; (2) HOOK - bend only the two joints nearest the fingertips, big knuckles straight; (3) FULL FIST - bend every finger joint; (4) TABLETOP - bend only the big knuckles, fingers straight; (5) STRAIGHT FIST - bend the big and middle knuckles but keep the fingertips straight. Open the hand between shapes.",
   "phases": [
    {
     "label": "Move through five hand positions: straight fing...",
@@ -6189,7 +6189,7 @@
    "breathing",
    "better sleep"
   ],
-  "desc": "Use your thumb to close one nostril, inhale through the other. Switch and exhale.",
+  "desc": "Close your right nostril with your thumb and inhale slowly through the left. Now close the left (releasing the right) and exhale through the right, then inhale through the right. Close the right again and exhale through the left - that completes one full cycle. Keep going, always switching nostrils after each inhale.",
   "phases": [
    {
     "label": "Use your thumb to close one nostril, inhale thr...",
@@ -6280,7 +6280,7 @@
    "general wellness",
    "breathing"
   ],
-  "desc": "Flow through: mountain pose, overhead reach, forward fold, lunge, plank, cobra, downward dog, lunge, forward fold, overhead reach, mountain. 3 rounds.",
+  "desc": "Flow slowly, about one breath per move: stand tall, reach both arms overhead, fold forward toward your legs, step one foot back into a lunge, then the other into a plank. Lower down, lift your chest into a gentle cobra, then press your hips up and back into downward dog. Step forward, fold, and rise to standing with arms overhead - alternate which leg leads the lunge each round.",
   "phases": [
    {
     "label": "Flow through: mountain pose, overhead reach, fo...",
@@ -6796,7 +6796,7 @@
    "flexibility",
    "independence"
   ],
-  "desc": "Lie on your back with one arm pointing at the ceiling. Roll to elbow, then to hand, lift hips, and sweep the leg to kneeling.",
+  "desc": "Lie on your back with your RIGHT arm reaching straight up at the ceiling, your right knee bent and that foot flat, and your left arm and leg relaxed out to the side. Keeping your right arm pointing up the whole time, roll onto your left forearm, then your left hand, and press your hips up off the floor. Sweep your left leg back underneath into a kneeling position, then reverse the steps to lie back down. Switch sides.",
   "phases": [
    {
     "label": "First side",
@@ -7195,7 +7195,7 @@
    "core strength",
    "independence"
   ],
-  "desc": "Imagine your pelvic floor is an elevator. Gently draw it up to the first floor (light squeeze), second floor (more), third floor (max).",
+  "desc": "Sitting tall and breathing normally, find your pelvic floor muscles - the ones you would use to stop yourself passing gas - and keep your buttocks and thighs relaxed. Gently lift them a little (first floor), then more (second floor), then to a strong-but-comfortable squeeze (third floor). Then lower back down floor by floor and fully relax before the next rep.",
   "phases": [
    {
     "label": "Imagine your pelvic floor is an elevator",
@@ -7789,7 +7789,7 @@
    "upper back mobility",
    "back pain"
   ],
-  "desc": "Sit at the edge of your chair. Round your lower back first, then mid-back, then upper back into a full slouch.",
+  "desc": "Sit at the edge of your chair with both feet flat. Starting from the bottom, slowly tuck your pelvis and round your lower back, then mid-back, then upper back into a gentle slouch. Then reverse it - tilt your pelvis forward and un-curl from the bottom up until your chest lifts and your back gently arches. Flow slowly back and forth between the two.",
   "phases": [
    {
     "label": "Sit at the edge of your chair",
@@ -7835,7 +7835,7 @@
    "better sleep",
    "sitting recovery"
   ],
-  "desc": "Lie on your back with hips near a wall. Place one or both legs up the wall.",
+  "desc": "Lie on your back with your hips close to a wall and your legs straight up resting against it. Scoot your hips closer to the wall until you feel a gentle stretch up the backs of your thighs - the closer you are, the stronger it is. Relax and breathe; bend your knees to come out.",
   "phases": [
    {
     "label": "Lie on your back with hips near a wall",
@@ -7873,7 +7873,7 @@
    "shoulder tension",
    "flexibility"
   ],
-  "desc": "Lie on your side with a foam roller under your armpit. Keep bottom arm extended.",
+  "desc": "Lie on your side with your hips and knees bent and both arms stretched out in front of you, palms together (rest your top knee on a foam roller or cushion to keep your hips from rolling). Keeping your knees down, sweep your top arm up and over in a big arc to the other side, following your hand with your eyes as your upper back rotates open. Slowly sweep it back, then switch sides.",
   "phases": [
    {
     "label": "First side",
@@ -8093,7 +8093,7 @@
    "back pain",
    "sitting recovery"
   ],
-  "desc": "Stand facing a table at hip height. Place one ankle on the table with knee bent.",
+  "desc": "Stand facing a sturdy table about hip height and rest one shin across it, knee bent and turned out, so the outer shin and knee are supported. Hold the table for balance, keep your back long, and hinge forward from your hips until you feel a comfortable stretch deep in that buttock. Hold, then switch legs.",
   "phases": [
    {
     "label": "First side",
@@ -10360,7 +10360,7 @@
    "fall prevention",
    "joint stiffness"
   ],
-  "desc": "Loop a band around the ball of one foot, anchor the other end to a table leg. Practice dorsiflexion, plantarflexion, inversion, and eversion against the band.",
+  "desc": "Sit with your lower leg supported and loop a resistance band around the ball of your foot. You will reposition the band for each of the four directions so it pulls the OPPOSITE way to your movement: pull your toes UP (band anchored in front), point them DOWN (band behind or held), turn the sole INWARD (band out to the side), and turn it OUTWARD (band across your body). Keep your lower leg still and move only at the ankle, slowly.",
   "phases": [
    {
     "label": "Loop a band around the ball of one foot, anchor...",
