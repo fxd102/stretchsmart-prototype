@@ -4333,10 +4333,10 @@
    "flexibility",
    "core strength"
   ],
-  "desc": "Kneel with feet anchored under something heavy. Slowly lean forward as far as you can control, then catch yourself.",
+  "desc": "Kneel tall with your ankles anchored (under a loaded barbell or heavy couch, or held by a partner) and something padded under your knees. Keeping your body in ONE straight line from knees to head — hips open, no bending at the waist — slowly lower your whole body toward the floor, resisting the fall with your hamstrings for as long as you can. When you can't hold any longer, catch yourself with your hands (into a push-up position) and push back up to kneeling. The slow lowering IS the exercise.",
   "phases": [
    {
-    "label": "Kneel with feet anchored under something heavy",
+    "label": "Lower your straight body slowly, catch with hands, push back up",
     "seconds": 60
    }
   ],
@@ -4356,7 +4356,13 @@
     "reason": "Stretch after intense strengthening"
    }
   ],
-  "builds_on": "Hamstring Walkout"
+  "builds_on": "Hamstring Walkout",
+  "form_cue": "Keep a rigid straight line from knees to head the ENTIRE time — hips stay open, no hinging at the waist (bending at the hips takes the hamstrings out of it and defeats the move). Go slow and stay in control; the instant you lose it, catch with your hands. Keep your hands ready in front of you the whole way down.",
+  "stop_condition": "This is an advanced, very demanding exercise. Stop with any sharp hamstring pain or a pulling sensation (hamstring strain is a real risk here), knee pain from the kneeling load, or low-back pain from letting the hips pike. If you can only control the first few inches, that IS your range — do NOT free-fall the rest. Expect significant muscle soreness for a few days, especially the first time; that soreness is normal, sharp pain during the move is not.",
+  "regression": "Only lower a few inches and push straight back up with your hands, 2-3 reps. Better yet, build the base first with the easier eccentric hamstring moves (Hamstring Walkout, bodyweight Romanian deadlift) — this needs that foundation.",
+  "remediation": "If your hamstrings can't control even a small range, you're not ready for Nordics yet — spend several weeks on hamstring walkouts and glute bridges first. Any cramp or 'pull' means stop immediately.",
+  "validation": "draft_pending_pt",
+  "review_priority": "high"
  },
  {
   "name": "Sciatic Nerve Floss",
