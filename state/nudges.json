@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-09",
-      "time": "2026-08-09T08:01:33.461748-04:00",
-      "exercise": "Sumo Squat",
-      "exercise_index": 87
-    },
-    {
       "date": "2026-08-10",
       "time": "2026-08-10T08:02:29.930837-04:00",
       "exercise": "Seated Knee Extension",
@@ -89,6 +83,12 @@
       "time": "2026-08-23T08:04:31.102227-04:00",
       "exercise": "Calf Raise",
       "exercise_index": 101
+    },
+    {
+      "date": "2026-08-24",
+      "time": "2026-08-24T08:01:39.103930-04:00",
+      "exercise": "Wall Calf Stretch",
+      "exercise_index": 102
     }
   ]
 }
