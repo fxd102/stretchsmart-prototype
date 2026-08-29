@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-14",
-      "time": "2026-08-14T08:24:31.041250-04:00",
-      "exercise": "Standing Hamstring Stretch",
-      "exercise_index": 92
-    },
-    {
       "date": "2026-08-15",
       "time": "2026-08-15T08:07:03.784455-04:00",
       "exercise": "Standing Forward Fold",
@@ -89,6 +83,12 @@
       "time": "2026-08-28T10:27:39.736134-04:00",
       "exercise": "Ankle Dorsiflexion Mobilization",
       "exercise_index": 106
+    },
+    {
+      "date": "2026-08-29",
+      "time": "2026-08-29T08:06:58.004112-04:00",
+      "exercise": "Toe Yoga",
+      "exercise_index": 107
     }
   ]
 }
