@@ -4685,11 +4685,11 @@
  {
   "name": "Toe Yoga",
   "position": "seated",
-  "body_area": "Calves/Ankles",
+  "body_area": "Balance",
   "difficulty": 2,
   "setting": "Seated",
   "tags": [
-   "calves/ankles"
+   "balance"
   ],
   "concerns": [
    "ankle mobility",
@@ -4729,11 +4729,11 @@
  {
   "name": "Toe Spread",
   "position": "seated",
-  "body_area": "Calves/Ankles",
+  "body_area": "Balance",
   "difficulty": 1,
   "setting": "Seated",
   "tags": [
-   "calves/ankles"
+   "balance"
   ],
   "concerns": [
    "ankle mobility",
