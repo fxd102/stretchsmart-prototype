@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-16",
-      "time": "2026-08-16T08:03:30.479032-04:00",
-      "exercise": "Lying Hamstring Stretch",
-      "exercise_index": 94
-    },
-    {
       "date": "2026-08-17",
       "time": "2026-08-17T08:03:28.643306-04:00",
       "exercise": "Seated Hamstring Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-08-30T08:10:56.097269-04:00",
       "exercise": "Toe Spread",
       "exercise_index": 108
+    },
+    {
+      "date": "2026-08-31",
+      "time": "2026-08-31T08:07:27.557845-04:00",
+      "exercise": "Single-Leg Calf Raise",
+      "exercise_index": 109
     }
   ]
 }
