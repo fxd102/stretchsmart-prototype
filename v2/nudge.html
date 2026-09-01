@@ -437,7 +437,16 @@ function runPhase(phaseIdx) {
   }
 
   const phase = phases[phaseIdx];
-  document.getElementById('phase-label').textContent = phase.label;
+  // Single-step exercises stored a truncated copy of the desc in phase.label,
+  // duplicating the description card below the timer — hide it. Multi-step keeps
+  // the label, where it names the current step.
+  const phaseLabelEl = document.getElementById('phase-label');
+  if (phases.length > 1) {
+    phaseLabelEl.textContent = phase.label;
+    phaseLabelEl.style.display = '';
+  } else {
+    phaseLabelEl.style.display = 'none';
+  }
   document.getElementById('phase-progress').textContent =
     phases.length > 1 ? 'Step ' + (phaseIdx + 1) + ' of ' + phases.length : '';
   document.getElementById('timer-text').textContent = phase.seconds;
