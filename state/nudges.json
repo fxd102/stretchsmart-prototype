@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-17",
-      "time": "2026-08-17T08:03:28.643306-04:00",
-      "exercise": "Seated Hamstring Stretch",
-      "exercise_index": 95
-    },
-    {
       "date": "2026-08-18",
       "time": "2026-08-18T08:00:44.841506-04:00",
       "exercise": "Romanian Deadlift (Bodyweight)",
@@ -89,6 +83,12 @@
       "time": "2026-08-31T08:07:27.557845-04:00",
       "exercise": "Single-Leg Calf Raise",
       "exercise_index": 109
+    },
+    {
+      "date": "2026-09-01",
+      "time": "2026-09-01T08:08:20.432134-04:00",
+      "exercise": "Heel Walk",
+      "exercise_index": 110
     }
   ]
 }
