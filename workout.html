@@ -2,6 +2,9 @@
 <!--
   8-Week Strength & Impact Tracker — public copy.
   Program v1.0 designed by the household doctor guild (Claude #603), 2026-09-01.
+  Tracker v1.1 (2026-09-02): six-day checklist (Mon–Sat), specific warm-ups drawn from the
+  owner's StretchSmart pool, zone-2 run days labeled. Lift-day storage keys unchanged from v1.0
+  so previously logged weights persist.
   PRIVACY: this is the PUBLIC copy — keep it free of any name or personal detail.
   Anything sensitive belongs only in the private copy, never on this public page.
   DO NOT add personal specifics here; if a fuller private record is needed, use the private copy.
@@ -17,7 +20,7 @@
   :root {
     --bg:#12121f; --card:#1a1a2e; --card2:#16213e; --line:#2a2a4a;
     --ink:#f5f5fa; --dim:#9a9ab0; --accent:#e94560; --teal:#4ecdc4; --amber:#e9a045;
-    --good:#4caf72;
+    --blue:#6db3f2; --good:#4caf72;
   }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
   body {
@@ -36,11 +39,31 @@
     white-space:nowrap;
   }
   .tab.active { background:var(--accent); color:#fff; border-color:var(--accent); }
-  .phase-note { color:var(--teal); font-size:13px; background:var(--card2); border-radius:12px; padding:10px 12px; margin-bottom:14px; }
-  .session { background:var(--card); border-radius:16px; padding:14px; margin-bottom:14px; border:1px solid var(--line); }
-  .session h2 { font-size:16px; margin:0 0 2px; }
-  .session .day { color:var(--amber); font-weight:700; font-size:12px; letter-spacing:1px; text-transform:uppercase; }
-  .weeks { display:flex; gap:14px; margin:10px 0 12px; flex-wrap:wrap; }
+  .phase-note { color:var(--teal); font-size:13px; background:var(--card2); border-radius:12px; padding:10px 12px; margin-bottom:6px; }
+  .progress { color:var(--dim); font-size:12px; text-align:right; margin-bottom:12px; }
+  .progress b { color:var(--good); }
+  .day-card { background:var(--card); border-radius:16px; padding:14px; margin-bottom:12px; border:1px solid var(--line); }
+  .day-head { display:flex; align-items:center; gap:8px; margin-bottom:2px; }
+  .day-head .d { font-weight:800; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:var(--ink); }
+  .badge { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:2px 8px; border-radius:10px; color:#12121f; }
+  .badge.lift { background:var(--accent); color:#fff; }
+  .badge.impact { background:var(--amber); }
+  .badge.mobility { background:var(--teal); }
+  .badge.run { background:var(--blue); }
+  .badge.light { background:#3a3a55; color:var(--dim); }
+  .day-card h2 { font-size:16px; margin:0 0 4px; }
+  .mins { color:var(--dim); font-size:12px; margin-bottom:6px; }
+  details.warm { margin:6px 0 8px; }
+  details.warm summary { cursor:pointer; color:var(--amber); font-size:13px; font-weight:600; list-style:none; }
+  details.warm summary::-webkit-details-marker { display:none; }
+  details.warm summary::before { content:"▸ "; }
+  details.warm[open] summary::before { content:"▾ "; }
+  details.warm ul { margin:6px 0 0; padding-left:18px; font-size:13px; color:var(--dim); }
+  details.warm li { margin:2px 0; }
+  ul.items { margin:4px 0 6px; padding-left:18px; font-size:14px; }
+  ul.items li { margin:4px 0; }
+  .zone { color:var(--blue); font-size:12px; margin-top:4px; }
+  .weeks { display:flex; gap:14px; margin:10px 0 8px; flex-wrap:wrap; }
   .wk { display:flex; align-items:center; gap:6px; font-size:13px; color:var(--dim); cursor:pointer; user-select:none; }
   .wk input { width:20px; height:20px; accent-color:var(--good); }
   .wk.checked { color:var(--good); }
@@ -55,9 +78,9 @@
     background:var(--card2); color:var(--ink); font-size:14px; text-align:center;
   }
   .wt input::placeholder { color:#5a5a70; }
+  .rest { text-align:center; color:var(--dim); font-size:13px; padding:8px; margin-bottom:12px; }
   .modcard { background:var(--card2); border-radius:12px; padding:11px 13px; margin-bottom:14px; font-size:13px; }
   .modcard h3 { margin:0 0 5px; font-size:13px; color:var(--amber); letter-spacing:.5px; text-transform:uppercase; }
-  .modcard.impact h3 { color:var(--accent); }
   .rule { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:12px; font-size:14px; }
   .rule h3 { margin:0 0 6px; font-size:14px; color:var(--teal); }
   .rule ul { margin:0; padding-left:18px; }
@@ -65,7 +88,7 @@
   .rule.warn { border-color:#5a3a2a; }
   .rule.warn h3 { color:var(--amber); }
   .footer { text-align:center; color:#5a5a70; font-size:11px; margin-top:20px; }
-  .notes { width:100%; margin-top:8px; border-radius:8px; border:1px solid var(--line); background:var(--card2); color:var(--ink); font-size:13px; padding:8px; resize:vertical; min-height:38px; }
+  .notes { width:100%; margin-top:6px; border-radius:8px; border:1px solid var(--line); background:var(--card2); color:var(--ink); font-size:13px; padding:8px; resize:vertical; min-height:38px; }
   .reset { display:block; margin:20px auto 0; background:none; border:1px solid var(--line); color:var(--dim); border-radius:8px; padding:8px 14px; font-size:12px; cursor:pointer; }
 </style>
 </head>
@@ -73,7 +96,7 @@
 <div class="wrap">
   <div class="eyebrow">8-Week Program</div>
   <h1>Strength &amp; Impact Tracker</h1>
-  <div class="sub">Ranges are intentional — pick your working weight by how form and energy feel that day. Log it, and watch it climb.</div>
+  <div class="sub">Six days a week, Sunday off. Ranges are intentional — pick your working weight by how form and energy feel that day. Log it, and watch it climb.</div>
 
   <div class="tabs" id="tabs"></div>
   <div id="view"></div>
@@ -81,100 +104,122 @@
   <button class="reset" onclick="if(confirm('Clear all logged weights and checkmarks? This cannot be undone.')){localStorage.clear();render();}">Reset all tracking</button>
 
   <div class="footer">
-    Program v1.0 · designed by the household doctor guild<br>
+    Program v1.0 · designed by the household doctor guild · tracker v1.1<br>
     Your logs are saved only on this device, in this browser.
   </div>
 </div>
 
 <script>
+// Warm-ups use exercise names from the owner's StretchSmart pool.
+const WARM = {
+  liftA: ["Light cardio 5 min — bike, row, or brisk walk", "Cat-Cow ×8", "Thoracic Rotation ×8/side", "Leg Swing (Front-Back) ×10/side", "Standing Hip Circle ×8 each way", "Ankle Dorsiflexion Mobilization ×10/side", "Glute Bridge ×12", "Bodyweight Squat ×10, slow and deep", "Band Pull-Apart ×15 + Arm Circles ×10 each way (for the press)"],
+  liftB: ["Light cardio 5 min — bike, row, or brisk walk", "Cat-Cow ×8", "Thoracic Rotation ×8/side", "Leg Swing (Side-to-Side) ×10/side", "Good Morning Stretch ×10 — groove the hinge", "Glute Bridge ×12", "World's Greatest Stretch ×5/side", "Scapular Push-Up ×10 + Band Pull-Apart ×15 (for bench, rows, pull-ups)", "Empty-bar deadlift ×5 to ramp in"],
+  impact: ["Easy jog or brisk walk 3 min", "Ankle Circles ×10 each way", "Calf Raise ×15", "Leg Swing (Front-Back) ×10/side", "Standing March ×20", "Small hops in place ×10 to prime, then the block"],
+  run: ["Walk → easy jog 5 min", "Leg Swing (Front-Back) ×10/side", "Standing Hip Circle ×8 each way", "Ankle Circles ×10 each way", "Walking Lunge with Twist ×6/side", "Then settle into pace"],
+};
+const ZONE2 = "Zone 2 = conversational: you can speak full sentences. Easy on purpose.";
+
+const MOB_BASE = ["Hip mobility 10 min — Standing Hip Circle, Leg Swings (both planes), Hip Flexor Stretch (Half-Kneel), Deep Squat Hold", "Thoracic spine 10 min — Foam Roller Thoracic Extension, Cat-Cow, Quadruped Thoracic Rotation (thread-the-needle)", "Balance 10 min — single-leg stands / Standing March, tandem walks", "Wall angels 3×15", "Optional: tai chi or gentle yoga"];
+const MOB_LATE = ["Yoga or tai chi flow", "Posture correctives — Wall angels 3×15, Band Pull-Apart ×15, Scapular Squeeze ×12", "Balance — Standing March, single-leg stands, tandem walks"];
+const SAT = ["Optional light activity — a walk, easy bike, gentle yoga", "Or full rest. Rest is a valid choice."];
+
+// Lift days keep sid 0 (Mon) / 1 (Thu) so v1.0 storage keys (wt_/done_/note_) still match.
 const PROGRAM = [
   {
     name:"Weeks 1–2 · Form Re-Establishment", weeks:[1,2],
-    note:"Rebuild the movement patterns before loading heavy. Tue + Fri: running 1.5–2 mi at a conversational pace. No impact block yet.",
-    sessions:[
-      {day:"Mon", label:"Session A — Squat focus", ex:[
+    note:"Rebuild the movement patterns before loading heavy. No impact block yet — Tue and Fri are easy zone-2 runs.",
+    days:[
+      {d:"Mon", t:"lift", sid:0, label:"Session A — Squat focus", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Goblet squat","3×10 @ 15–20 lb DB"],
         ["Barbell deadlift","3×8 @ 45–55 lb"],
         ["Barbell overhead press","3×8 @ 15–20 lb"],
         ["Single-leg calf raise","3×15/side · bodyweight, hold rail"],
         ["Face pull","2×15 @ 20 lb"],
         ["Plank","3×30 sec"]]},
-      {day:"Thu", label:"Session B — Deadlift focus", ex:[
+      {d:"Tue", t:"run", id:"tue", label:"Zone 2 run", mins:"1.5–2 mi", warm:WARM.run, items:["Run 1.5–2 mi at conversational pace"], zone:ZONE2},
+      {d:"Wed", t:"mobility", id:"wed", label:"Mobility · Balance · Posture", mins:"30 min", items:MOB_BASE},
+      {d:"Thu", t:"lift", sid:1, label:"Session B — Deadlift focus", mins:"~45–50 min", warm:WARM.liftB, ex:[
         ["Barbell deadlift","3×8 @ 55–65 lb"],
         ["Bulgarian split squat","3×8/side · bodyweight"],
         ["Bench press (barbell or DB)","3×10 @ 25–35 lb"],
         ["Assisted pull-up","3×8 · assist leaving 2 in reserve"],
         ["Bent-over row","3×10 @ 30–40 lb"],
         ["Bird dog","3×10/side"]]},
-    ],
-    wed:"Hip mobility 10 min · thoracic spine (foam-roller extensions, cat-cow, thread-the-needle) 10 min · balance (single-leg stands, tandem walks) 10 min · wall angels 3×15 · optional tai chi or gentle yoga.",
-    impact:null
+      {d:"Fri", t:"run", id:"fri", label:"Zone 2 run", mins:"1.5–2 mi", warm:WARM.run, items:["Run 1.5–2 mi at conversational pace"], zone:ZONE2},
+      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT},
+    ]
   },
   {
     name:"Weeks 3–4 · Progressive Ramp + Impact Begins", weeks:[3,4],
-    note:"Load starts climbing and the impact block enters (Tue). Fri: running 2 mi. Wed adds single-leg RDL 3×8/side @ 10–15 lb.",
-    sessions:[
-      {day:"Mon", label:"Session A", ex:[
+    note:"Load starts climbing and the impact block enters on Tue (start it week 3 or 4). Fri stays a zone-2 run. Wed adds single-leg RDL.",
+    days:[
+      {d:"Mon", t:"lift", sid:0, label:"Session A", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Back squat (barbell)","4×6 @ 45–55 lb · goblet if form slips"],
         ["Barbell deadlift","4×6 @ 65–75 lb"],
         ["Overhead press","4×6 @ 20–30 lb"],
         ["Standing calf raise (hold DBs)","3×12 @ 15–25 lb ea"],
         ["Face pull","3×12 @ 25–30 lb"],
         ["Side plank","3×20 sec/side"]]},
-      {day:"Thu", label:"Session B", ex:[
+      {d:"Tue", t:"impact", id:"tue", label:"Impact block", mins:"~20 min", warm:WARM.impact, items:["Week 3: small hops in place 2×10 · box step-downs 15–20 cm 2×8", "Week 4: box step-downs 20–25 cm 3×8 · low-intensity broad jumps 2×5 · assisted jumping chin-ups 2×5", "Cool-down 5 min easy walk"]},
+      {d:"Wed", t:"mobility", id:"wed", label:"Mobility · Balance · Posture", mins:"30 min", items:MOB_BASE.concat(["Single-leg RDL 3×8/side @ 10–15 lb (the Stork Stand with Hip Hinge pattern, loaded)"])},
+      {d:"Thu", t:"lift", sid:1, label:"Session B", mins:"~45–50 min", warm:WARM.liftB, ex:[
         ["Deadlift","4×5 @ 75–85 lb"],
         ["Bulgarian split squat (loaded)","3×8/side @ 10–15 lb DB"],
         ["Bench press","4×8 @ 30–40 lb"],
         ["Assisted pull-up","3×6–8"],
         ["Bent-over row","3×8 @ 40–55 lb"],
         ["Farmer carry","3×30 sec @ 25–30 lb DB"]]},
-    ],
-    wed:"Mobility/balance/posture + single-leg RDL 3×8/side @ 10–15 lb + tai chi or yoga.",
-    impact:{title:"Impact block — Tue (start week 3 or 4)", body:"<b>Week 3:</b> small hops in place 2×10 · box step-downs 15–20 cm 2×8.<br><b>Week 4:</b> box step-downs 20–25 cm 3×8 · low-intensity broad jumps 2×5 · assisted jumping chin-ups 2×5."}
+      {d:"Fri", t:"run", id:"fri", label:"Zone 2 run", mins:"2 mi", warm:WARM.run, items:["Run 2 mi at conversational pace"], zone:ZONE2},
+      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT},
+    ]
   },
   {
     name:"Weeks 5–6 · Heavy-Resistance Entry", weeks:[5,6],
-    note:"The 5×5 heavy-stimulus pattern begins, targeting ~80–85% of your 1-rep max. Impact block now runs Tue AND Fri (25 min). Wed: yoga/tai chi + posture + balance.",
-    sessions:[
-      {day:"Mon", label:"Session A — 5×5 pattern", ex:[
+    note:"The 5×5 heavy-stimulus pattern begins, targeting ~80–85% of your 1-rep max. The impact block now runs Tue AND Fri (25 min).",
+    days:[
+      {d:"Mon", t:"lift", sid:0, label:"Session A — 5×5 pattern", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Back squat","5×5 @ 65–80 lb · target 80–85% 1RM"],
         ["Deadlift","5×5 @ 85–100 lb"],
         ["Overhead press","5×5 @ 30–40 lb"],
         ["Front squat","3×6 @ 40–50 lb"],
         ["Face pull","3×12"],
         ["Standing calf raise (loaded)","3×12 @ 25–35 lb"]]},
-      {day:"Thu", label:"Session B — 5×5 pattern", ex:[
+      {d:"Tue", t:"impact", id:"tue", label:"Impact block", mins:"25 min", warm:WARM.impact, items:["Drop jumps from 5 cm 3×8 (rest 45 sec)", "Standing broad jumps 3×5", "Assisted jumping chin-ups 3×5", "Cool-down 5 min"]},
+      {d:"Wed", t:"mobility", id:"wed", label:"Yoga / Tai Chi · Posture · Balance", mins:"30 min", items:MOB_LATE},
+      {d:"Thu", t:"lift", sid:1, label:"Session B — 5×5 pattern", mins:"~45–50 min", warm:WARM.liftB, ex:[
         ["Deadlift","5×5 @ 90–100 lb"],
         ["Back squat","5×5 @ 65–80 lb"],
         ["Bench press","4×6 @ 40–55 lb"],
         ["Pull-up (assisted → unassisted)","4×5"],
         ["Bulgarian split squat","3×8/side @ 15–20 lb DB"],
         ["Deadbug","3×10"]]},
-    ],
-    wed:"Yoga/tai chi + posture correctives + balance work.",
-    impact:{title:"Impact block — Tue AND Fri (25 min)", body:"Warm-up 5 min · <b>drop jumps from 5 cm</b> 3×8 (rest 45 sec) · <b>standing broad jumps</b> 3×5 · <b>assisted jumping chin-ups</b> 3×5 · cool-down 5 min."}
+      {d:"Fri", t:"impact", id:"fri", label:"Impact block", mins:"25 min", warm:WARM.impact, items:["Drop jumps from 5 cm 3×8 (rest 45 sec)", "Standing broad jumps 3×5", "Assisted jumping chin-ups 3×5", "Cool-down 5 min"]},
+      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT},
+    ]
   },
   {
     name:"Weeks 7–8 · Full Heavy Consistency", weeks:[7,8],
-    note:"Full heavy-resistance loading — real 80–85% 1RM territory. Impact block Tue AND Fri (25–30 min). End of week 8: deload (drop all loads 20% for a week, reassess form).",
-    sessions:[
-      {day:"Mon", label:"Session A", ex:[
+    note:"Full heavy-resistance loading — real 80–85% 1RM territory. Impact block Tue AND Fri (25–30 min). After week 8: deload — drop all loads 20% for a week and reassess form.",
+    days:[
+      {d:"Mon", t:"lift", sid:0, label:"Session A", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Back squat","5×5 @ 75–90 lb"],
         ["Deadlift","5×5 @ 95–110 lb"],
         ["Overhead press","5×5 @ 35–45 lb"],
         ["Front squat","3×5 @ 50–65 lb"],
         ["Weighted plank","3×30 sec @ 15–25 lb"],
         ["Standing calf raise (loaded)","3×15 @ 30–40 lb"]]},
-      {day:"Thu", label:"Session B", ex:[
+      {d:"Tue", t:"impact", id:"tue", label:"Impact block", mins:"25–30 min", warm:WARM.impact, items:["Drop jumps from 10 cm 5×10 (rest 30 sec)", "Standing broad jumps 3×5", "Jumping chin-ups 3×5–10 (toward unassisted)", "Cool-down 5 min"]},
+      {d:"Wed", t:"mobility", id:"wed", label:"Yoga / Tai Chi · Posture · Balance", mins:"30 min", items:MOB_LATE},
+      {d:"Thu", t:"lift", sid:1, label:"Session B", mins:"~45–50 min", warm:WARM.liftB, ex:[
         ["Deadlift","5×5 @ 100–115 lb"],
         ["Back squat","5×5 @ 75–90 lb"],
         ["Bench press","4×5 @ 45–60 lb"],
         ["Pull-up (assisted or unassisted)","4×5"],
         ["Bulgarian split squat","3×8/side @ 20–25 lb DB"],
         ["Suitcase carry","3×40 sec/side @ 30–40 lb"]]},
-    ],
-    wed:"Yoga/tai chi + posture + balance.",
-    impact:{title:"Impact block — Tue AND Fri (25–30 min)", body:"Warm-up 5 min · <b>drop jumps from 10 cm</b> 5×10 (rest 30 sec) · <b>standing broad jumps</b> 3×5 · <b>jumping chin-ups</b> 3×5–10 (toward unassisted) · cool-down 5 min."}
+      {d:"Fri", t:"impact", id:"fri", label:"Impact block", mins:"25–30 min", warm:WARM.impact, items:["Drop jumps from 10 cm 5×10 (rest 30 sec)", "Standing broad jumps 3×5", "Jumping chin-ups 3×5–10 (toward unassisted)", "Cool-down 5 min"]},
+      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT.concat(["End of week 8: next week is a DELOAD — drop all loads 20%, reassess form"])},
+    ]
   },
 ];
 
@@ -187,10 +232,10 @@ const TRAVEL = [
 ];
 
 let active = 0;
-
 function key(p){ return "sp8_"+p; }
 function getV(k){ return localStorage.getItem(key(k)) || ""; }
 function setV(k,v){ v ? localStorage.setItem(key(k),v) : localStorage.removeItem(key(k)); }
+function dayId(day){ return day.t==="lift" ? String(day.sid) : day.id; }
 
 function render(){
   const tabs = document.getElementById('tabs');
@@ -201,34 +246,45 @@ function render(){
   if(active===5){ view.innerHTML = TRAVEL.map(t=>`<div class="modcard"><h3>${t.t}</h3>${t.b}</div>`).join(''); return; }
 
   const ph = PROGRAM[active];
-  let h = `<div class="phase-note">${ph.note}</div>`;
-  ph.sessions.forEach((s,si)=>{
-    h += `<div class="session"><div class="day">${s.day}</div><h2>${s.label}</h2><div class="weeks">`;
+  let done=0, total=ph.days.length*ph.weeks.length;
+  ph.days.forEach(day=>ph.weeks.forEach((wk,wi)=>{ if(getV(`done_${active}_${dayId(day)}_${wi}`)==="1") done++; }));
+  let h = `<div class="phase-note">${ph.note}</div><div class="progress">This phase: <b>${done}</b> / ${total} days done</div>`;
+
+  ph.days.forEach(day=>{
+    const id = dayId(day);
+    h += `<div class="day-card"><div class="day-head"><span class="d">${day.d}</span><span class="badge ${day.t}">${day.t}</span></div><h2>${day.label}</h2>`;
+    if(day.mins) h += `<div class="mins">${day.mins}</div>`;
+    if(day.warm) h += `<details class="warm"><summary>Warm-up</summary><ul>${day.warm.map(w=>`<li>${w}</li>`).join('')}</ul></details>`;
+    if(day.ex){
+      h += `<table>`;
+      day.ex.forEach((e,ei)=>{
+        const k = `wt_${active}_${id}_${ei}`;
+        h += `<tr><td class="ex"><div class="exname">${e[0]}</div><div class="presc">${e[1]}</div></td><td class="wt"><input inputmode="decimal" placeholder="lb" value="${getV(k)}" onchange="setV('${k}',this.value)"></td></tr>`;
+      });
+      h += `</table>`;
+    }
+    if(day.items) h += `<ul class="items">${day.items.map(i=>`<li>${i}</li>`).join('')}</ul>`;
+    if(day.zone) h += `<div class="zone">${day.zone}</div>`;
+    h += `<div class="weeks">`;
     ph.weeks.forEach((wk,wi)=>{
-      const k = `done_${active}_${si}_${wi}`, on = getV(k)==="1";
+      const k = `done_${active}_${id}_${wi}`, on = getV(k)==="1";
       h += `<label class="wk ${on?'checked':''}"><input type="checkbox" ${on?'checked':''} onchange="setV('${k}',this.checked?'1':'');render()">Week ${wk} done</label>`;
     });
-    h += `</div><table>`;
-    s.ex.forEach((e,ei)=>{
-      const k = `wt_${active}_${si}_${ei}`;
-      h += `<tr><td class="ex"><div class="exname">${e[0]}</div><div class="presc">${e[1]}</div></td><td class="wt"><input inputmode="decimal" placeholder="lb" value="${getV(k)}" onchange="setV('${k}',this.value)"></td></tr>`;
-    });
-    h += `</table>`;
-    const nk = `note_${active}_${si}`;
+    h += `</div>`;
+    const nk = `note_${active}_${id}`;
     h += `<textarea class="notes" placeholder="Notes (how it felt, form cues, tweaks)…" onchange="setV('${nk}',this.value)">${getV(nk)}</textarea>`;
     h += `</div>`;
   });
-  if(ph.impact) h += `<div class="modcard impact"><h3>${ph.impact.title}</h3>${ph.impact.body}</div>`;
-  h += `<div class="modcard"><h3>Wed · Mobility / Balance / Posture (30 min)</h3>${ph.wed}</div>`;
+  h += `<div class="rest">Sun · Rest</div>`;
   view.innerHTML = h;
 }
 
 function guideHTML(){
   return `
-  <div class="rule"><h3>Before &amp; between sets</h3><ul>
-    <li>Warm up 5–10 min (light cardio + dynamic stretches) before every resistance session.</li>
+  <div class="rule"><h3>Warm-ups &amp; rest</h3><ul>
+    <li>Every lift, impact, and run day has its own warm-up under the ▸ Warm-up toggle — do it. Wednesday is gentle from the start, no separate warm-up needed.</li>
     <li>Rest 2–3 min between heavy 5-rep sets; 60–90 sec between lighter sets.</li>
-    <li>Sessions target ~45–50 min including warm-up and cool-down.</li>
+    <li>Lift sessions target ~45–50 min including warm-up and cool-down.</li>
   </ul></div>
   <div class="rule"><h3>Progression</h3><ul>
     <li>Add 2.5–5 lb the next session once you complete all sets at the target reps.</li>
