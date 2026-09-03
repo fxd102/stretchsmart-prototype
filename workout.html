@@ -8,6 +8,10 @@
   impact dose as a Thu finisher from wk 5, Tue = impact block + zone-2 jog, gated zone-5
   intervals from wk 5 (hill repeats preferred), ramp sets, pogo hops, running gates, and the
   spinal-flexion guardrail in the Guide.
+  Tracker v1.3 (2026-09-02): doctor's follow-up ruling — intervals move to Saturday (scheduled
+  from wk 5), Friday becomes the easy zone-2 recovery run, finisher stays Thursday, and the gate
+  reads "no intervals the day after a heavy lift day" (48 h between the deadlift session and the
+  hard run). Slide-to-Sunday / skip rule added for impossible Saturdays.
   PRIVACY: this is the PUBLIC copy — keep it free of any name or personal detail.
   Anything sensitive belongs only in the private copy, never on this public page.
   DO NOT add personal specifics here; if a fuller private record is needed, use the private copy.
@@ -110,7 +114,7 @@
   <button class="reset" onclick="if(confirm('Clear all logged weights and checkmarks? This cannot be undone.')){localStorage.clear();render();}">Reset all tracking</button>
 
   <div class="footer">
-    Program v1.0 · designed by the household doctor guild · tracker v1.2<br>
+    Program v1.0 · designed by the household doctor guild · tracker v1.3<br>
     Your logs are saved only on this device, in this browser.
   </div>
 </div>
@@ -126,11 +130,13 @@ const WARM = {
   intervals: ["Easy jog 10 min", "3–4 × 20-sec strides, each a little faster — not sprints. The first hard rep should never be the first fast step of the day."],
 };
 const ZONE2 = "Zone 2 = talk test: full sentences, could hold it for an hour. Go by feel and talking, not a watch number.";
-const ZONE5 = "Zone 5 = can't speak, 8–9/10 effort. Judge by the talk test and effort, not a heart-rate number. One hard run a week, max.";
+const ZONE5 = "Zone 5 = can't speak, 8–9/10 effort. Judge by the talk test and effort, not a heart-rate number. One hard run a week, max — and never the morning after a heavy lift day.";
 const JOG = "Then 15–20 min easy zone-2 jog";
 const FINISHER = ["Jumping chin-up finisher · impact","5×5 · assisted OK · stick each landing flat-footed and firm · ~5–8 min"];
 const SURFACE = "Surface: track, treadmill, or smooth road — not trail";
 const HILLS = "Best variant: run the hard efforts UPHILL (hill repeats, walk down) — same heart work, gentler landing, fewer trips";
+const FRI_EASY = ["Easy zone-2 run, ~2 mi — the recovery day between two hard ones. Keep it genuinely easy."];
+const SAT_RULE = "If Saturday's impossible: slide it to Sunday (then rest Monday morning before Session A), or skip this week's intervals. Skipping is fine; stacking is not — the hard run is never the morning after the deadlift day.";
 
 const MOB_BASE = ["Hip mobility 10 min — Standing Hip Circle, Leg Swings (both planes), Hip Flexor Stretch (Half-Kneel), Deep Squat Hold", "Thoracic spine 10 min — Foam Roller Thoracic Extension, Cat-Cow, Quadruped Thoracic Rotation (thread-the-needle)", "Balance 10 min — single-leg stands / Standing March, tandem walks", "Wall angels 3×15", "Optional: tai chi or gentle yoga"];
 const MOB_LATE = ["Yoga or tai chi flow", "Posture correctives — Wall angels 3×15, Band Pull-Apart ×15, Scapular Squeeze ×12", "Balance — Standing March, single-leg stands, tandem walks"];
@@ -188,7 +194,7 @@ const PROGRAM = [
   },
   {
     name:"Weeks 5–6 · Heavy-Resistance Entry", weeks:[5,6],
-    note:"The 5×5 heavy-stimulus pattern begins, targeting ~80–85% of your 1-rep max. Tue: impact block then an easy jog. Thu now ends with an impact finisher. Fri: your first interval session — one hard run a week, max.",
+    note:"The 5×5 heavy-stimulus pattern begins, targeting ~80–85% of your 1-rep max. Tue: impact block then an easy jog. Thu ends with an impact finisher. Fri: easy recovery run. Sat: your first interval session. Thu → Sun runs hard / easy / hard / rest, with 48 h between the deadlift session and the hard run.",
     days:[
       {d:"Mon", t:"lift", sid:0, label:"Session A — 5×5 pattern", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Back squat","5×5 @ 65–80 lb · target 80–85% 1RM"],
@@ -207,13 +213,13 @@ const PROGRAM = [
         ["Bulgarian split squat","3×8/side @ 15–20 lb DB"],
         ["Deadbug","3×10"],
         FINISHER]},
-      {d:"Fri", t:"run", id:"fri", label:"Intervals — session A", mins:"~35 min", warm:WARM.intervals, items:["6 × 30 sec hard / 90 sec easy walk-jog — hard = fast but controlled, 8/10, not all-out", "Cool-down: 10 min easy", HILLS, SURFACE], zone:ZONE5},
-      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT},
+      {d:"Fri", t:"run", id:"fri", label:"Zone 2 run — recovery", mins:"~2 mi", warm:WARM.run, items:FRI_EASY, zone:ZONE2},
+      {d:"Sat", t:"run", id:"sat", label:"Intervals — session A (hill repeats default)", mins:"~35 min", warm:WARM.intervals, items:["6 × 30 sec hard / 90 sec easy walk-jog — hard = fast but controlled, 8/10, not all-out", "Cool-down: 10 min easy", HILLS, SURFACE, SAT_RULE], zone:ZONE5},
     ]
   },
   {
     name:"Weeks 7–8 · Full Heavy Consistency", weeks:[7,8],
-    note:"Full heavy-resistance loading — real 80–85% 1RM territory. Tue impact + jog, Thu finisher, Fri intervals step up. After week 8: deload — drop all loads 20% for a week and reassess form.",
+    note:"Full heavy-resistance loading — real 80–85% 1RM territory. Tue impact + jog, Thu finisher, Fri easy, Sat intervals step up. After week 8: deload — drop all loads 20% for a week and reassess form.",
     days:[
       {d:"Mon", t:"lift", sid:0, label:"Session A", mins:"~45–50 min", warm:WARM.liftA, ex:[
         ["Back squat","5×5 @ 75–90 lb"],
@@ -232,8 +238,8 @@ const PROGRAM = [
         ["Bulgarian split squat","3×8/side @ 20–25 lb DB"],
         ["Suitcase carry","3×40 sec/side @ 30–40 lb"],
         FINISHER]},
-      {d:"Fri", t:"run", id:"fri", label:"Intervals — session B", mins:"~35–40 min", warm:WARM.intervals, items:["6–8 × 45–60 sec hard / 90 sec easy — OR 4 × 2 min hard-tempo (talk only in 2–3-word bursts) / 2 min easy", "Cool-down: 10 min easy", HILLS, SURFACE], zone:ZONE5},
-      {d:"Sat", t:"light", id:"sat", label:"Light activity or rest", mins:"", items:SAT.concat(["End of week 8: next week is a DELOAD — drop all loads 20%, reassess form"])},
+      {d:"Fri", t:"run", id:"fri", label:"Zone 2 run — recovery", mins:"~2 mi", warm:WARM.run, items:FRI_EASY, zone:ZONE2},
+      {d:"Sat", t:"run", id:"sat", label:"Intervals — session B (hill repeats default)", mins:"~35–40 min", warm:WARM.intervals, items:["6–8 × 45–60 sec hard / 90 sec easy — OR 4 × 2 min hard-tempo (talk only in 2–3-word bursts) / 2 min easy", "Cool-down: 10 min easy", HILLS, SURFACE, SAT_RULE, "End of week 8: next week is a DELOAD — drop all loads 20%, reassess form"], zone:ZONE5},
     ]
   },
 ];
@@ -309,7 +315,9 @@ function guideHTML(){
   </ul></div>
   <div class="rule"><h3>Running</h3><ul>
     <li><b>Weeks 1–4: zone 2 only.</b> Base first — no intervals.</li>
-    <li><b>From week 5:</b> one hard run a week, max. Two running days total (Tue jog + Fri), Sat easy optional.</li>
+    <li><b>From week 5:</b> one hard run a week, max — on Saturday. Three running days: Tue easy jog, Fri easy recovery run, Sat intervals.</li>
+    <li><b>Never do intervals the day after a heavy lift day.</b> Thu → Sun runs hard / easy / hard / rest, so there's 48 h between the deadlift session and the hard run.</li>
+    <li>If a Saturday's impossible: slide the intervals to Sunday (then rest Monday morning before Session A), or skip that week's intervals. Skipping is fine; stacking is not.</li>
     <li>Zones by the talk test, not a watch: zone 2 = full sentences; zone 5 = can't speak, 8–9/10.</li>
     <li>Increase running volume no more than ~10% a week.</li>
     <li>Surface: track, treadmill, or smooth road — not trail. Predictable footing matters more at speed.</li>
