@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-20",
-      "time": "2026-08-20T08:02:03.605565-04:00",
-      "exercise": "Hamstring Walkout",
-      "exercise_index": 98
-    },
-    {
       "date": "2026-08-21",
       "time": "2026-08-21T08:02:13.296734-04:00",
       "exercise": "Nordic Curl Eccentric",
@@ -89,6 +83,12 @@
       "time": "2026-09-03T08:04:32.215091-04:00",
       "exercise": "Wrist Circles",
       "exercise_index": 112
+    },
+    {
+      "date": "2026-09-04",
+      "time": "2026-09-04T08:01:24.049247-04:00",
+      "exercise": "Prayer Stretch",
+      "exercise_index": 113
     }
   ]
 }
