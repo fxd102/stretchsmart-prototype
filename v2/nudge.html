@@ -233,7 +233,7 @@
       </div>
     </div>
 
-    <a class="back-link" href="/stretchsmart-prototype/">← Back to StretchSmart</a>
+    <a class="back-link" href="../index.html">← Back to StretchSmart</a>
   </div>
 
 <script>
@@ -278,7 +278,7 @@ function totalDuration(ex) {
 }
 
 async function loadExercise() {
-  exercises = await fetch('/stretchsmart-prototype/api/exercises.json').then(r => r.json());
+  exercises = await fetch('../api/exercises.json').then(r => r.json());
   const params = new URLSearchParams(location.search);
   let idx = parseInt(params.get('e'));
   if (isNaN(idx) || idx < 0 || idx >= exercises.length) {
@@ -297,7 +297,7 @@ async function loadExercise() {
 
   const slug = exerciseSlug(exercise.name);
   const img = document.createElement('img');
-  img.src = '/stretchsmart-prototype/img/exercises/' + slug + '.svg';
+  img.src = '../img/exercises/' + slug + '.svg';
   img.alt = exercise.name;
   img.onerror = function() { document.getElementById('ex-illust').style.display = 'none'; };
   document.getElementById('ex-illust').appendChild(img);
@@ -310,7 +310,7 @@ async function loadExercise() {
 
   // Load insights and show the one most relevant to THIS exercise as motivation before starting
   try {
-    insights = await fetch('/stretchsmart-prototype/api/insights.json').then(r => r.json());
+    insights = await fetch('../api/insights.json').then(r => r.json());
   } catch (e) { insights = []; }
   showRelevantInsight();
 
