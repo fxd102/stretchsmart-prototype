@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-22",
-      "time": "2026-08-22T08:07:26.916742-04:00",
-      "exercise": "Sciatic Nerve Floss",
-      "exercise_index": 100
-    },
-    {
       "date": "2026-08-23",
       "time": "2026-08-23T08:04:31.102227-04:00",
       "exercise": "Calf Raise",
@@ -89,6 +83,12 @@
       "time": "2026-09-05T08:08:22.298925-04:00",
       "exercise": "Reverse Prayer Stretch",
       "exercise_index": 114
+    },
+    {
+      "date": "2026-09-06",
+      "time": "2026-09-06T08:03:21.295170-04:00",
+      "exercise": "Finger Spread",
+      "exercise_index": 115
     }
   ]
 }
