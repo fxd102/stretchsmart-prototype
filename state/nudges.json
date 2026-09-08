@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-24",
-      "time": "2026-08-24T08:01:39.103930-04:00",
-      "exercise": "Wall Calf Stretch",
-      "exercise_index": 102
-    },
-    {
       "date": "2026-08-25",
       "time": "2026-08-25T08:02:42.828329-04:00",
       "exercise": "Soleus Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-09-07T08:06:51.067180-04:00",
       "exercise": "Wrist Flexor Stretch",
       "exercise_index": 116
+    },
+    {
+      "date": "2026-09-08",
+      "time": "2026-09-08T08:00:05.655206-04:00",
+      "exercise": "Wrist Extensor Stretch",
+      "exercise_index": 117
     }
   ]
 }
