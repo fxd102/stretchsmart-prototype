@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-25",
-      "time": "2026-08-25T08:02:42.828329-04:00",
-      "exercise": "Soleus Stretch",
-      "exercise_index": 103
-    },
-    {
       "date": "2026-08-26",
       "time": "2026-08-26T08:07:32.940757-04:00",
       "exercise": "Ankle Circles",
@@ -89,6 +83,12 @@
       "time": "2026-09-08T08:00:05.655206-04:00",
       "exercise": "Wrist Extensor Stretch",
       "exercise_index": 117
+    },
+    {
+      "date": "2026-09-09",
+      "time": "2026-09-09T08:04:12.665012-04:00",
+      "exercise": "Rubber Band Finger Extension",
+      "exercise_index": 118
     }
   ]
 }
