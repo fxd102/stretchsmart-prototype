@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-27",
-      "time": "2026-08-27T08:06:30.725191-04:00",
-      "exercise": "Ankle Alphabet",
-      "exercise_index": 105
-    },
-    {
       "date": "2026-08-28",
       "time": "2026-08-28T10:27:39.736134-04:00",
       "exercise": "Ankle Dorsiflexion Mobilization",
@@ -89,6 +83,12 @@
       "time": "2026-09-10T08:00:22.402629-04:00",
       "exercise": "Grip Squeeze",
       "exercise_index": 119
+    },
+    {
+      "date": "2026-09-11",
+      "time": "2026-09-11T08:07:21.612692-04:00",
+      "exercise": "Tabletop Wrist Stretch",
+      "exercise_index": 120
     }
   ]
 }
