@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-28",
-      "time": "2026-08-28T10:27:39.736134-04:00",
-      "exercise": "Ankle Dorsiflexion Mobilization",
-      "exercise_index": 106
-    },
-    {
       "date": "2026-08-29",
       "time": "2026-08-29T08:06:58.004112-04:00",
       "exercise": "Toe Yoga",
@@ -89,6 +83,12 @@
       "time": "2026-09-11T08:07:21.612692-04:00",
       "exercise": "Tabletop Wrist Stretch",
       "exercise_index": 120
+    },
+    {
+      "date": "2026-09-12",
+      "time": "2026-09-12T08:02:25.432765-04:00",
+      "exercise": "Tendon Glide Sequence",
+      "exercise_index": 121
     }
   ]
 }
