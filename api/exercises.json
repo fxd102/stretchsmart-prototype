@@ -5264,7 +5264,9 @@
   "stop_condition": "Stop with joint pain (especially arthritic finger/thumb joints); mild forearm fatigue is fine.",
   "regression": "Softer object, lighter squeeze, fewer reps.",
   "remediation": "If arthritic, use a softer ball and less force; warmth first helps.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "review_note": "BILATERAL QUESTION from Faith (2026-09-10, repeated 09-12), for PT review: why is this run one hand at a time? Both hands can squeeze simultaneously — nothing requires the free hand as a tool, unlike the wrist stretches. Note the data already disagrees with itself: desc says '10 reps each hand' (5s x 10 = 50s PER HAND, so ~105s sequential), but the phases total 59s (27/5/27) — about one hand's worth. So the timer is already sized for both-at-once and only the wording says otherwise. TWO QUESTIONS: (1) clinical — is bilateral fine, or is one-at-a-time wanted for an assessment reason? (2) if bilateral, the phase structure should lose the side-switch and the duration should be set to whatever you judge right. Raised by #584; timer arithmetic is ours, the clinical call is yours.",
+  "review_priority": "high"
  },
  {
   "name": "Tabletop Wrist Stretch",
