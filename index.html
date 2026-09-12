@@ -209,7 +209,12 @@ function setFocus(exercise) {
   clearInterval(timer);
   timer = null;
   todaysFocus = exercise;
-  total = exercise.duration;
+  // Timings live in phases[].seconds; the old `duration` field no longer exists in
+  // api/exercises.json, so this read returned undefined and the clock rendered NaN:NaN.
+  // Sum the phases (same rule as v2/nudge.html), with fallbacks so a malformed record
+  // degrades to a usable timer rather than NaN. Reported by Aster, 2026-09-12.
+  total = (exercise.phases || []).reduce((s, p) => s + (p.seconds || 0), 0)
+          || exercise.duration || 60;
   remaining = total;
   document.getElementById('emoji').textContent = emojis[Math.floor(Math.random() * emojis.length)];
   document.getElementById('exercise-name').textContent = exercise.name;
