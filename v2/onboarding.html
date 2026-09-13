@@ -120,6 +120,17 @@
             <span style="font-size:11px;color:#888;letter-spacing:1px;">V2 PROTOTYPE</span>
           </div>
 
+          <!-- Saved-preferences panel: added 2026-09-12 so the stored state is
+               VISIBLE while testing. Without it "are my answers obeyed?" can only
+               be inferred from behaviour, which is exactly what made the old
+               non-persisting picker look like it worked. -->
+          <div class="card" id="prefs-panel" style="border:1px solid #0f3460;">
+            <h3 style="margin-top:0;color:#4ecdc4;font-size:15px;">Saved preferences <span style="font-size:11px;color:#666;font-weight:400;">(this browser only)</span></h3>
+            <pre id="prefs-dump" style="font-size:12px;color:#9fd3c7;background:#12122a;padding:10px;border-radius:8px;white-space:pre-wrap;margin:8px 0;">…</pre>
+            <button class="btn btn-secondary" id="prefs-reset" style="font-size:13px;padding:8px 14px;">Wipe and start over</button>
+            <span id="prefs-msg" style="font-size:12px;color:#888;margin-left:8px;"></span>
+          </div>
+
           <!-- Step 1: Concerns (Q27 — 25 items, pick up to 3) -->
           <div class="card" id="ob-step1">
             <h3 style="margin-top:0;color:#4ecdc4;">What matters most to you?</h3>
@@ -221,9 +232,13 @@
           </div>
         </div>
 
+        <script src="prefs.js"></script>
         <script>
         const obConcerns = [{"id": "back_pain", "label": "Back pain"}, {"id": "neck_tension", "label": "Neck tension"}, {"id": "shoulder_tension", "label": "Shoulder tension"}, {"id": "better_posture", "label": "Better posture"}, {"id": "desk_recovery", "label": "Desk work recovery"}, {"id": "joint_stiffness", "label": "Joint stiffness"}, {"id": "hip_tightness", "label": "Hip tightness"}, {"id": "ankle_mobility", "label": "Ankle mobility"}, {"id": "balance", "label": "Balance"}, {"id": "fall_prevention", "label": "Fall prevention"}, {"id": "flexibility", "label": "Flexibility"}, {"id": "better_sleep", "label": "Better sleep"}, {"id": "more_energy", "label": "More energy"}, {"id": "stress_relief", "label": "Stress relief"}, {"id": "breathing", "label": "Breathing & lung capacity"}, {"id": "independence", "label": "Stay independent as I age"}, {"id": "keep_up", "label": "Keep up with kids/grandkids"}, {"id": "core_strength", "label": "Core strength"}, {"id": "wrist_hand", "label": "Wrist & hand mobility"}, {"id": "knee_health", "label": "Knee health"}, {"id": "sitting_recovery", "label": "Recovery from sitting all day"}, {"id": "thoracic", "label": "Thoracic (upper back) mobility"}, {"id": "pelvic_floor", "label": "Pelvic floor health"}, {"id": "jaw_tmj", "label": "Jaw/TMJ tension"}, {"id": "general_wellness", "label": "General wellness"}];
         let obSelected = new Set();
+        // Captured answers (previously the pickers only restyled a button and
+        // discarded the value, so nothing could be persisted). 2026-09-12.
+        let obAge = null, obTailoring = null, obMaxNudges = null, obGapHours = null;
 
         function renderObConcerns() {
           var el = document.getElementById('ob-concerns');
@@ -260,6 +275,7 @@
             btn.onclick = function() {
               el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
               btn.style.background = '#e94560'; btn.style.color = 'white';
+              obAge = a;
             };
             el.appendChild(btn);
           });
@@ -276,6 +292,7 @@
             btn.onclick = function() {
               el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
               btn.style.background = '#e94560'; btn.style.color = 'white';
+              obTailoring = g;
             };
             el.appendChild(btn);
           });
@@ -292,6 +309,7 @@
             btn.onclick = function() {
               el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
               btn.style.background = '#e94560'; btn.style.color = 'white';
+              obMaxNudges = n;
             };
             el.appendChild(btn);
           });
@@ -308,17 +326,34 @@
             btn.onclick = function() {
               el.querySelectorAll('button').forEach(function(b) { b.style.background='#2a2a4a'; b.style.color='#aaa'; });
               btn.style.background = '#e94560'; btn.style.color = 'white';
+              obGapHours = parseFloat(g);
             };
             el.appendChild(btn);
           });
         }
 
-        function obStep2() { document.getElementById('ob-step1').style.display='none'; document.getElementById('ob-step2').style.display='block'; }
+        function obSave() {
+          if (!window.StretchPrefs) return null;
+          var saved = StretchPrefs.save({
+            concerns: Array.from(obSelected),
+            age_range: obAge, tailoring: obTailoring,
+            max_nudges_per_day: obMaxNudges, min_gap_hours: obGapHours
+          });
+          renderPrefsPanel();
+          return saved;
+        }
+        function obStep2() {
+          obSave();   // save after each step, so an abandoned run keeps what was answered
+          document.getElementById('ob-step1').style.display='none';
+          document.getElementById('ob-step2').style.display='block';
+        }
         function obStep3() {
+          obSave();
           document.getElementById('ob-step2').style.display='none';
           document.getElementById('ob-step3-nudge').style.display='block';
         }
         function obStep3Exercise() {
+          obSave();
           document.getElementById('ob-step3-nudge').style.display='none';
           document.getElementById('ob-step3').style.display='block';
           // Personalize hook based on picks (Q23)
@@ -353,11 +388,30 @@
           }, 1000);
         }
 
+        function renderPrefsPanel() {
+          var dump = document.getElementById('prefs-dump');
+          if (!dump || !window.StretchPrefs) return;
+          dump.textContent = StretchPrefs.summary();
+        }
+        (function wirePrefsReset() {
+          var btn = document.getElementById('prefs-reset');
+          if (!btn || !window.StretchPrefs) return;
+          btn.onclick = function () {
+            StretchPrefs.clear();
+            obSelected = new Set();
+            obAge = obTailoring = obMaxNudges = obGapHours = null;
+            renderPrefsPanel();
+            document.getElementById('prefs-msg').textContent =
+              'Wiped — reload to clear the buttons too.';
+          };
+        })();
+
         renderObConcerns();
         renderObAges();
         renderObGender();
         renderObFreq();
         renderObGap();
+        renderPrefsPanel();
         </script>
 
         <style>
