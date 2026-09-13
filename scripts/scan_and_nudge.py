@@ -17,11 +17,23 @@ Optional env vars:
   TZ                  (default: America/New_York)
   NUDGE_WINDOW_START  (default: 8   — hour of day, 24h, local tz)
   NUDGE_WINDOW_END    (default: 18)
-  MAX_NUDGES_PER_DAY  (default: 4)
+  MAX_NUDGES_PER_DAY  (default: 1 — deliberate; see note below)
   MIN_GAP_MINUTES     (default: 15)
   MIN_HOURS_BETWEEN   (default: 2)
   SITE_BASE_URL       (default: https://fxd102.github.io/stretchsmart-prototype)
   DRY_RUN             (if non-empty, do not post to Discord or write state)
+
+NOTE ON MAX_NUDGES_PER_DAY (2026-09-12): the docstring used to claim a default of
+4 while the code defaulted to 1 and the workflow set neither, so the effective
+cap has always been 1. Faith confirmed 1/day is what she wants for now — she is
+cycling through content to QA it, not using the app for real yet. Corrected the
+doc to match the code rather than the code to match the doc. DO NOT "fix" this
+mismatch by raising the default; that would start pushing her 4 a day.
+
+NOTE ON TIMING: this fires at the FIRST adequate gap in the window, not the best
+one. So a free morning always yields ~08:00 regardless of how busy the rest of
+the day is. Nudges clustering at 8am is expected behaviour, NOT evidence that
+the calendar scan is broken.
 """
 
 import json
