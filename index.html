@@ -57,6 +57,12 @@
   .page-content {
     flex: 1; padding: 20px 16px; max-width: 500px;
     margin: 0 auto; width: 100%;
+    /* Mobile browsers overlay a toolbar at the bottom of the viewport, which was
+       clipping the "Not right for today?" swap control on iOS Safari — the page
+       looked truncated rather than scrollable. env(safe-area-inset-bottom) covers
+       the home-indicator area; the 72px keeps clear of the toolbar itself.
+       Reported by Faith 2026-09-13 from a phone screenshot. */
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
   }
   h2 { color: #e94560; font-size: 20px; margin-bottom: 16px; }
   h3 { color: #e9a045; font-size: 16px; margin: 20px 0 8px; }

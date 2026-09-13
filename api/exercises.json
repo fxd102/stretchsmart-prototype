@@ -5365,7 +5365,7 @@
    "grip strength",
    "joint stiffness"
   ],
-  "desc": "Touch your thumb to each fingertip in sequence, then stretch your thumb away from your hand. 8 opposition cycles plus a 10-second stretch each hand.",
+  "desc": "Touch your thumb to each fingertip in sequence, then stretch your thumb away from your hand. Repeat the fingertip sequence 8 times, then hold the thumb stretch for 10 seconds. Each hand.",
   "phases": [
    {
     "label": "First side",
