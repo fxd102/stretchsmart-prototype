@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-29",
-      "time": "2026-08-29T08:06:58.004112-04:00",
-      "exercise": "Toe Yoga",
-      "exercise_index": 107
-    },
-    {
       "date": "2026-08-30",
       "time": "2026-08-30T08:10:56.097269-04:00",
       "exercise": "Toe Spread",
@@ -89,6 +83,12 @@
       "time": "2026-09-12T08:02:25.432765-04:00",
       "exercise": "Tendon Glide Sequence",
       "exercise_index": 121
+    },
+    {
+      "date": "2026-09-13",
+      "time": "2026-09-13T08:00:20.943107-04:00",
+      "exercise": "Thumb Stretch and Opposition",
+      "exercise_index": 122
     }
   ]
 }
