@@ -346,6 +346,20 @@ function buildChoosers() {
   });
 }
 
+/* What the DAILY SENDER will pick today, computed the same way scan_and_nudge.py
+   does it: date.toordinal() % len(exercises). Verified against state/nudges.json —
+   this formula reproduces all 15 recorded fires exactly.
+   Needed because the confirmation message used to promise "same exercise on your
+   next nudge today" unconditionally, which is false whenever you have switched
+   position: switchTo() only rewrites this page's URL, and the sender never sees it.
+   (Edge case: a viewer in a very different timezone could straddle the sender's
+   date near midnight. Not worth special-casing for a single-user prototype.) */
+function senderPickToday() {
+  const d = new Date();
+  const days = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000);
+  return (days + 719163) % exercises.length;   // 719163 = ordinal of 1970-01-01
+}
+
 function switchTo(pos) {
   const alts = exercises
     .map((e, i) => ({e, i}))
@@ -589,7 +603,16 @@ function submitFeedback(val) {
   log.push({ t: new Date().toISOString(), exercise: exercise.name, rating: val });
   localStorage.setItem('ss_feedback', JSON.stringify(log));
   document.getElementById('feedback').classList.remove('show');
-  document.getElementById('done-msg').classList.add('show');
+  // Only promise continuity when it is actually true.
+  var msg = document.getElementById('done-msg');
+  try {
+    var sender = senderPickToday();
+    msg.textContent = (sender === currentIdx)
+      ? '\u2713 Logged. Same exercise on your next nudge today.'
+      : '\u2713 Logged. Heads up \u2014 your next nudge today is still '
+        + exercises[sender].name + ', not this one.';
+  } catch (e) { /* leave the default text rather than break the flow */ }
+  msg.classList.add('show');
 }
 
 loadExercise();
