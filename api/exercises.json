@@ -7224,8 +7224,9 @@
   "stop_condition": "Stop if you can't fully relax between reps, feel pain, or find yourself bearing DOWN instead of lifting. Over-gripping is counterproductive.",
   "regression": "Use just the first 'floor' (a light lift) and focus on the full release, which matters as much as the lift.",
   "remediation": "If you're unsure you're finding the right muscles, this is worth checking with a pelvic-health PT — cueing it as a bear-down is a common mistake.",
-  "validation": "draft_pending_pt",
-  "review_priority": "high"
+  "validation": "pt_approved",
+  "review_priority": "high",
+  "review_note": "PT APPROVED 2026-09-10 by Faith McCormack (FaithPT), verbatim: \"Actually the pelvic floor elevator is fine- i especially appreciate the part about full relaxation being as important as the contraction- some pelvic floor specialists feel urinary issues actually are as much from being unable to relax these muscles appropriately as from the strength!\" OPEN QUESTION BACK TO HER (asked 2026-09-12 by #584): her second clause is a RATIONALE the drafted text does not contain. The record already says to relax fully and that over-gripping is counterproductive, but never says WHY — and the why is what stops a user assuming more squeezing is better. Proposed user-facing line, derived from her words and hers to correct: \"Relaxing fully matters as much as the squeeze — some pelvic-floor specialists find urinary symptoms come as much from muscles that cannot relax properly as from weak ones.\" Awaiting her wording; DO NOT ship clinical copy she has not approved."
  },
  {
   "name": "Standing Hip Abduction",
