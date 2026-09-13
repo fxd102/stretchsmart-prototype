@@ -190,6 +190,7 @@
     <div id="detail-screen">
       <div class="detail-name" id="detail-name"></div>
       <div class="duration-hint" id="ex-duration"></div>
+      <div id="chosen-for" style="display:none;font-size:12px;color:#4ecdc4;margin-top:-6px;margin-bottom:10px;"></div>
 
       <div class="timer-wrap" id="timer-wrap">
         <div class="phase-label" id="phase-label"></div>
@@ -227,6 +228,7 @@
     <a class="back-link" href="../index.html">← Back to StretchSmart</a>
   </div>
 
+<script src="prefs.js"></script>
 <script>
 const CIRC = 565.5; // 2 * pi * 90
 let exercises = [];
@@ -268,10 +270,30 @@ async function loadExercise() {
   exercises = await fetch('../api/exercises.json').then(r => r.json());
   const params = new URLSearchParams(location.search);
   let idx = parseInt(params.get('e'));
+  let chosenFor = null;
   if (isNaN(idx) || idx < 0 || idx >= exercises.length) {
     const now = new Date();
     const start = new Date(now.getFullYear(), 0, 0);
-    idx = Math.floor((now - start) / 86400000) % exercises.length;
+    const dayNo = Math.floor((now - start) / 86400000);
+
+    // Honour saved onboarding concerns when no explicit ?e was given. An
+    // explicit ?e always wins: the daily nudge link must show the exercise it
+    // advertised. Rotates by day WITHIN the matching set, so it is stable for
+    // a day and still varies -- and falls back to the whole catalogue if the
+    // concerns match nothing, rather than showing an empty screen.
+    const prefs = window.StretchPrefs ? StretchPrefs.load() : null;
+    const wanted = prefs ? StretchPrefs.tagsForConcerns(prefs.concerns) : [];
+    let pool = exercises;
+    if (wanted.length) {
+      const matching = exercises.filter(function (ex) {
+        return (ex.concerns || []).some(function (c) {
+          return wanted.indexOf(String(c).toLowerCase()) !== -1;
+        });
+      });
+      if (matching.length) { pool = matching; chosenFor = wanted; }
+    }
+    const picked = pool[dayNo % pool.length];
+    idx = exercises.indexOf(picked);
   }
   currentIdx = idx;
   exercise = exercises[idx];
@@ -280,6 +302,11 @@ async function loadExercise() {
   document.getElementById('detail-name').textContent = exercise.name;
   document.getElementById('ex-duration').textContent = totalDuration(exercise) + ' seconds';
   document.getElementById('ex-desc').textContent = exercise.desc;
+  if (chosenFor) {
+    var cf = document.getElementById('chosen-for');
+    cf.textContent = 'Chosen for your saved concerns: ' + chosenFor.join(', ');
+    cf.style.display = 'block';
+  }
   renderCues();
 
   // Illustrations removed 2026-09-12 on Faith's instruction: the line art was
