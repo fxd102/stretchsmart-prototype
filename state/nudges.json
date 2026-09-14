@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-08-30",
-      "time": "2026-08-30T08:10:56.097269-04:00",
-      "exercise": "Toe Spread",
-      "exercise_index": 108
-    },
-    {
       "date": "2026-08-31",
       "time": "2026-08-31T08:07:27.557845-04:00",
       "exercise": "Single-Leg Calf Raise",
@@ -89,6 +83,12 @@
       "time": "2026-09-13T08:00:20.943107-04:00",
       "exercise": "Thumb Stretch and Opposition",
       "exercise_index": 122
+    },
+    {
+      "date": "2026-09-14",
+      "time": "2026-09-14T08:01:50.615657-04:00",
+      "exercise": "Single-Leg Stand",
+      "exercise_index": 123
     }
   ]
 }
