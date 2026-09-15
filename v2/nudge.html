@@ -529,7 +529,12 @@ const BODY_AREA_TO_CATEGORIES = {
 };
 
 function showRelevantInsight() {
-  if (!insights.length) return;
+  // An exercise can opt out of specific insights by id, when clinical review judges an
+  // insight doesn't fit it (e.g. Seated Spinal Wave is not a "complex movement pattern").
+  // Filter the pool itself rather than the score, or the full-fallback tier re-admits it.
+  const suppressed = new Set(exercise.suppress_insights || []);
+  const pool = insights.filter(i => !suppressed.has(i.id));
+  if (!pool.length) return;
 
   // Clean up old daily keys and load today's shown-list
   const today = new Date().toISOString().slice(0, 10);
@@ -566,7 +571,7 @@ function showRelevantInsight() {
     });
     return score;
   }
-  const scored = insights.map(ins => ({ins, score: scoreInsight(ins)}));
+  const scored = pool.map(ins => ({ins, score: scoreInsight(ins)}));
 
   // Tiered pools: top score, lower-but-positive, full fallback
   const maxScore = Math.max(...scored.map(s => s.score));
@@ -576,7 +581,7 @@ function showRelevantInsight() {
     const lower = scored.filter(s => s.score > 0 && s.score < maxScore).map(s => s.ins);
     if (lower.length) tiers.push(lower);
   }
-  tiers.push(insights);
+  tiers.push(pool);
 
   // Walk tiers preferring unseen insights for this exercise today
   let pick = null;
