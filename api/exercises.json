@@ -7197,7 +7197,7 @@
    "core strength",
    "independence"
   ],
-  "desc": "Sitting tall and breathing normally, find your pelvic floor muscles - the ones you would use to stop yourself passing gas - and keep your buttocks and thighs relaxed. Gently lift them a little (first floor), then more (second floor), then to a strong-but-comfortable squeeze (third floor). Then lower back down floor by floor and fully relax before the next rep.",
+  "desc": "Sitting tall and breathing normally, find your pelvic floor muscles - the ones you would use to stop yourself passing gas - and keep your buttocks and thighs relaxed. Gently lift them a little (first floor), then more (second floor), then to a strong-but-comfortable squeeze (third floor). Then lower back down floor by floor and fully relax before the next rep. Relaxing fully matters as much as the squeeze — some pelvic-floor specialists find urinary symptoms come as much from muscles that cannot relax properly as from weak ones.",
   "phases": [
    {
     "label": "Imagine your pelvic floor is an elevator",
@@ -7226,7 +7226,7 @@
   "remediation": "If you're unsure you're finding the right muscles, this is worth checking with a pelvic-health PT — cueing it as a bear-down is a common mistake.",
   "validation": "pt_approved",
   "review_priority": "high",
-  "review_note": "PT APPROVED 2026-09-10 by Faith McCormack (FaithPT), verbatim: \"Actually the pelvic floor elevator is fine- i especially appreciate the part about full relaxation being as important as the contraction- some pelvic floor specialists feel urinary issues actually are as much from being unable to relax these muscles appropriately as from the strength!\" OPEN QUESTION BACK TO HER (asked 2026-09-12 by #584): her second clause is a RATIONALE the drafted text does not contain. The record already says to relax fully and that over-gripping is counterproductive, but never says WHY — and the why is what stops a user assuming more squeezing is better. Proposed user-facing line, derived from her words and hers to correct: \"Relaxing fully matters as much as the squeeze — some pelvic-floor specialists find urinary symptoms come as much from muscles that cannot relax properly as from weak ones.\" Awaiting her wording; DO NOT ship clinical copy she has not approved."
+  "review_note": "PT APPROVED 2026-09-10 by FaithPT (StretchSmart's PT cofounder), verbatim: \"Actually the pelvic floor elevator is fine- i especially appreciate the part about full relaxation being as important as the contraction- some pelvic floor specialists feel urinary issues actually are as much from being unable to relax these muscles appropriately as from the strength!\" RATIONALE LINE APPROVED 2026-09-15 by FaithPT, verbatim (two posts, 18:51Z): \"You’re right- phrasing it that way was deliberate. There have been few reliable studies on relaxation training sos I don’t want to state it as proven. However, having spoken to pelvic floor specialists it certainly appears the empirical evidence is there!\" / \"And your phrasing is fine\" SHIPPED 2026-09-15 as the final sentence of desc. THE HEDGE IS LOAD-BEARING: \"some pelvic-floor specialists find\" is deliberate because reliable studies on relaxation training are few; never strengthen it into a general claim without her approval."
  },
  {
   "name": "Standing Hip Abduction",
