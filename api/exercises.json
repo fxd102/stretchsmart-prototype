@@ -4822,7 +4822,7 @@
    "balance",
    "fall prevention"
   ],
-  "desc": "Walk forward on your heels with toes lifted off the ground for 20 steps. This strengthens the tibialis anterior (shin muscle).",
+  "desc": "Walk forward on your heels with toes lifted off the ground for at least 20 steps. This strengthens the tibialis anterior (shin muscle).",
   "phases": [
    {
     "label": "Walk forward on your heels with toes lifted off...",
@@ -4862,7 +4862,7 @@
    "fall prevention",
    "more energy"
   ],
-  "desc": "Walk forward on your tiptoes for 20 steps. Keep tall posture and control.",
+  "desc": "Walk forward on your tiptoes for at least 20 steps. Keep tall posture and control.",
   "phases": [
    {
     "label": "Walk forward on your tiptoes for 20 steps",
@@ -5462,7 +5462,7 @@
    "fall prevention",
    "general wellness"
   ],
-  "desc": "Walk in a straight line placing the heel of one foot directly in front of the toes of the other. Take 20 steps.",
+  "desc": "Walk in a straight line placing the heel of one foot directly in front of the toes of the other. Take at least 20 steps.",
   "phases": [
    {
     "label": "Walk in a straight line placing the heel of one...",
@@ -8704,7 +8704,7 @@
    "fall prevention",
    "knee health"
   ],
-  "desc": "Walk slowly backward in a straight line for 20 steps. Keep a wall or railing nearby for safety.",
+  "desc": "Walk slowly backward in a straight line for at least 20 steps. Keep a wall or railing nearby for safety.",
   "phases": [
    {
     "label": "Walk slowly backward in a straight line for 20 ...",
