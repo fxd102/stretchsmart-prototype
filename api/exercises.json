@@ -7820,8 +7820,12 @@
   "stop_condition": "Stop with sharp back pain or any tingling down the legs. If forward-rounding is your provocative direction, keep it small or skip it.",
   "regression": "Move through a smaller range, or just alternate a gentle slouch and sit-tall without the segmental detail.",
   "remediation": "If segmenting is hard, practice a simple pelvic tilt (rocking the pelvis) to find low-back movement first.",
-  "validation": "draft_pending_pt",
-  "review_priority": "high"
+  "validation": "pt_approved",
+  "review_priority": "high",
+  "review_note": "PT APPROVED 2026-09-15 by FaithPT (StretchSmart's PT cofounder), answering the 09-10 queue review, verbatim (19:05Z): \"Spinal wave is excellent EXCEPT- I know what you are getting at re: complex movement patterns and dementia, but I am not sure this qualifies as a true “complex movement pattern”. I would just leave that part out. It is a great “loosening” exercise for practically everyone, and really appreciate the caution of pain with flexion.\" 'THAT PART' IS NOT IN THIS RECORD: it is research insight id 26 (\"...complex movement patterns correlate with preserved cognition in aging adults\"), which the nudge page attached here because this exercise is filed Full Body (category mobility +8, first tag 'full body' +3). Suppressed for this exercise via suppress_insights; the insight itself is untouched - she accepted the idea and disputed only whether this exercise qualifies. Record text and clinical fields approved as written.",
+  "suppress_insights": [
+   26
+  ]
  },
  {
   "name": "Wall Hamstring Stretch",
