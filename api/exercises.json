@@ -154,7 +154,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Pull your chin straight back, making a double chin. Hold 5 seconds, release.",
+  "desc": "Pull your chin straight back, making a double chin. Hold 5 seconds, release. This resets forward head posture.",
   "phases": [
    {
     "label": "Pull your chin straight back, making a double chin",
@@ -241,7 +241,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Turn your head 45 degrees to one side, then look down toward your armpit. Use your hand to gently add pressure.",
+  "desc": "Turn your head 45 degrees to one side, then look down toward your armpit. Use your hand to gently add pressure. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -332,7 +332,7 @@
    "better posture",
    "core strength"
   ],
-  "desc": "Place your palm against your forehead and push your head into it without moving. Hold 5 seconds.",
+  "desc": "Place your palm against your forehead and push your head into it without moving. Hold 5 seconds. Repeat on each side and the back of your head.",
   "phases": [
    {
     "label": "First side",
@@ -384,7 +384,7 @@
    "better posture",
    "core strength"
   ],
-  "desc": "Lie on your back, tuck your chin and lift your head just 1 inch off the floor. Hold 5 seconds.",
+  "desc": "Lie on your back, tuck your chin and lift your head just 1 inch off the floor. Hold 5 seconds. This builds deep neck flexor endurance.",
   "phases": [
    {
     "label": "Lie on your back, tuck your chin and lift your ...",
@@ -463,7 +463,7 @@
    "neck tension",
    "stress relief"
   ],
-  "desc": "Shrug your shoulders up to your ears, hold 5 seconds, then drop them completely. Repeat 5 times.",
+  "desc": "Shrug your shoulders up to your ears, hold 5 seconds, then drop them completely. Repeat 5 times. Focus on the release.",
   "phases": [
    {
     "label": "Shrug your shoulders up to your ears, hold 5 se...",
@@ -804,7 +804,7 @@
    "better posture",
    "upper back mobility"
   ],
-  "desc": "Hold a resistance band at shoulder height with arms extended. Pull the band apart by squeezing your shoulder blades together.",
+  "desc": "Hold a resistance band at shoulder height with arms extended. Pull the band apart by squeezing your shoulder blades together. 15 reps.",
   "phases": [
    {
     "label": "Hold a resistance band at shoulder height with ...",
@@ -843,7 +843,7 @@
    "joint stiffness",
    "general wellness"
   ],
-  "desc": "Hold a band with elbows bent 90 degrees at your sides. Rotate forearms outward against the band.",
+  "desc": "Hold a band with elbows bent 90 degrees at your sides. Rotate forearms outward against the band. 12 reps. Builds rotator cuff strength.",
   "phases": [
    {
     "label": "Hold a band with elbows bent 90 degrees at your...",
@@ -882,7 +882,7 @@
    "flexibility",
    "joint stiffness"
   ],
-  "desc": "Place the back of your hand against a door frame at waist height behind you. Gently turn your body away to stretch the front of the shoulder.",
+  "desc": "Place the back of your hand against a door frame at waist height behind you. Gently turn your body away to stretch the front of the shoulder. 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -929,7 +929,7 @@
    "flexibility",
    "better posture"
   ],
-  "desc": "Hold a broomstick with both hands wider than shoulder width. Slowly raise it overhead and behind your head as far as comfortable.",
+  "desc": "Hold a broomstick with both hands wider than shoulder width. Slowly raise it overhead and behind your head as far as comfortable. 8 reps.",
   "phases": [
    {
     "label": "Hold a broomstick with both hands wider than sh...",
@@ -1011,7 +1011,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Sit on a chair, clasp hands behind your head, and gently arch your upper back over the chair back. Hold 5 seconds, return.",
+  "desc": "Sit on a chair, clasp hands behind your head, and gently arch your upper back over the chair back. Hold 5 seconds, return. Repeat 8 times.",
   "phases": [
    {
     "label": "Sit on a chair, clasp hands behind your head, a...",
@@ -1054,7 +1054,7 @@
    "better posture",
    "joint stiffness"
   ],
-  "desc": "Sit tall with arms crossed over your chest. Rotate your torso to the right, hold 5 seconds, then to the left.",
+  "desc": "Sit tall with arms crossed over your chest. Rotate your torso to the right, hold 5 seconds, then to the left. Repeat 8 times each side.",
   "phases": [
    {
     "label": "First side",
@@ -1145,7 +1145,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Lie on a foam roller placed across your upper back. Support your head with hands, and gently extend over the roller.",
+  "desc": "Lie on a foam roller placed across your upper back. Support your head with hands, and gently extend over the roller. Roll up and down the upper back.",
   "phases": [
    {
     "label": "Lie on a foam roller placed across your upper back",
@@ -1184,7 +1184,7 @@
    "shoulder tension",
    "flexibility"
   ],
-  "desc": "From hands and knees, reach one arm under your body toward the opposite side, rotating your upper back. Hold 10 seconds, return.",
+  "desc": "From hands and knees, reach one arm under your body toward the opposite side, rotating your upper back. Hold 10 seconds, return. 5 each side.",
   "phases": [
    {
     "label": "First side",
@@ -1231,7 +1231,7 @@
    "shoulder tension",
    "better posture"
   ],
-  "desc": "Lie on your side with knees bent. Open your top arm across your body like a book opening, following it with your eyes.",
+  "desc": "Lie on your side with knees bent. Open your top arm across your body like a book opening, following it with your eyes. Hold 15 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -1278,7 +1278,7 @@
    "upper back mobility",
    "shoulder tension"
   ],
-  "desc": "Lie face down with arms in a Y position. Lift both arms a few inches off the floor by squeezing your mid-back.",
+  "desc": "Lie face down with arms in a Y position. Lift both arms a few inches off the floor by squeezing your mid-back. Hold 3 seconds, lower. 10 reps.",
   "phases": [
    {
     "label": "Lie face down with arms in a Y position",
@@ -1317,7 +1317,7 @@
    "upper back mobility",
    "shoulder tension"
   ],
-  "desc": "Lie face down with arms out to the sides in a T position. Lift both arms by squeezing shoulder blades.",
+  "desc": "Lie face down with arms out to the sides in a T position. Lift both arms by squeezing shoulder blades. Hold 3 seconds, lower. 10 reps.",
   "phases": [
    {
     "label": "Lie face down with arms out to the sides in a T...",
@@ -1356,7 +1356,7 @@
    "back pain",
    "better posture"
   ],
-  "desc": "Lie face down, prop up on your forearms with elbows under shoulders. Gently press your chest forward and up.",
+  "desc": "Lie face down, prop up on your forearms with elbows under shoulders. Gently press your chest forward and up. Hold 30 seconds.",
   "phases": [
    {
     "label": "Lie face down, prop up on your forearms with el...",
@@ -1445,7 +1445,7 @@
    "sitting recovery",
    "better posture"
   ],
-  "desc": "Place hands on your lower back and gently lean backward, arching your spine. Hold 5 seconds, return upright.",
+  "desc": "Place hands on your lower back and gently lean backward, arching your spine. Hold 5 seconds, return upright. Repeat 5 times.",
   "phases": [
    {
     "label": "Place hands on your lower back and gently lean ...",
@@ -1483,7 +1483,7 @@
    "core strength",
    "pelvic floor"
   ],
-  "desc": "Lie on your back with knees bent. Flatten your lower back into the floor by tilting your pelvis.",
+  "desc": "Lie on your back with knees bent. Flatten your lower back into the floor by tilting your pelvis. Hold 5 seconds, release. Repeat 10 times.",
   "phases": [
    {
     "label": "Lie on your back with knees bent",
@@ -1521,7 +1521,7 @@
    "hip tightness",
    "sitting recovery"
   ],
-  "desc": "Lie on your back, pull one knee toward your chest with both hands. Hold 20 seconds, switch sides.",
+  "desc": "Lie on your back, pull one knee toward your chest with both hands. Hold 20 seconds, switch sides. Finish with both knees together.",
   "phases": [
    {
     "label": "First side",
@@ -1568,7 +1568,7 @@
    "hip tightness",
    "better sleep"
   ],
-  "desc": "Lie on your back, drop both knees to one side while keeping shoulders on the floor. Arms in a T.",
+  "desc": "Lie on your back, drop both knees to one side while keeping shoulders on the floor. Arms in a T. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -1614,7 +1614,7 @@
    "core strength",
    "balance"
   ],
-  "desc": "From hands and knees, extend your right arm and left leg simultaneously. Hold 5 seconds, switch sides.",
+  "desc": "From hands and knees, extend your right arm and left leg simultaneously. Hold 5 seconds, switch sides. 8 reps per side.",
   "phases": [
    {
     "label": "First side",
@@ -1661,7 +1661,7 @@
    "core strength",
    "hip tightness"
   ],
-  "desc": "Lie on your back with knees bent, feet flat. Press hips toward the ceiling, squeezing your glutes at top.",
+  "desc": "Lie on your back with knees bent, feet flat. Press hips toward the ceiling, squeezing your glutes at top. Hold 5 seconds, lower. 10 reps.",
   "phases": [
    {
     "label": "Lie on your back with knees bent, feet flat",
@@ -1701,7 +1701,7 @@
    "flexibility",
    "better sleep"
   ],
-  "desc": "Kneel and sit back on your heels, reaching arms forward on the floor. Let your forehead rest down.",
+  "desc": "Kneel and sit back on your heels, reaching arms forward on the floor. Let your forehead rest down. Breathe deeply for 60 seconds.",
   "phases": [
    {
     "label": "Kneel and sit back on your heels, reaching arms...",
@@ -1739,7 +1739,7 @@
    "sitting recovery",
    "desk work recovery"
   ],
-  "desc": "Sit at the edge of your chair. Slowly round forward, letting your hands hang toward the floor between your knees.",
+  "desc": "Sit at the edge of your chair. Slowly round forward, letting your hands hang toward the floor between your knees. Hold 15 seconds, sit back up slowly.",
   "phases": [
    {
     "label": "Sit at the edge of your chair",
@@ -1782,7 +1782,7 @@
    "sitting recovery",
    "flexibility"
   ],
-  "desc": "Lie face down, place hands under shoulders, and press your upper body up while keeping hips on the floor. Hold 5 seconds, lower.",
+  "desc": "Lie face down, place hands under shoulders, and press your upper body up while keeping hips on the floor. Hold 5 seconds, lower. 8 reps.",
   "phases": [
    {
     "label": "Lie face down, place hands under shoulders, and...",
@@ -1821,7 +1821,7 @@
    "upper back mobility",
    "flexibility"
   ],
-  "desc": "Lie on your side with knees bent 90 degrees. Rotate your top arm and upper body open toward the ceiling.",
+  "desc": "Lie on your side with knees bent 90 degrees. Rotate your top arm and upper body open toward the ceiling. Hold 15 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -1868,7 +1868,7 @@
    "core strength",
    "better posture"
   ],
-  "desc": "Lie face down, simultaneously lift your arms and legs off the floor. Hold 5 seconds, lower.",
+  "desc": "Lie face down, simultaneously lift your arms and legs off the floor. Hold 5 seconds, lower. 8 reps. Builds back extensor endurance.",
   "phases": [
    {
     "label": "Lie face down, simultaneously lift your arms an...",
@@ -1907,7 +1907,7 @@
    "desk work recovery",
    "shoulder tension"
   ],
-  "desc": "Place one forearm vertically on a door frame at shoulder height. Step through the doorway until you feel a stretch across your chest.",
+  "desc": "Place one forearm vertically on a door frame at shoulder height. Step through the doorway until you feel a stretch across your chest. 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -1953,7 +1953,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Stand facing a wall, place one palm on the wall at shoulder height. Rotate your body away from the wall hand until you feel a chest stretch.",
+  "desc": "Stand facing a wall, place one palm on the wall at shoulder height. Rotate your body away from the wall hand until you feel a chest stretch. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -2037,7 +2037,7 @@
    "shoulder tension",
    "upper back mobility"
   ],
-  "desc": "Lie on your back with knees bent. Arms in a goalpost position, try to keep arms flat on the floor while sliding them overhead and back down.",
+  "desc": "Lie on your back with knees bent. Arms in a goalpost position, try to keep arms flat on the floor while sliding them overhead and back down. 10 reps.",
   "phases": [
    {
     "label": "Lie on your back with knees bent",
@@ -2076,7 +2076,7 @@
    "upper back mobility",
    "core strength"
   ],
-  "desc": "Lie face down with hands behind your head. Lift your chest off the floor by squeezing your upper back.",
+  "desc": "Lie face down with hands behind your head. Lift your chest off the floor by squeezing your upper back. Hold 5 seconds, lower. 10 reps.",
   "phases": [
    {
     "label": "Lie face down with hands behind your head",
@@ -2116,7 +2116,7 @@
    "stress relief",
    "desk work recovery"
   ],
-  "desc": "Lie lengthwise on a foam roller so it runs along your spine. Let your arms fall open to the sides with elbows bent.",
+  "desc": "Lie lengthwise on a foam roller so it runs along your spine. Let your arms fall open to the sides with elbows bent. Relax and breathe for 2 minutes.",
   "phases": [
    {
     "label": "Lie lengthwise on a foam roller so it runs alon...",
@@ -2155,7 +2155,7 @@
    "general wellness",
    "more energy"
   ],
-  "desc": "Stand arm's length from a wall, place palms on it at shoulder height. Do push-ups against the wall, 12-15 reps.",
+  "desc": "Stand arm's length from a wall, place palms on it at shoulder height. Do push-ups against the wall, 12-15 reps. Great for building chest strength safely.",
   "phases": [
    {
     "label": "Stand arm's length from a wall, place palms on ...",
@@ -2193,7 +2193,7 @@
    "back pain",
    "better posture"
   ],
-  "desc": "Lie on your back, arms pointing up, knees bent 90 degrees. Slowly extend one arm overhead and the opposite leg out straight, then return.",
+  "desc": "Lie on your back, arms pointing up, knees bent 90 degrees. Slowly extend one arm overhead and the opposite leg out straight, then return. Alternate for 10 reps per side.",
   "phases": [
    {
     "label": "Lie on your back, arms pointing up, knees bent ...",
@@ -2279,7 +2279,7 @@
    "back pain",
    "better posture"
   ],
-  "desc": "Hold a forearm plank position with your body in a straight line from head to heels. Keep your core braced.",
+  "desc": "Hold a forearm plank position with your body in a straight line from head to heels. Keep your core braced. Hold as long as you can up to 60 seconds.",
   "phases": [
    {
     "label": "Hold a forearm plank position with your body in...",
@@ -2365,7 +2365,7 @@
    "better posture",
    "back pain"
   ],
-  "desc": "Sit tall, tighten your core as if bracing for a light punch to the stomach. Hold 10 seconds while breathing normally.",
+  "desc": "Sit tall, tighten your core as if bracing for a light punch to the stomach. Hold 10 seconds while breathing normally. Repeat 5 times.",
   "phases": [
    {
     "label": "Sit tall, tighten your core as if bracing for a...",
@@ -2408,7 +2408,7 @@
    "hip tightness",
    "more energy"
   ],
-  "desc": "Sit tall with core braced. Slowly lift one knee, lower it, then lift the other.",
+  "desc": "Sit tall with core braced. Slowly lift one knee, lower it, then lift the other. Alternate for 20 marches total. Keep your torso still.",
   "phases": [
    {
     "label": "Sit tall with core braced",
@@ -2451,7 +2451,7 @@
    "core strength",
    "flexibility"
   ],
-  "desc": "Lie on your back, hands behind head. Bring right elbow to left knee while extending right leg, then switch.",
+  "desc": "Lie on your back, hands behind head. Bring right elbow to left knee while extending right leg, then switch. Alternate for 20 reps total.",
   "phases": [
    {
     "label": "Lie on your back, hands behind head",
@@ -2615,7 +2615,7 @@
    "back pain",
    "sitting recovery"
   ],
-  "desc": "Kneel on one knee with the other foot forward in a lunge. Push your hips gently forward until you feel a stretch in the front of your back hip.",
+  "desc": "Kneel on one knee with the other foot forward in a lunge. Push your hips gently forward until you feel a stretch in the front of your back hip. Hold 30 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -2661,7 +2661,7 @@
    "back pain",
    "sitting recovery"
   ],
-  "desc": "Lie on your back, cross one ankle over the opposite knee. Pull the bottom thigh toward your chest.",
+  "desc": "Lie on your back, cross one ankle over the opposite knee. Pull the bottom thigh toward your chest. Hold 30 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -2766,7 +2766,7 @@
    "balance",
    "flexibility"
   ],
-  "desc": "Stand on one leg (hold something for balance). Lift your knee, rotate it out to the side, then extend it behind you in a big circle.",
+  "desc": "Stand on one leg (hold something for balance). Lift your knee, rotate it out to the side, then extend it behind you in a big circle. 3 circles each direction, each leg.",
   "phases": [
    {
     "label": "First side",
@@ -2813,7 +2813,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "Sit with one leg bent 90 degrees in front and the other bent 90 degrees behind. Lean forward over the front leg.",
+  "desc": "Sit with one leg bent 90 degrees in front and the other bent 90 degrees behind. Lean forward over the front leg. Hold 30 seconds, switch sides.",
   "phases": [
    {
     "label": "First side",
@@ -2907,7 +2907,7 @@
    "flexibility",
    "more energy"
   ],
-  "desc": "Hold a wall for balance. Swing one leg forward and backward like a pendulum, 15 swings each leg.",
+  "desc": "Hold a wall for balance. Swing one leg forward and backward like a pendulum, 15 swings each leg. Keep your torso upright.",
   "phases": [
    {
     "label": "First side",
@@ -2953,7 +2953,7 @@
    "flexibility",
    "more energy"
   ],
-  "desc": "Face a wall, hold it for balance. Swing one leg side to side across your body, 15 swings each leg.",
+  "desc": "Face a wall, hold it for balance. Swing one leg side to side across your body, 15 swings each leg. Keep hips facing forward.",
   "phases": [
    {
     "label": "First side",
@@ -3046,7 +3046,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "From hands and knees, bring one knee forward and lay the shin across in front of you. Extend the other leg behind.",
+  "desc": "From hands and knees, bring one knee forward and lay the shin across in front of you. Extend the other leg behind. Fold forward and hold 45 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -3100,7 +3100,7 @@
    "flexibility",
    "joint stiffness"
   ],
-  "desc": "Lower into a deep squat with feet shoulder-width apart, heels on the ground. Hold for 30 seconds.",
+  "desc": "Lower into a deep squat with feet shoulder-width apart, heels on the ground. Hold for 30 seconds. Hold onto something for balance if needed.",
   "phases": [
    {
     "label": "Lower into a deep squat with feet shoulder-widt...",
@@ -3139,7 +3139,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "From hands and knees, spread your knees wide and lower your hips toward the floor between them. Keep feet turned out.",
+  "desc": "From hands and knees, spread your knees wide and lower your hips toward the floor between them. Keep feet turned out. Hold 45 seconds.",
   "phases": [
    {
     "label": "From hands and knees, spread your knees wide an...",
@@ -3217,7 +3217,7 @@
    "knee health",
    "back pain"
   ],
-  "desc": "Lie on your side with knees bent and stacked. Keep feet together and open the top knee like a clamshell.",
+  "desc": "Lie on your side with knees bent and stacked. Keep feet together and open the top knee like a clamshell. 15 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -3263,7 +3263,7 @@
    "balance",
    "knee health"
   ],
-  "desc": "Lie on your side with legs straight. Lift the top leg about 12 inches, hold 2 seconds, lower slowly.",
+  "desc": "Lie on your side with legs straight. Lift the top leg about 12 inches, hold 2 seconds, lower slowly. 12 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -3309,7 +3309,7 @@
    "back pain",
    "more energy"
   ],
-  "desc": "Stand tall and squeeze your glutes as hard as you can for 5 seconds, then release. Repeat 8 times.",
+  "desc": "Stand tall and squeeze your glutes as hard as you can for 5 seconds, then release. Repeat 8 times. Activates dormant glutes from sitting.",
   "phases": [
    {
     "label": "Stand tall and squeeze your glutes as hard as y...",
@@ -3347,7 +3347,7 @@
    "knee health",
    "balance"
   ],
-  "desc": "Place a resistance band around your ankles. Take 10 side steps to the right, then 10 to the left.",
+  "desc": "Place a resistance band around your ankles. Take 10 side steps to the right, then 10 to the left. Stay low in a quarter squat.",
   "phases": [
    {
     "label": "Place a resistance band around your ankles",
@@ -3386,7 +3386,7 @@
    "balance",
    "core strength"
   ],
-  "desc": "Lie on your back, extend one leg. Drive through the grounded foot to lift your hips.",
+  "desc": "Lie on your back, extend one leg. Drive through the grounded foot to lift your hips. Hold 3 seconds at top. 8 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -3526,7 +3526,7 @@
    "knee health",
    "flexibility"
   ],
-  "desc": "Hold a doorframe, lower into a single-leg squat on one leg with the other extended forward. Go as low as you can.",
+  "desc": "Hold a doorframe, lower into a single-leg squat on one leg with the other extended forward. Go as low as you can. 5 reps each leg.",
   "phases": [
    {
     "label": "First side",
@@ -3667,7 +3667,7 @@
    "knee health",
    "flexibility"
   ],
-  "desc": "Lie on your side, grab your top foot and pull your heel toward your glute. Keep knees together.",
+  "desc": "Lie on your side, grab your top foot and pull your heel toward your glute. Keep knees together. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -3800,7 +3800,7 @@
    "core strength",
    "more energy"
   ],
-  "desc": "Stand with feet wider than shoulders, toes turned out. Squat down keeping knees tracking over toes.",
+  "desc": "Stand with feet wider than shoulders, toes turned out. Squat down keeping knees tracking over toes. 12 reps.",
   "phases": [
    {
     "label": "Stand with feet wider than shoulders, toes turn...",
@@ -3838,7 +3838,7 @@
    "sitting recovery",
    "joint stiffness"
   ],
-  "desc": "Sit tall, straighten one leg until it's parallel to the floor. Hold 5 seconds, lower slowly.",
+  "desc": "Sit tall, straighten one leg until it's parallel to the floor. Hold 5 seconds, lower slowly. 10 reps each leg. Builds quad strength gently.",
   "phases": [
    {
     "label": "First side",
@@ -3890,7 +3890,7 @@
    "more energy",
    "general wellness"
   ],
-  "desc": "Stand with feet shoulder width apart. Lower into a squat as if sitting into a chair, then stand up.",
+  "desc": "Stand with feet shoulder width apart. Lower into a squat as if sitting into a chair, then stand up. 12 reps. Keep chest up and knees over toes.",
   "phases": [
    {
     "label": "Stand with feet shoulder width apart",
@@ -3928,7 +3928,7 @@
    "balance",
    "core strength"
   ],
-  "desc": "Stand in a stagger stance, one foot forward. Lower your back knee toward the floor, then push up.",
+  "desc": "Stand in a stagger stance, one foot forward. Lower your back knee toward the floor, then push up. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -3975,7 +3975,7 @@
    "joint stiffness",
    "general wellness"
   ],
-  "desc": "Anchor a band behind your knee. Stand facing away, bend knee slightly, then straighten it against the band resistance.",
+  "desc": "Anchor a band behind your knee. Stand facing away, bend knee slightly, then straighten it against the band resistance. 12 reps each leg.",
   "phases": [
    {
     "label": "First side",
@@ -4022,7 +4022,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "Place one heel on a low step or the floor in front of you. Hinge forward at the hips with a flat back until you feel a stretch behind the thigh.",
+  "desc": "Place one heel on a low step or the floor in front of you. Hinge forward at the hips with a flat back until you feel a stretch behind the thigh. 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -4068,7 +4068,7 @@
    "flexibility",
    "stress relief"
   ],
-  "desc": "Stand with feet hip width. Hinge at the hips and let your upper body hang toward the floor.",
+  "desc": "Stand with feet hip width. Hinge at the hips and let your upper body hang toward the floor. Bend knees slightly if needed. Hold 20 seconds.",
   "phases": [
    {
     "label": "Stand with feet hip width",
@@ -4152,7 +4152,7 @@
    "sitting recovery",
    "desk work recovery"
   ],
-  "desc": "Sit on the edge of your chair, extend one leg straight with heel on the floor. Hinge forward at the hips keeping back flat.",
+  "desc": "Sit on the edge of your chair, extend one leg straight with heel on the floor. Hinge forward at the hips keeping back flat. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -4251,7 +4251,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "Stand with hands behind your head, feet hip width. Hinge at the hips pushing your butt back until you feel a hamstring stretch.",
+  "desc": "Stand with hands behind your head, feet hip width. Hinge at the hips pushing your butt back until you feel a hamstring stretch. Return upright. 10 reps.",
   "phases": [
    {
     "label": "Stand with hands behind your head, feet hip width",
@@ -4432,7 +4432,7 @@
    "balance",
    "fall prevention"
   ],
-  "desc": "Stand with feet hip width, rise up on your toes as high as you can, hold 2 seconds, lower slowly. 15 reps.",
+  "desc": "Stand with feet hip width, rise up on your toes as high as you can, hold 2 seconds, lower slowly. 15 reps. Hold a wall for balance.",
   "phases": [
    {
     "label": "Stand with feet hip width, rise up on your toes...",
@@ -4470,7 +4470,7 @@
    "joint stiffness",
    "flexibility"
   ],
-  "desc": "Place hands on a wall, step one foot back and press the heel into the floor. Lean forward until you feel the calf stretch.",
+  "desc": "Place hands on a wall, step one foot back and press the heel into the floor. Lean forward until you feel the calf stretch. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -4516,7 +4516,7 @@
    "joint stiffness",
    "flexibility"
   ],
-  "desc": "From the wall calf stretch position, bend the back knee slightly while keeping the heel down. This stretches the deeper soleus muscle.",
+  "desc": "From the wall calf stretch position, bend the back knee slightly while keeping the heel down. This stretches the deeper soleus muscle. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -4606,7 +4606,7 @@
    "joint stiffness",
    "sitting recovery"
   ],
-  "desc": "Lift one foot and trace the alphabet in the air with your big toe. Switch feet and repeat.",
+  "desc": "Lift one foot and trace the alphabet in the air with your big toe. Switch feet and repeat. This moves the ankle through every possible angle.",
   "phases": [
    {
     "label": "Lift one foot and trace the alphabet in the air...",
@@ -4649,7 +4649,7 @@
    "joint stiffness",
    "knee health"
   ],
-  "desc": "Face a wall, place one foot a few inches from it. Drive your knee forward over your toes toward the wall, keeping your heel on the ground.",
+  "desc": "Face a wall, place one foot a few inches from it. Drive your knee forward over your toes toward the wall, keeping your heel on the ground. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -4740,7 +4740,7 @@
    "balance",
    "fall prevention"
   ],
-  "desc": "Spread all your toes as wide as possible, hold 5 seconds, then relax. Repeat 10 times.",
+  "desc": "Spread all your toes as wide as possible, hold 5 seconds, then relax. Repeat 10 times. Builds foot intrinsic muscles.",
   "phases": [
    {
     "label": "Spread all your toes as wide as possible, hold ...",
@@ -4783,7 +4783,7 @@
    "balance",
    "fall prevention"
   ],
-  "desc": "Stand on one foot near a wall for balance. Rise up on your toes, hold 2 seconds, lower slowly.",
+  "desc": "Stand on one foot near a wall for balance. Rise up on your toes, hold 2 seconds, lower slowly. 10 reps each foot.",
   "phases": [
    {
     "label": "Stand on one foot near a wall for balance",
@@ -4862,7 +4862,7 @@
    "fall prevention",
    "more energy"
   ],
-  "desc": "Walk forward on your tiptoes for at least 20 steps. Keep tall posture and control.",
+  "desc": "Walk forward on your tiptoes for at least 20 steps. Keep tall posture and control. Great for calf strength and balance.",
   "phases": [
    {
     "label": "Walk forward on your tiptoes for 20 steps",
@@ -4953,7 +4953,7 @@
    "desk work recovery",
    "joint stiffness"
   ],
-  "desc": "Press palms together in a prayer position at chest height. Slowly lower hands while keeping palms pressed together until you feel a wrist stretch.",
+  "desc": "Press palms together in a prayer position at chest height. Slowly lower hands while keeping palms pressed together until you feel a wrist stretch. Hold 15 seconds.",
   "phases": [
    {
     "label": "Press palms together in a prayer position at ch...",
@@ -4996,7 +4996,7 @@
    "desk work recovery",
    "joint stiffness"
   ],
-  "desc": "Press the backs of your hands together in front of your chest with fingers pointing down. Hold 15 seconds.",
+  "desc": "Press the backs of your hands together in front of your chest with fingers pointing down. Hold 15 seconds. Stretches the wrist extensors.",
   "phases": [
    {
     "label": "Press the backs of your hands together in front...",
@@ -5083,7 +5083,7 @@
    "desk work recovery",
    "joint stiffness"
   ],
-  "desc": "Extend one arm forward, palm up. Use the other hand to gently pull fingers back toward you.",
+  "desc": "Extend one arm forward, palm up. Use the other hand to gently pull fingers back toward you. Hold 15 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -5134,7 +5134,7 @@
    "desk work recovery",
    "joint stiffness"
   ],
-  "desc": "Extend one arm forward, palm down. Use the other hand to gently push the wrist down and back.",
+  "desc": "Extend one arm forward, palm down. Use the other hand to gently push the wrist down and back. Hold 15 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -5185,7 +5185,7 @@
    "grip strength",
    "joint stiffness"
   ],
-  "desc": "Place a rubber band around all five fingertips. Spread your fingers apart against the resistance.",
+  "desc": "Place a rubber band around all five fingertips. Spread your fingers apart against the resistance. 15 reps, 3 sets.",
   "phases": [
    {
     "label": "Place a rubber band around all five fingertips",
@@ -5282,7 +5282,7 @@
    "joint stiffness",
    "flexibility"
   ],
-  "desc": "On hands and knees, place palms flat with fingers pointing toward your knees. Gently rock backward to stretch wrist flexors.",
+  "desc": "On hands and knees, place palms flat with fingers pointing toward your knees. Gently rock backward to stretch wrist flexors. Hold 15 seconds, repeat 3 times.",
   "phases": [
    {
     "label": "On hands and knees, place palms flat with finge...",
@@ -5416,7 +5416,7 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand on one foot near a wall for safety. Hold 20 seconds each side.",
+  "desc": "Stand on one foot near a wall for safety. Hold 20 seconds each side. Keep your hips level and gaze forward.",
   "phases": [
    {
     "label": "First side",
@@ -5462,7 +5462,7 @@
    "fall prevention",
    "general wellness"
   ],
-  "desc": "Walk in a straight line placing the heel of one foot directly in front of the toes of the other. Take at least 20 steps.",
+  "desc": "Walk in a straight line placing the heel of one foot directly in front of the toes of the other. Take at least 20 steps. Keep arms out for balance.",
   "phases": [
    {
     "label": "Walk in a straight line placing the heel of one...",
@@ -5501,7 +5501,7 @@
    "fall prevention",
    "general wellness"
   ],
-  "desc": "March in place lifting knees to hip height. 30 marches total.",
+  "desc": "March in place lifting knees to hip height. 30 marches total. Pump arms naturally. Builds balance and gets blood flowing.",
   "phases": [
    {
     "label": "March in place lifting knees to hip height",
@@ -5539,7 +5539,7 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand with feet shoulder width apart. Shift all your weight to the right foot, hold 5 seconds, then to the left.",
+  "desc": "Stand with feet shoulder width apart. Shift all your weight to the right foot, hold 5 seconds, then to the left. 8 shifts each side.",
   "phases": [
    {
     "label": "First side",
@@ -5586,7 +5586,7 @@
    "hip tightness",
    "ankle mobility"
   ],
-  "desc": "Stand on one leg. Reach the other foot to 12 o'clock, 3, 6, and 9 o'clock positions like a clock face.",
+  "desc": "Stand on one leg. Reach the other foot to 12 o'clock, 3, 6, and 9 o'clock positions like a clock face. Tap lightly and return. 2 full clocks each leg.",
   "phases": [
    {
     "label": "First side",
@@ -5633,7 +5633,7 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand on a folded towel, cushion, or BOSU ball with both feet. Hold 30 seconds.",
+  "desc": "Stand on a folded towel, cushion, or BOSU ball with both feet. Hold 30 seconds. The unstable surface challenges your balance reflexes.",
   "phases": [
    {
     "label": "Stand on a folded towel, cushion, or BOSU ball ...",
@@ -5672,7 +5672,7 @@
    "fall prevention",
    "hip tightness"
   ],
-  "desc": "Place a low object (book, shoe) on the floor. Step sideways over it and back, 10 times each direction.",
+  "desc": "Place a low object (book, shoe) on the floor. Step sideways over it and back, 10 times each direction. Builds lateral balance and hip strength.",
   "phases": [
    {
     "label": "Place a low object (book, shoe) on the floor",
@@ -5712,7 +5712,7 @@
    "independence",
    "core strength"
   ],
-  "desc": "Sit in a chair, stand up without using your hands, then sit back down slowly. 10 reps.",
+  "desc": "Sit in a chair, stand up without using your hands, then sit back down slowly. 10 reps. Builds the functional strength and balance used daily.",
   "phases": [
    {
     "label": "Sit in a chair, stand up without using your han...",
@@ -5756,7 +5756,7 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand on one foot near a wall for safety. Close your eyes and hold for 10-15 seconds.",
+  "desc": "Stand on one foot near a wall for safety. Close your eyes and hold for 10-15 seconds. Switch sides. Removing vision intensely challenges balance.",
   "phases": [
    {
     "label": "First side",
@@ -5803,7 +5803,7 @@
    "fall prevention",
    "independence"
   ],
-  "desc": "Stand on one leg. Reach forward to touch a table or counter, then stand back upright.",
+  "desc": "Stand on one leg. Reach forward to touch a table or counter, then stand back upright. 8 reps each leg. Trains balance during reaching — a common fall scenario.",
   "phases": [
    {
     "label": "First side",
@@ -5890,7 +5890,7 @@
    "better sleep",
    "back pain"
   ],
-  "desc": "Place one hand on your chest and one on your belly. Breathe in through your nose so your belly rises while your chest stays still.",
+  "desc": "Place one hand on your chest and one on your belly. Breathe in through your nose so your belly rises while your chest stays still. Exhale slowly. 10 breaths.",
   "phases": [
    {
     "label": "Place one hand on your chest and one on your belly",
@@ -5977,7 +5977,7 @@
    "better sleep",
    "breathing"
   ],
-  "desc": "Breathe in for 4 counts, hold for 7 counts, breathe out for 8 counts. Repeat 4-6 times.",
+  "desc": "Breathe in for 4 counts, hold for 7 counts, breathe out for 8 counts. Repeat 4-6 times. The long exhale activates your calming nervous system.",
   "phases": [
    {
     "label": "Breathe in for 4 counts, hold for 7 counts, bre...",
@@ -6021,7 +6021,7 @@
    "stress relief",
    "more energy"
   ],
-  "desc": "Breathe in through your nose for 2 counts. Purse your lips like you're blowing out a candle and exhale for 4 counts.",
+  "desc": "Breathe in through your nose for 2 counts. Purse your lips like you're blowing out a candle and exhale for 4 counts. 10 breaths.",
   "phases": [
    {
     "label": "Breathe in through your nose for 2 counts",
@@ -6064,7 +6064,7 @@
    "better posture",
    "upper back mobility"
   ],
-  "desc": "Place hands on the sides of your ribcage. Breathe in and try to push your ribs outward into your hands.",
+  "desc": "Place hands on the sides of your ribcage. Breathe in and try to push your ribs outward into your hands. Exhale and feel them contract. 10 breaths.",
   "phases": [
    {
     "label": "Place hands on the sides of your ribcage",
@@ -6109,7 +6109,7 @@
    "back pain",
    "better sleep"
   ],
-  "desc": "Lie face down with forehead on your hands. Breathe into your belly — you should feel your stomach press into the floor.",
+  "desc": "Lie face down with forehead on your hands. Breathe into your belly — you should feel your stomach press into the floor. 10 deep breaths.",
   "phases": [
    {
     "label": "Lie face down with forehead on your hands",
@@ -6148,7 +6148,7 @@
    "breathing",
    "desk work recovery"
   ],
-  "desc": "Take a deep breath in through your nose, then exhale through your mouth with an audible sigh. Repeat 5 times.",
+  "desc": "Take a deep breath in through your nose, then exhale through your mouth with an audible sigh. Repeat 5 times. Research shows this quickly reduces stress.",
   "phases": [
    {
     "label": "Take a deep breath in through your nose, then e...",
@@ -6235,7 +6235,7 @@
    "desk work recovery",
    "better posture"
   ],
-  "desc": "Stand tall, reach one arm overhead and lean to the opposite side. Hold 15 seconds each side.",
+  "desc": "Stand tall, reach one arm overhead and lean to the opposite side. Hold 15 seconds each side. Stretches the whole lateral chain.",
   "phases": [
    {
     "label": "First side",
@@ -6321,7 +6321,7 @@
    "upper back mobility",
    "flexibility"
   ],
-  "desc": "Lunge forward, place the same-side elbow inside the front foot, then rotate the same arm up to the ceiling. Hold 10 seconds, switch sides.",
+  "desc": "Lunge forward, place the same-side elbow inside the front foot, then rotate the same arm up to the ceiling. Hold 10 seconds, switch sides. 3 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -6368,7 +6368,7 @@
    "core strength",
    "more energy"
   ],
-  "desc": "Stand tall, fold forward, walk your hands out to a plank, then walk your feet to your hands and stand up. 5 reps.",
+  "desc": "Stand tall, fold forward, walk your hands out to a plank, then walk your feet to your hands and stand up. 5 reps. Great full-body warm-up.",
   "phases": [
    {
     "label": "Stand tall, fold forward, walk your hands out t...",
@@ -6407,7 +6407,7 @@
    "more energy",
    "general wellness"
   ],
-  "desc": "Stand and shake your whole body — hands, arms, legs, torso — for 30 seconds. Let everything be loose and floppy.",
+  "desc": "Stand and shake your whole body — hands, arms, legs, torso — for 30 seconds. Let everything be loose and floppy. Resets tension and boosts energy.",
   "phases": [
    {
     "label": "Stand and shake your whole body — hands, arms, ...",
@@ -6535,7 +6535,7 @@
    "upper back mobility",
    "hip tightness"
   ],
-  "desc": "Stand with feet wide, arms out in a T. Rotate and reach one hand to the opposite foot while the other arm points up.",
+  "desc": "Stand with feet wide, arms out in a T. Rotate and reach one hand to the opposite foot while the other arm points up. Alternate 8 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -6583,7 +6583,7 @@
    "hip tightness",
    "back pain"
   ],
-  "desc": "From hands and knees, push hips up and back to form an inverted V. Press heels toward the floor, straighten legs.",
+  "desc": "From hands and knees, push hips up and back to form an inverted V. Press heels toward the floor, straighten legs. Hold 30 seconds.",
   "phases": [
    {
     "label": "From hands and knees, push hips up and back to ...",
@@ -6623,7 +6623,7 @@
    "flexibility",
    "desk work recovery"
   ],
-  "desc": "From prone, push up through your hands lifting your chest while keeping hips on or near the floor. Open your chest and look slightly upward.",
+  "desc": "From prone, push up through your hands lifting your chest while keeping hips on or near the floor. Open your chest and look slightly upward. Hold 20 seconds.",
   "phases": [
    {
     "label": "From prone, push up through your hands lifting ...",
@@ -6663,7 +6663,7 @@
    "balance",
    "more energy"
   ],
-  "desc": "Step wide, turn one foot out 90 degrees. Bend the front knee over the ankle, extend arms parallel to the floor.",
+  "desc": "Step wide, turn one foot out 90 degrees. Bend the front knee over the ankle, extend arms parallel to the floor. Hold 30 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -6711,7 +6711,7 @@
    "balance",
    "core strength"
   ],
-  "desc": "Step into a lunge, then rotate your torso toward the front leg. Return and step into a lunge on the other side.",
+  "desc": "Step into a lunge, then rotate your torso toward the front leg. Return and step into a lunge on the other side. 8 lunges total (4 each side).",
   "phases": [
    {
     "label": "First side",
@@ -6888,7 +6888,7 @@
    "stress relief",
    "neck tension"
   ],
-  "desc": "Let your jaw hang open. Place your tongue on the roof of your mouth.",
+  "desc": "Let your jaw hang open. Place your tongue on the roof of your mouth. Move your jaw gently side to side 10 times, then open and close slowly 10 times.",
   "phases": [
    {
     "label": "Let your jaw hang open",
@@ -6931,7 +6931,7 @@
    "stress relief",
    "general wellness"
   ],
-  "desc": "Without moving your head, trace a large circle with your eyes — look up, right, down, left. 5 circles each direction.",
+  "desc": "Without moving your head, trace a large circle with your eyes — look up, right, down, left. 5 circles each direction. Relieves eye strain from screens.",
   "phases": [
    {
     "label": "Without moving your head, trace a large circle ...",
@@ -6975,7 +6975,7 @@
    "core strength",
    "more energy"
   ],
-  "desc": "Do one forward lunge, one lateral lunge, and one reverse lunge on each leg. That's one round.",
+  "desc": "Do one forward lunge, one lateral lunge, and one reverse lunge on each leg. That's one round. Do 3 rounds. Hits every hip and leg angle.",
   "phases": [
    {
     "label": "First side",
@@ -7023,7 +7023,7 @@
    "knee health",
    "more energy"
   ],
-  "desc": "Hold a wall sit position. Rise up onto your toes and hold 3 seconds, then lower heels.",
+  "desc": "Hold a wall sit position. Rise up onto your toes and hold 3 seconds, then lower heels. 10 calf raises while holding the wall sit.",
   "phases": [
    {
     "label": "Hold a wall sit position",
@@ -7110,7 +7110,7 @@
    "more energy",
    "general wellness"
   ],
-  "desc": "Hold light weights at shoulder height. Squat down, then as you stand, press the weights overhead.",
+  "desc": "Hold light weights at shoulder height. Squat down, then as you stand, press the weights overhead. 10 reps. A compound movement for the whole body.",
   "phases": [
    {
     "label": "Hold light weights at shoulder height",
@@ -7150,7 +7150,7 @@
    "hip tightness",
    "more energy"
   ],
-  "desc": "Step one foot back into a reverse lunge, then drive that knee up in front of you as you stand. 8 reps each leg.",
+  "desc": "Step one foot back into a reverse lunge, then drive that knee up in front of you as you stand. 8 reps each leg. Builds balance, strength, and coordination.",
   "phases": [
    {
     "label": "First side",
@@ -7242,7 +7242,7 @@
    "balance",
    "knee health"
   ],
-  "desc": "Stand on one leg, hold a wall for balance. Lift the other leg out to the side about 12 inches, hold 2 seconds, lower slowly.",
+  "desc": "Stand on one leg, hold a wall for balance. Lift the other leg out to the side about 12 inches, hold 2 seconds, lower slowly. 12 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -7288,7 +7288,7 @@
    "sitting recovery",
    "joint stiffness"
   ],
-  "desc": "Sit with feet flat on the floor. Alternate pointing toes down then pulling toes up, pumping the ankle joint.",
+  "desc": "Sit with feet flat on the floor. Alternate pointing toes down then pulling toes up, pumping the ankle joint. 20 pumps each foot. Boosts circulation.",
   "phases": [
    {
     "label": "Sit with feet flat on the floor",
@@ -7331,7 +7331,7 @@
    "core strength",
    "general wellness"
   ],
-  "desc": "Hold a band behind your back with both arms extended. Bring arms forward in a hugging motion, squeezing your chest.",
+  "desc": "Hold a band behind your back with both arms extended. Bring arms forward in a hugging motion, squeezing your chest. 12 reps.",
   "phases": [
    {
     "label": "Hold a band behind your back with both arms ext...",
@@ -7370,7 +7370,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Stand with your back against a wall. Push the back of your head into the wall, making a double chin.",
+  "desc": "Stand with your back against a wall. Push the back of your head into the wall, making a double chin. Hold 5 seconds, release. 10 reps.",
   "phases": [
    {
     "label": "Stand with your back against a wall",
@@ -7409,7 +7409,7 @@
    "shoulder tension",
    "core strength"
   ],
-  "desc": "In a plank position, keep arms straight and push your upper back toward the ceiling by protracting your shoulder blades. Then let them squeeze together.",
+  "desc": "In a plank position, keep arms straight and push your upper back toward the ceiling by protracting your shoulder blades. Then let them squeeze together. 10 reps.",
   "phases": [
    {
     "label": "In a plank position, keep arms straight and pus...",
@@ -7449,7 +7449,7 @@
    "knee health",
    "balance"
   ],
-  "desc": "Stand on a step with one foot hanging off the edge. Let that hip drop, then hike it up by squeezing the standing-side hip.",
+  "desc": "Stand on a step with one foot hanging off the edge. Let that hip drop, then hike it up by squeezing the standing-side hip. 12 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -7496,7 +7496,7 @@
    "back pain",
    "general wellness"
   ],
-  "desc": "Stand holding a wall for balance. Bend one knee, bringing your heel toward your glute.",
+  "desc": "Stand holding a wall for balance. Bend one knee, bringing your heel toward your glute. Lower slowly. 12 reps each leg.",
   "phases": [
    {
     "label": "First side",
@@ -7542,7 +7542,7 @@
    "core strength",
    "hip tightness"
   ],
-  "desc": "Hold a wall sit position with a ball or pillow between your knees. Squeeze the ball while holding the sit.",
+  "desc": "Hold a wall sit position with a ball or pillow between your knees. Squeeze the ball while holding the sit. Hold 20 seconds, rest, repeat 3 times.",
   "phases": [
    {
     "label": "Hold a wall sit position with a ball or pillow ...",
@@ -7581,7 +7581,7 @@
    "joint stiffness",
    "knee health"
   ],
-  "desc": "Stand on the edge of a step on your toes. Slowly lower one heel below the step over 5 seconds.",
+  "desc": "Stand on the edge of a step on your toes. Slowly lower one heel below the step over 5 seconds. Push back up with both feet. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -7628,7 +7628,7 @@
    "wrist & hand mobility",
    "general wellness"
   ],
-  "desc": "Hold a light weight on a string tied to a dowel. Roll the dowel to wind the string up, then slowly unwind.",
+  "desc": "Hold a light weight on a string tied to a dowel. Roll the dowel to wind the string up, then slowly unwind. 3 reps. Builds forearm and grip endurance.",
   "phases": [
    {
     "label": "Hold a light weight on a string tied to a dowel",
@@ -7667,7 +7667,7 @@
    "fall prevention",
    "hip tightness"
   ],
-  "desc": "Stand on one foot, place the other foot on your inner calf or thigh (never on the knee). Bring hands to chest or overhead.",
+  "desc": "Stand on one foot, place the other foot on your inner calf or thigh (never on the knee). Bring hands to chest or overhead. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -7715,7 +7715,7 @@
    "more energy",
    "desk work recovery"
   ],
-  "desc": "Breathe in while slowly raising arms overhead. Breathe out while lowering arms.",
+  "desc": "Breathe in while slowly raising arms overhead. Breathe out while lowering arms. 8 breaths. Coordinates breath with movement.",
   "phases": [
    {
     "label": "Breathe in while slowly raising arms overhead",
@@ -7753,7 +7753,7 @@
    "upper back mobility",
    "shoulder tension"
   ],
-  "desc": "Anchor a band at waist height. Hold with both hands, pull toward your body squeezing shoulder blades.",
+  "desc": "Anchor a band at waist height. Hold with both hands, pull toward your body squeezing shoulder blades. 12 reps. Strengthens the mid-back.",
   "phases": [
    {
     "label": "Anchor a band at waist height",
@@ -7928,7 +7928,7 @@
    "back pain",
    "general wellness"
   ],
-  "desc": "Hold a light weight. Hinge on one leg (Romanian deadlift), then pull the weight to your hip in a row.",
+  "desc": "Hold a light weight. Hinge on one leg (Romanian deadlift), then pull the weight to your hip in a row. Stand back up. 6 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -7975,7 +7975,7 @@
    "flexibility",
    "joint stiffness"
   ],
-  "desc": "Stand on a step with your heels hanging off the edge. Let your heels drop below the step level.",
+  "desc": "Stand on a step with your heels hanging off the edge. Let your heels drop below the step level. Hold 20 seconds. Switch to bent-knee for 20 more seconds.",
   "phases": [
    {
     "label": "Stand on a step with your heels hanging off the...",
@@ -8014,7 +8014,7 @@
    "more energy",
    "general wellness"
   ],
-  "desc": "Take a normal breath in, exhale normally, then hold your breath and walk until you feel a moderate urge to breathe. Resume breathing and walk normally for 1 minute.",
+  "desc": "Take a normal breath in, exhale normally, then hold your breath and walk until you feel a moderate urge to breathe. Resume breathing and walk normally for 1 minute. Repeat 3 times.",
   "phases": [
    {
     "label": "Take a normal breath in, exhale normally, then ...",
@@ -8053,7 +8053,7 @@
    "hip tightness",
    "sitting recovery"
   ],
-  "desc": "Lie face down. Squeeze one glute and lift that leg straight up a few inches off the floor.",
+  "desc": "Lie face down. Squeeze one glute and lift that leg straight up a few inches off the floor. Hold 3 seconds, lower. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -8152,7 +8152,7 @@
    "flexibility",
    "joint stiffness"
   ],
-  "desc": "In a push-up position on your knees, rock gently forward and backward over your wrists. Then flip hands so fingers point toward knees and rock back.",
+  "desc": "In a push-up position on your knees, rock gently forward and backward over your wrists. Then flip hands so fingers point toward knees and rock back. 30 seconds each position.",
   "phases": [
    {
     "label": "In a push-up position on your knees, rock gentl...",
@@ -8192,7 +8192,7 @@
    "desk work recovery",
    "back pain"
   ],
-  "desc": "Sit at the edge of your chair, scoot one hip off the side and let that leg drop back and down. You'll feel the hip flexor stretch on the dropped side.",
+  "desc": "Sit at the edge of your chair, scoot one hip off the side and let that leg drop back and down. You'll feel the hip flexor stretch on the dropped side. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -8244,7 +8244,7 @@
    "better posture",
    "core strength"
   ],
-  "desc": "Place your hand on the side of your head. Push your head into your hand, resisting the motion with your hand so there's no movement.",
+  "desc": "Place your hand on the side of your head. Push your head into your hand, resisting the motion with your hand so there's no movement. Hold 8 seconds each side, 5 reps.",
   "phases": [
    {
     "label": "First side",
@@ -8297,7 +8297,7 @@
    "better posture",
    "core strength"
   ],
-  "desc": "Lie face down, forehead on a folded towel. Tuck your chin and lift your head 1 inch off the towel while maintaining the tuck.",
+  "desc": "Lie face down, forehead on a folded towel. Tuck your chin and lift your head 1 inch off the towel while maintaining the tuck. Hold 5 seconds, 8 reps.",
   "phases": [
    {
     "label": "Lie face down, forehead on a folded towel",
@@ -8336,7 +8336,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Sit on the floor with a foam roller behind you under your upper back. Hug yourself and rotate over the roller to one side, then the other.",
+  "desc": "Sit on the floor with a foam roller behind you under your upper back. Hug yourself and rotate over the roller to one side, then the other. 8 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -8383,7 +8383,7 @@
    "flexibility",
    "sitting recovery"
   ],
-  "desc": "Stand on a low step. Tuck your chin and slowly round your spine one vertebra at a time, reaching toward the floor.",
+  "desc": "Stand on a low step. Tuck your chin and slowly round your spine one vertebra at a time, reaching toward the floor. Reverse to stand tall. 5 very slow reps. No weight needed.",
   "phases": [
    {
     "label": "Stand on a low step",
@@ -8422,7 +8422,7 @@
    "hip tightness",
    "balance"
   ],
-  "desc": "Hold a side plank with knees bent. Open the top knee like a clamshell while maintaining the plank.",
+  "desc": "Hold a side plank with knees bent. Open the top knee like a clamshell while maintaining the plank. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -8469,7 +8469,7 @@
    "core strength",
    "back pain"
   ],
-  "desc": "Loop a band around one foot and hold the other end under your hands. From hands and knees, kick the banded leg straight back.",
+  "desc": "Loop a band around one foot and hold the other end under your hands. From hands and knees, kick the banded leg straight back. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -8517,7 +8517,7 @@
    "fall prevention",
    "core strength"
   ],
-  "desc": "Stand on one leg in front of a chair. Slowly lower yourself onto the chair over 5 seconds, then stand up on both legs.",
+  "desc": "Stand on one leg in front of a chair. Slowly lower yourself onto the chair over 5 seconds, then stand up on both legs. 6 reps each leg.",
   "phases": [
    {
     "label": "First side",
@@ -8564,7 +8564,7 @@
    "core strength",
    "balance"
   ],
-  "desc": "Hold a bridge position with feet further from hips (more hamstring emphasis). March by lifting one foot at a time while maintaining hip height.",
+  "desc": "Hold a bridge position with feet further from hips (more hamstring emphasis). March by lifting one foot at a time while maintaining hip height. 8 marches each side.",
   "phases": [
    {
     "label": "First side",
@@ -8612,7 +8612,7 @@
    "fall prevention",
    "joint stiffness"
   ],
-  "desc": "Sit with feet flat. Roll your feet to the outside edges (inversion), hold 3 seconds, then roll to inside edges (eversion), hold 3 seconds.",
+  "desc": "Sit with feet flat. Roll your feet to the outside edges (inversion), hold 3 seconds, then roll to inside edges (eversion), hold 3 seconds. 10 reps.",
   "phases": [
    {
     "label": "Sit with feet flat",
@@ -8656,7 +8656,7 @@
    "wrist & hand mobility",
    "joint stiffness"
   ],
-  "desc": "Wrap a small rubber band around all five fingers at the middle knuckle. Spread fingers apart against the resistance.",
+  "desc": "Wrap a small rubber band around all five fingers at the middle knuckle. Spread fingers apart against the resistance. 12 reps, 3 sets each hand.",
   "phases": [
    {
     "label": "First side",
@@ -8708,7 +8708,7 @@
    "fall prevention",
    "knee health"
   ],
-  "desc": "Walk slowly backward in a straight line for at least 20 steps. Keep a wall or railing nearby for safety.",
+  "desc": "Walk slowly backward in a straight line for at least 20 steps. Keep a wall or railing nearby for safety. This challenges balance in an unfamiliar direction.",
   "phases": [
    {
     "label": "Walk slowly backward in a straight line for 20 ...",
@@ -8747,7 +8747,7 @@
    "better sleep",
    "breathing"
   ],
-  "desc": "Breathe in for 3 counts, breathe out for 6 counts. The extended exhale activates your parasympathetic nervous system.",
+  "desc": "Breathe in for 3 counts, breathe out for 6 counts. The extended exhale activates your parasympathetic nervous system. 10 breaths.",
   "phases": [
    {
     "label": "Breathe in for 3 counts, breathe out for 6 counts",
@@ -8791,7 +8791,7 @@
    "desk work recovery",
    "upper back mobility"
   ],
-  "desc": "While seated at your desk, pull your shoulder blades down and together, as if putting them in your back pockets. Hold 5 seconds, release.",
+  "desc": "While seated at your desk, pull your shoulder blades down and together, as if putting them in your back pockets. Hold 5 seconds, release. 8 reps.",
   "phases": [
    {
     "label": "While seated at your desk, pull your shoulder b...",
@@ -8834,7 +8834,7 @@
    "back pain",
    "desk work recovery"
   ],
-  "desc": "Hold a doorframe overhead with both hands. Step forward and let your body hang slightly to stretch the lats and side body.",
+  "desc": "Hold a doorframe overhead with both hands. Step forward and let your body hang slightly to stretch the lats and side body. Hold 20 seconds.",
   "phases": [
    {
     "label": "Hold a doorframe overhead with both hands",
@@ -8872,7 +8872,7 @@
    "knee health",
    "back pain"
   ],
-  "desc": "Cross one foot behind the other. Lean your hip toward the side of the back foot and reach the same-side arm overhead.",
+  "desc": "Cross one foot behind the other. Lean your hip toward the side of the back foot and reach the same-side arm overhead. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -8919,7 +8919,7 @@
    "general wellness",
    "more energy"
   ],
-  "desc": "Place hands on a counter or sturdy table, body in a straight line at an angle. Do push-ups.",
+  "desc": "Place hands on a counter or sturdy table, body in a straight line at an angle. Do push-ups. 10-12 reps. Harder than wall push-ups, easier than floor.",
   "phases": [
    {
     "label": "Place hands on a counter or sturdy table, body ...",
@@ -8958,7 +8958,7 @@
    "back pain",
    "sitting recovery"
   ],
-  "desc": "Lie on the edge of a bed or bench. Pull one knee to your chest while letting the other leg hang off the edge.",
+  "desc": "Lie on the edge of a bed or bench. Pull one knee to your chest while letting the other leg hang off the edge. The hanging leg should feel a hip flexor stretch. 30 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -9004,7 +9004,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Tilt your head to one side. Place the same-side hand on your head and add very gentle additional pressure.",
+  "desc": "Tilt your head to one side. Place the same-side hand on your head and add very gentle additional pressure. Hold 15 seconds each side. Be very gentle.",
   "phases": [
    {
     "label": "First side",
@@ -9057,7 +9057,7 @@
    "hip tightness",
    "flexibility"
   ],
-  "desc": "On hands and knees, slowly rock your hips back toward your heels while keeping your hands in place. Return to start.",
+  "desc": "On hands and knees, slowly rock your hips back toward your heels while keeping your hands in place. Return to start. 10 reps. A gentle lower back mobilizer.",
   "phases": [
    {
     "label": "On hands and knees, slowly rock your hips back ...",
@@ -9096,7 +9096,7 @@
    "core strength",
    "better sleep"
   ],
-  "desc": "Lie on your back, place a light book or small weight on your belly. Breathe so the object rises on inhale and falls on exhale.",
+  "desc": "Lie on your back, place a light book or small weight on your belly. Breathe so the object rises on inhale and falls on exhale. 10 breaths. The weight provides feedback.",
   "phases": [
    {
     "label": "Lie on your back, place a light book or small w...",
@@ -9135,7 +9135,7 @@
    "more energy",
    "hip tightness"
   ],
-  "desc": "Walk forward kicking each leg straight up while reaching the opposite hand toward the lifted toes. 10 kicks each leg.",
+  "desc": "Walk forward kicking each leg straight up while reaching the opposite hand toward the lifted toes. 10 kicks each leg. Dynamic hamstring stretch.",
   "phases": [
    {
     "label": "First side",
@@ -9229,7 +9229,7 @@
    "joint stiffness",
    "general wellness"
   ],
-  "desc": "Lean forward holding a table with one hand. Let the other arm hang down and swing it gently in small circles.",
+  "desc": "Lean forward holding a table with one hand. Let the other arm hang down and swing it gently in small circles. 15 seconds each direction, each arm. Very gentle shoulder mobilizer.",
   "phases": [
    {
     "label": "First side",
@@ -9275,7 +9275,7 @@
    "desk work recovery",
    "joint stiffness"
   ],
-  "desc": "Rest forearm on your desk, hand hanging off the edge. Rotate palm down then palm up slowly.",
+  "desc": "Rest forearm on your desk, hand hanging off the edge. Rotate palm down then palm up slowly. 15 rotations each arm. Mobilizes the forearm.",
   "phases": [
    {
     "label": "First side",
@@ -9326,7 +9326,7 @@
    "balance",
    "independence"
   ],
-  "desc": "Loop a band around one foot and anchor it behind you. March the banded leg up against resistance.",
+  "desc": "Loop a band around one foot and anchor it behind you. March the banded leg up against resistance. 12 reps each leg. Strengthens hip flexors for walking.",
   "phases": [
    {
     "label": "First side",
@@ -9373,7 +9373,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Press palms together at chest height and squeeze as hard as you can. Hold 10 seconds, release.",
+  "desc": "Press palms together at chest height and squeeze as hard as you can. Hold 10 seconds, release. 5 reps. Activates the chest without any equipment.",
   "phases": [
    {
     "label": "Press palms together at chest height and squeez...",
@@ -9416,7 +9416,7 @@
    "general wellness",
    "more energy"
   ],
-  "desc": "Place feet on a step or chair, hands on the floor. Perform push-ups with body angled downward.",
+  "desc": "Place feet on a step or chair, hands on the floor. Perform push-ups with body angled downward. 8 reps. Emphasizes upper chest.",
   "phases": [
    {
     "label": "Place feet on a step or chair, hands on the floor",
@@ -9455,7 +9455,7 @@
    "general wellness",
    "shoulder tension"
   ],
-  "desc": "Lie on your back with light weights (or water bottles) in each hand, arms extended above chest. Lower arms out to the sides with a slight elbow bend, then bring back up.",
+  "desc": "Lie on your back with light weights (or water bottles) in each hand, arms extended above chest. Lower arms out to the sides with a slight elbow bend, then bring back up. 12 reps.",
   "phases": [
    {
     "label": "First side",
@@ -9502,7 +9502,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Place forearm on a door frame at waist height with elbow below shoulder. Lean through the doorway.",
+  "desc": "Place forearm on a door frame at waist height with elbow below shoulder. Lean through the doorway. This targets the lower chest fibers. 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -9596,7 +9596,7 @@
    "knee health",
    "core strength"
   ],
-  "desc": "Lie on your side with a band above your knees. Open the top knee and simultaneously lift both feet off the floor.",
+  "desc": "Lie on your side with a band above your knees. Open the top knee and simultaneously lift both feet off the floor. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -9644,7 +9644,7 @@
    "core strength",
    "hip tightness"
   ],
-  "desc": "Place one foot behind you on a chair or step. Lower into a single-leg squat on the front leg.",
+  "desc": "Place one foot behind you on a chair or step. Lower into a single-leg squat on the front leg. 8 reps each side. Hold something for balance if needed.",
   "phases": [
    {
     "label": "First side",
@@ -9691,7 +9691,7 @@
    "balance",
    "fall prevention"
   ],
-  "desc": "Stand on one foot on a step edge. Rise to full tiptoe and hold for 10 seconds.",
+  "desc": "Stand on one foot on a step edge. Rise to full tiptoe and hold for 10 seconds. Lower slowly. 5 reps each side. Builds calf endurance.",
   "phases": [
    {
     "label": "First side",
@@ -9738,7 +9738,7 @@
    "joint stiffness",
    "desk work recovery"
   ],
-  "desc": "Make a fist. Slowly draw the biggest circle you can with your wrist, moving through full range including flexion, extension, and side-to-side.",
+  "desc": "Make a fist. Slowly draw the biggest circle you can with your wrist, moving through full range including flexion, extension, and side-to-side. 5 circles each direction, each wrist.",
   "phases": [
    {
     "label": "First side",
@@ -9790,7 +9790,7 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand with one foot directly in front of the other (heel to toe). Hold this position for 15 seconds, then switch which foot is in front.",
+  "desc": "Stand with one foot directly in front of the other (heel to toe). Hold this position for 15 seconds, then switch which foot is in front. A beginner balance challenge.",
   "phases": [
    {
     "label": "Stand with one foot directly in front of the ot...",
@@ -9828,7 +9828,7 @@
    "more energy",
    "general wellness"
   ],
-  "desc": "Walk at a comfortable pace breathing only through your nose. Focus on smooth, rhythmic nasal breathing for 2 minutes.",
+  "desc": "Walk at a comfortable pace breathing only through your nose. Focus on smooth, rhythmic nasal breathing for 2 minutes. Nasal breathing filters and humidifies air.",
   "phases": [
    {
     "label": "Walk at a comfortable pace breathing only throu...",
@@ -9867,7 +9867,7 @@
    "knee health",
    "core strength"
   ],
-  "desc": "Lie on your back with heels on a towel on a smooth floor. Lift hips into a bridge, then slowly slide heels away from you until hips drop.",
+  "desc": "Lie on your back with heels on a towel on a smooth floor. Lift hips into a bridge, then slowly slide heels away from you until hips drop. Reset and repeat. 6 reps.",
   "phases": [
    {
     "label": "Lie on your back with heels on a towel on a smo...",
@@ -9906,7 +9906,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Place forearms on a wall at chest height, step feet back until body forms a straight line at an angle. Hold 30 seconds.",
+  "desc": "Place forearms on a wall at chest height, step feet back until body forms a straight line at an angle. Hold 30 seconds. A beginner-friendly plank variation.",
   "phases": [
    {
     "label": "Place forearms on a wall at chest height, step ...",
@@ -9944,7 +9944,7 @@
    "flexibility",
    "more energy"
   ],
-  "desc": "Stand with feet shoulder width, arms bent at 90 degrees. Rotate your torso left and right, letting arms swing naturally.",
+  "desc": "Stand with feet shoulder width, arms bent at 90 degrees. Rotate your torso left and right, letting arms swing naturally. 20 rotations total. A gentle core warm-up.",
   "phases": [
    {
     "label": "Stand with feet shoulder width, arms bent at 90...",
@@ -9982,7 +9982,7 @@
    "flexibility",
    "joint stiffness"
   ],
-  "desc": "Reach one arm overhead and the other behind your back, trying to touch your fingers. Use a towel to bridge the gap if needed.",
+  "desc": "Reach one arm overhead and the other behind your back, trying to touch your fingers. Use a towel to bridge the gap if needed. Hold 15 seconds each way.",
   "phases": [
    {
     "label": "Reach one arm overhead and the other behind you...",
@@ -10021,7 +10021,7 @@
    "knee health",
    "joint stiffness"
   ],
-  "desc": "Lie on your side with a foam roller under your outer thigh. Roll from hip to just above the knee, pausing on tender spots.",
+  "desc": "Lie on your side with a foam roller under your outer thigh. Roll from hip to just above the knee, pausing on tender spots. 45 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -10068,7 +10068,7 @@
    "knee health",
    "balance"
   ],
-  "desc": "Lie on your side with a resistance band above your knees. Lift the top leg against the band resistance, hold 3 seconds at the top.",
+  "desc": "Lie on your side with a resistance band above your knees. Lift the top leg against the band resistance, hold 3 seconds at the top. 10 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -10115,7 +10115,7 @@
    "more energy",
    "ankle mobility"
   ],
-  "desc": "Stand and rapidly rise up on toes then lower, pumping your calves quickly. 30 pumps.",
+  "desc": "Stand and rapidly rise up on toes then lower, pumping your calves quickly. 30 pumps. Gets blood flowing, especially after sitting.",
   "phases": [
    {
     "label": "Stand and rapidly rise up on toes then lower, p...",
@@ -10153,7 +10153,7 @@
    "better posture",
    "desk work recovery"
   ],
-  "desc": "Slowly push your head forward (protraction) then pull it back (retraction/chin tuck). Move through the full range 10 times.",
+  "desc": "Slowly push your head forward (protraction) then pull it back (retraction/chin tuck). Move through the full range 10 times. This trains neck positioning awareness.",
   "phases": [
    {
     "label": "Slowly push your head forward (protraction) the...",
@@ -10198,7 +10198,7 @@
    "stress relief",
    "better sleep"
   ],
-  "desc": "Flow between sphinx pose (chest up, forearms down) and child's pose (sitting back on heels, arms forward). 8 slow flows.",
+  "desc": "Flow between sphinx pose (chest up, forearms down) and child's pose (sitting back on heels, arms forward). 8 slow flows. Alternates spinal extension and flexion.",
   "phases": [
    {
     "label": "Flow between sphinx pose (chest up, forearms do...",
@@ -10236,7 +10236,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Place hands on the seat of your chair. Push down to lift your body slightly, focusing on pulling shoulder blades down.",
+  "desc": "Place hands on the seat of your chair. Push down to lift your body slightly, focusing on pulling shoulder blades down. Hold 5 seconds, 8 reps.",
   "phases": [
    {
     "label": "Place hands on the seat of your chair",
@@ -10280,7 +10280,7 @@
    "back pain",
    "stress relief"
   ],
-  "desc": "Stand with feet wide apart, toes forward. Hinge at the hips and fold forward, reaching hands toward the floor.",
+  "desc": "Stand with feet wide apart, toes forward. Hinge at the hips and fold forward, reaching hands toward the floor. Hold 30 seconds. Stretches hamstrings and inner thighs.",
   "phases": [
    {
     "label": "Stand with feet wide apart, toes forward",
@@ -10319,7 +10319,7 @@
    "balance",
    "back pain"
   ],
-  "desc": "Hold a forearm plank. Slowly lift one leg off the floor, hold 5 seconds, switch.",
+  "desc": "Hold a forearm plank. Slowly lift one leg off the floor, hold 5 seconds, switch. 5 lifts each leg while maintaining plank form.",
   "phases": [
    {
     "label": "First side",
@@ -10412,7 +10412,7 @@
    "knee health",
    "core strength"
   ],
-  "desc": "Stand with a resistance band above knees, feet wider than shoulders. Squat while pushing knees out against the band.",
+  "desc": "Stand with a resistance band above knees, feet wider than shoulders. Squat while pushing knees out against the band. Squeeze glutes hard at the top. 12 reps.",
   "phases": [
    {
     "label": "Stand with a resistance band above knees, feet ...",
@@ -10451,7 +10451,7 @@
    "knee health",
    "core strength"
   ],
-  "desc": "Hold a wall sit with a resistance band above your knees. Push knees outward against the band while holding the squat.",
+  "desc": "Hold a wall sit with a resistance band above your knees. Push knees outward against the band while holding the squat. Hold 15 seconds, rest, repeat 3 times.",
   "phases": [
    {
     "label": "Hold a wall sit with a resistance band above yo...",
@@ -10490,7 +10490,7 @@
    "stress relief",
    "desk work recovery"
   ],
-  "desc": "Drop your chin toward your chest. Place both hands behind your head and let the weight of your hands gently deepen the stretch.",
+  "desc": "Drop your chin toward your chest. Place both hands behind your head and let the weight of your hands gently deepen the stretch. Hold 15 seconds.",
   "phases": [
    {
     "label": "Drop your chin toward your chest",
@@ -10534,7 +10534,7 @@
    "hip tightness",
    "flexibility"
   ],
-  "desc": "Lie on your back with knees bent, feet flat. Slowly drop both knees a few inches to the right, return to center, then to the left.",
+  "desc": "Lie on your back with knees bent, feet flat. Slowly drop both knees a few inches to the right, return to center, then to the left. 10 drops each side.",
   "phases": [
    {
     "label": "First side",
@@ -10580,7 +10580,7 @@
    "core strength",
    "better posture"
   ],
-  "desc": "Stand on a band, hold the other end at shoulder height. Press arms overhead against the band resistance.",
+  "desc": "Stand on a band, hold the other end at shoulder height. Press arms overhead against the band resistance. 10 reps.",
   "phases": [
    {
     "label": "Stand on a band, hold the other end at shoulder...",
@@ -10620,7 +10620,7 @@
    "better posture",
    "grip strength"
   ],
-  "desc": "Hold a weight in one hand at your side. Walk 20 steps while keeping your body perfectly upright — resist leaning toward the weight.",
+  "desc": "Hold a weight in one hand at your side. Walk 20 steps while keeping your body perfectly upright — resist leaning toward the weight. Switch hands and repeat.",
   "phases": [
    {
     "label": "First side",
@@ -10667,7 +10667,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "On hands and knees, place one hand behind your head. Rotate that elbow toward the opposite hand, then rotate it up toward the ceiling.",
+  "desc": "On hands and knees, place one hand behind your head. Rotate that elbow toward the opposite hand, then rotate it up toward the ceiling. 8 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -10715,7 +10715,7 @@
    "hip tightness",
    "sitting recovery"
   ],
-  "desc": "Loop a band around a pull-up bar or high anchor. Hold the band in front of you and squat using the band to assist your balance and control.",
+  "desc": "Loop a band around a pull-up bar or high anchor. Hold the band in front of you and squat using the band to assist your balance and control. 12 reps.",
   "phases": [
    {
     "label": "Loop a band around a pull-up bar or high anchor",
@@ -10753,7 +10753,7 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Place your forearm high on a door frame (above shoulder height) and step through. This targets the pec minor, which pulls the shoulder forward.",
+  "desc": "Place your forearm high on a door frame (above shoulder height) and step through. This targets the pec minor, which pulls the shoulder forward. Hold 20 seconds each side.",
   "phases": [
    {
     "label": "First side",
@@ -10801,7 +10801,7 @@
    "grip strength",
    "flexibility"
   ],
-  "desc": "Hang from a pull-up bar or sturdy overhead support with arms straight. Let your body decompress.",
+  "desc": "Hang from a pull-up bar or sturdy overhead support with arms straight. Let your body decompress. Hold 20 seconds, rest, repeat 3 times. Great for spinal decompression.",
   "phases": [
    {
     "label": "Hang from a pull-up bar or sturdy overhead supp...",
@@ -10841,7 +10841,7 @@
    "balance",
    "knee health"
   ],
-  "desc": "Step wide to one side, bend that knee and push hips back while keeping the other leg straight. Push back to center.",
+  "desc": "Step wide to one side, bend that knee and push hips back while keeping the other leg straight. Push back to center. 8 reps each side.",
   "phases": [
    {
     "label": "First side",
@@ -10889,7 +10889,7 @@
    "flexibility",
    "more energy"
   ],
-  "desc": "Start in a plank position. Push your hips up and back into downward dog, hold 3 seconds, then flow back to plank.",
+  "desc": "Start in a plank position. Push your hips up and back into downward dog, hold 3 seconds, then flow back to plank. 8 reps. Combines core work with shoulder and hamstring mobility.",
   "phases": [
    {
     "label": "Start in a plank position",
@@ -10928,7 +10928,7 @@
    "hip tightness",
    "more energy"
   ],
-  "desc": "In a plank position, slowly bring one knee toward your chest, hold 2 seconds, return, then the other knee. 8 reps each side.",
+  "desc": "In a plank position, slowly bring one knee toward your chest, hold 2 seconds, return, then the other knee. 8 reps each side. Controlled, not fast.",
   "phases": [
    {
     "label": "First side",
