@@ -8099,7 +8099,6 @@
   ],
   "concerns": [
    "hip tightness",
-   "back pain",
    "sitting recovery"
   ],
   "desc": "Stand facing a sturdy table about hip height and rest one shin across it, knee bent and turned out, so the outer shin and knee are supported. Hold the table for balance, keep your back long, and hinge forward from your hips until you feel a comfortable stretch deep in that buttock. Hold, then switch legs. Hold 20 seconds each side.",
@@ -8138,7 +8137,8 @@
   "regression": "Lower the surface (a chair seat instead of a table), keep more weight on the standing leg and hinge less, or switch to the seated Figure Four or supine version for full stability.",
   "remediation": "If balance is the limiter, do the seated Figure Four or the supine version — same target muscle without the balance demand.",
   "validation": "draft_pending_pt",
-  "review_priority": "high"
+  "review_priority": "high",
+  "review_note": "FaithPT 2026-09-16, verbatim: \"Ok so working on standing Piriformis stretch and the technique looks fine but I have problems with the intro and rationale. Relating it to low back pain is questionable, and  the importance of movement is not necessarily what this addresses, if you follow me. One can refer to excess sitting as a cause for tightness and relate it to hip alignment and/or sciatic compression but Piriformis tightness and lower back pain is reaching I think\" ACTIONED: removed the 'back pain' concern tag — it made the app assert the link she calls reaching, AND it served this stretch to users who selected back pain in onboarding. TECHNIQUE UNCHANGED (she said it looks fine); no clinical copy added. Her acceptable framing (excess sitting -> tightness -> hip alignment / sciatic compression) is already carried by the remaining tags 'hip tightness' + 'sitting recovery' — no new vocabulary invented. STILL OPEN WITH HER: the research-insight card. Removing the tag does NOT change it (insight 27 still scores top on 'glutes'/'sitting'), the next candidate (21) makes the low-back claim harder, and the matcher's last tier is the whole pool so id 31 ('80% of adults experience low back pain... movement is the medicine') can surface on repeat views."
  },
  {
   "name": "Wrist Push-Up Position Stretch",
