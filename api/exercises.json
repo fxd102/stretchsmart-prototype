@@ -4769,7 +4769,8 @@
   "stop_condition": "Stop if the foot cramps; ease off and shake out.",
   "regression": "Assist by hand at first (spread the toes with your fingers) to learn the motion.",
   "remediation": "Frequent short sets beat long holds for toe control.",
-  "validation": "draft_pending_pt"
+  "validation": "pt_approved",
+  "review_note": "PT APPROVED 2026-09-16 by FaithPT, verbatim: \"But I do like all of the toe spread exercise! Looks just right\" — answering the 09-16 09:00 queue review (e=108). Unqualified: she approved all of it. NOTE the text she read already included the trailing \"Builds foot intrinsic muscles.\", merged from the library copy in consolidation step 1 (`009a7b6`), so her approval covers the merged wording that users see. Timer is the corrected 50s (5s x 10 reps), not the old 30s bucket."
  },
  {
   "name": "Single-Leg Calf Raise",
