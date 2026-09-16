@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-01",
-      "time": "2026-09-01T08:08:20.432134-04:00",
-      "exercise": "Heel Walk",
-      "exercise_index": 110
-    },
-    {
       "date": "2026-09-02",
       "time": "2026-09-02T08:09:06.344695-04:00",
       "exercise": "Toe Walk",
@@ -89,6 +83,12 @@
       "time": "2026-09-15T08:09:42.574239-04:00",
       "exercise": "Heel-to-Toe Walk",
       "exercise_index": 124
+    },
+    {
+      "date": "2026-09-16",
+      "time": "2026-09-16T08:09:54.854514-04:00",
+      "exercise": "Standing March",
+      "exercise_index": 125
     }
   ]
 }
