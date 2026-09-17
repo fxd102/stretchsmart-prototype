@@ -2491,19 +2491,67 @@
    "balance",
    "back pain"
   ],
-  "desc": "Anchor a band at chest height and stand SIDEWAYS to it, both hands holding the band straight out in front of your chest. The band will try to twist you toward the anchor — hold still and resist that pull for about 15 seconds, keeping your hips and shoulders square. Turn around and repeat facing the other way.",
+  "desc": "Anchor a band at chest height and stand SIDEWAYS to it, both hands holding the band straight out in front of your chest. The band will try to twist you toward the anchor — hold still and resist that pull for 15 seconds, keeping your hips and shoulders square. Release briefly and repeat for 4 rounds, then turn around and do 4 rounds facing the other way.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
+    "label": "First side — hold 1 of 4",
+    "seconds": 15
    },
    {
-    "label": "Switch sides",
+    "label": "Release",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "First side — hold 2 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Release",
+    "seconds": 5
+   },
+   {
+    "label": "First side — hold 3 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Release",
+    "seconds": 5
+   },
+   {
+    "label": "First side — hold 4 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Turn around to face the other way",
+    "seconds": 5
+   },
+   {
+    "label": "Other side — hold 1 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Release",
+    "seconds": 5
+   },
+   {
+    "label": "Other side — hold 2 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Release",
+    "seconds": 5
+   },
+   {
+    "label": "Other side — hold 3 of 4",
+    "seconds": 15
+   },
+   {
+    "label": "Release",
+    "seconds": 5
+   },
+   {
+    "label": "Other side — hold 4 of 4",
+    "seconds": 15
    }
   ],
   "progression": [
