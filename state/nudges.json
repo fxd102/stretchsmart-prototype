@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-02",
-      "time": "2026-09-02T08:09:06.344695-04:00",
-      "exercise": "Toe Walk",
-      "exercise_index": 111
-    },
-    {
       "date": "2026-09-03",
       "time": "2026-09-03T08:04:32.215091-04:00",
       "exercise": "Wrist Circles",
@@ -89,6 +83,12 @@
       "time": "2026-09-16T08:09:54.854514-04:00",
       "exercise": "Standing March",
       "exercise_index": 125
+    },
+    {
+      "date": "2026-09-17",
+      "time": "2026-09-17T08:09:51.647953-04:00",
+      "exercise": "Weight Shift",
+      "exercise_index": 126
     }
   ]
 }
