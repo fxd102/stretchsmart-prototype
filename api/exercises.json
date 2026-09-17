@@ -4770,11 +4770,12 @@
    }
   ],
   "builds_on": "Ankle Circles",
-  "form_cue": "Isolate the toes — lift the big toe while the other four stay down, then reverse. Keep the foot flat and calm; it's about control, not force, and it feels awkward at first.",
+  "form_cue": "Isolate the toes — lift the big toe while the other four stay down, then reverse. Hold the foot's position the whole time: when you lift the four smaller toes, don't let the arch collapse; when you lift the big toe, don't lift the big toe joint off the floor. It's about control, not force, and it feels awkward at first.",
   "stop_condition": "Very low risk; just stop and shake it out if the foot cramps.",
   "regression": "Work toward the movement even if the toes barely separate at first — the skill builds with practice.",
   "remediation": "If a cramp hits, massage the arch and do fewer reps.",
-  "validation": "draft_pending_pt"
+  "validation": "pt_approved",
+  "review_note": "PT APPROVED 2026-09-17 by FaithPT, answering the 09-17 09:00 queue review (e=107), verbatim (14:23Z): \"Ok- my only comment here would be to keep foot position- i .e. not allowing arch to collapse when lifting lateral toes and not lifting big toe joint off the floor when lifting big toe\" ACTIONED: her foot-position point written into form_cue, replacing the vaguer \"Keep the foot flat and calm\". That sentence is our wording of her comment (lateral toes -> \"four smaller toes\"), shown to her verbatim in the acknowledgement so she can correct it. Everything else in the record approved as written (\"my only comment\")."
  },
  {
   "name": "Toe Spread",
