@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-03",
-      "time": "2026-09-03T08:04:32.215091-04:00",
-      "exercise": "Wrist Circles",
-      "exercise_index": 112
-    },
-    {
       "date": "2026-09-04",
       "time": "2026-09-04T08:01:24.049247-04:00",
       "exercise": "Prayer Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-09-17T08:09:51.647953-04:00",
       "exercise": "Weight Shift",
       "exercise_index": 126
+    },
+    {
+      "date": "2026-09-18",
+      "time": "2026-09-18T08:08:50.248855-04:00",
+      "exercise": "Clock Reach",
+      "exercise_index": 127
     }
   ]
 }
