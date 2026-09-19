@@ -5489,6 +5489,7 @@
    "No support, 30 seconds",
    "Close your eyes for 10 seconds"
   ],
+  "regression": "If that is too hard, keep both feet down and shift your weight side to side (Weight Shift) until it feels steady, or hold the wall with both hands.",
   "pairs_with": [
    {
     "name": "Heel-to-Toe Walk",
@@ -5594,16 +5595,68 @@
   "desc": "Stand with feet shoulder width apart. Shift all your weight to the right foot, hold 5 seconds, then to the left. 8 shifts each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 20
-   },
-   {
-    "label": "Switch sides",
+    "label": "Weight on the right — hold 1 of 8",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 20
+    "label": "Weight on the left — hold 1 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 2 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 2 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 3 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 3 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 4 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 4 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 5 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 5 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 6 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 6 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 7 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 7 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the right — hold 8 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Weight on the left — hold 8 of 8",
+    "seconds": 5
    }
   ],
   "progression": [
