@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-05",
-      "time": "2026-09-05T08:08:22.298925-04:00",
-      "exercise": "Reverse Prayer Stretch",
-      "exercise_index": 114
-    },
-    {
       "date": "2026-09-06",
       "time": "2026-09-06T08:03:21.295170-04:00",
       "exercise": "Finger Spread",
@@ -89,6 +83,12 @@
       "time": "2026-09-19T08:08:50.232822-04:00",
       "exercise": "BOSU or Cushion Stand",
       "exercise_index": 128
+    },
+    {
+      "date": "2026-09-20",
+      "time": "2026-09-20T08:09:07.054887-04:00",
+      "exercise": "Lateral Step-Over",
+      "exercise_index": 129
     }
   ]
 }
