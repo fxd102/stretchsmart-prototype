@@ -6323,7 +6323,8 @@
   "stop_condition": "Stop with lightheadedness, or if a nostril is too congested to breathe comfortably — don't strain through a blocked side.",
   "regression": "Skip any breath-holds, shorten the counts, or just do a few rounds.",
   "remediation": "If congested, do a simpler breathing pattern that day.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "review_note": "FaithPT 2026-09-20, answering the 09-20 09:00 queue review (e=141), verbatim: \"So while what you say in the intro is true, it is not really applicable to alternate nostril- alternate nostril is really for stress reduction, calming the parasympathetic nervous system but also increasing alertness. It is a good respiratory exercise also but in my mind not the primary reason to use it!\" NOT ABOUT THIS RECORD'S TEXT: 'the intro' is the rotating research card above the exercise — measured, insight 25 is the UNIQUE top match here (score 14), so every first visit serves it. It is the same card she objected to on 4-7-8 Breathing 09-18. ROOT CAUSE: insights.json holds exactly ONE breathing-category insight for 13 breathing exercises, so 25 speaks for all of them. SUPPRESSING IT HERE IS NOT A FIX: the next card up is 12 (category posture, 'diaphragmatic breathing — the kind you can only do with good posture'), a claim about a different technique. Not shipped. Her framing (stress reduction / parasympathetic calming / alertness, respiratory benefit secondary) already matches this record's concerns: stress relief, breathing, better sleep. WITH FAITH 2026-09-20: show no research card on breathing exercises until content fits, vs commissioning breathing insights. Exercise text and clinical fields NOT reviewed by her in this message — validation stays draft_pending_pt."
  },
  {
   "name": "Side Bend Stretch",
