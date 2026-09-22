@@ -273,8 +273,8 @@
     "text": "Most adults breathe 12-20 times a minute with their chest. Slow nasal breathing through the diaphragm \u2014 6 breaths a minute or fewer \u2014 shifts your nervous system out of fight-or-flight. It's one of the only voluntary controls you have over your autonomic state. Two minutes of nasal breathing walks is a real intervention, not a throwaway.",
     "source": "Russo et al., Breathe, 2017; Jerath et al., Medical Hypotheses, 2006",
     "tags": [
+      "nasal",
       "breathing",
-      "nasal breathing",
       "nervous system",
       "stress",
       "walking"
@@ -436,5 +436,95 @@
       "varicose veins"
     ],
     "id": 38
+  },
+  {
+    "id": 39,
+    "category": "breathing",
+    "text": "Breathing at about six breaths a minute \u2014 far slower than most of us ever breathe \u2014 reliably raises heart rate variability, the standard marker of vagal, rest-and-digest activity. A 2022 review pooled 223 studies and found it during the session, straight after a single session, and after weeks of practice. What it does not reliably do is lower blood pressure; the largest pooled analysis of that found no effect.",
+    "source": "Laborde et al., Neuroscience & Biobehavioral Reviews, 2022 (meta-analysis, 223 studies); de Freitas Gon\u00e7alves et al., Health Science Reports, 2022 (22 studies, 17,214 people)",
+    "tags": [
+      "slow",
+      "breathing",
+      "nervous system",
+      "stress"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "breathing",
+    "text": "Vagal traffic to the heart peaks on the out-breath \u2014 which is why your pulse quickens a little as you breathe in and settles as you breathe out, and why long exhales feel calming. How much the lengthening itself adds is unsettled: the best-designed trials found a one-to-two in-out ratio gave no more heart rate variability than an even one at the same slow rate. The slowing appears to do most of the work.",
+    "source": "Farmer et al., Journal of Physiology, 2016 (brainstem mechanism, animal study); Meehan et al., Applied Psychophysiology and Biofeedback, 2024 (two randomised experiments); Bae et al., Psychophysiology, 2021",
+    "tags": [
+      "exhale",
+      "breathing",
+      "nervous system"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "breathing",
+    "text": "Five minutes a day of cyclic sighing \u2014 two inhales through the nose, then one long slow exhale \u2014 improved mood and slowed resting breathing more than five minutes of mindfulness meditation did, over a month, in a randomised study of 108 people. Treat it as promising rather than settled: small groups, four weeks, no follow-up, and the trial was registered after it began.",
+    "source": "Balban et al., Cell Reports Medicine, 2023 (randomised, n=108, 4 weeks)",
+    "tags": [
+      "sighing",
+      "breathing",
+      "stress"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "breathing",
+    "text": "Nostril-regulated breathing does slow the heart: a 2026 meta-analysis of seven trials in 683 people with high blood pressure found a consistent drop in heart rate, though the blood-pressure effect did not survive the stricter statistical model. The evidence points at the slowness rather than the nostrils \u2014 compared head to head, left- and right-nostril practices produced the same changes, and the breathing rate fell either way.",
+    "source": "Chidambaram et al., Indian Heart Journal, 2026 (7 RCTs, 683 people); Telles et al., International Journal of Yoga, 2024 (randomised crossover, n=47)",
+    "tags": [
+      "alternate nostril",
+      "breathing",
+      "nervous system",
+      "stress"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "breathing",
+    "text": "Breathing through the nose does something mouth-breathing does not: the airflow paces electrical rhythms in the brain's memory and emotion centres. Recordings made inside the brains of eight epilepsy patients found those rhythms tracking the breath \u2014 and fading when breathing was diverted to the mouth. It is the airflow itself that carries the signal, not extra oxygen.",
+    "source": "Zelano et al., Journal of Neuroscience, 2016 (intracranial recordings, n=8; behavioural tasks, n=62 and n=33)",
+    "tags": [
+      "nasal",
+      "breathing",
+      "memory"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "breathing",
+    "text": "Pursed-lip breathing \u2014 in through the nose, out slowly through pursed lips \u2014 is a clinical technique for breathlessness rather than a relaxation fad. In COPD trials it reduces the trapped air that makes the next breath harder to take. Its effect on how far people can walk is inconsistent: in one crossover only about a quarter of patients improved, those with the weakest outward flow.",
+    "source": "Cabral et al., European Journal of Physical and Rehabilitation Medicine, 2015 (randomised crossover, n=40); de Araujo et al., Journal of Rehabilitation Medicine, 2015 (n=25)",
+    "tags": [
+      "pursed lip",
+      "breathing",
+      "breathlessness"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "breathing",
+    "text": "Eight weeks of daily diaphragmatic breathing lowered cortisol and improved sustained attention in forty healthy adults. Read it as a signal rather than a verdict: people were assigned by the order they registered rather than at random, and the comparison group did nothing at all, so expectation is uncontrolled. The direction matches the rest of this evidence \u2014 slow breathing shifts autonomic state.",
+    "source": "Ma et al., Frontiers in Psychology, 2017 (n=40, quasi-randomised, no active control)",
+    "tags": [
+      "diaphragm",
+      "breathing",
+      "stress"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "breathing",
+    "text": "The 4-7-8 pattern is everywhere, but the specific counts have little behind them. In the one head-to-head test \u2014 84 people, four breathing conditions \u2014 plain six-breaths-a-minute raised heart rate variability more than 4-7-8 did, and none of the patterns shifted mood. There is no published trial of it for sleep, its most common claim. The counts are a way to breathe slowly, not the active ingredient.",
+    "source": "Marchant et al., Applied Psychophysiology and Biofeedback, 2025 (n=84); Vierra et al., Physiological Reports, 2022 (n=43, uncontrolled)",
+    "tags": [
+      "4-7-8",
+      "breathing",
+      "slow"
+    ]
   }
 ]
