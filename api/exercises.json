@@ -245,7 +245,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -253,7 +253,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -587,7 +587,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -595,7 +595,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -1058,16 +1058,68 @@
   "desc": "Sit tall with arms crossed over your chest. Rotate your torso to the right, hold 5 seconds, then to the left. Repeat 8 times each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
+    "label": "Right — hold 1 of 8",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Left — hold 1 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 2 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 2 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 3 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 3 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 4 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 4 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 5 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 5 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 6 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 6 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 7 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 7 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 8 of 8",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 8 of 8",
+    "seconds": 5
    }
   ],
   "progression": [
@@ -1188,16 +1240,16 @@
   "desc": "From hands and knees, reach one arm under your body toward the opposite side, rotating your upper back. Hold 10 seconds, return. 5 each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 42
+    "label": "First side — 5 holds of 10 seconds",
+    "seconds": 50
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 42
+    "label": "Other side — 5 holds of 10 seconds",
+    "seconds": 50
    }
   ],
   "progression": [
@@ -1236,7 +1288,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -1244,7 +1296,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 15
    }
   ],
   "progression": [
@@ -1526,7 +1578,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -1534,7 +1586,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -1573,7 +1625,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -1581,7 +1633,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 20
    }
   ],
   "progression": [
@@ -1826,7 +1878,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -1834,7 +1886,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 15
    }
   ],
   "progression": [
@@ -1958,7 +2010,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -1966,7 +2018,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -2236,16 +2288,16 @@
   "desc": "Anchor a band at chest height and stand SIDEWAYS to it — that side-on position is what creates the twisting force. Hold the band with both hands at the center of your chest, brace your core, and press it straight out in front of you without letting your shoulders or hips rotate toward the anchor. Bring it back slowly, then turn around and do the other side. Hold 5 seconds, return. 8 reps each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
+    "label": "First side — 8 holds of 5 seconds",
+    "seconds": 40
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Other side — 8 holds of 5 seconds",
+    "seconds": 40
    }
   ],
   "progression": [
@@ -2323,7 +2375,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -2331,7 +2383,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -2668,7 +2720,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 30
    },
    {
     "label": "Switch sides",
@@ -2676,7 +2728,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 30
    }
   ],
   "progression": [
@@ -2714,7 +2766,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 30
    },
    {
     "label": "Switch sides",
@@ -2722,7 +2774,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 30
    }
   ],
   "progression": [
@@ -2867,7 +2919,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 30
    },
    {
     "label": "Switch sides",
@@ -2875,7 +2927,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 30
    }
   ],
   "progression": [
@@ -3053,7 +3105,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -3061,7 +3113,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -3100,7 +3152,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 57
+    "seconds": 45
    },
    {
     "label": "Switch sides",
@@ -3108,7 +3160,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 57
+    "seconds": 45
    }
   ],
   "progression": [
@@ -3721,7 +3773,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -3729,7 +3781,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -3891,16 +3943,16 @@
   "desc": "Sit tall, straighten one leg until it's parallel to the floor. Hold 5 seconds, lower slowly. 10 reps each leg. Builds quad strength gently.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
+    "label": "First side — 10 holds of 5 seconds",
+    "seconds": 50
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Other side — 10 holds of 5 seconds",
+    "seconds": 50
    }
   ],
   "progression": [
@@ -4160,7 +4212,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 30
    },
    {
     "label": "Switch sides",
@@ -4168,7 +4220,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 30
    }
   ],
   "progression": [
@@ -4206,7 +4258,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -4214,7 +4266,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -4524,7 +4576,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -4532,7 +4584,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -4570,7 +4622,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -4578,7 +4630,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -5139,7 +5191,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 20
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -5147,7 +5199,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 20
+    "seconds": 15
    }
   ],
   "progression": [
@@ -5190,7 +5242,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 20
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -5198,7 +5250,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 20
+    "seconds": 15
    }
   ],
   "progression": [
@@ -5472,7 +5524,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -5480,7 +5532,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -6354,7 +6406,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 20
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -6362,7 +6414,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 20
+    "seconds": 15
    }
   ],
   "progression": [
@@ -6439,16 +6491,16 @@
   "desc": "Lunge forward, place the same-side elbow inside the front foot, then rotate the same arm up to the ceiling. Hold 10 seconds, switch sides. 3 reps each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 57
+    "label": "First side — 3 holds of 10 seconds",
+    "seconds": 30
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 57
+    "label": "Other side — 3 holds of 10 seconds",
+    "seconds": 30
    }
   ],
   "progression": [
@@ -6782,7 +6834,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 42
+    "seconds": 30
    },
    {
     "label": "Switch sides",
@@ -6790,7 +6842,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 42
+    "seconds": 30
    }
   ],
   "progression": [
@@ -7786,7 +7838,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -7794,7 +7846,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -8220,7 +8272,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -8228,7 +8280,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -8313,7 +8365,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -8321,7 +8373,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -8364,16 +8416,16 @@
   "desc": "Place your hand on the side of your head. Push your head into your hand, resisting the motion with your hand so there's no movement. Hold 8 seconds each side, 5 reps.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
+    "label": "First side — 5 holds of 8 seconds",
+    "seconds": 40
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Other side — 5 holds of 8 seconds",
+    "seconds": 40
    }
   ],
   "progression": [
@@ -8994,7 +9046,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -9002,7 +9054,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -9126,7 +9178,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -9134,7 +9186,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 15
    }
   ],
   "progression": [
@@ -9813,16 +9865,16 @@
   "desc": "Stand on one foot on a step edge. Rise to full tiptoe and hold for 10 seconds. Lower slowly. 5 reps each side. Builds calf endurance.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
+    "label": "First side — 5 holds of 10 seconds",
+    "seconds": 50
    },
    {
     "label": "Switch sides",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Other side — 5 holds of 10 seconds",
+    "seconds": 50
    }
   ],
   "progression": [
@@ -10442,16 +10494,44 @@
   "desc": "Hold a forearm plank. Slowly lift one leg off the floor, hold 5 seconds, switch. 5 lifts each leg while maintaining plank form.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
+    "label": "Right — hold 1 of 5",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Left — hold 1 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 2 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 2 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 3 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 3 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 4 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 4 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 5 of 5",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 5 of 5",
+    "seconds": 5
    }
   ],
   "progression": [
@@ -10877,7 +10957,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -10885,7 +10965,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
@@ -11051,16 +11131,8 @@
   "desc": "In a plank position, slowly bring one knee toward your chest, hold 2 seconds, return, then the other knee. 8 reps each side. Controlled, not fast.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 27
+    "label": "8 each side, 2-second holds",
+    "seconds": 32
    }
   ],
   "progression": [
