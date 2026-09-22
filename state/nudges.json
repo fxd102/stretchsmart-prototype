@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-07",
-      "time": "2026-09-07T08:06:51.067180-04:00",
-      "exercise": "Wrist Flexor Stretch",
-      "exercise_index": 116
-    },
-    {
       "date": "2026-09-08",
       "time": "2026-09-08T08:00:05.655206-04:00",
       "exercise": "Wrist Extensor Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-09-21T08:03:51.096541-04:00",
       "exercise": "Sit-to-Stand",
       "exercise_index": 130
+    },
+    {
+      "date": "2026-09-22",
+      "time": "2026-09-22T08:10:55.536597-04:00",
+      "exercise": "Eyes-Closed Balance",
+      "exercise_index": 131
     }
   ]
 }
