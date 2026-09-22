@@ -335,16 +335,32 @@
   "desc": "Place your palm against your forehead and push your head into it without moving. Hold 5 seconds. Repeat on each side and the back of your head.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 42
-   },
-   {
-    "label": "Switch sides",
+    "label": "Forehead — hold",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 42
+    "label": "Move your hand",
+    "seconds": 5
+   },
+   {
+    "label": "Right side — hold",
+    "seconds": 5
+   },
+   {
+    "label": "Move your hand",
+    "seconds": 5
+   },
+   {
+    "label": "Left side — hold",
+    "seconds": 5
+   },
+   {
+    "label": "Move your hand",
+    "seconds": 5
+   },
+   {
+    "label": "Back of the head — hold",
+    "seconds": 5
    }
   ],
   "progression": [
@@ -1451,7 +1467,7 @@
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 15
    },
    {
     "label": "Switch sides",
@@ -1459,7 +1475,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 15
    }
   ],
   "progression": [
