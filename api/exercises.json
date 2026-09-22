@@ -5804,19 +5804,18 @@
  {
   "name": "Sit-to-Stand",
   "position": "seated",
-  "body_area": "Balance",
+  "body_area": "Quads",
   "difficulty": 1,
   "setting": "Seated",
   "tags": [
-   "balance"
+   "quads"
   ],
   "concerns": [
-   "balance",
    "fall prevention",
    "independence",
    "core strength"
   ],
-  "desc": "Sit in a chair, stand up without using your hands, then sit back down slowly. 10 reps. Builds the functional strength and balance used daily.",
+  "desc": "Sit in a chair, stand up without using your hands, then sit back down slowly. 10 reps. Builds the leg strength you use every day.",
   "phases": [
    {
     "label": "Sit in a chair, stand up without using your han...",
@@ -5827,7 +5826,9 @@
    "Use hands to assist, 8 reps",
    "No hands, 10 reps",
    "Slow to 3 seconds up, 3 seconds down",
-   "Try from a lower seat"
+   "Try from a lower seat",
+   "Staggered stance — one foot slightly back",
+   "Single-leg sit-to-stand (now it is a balance challenge too)"
   ],
   "pairs_with": [
    {
@@ -5844,6 +5845,7 @@
   "regression": "Use the hands to push off, use a higher/firmer chair (or a cushion to raise the seat), or fewer reps. A higher seat makes it much easier.",
   "remediation": "If standing hands-free isn't safe yet, keep using the arms and a sturdy surface nearby, and build leg strength before removing support.",
   "validation": "draft_pending_pt",
+  "review_note": "RECLASSIFIED 2026-09-21 on the product owner's instruction, verbatim: \"On sit to stand: I don't think balance is the point. A two-legged stand isn't a balance exercise, it's leg strength. If someone says too easy it could progress to staggered sit to stand or one leg sit to stand which then would be defensibly a balance challenge but not this one\" Was body_area Balance with a 'balance' concern/tag; now Quads. Rationale is hers: a two-legged sit-to-stand trains leg strength, and only the staggered / single-leg variants are defensibly balance work — both added to the progression ladder at her suggestion. 'fall prevention', 'independence' and 'core strength' concerns KEPT, so onboarding still serves it to fall-prevention users (preference matching reads concerns, not body_area). Side effect, measured and disclosed to her: the research card above it changes from the generic 'balance is a skill' cards (20/24) to insight 33, which is specifically about rising from a chair without hands. NOT reviewed by FaithPT — the two new progression steps are the product owner's suggestion, drafted by us.",
   "review_priority": "high"
  },
  {
