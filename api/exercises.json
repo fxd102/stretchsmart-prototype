@@ -56,19 +56,31 @@
    "shoulder tension",
    "desk work recovery"
   ],
-  "desc": "Tilt your right ear toward your right shoulder, hold 5 seconds, then repeat on the left. Keep shoulders down and relaxed.",
+  "desc": "Tilt your right ear toward your right shoulder, hold 5 seconds, then repeat on the left. 3 times each side. Keep shoulders down and relaxed.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 20
-   },
-   {
-    "label": "Switch sides",
+    "label": "Right — hold 1 of 3",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 20
+    "label": "Left — hold 1 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 2 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 2 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 3 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 3 of 3",
+    "seconds": 5
    }
   ],
   "progression": [
@@ -107,19 +119,31 @@
    "better posture",
    "joint stiffness"
   ],
-  "desc": "Turn your head slowly to look over your right shoulder, hold 5 seconds, then repeat left. Keep chin level throughout.",
+  "desc": "Turn your head slowly to look over your right shoulder, hold 5 seconds, then repeat left. 3 times each side. Keep chin level throughout.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 20
-   },
-   {
-    "label": "Switch sides",
+    "label": "Right — hold 1 of 3",
     "seconds": 5
    },
    {
-    "label": "Other side",
-    "seconds": 20
+    "label": "Left — hold 1 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 2 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 2 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Right — hold 3 of 3",
+    "seconds": 5
+   },
+   {
+    "label": "Left — hold 3 of 3",
+    "seconds": 5
    }
   ],
   "progression": [
@@ -5930,11 +5954,11 @@
    "fall prevention",
    "ankle mobility"
   ],
-  "desc": "Stand on one foot near a wall for safety. Close your eyes and hold for 10-15 seconds. Switch sides. Removing vision intensely challenges balance.",
+  "desc": "Stand on one foot near a wall for safety. Close your eyes and challenge yourself to work up to 20 seconds. Switch sides. Removing vision intensely challenges balance.",
   "phases": [
    {
     "label": "First side",
-    "seconds": 27
+    "seconds": 20
    },
    {
     "label": "Switch sides",
@@ -5942,7 +5966,7 @@
    },
    {
     "label": "Other side",
-    "seconds": 27
+    "seconds": 20
    }
   ],
   "progression": [
