@@ -6250,7 +6250,8 @@
   "stop_condition": "Very safe — just stop with lightheadedness and return to normal. Especially useful for shortness of breath.",
   "regression": "Shorten the counts; keep the exhale longer than the inhale.",
   "remediation": "None needed; this is often the easiest breathing pattern to start with.",
-  "validation": "draft_pending_pt"
+  "validation": "pt_approved",
+  "review_note": "PT APPROVED 2026-09-23 by FaithPT (the exercise text), answering the queue review (e=137), verbatim: \"Well I like the description of pursed lip breathing- it all looks good though as you point out through the research, it is primarily aimed at COPD patients so is it appropriate to include it in this particular app?\" SCOPE QUESTION OPEN WITH THE PRODUCT OWNER: whether a technique primarily aimed at COPD belongs in this app at all. Approval covers the content; whether the exercise stays is Faith's call."
  },
  {
   "name": "Rib Expansion Breathing",
