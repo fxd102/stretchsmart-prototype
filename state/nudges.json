@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-09",
-      "time": "2026-09-09T08:04:12.665012-04:00",
-      "exercise": "Rubber Band Finger Extension",
-      "exercise_index": 118
-    },
-    {
       "date": "2026-09-10",
       "time": "2026-09-10T08:00:22.402629-04:00",
       "exercise": "Grip Squeeze",
@@ -89,6 +83,12 @@
       "time": "2026-09-23T08:02:08.473339-04:00",
       "exercise": "Standing Reach and Return",
       "exercise_index": 132
+    },
+    {
+      "date": "2026-09-24",
+      "time": "2026-09-24T08:03:09.228576-04:00",
+      "exercise": "Grapevine Walk",
+      "exercise_index": 133
     }
   ]
 }
