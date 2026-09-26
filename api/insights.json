@@ -1,31 +1,9 @@
 [
   {
-    "id": 1,
-    "category": "posture",
-    "text": "Slouching reduces your lung capacity by up to 30%. Over decades, this means less oxygen reaching your brain, muscles, and organs. Pneumonia is the 8th leading cause of death in the US, and older adults with reduced lung capacity are far less able to fight it off. Every time you sit up straight, you're training your body to breathe fully \u2014 and that breathing capacity could save your life in your 80s.",
-    "source": "Zafar et al., BioMed Research International, 2018; CDC mortality data",
-    "tags": [
-      "breathing",
-      "lungs",
-      "longevity"
-    ]
-  },
-  {
-    "id": 2,
-    "category": "mobility",
-    "text": "After a hip fracture, 22% of people over 65 die within one year. Men over 80 face an 8-fold increase in mortality risk. The #1 predictor of hip fractures? Falls. The #1 predictor of falls? Poor balance and tight hip muscles. A 10-week lower-body stretching routine improves balance by 20-30%. Your hip flexor stretch today is literally life insurance.",
-    "source": "PMC3118151; PMC5003582; World J Orthop systematic review",
-    "tags": [
-      "hips",
-      "falls",
-      "mortality"
-    ]
-  },
-  {
     "id": 3,
     "category": "posture",
-    "text": "Your vital lung capacity drops about 200ml every decade after age 30. By 70, you've lost roughly 25% of what you had. But here's the thing: thoracic spine stiffness accelerates that loss. People with forward-head posture show measurably weaker diaphragms. Chest openers and thoracic mobility work slow this decline \u2014 keeping your ribcage mobile keeps your lungs working.",
-    "source": "Frontiers in Immunology, 2024; PMC6077663",
+    "text": "Your vital lung capacity falls by roughly 200 ml each decade from your twenties on \u2014 by 70, most people are down to about 75% of what they had at 30. Posture affects how well you use what's left: in a small study of healthy young men, simply holding a forward-head position measurably reduced inspiratory muscle strength. Keeping your ribcage and upper back mobile supports the mechanics of a full breath \u2014 though no study has yet shown it slows the age-related decline itself.",
+    "source": "Wang et al., Frontiers in Immunology, 2024 (ageing-lung review); Zafar et al., BioMed Research International, 2018 (n=15)",
     "tags": [
       "spine",
       "breathing",
@@ -35,8 +13,8 @@
   {
     "id": 4,
     "category": "flexibility",
-    "text": "28-35% of adults over 65 fall each year. Over 70, that jumps to 42%. Falls are the leading cause of injury death in older adults \u2014 and most are preventable. Studies show that regular stretching improves gait speed, single-leg balance, and joint range of motion. You're not stretching to touch your toes. You're stretching to stay on your feet.",
-    "source": "PMC10435089; WHO Global Report on Falls Prevention",
+    "text": "About 28-35% of adults over 65 fall each year, rising to 32-42% for those over 70. Falls are the leading cause of injury death in older adults, and many are preventable. Stretching reliably improves joint range of motion, and one small trial found hip and ankle stretching improved walking speed in older adults. The strongest fall-prevention evidence, though, is for balance and strength training \u2014 so use stretching alongside those, not instead of them.",
+    "source": "WHO, Global Report on Falls Prevention in Older Age, 2007; Sadaqa et al., Frontiers in Public Health, 2023; Christiansen, Archives of Physical Medicine and Rehabilitation, 2008 (n=37)",
     "tags": [
       "falls",
       "balance",
@@ -44,43 +22,10 @@
     ]
   },
   {
-    "id": 6,
-    "category": "posture",
-    "text": "Forward head posture adds up to 30 pounds of effective weight on your cervical spine for every inch your head drifts forward. This compresses nerves, restricts blood flow, and weakens the muscles that keep your airway open. In older adults, this contributes to dysphagia (difficulty swallowing) \u2014 a major risk factor for aspiration pneumonia, which has a mortality rate over 30% in those over 75.",
-    "source": "Hansraj, Surgical Technology International, 2014; PMC11258512",
-    "tags": [
-      "neck",
-      "breathing",
-      "swallowing"
-    ]
-  },
-  {
-    "id": 7,
-    "category": "flexibility",
-    "text": "Your ankle flexibility determines how well you can recover from a stumble. When you trip, your ankle needs to dorsiflex quickly to catch you. Tight calves limit this motion. Studies show that calf stretching and ankle mobility exercises significantly improve reactive balance \u2014 your body's ability to save itself from a fall before your brain even processes what happened.",
-    "source": "PMC5003582; Healthcare MDPI, 2024",
-    "tags": [
-      "ankles",
-      "falls",
-      "balance"
-    ]
-  },
-  {
-    "id": 8,
-    "category": "mobility",
-    "text": "Your shoulder's range of motion starts declining in your 30s, but you won't notice until you can't reach a high shelf or fasten something behind your back. By 70, many people have lost 25-30% of shoulder mobility. This isn't just inconvenience \u2014 loss of upper body function is a leading reason older adults lose independence and need assisted living. Wall angels today = reaching your own dishes at 80.",
-    "source": "Journal of Shoulder and Elbow Surgery, age-related ROM studies; PMC3503322",
-    "tags": [
-      "shoulders",
-      "independence",
-      "daily function"
-    ]
-  },
-  {
     "id": 9,
     "category": "posture",
-    "text": "Kyphosis \u2014 that rounded upper back \u2014 isn't just cosmetic. It reduces rib expansion, compresses abdominal organs, and impairs balance. People with hyperkyphosis have a 44% greater risk of mortality compared to those with normal spinal curves. Thoracic extension exercises directly counteract this curve. You're not just improving your posture \u2014 you're reshaping your skeleton's relationship with gravity.",
-    "source": "Kado et al., Journal of the American Geriatrics Society, 2004",
+    "text": "Kyphosis \u2014 that rounded upper back \u2014 isn't only cosmetic. It's associated with reduced lung function and poorer balance, though that evidence is observational. One study of older adults found about 40% higher mortality in those with hyperkyphotic posture; a later study measuring the curve on X-ray didn't confirm it, so treat it as a signal rather than a settled risk. Spine-strengthening and posture training do reduce the curve \u2014 by about 3 degrees over six months in the best trial \u2014 so think of it as slowing a drift, not reversing one.",
+    "source": "Kado et al., Journal of the American Geriatrics Society, 2004; Cours et al., Journal of the American Geriatrics Society, 2023; Katzman et al., Osteoporosis International, 2017",
     "tags": [
       "spine",
       "kyphosis",
@@ -88,43 +33,10 @@
     ]
   },
   {
-    "id": 10,
-    "category": "flexibility",
-    "text": "Hamstring flexibility directly affects your pelvis position, which affects your spine, which affects everything above it. Tight hamstrings tilt your pelvis backward, flattening your lumbar curve and increasing disc pressure. Over time, this leads to chronic low back pain \u2014 the #1 cause of disability worldwide. A 20-second hamstring stretch changes the mechanical chain all the way up to your neck.",
-    "source": "Global Burden of Disease Study; Journal of Physical Therapy Science",
-    "tags": [
-      "hamstrings",
-      "back pain",
-      "spine"
-    ]
-  },
-  {
-    "id": 11,
-    "category": "mobility",
-    "text": "Your spine has 33 vertebrae and over 100 joints. When you sit all day, those joints stop moving through their full range. Unused joints lose synovial fluid \u2014 their natural lubricant. Within months, stiffness becomes the new normal. Cat-cow and spinal rotation exercises pump fluid back into those joints. Think of it as oil for your spine. Machines that don't get lubricated seize up.",
-    "source": "Clinical Biomechanics; Physiopedia spinal health reviews",
-    "tags": [
-      "spine",
-      "joints",
-      "desk work"
-    ]
-  },
-  {
-    "id": 12,
-    "category": "posture",
-    "text": "Diaphragmatic breathing \u2014 the kind you can only do with good posture \u2014 activates your vagus nerve, lowering cortisol and heart rate. Chronic shallow breathing from slouching keeps your nervous system in low-grade fight-or-flight. This isn't woo \u2014 it's measurable. Slouchers show higher resting cortisol and heart rates. Sitting up and breathing deeply is a free, instant stress intervention.",
-    "source": "Frontiers in Human Neuroscience, vagus nerve stimulation; PMC respiratory posture studies",
-    "tags": [
-      "breathing",
-      "stress",
-      "nervous system"
-    ]
-  },
-  {
     "id": 13,
     "category": "flexibility",
-    "text": "The average office worker sits 10+ hours a day. After just 30 minutes of sitting, your hip flexors begin to shorten and tighten. After years, this becomes structural \u2014 your psoas literally remodels to its shortened position. But it's reversible. Consistent hip flexor stretching can restore length and function at any age. Your muscles are more adaptable than you think.",
-    "source": "Annals of Internal Medicine, sedentary behavior study; PMC hip flexor remodeling",
+    "text": "Adults are sedentary for 10 or more hours a day, and office workers spend roughly three-quarters of their working hours sitting. People who sit more than seven hours a day average about 6 degrees less hip extension than people who sit little \u2014 an association, not proof that sitting caused it. The encouraging part: consistent stretching reliably improves that range, and much of the gain comes from your nervous system raising its tolerance rather than from tissue permanently lengthening.",
+    "source": "Boukabache et al., Musculoskeletal Science and Practice, 2021; Diaz et al., Annals of Internal Medicine, 2017; Parry & Straker, BMC Public Health, 2013",
     "tags": [
       "hips",
       "sitting",
@@ -132,32 +44,10 @@
     ]
   },
   {
-    "id": 14,
-    "category": "wrists",
-    "text": "Wrist and hand mobility might seem minor until you can't open a jar, grip a railing, or catch yourself during a fall. Grip strength is so strongly correlated with overall health that researchers use it as a proxy for biological age. People with weak grip strength have double the risk of cardiovascular death. Wrist circles and grip exercises aren't just for carpal tunnel \u2014 they're a vital sign.",
-    "source": "The Lancet, grip strength and mortality meta-analysis, 2015",
-    "tags": [
-      "wrists",
-      "grip",
-      "longevity"
-    ]
-  },
-  {
-    "id": 15,
-    "category": "posture",
-    "text": "Children breathe with their belly. Adults breathe with their chest. The difference? Decades of sitting and slouching have turned off your diaphragm and activated your neck and shoulder muscles as backup breathers. This is why desk workers get tension headaches \u2014 their neck muscles are doing double duty. Relearning diaphragmatic breathing takes the load off your neck and gives your lungs back their full capacity.",
-    "source": "Journal of Bodywork and Movement Therapies; PMC breathing pattern disorders",
-    "tags": [
-      "breathing",
-      "neck",
-      "headaches"
-    ]
-  },
-  {
     "id": 16,
     "category": "flexibility",
-    "text": "Muscle stiffness isn't about the muscle itself \u2014 it's about your nervous system. Your brain sets a 'tension thermostat' based on perceived threat. Consistent, gentle stretching teaches your nervous system that a longer muscle is safe. This is why aggressive stretching backfires \u2014 you're fighting your brain's protective reflex. Slow, relaxed holds are neurological retraining, not just tissue lengthening.",
-    "source": "Weppler & Magnusson, Physical Therapy, 2010; Journal of Neurophysiology",
+    "text": "Muscle stiffness isn't only about the muscle \u2014 much of it is your nervous system. Reviewing the stretching literature, researchers found that the gains from a single session, or from a 3-to-8-week program, come mostly from increased tolerance to the stretch sensation rather than from tissue permanently lengthening. Whether longer programs change the tissue itself hasn't yet been tested.",
+    "source": "Weppler & Magnusson, Physical Therapy, 2010",
     "tags": [
       "neuroscience",
       "stretching",
@@ -165,61 +55,15 @@
     ]
   },
   {
-    "id": 17,
-    "category": "mobility",
-    "text": "Your glutes are the largest muscles in your body, but sitting all day turns them off \u2014 a phenomenon trainers call 'gluteal amnesia.' When your glutes stop firing, your lower back and hamstrings compensate, leading to pain and injury. Glute bridges wake these muscles back up. Strong glutes protect your knees, support your spine, and power every step you take.",
-    "source": "Journal of Strength and Conditioning Research; PMC gluteal activation studies",
-    "tags": [
-      "glutes",
-      "back pain",
-      "sitting"
-    ]
-  },
-  {
-    "id": 18,
-    "category": "posture",
-    "text": "Your body builds bone where it's stressed and removes bone where it's not \u2014 this is Wolff's Law. Weight-bearing postures and standing tall put healthy stress on your spine and hips, stimulating bone density. Chronic slouching changes the stress distribution, leading to bone loss in the wrong places. Good posture isn't just about looking confident \u2014 it's telling your skeleton where to stay strong.",
-    "source": "Wolff's Law; Journal of Bone and Mineral Research, mechanical loading studies",
-    "tags": [
-      "bones",
-      "osteoporosis",
-      "skeleton"
-    ]
-  },
-  {
-    "id": 19,
-    "category": "flexibility",
-    "text": "Fascia \u2014 the connective tissue wrapping every muscle \u2014 can become sticky and dehydrated without movement, creating that 'stiff all over' feeling when you wake up. Unlike muscles, fascia responds best to slow, sustained stretches held for 90+ seconds. Even 2 minutes of gentle full-body stretching in the morning rehydrates your fascia and can transform how you feel for the rest of the day.",
-    "source": "Schleip, Journal of Bodywork and Movement Therapies, 2003; Fascia Research Congress findings",
-    "tags": [
-      "fascia",
-      "morning",
-      "stiffness"
-    ]
-  },
-  {
     "id": 20,
     "category": "mobility",
-    "text": "Balance isn't a talent \u2014 it's a skill that deteriorates without practice. Your proprioceptors (sensors in your joints that tell your brain where your body is in space) weaken with age and inactivity. But they respond rapidly to training. Just 10 seconds of single-leg standing per day measurably improves proprioception within weeks. An inability to stand on one leg for 10 seconds is associated with double the risk of death within 10 years.",
-    "source": "British Journal of Sports Medicine, 2022; Araujo et al., one-leg balance and mortality",
+    "text": "Balance isn't a talent \u2014 it's a skill that fades without practice. Among adults aged 51 to 75, those who couldn't hold a 10-second one-legged stance had about 1.8 times the risk of dying over the next seven years, even after accounting for age, sex, BMI and existing illness. That's an association, not a sentence \u2014 and balance responds well to training. Just budget real practice: the trials that move the needle add up to hours, not seconds a day.",
+    "source": "Araujo et al., British Journal of Sports Medicine, 2022; Chen et al., PLoS One, 2026 (dose-response meta-analysis)",
     "tags": [
       "balance",
       "proprioception",
       "longevity"
     ]
-  },
-  {
-    "category": "strength",
-    "text": "A strong core isn't about looking lean \u2014 it's about your spine's support system. Weak trunk muscles force your back to do the stabilizing, which is why 80% of adults will have low back pain at some point. Every plank, every trunk engagement is literally teaching your core to protect your spine from the inside.",
-    "source": "Hoy et al., Annals of the Rheumatic Diseases, 2014 (global prevalence of low back pain); core stability meta-analyses",
-    "tags": [
-      "core",
-      "core strength",
-      "spine",
-      "back pain",
-      "strength"
-    ],
-    "id": 21
   },
   {
     "category": "wrists",
@@ -234,8 +78,8 @@
   },
   {
     "category": "strength",
-    "text": "Your ability to stand up from the floor without using your hands predicts how long you'll live. The sit-to-rise test measures leg strength, flexibility, and balance in one motion \u2014 people who can do it with no support have a 5-6x lower mortality risk over the next 6 years than those who need to lean on something. Leg strength is not vanity. It's your exit plan from the floor.",
-    "source": "Ara\u00fajo et al., European Journal of Preventive Cardiology, 2012",
+    "text": "Getting down to the floor and back up without your hands tests leg strength, flexibility and balance at once. In a study of 2,002 Brazilian adults aged 51 to 80, each extra point on a 10-point sit-and-rise score went with about 21% better survival over roughly six years, and the lowest scorers had about five times the mortality of the highest. The study adjusted only for age, sex and body weight, so read a low score as a sign of overall fitness, not a verdict.",
+    "source": "Brito et al., European Journal of Preventive Cardiology, 2014 (retrospective cohort, n=2,002)",
     "tags": [
       "legs",
       "quads",
@@ -247,33 +91,8 @@
   },
   {
     "category": "mobility",
-    "text": "Balance isn't a talent \u2014 it's a skill that deteriorates without practice. Your inner ear, your eyes, and the sensors in your feet are having a constant three-way conversation about where you are in space. Every balance exercise trains all three to talk faster. That's why balance peaks in your 30s and declines 1-2% per year after that \u2014 unless you train it.",
-    "source": "Sturnieks et al., Neurophysiologie Clinique, 2008; proprioceptive training reviews",
-    "tags": [
-      "balance",
-      "proprioception",
-      "falls",
-      "longevity"
-    ],
-    "id": 24
-  },
-  {
-    "category": "breathing",
-    "text": "Most adults breathe 12-20 times a minute with their chest. Slow nasal breathing through the diaphragm \u2014 6 breaths a minute or fewer \u2014 shifts your nervous system out of fight-or-flight. It's one of the only voluntary controls you have over your autonomic state. Two minutes of nasal breathing walks is a real intervention, not a throwaway.",
-    "source": "Russo et al., Breathe, 2017; Jerath et al., Medical Hypotheses, 2006",
-    "tags": [
-      "nasal",
-      "breathing",
-      "nervous system",
-      "stress",
-      "walking"
-    ],
-    "id": 25
-  },
-  {
-    "category": "mobility",
-    "text": "Functional movements \u2014 the ones that use multiple joints and large muscle groups together \u2014 build neural coordination that isolated exercises can't. A full-body movement isn't just harder cardio; it's training your brain to orchestrate your whole kinetic chain. That's why complex movement patterns correlate with preserved cognition in aging adults.",
-    "source": "Voelcker-Rehage & Niemann, Neuroscience & Biobehavioral Reviews, 2013",
+    "text": "Complex movement patterns \u2014 ones that coordinate many joints and muscle groups \u2014 are associated with better-preserved thinking in older adults. They aren't the only route: in a year-long trial of adults aged 62 to 79, coordination training and brisk walking each improved attention compared with a control group, apparently through different brain networks. It was a small trial with many dropouts, so read it as encouraging rather than settled.",
+    "source": "Voelcker-Rehage & Niemann, Neuroscience & Biobehavioral Reviews, 2013; Voelcker-Rehage, Godde & Staudinger, Frontiers in Human Neuroscience, 2011",
     "tags": [
       "full body",
       "functional",
@@ -283,45 +102,8 @@
     "id": 26
   },
   {
-    "category": "strength",
-    "text": "Glutes are the largest muscles in your body, but for most adults they're chronically underused. Sitting 8+ hours a day means your glutes are relaxed 8+ hours a day, while your hip flexors stay shortened. The result: a pelvis that tilts forward, a lower back that takes the strain, and a body that forgot how to fire its strongest engine. Every glute bridge is a conversation restart.",
-    "source": "Buckthorpe et al., International Journal of Sports Physical Therapy, 2019 (gluteal activation)",
-    "tags": [
-      "glutes",
-      "hips",
-      "core",
-      "posture",
-      "sitting"
-    ],
-    "id": 27
-  },
-  {
-    "category": "mobility",
-    "text": "Ankle mobility is one of the first things to disappear with age, and also one of the most consequential. Stiff ankles change how you walk, load your knees, and recover from stumbles. A 10-degree loss of ankle dorsiflexion roughly triples your fall risk in older adults. Rolling, circling, and stretching at the ankle isn't optional \u2014 it's fall insurance.",
-    "source": "Menz et al., Gait & Posture, 2003; ankle dorsiflexion and fall risk studies",
-    "tags": [
-      "ankles",
-      "mobility",
-      "falls",
-      "balance"
-    ],
-    "id": 28
-  },
-  {
-    "category": "neck",
-    "text": "Tension headaches affect 70% of adults at some point, and a huge fraction trace back to muscles you can't see \u2014 the suboccipitals at the base of your skull. Hours staring forward at a screen leaves them in chronic contraction. A few minutes of neck flexion and rotation each day reduces both headache frequency and intensity in clinical trials, more reliably than most painkillers.",
-    "source": "Stovner et al., Cephalalgia, 2022 (global headache prevalence); Page, Manual Therapy, 2011",
-    "tags": [
-      "neck",
-      "neck tension",
-      "headaches",
-      "desk work"
-    ],
-    "id": 29
-  },
-  {
     "category": "shoulders",
-    "text": "Frozen shoulder ('adhesive capsulitis') affects 2-5% of adults, and once it sets in, recovery takes 12-24 months. Risk factors: diabetes, thyroid issues, and immobility. Prevention: keeping the shoulder joint moving through its full range \u2014 especially overhead and behind-the-back \u2014 every single day. Five minutes of shoulder mobility is cheaper than a year of physical therapy.",
+    "text": "Frozen shoulder \u2014 adhesive capsulitis \u2014 affects about 2 to 5% of people. People with diabetes are around five times more likely to develop it, and thyroid disease raises the risk too. It usually improves over one to two years, though some people are left with stiffness that lasts. Its cause is unknown, so no exercise has been shown to prevent it.",
     "source": "Ramirez, American Family Physician, 2019",
     "tags": [
       "shoulders",
@@ -332,8 +114,8 @@
   },
   {
     "category": "back",
-    "text": "80% of adults experience low back pain at some point \u2014 it's the leading cause of disability worldwide. Most cases are mechanical, not structural \u2014 meaning movement is the medicine. Patients who keep moving recover faster than those who rest, in study after study. Bed rest, the old advice, is now actively contraindicated.",
-    "source": "Vos et al., Lancet, 2020 (Global Burden of Disease); Dahm et al., Cochrane, 2010",
+    "text": "Low back pain is the world's leading cause of years lived with disability, and most adults will have it at some point \u2014 though lifetime estimates vary widely between studies, from about 11% to 84%. For acute back pain, Cochrane evidence shows staying active gives a small advantage over bed rest, with no difference for sciatica, and guidelines no longer recommend prolonged bed rest.",
+    "source": "GBD 2019 Diseases and Injuries Collaborators, Lancet, 2020; Walker, Journal of Spinal Disorders, 2000; Dahm et al., Cochrane Database of Systematic Reviews, 2010",
     "tags": [
       "lower back",
       "back pain",
@@ -342,21 +124,9 @@
     "id": 31
   },
   {
-    "category": "chest",
-    "text": "Tight pec muscles from typing, driving, and phone-scrolling pull your shoulders forward, hunching the upper back. Over years this remodels the spine itself \u2014 kyphosis becomes structural, not postural. Daily chest opening reverses the soft-tissue adhesion before it locks in. The window for prevention closes around your 50s.",
-    "source": "Kado et al., Journal of the American Geriatrics Society, 2007 (kyphosis & mortality)",
-    "tags": [
-      "chest",
-      "posture",
-      "shoulders",
-      "kyphosis"
-    ],
-    "id": 32
-  },
-  {
     "category": "legs",
-    "text": "Quad strength is one of the strongest predictors of who walks well into their 80s \u2014 specifically, the ability to rise from a chair without using your hands. Quad atrophy starts in your 50s and accelerates after 70 unless trained. Five sit-to-stands a day, every day, is meaningful \u2014 it's harder than it sounds at age 75 if you haven't been doing it.",
-    "source": "Visser et al., Journal of Gerontology, 2005 (quad strength and disability)",
+    "text": "In a study of more than 3,000 adults aged 70 to 79, those with the weakest thigh (knee-extensor) strength were about twice as likely to develop difficulty walking or climbing stairs over the next two and a half years as the strongest. Rising from a chair without your hands is a practical way to keep working those muscles \u2014 though no study has set a daily number.",
+    "source": "Visser et al., Journals of Gerontology: Series A, 2005 (Health ABC, n=3,075)",
     "tags": [
       "quads",
       "knees",
@@ -367,45 +137,9 @@
     "id": 33
   },
   {
-    "category": "hamstrings",
-    "text": "Tight hamstrings affect more than your stretch \u2014 they tilt your pelvis backward, flatten the lumbar curve, and chronically aggravate the lower back. People with hamstring flexibility under 80 degrees have 2-3x higher rates of chronic low back pain than people with normal range. Lengthening hamstrings is back insurance.",
-    "source": "Sadler et al., BMC Musculoskeletal Disorders, 2017",
-    "tags": [
-      "hamstrings",
-      "lower back",
-      "back pain",
-      "flexibility"
-    ],
-    "id": 34
-  },
-  {
-    "category": "wrists",
-    "text": "Repetitive wrist motions from typing and phones are the modern equivalent of industrial strain injuries. Carpal tunnel affects 4% of adults, and once it goes from intermittent tingling to actual nerve damage, surgery is often the only option. Daily wrist mobility delays the progression \u2014 clinical trials show 30-50% symptom reduction with consistent stretching.",
-    "source": "Dale et al., Scandinavian Journal of Work, Environment & Health, 2013",
-    "tags": [
-      "wrists",
-      "hands",
-      "carpal tunnel",
-      "desk work"
-    ],
-    "id": 35
-  },
-  {
-    "category": "hips",
-    "text": "Hip mobility is the difference between getting up off the floor at 80 vs. needing help. Sit-and-rise tests measure exactly this. The hips are also the biggest joint in your body and carry the most load \u2014 keeping them mobile reduces knee and back compensation. Bilateral hip stretches daily, especially the hip flexors and glutes, slow the natural age-related stiffening.",
-    "source": "Cruz-Ferreira, Geriatric Nursing, 2018",
-    "tags": [
-      "hips",
-      "hip flexors",
-      "mobility",
-      "longevity"
-    ],
-    "id": 36
-  },
-  {
     "category": "upper back",
-    "text": "Your thoracic spine \u2014 the upper back \u2014 is supposed to rotate and extend, but most adults lose 50% of that range by their 40s from sedentary posture. The cost shows up everywhere: shoulder impingement, neck strain, golf and tennis swings that can't generate power, even reduced lung capacity. Daily thoracic mobility is one of the highest-leverage exercises for whole-body function.",
-    "source": "Heneghan et al., BMJ Open Sport & Exercise Medicine, 2018",
+    "text": "Your upper back is built to rotate and extend, and sitting appears to cost some of that: in 92 young adults, those sitting more than seven hours a day had about 14% less thoracic rotation than physically active peers (65 degrees versus 75). The study was observational and in 18-to-30-year-olds, so it can't tell us about cause or about decline later in life.",
+    "source": "Heneghan et al., BMJ Open, 2018 (n=92)",
     "tags": [
       "upper back",
       "thoracic spine",
@@ -416,8 +150,8 @@
   },
   {
     "category": "calves",
-    "text": "Strong calves quietly do the work of your second heart \u2014 they pump blood from your legs back up your body when you walk. A sedentary lifestyle weakens this muscle pump, contributing to varicose veins, swollen feet, and poor circulation. Calf raises throughout the day are surprisingly effective; clinical studies show measurable improvements in venous return after just 4 weeks.",
-    "source": "Williams, Vascular Health and Risk Management, 2015",
+    "text": "Your calf muscles act as a 'second heart', squeezing the leg veins to push blood back toward the chest when you walk. In a randomised trial of people with chronic venous insufficiency, a structured calf-strengthening program measurably improved that pump after six months, though it didn't change symptom scores. Cochrane rates the overall evidence for exercise in venous insufficiency as very low quality, so treat calf work as sensible rather than proven.",
+    "source": "Padberg et al., Journal of Vascular Surgery, 2004 (randomised, n=31); Araujo et al., Cochrane Database of Systematic Reviews, 2016",
     "tags": [
       "calves",
       "ankles",
