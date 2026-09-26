@@ -249,5 +249,142 @@
       "breathing",
       "slow"
     ]
+  },
+  {
+    "id": 47,
+    "category": "neck",
+    "text": "In a Cochrane review of 27 trials in adults with neck pain, moderate-quality evidence supported strength training for the neck, shoulder and shoulder-blade muscles to ease long-lasting neck pain, at least in the short term. Stretching on its own may not change pain (low-quality evidence). The authors found no high-quality evidence, so some uncertainty remains.",
+    "source": "Gross et al., Cochrane Database of Systematic Reviews, 2015 (27 RCTs, n=2,485)",
+    "tags": [
+      "neck",
+      "neck tension",
+      "strength"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "neck",
+    "text": "A 2024 review pooled 8 trials of office workers with chronic neck pain. Strengthening the neck, shoulder and shoulder-blade muscles reduced neck pain and disability compared with control groups. The catch: all 8 trials had a high risk of bias, and the authors rate the certainty of the evidence as low.",
+    "source": "Jones et al., Applied Ergonomics, 2024 (meta-analysis of 8 RCTs)",
+    "tags": [
+      "neck",
+      "neck tension",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "shoulders",
+    "text": "In the CSAW trial, 313 people with at least three months of shoulder pain \u2014 despite exercise therapy and a steroid injection \u2014 got decompression surgery, placebo keyhole surgery, or no treatment. At six months, real surgery did no better than the placebo. Both surgeries beat no treatment slightly, but not by a clinically important amount.",
+    "source": "Beard et al., Lancet, 2018 (randomised placebo-controlled trial, n=313)",
+    "tags": [
+      "shoulders",
+      "shoulder tension"
+    ]
+  },
+  {
+    "id": 50,
+    "category": "wrists",
+    "text": "A Cochrane review of exercise for hand osteoarthritis found small improvements in hand pain, function and finger stiffness right after the programmes (pain pooled from 5 trials, 381 people). The authors rated the evidence low quality, questioned whether effects this small matter clinically, and found they were not sustained at later follow-up. It studied people with hand osteoarthritis, not all older adults.",
+    "source": "\u00d8ster\u00e5s et al., Cochrane Database of Systematic Reviews, 2017 (systematic review of RCTs, n=381)",
+    "tags": [
+      "wrists",
+      "wrist & hand mobility",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 51,
+    "category": "hips",
+    "text": "Exercise can ease hip osteoarthritis a little. A 2026 Cochrane review of 18 trials (1,368 people) found that, compared with no treatment or usual care, land-based exercise probably reduces pain and improves physical function slightly. The authors judged these average changes unlikely to be clinically meaningful, and noted most trials were small and unblinded.",
+    "source": "Hall et al., Cochrane Database of Systematic Reviews, 2026 (18 RCTs, n=1,368)",
+    "tags": [
+      "hips",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 52,
+    "category": "hips",
+    "text": "Your hip abductors are the muscles on the outside of your hip. An Australian study followed 952 adults aged 65 and over for a median of 11.5 years: those with stronger hip abductors were less likely to need emergency care after a fall. Hip flexor strength showed no such link. This is an association only \u2014 it does not prove that strengthening these muscles prevents falls.",
+    "source": "Yosef et al., Journal of Cachexia, Sarcopenia and Muscle, 2026 (prospective cohort, n=952)",
+    "tags": [
+      "hips",
+      "fall prevention",
+      "balance"
+    ]
+  },
+  {
+    "id": 53,
+    "category": "legs",
+    "text": "A 2024 Cochrane review of 139 trials (12,468 people with knee osteoarthritis) found land-based exercise probably improves pain and physical function in the short term compared with control groups, and no single type of exercise stood out. The authors caution the benefits are of uncertain clinical importance, and most participants knew they were exercising, which may have contributed.",
+    "source": "Lawford et al., Cochrane Database of Systematic Reviews, 2024 (139 RCTs, n=12,468)",
+    "tags": [
+      "knee health",
+      "quads",
+      "legs"
+    ]
+  },
+  {
+    "id": 54,
+    "category": "legs",
+    "text": "Strength can still be built very late in life. In a 10-week trial, 100 frail nursing-home residents (average age 87, range 72 to 98) were randomised. Those doing high-intensity resistance training increased muscle strength by 113% on average, versus 3% in non-exercisers, and walked faster. A nutritional supplement alone did not help. One trial, in nursing-home residents only.",
+    "source": "Fiatarone et al., New England Journal of Medicine, 1994 (RCT, n=100)",
+    "tags": [
+      "legs",
+      "independence"
+    ]
+  },
+  {
+    "id": 55,
+    "category": "hamstrings",
+    "text": "How long should you hold a hamstring stretch? In a trial of 62 adults aged 65 to 97 with tight hamstrings, stretching five days a week for six weeks, 60-second holds gained range of motion faster than 30- or 15-second holds, and the gain lasted longer after stopping. The groups were small (13 to 17 people), and the authors note results may differ in younger adults.",
+    "source": "Feland et al., Physical Therapy, 2001 (RCT, n=62)",
+    "tags": [
+      "hamstrings",
+      "flexibility"
+    ]
+  },
+  {
+    "id": 56,
+    "category": "mobility",
+    "text": "A Cochrane review pooled 108 trials of exercise in people aged 60 and over living in the community. Exercise cut the rate of falls by 23%, and programmes built mainly on balance and functional exercises did about the same (24%). The authors rate these falls results high-certainty, but most trials had unclear or high risk of bias, and effects on things other than falls are less certain.",
+    "source": "Sherrington et al., Cochrane Database of Systematic Reviews, 2019 (108 RCTs, n=23,407)",
+    "tags": [
+      "balance",
+      "fall prevention",
+      "independence"
+    ]
+  },
+  {
+    "id": 57,
+    "category": "mobility",
+    "text": "A 2017 review of 18 randomised trials (3,824 older adults) found tai chi groups had fewer people falling and a lower rate of falls than control groups, and the benefit looked larger with more frequent practice. The authors caution that the effect may be overestimated because of publication bias and weaknesses in some of the original trials.",
+    "source": "Huang et al., BMJ Open, 2017 (meta-analysis of 18 RCTs, n=3,824)",
+    "tags": [
+      "balance",
+      "fall prevention"
+    ]
+  },
+  {
+    "id": 58,
+    "category": "strength",
+    "text": "A 2022 meta-analysis of cohort studies found adults who did muscle-strengthening activities had about a 10-17% lower risk of death from any cause than those who did none. The biggest reduction came at roughly 30 to 60 minutes a week; beyond that the curve was J-shaped, and the authors say the effect of doing more is unclear. The data are observational and self-reported, and the authors rated the evidence very low quality.",
+    "source": "Momma et al., British Journal of Sports Medicine, 2022 (meta-analysis of cohort studies)",
+    "tags": [
+      "strength",
+      "general wellness"
+    ]
+  },
+  {
+    "id": 59,
+    "category": "calves",
+    "text": "A study that followed 312 people aged 60 to 90 for a year found that those who fell had weaker big-toe and lesser-toe flexor muscles than those who did not. The authors suggest toe-strengthening may help \u2014 but the study only observed an association; it did not test whether training your toes or feet prevents falls.",
+    "source": "Mickle et al., Clinical Biomechanics, 2009 (prospective cohort, n=312)",
+    "tags": [
+      "calves",
+      "fall prevention",
+      "balance"
+    ]
   }
 ]
