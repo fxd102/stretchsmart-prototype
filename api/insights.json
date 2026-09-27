@@ -386,5 +386,256 @@
       "fall prevention",
       "balance"
     ]
+  },
+  {
+    "id": 60,
+    "category": "chest",
+    "text": "In a 10-year study of 1,104 male firefighters (mean age 39.6), men who could do more than 40 push-ups at the start had far fewer later heart and blood-vessel events than men who managed fewer than 10. This shows a link, not cause and effect: the authors say it doesn't make push-ups an independent predictor, and the results may not apply to women, older adults or less active people.",
+    "source": "Yang et al., JAMA Network Open, 2019 (retrospective cohort, n=1,104)",
+    "tags": [
+      "chest",
+      "general wellness",
+      "more energy"
+    ]
+  },
+  {
+    "id": 61,
+    "category": "chest",
+    "text": "In a small trial, 18 young men trained twice a week for 8 weeks with either a light-load bench press or push-ups adjusted (for example, kneeling) to match that load. Both groups got stronger and built thicker chest and triceps muscles, with similar results. Only young men were tested, and the authors note they could not control diet or other physical activity.",
+    "source": "Kikuchi et al., Journal of Exercise Science & Fitness, 2017 (randomised trial, n=18)",
+    "tags": [
+      "chest",
+      "general wellness"
+    ]
+  },
+  {
+    "id": 62,
+    "category": "chest",
+    "text": "Researchers used motion sensors on 50 adults without shoulder pain, grouped by whether their pectoralis minor \u2014 a small muscle beneath the main chest muscle \u2014 was relatively short or long. When they raised an arm, the short group's shoulder blade stayed tipped forward more, a pattern earlier studies saw in shoulder impingement. It's a one-time comparison that supports a theory, not proof.",
+    "source": "Borstad & Ludewig, Journal of Orthopaedic & Sports Physical Therapy, 2005 (cross-sectional, n=50)",
+    "tags": [
+      "chest",
+      "shoulder tension",
+      "upper back mobility"
+    ]
+  },
+  {
+    "id": 63,
+    "category": "chest",
+    "text": "Twenty-five people with shoulder pain and 25 without did a daily home stretch for the pectoralis minor, a chest muscle, for six weeks. The shoulder-pain group reported less pain and better arm function. But the muscle's measured length and shoulder-blade movement didn't change, so the benefit seems to come from something other than lengthening the muscle. There was no group that didn't stretch.",
+    "source": "Rosa et al., Journal of Hand Therapy, 2017 (parallel-group intervention, n=50)",
+    "tags": [
+      "chest",
+      "shoulder tension",
+      "upper back mobility"
+    ]
+  },
+  {
+    "id": 64,
+    "category": "back",
+    "text": "A large Cochrane review pooled 249 trials of exercise for adults whose low back pain had lasted over 12 weeks. Exercise probably reduced pain compared with no treatment or usual care, by an amount the authors judged clinically important. Gains in day-to-day function were smaller. Most trials had some risk of bias, partly because people always know when they are exercising.",
+    "source": "Hayden et al., Cochrane Database of Systematic Reviews, 2021 (systematic review of 249 RCTs)",
+    "tags": [
+      "lower back",
+      "back pain",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 65,
+    "category": "back",
+    "text": "A review of 21 trials in over 30,000 people looked at ways to prevent low back pain. Exercise combined with education lowered the chance of a new episode (moderate-quality evidence). Education alone, back belts and shoe insoles did not appear to prevent it. Whether any approach reduces sick leave was uncertain, because that evidence was low quality.",
+    "source": "Steffens et al., JAMA Internal Medicine, 2016 (meta-analysis of 21 RCTs, n=30,850)",
+    "tags": [
+      "lower back",
+      "back pain",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 66,
+    "category": "back",
+    "text": "In the WalkBack trial, 701 adults who had just recovered from low back pain were given a gradually increasing walking programme with education, or no treatment. The walkers went a median of 208 days before pain returned, versus 112 days without the programme. Most participants were women averaging 54, and walkers reported more leg and foot complaints.",
+    "source": "Pocovi et al., Lancet, 2024 (randomised controlled trial, n=701)",
+    "tags": [
+      "lower back",
+      "back pain",
+      "sitting recovery"
+    ]
+  },
+  {
+    "id": 67,
+    "category": "upper back",
+    "text": "In a trial of 447 office workers, one weekly hour of dumbbell strength training for the neck and shoulders \u2014 including reverse flies and shrugs \u2014 reduced neck and shoulder pain over 20 weeks compared with no training. Splitting the hour into one, three or nine sessions worked about equally well. Not everyone answered the final questionnaire, which the authors note.",
+    "source": "Andersen et al., British Journal of Sports Medicine, 2012 (cluster randomised trial, n=447)",
+    "tags": [
+      "upper back",
+      "shoulder tension",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 68,
+    "category": "upper back",
+    "text": "In a small trial of 47 office workers with long-lasting neck and shoulder pain, 10 weeks of shoulder-blade training reduced pain more than no training, by an amount the authors call clinically relevant. The study didn't compare it with other exercise, so it can't say this approach beats other training.",
+    "source": "Andersen et al., Journal of Occupational Rehabilitation, 2014 (randomised controlled trial, n=47)",
+    "tags": [
+      "upper back",
+      "shoulder tension",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 69,
+    "category": "upper back",
+    "text": "A review of 24 studies in adults aged 45 and over with a rounded upper back found that exercise or physical therapy modestly improved the curve (moderate-certainty evidence). It also showed small gains in quality of life, pain and back-muscle strength, though much of that evidence was low certainty. No serious side effects were reported.",
+    "source": "Ponzano et al., Archives of Osteoporosis, 2021 (meta-analysis of 24 studies)",
+    "tags": [
+      "upper back",
+      "better posture",
+      "upper back mobility"
+    ]
+  },
+  {
+    "id": 70,
+    "category": "hamstrings",
+    "text": "In 93 adults aged 21 to 39 with tight hamstrings, holding a hamstring stretch for 30 seconds, five days a week for six weeks, improved range as much as holding it for 60 seconds, and stretching three times a day did no better than once. All the stretching groups beat no stretching. It was a small study in younger adults, so it may not transfer to older people.",
+    "source": "Bandy et al., Physical Therapy, 1997 (randomised controlled trial, n=93)",
+    "tags": [
+      "hamstrings",
+      "flexibility",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 71,
+    "category": "hamstrings",
+    "text": "A review of 12 prospective studies (5,459 people, mostly followed for a year) found that restricted hamstring range of motion was linked to a higher chance of developing low back pain, and so were reduced side-bending and a flatter lower-back curve. The effect was small, and it shows a link \u2014 not that stretching your hamstrings prevents back pain.",
+    "source": "Sadler et al., BMC Musculoskeletal Disorders, 2017 (review of prospective cohorts, n=5,459)",
+    "tags": [
+      "hamstrings",
+      "back pain",
+      "flexibility"
+    ]
+  },
+  {
+    "id": 72,
+    "category": "neck",
+    "text": "Neck pain is common and rising in raw numbers. The Global Burden of Disease study estimated 203 million people had neck pain in 2020, projected to reach 269 million by 2050, driven mainly by population growth and ageing. Rates were higher in women and peaked between 45 and 74. The estimates rest on limited primary data, especially from low-income countries.",
+    "source": "GBD 2021 Neck Pain Collaborators, Lancet Rheumatology, 2024 (modelling study, 92 data sources)",
+    "tags": [
+      "neck",
+      "neck tension",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 73,
+    "category": "neck",
+    "text": "Deep neck flexor training is gentle work on the small muscles at the front of the neck. A review of 12 trials (502 people with persistent neck pain) found strong evidence it improves coordination between the deep and surface neck muscles, and it improved head and neck posture \u2014 but it did little for strength or endurance under heavier loads. Many other outcomes were tested in only one or two studies.",
+    "source": "Blomgren et al., BMC Musculoskeletal Disorders, 2018 (systematic review of 12 RCTs, n=502)",
+    "tags": [
+      "neck",
+      "neck tension",
+      "desk work recovery"
+    ]
+  },
+  {
+    "id": 74,
+    "category": "shoulders",
+    "text": "In the GRASP trial, 708 adults with a new episode of rotator cuff shoulder pain got either up to six supervised physio exercise sessions or one session of advice plus a home programme. Over 12 months, pain and function didn't differ between the two, and a steroid injection gave no long-term benefit. Patients and physios knew which treatment was given, a limitation the authors note.",
+    "source": "Hopewell et al., Lancet, 2021 (randomised controlled trial, n=708)",
+    "tags": [
+      "shoulders",
+      "shoulder tension",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 75,
+    "category": "shoulders",
+    "text": "How much shoulder movement do everyday tasks need? A review of 36 studies of people without impairments, performing 66 daily tasks, found roughly 130 degrees of lifting the arm forward or out to the side was needed. Eating, drinking and personal care were measured often, but dressing almost never, so the full range daily life needs is still uncertain.",
+    "source": "Oosterwijk et al., Physiotherapy Theory and Practice, 2018 (systematic review of 36 studies)",
+    "tags": [
+      "shoulders",
+      "joint stiffness",
+      "flexibility"
+    ]
+  },
+  {
+    "id": 76,
+    "category": "hips",
+    "text": "In a trial of 96 healthy older adults, those taught a hip flexor stretch to do at home twice a day for 10 weeks gained a modest amount of hip extension compared with a group who stretched their shoulders. Hip extension while walking trended upward but not clearly. The authors note the stretching was unsupervised after one lesson and suggest a supervised programme might do more.",
+    "source": "Kerrigan et al., Archives of Physical Medicine and Rehabilitation, 2003 (randomised controlled trial, n=96)",
+    "tags": [
+      "hips",
+      "hip tightness",
+      "independence"
+    ]
+  },
+  {
+    "id": 77,
+    "category": "hips",
+    "text": "A review pooling 14 trials of 673 people with pain around the kneecap found that adding hip strengthening to knee strengthening reduced pain and improved activity more than knee exercises alone, and the benefit lasted beyond the training period. Curiously, measured strength didn't change significantly, so why it helps is still unclear.",
+    "source": "Nascimento et al., Journal of Orthopaedic & Sports Physical Therapy, 2018 (meta-analysis of 14 trials, n=673)",
+    "tags": [
+      "hips",
+      "knee health",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 78,
+    "category": "calves",
+    "text": "A study of 566 adults aged 20 to 81 tested single-leg heel raises to fatigue and found the test very repeatable week to week. Overall, men did more than women (a median of 24 versus 21), but over age 60 women outperformed men. Age, sex, body weight and activity level all shaped the result. It gives reference values to compare against, not a target everyone should hit.",
+    "source": "H\u00e9bert-Losier et al., Physiotherapy, 2017 (cross-sectional, n=566)",
+    "tags": [
+      "calves",
+      "ankle mobility",
+      "independence"
+    ]
+  },
+  {
+    "id": 79,
+    "category": "calves",
+    "text": "A review of 8 randomised trials of stretching for plantar fasciitis (heel pain) found that stretching the sole of the foot directly reduced pain more than calf stretching, with moderate-quality evidence. Calf stretching alone or combined beat sham stretching, but that evidence was very low quality, and the authors say higher-quality trials are still needed.",
+    "source": "Siriphorn et al., Journal of Bodywork and Movement Therapies, 2020 (meta-analysis of 8 RCTs)",
+    "tags": [
+      "calves",
+      "ankle mobility",
+      "joint stiffness"
+    ]
+  },
+  {
+    "id": 80,
+    "category": "wrists",
+    "text": "A review of 30 trials (2,123 people) with tennis elbow \u2014 pain on the outer elbow \u2014 found exercise did better than passive care, wait-and-see or steroid injections, and against injections the gains in pain-free grip strength held up long term. But the authors call the effect small and the evidence low to very low certainty, and programmes varied widely.",
+    "source": "Karanasios et al., British Journal of Sports Medicine, 2021 (meta-analysis of 30 RCTs, n=2,123)",
+    "tags": [
+      "wrists",
+      "grip strength",
+      "wrist & hand mobility"
+    ]
+  },
+  {
+    "id": 81,
+    "category": "strength",
+    "text": "A Cochrane review of 121 trials (6,700 older adults) found that progressive resistance training, usually two to three times a week, had a large effect on muscle strength and a moderate to large effect on getting up from a chair, plus a smaller gain in walking speed. Serious problems were rare, though the authors caution that side effects were poorly recorded in many trials.",
+    "source": "Liu & Latham, Cochrane Database of Systematic Reviews, 2009 (121 RCTs, n=6,700)",
+    "tags": [
+      "strength",
+      "independence"
+    ]
+  },
+  {
+    "id": 82,
+    "category": "strength",
+    "text": "In a small trial, 32 adults around age 70 were randomly assigned to nine weeks of core exercises that also challenged balance, or to a control group. The core group gained trunk strength and spinal mobility and did better on walking and reaching balance tests, and attendance was high. With only 32 people over nine weeks, it shows promise more than long-term proof.",
+    "source": "Granacher et al., Gerontology, 2013 (randomised controlled trial, n=32)",
+    "tags": [
+      "strength",
+      "core strength",
+      "balance"
+    ]
   }
 ]
