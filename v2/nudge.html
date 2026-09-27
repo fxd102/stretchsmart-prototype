@@ -571,17 +571,27 @@ function showRelevantInsight() {
     });
     return score;
   }
-  const scored = pool.map(ins => ({ins, score: scoreInsight(ins)}));
-
-  // Tiered pools: top score, lower-but-positive, full fallback
-  const maxScore = Math.max(...scored.map(s => s.score));
-  const tiers = [];
-  if (maxScore > 0) {
-    tiers.push(scored.filter(s => s.score === maxScore).map(s => s.ins));
-    const lower = scored.filter(s => s.score > 0 && s.score < maxScore).map(s => s.ins);
-    if (lower.length) tiers.push(lower);
+  // RELEVANCE GATE (Faith, 2026-09-27: "the cards HAVE to be relevant to the exercise").
+  // The old tiers fell through to any card scoring above zero and then to the whole pool, so a
+  // repeat view of 4-7-8 Breathing could show a kyphosis card that shared only a secondary
+  // category. A card is relevant only if it is in this area's PRIMARY category, or in a
+  // secondary category AND shares a concern/tag with the exercise. When the relevant cards are
+  // used up we repeat one of them; when there are none we show no card. Never an unrelated one.
+  function isRelevant(ins) {
+    const iCat = (ins.category || '').toLowerCase();
+    if (preferredCats.length && preferredCats[0] === iCat) return true;
+    if (!preferredCats.includes(iCat)) return false;
+    const iTags = (ins.tags || []).map(t => t.toLowerCase());
+    return iTags.some(it => exTags.some(et => et.includes(it) || it.includes(et)));
   }
-  tiers.push(pool);
+  const scored = pool.filter(isRelevant).map(ins => ({ins, score: scoreInsight(ins)}));
+  if (!scored.length) return;   // no card beats an unrelated card
+
+  // Tiers WITHIN the relevant set only: best match first, then the rest. No whole-pool fallback.
+  const maxScore = Math.max(...scored.map(s => s.score));
+  const tiers = [scored.filter(s => s.score === maxScore).map(s => s.ins)];
+  const lower = scored.filter(s => s.score < maxScore).map(s => s.ins);
+  if (lower.length) tiers.push(lower);
 
   // Walk tiers preferring unseen insights for this exercise today
   let pick = null;
