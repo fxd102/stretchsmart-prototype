@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-13",
-      "time": "2026-09-13T08:00:20.943107-04:00",
-      "exercise": "Thumb Stretch and Opposition",
-      "exercise_index": 122
-    },
-    {
       "date": "2026-09-14",
       "time": "2026-09-14T08:01:50.615657-04:00",
       "exercise": "Single-Leg Stand",
@@ -89,6 +83,12 @@
       "time": "2026-09-27T08:05:49.683544-04:00",
       "exercise": "4-7-8 Breathing",
       "exercise_index": 136
+    },
+    {
+      "date": "2026-09-28",
+      "time": "2026-09-28T08:06:47.517398-04:00",
+      "exercise": "Pursed Lip Breathing",
+      "exercise_index": 137
     }
   ]
 }
