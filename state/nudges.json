@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-15",
-      "time": "2026-09-15T08:09:42.574239-04:00",
-      "exercise": "Heel-to-Toe Walk",
-      "exercise_index": 124
-    },
-    {
       "date": "2026-09-16",
       "time": "2026-09-16T08:09:54.854514-04:00",
       "exercise": "Standing March",
@@ -89,6 +83,12 @@
       "time": "2026-09-29T08:07:46.733194-04:00",
       "exercise": "Rib Expansion Breathing",
       "exercise_index": 138
+    },
+    {
+      "date": "2026-09-30",
+      "time": "2026-09-30T08:08:46.707376-04:00",
+      "exercise": "Crocodile Breathing",
+      "exercise_index": 139
     }
   ]
 }
