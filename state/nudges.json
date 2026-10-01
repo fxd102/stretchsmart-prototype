@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-16",
-      "time": "2026-09-16T08:09:54.854514-04:00",
-      "exercise": "Standing March",
-      "exercise_index": 125
-    },
-    {
       "date": "2026-09-17",
       "time": "2026-09-17T08:09:51.647953-04:00",
       "exercise": "Weight Shift",
@@ -89,6 +83,12 @@
       "time": "2026-09-30T08:08:46.707376-04:00",
       "exercise": "Crocodile Breathing",
       "exercise_index": 139
+    },
+    {
+      "date": "2026-10-01",
+      "time": "2026-10-01T08:09:27.121644-04:00",
+      "exercise": "Sighing Exhale",
+      "exercise_index": 140
     }
   ]
 }
