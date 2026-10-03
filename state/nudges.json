@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-18",
-      "time": "2026-09-18T08:08:50.248855-04:00",
-      "exercise": "Clock Reach",
-      "exercise_index": 127
-    },
-    {
       "date": "2026-09-19",
       "time": "2026-09-19T08:08:50.232822-04:00",
       "exercise": "BOSU or Cushion Stand",
@@ -89,6 +83,12 @@
       "time": "2026-10-02T08:00:23.927565-04:00",
       "exercise": "Alternate Nostril Breathing",
       "exercise_index": 141
+    },
+    {
+      "date": "2026-10-03",
+      "time": "2026-10-03T08:01:15.468675-04:00",
+      "exercise": "Side Bend Stretch",
+      "exercise_index": 142
     }
   ]
 }
