@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-19",
-      "time": "2026-09-19T08:08:50.232822-04:00",
-      "exercise": "BOSU or Cushion Stand",
-      "exercise_index": 128
-    },
-    {
       "date": "2026-09-20",
       "time": "2026-09-20T08:09:07.054887-04:00",
       "exercise": "Lateral Step-Over",
@@ -89,6 +83,12 @@
       "time": "2026-10-03T08:01:15.468675-04:00",
       "exercise": "Side Bend Stretch",
       "exercise_index": 142
+    },
+    {
+      "date": "2026-10-04",
+      "time": "2026-10-04T08:02:09.667576-04:00",
+      "exercise": "Sun Salutation Modified",
+      "exercise_index": 143
     }
   ]
 }
