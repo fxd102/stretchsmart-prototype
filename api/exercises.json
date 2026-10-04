@@ -6519,7 +6519,13 @@
     "reason": "Breath-movement coordination is key to sun salutations"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "insight_categories": [
+   "flexibility"
+  ],
+  "suppress_insights": [
+   4
+  ]
  },
  {
   "name": "World's Greatest Stretch",
@@ -6566,7 +6572,14 @@
     "reason": "Both combine hip and thoracic mobility"
    }
   ],
-  "builds_on": "Hip Flexor Stretch (Half-Kneel)"
+  "builds_on": "Hip Flexor Stretch (Half-Kneel)",
+  "insight_categories": [
+   "flexibility",
+   "hips"
+  ],
+  "suppress_insights": [
+   4
+  ]
  },
  {
   "name": "Inchworm",
@@ -6605,7 +6618,11 @@
     "reason": "Inchworm includes a plank component"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "insight_categories": [
+   "strength",
+   "flexibility"
+  ]
  },
  {
   "name": "Standing Full Body Shake",
@@ -6643,7 +6660,8 @@
     "name": "Standing March",
     "reason": "Shake then march to wake up the body"
    }
-  ]
+  ],
+  "insight_categories": []
  },
  {
   "name": "Desk Reset Sequence",
@@ -6694,7 +6712,12 @@
   "stop_condition": "Stop any single component that provokes pain, dizziness, or tingling — skip it and continue with the rest.",
   "regression": "Do fewer of the components, or fewer reps of each.",
   "remediation": "See each individual exercise's cues if any part feels off.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "insight_categories": [
+   "neck",
+   "upper back",
+   "flexibility"
+  ]
  },
  {
   "name": "Morning Wake-Up Flow",
@@ -6733,6 +6756,12 @@
     "name": "Standing March",
     "reason": "Flow then march to fully wake up"
    }
+  ],
+  "insight_categories": [
+   "flexibility"
+  ],
+  "suppress_insights": [
+   4
   ]
  },
  {
@@ -6780,7 +6809,13 @@
     "reason": "Windmill adds rotation to the fold"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "insight_categories": [
+   "flexibility"
+  ],
+  "suppress_insights": [
+   4
+  ]
  },
  {
   "name": "Downward Dog",
@@ -6820,7 +6855,14 @@
     "reason": "Down dog also stretches the calves"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "insight_categories": [
+   "flexibility",
+   "hamstrings"
+  ],
+  "suppress_insights": [
+   4
+  ]
  },
  {
   "name": "Cobra/Upward Dog",
@@ -6860,7 +6902,11 @@
     "reason": "Extension then flexion for spinal balance"
    }
   ],
-  "builds_on": "Sphinx Pose"
+  "builds_on": "Sphinx Pose",
+  "insight_categories": [
+   "back",
+   "flexibility"
+  ]
  },
  {
   "name": "Warrior II Pose",
@@ -6908,7 +6954,14 @@
     "reason": "Both open the hips in a wide stance"
    }
   ],
-  "builds_on": "Sumo Squat"
+  "builds_on": "Sumo Squat",
+  "insight_categories": [
+   "legs",
+   "mobility"
+  ],
+  "suppress_insights": [
+   26
+  ]
  },
  {
   "name": "Walking Lunge with Twist",
@@ -7086,7 +7139,8 @@
   "stop_condition": "Stop tensing any area that's injured or wants to cramp, and don't hold the breath.",
   "regression": "Use lighter tension, or skip any sore/injured group and just relax it.",
   "remediation": "If a group cramps (calves and feet are common), use gentler tension there.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "insight_categories": []
  },
  {
   "name": "Jaw Release",
@@ -7129,7 +7183,8 @@
   "stop_condition": "Stop with any jaw-joint (TMJ) pain or clicking that hurts. It should feel like a release, not a stretch.",
   "regression": "Just soften the jaw without any specific tongue placement.",
   "remediation": "If the jaw is painful or clicky (TMJ issues), keep it very gentle and see a clinician if it persists.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "insight_categories": []
  },
  {
   "name": "Eye Circles",
@@ -7172,7 +7227,8 @@
   "stop_condition": "Stop with eye strain, headache, or dizziness — reduce the range and slow down; rest if the eyes feel tired.",
   "regression": "Smaller circles, fewer reps, blink between sets.",
   "remediation": "If it triggers dizziness, do fewer and slower, and look at a far point to reset.",
-  "validation": "draft_pending_pt"
+  "validation": "draft_pending_pt",
+  "insight_categories": []
  },
  {
   "name": "Lunge Matrix",
@@ -7260,7 +7316,15 @@
     "reason": "Combines two exercises for efficiency"
    }
   ],
-  "builds_on": "Wall Sit"
+  "builds_on": "Wall Sit",
+  "insight_categories": [
+   "legs",
+   "strength",
+   "calves"
+  ],
+  "suppress_insights": [
+   79
+  ]
  },
  {
   "name": "Stork Stand with Hip Hinge",
@@ -7347,7 +7411,12 @@
     "reason": "Mobility for the overhead position"
    }
   ],
-  "builds_on": "Bodyweight Squat"
+  "builds_on": "Bodyweight Squat",
+  "insight_categories": [
+   "strength",
+   "legs",
+   "mobility"
+  ]
  },
  {
   "name": "Reverse Lunge to Knee Drive",
@@ -8039,7 +8108,13 @@
   "review_priority": "high",
   "review_note": "PT APPROVED 2026-09-15 by FaithPT (StretchSmart's PT cofounder), answering the 09-10 queue review, verbatim (19:05Z): \"Spinal wave is excellent EXCEPT- I know what you are getting at re: complex movement patterns and dementia, but I am not sure this qualifies as a true “complex movement pattern”. I would just leave that part out. It is a great “loosening” exercise for practically everyone, and really appreciate the caution of pain with flexion.\" 'THAT PART' IS NOT IN THIS RECORD: it is research insight id 26 (\"...complex movement patterns correlate with preserved cognition in aging adults\"), which the nudge page attached here because this exercise is filed Full Body (category mobility +8, first tag 'full body' +3). Suppressed for this exercise via suppress_insights; the insight itself is untouched - she accepted the idea and disputed only whether this exercise qualifies. Record text and clinical fields approved as written. COUNT/TIME RESTORED 2026-09-16 on the product owner's instruction (\"Add the times back into the approved ones - she was worried about form, not count. Don't bother to ask her, keep her focused on reviewing new ones.\"). The numbers are the app's own prior library text, NOT new clinical prescription: FaithPT approved this exercise's FORM and was not asked about the count.",
   "suppress_insights": [
-   26
+   26,
+   67,
+   68
+  ],
+  "insight_categories": [
+   "back",
+   "upper back"
   ]
  },
  {
@@ -11159,7 +11234,11 @@
     "reason": "Both include the downward dog position"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "insight_categories": [
+   "strength",
+   "flexibility"
+  ]
  },
  {
   "name": "Slow Mountain Climber",
