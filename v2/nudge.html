@@ -550,7 +550,11 @@ function showRelevantInsight() {
 
   const exTags = [...(exercise.concerns || []), ...(exercise.tags || [])].map(t => t.toLowerCase());
   const exArea = (exercise.body_area || '').toLowerCase();
-  const preferredCats = BODY_AREA_TO_CATEGORIES[exArea] || [];
+  // An exercise can name its own insight categories when its body_area's mapping doesn't
+  // fit it (e.g. Side Bend Stretch is filed under Full Body but is a stretch, not a
+  // balance or coordination drill).
+  const preferredCats = (exercise.insight_categories || BODY_AREA_TO_CATEGORIES[exArea] || [])
+    .map(c => c.toLowerCase());
 
   // Score: category-match dominates (primary +8, secondary +4); position-weighted tag
   // overlap stacks on top (1st tag = 3pts, 2nd = 2pts, rest = 1pt). This fixes the

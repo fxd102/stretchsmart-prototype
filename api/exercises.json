@@ -6473,6 +6473,12 @@
     "name": "Seated Twist",
     "reason": "Side bend and twist cover all spinal movements"
    }
+  ],
+  "insight_categories": [
+   "flexibility"
+  ],
+  "suppress_insights": [
+   4
   ]
  },
  {
