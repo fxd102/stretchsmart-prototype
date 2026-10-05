@@ -637,5 +637,27 @@
       "core strength",
       "balance"
     ]
+  },
+  {
+    "category": "flexibility",
+    "text": "Office workers with long-lasting neck pain who did simple neck and shoulder stretches twice a day, five days a week, had less pain after just four weeks than workers who only got ergonomics advice: about 1.4 points more improvement on a 0-10 scale, plus better neck function.",
+    "source": "Tunwattanapong et al., Clinical Rehabilitation, 2016 (randomised controlled trial, n=96)",
+    "tags": [
+      "stretching",
+      "desk work recovery",
+      "neck tension"
+    ],
+    "id": 83
+  },
+  {
+    "category": "flexibility",
+    "text": "Short movement breaks may ease the aches of long sitting. A 2026 review of six small trials (210 people in total) found that in four of them, breaks of 2 to 10 minutes (stretching, light exercise or stair climbing) reduced discomfort more than sitting still or resting.",
+    "source": "Zeng et al., BMC Public Health, 2026 (systematic review of 6 RCTs, n=210)",
+    "tags": [
+      "sitting recovery",
+      "desk work recovery",
+      "stretching"
+    ],
+    "id": 84
   }
 ]
