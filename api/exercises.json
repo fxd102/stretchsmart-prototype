@@ -6541,7 +6541,7 @@
    "upper back mobility",
    "flexibility"
   ],
-  "desc": "Lunge forward, place the same-side elbow inside the front foot, then rotate the same arm up to the ceiling. Hold 10 seconds, switch sides. 3 reps each side.",
+  "desc": "Step into a long lunge and put both hands on the floor inside your front foot (use a block or a thick book if the floor is too far). Keep the outside hand down and reach the arm nearest your front leg up to the ceiling, turning your chest to follow it. Hold 10 seconds, then bring it down. 3 times, then switch sides. Harder: lower that elbow toward the floor beside your foot before you reach up.",
   "phases": [
    {
     "label": "First side — 3 holds of 10 seconds",
@@ -6573,6 +6573,11 @@
    }
   ],
   "builds_on": "Hip Flexor Stretch (Half-Kneel)",
+  "form_cue": "Long lunge, front knee over the ankle, back leg long. The turn comes from your upper back: let your chest and eyes follow the reaching hand, and keep the hips square to the floor. The supporting hand stays planted.",
+  "stop_condition": "Stop with sharp pain in the hip, groin, knee or low back, or pinching at the front of the hip. A strong stretch is fine; pain is not. Come up slowly if you feel lightheaded.",
+  "regression": "Put the back knee down on a cushion, and rest the supporting hand on a block, a book or a chair seat. Turn only as far as is comfortable.",
+  "remediation": "If you can't balance or keep the front knee steady, practise the half-kneeling hip flexor stretch and Thread the Needle separately first, then put them together.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility",
    "hips"
