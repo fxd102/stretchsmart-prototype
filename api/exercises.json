@@ -162,7 +162,12 @@
     "reason": "Strengthens deep neck flexors for better rotation"
    }
   ],
-  "builds_on": "Gentle Neck Nod"
+  "builds_on": "Gentle Neck Nod",
+  "form_cue": "Turn your head as if on a spindle: chin level, nose travelling straight across, shoulders square and relaxed. You should feel a mild stretch down the side of the neck you are turning away from.",
+  "stop_condition": "Stop with dizziness, blurred vision, sharp or pinching pain, or numbness or tingling into an arm. A gentle pull at the end of the turn is normal; pain is not, so never force the last bit of range.",
+  "regression": "Turn only part of the way and shorten the hold, or do it sitting in a chair with your back supported.",
+  "remediation": "If your chin tips or your shoulders turn with your head, slow down and make the turn smaller. Practise Gentle Neck Nod first to find a relaxed, level head position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chin Tuck",
@@ -340,7 +345,12 @@
     "reason": "CARs explore range, chin tucks build control"
    }
   ],
-  "builds_on": "Neck Rotation"
+  "builds_on": "Neck Rotation",
+  "form_cue": "Move only your head and neck, slowly, keeping shoulders down and still and your jaw relaxed. Draw a smooth circle you fully control; it should feel like an easy stretch moving around the neck, never a crunch at the back.",
+  "stop_condition": "Stop with dizziness, light-headedness, visual changes, sharp or pinching pain, or tingling into an arm. Ease off as your head tips back; if looking up brings on symptoms, leave that part out. Stay near a support in case you feel unsteady.",
+  "regression": "Draw a much smaller circle, or do half circles across the front only (ear to shoulder, chin toward chest, other ear to shoulder). Sitting down is fine.",
+  "remediation": "If the circle is jerky or your shoulders hike up, shrink it and slow down. Go back to Neck Rotation until turning each way feels smooth, then try small circles again.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Isometric Neck Strengthening",
@@ -447,7 +457,12 @@
     "reason": "Floor version is the progression of seated chin tucks"
    }
   ],
-  "builds_on": "Isometric Neck Strengthening"
+  "builds_on": "Isometric Neck Strengthening",
+  "form_cue": "Tuck your chin first, as if making a double chin, then lift your head just clear of the floor and keep the tuck. The effort should be deep in the front of the neck, with your jaw relaxed and your breathing steady.",
+  "stop_condition": "Stop with sharp neck pain, headache, dizziness, or numbness or tingling into an arm, or if your neck starts to shake hard. Muscle tiredness in the front of the neck is expected; pain or strain at the back of the neck is not.",
+  "regression": "Do the chin tuck only and leave your head resting on the floor, or lift for a shorter hold and do fewer reps.",
+  "remediation": "If your chin pokes toward the ceiling as you lift, the tuck has been lost: lower, reset the tuck and lift less. Practise Isometric Neck Strengthening until the tuck holds easily.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Suboccipital Release",
@@ -487,7 +502,12 @@
     "reason": "Active mobility after passive release"
    }
   ],
-  "builds_on": "Chin Tuck"
+  "builds_on": "Chin Tuck",
+  "form_cue": "Rest the balls just under the bony ridge at the base of your skull, one each side of the spine, not on the neck itself. Let your head be heavy and keep the nods and turns tiny and slow. Expect firm, dull pressure.",
+  "stop_condition": "Stop with dizziness, nausea, visual changes, a headache that builds, sharp pain, or numbness or tingling in your face or arms. Dull, tolerable pressure is normal. Sit up slowly afterwards.",
+  "regression": "Use softer balls or a rolled towel, put a folded towel over the balls to soften them, and stay for a shorter time.",
+  "remediation": "If you find yourself tensing or holding your breath against the pressure, it is too much: soften the prop and lie still without nodding. Practise Chin Tuck first to learn the small nodding motion.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Shrug Release",
@@ -568,7 +588,12 @@
     "name": "Arm Circles",
     "reason": "Progresses from shoulder-only to full arm movement"
    }
-  ]
+  ],
+  "form_cue": "Let the arms hang loose and move only the shoulders: up toward the ears, around and down in a smooth, slow circle. Keep your head still and your chin level. It should feel like easy movement around the shoulders and upper back.",
+  "stop_condition": "Stop with sharp or pinching pain in the shoulder or neck, numbness or tingling down an arm, or dizziness. Painless clicking and a mild feeling of effort are normal; pain is not.",
+  "regression": "Make the circles smaller and slower, do fewer of them, or do the exercise sitting in a chair.",
+  "remediation": "If your neck tenses or your head pokes forward, you are forcing the circle. Shrink it, breathe out as the shoulders drop, and practise a simple slow shrug up and down first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Arm Circles",
@@ -607,7 +632,12 @@
     "reason": "Both open up shoulder range of motion"
    }
   ],
-  "builds_on": "Shoulder Rolls"
+  "builds_on": "Shoulder Rolls",
+  "form_cue": "Arms straight out to the sides at about shoulder height, then circle from the shoulder joint, starting small. Keep the shoulders down away from your ears and your ribs and trunk still. You should feel the shoulder muscles working.",
+  "stop_condition": "Stop with sharp or pinching pain at the top or front of the shoulder, numbness or tingling in the arm, or dizziness. Tired, warm shoulder muscles are normal effort; a catch or pinch in the joint is not.",
+  "regression": "Keep the circles small, hold the arms lower than shoulder height, or bend the elbows and circle with your fingertips on your shoulders. Rest partway through if you need to.",
+  "remediation": "If your shoulders hike up or your back sways, the circles are too big or too fast. Lower the arms, go smaller and slower, and go back to Shoulder Rolls until that is easy.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Cross-Body Shoulder Stretch",
@@ -653,7 +683,12 @@
     "name": "Scapular Squeeze",
     "reason": "Stretch the front, strengthen the back"
    }
-  ]
+  ],
+  "form_cue": "Bring the arm straight across your chest and hold it above or below the elbow, not on the joint. Keep that shoulder down and your chest facing forward. Feel the stretch in the back of the shoulder.",
+  "stop_condition": "Stop if you feel pinching in the front or top of the shoulder, sharp pain, or numbness or tingling in the arm. A steady pull in the back of the shoulder is the normal stretch feeling.",
+  "regression": "Pull less firmly, bring the arm across a little lower than shoulder height, or hold for a shorter time.",
+  "remediation": "If the shoulder hikes up or your body twists to follow the arm, ease off the pull. Drop the shoulder away from your ear first, square your chest, then draw the arm across only as far as it stays down.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Overhead Reach",
@@ -691,7 +726,12 @@
     "name": "Cross-Body Shoulder Stretch",
     "reason": "Together they cover overhead and cross-body ranges"
    }
-  ]
+  ],
+  "form_cue": "Interlace the fingers, turn the palms up and reach tall through both arms, with your ribs down and your lower back long rather than arched. Keep breathing. Feel a stretch along your sides, shoulders and upper back.",
+  "stop_condition": "Stop with pinching at the top of the shoulder, sharp pain, numbness or tingling in the arms or hands, or dizziness or lightheadedness. A lengthening stretch is normal; lower your arms slowly.",
+  "regression": "Reach only as high as is comfortable, keep the elbows a little bent, reach without interlacing your fingers, or do it sitting in a chair. Use a shorter hold.",
+  "remediation": "If your lower back arches or your ribs flare as the arms go up, you have run out of shoulder range. Soften the knees, gently draw the ribs down, and stop the reach at the point where your back stays still.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder CARs",
@@ -738,7 +778,12 @@
     "reason": "CARs explore range, wall angels build control in range"
    }
   ],
-  "builds_on": "Arm Circles"
+  "builds_on": "Arm Circles",
+  "form_cue": "Stand tall and keep the whole body still while one arm slowly draws the biggest circle it can, as if your trunk were set in concrete. The movement comes only from the shoulder. Go slowest through the stiff spots.",
+  "stop_condition": "Stop with a sharp pinch or catch in the shoulder, a feeling that the joint is slipping, or numbness or tingling in the arm. Stiffness and muscle effort are normal; work around a painful spot, never through it.",
+  "regression": "Make a smaller circle that stays inside your comfortable range, relax the fist, or do fewer circles. Standing side-on next to a wall can help you keep the trunk still.",
+  "remediation": "If your trunk leans or twists or your ribs flare to make the circle bigger, shrink the circle until only the arm moves. Go back to Arm Circles until that feels smooth and easy.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Angel",
@@ -777,7 +822,12 @@
     "reason": "Wall angels need scapular control"
    }
   ],
-  "builds_on": "Overhead Reach"
+  "builds_on": "Overhead Reach",
+  "form_cue": "Head, upper back and hips rest on the wall with your feet a little way out from it. Slide the arms up and down slowly, keeping your ribs down and lower back from arching. Feel the work between the shoulder blades and a stretch across the chest.",
+  "stop_condition": "Stop with pinching at the top or front of the shoulder, sharp pain, numbness or tingling in the arms, or neck strain. Effort in the upper back and a chest stretch are normal.",
+  "regression": "Step your feet further from the wall and bend the knees slightly, slide only part of the way up, or let your wrists come off the wall and keep just the elbows touching.",
+  "remediation": "If your lower back arches or your head pops off the wall, you have gone past your range. Slide only as high as your back stays put. Practise Overhead Reach first to build the overhead position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Doorway Chest Stretch",
@@ -828,7 +878,12 @@
     "name": "Wall Angel",
     "reason": "Both counter forward-shoulder posture"
    }
-  ]
+  ],
+  "form_cue": "Forearms on the frame with elbows at about shoulder height, then step forward and let the chest move through. Stand tall with ribs down and chin level. Feel the stretch across the chest and the front of the shoulders.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, numbness or tingling in the arms or hands, or dizziness. A broad pull across the chest is the normal stretch feeling.",
+  "regression": "Take a smaller step so the lean is lighter, set the elbows a little lower than shoulder height, or stretch one arm at a time. Use a shorter hold.",
+  "remediation": "If your lower back arches or your head juts forward, you are leaning too far. Step back, tighten your stomach gently, and lean again only as far as your trunk stays in one straight line.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Band Pull-Apart",
@@ -867,7 +922,12 @@
     "reason": "Both build posterior shoulder strength"
    }
   ],
-  "builds_on": "Scapular Squeeze"
+  "builds_on": "Scapular Squeeze",
+  "form_cue": "Arms straight in front at shoulder height, wrists straight. Start the pull by drawing the shoulder blades back and together, then let the arms open. Shoulders stay down. Feel it between the shoulder blades and at the back of the shoulders.",
+  "stop_condition": "Stop with pinching in the front of the shoulder, neck strain, sharp pain, or numbness or tingling in the arms. Tired muscles between the shoulder blades are normal effort. Check the band for nicks and do not pull it toward your face.",
+  "regression": "Use a lighter band, hold it with your hands wider apart so there is less tension, pull only part of the way, or do fewer reps.",
+  "remediation": "If your shoulders shrug up or you lean back to finish the pull, the band is too strong. Lighten it, and practise Scapular Squeeze first to find the shoulder blade movement without resistance.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "External Rotation with Band",
@@ -906,7 +966,12 @@
     "reason": "Stretch internal rotators, strengthen external rotators"
    }
   ],
-  "builds_on": "Band Pull-Apart"
+  "builds_on": "Band Pull-Apart",
+  "form_cue": "Keep the elbows tucked against your sides and bent to 90 degrees, wrists straight. Turn the forearms outward like a door opening on a hinge, then return slowly. Feel it in the back of the shoulders.",
+  "stop_condition": "Stop with sharp or pinching pain in the shoulder, pain down the arm, or numbness or tingling. A deep, tired effort at the back of the shoulder is normal. Check the band for nicks before you use it.",
+  "regression": "Use a lighter band, hold it with less tension to start, turn out through a smaller range, or do fewer reps. You can also do one arm at a time.",
+  "remediation": "If your elbows drift away from your sides or you lean back, the band is too strong. Hold a small rolled towel between each elbow and your ribs as a check, and go back to Band Pull-Apart if it stays hard.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Internal Rotation Stretch",
@@ -953,7 +1018,12 @@
     "reason": "Both open up the anterior shoulder"
    }
   ],
-  "builds_on": "Cross-Body Shoulder Stretch"
+  "builds_on": "Cross-Body Shoulder Stretch",
+  "form_cue": "Stand tall with the back of your hand resting on the frame behind you at waist height. Turn your chest slowly away, keeping the shoulder back and down rather than rolling forward. Feel a mild stretch in the front of the shoulder.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, a feeling that the shoulder is shifting or unstable, or numbness or tingling in the arm or hand. Check with a clinician first if this shoulder has ever dislocated.",
+  "regression": "Turn away only a few degrees and stop at the first hint of stretch, place the hand lower than waist height, or use a shorter hold.",
+  "remediation": "If the shoulder rolls forward or you lean your trunk to reach the frame, stand closer and turn less. If you cannot get the hand behind you comfortably, stay with Cross-Body Shoulder Stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Flexion with Dowel",
@@ -992,7 +1062,12 @@
     "reason": "Thoracic mobility enables full overhead reach"
    }
   ],
-  "builds_on": "Wall Angel"
+  "builds_on": "Wall Angel",
+  "form_cue": "Wide grip, arms long, ribs down. Raise the stick slowly and evenly with both arms and stop where the shoulders stop moving comfortably, not where you can push it. Feel a stretch in the shoulders, chest and under the arms.",
+  "stop_condition": "Stop with pinching at the top of the shoulder, sharp pain, a slipping or unstable feeling, numbness or tingling, or dizziness. Never force the stick behind your head. Skip this if a shoulder has dislocated, unless a clinician has cleared it.",
+  "regression": "Take a wider grip and raise the stick only to forehead height or just overhead, without going behind the head. You can also do it lying on your back, or do fewer reps.",
+  "remediation": "If your lower back arches, your head pushes forward or one arm lags, you are past your range. Stop the lift where the ribs stay down. Practise Wall Angel until overhead reach is comfortable.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Scapular Squeeze",
@@ -1222,7 +1297,12 @@
     "name": "Thoracic Extension",
     "reason": "Both work spinal extension/flexion"
    }
-  ]
+  ],
+  "form_cue": "Hands under shoulders, knees under hips. Round the whole spine up toward the ceiling, then let the chest and belly sink, moving slowly with your breath. Spread the movement along the whole back instead of hinging at one spot.",
+  "stop_condition": "Stop with sharp or pinching back pain, tingling down an arm or leg, dizziness, or wrist or knee pain that does not ease. A gentle stretch along the spine is normal; pain is not.",
+  "regression": "Make both the arch and the dip much smaller and do fewer reps. If your wrists or knees object, kneel on a folded towel or do the same rounding and arching sitting on a chair with hands on your thighs.",
+  "remediation": "If the movement all comes from your low back or your elbows keep bending, slow down and shrink the range. Keep the arms straight and think of moving one section of the spine at a time.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Foam Roller Thoracic Extension",
@@ -1261,7 +1341,12 @@
     "reason": "Use improved mobility from rolling in wall angels"
    }
   ],
-  "builds_on": "Thoracic Extension"
+  "builds_on": "Thoracic Extension",
+  "form_cue": "Roller sits across the upper back, never the low back or neck. Knees bent, feet flat, hips down, head cradled in your hands. Lean back gently over the roller so the bend comes from between the shoulder blades, and keep your ribs from flaring.",
+  "stop_condition": "Stop with sharp or pinching spine pain, rib pain, dizziness, neck strain, or tingling into the arms. Pressure and a stretch across the upper back are normal. Check with a clinician first if you have osteoporosis or a past spinal fracture.",
+  "regression": "Keep your hips on the floor and only lean back a little without rolling, or use a rolled towel in place of the roller. A shorter time is fine.",
+  "remediation": "If your low back arches or your neck drops back, lower the ribs, tuck the chin slightly and take a smaller lean. If it still feels uncontrolled, practise Thoracic Extension first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Thread the Needle",
@@ -1308,7 +1393,12 @@
     "reason": "Both are thoracic rotation exercises in different positions"
    }
   ],
-  "builds_on": "Thoracic Rotation"
+  "builds_on": "Thoracic Rotation",
+  "form_cue": "Start on hands and knees with hips over knees. Slide one arm, palm up, under your chest and let the upper back turn to follow it while the hips stay put. You should feel a stretch across the back of the shoulder and between the shoulder blades.",
+  "stop_condition": "Stop with sharp shoulder or neck pain, pinching in the low back, numbness or tingling in the arm, or dizziness with your head lowered. A pulling stretch in the upper back is normal.",
+  "regression": "Reach only a short way under and keep your head up off the floor, with a shorter hold or fewer reps. Put a folded towel under your knees if they are sore.",
+  "remediation": "If your hips swing sideways or you collapse onto the shoulder, reduce the reach and keep pressing the floor away with the supporting hand. Practise Thoracic Rotation first if the twist feels stuck.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Open Book Stretch",
@@ -1355,7 +1445,12 @@
     "reason": "Open book also stretches the chest"
    }
   ],
-  "builds_on": "Thoracic Rotation"
+  "builds_on": "Thoracic Rotation",
+  "form_cue": "Lie on your side, knees bent and stacked, arms straight out in front with palms together. Lift the top arm up and over to open your chest toward the ceiling, eyes following the hand, knees staying together. Feel it across the chest and upper back.",
+  "stop_condition": "Stop with sharp or pinching pain in the shoulder, back or neck, or numbness or tingling down the arm. A stretch across the chest and mid-back is normal; do not force the arm toward the floor.",
+  "regression": "Open only partway and rest the arm on a pillow placed behind you. Put a pillow under your head and another between your knees, and use a shorter hold.",
+  "remediation": "If your top knee lifts or your hips roll back with you, the twist has moved to the low back. Pin the knees together, make the opening smaller, or practise Thoracic Rotation first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prone Y Raise",
@@ -1394,7 +1489,12 @@
     "reason": "Standing and prone versions of similar muscle work"
    }
   ],
-  "builds_on": "Scapular Squeeze"
+  "builds_on": "Scapular Squeeze",
+  "form_cue": "Lie face down, forehead on a small towel, arms overhead in a Y with thumbs up. Draw the shoulder blades down and back, then lift the arms just a few inches. The work belongs between and below the shoulder blades, not in the neck.",
+  "stop_condition": "Stop with pinching at the top or front of the shoulder, neck strain, low-back pain, or tingling in the arms. Muscle effort and mild tiredness in the mid-back are normal.",
+  "regression": "Lower the arms to a wider, lower V and make the lift tiny, or lift one arm at a time. A shorter hold and fewer reps are fine.",
+  "remediation": "If your shoulders shrug toward your ears or your chin lifts, lower the arms and reset the shoulder blades down before each lift. If that keeps happening, go back to Scapular Squeeze.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prone T Raise",
@@ -1433,7 +1533,12 @@
     "reason": "Same muscles, different position"
    }
   ],
-  "builds_on": "Scapular Squeeze"
+  "builds_on": "Scapular Squeeze",
+  "form_cue": "Lie face down, forehead on a small towel, arms straight out to the sides with thumbs up. Squeeze the shoulder blades together to lift the arms a little, keeping the neck long. Feel it between the shoulder blades.",
+  "stop_condition": "Stop with pinching in the front of the shoulder, neck strain, low-back pain, or tingling in the arms. Muscle effort between the shoulder blades is normal.",
+  "regression": "Bend your elbows so the arms are shorter, lift only an inch, or lift one arm at a time. A shorter hold and fewer reps are fine.",
+  "remediation": "If your shoulders hike up, your chin lifts or your low back arches, make the lift smaller and keep your forehead down. If you still cannot feel the shoulder blades working, go back to Scapular Squeeze.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Sphinx Pose",
@@ -1471,7 +1576,12 @@
     "name": "Child's Pose",
     "reason": "Sphinx extends, child's pose flexes — good pair"
    }
-  ]
+  ],
+  "form_cue": "Lie face down with elbows under shoulders and forearms flat. Draw the chest gently forward and up while the hips and legs stay heavy on the floor. Keep the shoulders away from your ears and your gaze slightly ahead, neck long.",
+  "stop_condition": "Stop with sharp or pinching low-back pain, pain or tingling running into the buttock or leg, or neck pain. A mild feeling of compression or stretch in the back and front of the trunk is normal.",
+  "regression": "Slide your elbows further forward so the chest is lower, or rest on a pillow under your chest. Hold for a shorter time.",
+  "remediation": "If you sink between your shoulders or clench your buttocks, press the forearms lightly into the floor and relax the legs. If the low back still pinches, lower the chest until it eases.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Twist",
@@ -1560,7 +1670,12 @@
     "name": "Pelvic Tilt",
     "reason": "Both address lower back mobility"
    }
-  ]
+  ],
+  "form_cue": "Stand with feet hip-width, knees soft, hands on the back of your pelvis for support. Lean back slowly from the spine, hips staying over your feet, eyes forward instead of tipping the head back. It should feel like mild pressure in the low back.",
+  "stop_condition": "Stop with dizziness, unsteadiness, sharp back pain, or pain or tingling spreading into the buttock or leg. Stand with a counter or sturdy chair within reach in case you lose balance.",
+  "regression": "Lean back only a little, with a shorter hold and fewer reps, and keep the back of your thighs against a counter for support.",
+  "remediation": "If your knees bend, your hips push far forward or your head drops back, you are swaying instead of arching. Shorten the lean, look straight ahead, and keep your weight over the middle of your feet.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pelvic Tilt",
@@ -1598,7 +1713,12 @@
     "name": "Dead Bug",
     "reason": "Both build supine core control"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back with knees bent and feet flat. Gently tip your pelvis so the low back flattens into the floor, using the lower belly, not by pushing with your feet or squeezing your buttocks. Keep breathing; this is a small movement.",
+  "stop_condition": "Stop with sharp back pain, pain or tingling down a leg, or cramping that does not settle. Light effort in the lower belly is normal; your breath should never be held.",
+  "regression": "Make the tilt smaller and hold it more briefly, with fewer reps. A pillow under your head and a slow rock between a little arch and a little flattening is enough.",
+  "remediation": "If your hips lift or your buttocks grip hard, you are bridging instead of tilting. Put a hand under your low back and practise pressing it lightly, then releasing, until the motion feels easy.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Knee-to-Chest Stretch",
@@ -1644,7 +1764,12 @@
     "name": "Supine Twist",
     "reason": "Knee-to-chest then twist for complete lower back relief"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back and draw one knee toward your chest with both hands, keeping your head and shoulders relaxed on the floor. Pull gently and steadily. You should feel a stretch in the low back and buttock.",
+  "stop_condition": "Stop with pinching in the front of the hip, sharp back pain, knee pain, or tingling down the leg. A gentle pulling stretch is normal. After a hip replacement, check with your surgeon or physical therapist before doing this.",
+  "regression": "Hold behind the thigh instead of over the shin and pull only partway, keeping the other knee bent with the foot flat. Skip the both-knees finish, or use a shorter hold.",
+  "remediation": "If your head and shoulders lift or you tug with your arms, ease off and rest your head on a pillow. If your hands cannot reach comfortably, loop a towel behind the thigh.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Supine Twist",
@@ -1691,7 +1816,12 @@
     "name": "Open Book Stretch",
     "reason": "Both are rotational stretches in supine/side-lying"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back with arms out in a T and knees bent. Lower both knees slowly to one side, letting gravity do the work, while both shoulders stay heavy on the floor. Feel the stretch through the low back and outer hip.",
+  "stop_condition": "Stop with sharp or pinching back pain, pain or tingling down a leg, or pain in the hip. A gentle twisting stretch is normal; do not push the knees down with your hand.",
+  "regression": "Lower the knees only partway and rest them on a pillow or cushion beside you. A shorter hold is fine.",
+  "remediation": "If the opposite shoulder lifts off the floor, you have gone further than your back can twist. Bring the knees back up until the shoulder settles, and stay there.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bird Dog",
@@ -1738,7 +1868,12 @@
     "reason": "Warm up with cat-cow, then challenge with bird dog"
    }
   ],
-  "builds_on": "Pelvic Tilt"
+  "builds_on": "Pelvic Tilt",
+  "form_cue": "From hands and knees, brace your belly lightly, then slide one arm forward and the opposite leg back until both are level with your trunk, no higher. Keep your back flat and hips square to the floor, eyes down.",
+  "stop_condition": "Stop with sharp back pain, pain or tingling into a leg or arm, wrist or shoulder pain, or if you wobble and cannot steady yourself. Muscle effort around the trunk and hip is normal.",
+  "regression": "Move just the arm, then just the leg, or keep the toes of the moving leg touching the floor as you slide it back. A shorter hold and fewer reps are fine.",
+  "remediation": "If your low back sags or your hips tip to one side, do not lift the leg as high and reach long instead. If you cannot keep the trunk still, practise Pelvic Tilt first to find a steady low back.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bridge",
@@ -1777,7 +1912,12 @@
     "reason": "Both strengthen the glutes that support the lower back"
    }
   ],
-  "builds_on": "Pelvic Tilt"
+  "builds_on": "Pelvic Tilt",
+  "form_cue": "Lie on your back, knees bent, feet flat and hip-width. Press through your heels and lift the hips until shoulders, hips and knees make a line, no higher. The work belongs in the buttocks, with ribs down and the low back not arched.",
+  "stop_condition": "Stop with sharp back pain, knee pain, pain or tingling down a leg, or a hamstring cramp that does not ease. Muscle effort in the buttocks and back of the thighs is normal.",
+  "regression": "Lift the hips only a couple of inches, with a shorter hold and fewer reps.",
+  "remediation": "If you feel it mostly in the low back or the hamstrings cramp, lower the hips slightly and bring the feet a little closer. Start each rep with a Pelvic Tilt, then lift.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Child's Pose",
@@ -1816,7 +1956,12 @@
     "name": "Sphinx Pose",
     "reason": "Child's pose flexes, sphinx extends — balance the spine"
    }
-  ]
+  ],
+  "form_cue": "Kneel, sit your hips back toward your heels and walk your hands forward, letting the chest sink and the forehead rest. Breathe slowly into your back. You should feel a gentle stretch along the low back, hips and shoulders.",
+  "stop_condition": "Stop with sharp knee, hip or ankle pain, pinching in the front of the hips, dizziness with your head down, or tingling in the feet. A gentle stretch is normal. Skip it after a knee or hip replacement unless you have been cleared.",
+  "regression": "Put a pillow between your heels and buttocks and rest your forehead on stacked fists or a cushion, with a shorter hold. If kneeling is not possible, sit on a chair and fold forward over your thighs.",
+  "remediation": "If your hips will not go back or your shoulders tense up, do not force them. Widen the knees a little, shorten the reach, and let the weight rest on your props.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Lower Back Flexion",
@@ -1898,7 +2043,12 @@
     "reason": "Same motion in a more loaded position"
    }
   ],
-  "builds_on": "Sphinx Pose"
+  "builds_on": "Sphinx Pose",
+  "form_cue": "Lie face down with hands under shoulders. Press the chest up with your arms while the hips, buttocks and legs stay relaxed and heavy on the floor. Keep the shoulders away from the ears and go only as high as is comfortable.",
+  "stop_condition": "Stop with sharp or pinching low-back pain, or pain, numbness or tingling that spreads into the buttock or leg. Mild pressure in the low back that eases when you lower is normal.",
+  "regression": "Press up only onto your forearms, or move your hands further forward so the lift is lower. A shorter hold and fewer reps are fine.",
+  "remediation": "If your hips lift or you clench your buttocks, you have gone too high. Lower until the hips rest again, and practise Sphinx Pose until that position is comfortable.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side-Lying Trunk Rotation",
@@ -1945,7 +2095,12 @@
     "reason": "Both are thoracic/lumbar rotation exercises"
    }
   ],
-  "builds_on": "Supine Twist"
+  "builds_on": "Supine Twist",
+  "form_cue": "Lie on your side with knees bent and stacked, arms out in front. Turn your top arm, chest and head open toward the ceiling while the knees stay together on the floor. Feel the stretch through the trunk and chest.",
+  "stop_condition": "Stop with sharp or pinching back pain, shoulder pain, or pain or tingling into an arm or leg. A stretch through the waist and chest is normal; do not force the shoulder toward the floor.",
+  "regression": "Turn only partway and rest the arm on a pillow behind you, with a pillow under your head and a shorter hold.",
+  "remediation": "If your top knee slides back or lifts, hold it down with your lower hand and turn less. If the twist still feels stuck or uncomfortable, return to Supine Twist.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Superman Hold",
@@ -1984,7 +2139,12 @@
     "reason": "Similar position, Y raise isolates upper back"
    }
   ],
-  "builds_on": "Bird Dog"
+  "builds_on": "Bird Dog",
+  "form_cue": "Lie face down, forehead toward the floor and neck long. Squeeze your buttocks and reach arms and legs long, lifting them only an inch or two. Feel the muscles along the spine and buttocks working, with no sharp pressure in the low back.",
+  "stop_condition": "Safety: this loads the low back strongly. Stop at once with sharp or pinching back pain, pain or tingling into a leg, or neck strain. Skip it and ask a clinician first if you have osteoporosis or a known back condition.",
+  "regression": "Lift only your arms, or only your legs, or one arm with the opposite leg, and barely clear the floor. A shorter hold and fewer reps are fine.",
+  "remediation": "If you jerk up, crane your neck or hold your breath, the lift is too high. Reach long and low instead, and go back to Bird Dog until you can hold that steadily.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Doorway Pec Stretch",
@@ -2030,7 +2190,12 @@
     "name": "Thoracic Extension",
     "reason": "Both counter forward-rounded posture"
    }
-  ]
+  ],
+  "form_cue": "Forearm upright on the frame with the elbow at shoulder height. Step through with the foot on the same side and let your chest turn slightly away from the arm. Keep the shoulder down. Feel the stretch in the chest and front of the shoulder.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, or numbness or tingling in the arm or hand. A steady pull across the chest is the normal stretch feeling.",
+  "regression": "Take a smaller step so the stretch is lighter, set the elbow a little below shoulder height, or use a shorter hold.",
+  "remediation": "If the shoulder hikes toward your ear or your back arches, you have stepped too far. Step back, draw the shoulder blade gently down and back, then ease forward again with your ribs down.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chest Opener on Wall",
@@ -2076,7 +2241,12 @@
     "name": "Wall Angel",
     "reason": "Open the chest then train the range"
    }
-  ]
+  ],
+  "form_cue": "Palm flat on the wall at shoulder height with the elbow soft, not locked. Turn your feet and chest away from that hand slowly, keeping the shoulder down. Feel the stretch across the chest, front of the shoulder and sometimes the upper arm.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, pain at the elbow or wrist, or numbness or tingling in the arm or hand. A broad pull across the chest is normal.",
+  "regression": "Turn away only a little, place the hand slightly lower than shoulder height, bend the elbow more, or use a shorter hold.",
+  "remediation": "If the shoulder rolls forward or shrugs up as you turn, you have gone too far. Come back, set the shoulder blade gently back and down, and turn only as far as it stays there.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chest Expansion Stretch",
@@ -2114,7 +2284,12 @@
     "name": "Scapular Squeeze",
     "reason": "Same scapular retraction with added chest stretch"
    }
-  ]
+  ],
+  "form_cue": "Stand tall, clasp the hands behind you, draw the shoulder blades together and lift the hands only as far as you can without tipping forward. Chin level, ribs down. Feel the stretch across the chest and the front of the shoulders.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, pain at the elbows or wrists, numbness or tingling in the hands, or neck strain. A stretch across the chest is the normal feeling.",
+  "regression": "Hold a towel between your hands instead of clasping, keep the elbows slightly bent, and lift the hands less, or simply squeeze the shoulder blades together without lifting.",
+  "remediation": "If your shoulders roll forward, your head juts out or you bend at the waist to lift higher, lower the hands. Squeeze the shoulder blades together first, then lift only while your chest stays open.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Floor Angel",
@@ -2153,7 +2328,12 @@
     "reason": "Floor angel is harder because gravity pulls differently"
    }
   ],
-  "builds_on": "Wall Angel"
+  "builds_on": "Wall Angel",
+  "form_cue": "On your back with knees bent and your lower back resting easily on the floor. Slide the arms slowly along the floor overhead and back, keeping your ribs down. Feel a chest stretch and gentle work in the upper back.",
+  "stop_condition": "Stop with pinching at the top or front of the shoulder, sharp pain, numbness or tingling in the arms, or neck strain. A stretch across the chest and mild upper-back effort are normal.",
+  "regression": "Slide only part of the way up, let the wrists lift off the floor and keep just the elbows down, put a small pillow under your head, or do fewer reps.",
+  "remediation": "If your ribs flare or your lower back arches off the floor as the arms rise, stop the slide just before that happens. If getting up and down from the floor is hard, do Wall Angel instead.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prone Chest Lift",
@@ -2192,7 +2372,12 @@
     "reason": "Stretch the front, strengthen the back extensors"
    }
   ],
-  "builds_on": "Sphinx Pose"
+  "builds_on": "Sphinx Pose",
+  "form_cue": "Face down, fingertips resting lightly behind your head and elbows wide. Lift the chest a little by squeezing the shoulder blades back and down, looking at the floor so your neck stays long. Feel it in the upper and mid back.",
+  "stop_condition": "Stop with sharp or pinching pain in the lower back, pain or tingling into the legs, neck pain, or dizziness. Tired upper-back muscles are normal effort. Do not pull on your head with your hands.",
+  "regression": "Rest your hands on your lower back or by your sides instead of behind your head, lift only an inch or so, use a shorter hold, or do fewer reps.",
+  "remediation": "If you feel it mostly in your lower back or your chin pokes up, the lift is too high. Lower it, tighten your buttocks gently and keep your eyes on the floor. Practise Sphinx Pose first if lying face down and lifting is uncomfortable.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Foam Roller Chest Opener",
@@ -2232,7 +2417,12 @@
     "reason": "Active and passive chest openers"
    }
   ],
-  "builds_on": "Floor Angel"
+  "builds_on": "Floor Angel",
+  "form_cue": "Your head and tailbone must both rest on the roller, knees bent and feet flat for balance. Let the arms relax open with elbows bent and the backs of the arms sinking toward the floor. Feel a gentle stretch across the chest.",
+  "stop_condition": "Stop with numbness or tingling in the arms or hands, sharp pain in the shoulder or back, neck strain, or dizziness. Get on and off slowly by sitting on one end and rolling to your side. A gentle chest stretch is normal.",
+  "regression": "Rest your arms lower by your sides, put cushions under your elbows, or stay for a shorter time. A firmly rolled towel or blanket along the spine is a lower, steadier option than a roller.",
+  "remediation": "If you cannot balance, widen your feet. If your lower back arches or your head hangs off the end, reposition or come off. Floor Angel gives a similar opening with the floor supporting you.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Push-Up",
@@ -2270,7 +2460,12 @@
     "name": "Scapular Squeeze",
     "reason": "Push-up works the front, squeeze works the back"
    }
-  ]
+  ],
+  "form_cue": "Hands on the wall at shoulder height, a little wider than your shoulders. Keep your body in one straight line from head to heels and bend the elbows to bring your chest toward the wall, then press away. Feel it in the chest, shoulders and arms.",
+  "stop_condition": "Stop with sharp pain in the shoulder, elbow or wrist, pinching in the front of the shoulder, chest pain or pressure, or dizziness. Muscle effort is normal. Stand on a non-slip floor so your feet cannot slide.",
+  "regression": "Stand closer to the wall, bend the elbows only part of the way, or do fewer reps and rest.",
+  "remediation": "If your hips sag or stick out, or your head leads toward the wall, step closer and tighten your stomach and buttocks. Move as one plank, with elbows angled down and back rather than flared straight out.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Dead Bug",
@@ -2309,7 +2504,12 @@
     "reason": "Pelvic tilts teach the flat-back position dead bugs need"
    }
   ],
-  "builds_on": "Pelvic Tilt"
+  "builds_on": "Pelvic Tilt",
+  "form_cue": "Keep your lower back gently in contact with the floor the whole time and move slowly. Only reach the arm and leg as far as you can without your back arching or ribs flaring. You should feel your belly working, not your back.",
+  "stop_condition": "Stop if you feel sharp or pinching pain in your lower back, hip or shoulder, or if your back keeps arching off the floor. Steady effort in the belly is normal; pain or strain in the back is not.",
+  "regression": "Move just the arms and keep both feet resting on the floor, or slide one heel along the floor instead of lifting the leg. A smaller reach and fewer reps are fine.",
+  "remediation": "If your back arches as the leg goes out, the reach is too long: shorten it and keep the knee bent. Practise Pelvic Tilt first to learn how to hold your lower back steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pallof Press (Band)",
@@ -2356,7 +2556,12 @@
     "reason": "Both resist lateral forces on the core"
    }
   ],
-  "builds_on": "Dead Bug"
+  "builds_on": "Dead Bug",
+  "form_cue": "Stand tall with feet about hip width and knees soft, and press the band straight out from the middle of your chest. Hips and shoulders stay facing forward. You should feel the muscles around your waist working to stop the twist.",
+  "stop_condition": "Stop if you feel sharp pain in your lower back or shoulder, or if the band pulls you off balance. Check that the anchor is secure before every set. Effort around the waist is normal; a pinch or pull in the back is not.",
+  "regression": "Use a lighter band or stand closer to the anchor, and press only part of the way out with a shorter hold. You can also do it sitting tall on a sturdy chair.",
+  "remediation": "If you twist toward the anchor or your shoulders shrug up, there is too much tension: step closer and shorten the press. Practise Dead Bug to build steady trunk control first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Plank Hold",
@@ -2395,7 +2600,12 @@
     "reason": "Dynamic and static core challenges"
    }
   ],
-  "builds_on": "Dead Bug"
+  "builds_on": "Dead Bug",
+  "form_cue": "Elbows under your shoulders, body in one line from head to heels, eyes on the floor so your neck stays long. Gently tighten your belly and buttocks and keep breathing. You should feel it across the front of your trunk.",
+  "stop_condition": "Stop as soon as your hips sag or you feel pain in your lower back, shoulders or neck, or if you catch yourself holding your breath. Shaking from effort is normal; a pinch or ache in the lower back means the hold is over.",
+  "regression": "Do it with your knees on the floor, or with your forearms on a sturdy bench, counter or wall. Take a shorter hold and rest when your form starts to slip.",
+  "remediation": "The usual faults are hips sagging or lifting high in the air. End the hold when that happens rather than pushing on; a shorter hold in good form counts for more. Practise Dead Bug to build the control.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side Plank",
@@ -2442,7 +2652,12 @@
     "reason": "Both build anti-lateral-flexion strength"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "form_cue": "Elbow directly under your shoulder, hips stacked one above the other, and lift until your body is one straight line. Keep your neck in line with your spine and keep breathing. You should feel the side of your waist nearest the floor.",
+  "stop_condition": "Stop if you feel sharp or pinching pain in the supporting shoulder, your lower back or your neck, or if your hips drop and you cannot lift them again. Effort in the side of the waist is normal.",
+  "regression": "Keep the bottom knee bent and resting on the floor and lift from knees to shoulders. Take a shorter hold if you need to.",
+  "remediation": "If your hips sag, roll forward or back, or the shoulder sinks toward your ear, lower down and rest. Use the bent-knee version and a shorter hold, and build your Plank Hold first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Core Brace",
@@ -2567,7 +2782,12 @@
     "reason": "Rotational and anti-extension core work"
    }
   ],
-  "builds_on": "Dead Bug"
+  "builds_on": "Dead Bug",
+  "form_cue": "Rest your head lightly in your hands with elbows wide and turn from the ribs so the shoulder moves toward the opposite knee. Do not pull on your neck. Keep your lower back heavy on the floor and move slowly; feel it in the belly.",
+  "stop_condition": "Stop if you feel neck pain or strain, sharp lower back pain, or pain in the front of the hip. If you have been told to avoid bending or twisting your spine, check with a clinician before doing this one.",
+  "regression": "Keep your head and shoulders resting on the floor and just pedal the legs slowly, or keep the straight leg higher off the floor. Fewer reps are fine.",
+  "remediation": "If you are tugging on your head or your back is arching off the floor, slow down, make the twist smaller and do fewer reps. Practise Dead Bug to learn to keep your back steady first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Anti-Rotation Hold",
@@ -2662,7 +2882,12 @@
     "reason": "Balance and core stability together"
    }
   ],
-  "builds_on": "Seated Core Brace"
+  "builds_on": "Seated Core Brace",
+  "form_cue": "Stand tall with feet about hip width and knees soft, hands in line with the middle of your chest. Nothing should move: hips and shoulders face straight ahead. Keep breathing. You should feel the muscles around your waist.",
+  "stop_condition": "Stop if you feel sharp pain in your lower back or shoulder, if you are holding your breath, or if the band pulls you off balance. Check the anchor is secure first. Effort around the waist is normal.",
+  "regression": "Use a lighter band or stand closer to the anchor, and keep your elbows bent with your hands near your chest. A shorter hold is fine.",
+  "remediation": "If you turn toward the anchor, lean away from it or shrug your shoulders, there is too much tension: step closer and bend your elbows. Practise Seated Core Brace to find the bracing feeling first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hollow Body Hold",
@@ -2701,7 +2926,12 @@
     "reason": "Dead bug builds the control hollow body demands"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "form_cue": "Your lower back stays pressed into the floor from start to finish; that contact is the exercise. Lift only as high as you can keep it, chin gently tucked, and keep breathing. You should feel the front of your belly working hard.",
+  "stop_condition": "This is a hard exercise. Stop at once if your lower back lifts or hurts, if your neck strains, or if you are holding your breath. Strong effort and shaking in the belly is normal; back or neck pain is not.",
+  "regression": "Keep your knees bent over your hips and your arms by your sides, or leave your head and shoulders resting on the floor and lift only the legs. A shorter hold is fine.",
+  "remediation": "The usual fault is the lower back arching up. When that happens, bend your knees, bring arms and legs higher, or lower down and rest. Build a steady Plank Hold before returning to this.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bear Crawl Hold",
@@ -2740,7 +2970,12 @@
     "reason": "Different angles of core stability"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "form_cue": "Hands under shoulders, knees under hips, toes tucked. Lift your knees only a little and keep your back flat like a table, pushing the floor away. Keep breathing. You should feel your belly, shoulders and thighs working.",
+  "stop_condition": "This is a hard exercise. Stop if you feel sharp pain in your wrists, shoulders, knees or lower back, or if you are holding your breath. Come down to your knees to rest. Effort and shaking are normal; joint pain is not.",
+  "regression": "Stay on hands and knees and simply press down through your hands and toes as if about to lift, without your knees leaving the floor. Or lift for a shorter hold.",
+  "remediation": "If your hips shoot up, your back rounds or sags, or your knees drift high, lower your knees and reset. Make fists or use a folded towel under your hands if your wrists complain, and build Plank Hold first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hip Flexor Stretch (Half-Kneel)",
@@ -2786,7 +3021,12 @@
     "name": "Standing Quad Stretch",
     "reason": "Both stretch the front of the hip/thigh"
    }
-  ]
+  ],
+  "form_cue": "Stay tall, tuck your tailbone under slightly and squeeze the glute of the kneeling leg, then ease the hips forward. You should feel the stretch in the front of the back hip and upper thigh, not a pinch in the low back.",
+  "stop_condition": "Stop with sharp pain in the kneeling knee, pinching in the front of the hip or low-back pain. A steady pull in the front of the hip is normal; pain or numbness is not. Keep a chair beside you if you feel unsteady.",
+  "regression": "Put a folded towel or cushion under the knee, hold a chair for balance and push the hips forward only a little. If kneeling is not comfortable, try it standing in a short split stance with the back heel lifted.",
+  "remediation": "If your low back arches as you push forward, you have gone past the hip. Come back, tuck the tailbone and squeeze the glute first, then move forward a smaller distance.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Figure Four Stretch",
@@ -2939,7 +3179,12 @@
     "reason": "CARs explore full hip range including flexor length"
    }
   ],
-  "builds_on": "Figure Four Stretch"
+  "builds_on": "Figure Four Stretch",
+  "form_cue": "Keep the standing leg, pelvis and trunk still while only the lifted hip moves: knee up, out to the side, then round behind you. Go slowly and make the circle as big as you can without your body leaning or twisting.",
+  "stop_condition": "Keep a firm hold on a counter or sturdy chair throughout. Stop with pinching or sharp pain in the hip or groin, low-back pain or unsteadiness. If you have had a hip replacement, check with your surgeon or PT before doing this.",
+  "regression": "Make the circle much smaller and keep both hands on the support. You can also do the same circle lying on your side so balance is not a factor.",
+  "remediation": "If your trunk leans or your pelvis twists to get the leg round, the circle is too big. Shrink it until the body stays still, and loosen the hip first with Figure Four Stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "90/90 Hip Stretch",
@@ -2986,7 +3231,12 @@
     "reason": "90/90 builds the range that CARs explore"
    }
   ],
-  "builds_on": "Figure Four Stretch"
+  "builds_on": "Figure Four Stretch",
+  "form_cue": "Sit tall with both sit bones as grounded as you can, then hinge forward from the hips over the front shin with a long back. You should feel the stretch in the outer hip and glute of the front leg, not in either knee.",
+  "stop_condition": "Stop with any knee pain, pinching in the front of the hip or groin, or sharp low-back pain. A strong pull in the outer hip is normal. After a hip replacement, skip this unless your surgeon or PT has cleared it.",
+  "regression": "Sit on a folded blanket or cushion, rest your hands on the floor beside you and stay upright instead of leaning forward. Let the knee angles be wider than 90 degrees if that eases the knees.",
+  "remediation": "If you tip onto one hip or round your back to lean forward, sit up taller on a cushion and lean less. If the position itself is out of reach, practise Figure Four Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Hip Circle",
@@ -3033,7 +3283,12 @@
     "name": "Leg Swing (Front-Back)",
     "reason": "Both are standing dynamic hip mobility"
    }
-  ]
+  ],
+  "form_cue": "Stand tall on the supporting leg and let the other leg circle from the hip socket, keeping the trunk upright and the pelvis fairly level. Keep the circles smooth and only as big as you can control.",
+  "stop_condition": "Keep one hand on a wall, counter or sturdy chair the whole time. Stop if you feel unsteady or dizzy, or get pinching or sharp pain in the hip, groin or low back. A light warming feeling around the hip is normal.",
+  "regression": "Make the circles small and slow, keep the toes close to the floor and hold the support with both hands. Do fewer circles if the standing leg tires.",
+  "remediation": "If your whole body sways or your trunk leans to throw the leg round, slow down and shrink the circle until only the leg moves. Rest the foot down between circles if you need to reset your balance.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Leg Swing (Front-Back)",
@@ -3079,7 +3334,12 @@
     "name": "Hip Flexor Stretch (Half-Kneel)",
     "reason": "Dynamic and static hip flexor work"
    }
-  ]
+  ],
+  "form_cue": "Stand tall beside the wall and let the leg swing loosely from the hip, like a pendulum, with the trunk still. The swing should be relaxed and rhythmic, with only a light pull at the front or back of the thigh at each end.",
+  "stop_condition": "Keep hold of the wall and never force the height of the swing. Stop with sharp or pulling pain in the hamstring, groin or low back, or if you feel unsteady or dizzy. A light stretch at the end of the swing is fine; a sudden tug is not.",
+  "regression": "Keep the swings small and slow, well short of your end range, and hold a counter or sturdy chair with a firm grip. Do fewer swings if the standing leg tires.",
+  "remediation": "If your back arches as the leg goes behind or your trunk rocks to gain height, the swing is too big. Tighten your belly gently, shorten the swing and let the range grow on its own.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Leg Swing (Side-to-Side)",
@@ -3125,7 +3385,12 @@
     "name": "Standing Adductor Stretch",
     "reason": "Dynamic and static inner thigh work"
    }
-  ]
+  ],
+  "form_cue": "Face the wall with both hands on it and keep your hips and chest square to it while the leg swings across in front of the standing leg and back out to the side. Keep it loose and controlled, with a light pull in the inner or outer thigh.",
+  "stop_condition": "Keep both hands on the wall and never force the swing. Stop with sharp or pulling pain in the groin, outer hip or low back, twinges in the standing knee, or any unsteadiness or dizziness. A light stretch at each end is normal.",
+  "regression": "Use small, slow swings that stay well inside your comfortable range, and stand a little further from the wall so the leg has room. Do fewer swings if the standing leg tires.",
+  "remediation": "If your hips turn or your trunk tips side to side with each swing, the swing is too big or too fast. Slow down and shrink it until the pelvis stays facing the wall.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Adductor Stretch",
@@ -3171,7 +3436,12 @@
     "name": "Sumo Squat",
     "reason": "Both work inner thigh flexibility and strength"
    }
-  ]
+  ],
+  "form_cue": "Keep both feet flat and pointing forward, sit the hips back a little as you bend one knee, and keep that knee in line with its toes. The stretch belongs along the inner thigh of the straight leg.",
+  "stop_condition": "Stop with sharp or pulling pain in the groin, pain in the bent knee, or if your feet start to slide. A steady pull along the inner thigh is normal. Hold the stretch still without bouncing, and do it on a non-slip floor.",
+  "regression": "Narrow your stance, bend the knee only a little and rest your hands on a counter or the back of a sturdy chair in front of you. Use a shorter hold.",
+  "remediation": "If the bent knee drops inward or your chest folds forward, the stance is too wide. Bring the feet in, keep the knee over the toes and shift across only until you first feel the inner thigh.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pigeon Stretch",
@@ -3265,7 +3535,12 @@
     "reason": "CARs warm up the range the deep squat demands"
    }
   ],
-  "builds_on": "Standing Adductor Stretch"
+  "builds_on": "Standing Adductor Stretch",
+  "form_cue": "Keep your heels down, knees tracking over your toes and chest lifted as you sink between your hips. You should feel a stretch through the hips, groin and ankles, with weight spread across the whole foot.",
+  "stop_condition": "Stop with sharp knee pain, pinching in the front of the hip or groin, or low-back pain, and come up slowly in case you feel lightheaded. If you have had a knee or hip replacement, check with your surgeon or PT before squatting this deep.",
+  "regression": "Hold a doorframe or sturdy counter and go only as low as you can with heels down and no pain, or sit back onto a low stool. A rolled towel under the heels can help, and a shorter hold is fine.",
+  "remediation": "If your heels lift or your knees cave in, you are lower than your ankles and hips allow yet. Hold a support, stay higher and widen your feet a little, and practise Standing Adductor Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Frog Stretch",
@@ -3304,7 +3579,12 @@
     "reason": "Both require and build significant hip mobility"
    }
   ],
-  "builds_on": "90/90 Hip Stretch"
+  "builds_on": "90/90 Hip Stretch",
+  "form_cue": "Keep knees in line with hips, shins and feet turned out, and your back flat as you ease the hips down and slightly back. Support your weight on your hands or forearms. The stretch belongs in the inner thighs and groin.",
+  "stop_condition": "This is a strong stretch, so go slowly and never force or bounce. Stop with sharp groin pain, pinching in the hip, knee pain or low-back pain. After a hip replacement or groin injury, skip this unless a clinician has cleared it.",
+  "regression": "Kneel on a folded blanket, bring the knees closer together and keep the hips high so the stretch is light. Use a shorter hold and come out by walking the knees in slowly.",
+  "remediation": "If your low back sags or you feel it in the knees instead of the inner thighs, narrow the knees and lift the hips higher. If that still does not work, build the range with 90/90 Hip Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Glute Bridge",
@@ -3343,7 +3623,12 @@
     "name": "Hip Flexor Stretch (Half-Kneel)",
     "reason": "Stretch the front, strengthen the back"
    }
-  ]
+  ],
+  "form_cue": "Press through your heels and lift until shoulders, hips and knees make a straight line, no higher. Ribs stay down and knees stay hip-width apart. You should feel the work in your glutes more than in your low back.",
+  "stop_condition": "Stop with low-back pain, sharp knee pain, or a hamstring cramp that does not ease when you lower. Muscle effort in the glutes and backs of the thighs is normal. Keep breathing through the hold.",
+  "regression": "Lift only a few inches and lower straight away without the hold, or do fewer reps. Resting between reps is fine.",
+  "remediation": "If your hamstrings cramp, bring your heels a little closer to your hips. If you feel it in your low back, tuck your tailbone slightly before lifting and stop the lift lower.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Clamshell",
@@ -3389,7 +3674,12 @@
     "name": "Side-Lying Leg Raise",
     "reason": "Both are side-lying glute exercises"
    }
-  ]
+  ],
+  "form_cue": "Keep hips stacked one above the other and your feet touching while the top knee opens. The movement is small and slow, and you should feel it in the side and back of the top hip.",
+  "stop_condition": "Stop with pinching in the front of the hip or groin, sharp pain in the outer hip you are lying on, or low-back pain. A tired, warm feeling in the side of the hip is normal effort.",
+  "regression": "Open the knee only part way, do fewer reps and rest your head on a pillow. Lying with your back against a wall helps you stay stacked with less effort.",
+  "remediation": "If the top hip rolls backward as the knee opens, you are borrowing range from your back. Put your top hand on that hip to keep it still and open only as far as the pelvis stays put.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side-Lying Leg Raise",
@@ -3435,7 +3725,12 @@
     "name": "Single-Leg Stand",
     "reason": "Leg raises build the hip stability single-leg stance needs"
    }
-  ]
+  ],
+  "form_cue": "Keep hips stacked and the top leg straight, in line with your body or slightly behind it, toes pointing forward. Lift with control and lower slowly. You should feel it in the side of the top hip.",
+  "stop_condition": "Stop with pinching or sharp pain in the hip or groin, low-back pain, or pain in the hip you are lying on. A working, tired feeling in the side of the hip is normal.",
+  "regression": "Bend the bottom knee for a steadier base, lift the leg only a few inches without the hold, and do fewer reps.",
+  "remediation": "If the leg drifts forward or the toes turn up to the ceiling, the front of the hip is taking over. Lie with your back and heel against a wall and slide the heel up it.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Glute Squeeze",
@@ -3473,7 +3768,12 @@
     "name": "Hip Flexor Stretch (Half-Kneel)",
     "reason": "Stretch tight hip flexors, wake up the glutes"
    }
-  ]
+  ],
+  "form_cue": "Stand tall with feet hip-width apart and knees soft, then tighten both buttocks without tucking your pelvis hard or leaning back. Keep breathing normally. The effort belongs in the glutes, not the low back or thighs.",
+  "stop_condition": "Stop with low-back pain, a cramp that does not ease, or lightheadedness. Do not hold your breath while you squeeze. A firm working feeling in the buttocks is normal.",
+  "regression": "Squeeze at about half effort for a shorter time, with a hand on a counter for steadiness, or do it lying on your back with knees bent.",
+  "remediation": "If your low back arches or your thighs do most of the work, soften the knees, ease the effort and place your hands on your buttocks to feel them tighten.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Banded Lateral Walk",
@@ -3512,7 +3812,12 @@
     "reason": "Both work the glute medius in a functional pattern"
    }
   ],
-  "builds_on": "Clamshell"
+  "builds_on": "Clamshell",
+  "form_cue": "Keep toes pointing forward, knees over toes and the band lightly taut the whole time. Step out with the lead foot, then follow with a small step so the feet never touch. You should feel it in the sides of the hips.",
+  "stop_condition": "Clear the floor and step alongside a counter or wall, because a band at the ankles can trip you. Stop with knee pain, pinching in the hip, low-back pain or unsteadiness. Burning in the sides of the hips is normal effort.",
+  "regression": "Move the band above your knees or do the steps with no band, stand taller and take smaller steps alongside a counter. Fewer steps each way is fine.",
+  "remediation": "If your knees cave in, your feet drag or your trunk rocks side to side, the band is too strong or the steps too big. Go lighter and smaller, and build hip strength with Clamshell first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Single-Leg Glute Bridge",
@@ -3559,7 +3864,12 @@
     "reason": "Both challenge unilateral stability"
    }
   ],
-  "builds_on": "Glute Bridge"
+  "builds_on": "Glute Bridge",
+  "form_cue": "Keep your hips level as you lift, pressing through the heel of the grounded foot, and stop when shoulder, hip and knee are in line. You should feel it in the glute of the working leg, not the low back.",
+  "stop_condition": "Stop with low-back pain, sharp knee pain or a hamstring cramp that does not ease when you lower. Lower under control rather than dropping. Strong effort in the glute and back of the thigh is normal.",
+  "regression": "Keep both feet down and lift with most of your weight on one leg, or lift lower without the hold. Fewer reps is fine.",
+  "remediation": "If your hips tilt or drop to one side, or the hamstring cramps, bring the working foot closer to your hips and lift less high. If it still breaks down, go back to Glute Bridge.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Donkey Kick",
@@ -3605,7 +3915,12 @@
     "name": "Bird Dog",
     "reason": "Similar position, different focus"
    }
-  ]
+  ],
+  "form_cue": "Keep the knee bent and press the sole of the foot toward the ceiling until the thigh is about level with your body, no higher. Your back stays flat and hips square to the floor. You should feel it in the glute of the lifting leg.",
+  "stop_condition": "Stop with low-back pain, wrist pain, sharp pain in the knee you are kneeling on, or pinching in the hip. Glute effort is normal. Use a mat or folded towel under your knees.",
+  "regression": "Lift the leg lower and do fewer reps, or rest on your forearms if your wrists complain. You can also do it standing, leaning on a counter and pressing one heel back.",
+  "remediation": "If your low back arches or your hips twist open as the leg rises, you are lifting too high. Tighten your belly gently and stop the lift where the back stays flat.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Fire Hydrant",
@@ -3651,7 +3966,12 @@
     "name": "Clamshell",
     "reason": "Both target glute medius/external rotation"
    }
-  ]
+  ],
+  "form_cue": "Keep your arms straight, back flat and weight even on both hands while the bent knee lifts out to the side. Only the hip moves. Lift as high as you can without the pelvis tipping, and feel it in the outer hip and glute.",
+  "stop_condition": "Stop with pinching in the hip or groin, low-back pain, wrist pain or sharp pain in the supporting knee. A working feeling in the outer hip is normal. Pad your knees with a mat or folded towel.",
+  "regression": "Lift the knee only a few inches and do fewer reps, or rest on your forearms to spare the wrists. You can also do the same knee-opening movement lying on your side.",
+  "remediation": "If you lean away or your trunk rotates to get the knee higher, the lift is too high. Keep your weight centred and stop the knee where both hips still face the floor.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pistol Squat Progression",
@@ -3699,7 +4019,12 @@
     "reason": "Bilateral deep squat prepares for unilateral"
    }
   ],
-  "builds_on": "Single-Leg Glute Bridge"
+  "builds_on": "Single-Leg Glute Bridge",
+  "form_cue": "Keep the standing heel down and the knee tracking over the toes as you sit back and down under control, holding the doorframe. Go only as low as you can stand back up from smoothly. Feel it in the thigh and glute of the standing leg.",
+  "stop_condition": "Keep a firm grip on a solid doorframe and never drop into the bottom. Stop with any knee pain, pinching in the hip, low-back pain or loss of balance. If you have knee problems or a joint replacement, check with a clinician first.",
+  "regression": "Sit down to a high, sturdy chair on one leg and stand up using both legs, keeping hold of a support. Use a smaller depth and fewer reps.",
+  "remediation": "If the knee caves inward, the heel lifts or you fall into the bottom, the depth is too much for now. Stay higher and use a chair as a target, and build strength with Single-Leg Glute Bridge first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Quad Stretch",
@@ -3746,7 +4071,12 @@
     "name": "Standing Hamstring Stretch",
     "reason": "Front and back of thigh for balance"
    }
-  ]
+  ],
+  "form_cue": "Stand tall with one hand on the wall, knees side by side, and draw the heel toward your glute without arching your low back. You should feel the stretch down the front of the thigh, not in the knee.",
+  "stop_condition": "A firm pull in the front of the thigh is normal. Stop with sharp or pinching knee pain, a cramp in the back of the thigh, low-back pain, or if you feel unsteady. Keep the wall or a sturdy chair within reach the whole time.",
+  "regression": "Hold your ankle or trouser leg with a smaller knee bend, or loop a towel around the ankle so you do not have to reach as far. A shorter hold is fine.",
+  "remediation": "If your back arches or the knee drifts out to the side, ease the pull, gently tuck your tailbone and bring the knees level. If balance is the problem, try Lying Quad Stretch instead.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Couch Stretch",
@@ -3793,7 +4123,12 @@
     "reason": "Standing version is the warm-up, couch is the deep stretch"
    }
   ],
-  "builds_on": "Standing Quad Stretch"
+  "builds_on": "Standing Quad Stretch",
+  "form_cue": "Keep your torso tall, ribs down and tailbone gently tucked as you ease the hips forward. The stretch belongs in the front of the back thigh and hip, not in the low back or the kneecap.",
+  "stop_condition": "A strong stretch is expected. Stop with sharp or pinching pain in the back knee, pain on the kneecap from the floor, low-back pinching, or numbness or tingling in the leg. Come out slowly, using your hands.",
+  "regression": "Pad the knee with a folded towel and move it further from the wall so the knee bends less, or keep your hands on the floor or a chair and stay leaning forward.",
+  "remediation": "If your low back arches or you cannot get upright, you are too close to the wall. Move the knee away, tuck the tailbone first, then ease forward. Standing Quad Stretch is a good place to practise first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lying Quad Stretch",
@@ -3839,7 +4174,12 @@
     "name": "Lying Hamstring Stretch",
     "reason": "Front and back of thigh in a lying position"
    }
-  ]
+  ],
+  "form_cue": "Lie on your side with knees together and hips stacked, then draw the top heel toward your glute. Keep your low back from arching; the stretch should be in the front of the top thigh.",
+  "stop_condition": "A steady pull in the front of the thigh is normal. Stop with sharp or pinching knee pain, a cramp in the back of the thigh, or low-back pain.",
+  "regression": "Use a towel or strap looped around the ankle so you do not have to reach back as far, and pull less. A shorter hold is fine.",
+  "remediation": "If your back arches or the top knee lifts and drifts forward, ease the pull and bend the bottom knee up in front of you to steady the pelvis before trying again.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Sit",
@@ -3877,7 +4217,12 @@
     "name": "Sumo Squat",
     "reason": "Both build lower body strength in different patterns"
    }
-  ]
+  ],
+  "form_cue": "Keep your whole back flat on the wall, feet far enough out that your knees stay over your ankles, and weight through your heels. You should feel the effort in the thighs. Keep breathing.",
+  "stop_condition": "Burning, tired thighs are normal. Stop with sharp pain in or behind the kneecap, back pain, dizziness, or if your legs shake so much you might slide. Stop before your legs give out, and never hold your breath.",
+  "regression": "Slide down only partway, well above a 90-degree bend, and hold for a shorter time. Place a chair beside you so you have something to push up from.",
+  "remediation": "If your knees move past your toes or fall inward, walk your feet further from the wall and press the knees gently out in line with the toes. If your back lifts off the wall, come up higher.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Step-Up",
@@ -3925,7 +4270,12 @@
     "reason": "Stretch after strengthening"
    }
   ],
-  "builds_on": "Wall Sit"
+  "builds_on": "Wall Sit",
+  "form_cue": "Put the whole foot on the step, lean slightly forward, and push through that heel to stand up straight. Keep the knee in line with your toes and lower yourself down slowly instead of dropping.",
+  "stop_condition": "Working thighs are normal. Stop with sharp or pinching knee pain, a knee that buckles or gives way, dizziness, or unsteadiness. Use a step that cannot slide or tip, and keep a rail, wall or counter within reach.",
+  "regression": "Use the lowest step you have, such as the bottom stair with a hand on the rail, and do fewer reps. Tap the other foot on the step at the top for balance.",
+  "remediation": "If you push off the bottom foot or the knee caves inward, the step is too high. Lower it, hold a support, and slow the step-down. Wall Sit can be used to build thigh strength first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Sumo Squat",
@@ -3964,7 +4314,12 @@
     "name": "Wall Sit",
     "reason": "Both build quad and hip strength"
    }
-  ]
+  ],
+  "form_cue": "Feet wider than shoulders with toes turned out, and knees pointing the same way as your toes all the way down. Sit the hips back and down with your chest up. Feel it in the thighs, inner thighs and glutes.",
+  "stop_condition": "Muscle effort in the thighs is normal. Stop with sharp knee pain, pinching in the hip or groin, low-back pain, dizziness, or unsteadiness.",
+  "regression": "Do a quarter squat only, with a hand on a counter or chair back, and narrow your stance or turn the toes out less. Fewer reps is fine.",
+  "remediation": "If your knees fall inward, turn the toes out a little less and gently press the knees out over them. If your heels lift or your chest drops, shorten the depth until you can hold the position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Knee Extension",
@@ -4054,7 +4409,12 @@
     "name": "Deep Squat Hold",
     "reason": "Bodyweight squat builds strength, deep squat builds mobility"
    }
-  ]
+  ],
+  "form_cue": "Send your hips back first as if sitting into a chair, keep your chest up, heels down and knees in line with your toes. You should feel the work in your thighs and glutes, not in the knees or low back.",
+  "stop_condition": "Muscle effort in the thighs is normal. Stop with sharp or pinching knee pain, pinching in the front of the hip, low-back pain, dizziness, or unsteadiness.",
+  "regression": "Squat down to a sturdy chair, touch the seat lightly and stand back up, holding a counter or chair back if you need it. A quarter squat with fewer reps is fine.",
+  "remediation": "If your knees cave in, heels lift or back rounds, shorten the depth and slow down. Practise sitting down to a chair and standing up until the hips-back pattern feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Split Squat",
@@ -4101,7 +4461,12 @@
     "reason": "Both are unilateral lower body strengtheners"
    }
   ],
-  "builds_on": "Bodyweight Squat"
+  "builds_on": "Bodyweight Squat",
+  "form_cue": "Feet stay hip-width apart side to side, like standing on train tracks. Lower straight down with your torso upright and front heel flat. Feel it in the front thigh and glute, with the front knee in line with the toes.",
+  "stop_condition": "Working thighs are normal. Stop with sharp or pinching pain in either knee, a knee that buckles, dizziness, or unsteadiness. Keep a wall, counter or sturdy chair within reach.",
+  "regression": "Hold a chair or counter and lower only partway, doing fewer reps. Put a cushion under the back knee so there is no worry about touching down.",
+  "remediation": "If you wobble or the front knee caves in, widen your stance side to side, hold a support and shorten the range. If it still feels unsteady, go back to Bodyweight Squat first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Terminal Knee Extension",
@@ -4148,7 +4513,12 @@
     "reason": "Strengthen then stretch around the knee"
    }
   ],
-  "builds_on": "Seated Knee Extension"
+  "builds_on": "Seated Knee Extension",
+  "form_cue": "With the band behind the knee, keep your heel down and hips level, then straighten the knee by tightening the front of the thigh. Finish straight but not snapped back. Feel it just above the kneecap.",
+  "stop_condition": "Effort in the thigh is normal. Stop with sharp knee pain, pain behind the knee where the band presses, or unsteadiness. Check the band and its anchor are secure before each set, and keep a wall or chair within reach.",
+  "regression": "Use the lightest band or stand closer to the anchor so there is less pull, and hold a chair for balance. Fewer reps is fine.",
+  "remediation": "If your hips swing or you lock the knee hard to finish, the band is too strong. Lighten it and straighten slowly. You can practise the thigh squeeze first with Seated Knee Extension.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Hamstring Stretch",
@@ -4194,7 +4564,12 @@
     "name": "Standing Forward Fold",
     "reason": "Both stretch the posterior chain"
    }
-  ]
+  ],
+  "form_cue": "Front leg nearly straight with the heel down, hips square, and tip forward from the hips with a long flat back. You should feel the stretch behind the thigh, not in your low back.",
+  "stop_condition": "A firm pull behind the thigh is normal. Stop with sharp pain behind the knee, low-back pain, numbness or tingling down the leg, or unsteadiness. Have a wall or chair within reach.",
+  "regression": "Keep the heel on the floor instead of a step, bend the front knee a little, and hinge only slightly. Rest a hand on a chair or counter.",
+  "remediation": "If your back rounds to reach further, you have gone past your range. Come up, put your hands on your hips, lengthen your spine and tip forward only as far as your back stays flat.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Forward Fold",
@@ -4232,7 +4607,12 @@
     "name": "Standing Hamstring Stretch",
     "reason": "Both stretch the posterior chain"
    }
-  ]
+  ],
+  "form_cue": "Fold from the hips, not the waist, with knees soft, and let your head, neck and arms hang heavy. Feel the stretch along the backs of the thighs. Roll or hinge up slowly when you finish.",
+  "stop_condition": "A pull behind the thighs is normal. Stop with dizziness, pressure in the head or eyes, sharp low-back pain, or tingling down a leg. Come up slowly, and skip this if hanging head-down makes you lightheaded.",
+  "regression": "Bend your knees generously and rest your hands on your thighs, a chair seat or a counter so you fold only partway. A shorter hold is fine.",
+  "remediation": "If your low back takes the strain or you cannot relax, bend the knees more and support your hands. Standing Hamstring Stretch gives a similar stretch one leg at a time with your head up.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lying Hamstring Stretch",
@@ -4278,7 +4658,12 @@
     "name": "Knee-to-Chest Stretch",
     "reason": "Both are supine lower body stretches"
    }
-  ]
+  ],
+  "form_cue": "Keep your head, shoulders and both hips resting on the floor and let the towel do the work. Straighten the lifted knee only as far as is comfortable; the stretch should sit in the back of the thigh.",
+  "stop_condition": "A comfortable pull up the back of the thigh is normal. Stop with sharp pain behind the knee, low-back pain, or numbness or tingling down the leg or into the foot.",
+  "regression": "Keep the lifted knee slightly bent and the leg lower. If your arms tire or shoulders tense, use a longer strap or belt. A shorter hold is fine.",
+  "remediation": "If your hips lift, your back flattens hard into the floor or your shoulders strain, you are pulling too far. Lower the leg, soften the knee and relax your grip before easing back in.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Hamstring Stretch",
@@ -4377,7 +4762,12 @@
     "reason": "Both strengthen the posterior chain"
    }
   ],
-  "builds_on": "Standing Hamstring Stretch"
+  "builds_on": "Standing Hamstring Stretch",
+  "form_cue": "Soften the standing knee, then tip forward from the hip so your chest goes down as the free leg goes back, keeping the back flat and hips level. Feel it in the hamstring and glute of the standing leg.",
+  "stop_condition": "A stretch and effort behind the standing thigh is normal. Stop with low-back pain, sharp pain behind the knee, dizziness, or loss of balance. This is single-leg work: stay within reach of a wall or sturdy chair.",
+  "regression": "Keep fingertips on a wall or chair and hinge only partway, or keep the back toes resting lightly on the floor as a kickstand. Fewer reps is fine.",
+  "remediation": "If your back rounds, your hip opens out to the side or you wobble, shorten the hinge and use the support. Practise the flat-back hip hinge with Standing Hamstring Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Good Morning Stretch",
@@ -4415,7 +4805,12 @@
     "name": "Standing Back Extension",
     "reason": "Good mornings and extensions are complementary hinge patterns"
    }
-  ]
+  ],
+  "form_cue": "Soften your knees and push your hips straight back, keeping your back flat and elbows wide. Do not pull on your head. Feel the stretch in the backs of the thighs, then squeeze your glutes to stand tall.",
+  "stop_condition": "A stretch behind the thighs is normal. Stop with low-back pain, neck strain, dizziness, or tingling down a leg. Rise at a steady pace, not quickly.",
+  "regression": "Cross your arms over your chest or put your hands on your hips instead of behind your head, and hinge only a little. Fewer reps is fine.",
+  "remediation": "If your back rounds or your knees bend into a squat, the hinge is too deep. Stand a short step in front of a wall and reach your hips back to touch it, keeping the back flat.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hamstring Walkout",
@@ -4596,7 +4991,12 @@
     "name": "Ankle Circles",
     "reason": "Both improve ankle health from different angles"
    }
-  ]
+  ],
+  "form_cue": "Rise straight up over the balls of your feet, with weight across the big and second toes and ankles not rolling outward. Lower with control. Feel the work in your calves.",
+  "stop_condition": "Tired, working calves are normal. Stop with a calf or foot cramp, sharp pain in the heel, the back of the ankle or the ball of the foot, or unsteadiness. Keep a hand on the wall.",
+  "regression": "Hold a counter with both hands and rise only partway, or do the same movement sitting in a chair. Fewer reps is fine.",
+  "remediation": "If your ankles roll outward or you rock and bounce, slow down, press through the big toes and rise only as high as you can control. Use more hand support until it is smooth.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Calf Stretch",
@@ -4642,7 +5042,12 @@
     "name": "Soleus Stretch",
     "reason": "Wall stretch hits gastrocnemius, soleus stretch hits the deeper calf"
    }
-  ]
+  ],
+  "form_cue": "Back foot points straight ahead, back knee straight and heel pressed down, then lean your hips toward the wall. You should feel the stretch in the upper calf of the back leg.",
+  "stop_condition": "A steady pull in the calf is normal. Stop with sharp pain in the heel or the back of the ankle, pinching in the front of the ankle, or numbness or tingling in the foot.",
+  "regression": "Take a shorter step back and lean less. A shorter hold is fine.",
+  "remediation": "If the back heel lifts or the foot turns out, shorten your stance until the heel stays down with toes pointing forward, then lean in gently from there.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Soleus Stretch",
@@ -4689,7 +5094,12 @@
     "reason": "Both improve ankle range of motion"
    }
   ],
-  "builds_on": "Wall Calf Stretch"
+  "builds_on": "Wall Calf Stretch",
+  "form_cue": "From the calf stretch stance, bend the back knee a little while the heel stays down and the toes point forward. The stretch moves lower, toward the lower calf and just above the heel.",
+  "stop_condition": "A gentle pull low in the calf is normal. Stop with sharp pain at the heel or back of the ankle, pinching at the front of the ankle, or knee pain.",
+  "regression": "Bring the back foot closer to the wall and bend the knee only slightly. A shorter hold is fine.",
+  "remediation": "If the heel lifts as you bend the knee, shorten your stance and bend less. If you cannot keep the heel down at all, stay with Wall Calf Stretch for now.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Ankle Circles",
@@ -4822,7 +5232,12 @@
     "reason": "Both improve ankle dorsiflexion range"
    }
   ],
-  "builds_on": "Wall Calf Stretch"
+  "builds_on": "Wall Calf Stretch",
+  "form_cue": "Keep the whole foot flat with the heel down and send the knee straight forward over the second toe, not inward. Move slowly in and out. Feel a stretch low in the calf or at the back of the ankle.",
+  "stop_condition": "A stretch at the back of the ankle is normal. Stop with a sharp pinch at the front of the ankle, knee pain, or pain in the arch. Keep your hands on the wall for balance.",
+  "regression": "Move the foot closer to the wall and take the knee forward only partway, with hands on the wall. Fewer reps is fine.",
+  "remediation": "If the heel lifts or the arch collapses and the knee drifts in, bring the foot closer and aim the knee over the second toe. Wall Calf Stretch is a good way to loosen the calf first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Toe Yoga",
@@ -4950,7 +5365,12 @@
     "reason": "Strengthen then stretch"
    }
   ],
-  "builds_on": "Calf Raise"
+  "builds_on": "Calf Raise",
+  "form_cue": "Stand tall with a hand on the wall, rise straight up over the ball of the foot without the ankle rolling outward, and lower slowly. Feel the work in the calf of the standing leg.",
+  "stop_condition": "A hard-working calf is normal. Stop with a cramp, sharp pain in the heel, back of the ankle or ball of the foot, or any wobble you cannot control. This is single-leg work: keep a firm hold on the wall or a counter.",
+  "regression": "Rise on both feet, then shift more weight to one side as you lower. Or hold a counter firmly and rise only partway. Fewer reps is fine.",
+  "remediation": "If you lean on the wall, hitch your hip or cannot rise fully, the calf is not ready for full body weight on one leg. Go back to Calf Raise until those reps are smooth and full height.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Heel Walk",
@@ -4989,7 +5409,12 @@
     "reason": "Heel walk and toe walk together train the full ankle"
    }
   ],
-  "builds_on": "Calf Raise"
+  "builds_on": "Calf Raise",
+  "form_cue": "Stand tall, pull your toes and the fronts of your feet up toward your shins and take short steps on your heels. Do not stick your hips back. Feel the muscles on the front of the shins working.",
+  "stop_condition": "Tired, burning shins are normal. Stop with sharp shin, ankle or heel pain, a cramp, or any feeling of tipping backward. Walk beside a wall or counter you can touch, on a clear, non-slip floor.",
+  "regression": "Run a hand along a counter or wall and take fewer steps. Or stay in one place holding a support and simply lift your toes off the floor and lower them.",
+  "remediation": "If you lean back, lock your knees or your toes keep dropping, take smaller steps with knees soft and rest sooner. Practise standing toe lifts with a support until the shins last longer.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Toe Walk",
@@ -5029,7 +5454,12 @@
     "reason": "Both build foot and ankle stability"
    }
   ],
-  "builds_on": "Calf Raise"
+  "builds_on": "Calf Raise",
+  "form_cue": "Stay tall and high on the balls of your feet, take small steady steps and do not let your heels drop between steps. Keep the ankles from rolling outward. Feel the work in your calves.",
+  "stop_condition": "Working calves are normal. Stop with a calf or foot cramp, sharp pain in the ball of the foot, heel or ankle, or unsteadiness. Walk beside a wall or counter you can touch, on a clear, non-slip floor.",
+  "regression": "Run a hand along a wall or counter, rise only partway onto your toes and take fewer steps.",
+  "remediation": "If your heels sink, your ankles wobble or you rush, slow down and shorten the steps. If that does not help, go back to Calf Raise to build the height and control first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wrist Circles",
@@ -5449,7 +5879,12 @@
     "reason": "Both deepen wrist flexor range"
    }
   ],
-  "builds_on": "Wrist Flexor Stretch"
+  "builds_on": "Wrist Flexor Stretch",
+  "form_cue": "Keep the heels of your hands on the floor and your elbows straight but not locked, then rock your hips back only until you feel a stretch along the inside of the forearms. Your knees take most of your weight.",
+  "stop_condition": "Stop with sharp or pinching pain in the wrist, or numbness or tingling in the hand or fingers. A strong pull in the forearm is normal; pain in the wrist joint is not.",
+  "regression": "Rock back only slightly, do one hand at a time, or turn the fingers out to the sides rather than toward your knees.",
+  "remediation": "If the heels of your hands lift or your elbows bend, you have gone past your range: rock forward until the palms are flat again. Practise Wrist Flexor Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Tendon Glide Sequence",
@@ -5581,7 +6016,6 @@
    "No support, 30 seconds",
    "Close your eyes for 10 seconds"
   ],
-  "regression": "If that is too hard, keep both feet down and shift your weight side to side (Weight Shift) until it feels steady, or hold the wall with both hands.",
   "pairs_with": [
    {
     "name": "Heel-to-Toe Walk",
@@ -5591,7 +6025,12 @@
     "name": "Calf Raise",
     "reason": "Ankle strength supports single-leg balance"
    }
-  ]
+  ],
+  "form_cue": "Stand tall with the standing knee soft, not locked, and lift the other foot just off the floor. Keep your hips level and your eyes on a fixed point ahead. You should feel the standing foot, ankle and outer hip working.",
+  "stop_condition": "Keep a wall or sturdy counter within reach. Put your foot down and stop if you feel dizzy, very unsteady, or have sharp pain in the standing hip, knee or ankle. Small wobbles at the ankle are normal.",
+  "regression": "If that is too hard, keep both feet down and shift your weight side to side (Weight Shift) until it feels steady, or hold the wall with both hands.",
+  "remediation": "If your hip drops to one side or you lean your body over to stay up, touch the wall lightly, stand tall again and take a shorter hold. Lift the foot only an inch or two.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Heel-to-Toe Walk",
@@ -5629,7 +6068,12 @@
     "name": "Toe Walk",
     "reason": "Different walking challenges for balance"
    }
-  ]
+  ],
+  "form_cue": "Look ahead rather than down at your feet, stand tall, and place each heel right in front of the other toes as if walking on a line. Step slowly and let each foot settle before the next. Arms can stay out to the sides.",
+  "stop_condition": "Walk alongside a wall or counter you can touch. Stop if you feel dizzy, if you are stumbling or stepping off the line to catch yourself, or if you have pain in your feet, ankles or knees. Small wobbles are normal.",
+  "regression": "Leave a small gap between heel and toe, or walk with your feet on either side of an imaginary line. Trail one hand along a wall or counter and take fewer steps.",
+  "remediation": "If you sway or step off the line, slow right down and pause on each step before moving on. Use a wider line of steps with a hand on the wall until it feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing March",
@@ -5668,7 +6112,12 @@
     "name": "Single-Leg Stand",
     "reason": "Marching is dynamic balance, standing is static"
    }
-  ]
+  ],
+  "form_cue": "Stand tall and lift each knee straight up in front of you without leaning back or rocking side to side. Put each foot down softly. You should feel the front of your hips and your standing leg working.",
+  "stop_condition": "March beside a counter or sturdy chair you can hold. Stop if you feel dizzy, short of breath beyond mild effort, chest discomfort, or sharp pain in a hip, knee or lower back. A little warmth and effort is normal.",
+  "regression": "Lift your knees only as high as is comfortable, hold a counter with one or both hands, or march sitting on a sturdy chair. Fewer marches are fine.",
+  "remediation": "If you lean back or sway to get the knee up, lower the knee height and slow down. Keep one hand on a support until you can march tall without rocking.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Weight Shift",
@@ -5766,7 +6215,12 @@
     "name": "Heel-to-Toe Walk",
     "reason": "Both train weight transfer skills"
    }
-  ]
+  ],
+  "form_cue": "Stand tall and move your whole body sideways over one foot, hips and shoulders together, without bending at the waist. Both feet stay on the floor. You should feel the weight-bearing leg and outer hip take the load.",
+  "stop_condition": "Stand near a counter or sturdy chair. Stop if you feel dizzy, unsteady, or have sharp pain in a hip, knee or ankle. Feeling the standing leg work is normal.",
+  "regression": "Hold a counter or the back of a sturdy chair with both hands and shift only part of your weight across. A shorter hold and fewer shifts are fine.",
+  "remediation": "If you lean your upper body over or stick a hip out instead of moving as one piece, make the shift smaller and slower. Doing it in front of a mirror can help you stay tall.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Clock Reach",
@@ -5813,7 +6267,12 @@
     "reason": "Both are single-leg balance challenges"
    }
   ],
-  "builds_on": "Single-Leg Stand"
+  "builds_on": "Single-Leg Stand",
+  "form_cue": "Keep the standing knee slightly bent and pointing over your toes, hips level, body tall. The taps are light: no weight goes onto the reaching foot. You should feel the standing leg and hip doing the work.",
+  "stop_condition": "Have a counter or sturdy chair within reach. Stop if you feel dizzy, cannot stay steady, or have sharp pain in the standing knee, hip or ankle. Effort and small wobbles in the standing leg are normal.",
+  "regression": "Make the reaches shorter, rest one hand on a counter, or put the free foot fully down between taps. You can also do fewer taps and rest between them.",
+  "remediation": "If the standing knee caves inward, your hip drops, or you tip your body to reach, shorten the reach and hold a support. Practise Single-Leg Stand until you can hold it steadily first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "BOSU or Cushion Stand",
@@ -5852,7 +6311,12 @@
     "reason": "Foot control helps on unstable surfaces"
    }
   ],
-  "builds_on": "Single-Leg Stand"
+  "builds_on": "Single-Leg Stand",
+  "form_cue": "Stand tall with feet about hip width, knees soft, and eyes on a fixed point ahead. Let your ankles make small corrections rather than stiffening up. You should feel your feet, ankles and lower legs working.",
+  "stop_condition": "Set up next to a counter or wall you can grab, on a surface that will not slide. Step off and stop if you feel dizzy, cannot steady yourself, or have ankle or knee pain. Small ankle wobbles are normal.",
+  "regression": "Use a folded towel rather than a cushion or BOSU, keep one or both hands on a counter, and take a shorter hold. Standing on the bare floor with feet together is easier still.",
+  "remediation": "If you are bending at the waist, waving your arms or grabbing the support often, the surface is too wobbly: go back to a firmer one. Practise Single-Leg Stand on the floor first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lateral Step-Over",
@@ -5891,7 +6355,12 @@
     "reason": "Forward and lateral balance challenges"
    }
   ],
-  "builds_on": "Weight Shift"
+  "builds_on": "Weight Shift",
+  "form_cue": "Lift your knee high enough to clear the object, step out sideways and bring the other foot over to join it. Stay tall with toes pointing forward. Look at the object as you start, then ahead. Feel your outer hips working.",
+  "stop_condition": "Do this beside a counter or wall you can hold. Stop if you feel dizzy, catch your foot on the object, or have sharp hip, knee or ankle pain. Feeling the hips work is normal; tripping means it is too high or too fast.",
+  "regression": "Step over a line or a strip of tape on the floor instead of an object, and keep a hand on a counter. Fewer steps are fine.",
+  "remediation": "If you swing your leg around the object, lean your body over or rush, slow down and use a lower or flat marker. Practise Weight Shift until moving sideways onto one leg feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Sit-to-Stand",
@@ -5985,7 +6454,12 @@
     "reason": "Both add difficulty to basic balance"
    }
   ],
-  "builds_on": "Single-Leg Stand"
+  "builds_on": "Single-Leg Stand",
+  "form_cue": "Get steady on one foot with eyes open first, standing knee soft and fingertips touching or hovering by the wall. Then close your eyes. Stand tall and breathe. You will feel the foot and ankle working much harder.",
+  "stop_condition": "High fall risk: only do this within arm's reach of a wall or counter, on a clear floor. Open your eyes and put your foot down the moment you sway, feel dizzy or have pain. Do not try to save a wobble with your eyes shut.",
+  "regression": "Keep both feet on the floor and close your eyes, with a hand on the wall or counter. Or stay on one foot and just soften your gaze rather than closing your eyes. Shorter holds are fine.",
+  "remediation": "If you tip as soon as your eyes close, that is your answer for today: open them. Go back to Single-Leg Stand with eyes open and get a steady hold before trying again.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Reach and Return",
@@ -6032,7 +6506,12 @@
     "reason": "Both train functional daily movements"
    }
   ],
-  "builds_on": "Single-Leg Stand"
+  "builds_on": "Single-Leg Stand",
+  "form_cue": "Keep the standing knee soft and tip forward from the hip with a long back, letting the free leg drift behind you. Touch the surface lightly without leaning on it, then stand tall again. Feel the standing leg and buttock.",
+  "stop_condition": "Use a sturdy table or counter that cannot slide, with clear space around you. Put your foot down and stop if you feel dizzy, very unsteady, or have sharp pain in the standing knee, hip or lower back.",
+  "regression": "Stand closer so the reach is short, or keep the toes of the back foot resting on the floor as a kickstand. Fewer reps are fine.",
+  "remediation": "If your back rounds, the standing knee wobbles inward, or you fall onto the table, shorten the reach and use the kickstand. Practise Single-Leg Stand until you can hold it steadily first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Grapevine Walk",
@@ -6071,7 +6550,12 @@
     "reason": "Step-over builds toward grapevine complexity"
    }
   ],
-  "builds_on": "Lateral Step-Over"
+  "builds_on": "Lateral Step-Over",
+  "form_cue": "Take small steps and stay tall with your hips and chest facing forward while your feet cross in front and then behind. Move slowly and place each foot before shifting your weight onto it.",
+  "stop_condition": "Trip risk: do this on a clear floor facing a counter you can hold. Stop if you feel dizzy, tangle or clip your feet, or have sharp hip, knee or ankle pain. Do not speed up to save your balance.",
+  "regression": "Hold a kitchen counter with both hands and do the steps facing it. Or leave out the cross behind and just step to the side and cross in front. Fewer steps are fine.",
+  "remediation": "If you twist your whole body, look down the whole time or rush the crossing step, slow down and make the steps smaller. Practise Lateral Step-Over until stepping sideways feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Diaphragmatic Breathing",
@@ -6337,7 +6821,12 @@
     "reason": "Both are calming floor-based breathing positions"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Let your belly press into the floor as you breathe in and feel your lower back and sides widen. Keep your neck, shoulders and buttocks relaxed, and let the breath out without pushing.",
+  "stop_condition": "Stop if you feel light-headed, short of breath, or have neck or low-back discomfort lying face down. Return to normal breathing and roll onto your side before getting up.",
+  "regression": "Take fewer breaths, or put a thin pillow under your hips or chest for comfort. If lying face down is not comfortable, do it lying on your back.",
+  "remediation": "If only your chest and shoulders move, slow down and breathe more quietly instead of bigger. Practise Diaphragmatic Breathing on your back first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Sighing Exhale",
@@ -6474,6 +6963,11 @@
     "reason": "Side bend and twist cover all spinal movements"
    }
   ],
+  "form_cue": "Reach up first, then lean straight to the side as if sliding between two panes of glass, without tipping forward or back. Keep both feet grounded. You should feel the stretch from your hip up the side of your ribs.",
+  "stop_condition": "Stop with sharp or pinching pain in the low back or shoulder, dizziness, or unsteadiness. A long pull down the side of the body is normal. Stand near a wall or chair if your balance is unsure.",
+  "regression": "Lean less far and shorten the hold, rest the lower hand on a chair or your hip, or do it seated.",
+  "remediation": "If you twist or bend forward as you lean, try it with your back lightly against a wall so your shoulders and hips stay in line, and keep the lean small.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility"
   ],
@@ -6520,6 +7014,11 @@
    }
   ],
   "builds_on": "Standing Forward Fold",
+  "form_cue": "Move with your breath and never rush. Bend your knees in the fold, keep your body in one straight line in the plank, and keep the cobra low with your shoulders away from your ears. Step, do not jump, between positions.",
+  "stop_condition": "Stop with dizziness or light-headedness when your head goes down or comes back up, sharp back, shoulder or wrist pain, or tingling. Rise slowly. If head-down positions are a problem for you, check with a clinician first.",
+  "regression": "Skip the plank and lower from hands and knees, keep your knees bent throughout, do fewer rounds, or rest your hands on a sturdy chair seat for the fold and lunge.",
+  "remediation": "If your hips sag in the plank or you lose your breath, drop your knees and slow down. Practise Standing Forward Fold and each position on its own before linking them.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility"
   ],
@@ -6624,6 +7123,11 @@
    }
   ],
   "builds_on": "Standing Forward Fold",
+  "form_cue": "Bend your knees as much as you need to get your hands down, then walk out in small steps. At the end your body is one straight line with hands under shoulders and tummy gently braced. Walk back in just as slowly.",
+  "stop_condition": "Stop with dizziness on folding or standing up, sharp low-back, shoulder or wrist pain, or tingling. Come up slowly. Hamstring stretch and arm effort are normal. If head-down positions make you light-headed, skip this.",
+  "regression": "Walk your hands out only part of the way, keep your knees bent, do fewer reps, or walk your hands along a sturdy chair seat or up and down a wall instead of the floor.",
+  "remediation": "If your hips sag or your low back arches as you walk out, stop short of the full plank. Practise Standing Forward Fold first so getting your hands to the floor is comfortable.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "strength",
    "flexibility"
@@ -6666,6 +7170,11 @@
     "reason": "Shake then march to wake up the body"
    }
   ],
+  "form_cue": "Keep both feet on the floor with knees soft and let the shake start from a gentle bounce through the legs. Jaw, shoulders and hands stay loose. It should feel easy and relaxed, not forced.",
+  "stop_condition": "Stop with dizziness, unsteadiness, shortness of breath that feels unusual, or any joint pain. Stand next to a chair or counter you can hold if your balance is unsure.",
+  "regression": "Shake more gently and for a shorter time, hold a chair with one hand, or do it sitting and shake just your arms and legs.",
+  "remediation": "If you feel tense or jarred, make it smaller and softer: keep your heels down and your knees unlocked, and let your arms hang instead of throwing them about.",
+  "validation": "draft_pending_pt",
   "insight_categories": []
  },
  {
@@ -6762,6 +7271,11 @@
     "reason": "Flow then march to fully wake up"
    }
   ],
+  "form_cue": "Move slowly from one position to the next and keep breathing. Keep your knees soft in the fold, keep the back bend small with your hands on your hips, and keep neck movements slow. Each stretch should feel mild.",
+  "stop_condition": "Stop with dizziness or light-headedness, especially coming up from the fold or leaning back, sharp or pinching pain, or tingling. Rise slowly and stand near a support. A mild stretch is normal; pain is not.",
+  "regression": "Shorten the holds, fold only halfway with your hands on your thighs or a chair, skip the back bend, or do the whole sequence seated.",
+  "remediation": "If you lose balance or rush, take one normal breath between positions and make each one smaller. Leave out any position that is uncomfortable today.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility"
   ],
@@ -6815,6 +7329,11 @@
    }
   ],
   "builds_on": "Standing Forward Fold",
+  "form_cue": "Hinge from your hips with a long back and soft knees, then turn your chest so the top arm reaches up. Come all the way back up to the T between sides. Feel it in the back of the legs and through the trunk.",
+  "stop_condition": "Stop with dizziness as your head goes down or comes up, sharp low-back pain, or pain or tingling down a leg. Move slowly and do not swing. A stretch in the back of the thighs is normal.",
+  "regression": "Reach only to the opposite knee or shin, bend your knees more, do fewer reps, or put the lower hand on a chair seat.",
+  "remediation": "If your back rounds or you bounce to get lower, shorten the reach and slow down. Practise Standing Forward Fold first to get comfortable hinging at the hips.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility"
   ],
@@ -6861,6 +7380,11 @@
    }
   ],
   "builds_on": "Standing Forward Fold",
+  "form_cue": "Spread your fingers, press the floor away and send your hips up and back so your back feels long. Bend your knees if that keeps your back straight; heels need not touch. Feel it in the shoulders, hamstrings and calves.",
+  "stop_condition": "Stop with dizziness, pressure in your head or eyes, sharp wrist or shoulder pain, or tingling in the hands. Come down to hands and knees and rise slowly. If head-down positions are a problem for you, check with a clinician first.",
+  "regression": "Keep your knees well bent and shorten the hold, or do it with your hands on a sturdy chair seat or a wall so your head stays above your hips.",
+  "remediation": "If your back rounds or your shoulders hunch to your ears, bend your knees more and push your hips back. Practise Standing Forward Fold first for hamstring length.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "flexibility",
    "hamstrings"
@@ -6908,6 +7432,11 @@
    }
   ],
   "builds_on": "Sphinx Pose",
+  "form_cue": "Hands under your shoulders, press up only as far as your hips stay heavy and your low back feels comfortable. Draw your shoulders down away from your ears and keep your neck long. Feel a gentle arch and an open chest.",
+  "stop_condition": "Stop with sharp or pinching low-back pain, pain or tingling into the buttocks or legs, or wrist pain. Mild pressure in the low back and a stretch across the tummy are normal. Do not crank your head back.",
+  "regression": "Stay on your forearms, or press up only a little with your elbows bent and hips on the floor, and shorten the hold.",
+  "remediation": "If your shoulders shrug up or you feel it all in one spot in the low back, lower down and lift less. Practise Sphinx Pose until it is comfortable.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "back",
    "flexibility"
@@ -6960,6 +7489,11 @@
    }
   ],
   "builds_on": "Sumo Squat",
+  "form_cue": "Keep the front knee stacked over the ankle and pointing the same way as the toes, with your back leg straight and the outer edge of that foot pressed down. Trunk upright, shoulders relaxed. Feel the front thigh working.",
+  "stop_condition": "Stop with sharp or pinching knee, hip or groin pain, or if you feel unsteady. Burning effort in the front thigh is normal; joint pain is not. Have a chair or wall within reach.",
+  "regression": "Take a narrower stance with a shallower knee bend and a shorter hold, rest your hands on your hips, or hold a chair back with one hand.",
+  "remediation": "If the front knee drifts inward or past your toes, come up higher and press the knee gently out over the foot. Practise Sumo Squat first to build strength in this wide stance.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "legs",
    "mobility"
@@ -7014,7 +7548,12 @@
     "reason": "Both involve torso rotation"
    }
   ],
-  "builds_on": "World's Greatest Stretch"
+  "builds_on": "World's Greatest Stretch",
+  "form_cue": "Finish the lunge and feel steady before you turn. Front knee stays over the ankle and in line with the toes, trunk tall, and the turn comes from your ribs and chest. Feel the legs working and a gentle twist mid-back.",
+  "stop_condition": "Stop at once with sharp or pinching knee, hip or back pain, or if you wobble or feel dizzy. Do this beside a wall or counter you can grab, on a clear, non-slip floor. Thigh effort is normal; joint pain is not.",
+  "regression": "Stay in one spot: step back into a shallow split stance with a hand on a chair, and make the turn small. Do fewer lunges.",
+  "remediation": "If your front knee caves in or you tip as you twist, lunge less deep and make the twist smaller, or leave it out. Practise World's Greatest Stretch first for the rotation.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Burpee (Modified)",
@@ -7053,7 +7592,12 @@
     "reason": "Shake out after intense effort"
    }
   ],
-  "builds_on": "Inchworm"
+  "builds_on": "Inchworm",
+  "form_cue": "Step, do not jump, unless stepping is already easy. Bend your knees to get your hands down, hold a straight line from head to heels in the plank, and lower with control. Stand all the way up each rep. Steady pace.",
+  "stop_condition": "Stop at once with chest pain or pressure, dizziness, unusual breathlessness, or sharp wrist, shoulder, back or knee pain. Hard breathing and effort are normal. Rise slowly. Check with a clinician first if you have a heart or blood pressure condition.",
+  "regression": "Step back and step forward only, leaving out the lowering and push-up, with your hands on a sturdy chair seat or bench instead of the floor. Do fewer reps.",
+  "remediation": "If your hips sag in the plank or you start to collapse to the floor, slow down, rest between reps and drop your knees for the push-up. Practise Inchworm first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Turkish Get-Up (Half)",
@@ -7101,7 +7645,12 @@
     "reason": "Both require coordinated full-body stability"
    }
   ],
-  "builds_on": "Sit-to-Stand"
+  "builds_on": "Sit-to-Stand",
+  "form_cue": "Keep your eyes on the raised hand and that arm straight up the whole time. Press through the bent-leg foot to roll up, one step at a time, with a pause at each stage, and reverse just as slowly.",
+  "stop_condition": "Stop at once with sharp or pinching shoulder pain in either arm, wrist or back pain, dizziness on coming up or lying down, or if the supporting arm feels shaky. Use no weight, and have a clear floor around you.",
+  "regression": "Do only the roll to your forearm and back down, without lifting your hips or sweeping the leg, and do fewer reps each side.",
+  "remediation": "If the raised arm drifts or the supporting shoulder sinks toward your ear, go back to the last stage you can do smoothly and push the floor away with the supporting hand. Practise Sit-to-Stand for leg strength.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Progressive Muscle Relaxation",
@@ -7281,7 +7830,12 @@
     "reason": "Stretch after the lateral lunges"
    }
   ],
-  "builds_on": "Split Squat"
+  "builds_on": "Split Squat",
+  "form_cue": "In every lunge the bending knee follows the line of the toes and the foot stays flat. Keep your trunk tall; for the side lunge, sit your hips back with the other leg straight. Feel the thighs and buttocks working.",
+  "stop_condition": "Stop at once with sharp or pinching knee, hip or groin pain, or if you lose your balance. Keep a sturdy chair or counter within reach and use a non-slip floor. Muscle burn is normal; joint pain is not.",
+  "regression": "Make each lunge shallow and take a shorter step, hold a chair or counter with one hand, and do fewer rounds.",
+  "remediation": "If your knee caves inward or you push off with a lurch, shorten the step and reduce the depth. Practise Split Squat first until you can lower and rise under control.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Squat with Calf Raise",
@@ -7322,6 +7876,11 @@
    }
   ],
   "builds_on": "Wall Sit",
+  "form_cue": "Keep your back and head on the wall and knees over your ankles, in line with your toes. Rise onto the balls of both feet without your hips sliding up or down, then lower your heels slowly. Feel thighs and calves working.",
+  "stop_condition": "Stop with sharp pain in or around the kneecap, calf cramp, or if your feet start to slip. Burning effort in the thighs and calves is normal. Wear non-slip shoes and slide up the wall to stand if you feel unsteady.",
+  "regression": "Sit higher on the wall with only a slight knee bend, do fewer raises, or lower your heels straight away without the hold.",
+  "remediation": "If your knees fall inward or your hips creep up the wall as you tire, stop the set and rest. Practise Wall Sit on its own first, with heels down.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "legs",
    "strength",
@@ -7377,7 +7936,12 @@
     "reason": "Both are advanced single-leg balance exercises"
    }
   ],
-  "builds_on": "Romanian Deadlift (Bodyweight)"
+  "builds_on": "Romanian Deadlift (Bodyweight)",
+  "form_cue": "Tip forward from the hip like a seesaw: as your chest goes down the back leg goes up, back flat, hips level and facing the floor. Keep the standing knee slightly soft. Feel the back of the standing thigh and buttock.",
+  "stop_condition": "Stop at once if you start to lose balance, or with sharp low-back, hip or knee pain or dizziness. Do this beside a sturdy chair or counter you can grab. Wobbling at the ankle and hamstring stretch are normal.",
+  "regression": "Reach to a chair seat instead of the floor, keep the back toes lightly touching the ground, or hold a counter with your free hand. Do fewer reps.",
+  "remediation": "If your back rounds or your hip opens out to the side, hinge less far and slow down. Practise Romanian Deadlift (Bodyweight) on two legs until the hinge feels natural.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Squat to Overhead Press",
@@ -7417,6 +7981,11 @@
    }
   ],
   "builds_on": "Bodyweight Squat",
+  "form_cue": "Sit your hips back and down with heels flat and knees in line with your toes, then stand up fully before the weights finish overhead. Keep your ribs down so your low back does not arch. Legs and shoulders share the work.",
+  "stop_condition": "Stop at once with sharp or pinching shoulder, knee or back pain, dizziness, or if you cannot control the weights overhead. Keep weights light and do not hold your breath. Muscle effort is normal; joint pain is not.",
+  "regression": "Use no weights and simply reach your arms overhead, squat only part of the way or down to a chair seat, and do fewer reps.",
+  "remediation": "If your back arches as you press or your heels lift as you squat, put the weights down and reduce the depth. Practise Bodyweight Squat first until it is steady.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "strength",
    "legs",
@@ -7469,7 +8038,12 @@
     "reason": "March is the warm-up for knee drives"
    }
   ],
-  "builds_on": "Split Squat"
+  "builds_on": "Split Squat",
+  "form_cue": "Step back softly onto the ball of the foot, lower with your front knee over the ankle, then push through the front heel to stand tall and bring the back knee up. Finish upright, not leaning back. Move with control.",
+  "stop_condition": "Stop at once with sharp or pinching knee or hip pain, dizziness, or if you cannot stay balanced. Do this beside a sturdy chair or counter and hold it if you need to. Thigh and buttock effort is normal.",
+  "regression": "Hold a chair or counter with one hand, take a shallow step back, and lift the knee only a little, or tap the foot down beside the other. Do fewer reps.",
+  "remediation": "If you wobble at the top or the front knee caves inward, slow down and put the foot down between the lunge and the knee lift. Practise Split Squat first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pelvic Floor Elevator",
@@ -7560,7 +8134,12 @@
     "name": "Banded Lateral Walk",
     "reason": "Both strengthen hip abductors"
    }
-  ]
+  ],
+  "form_cue": "Stand tall and lift the leg straight out to the side with toes pointing forward, keeping your trunk upright. The lift is modest. You should feel it in the outer hip of the lifting leg and also in the standing hip.",
+  "stop_condition": "Keep a hand on the wall or a sturdy chair. Stop if you feel unsteady or dizzy, or get sharp or pinching pain in either hip, the groin or the low back. A tired feeling in the outer hips is normal.",
+  "regression": "Lift the leg only a few inches without the hold, keep both hands on the support and do fewer reps. Tap the foot down between reps to reset your balance.",
+  "remediation": "If you lean your trunk away or the toes turn out to get the leg higher, lower the lift. Stay tall and lift only as far as you can with the body still.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Ankle Pumps",
@@ -7642,7 +8221,12 @@
     "reason": "Strengthen then stretch the chest"
    }
   ],
-  "builds_on": "Wall Push-Up"
+  "builds_on": "Wall Push-Up",
+  "form_cue": "With the band across your upper back and an end in each hand, keep a slight bend in the elbows and sweep the arms forward as if hugging a wide tree, then open slowly. Stand tall with shoulders down. Feel it in the chest.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, chest pain or pressure, or numbness or tingling in the arms. Muscle effort in the chest is normal. Check the band for nicks and keep it flat across your back, not on your neck.",
+  "regression": "Use a lighter band, hold it with more slack, open the arms only part of the way back, or do fewer reps.",
+  "remediation": "If your shoulders round forward or shrug, or your elbows lock, the band is too strong or you are opening too far. Lighten it and shorten the range. Go back to Wall Push-Up if the movement stays hard to control.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Retraction (Wall)",
@@ -7681,7 +8265,12 @@
     "reason": "Both use the wall for posture feedback"
    }
   ],
-  "builds_on": "Chin Tuck"
+  "builds_on": "Chin Tuck",
+  "form_cue": "Slide your head straight back as if along a shelf, eyes and chin level, until the back of your head presses the wall. Do not tip your head back or chin down. Feel a stretch at the base of the skull.",
+  "stop_condition": "Stop with dizziness, sharp or pinching neck pain, headache, or numbness or tingling into an arm. A stretch at the back of the neck and gentle effort in front are normal. Press lightly; never force it.",
+  "regression": "Press more gently, shorten the hold and do fewer reps. If your head does not reach the wall comfortably, place a small folded towel behind it.",
+  "remediation": "If your chin lifts or your low back arches off the wall, step your feet a little forward, soften your knees and press less hard. Practise Chin Tuck sitting down first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Scapular Push-Up",
@@ -7720,7 +8309,12 @@
     "reason": "Both are done from plank position"
    }
   ],
-  "builds_on": "Scapular Squeeze"
+  "builds_on": "Scapular Squeeze",
+  "form_cue": "Hold a plank with elbows locked and body in one line. Without bending the arms, push the floor away so the upper back rises, then let the chest sink between the shoulders. Only the shoulder blades move.",
+  "stop_condition": "Stop with wrist pain, pinching in the shoulder, low-back pain from sagging hips, or neck strain. Effort around the shoulder blades and trunk is normal.",
+  "regression": "Do it from your knees, or standing with your hands on a wall or counter. Fewer reps are fine.",
+  "remediation": "If your elbows bend, your hips sag or your head pokes forward, move to the knees or the wall. If you cannot feel the shoulder blades moving, practise Scapular Squeeze first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hip Hike",
@@ -7768,7 +8362,12 @@
     "reason": "Both target glute medius for hip stability"
    }
   ],
-  "builds_on": "Standing Hip Abduction"
+  "builds_on": "Standing Hip Abduction",
+  "form_cue": "Keep both knees straight and your trunk tall. The movement comes only from the pelvis tilting: let the free side lower a little, then lift it by working the hip of the standing leg. Feel it in the side of the standing hip.",
+  "stop_condition": "Use a low, stable step next to a wall or rail and keep a hand on it. Stop if you feel unsteady or dizzy, or get sharp pain in the standing hip, knee or low back. A tired feeling in the side of the hip is normal.",
+  "regression": "Do it on flat ground beside a counter, lifting one foot just off the floor and hiking that hip, with a smaller movement and fewer reps.",
+  "remediation": "If you bend the standing knee or lean your trunk sideways, you are not using the hip. Shrink the movement and watch your belt line in a mirror, and practise Standing Hip Abduction first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hamstring Curl (Standing)",
@@ -7814,7 +8413,12 @@
     "name": "Seated Knee Extension",
     "reason": "Quad extension and hamstring curl pair for knee health"
    }
-  ]
+  ],
+  "form_cue": "Stand tall holding the wall, thighs side by side, and bend one knee to bring the heel up behind you without the thigh swinging forward or the back arching. Feel it in the back of the thigh. Lower slowly.",
+  "stop_condition": "Effort behind the thigh is normal. Stop with a hamstring cramp, sharp pain in or behind the knee, low-back pain, or unsteadiness. Keep hold of the wall or a sturdy chair throughout.",
+  "regression": "Bend the knee only partway, hold a counter with both hands and do fewer reps.",
+  "remediation": "If your thigh swings forward or your back arches, you are using the hip instead of the knee. Stand closer to the wall, keep the knees level, and curl through a smaller range slowly.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Sit with Ball Squeeze",
@@ -7853,7 +8457,12 @@
     "reason": "Strengthen then stretch the inner thighs"
    }
   ],
-  "builds_on": "Wall Sit"
+  "builds_on": "Wall Sit",
+  "form_cue": "Back flat on the wall, knees over ankles and in line with your hips, and squeeze the ball evenly with both knees while you keep breathing. Feel the thighs and inner thighs working.",
+  "stop_condition": "Burning, shaking thighs are normal effort. Stop with sharp pain in or behind the kneecap, groin pain, back pain, dizziness, or if you feel you may slide. Stop before your legs give out, and do not hold your breath.",
+  "regression": "Sit higher on the wall with a lighter squeeze and a shorter hold, or do fewer repeats. Keep a chair beside you to push up from.",
+  "remediation": "If your feet creep in, your back peels off the wall or you hold your breath, come up higher and squeeze more gently. Go back to plain Wall Sit until that hold feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Heel Drop (Eccentric Calf)",
@@ -7900,7 +8509,12 @@
     "reason": "Heel drops work both gastrocnemius and soleus"
    }
   ],
-  "builds_on": "Single-Leg Calf Raise"
+  "builds_on": "Single-Leg Calf Raise",
+  "form_cue": "Balls of the feet on the step, hold a rail, rise on both feet, then shift onto one leg and lower that heel slowly and smoothly below the step. Push back up with both feet. Feel it in the calf and behind the ankle.",
+  "stop_condition": "A strong calf stretch and effort is normal. Stop with sharp pain in the heel, the cord behind the ankle or the calf, a sudden pull or pop, or unsteadiness. Always hold a rail or wall, on a step that will not slip.",
+  "regression": "Lower both heels together instead of one, drop only to step level instead of below it, and do fewer reps. Or do the slow lowering on flat floor.",
+  "remediation": "If you drop quickly, bounce at the bottom or cannot control the lowering, it is too much load for now. Use both feet and practise Single-Leg Calf Raise on flat ground first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wrist Roller",
@@ -7939,7 +8553,12 @@
     "reason": "Stretch after intense wrist strengthening"
    }
   ],
-  "builds_on": "Grip Squeeze"
+  "builds_on": "Grip Squeeze",
+  "form_cue": "Keep your elbows bent at your sides and wrists level, and turn the dowel one hand at a time with small, steady wrist movements. Unwind as slowly as you wind. The effort belongs in the forearms; shoulders stay relaxed.",
+  "stop_condition": "Stop with sharp wrist, elbow or thumb pain, numbness or tingling in the hand, or if your grip starts to fail. Forearm burn is normal. Keep the weight very light and over a clear floor, away from your feet.",
+  "regression": "Use a lighter weight or none at all, wind the string only part of the way, rest your forearms on a table edge, and do fewer reps.",
+  "remediation": "If your shoulders hunch or you start to jerk the dowel, lower the weight to the floor and rest. Practise Grip Squeeze first to build hand and forearm endurance.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Tree Pose",
@@ -7986,7 +8605,12 @@
     "reason": "Both are standing yoga balance poses"
    }
   ],
-  "builds_on": "Single-Leg Stand"
+  "builds_on": "Single-Leg Stand",
+  "form_cue": "Press the foot and the inner calf or thigh gently into each other, well away from the knee joint. Keep the standing knee soft, hips level and facing forward, and eyes on a fixed point. Feel the standing leg and outer hip.",
+  "stop_condition": "Stand beside a wall or counter. Put your foot down and stop if you feel dizzy, very unsteady, or have pain in the standing knee, hip or ankle, or pinching in the bent hip. Small ankle wobbles are normal.",
+  "regression": "Rest the heel on the inside of your standing ankle with the toes still on the floor, and keep one hand on a wall. Take a shorter hold if you need to.",
+  "remediation": "If your hip hikes up, you lean to the side, or the foot keeps sliding, lower the foot and keep your hands at your chest. Practise Single-Leg Stand until you can hold it steadily first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Deep Breathing with Arm Raise",
@@ -8026,7 +8650,12 @@
     "name": "Overhead Reach",
     "reason": "Both involve reaching overhead, one static, one with breath"
    }
-  ]
+  ],
+  "form_cue": "Let the breath set the pace: your arms rise for the whole inhale and lower for the whole exhale. Keep your shoulders away from your ears and your ribs from flaring. Breathe quietly and comfortably, not as deeply as possible.",
+  "stop_condition": "Stop if you feel light-headed or dizzy, or have pinching pain in a shoulder. Return to normal breathing and rest. Stand near a support if your balance is unsure.",
+  "regression": "Raise your arms only to shoulder height, or out to the sides, and take fewer breaths. You can do this seated.",
+  "remediation": "If you run out of breath before your arms get there, move your arms a little faster or raise them less high. Do not stretch the breath to fit the movement.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Resistance Band Row",
@@ -8065,7 +8694,12 @@
     "reason": "Strengthen the back, stretch the front"
    }
   ],
-  "builds_on": "Scapular Squeeze"
+  "builds_on": "Scapular Squeeze",
+  "form_cue": "Stand tall with feet hip-width and knees soft. Pull your elbows straight back close to your sides, squeezing the shoulder blades together and down, then return slowly. Chest stays up, shoulders stay away from your ears.",
+  "stop_condition": "Check that the band is undamaged and firmly anchored before each set. Stop with pinching in the front of the shoulder, neck strain, low-back pain from leaning back, or tingling in the arms. Mid-back effort is normal.",
+  "regression": "Step closer to the anchor so the band is slacker, use a lighter band, or do it seated on a sturdy chair. Fewer reps are fine.",
+  "remediation": "If you shrug, lean back or let the band snap you forward, the resistance is too much. Lighten it and slow down, or practise Scapular Squeeze first to find the movement.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Spinal Wave",
@@ -8159,7 +8793,12 @@
     "name": "Supine Twist",
     "reason": "Both are restorative floor stretches"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back with your tailbone and low back resting on the floor and legs relaxed up the wall, knees soft if needed. The stretch should be a gentle pull up the backs of the thighs.",
+  "stop_condition": "A gentle pull behind the thighs is normal. Stop with low-back pain, sharp pain behind the knees, or numbness, tingling or cold feet. Bend your knees, roll to your side and rest before getting up slowly.",
+  "regression": "Move your hips further from the wall and keep your knees bent. A shorter hold is fine.",
+  "remediation": "If your tailbone lifts off the floor or your knees will not stay comfortably straight, you are too close. Slide back from the wall until your hips rest flat and the legs can relax.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Thoracic Spine Windmill",
@@ -8206,7 +8845,12 @@
     "reason": "Both are thoracic rotation exercises on the floor"
    }
   ],
-  "builds_on": "Open Book Stretch"
+  "builds_on": "Open Book Stretch",
+  "form_cue": "Keep the top knee pressed onto its cushion throughout. Sweep the top arm in a slow arc up past your head and over, eyes following the hand, so the turn comes from the upper back. Feel it across the chest, shoulder and mid-back.",
+  "stop_condition": "Safety: move slowly and never force the arm toward the floor. Stop with sharp or pinching shoulder pain, a slipping or catching feeling in the shoulder, back pain, dizziness, or tingling down the arm.",
+  "regression": "Make a small arc and stop when the arm points to the ceiling, bending the elbow if that is easier. Fewer reps are fine.",
+  "remediation": "If your top knee lifts off the cushion or your hips roll back, the low back is doing the twisting. Shrink the arc and pin the knee, or go back to Open Book Stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Single-Leg Deadlift to Row",
@@ -8254,7 +8898,12 @@
     "reason": "Both include a rowing component"
    }
   ],
-  "builds_on": "Romanian Deadlift (Bodyweight)"
+  "builds_on": "Romanian Deadlift (Bodyweight)",
+  "form_cue": "Hinge from the hip with a flat back and hips level, standing knee slightly soft. Get steady first, then pull your elbow back toward your hip without twisting your trunk. Feel the standing thigh, buttock and upper back.",
+  "stop_condition": "Stop at once if you start to lose balance, or with sharp low-back, hip or shoulder pain or dizziness. Do this beside a sturdy chair or counter you can grab, and keep the weight light. Muscle effort is normal.",
+  "regression": "Use no weight, keep the back toes on the floor as a kickstand, and rest your free hand on a chair or counter. Do fewer reps.",
+  "remediation": "If your back rounds or your trunk twists as you row, set the weight down and hinge less far. Practise Romanian Deadlift (Bodyweight) on two legs first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Calf Stretch on Step",
@@ -8293,7 +8942,12 @@
     "reason": "Step stretch and step raise use the same setup"
    }
   ],
-  "builds_on": "Wall Calf Stretch"
+  "builds_on": "Wall Calf Stretch",
+  "form_cue": "Balls of both feet on the step, hold a rail, and let the heels sink slowly under control with knees straight, then with knees slightly bent. Feel the stretch in the calves, lower down with the knees bent.",
+  "stop_condition": "A steady pull in the calves is normal. Stop with sharp pain in the heel or behind the ankle, a cramp in the arch, or unsteadiness. Hold a rail or wall the whole time and use a step that will not slip.",
+  "regression": "Let the heels drop only to step level, or do one foot at a time with the other foot fully on the step. If the step feels unsafe, do Wall Calf Stretch on the floor.",
+  "remediation": "If you bounce, grip with your toes or cannot relax into it, come up a little and hold more firmly. If your feet slide on the step, switch to Wall Calf Stretch instead.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Breath Hold Walk",
@@ -8333,7 +8987,12 @@
     "reason": "Both are walking-based exercises"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Start the hold after a normal, relaxed breath out, not a big one, and walk at an easy pace. Start breathing again at the first clear urge to breathe; your next breath in should be calm and through the nose, not a gasp.",
+  "stop_condition": "Stop at once and breathe normally with dizziness, light-headedness, tingling, chest tightness, headache or a pounding heart. Never push the hold. Skip this and ask a clinician first if you have a heart, lung or blood pressure condition or are pregnant.",
+  "regression": "Hold for only a few steps, do fewer repeats, or try the short breath hold sitting down before doing it while walking.",
+  "remediation": "If you gasp or need several big breaths to recover, the hold was too long: shorten it. Practise Diaphragmatic Breathing until calm nose breathing is easy.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Prone Hip Extension",
@@ -8380,7 +9039,12 @@
     "reason": "Prone hip extension is the single-leg version of superman legs"
    }
   ],
-  "builds_on": "Donkey Kick"
+  "builds_on": "Donkey Kick",
+  "form_cue": "Keep both hip bones pressed into the floor and the knee straight, and lift the leg from the glute just a few inches. Rest your forehead on your hands. Feel it in the buttock, with only light effort in the low back.",
+  "stop_condition": "Stop with low-back pain or pinching, a hamstring cramp that does not ease, or tingling down the leg. Glute effort is normal. Height does not matter here, so never force the leg higher.",
+  "regression": "Put a pillow under your hips and belly, lift the leg barely off the floor and skip the hold. Fewer reps is fine.",
+  "remediation": "If your pelvis rolls or your low back arches to lift the leg, the lift is too high. Squeeze the glute first, then lift only an inch or two. If it stays hard, go back to Donkey Kick.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Piriformis Stretch",
@@ -8471,7 +9135,12 @@
     "reason": "Build wrist tolerance for push-up positions"
    }
   ],
-  "builds_on": "Tabletop Wrist Stretch"
+  "builds_on": "Tabletop Wrist Stretch",
+  "form_cue": "Keep your knees down, palms flat and elbows straight but not locked. Rock slowly and only as far as you feel a stretch in the forearm and wrist, with your shoulders over or just past your hands.",
+  "stop_condition": "Stop with sharp or pinching wrist pain, or numbness or tingling in the hand or fingers. A firm stretch in the forearm is normal; pain in the joint is not. Take weight off your hands at once if it pinches.",
+  "regression": "Sit back toward your heels to take weight off your hands, rock a smaller distance, shorten the time, or do it with your hands on a table or chair seat.",
+  "remediation": "If the heels of your hands lift or your elbows bend, you have gone too far: back off until the palms are flat. Practise Tabletop Wrist Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Hip Flexor Stretch",
@@ -8616,7 +9285,12 @@
     "reason": "Both are prone upper body exercises"
    }
   ],
-  "builds_on": "Neck Flexor Strengthening"
+  "builds_on": "Neck Flexor Strengthening",
+  "form_cue": "Tuck your chin first, then float your head just off the towel with your eyes still looking at the floor and the back of your neck long. Keep your shoulders relaxed. The effort is in the back of the neck and between the shoulder blades.",
+  "stop_condition": "Stop with sharp neck pain, headache, dizziness, or numbness or tingling into an arm. Mild muscle effort at the back of the neck is normal. Do not look forward or tip your head back.",
+  "regression": "Do the chin tuck only with your forehead resting on the towel, or lift for a shorter hold and do fewer reps.",
+  "remediation": "If your chin juts forward or you look up as you lift, the tuck has gone: rest, reset and lift less. Practise Neck Flexor Strengthening first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Thoracic Foam Roller Rotation",
@@ -8663,7 +9337,12 @@
     "reason": "Both are deep thoracic rotation exercises"
    }
   ],
-  "builds_on": "Foam Roller Thoracic Extension"
+  "builds_on": "Foam Roller Thoracic Extension",
+  "form_cue": "Knees bent, feet flat, roller across the upper back only. Arms hugged across your chest, chin slightly tucked. Turn your shoulders and ribs slowly to one side over the roller, then the other, keeping the hips still and the low back off the roller.",
+  "stop_condition": "Safety: go slowly and stay in a small range. Stop with sharp spine or rib pain, neck strain, dizziness, or tingling into the arms. Skip it and ask a clinician first if you have osteoporosis or a past spinal fracture.",
+  "regression": "Leave the roller out and make the same small hugging rotations lying on your back with knees bent, or sitting tall on a chair. Fewer reps are fine.",
+  "remediation": "If your hips roll with you, your neck strains or the roller slides, reduce the turn and reset your feet. If you cannot stay steady on the roller, go back to Foam Roller Thoracic Extension.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Jefferson Curl",
@@ -8702,7 +9381,12 @@
     "reason": "Both work segmental spinal control"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "form_cue": "Tuck your chin, then let the neck, upper back, mid back and low back round in turn, arms hanging heavy and knees straight but not locked. Uncurl from the bottom up, head last. Feel a stretch along the spine and backs of the legs.",
+  "stop_condition": "Safety: use a low, stable step next to a wall or rail. Stop with dizziness, unsteadiness, sharp back pain, or pain or tingling down a leg. Skip it and ask a clinician if you have osteoporosis, disc problems or blood pressure concerns.",
+  "regression": "Do it standing on the flat floor, rounding down only as far as your thighs or knees, with a hand on a counter or chair back. Fewer reps are fine.",
+  "remediation": "If you hinge at the hips with a flat back, drop quickly or lose balance, shorten the range and slow down. Practise Standing Forward Fold first until rounding down and up feels controlled.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side Plank Clamshell",
@@ -8749,7 +9433,12 @@
     "reason": "Clamshell lying down builds toward the side plank version"
    }
   ],
-  "builds_on": "Side Plank"
+  "builds_on": "Side Plank",
+  "form_cue": "Elbow under your shoulder, knees bent, hips lifted and pushed forward so you are straight from knees to shoulders. Keep your feet together and open only the top knee without rolling back. Feel the side of both hips and waist.",
+  "stop_condition": "This is a hard exercise. Stop if you feel sharp or pinching pain in the supporting shoulder, hip or lower back, or if your hips drop and you cannot keep them up. Burning effort in the side of the hip is normal.",
+  "regression": "Lie on your side with your hips resting on the floor and do the knee opening without the plank. Or hold the bent-knee side plank without opening the knee. Fewer reps are fine.",
+  "remediation": "If your hips sag or your body rolls backward as the knee opens, make the opening smaller or rest. Build a steady Side Plank first, then add the knee movement.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Quadruped Hip Extension with Band",
@@ -8796,7 +9485,12 @@
     "reason": "Both use bands for glute strengthening"
    }
   ],
-  "builds_on": "Donkey Kick"
+  "builds_on": "Donkey Kick",
+  "form_cue": "Keep your back flat and hips square to the floor as you press the banded foot straight back until the leg is in line with your body, no higher. Return slowly against the band. Feel it in the glute of the kicking leg.",
+  "stop_condition": "Check the band is not worn and is pinned firmly under your hands, since it can snap back toward your face. Stop with low-back pain, wrist pain, sharp pain in the supporting knee or pinching in the hip. Glute effort is normal.",
+  "regression": "Use the lightest band or no band, kick back only part of the way and do fewer reps. Pad your knees with a mat or folded towel.",
+  "remediation": "If your back arches or your hips twist as the leg goes back, the band is too strong or the kick too high. Drop the band and get Donkey Kick smooth first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Eccentric Single-Leg Squat",
@@ -8844,7 +9538,12 @@
     "reason": "Eccentric squat builds toward pistol squat"
    }
   ],
-  "builds_on": "Step-Up"
+  "builds_on": "Step-Up",
+  "form_cue": "Send your hips back and lower slowly on one leg, keeping the knee in line with the toes and the heel down, until you are seated. Do not drop the last part. Feel it in the thigh and glute.",
+  "stop_condition": "Hard thigh effort is normal. Stop with sharp or pinching knee pain, a knee that buckles, or loss of balance. Use a sturdy chair that cannot slide, placed against a wall, and keep a counter or second chair within reach.",
+  "regression": "Use a higher seat or add a firm cushion, keep the toes of the other foot lightly on the floor, and lower for a shorter time. Fewer reps is fine.",
+  "remediation": "If you drop onto the seat or the knee caves inward, the load is too much. Raise the seat, hold a support, or lower on both legs slowly. Step-Up is the exercise to build strength with first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Hamstring Bridge March",
@@ -8891,7 +9590,12 @@
     "reason": "Both are advanced hamstring bridge variations"
    }
   ],
-  "builds_on": "Glute Bridge"
+  "builds_on": "Glute Bridge",
+  "form_cue": "Press through your heels to hold the hips up, then lift one foot just off the floor without the pelvis dropping or twisting. Keep your ribs down. Feel it in the hamstring and glute of the supporting leg.",
+  "stop_condition": "Strong effort in the hamstrings is normal. Stop with a hamstring cramp, low-back pain, or sharp knee pain. Lower your hips to the floor to rest whenever you need to, and do not hold your breath.",
+  "regression": "Bring your feet closer to your hips and make the lifts tiny, or just lift one heel while the toes stay down. Fewer marches is fine.",
+  "remediation": "If your hips sag or rock side to side, or the hamstring cramps, move the feet closer and hold a steady two-foot bridge. Glute Bridge is the one to get solid before marching.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Ankle Inversion/Eversion",
@@ -9027,7 +9731,12 @@
     "reason": "Multi-directional walking challenges"
    }
   ],
-  "builds_on": "Heel-to-Toe Walk"
+  "builds_on": "Heel-to-Toe Walk",
+  "form_cue": "Stand tall, reach back with your toes first and roll down to the heel, taking small slow steps. Keep your chest up rather than leaning forward. Check the path behind you is clear before you start.",
+  "stop_condition": "Clear the floor behind you and keep a hand near a wall, railing or counter. Stop if you feel dizzy, stumble, or have sharp pain in your knees, hips or back. Feeling unsure at first is normal; losing your balance is not.",
+  "regression": "Slide one hand along a counter or wall as you go, take shorter steps and fewer of them. Stop and look over your shoulder whenever you need to.",
+  "remediation": "If you shuffle, lean forward or keep twisting to look behind, make the steps smaller and keep a hand on the support. Practise Heel-to-Toe Walk going forward until it feels steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Extended Exhale Breathing",
@@ -9153,7 +9862,12 @@
     "name": "Side Bend Stretch",
     "reason": "Both stretch the lateral chain"
    }
-  ]
+  ],
+  "form_cue": "Hold the frame with both hands as high as you comfortably can, feet planted, and sit your hips back so your arms lengthen and your chest drops gently. Keep your feet on the floor the whole time. Feel the stretch under the arms and along your sides.",
+  "stop_condition": "Stop with pinching at the top of the shoulder, sharp pain, numbness or tingling in the arms or hands, or dizziness. Only use a solid frame you can grip securely and never take your feet off the floor. A long pull down your sides is normal.",
+  "regression": "Hold the sides of the frame at chest or shoulder height instead of overhead and sit the hips back only a little. Use a shorter hold.",
+  "remediation": "If your lower back arches sharply or your shoulders jam up by your ears, you are hanging too heavily. Take more weight through your feet, bend the knees and let the stretch come from sitting the hips back.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing IT Band Stretch",
@@ -9200,7 +9914,12 @@
     "reason": "Stretch the IT band, strengthen the glute med"
    }
   ],
-  "builds_on": "Side Bend Stretch"
+  "builds_on": "Side Bend Stretch",
+  "form_cue": "Keep both feet flat and your chest facing forward, then push the hip of the back leg out to its side while that arm reaches up and over. Do not twist or bend forward. Feel the stretch along the outer hip and side of the body.",
+  "stop_condition": "Stand beside a wall or counter you can touch, since crossed feet make you less steady. Stop with unsteadiness, sharp pain in the outer hip or knee, or pinching in the low back. A gentle pull down the side is normal.",
+  "regression": "Keep one hand on a wall or counter, cross the feet only slightly and lean a small amount. Leave the arm down if reaching overhead is uncomfortable, and use a shorter hold.",
+  "remediation": "If you twist, bend forward or lose balance, uncross the feet a little and lean less. Practise the side lean on its own with Side Bend Stretch first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Incline Push-Up",
@@ -9239,7 +9958,12 @@
     "reason": "Strengthen then stretch the chest"
    }
   ],
-  "builds_on": "Wall Push-Up"
+  "builds_on": "Wall Push-Up",
+  "form_cue": "Hands on the edge of the surface a little wider than your shoulders, feet back, body in one straight line from head to heels. Lower your chest toward the edge and press away. Feel it in the chest, shoulders and arms.",
+  "stop_condition": "Stop with sharp pain in the shoulder, elbow or wrist, chest pain or pressure, or dizziness. Muscle effort is normal. Use only a heavy, fixed surface that cannot slide or tip, and make sure your feet will not slip.",
+  "regression": "Use a higher surface, stand with your feet closer to it, lower only part of the way, or do fewer reps.",
+  "remediation": "If your hips sag, your bottom lifts or your head drops forward, the angle is too hard. Tighten your stomach and buttocks, or go back to Wall Push-Up until you can keep a straight line.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lying Hip Flexor Stretch",
@@ -9285,7 +10009,12 @@
     "name": "Knee-to-Chest Stretch",
     "reason": "Both are supine hip and back stretches"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back with your buttocks near the edge. Hug one knee to your chest so the low back stays flat, and let the other leg hang relaxed off the edge. Feel the stretch at the front of the hanging hip and thigh.",
+  "stop_condition": "Use a firm, stable bed and stay well supported so you cannot slide off. Stop with sharp back pain, pinching in the front of either hip, groin pain, or tingling in the leg. A pulling stretch at the front of the hip is normal.",
+  "regression": "Lie a little further onto the bed so the leg hangs less, or rest the hanging foot on a low stool or stack of books. Use a shorter hold.",
+  "remediation": "If your low back arches up off the bed, the stretch has moved to your back. Hug the knee in closer, or raise the hanging foot on a support until the back stays flat.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Lateral Flexion with Overpressure",
@@ -9376,7 +10105,12 @@
     "name": "Cat-Cow",
     "reason": "Both are quadruped spinal mobility exercises"
    }
-  ]
+  ],
+  "form_cue": "Start with hands under shoulders and knees under hips. Keeping your back long and hands planted, ease your hips back toward your heels, then return. Feel a gentle stretch in the low back, hips and shoulders.",
+  "stop_condition": "Stop with sharp back pain, pinching in the front of the hips, knee or wrist pain, or tingling in the legs. A gentle stretch is normal; do not push into pain to reach your heels.",
+  "regression": "Rock back only partway and do fewer reps. Kneel on a folded towel, and widen your knees slightly if the hips feel blocked.",
+  "remediation": "If your low back rounds early or your hips pinch, stop the rock just before that point and work in that smaller range. Keep the movement slow and even.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Belly Breathing with Weight",
@@ -9417,7 +10151,12 @@
     "reason": "Both use position to enhance breathing awareness"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Let the object rise as you breathe in and sink as you breathe out, while your chest and shoulders stay quiet. Breathe gently through your nose; do not push your belly out or force the breath.",
+  "stop_condition": "Stop if you feel light-headed or short of breath, or if the weight is uncomfortable on your belly. Return to normal breathing. Check with a clinician first if you are pregnant or have had recent abdominal surgery.",
+  "regression": "Use your hand instead of an object, bend your knees with your feet flat or put a pillow under them, and take fewer breaths.",
+  "remediation": "If the object barely moves or your chest lifts first, slow down and breathe more softly. Practise Diaphragmatic Breathing with a hand on your belly first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Zombie Walk",
@@ -9464,7 +10203,12 @@
     "reason": "Dynamic then static hamstring stretching"
    }
   ],
-  "builds_on": "Standing Hamstring Stretch"
+  "builds_on": "Standing Hamstring Stretch",
+  "form_cue": "Stand tall and swing one leg up with a nearly straight knee only as high as your back stays upright, reaching the opposite hand toward it. Controlled swing, not a fling. Feel a brief stretch behind the thigh.",
+  "stop_condition": "A quick stretch behind the thigh is normal. Stop with a sharp or sudden pull in the back of the thigh, low-back pain, or loss of balance. Warm up first, never force the height, and stay near a wall on a clear floor.",
+  "regression": "Do it in place with one hand on a wall or chair, with small low swings and a soft knee. Fewer kicks is fine.",
+  "remediation": "If you round your back or lean backward to reach your toes, lower the kick and stop chasing the hand. If the swing feels uncontrolled, use Standing Hamstring Stretch instead.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Pallof Hold with Rotation",
@@ -9511,7 +10255,12 @@
     "reason": "Both are standing core rotation exercises"
    }
   ],
-  "builds_on": "Pallof Press (Band)"
+  "builds_on": "Pallof Press (Band)",
+  "form_cue": "Stand tall, feet about hip width, knees soft, arms straight out from your chest. Turn your chest, arms and head together as one unit, slowly, through a small range you fully control. Feel the muscles around your waist.",
+  "stop_condition": "Loaded twisting: check the anchor is secure and keep the band light. Stop with any sharp or pinching lower back pain, if the band jerks you round, or if you lose balance. If you have been told to avoid twisting, skip this.",
+  "regression": "Use a lighter band or stand closer to the anchor, make the turn smaller, and bend your elbows to bring your hands nearer your chest. Fewer reps are fine.",
+  "remediation": "If the band snaps you back toward the anchor, or your arms move while your trunk stays still, reduce the tension and the range. Go back to Pallof Press (Band) until you can hold it without moving.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Pendulum",
@@ -9557,7 +10306,12 @@
     "name": "Cross-Body Shoulder Stretch",
     "reason": "Pendulum warms up, stretch deepens"
    }
-  ]
+  ],
+  "form_cue": "Lean on the table with a flat back and let the other arm hang heavy like a rope. Start the circles with a small sway of your body so the arm follows along; the shoulder muscles stay relaxed. It should feel loose and easy.",
+  "stop_condition": "Stop with sharp or increasing shoulder pain, numbness or tingling in the arm or hand, dizziness or lightheadedness from leaning forward, or back strain. Come up slowly. Easy, painless movement is the goal.",
+  "regression": "Make the circles tiny, lean forward less, or just let the arm hang still and relax for a moment. You can also sit and lean forward with your free forearm on the table.",
+  "remediation": "If you find you are lifting or steering the arm with your shoulder muscles, stop and let it hang still, then restart with a smaller body sway. Bend your knees and keep weight on the table hand if your back tires.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Forearm Pronation/Supination",
@@ -9655,7 +10409,12 @@
     "reason": "Strengthen and stretch the hip flexors"
    }
   ],
-  "builds_on": "Standing March"
+  "builds_on": "Standing March",
+  "form_cue": "Stand tall and lift the banded knee straight up in front toward hip height without leaning back or hiking the hip, then lower slowly. Feel the effort at the front of the lifting hip.",
+  "stop_condition": "Hold a counter or sturdy chair, and check the band is anchored low and securely so it cannot slip or snap. Stop with pinching or sharp pain in the front of the hip or groin, low-back pain or unsteadiness.",
+  "regression": "Use the lightest band or no band, lift the knee only part of the way and keep both hands on a support. Fewer reps is fine.",
+  "remediation": "If you lean back, sway or hitch the hip up to raise the knee, the band is too strong. Lower the lift or lighten the band, and practise Standing March first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chest Squeeze Isometric",
@@ -9737,7 +10496,12 @@
     "reason": "Stretch after intense push-ups"
    }
   ],
-  "builds_on": "Incline Push-Up"
+  "builds_on": "Incline Push-Up",
+  "form_cue": "Hands under the shoulders, feet on the step, body in one rigid line from head to heels. Lower the chest between your hands with elbows angled back, then press up. Feel it in the upper chest, shoulders and arms.",
+  "stop_condition": "This is an advanced, head-down position. Stop with sharp shoulder, wrist or back pain, chest pain or pressure, dizziness or pressure in the head. Use only a low, fixed step that cannot slide, and skip it if being head-down is a problem for you.",
+  "regression": "Use a lower step, lower only part of the way, or do fewer reps. If that is still hard, do push-ups with your hands on a counter instead and your feet on the floor.",
+  "remediation": "If your hips sag, your lower back arches or your head drops, stop the set; form has gone and the load is on your back and shoulders. Go back to Incline Push-Up until a straight line is easy.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chest Fly (Floor)",
@@ -9784,7 +10548,12 @@
     "reason": "Dynamic and passive chest opening"
    }
   ],
-  "builds_on": "Standing Chest Fly"
+  "builds_on": "Standing Chest Fly",
+  "form_cue": "On your back with knees bent, weights above the chest and a slight, fixed bend in the elbows. Open the arms slowly until the upper arms lightly touch the floor, then bring them back up in a wide arc. Feel it in the chest.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, chest pain or pressure, or numbness or tingling in the arms. Muscle effort is normal. Use weights light enough to control, keep a firm grip and never hold them over your face.",
+  "regression": "Use lighter weights or none at all, lower the arms only part of the way, bend the elbows more, or do fewer reps.",
+  "remediation": "If your elbows bend and straighten like a press, your wrists flop or your back arches, the weight is too heavy. Go lighter and slower. Standing Chest Fly trains the same hugging motion with less load.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Chest Doorway Stretch (Low Position)",
@@ -9831,7 +10600,12 @@
     "reason": "Both open the front of the chest"
    }
   ],
-  "builds_on": "Doorway Pec Stretch"
+  "builds_on": "Doorway Pec Stretch",
+  "form_cue": "Rest the forearm on the frame with the elbow lower than the shoulder, then lean gently forward and let your chest turn slightly away from the arm. Shoulder stays down and back. Feel the stretch in the chest and front of the shoulder.",
+  "stop_condition": "Stop with pinching or sharp pain in the front of the shoulder, a slipping or unstable feeling, or numbness or tingling in the arm or hand. A steady pull in the chest is the normal stretch feeling.",
+  "regression": "Lean less, turn your body away less, or use a shorter hold.",
+  "remediation": "If the shoulder rolls forward or you bend at the waist to get a stretch, stand up tall and ease off. If you cannot find the position comfortably, stay with Doorway Pec Stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Advanced Bird Dog",
@@ -9878,7 +10652,12 @@
     "reason": "Both are advanced quadruped core exercises"
    }
   ],
-  "builds_on": "Bird Dog"
+  "builds_on": "Bird Dog",
+  "form_cue": "Hold the bird dog with a flat back and level hips, belly lightly braced. Draw small, slow circles with the lifted hand and foot, moving from the shoulder and hip while the trunk stays completely still.",
+  "stop_condition": "Safety: keep the circles small and slow. Stop with sharp back pain, pain or tingling into an arm or leg, wrist or shoulder pain, or if you start to tip and cannot steady yourself.",
+  "regression": "Circle only the hand, or only the foot, with the other limb resting on the floor. Make the circles tiny and do fewer of them.",
+  "remediation": "If your hips rock, your back sags or you hold your breath, the circles are too big. Shrink them, or go back to Bird Dog until you can hold it without wobbling.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Side-Lying Clamshell with Lift",
@@ -9925,7 +10704,12 @@
     "reason": "Both use bands for glute medius work"
    }
   ],
-  "builds_on": "Clamshell"
+  "builds_on": "Clamshell",
+  "form_cue": "Keep hips stacked and knees bent. As the top knee opens against the band, let both feet rise together off the floor while the bottom knee stays down. Move slowly and feel it in the side and back of both hips.",
+  "stop_condition": "Stop with pinching in the front of the hip or groin, sharp pain in the outer hip or low-back pain, or if the band rolls or slips. Control the return so the band does not snap the knees shut. Hip effort is normal.",
+  "regression": "Take the band off, or leave the feet down and do the plain knee opening, with a smaller range and fewer reps.",
+  "remediation": "If the top hip rolls backward or you cannot keep the feet together as they lift, you are past your control. Go back to Clamshell without the foot lift until it is smooth.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Bulgarian Split Squat",
@@ -9973,7 +10757,12 @@
     "reason": "Same position for strength and flexibility"
    }
   ],
-  "builds_on": "Split Squat"
+  "builds_on": "Split Squat",
+  "form_cue": "Most of your weight stays on the front foot. Lower straight down with the front heel flat and the knee in line with the toes, torso leaning slightly forward. Feel it in the front thigh and glute.",
+  "stop_condition": "Hard thigh effort is normal. Stop with sharp or pinching pain in either knee, pain in the back hip or groin, or loss of balance. Use a chair or step that cannot slide and keep a wall or counter within reach.",
+  "regression": "Use a lower step for the back foot, hold a support and lower only partway, with fewer reps. Or put the back foot on the floor.",
+  "remediation": "If the front heel lifts, the knee caves in or you tip sideways, step the front foot further forward and shorten the range. If it stays shaky, go back to Split Squat on the floor.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Single-Leg Heel Raise Hold",
@@ -10020,7 +10809,12 @@
     "reason": "Both are advanced single-leg calf exercises on a step"
    }
   ],
-  "builds_on": "Single-Leg Calf Raise"
+  "builds_on": "Single-Leg Calf Raise",
+  "form_cue": "Ball of the foot on the step, hold a rail, rise straight up as high as you can with the ankle not rolling outward, and stay tall. Lower slowly. Feel the calf working hard.",
+  "stop_condition": "A burning, tired calf is normal. Stop with a cramp, sharp pain in the heel, behind the ankle or under the ball of the foot, or any wobble. Always hold a rail or wall, on a step that will not slip, eyes open.",
+  "regression": "Do the hold on flat floor instead of a step, or on both feet, with a firm hold on a counter and a shorter hold. Fewer reps is fine.",
+  "remediation": "If your heel sinks during the hold or the ankle rolls out, end that rep there and rest. Go back to Single-Leg Calf Raise until you can reach full height with control each time.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wrist CARs",
@@ -10110,7 +10904,12 @@
     "name": "Weight Shift",
     "reason": "Both are introductory balance exercises"
    }
-  ]
+  ],
+  "form_cue": "Stand tall with your weight shared evenly between both feet, knees soft, and eyes on a fixed point ahead. Arms can be out to the sides. You should feel your feet and ankles making small corrections.",
+  "stop_condition": "Stand beside a counter or wall you can touch. Step your feet apart and stop if you feel dizzy, cannot steady yourself, or have pain in your feet, ankles or knees. Small wobbles are normal.",
+  "regression": "Leave a gap between your feet, front to back and a little side to side, instead of lining them up heel to toe. Rest a hand on a counter and take a shorter hold.",
+  "remediation": "If you sway, lean on one leg or keep stepping out, widen the stance slightly until you can stand still. Bring the feet closer into line only as it gets steady.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Nasal Breathing Walk",
@@ -10150,7 +10949,12 @@
     "reason": "Both are walking-based exercises"
    }
   ],
-  "builds_on": "Diaphragmatic Breathing"
+  "builds_on": "Diaphragmatic Breathing",
+  "form_cue": "Keep your lips gently closed, your jaw relaxed and your pace easy enough that nose breathing stays quiet and smooth. Walk tall with relaxed shoulders.",
+  "stop_condition": "Stop and breathe normally if you feel light-headed, short of breath or uncomfortably starved of air. If your nose is blocked today, do not strain through it. Walk on a clear, even surface.",
+  "regression": "Slow your pace, shorten the time, or breathe in through your nose and out through your mouth.",
+  "remediation": "If you keep needing to open your mouth, you are walking too fast for now: slow down until nose breathing is comfortable. Practise Diaphragmatic Breathing at rest first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Eccentric Hamstring Slide",
@@ -10189,7 +10993,12 @@
     "reason": "Both are eccentric hamstring strengtheners"
    }
   ],
-  "builds_on": "Hamstring Walkout"
+  "builds_on": "Hamstring Walkout",
+  "form_cue": "Lift the hips into a bridge, then slide the heels away slowly, keeping the hips up as long as you can and the ribs down. Lower to the floor before sliding back in. Feel it strongly in the hamstrings.",
+  "stop_condition": "Strong hamstring effort is normal. Stop with a hamstring cramp, a sharp or sudden pull behind the thigh, low-back pain, or pain behind the knee. Slide slowly and rest fully between reps.",
+  "regression": "Slide only a short distance, or slide one heel at a time while the other foot stays planted. Fewer reps is fine.",
+  "remediation": "If your hips drop straight away, your back arches or the hamstrings cramp, shorten the slide and slow down. Hamstring Walkout is the step to practise before this one.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Plank",
@@ -10227,7 +11036,12 @@
     "name": "Wall Push-Up",
     "reason": "Both use the wall for modified upper body exercises"
    }
-  ]
+  ],
+  "form_cue": "Elbows at about shoulder height, body in one straight line from head to heels, heels can lift. Gently tighten your belly and buttocks and push the wall away. Keep breathing. You should feel your belly and shoulders working.",
+  "stop_condition": "Stop if you feel sharp pain in your shoulders, neck or lower back, or if your feet start to slide. Wear shoes or go barefoot on a floor that grips. Gentle effort in the belly and shoulders is normal.",
+  "regression": "Stand closer to the wall so you are more upright, and take a shorter hold. Resting between two short holds is fine.",
+  "remediation": "If your hips sag toward the wall, your bottom sticks out or your shoulders creep up to your ears, step your feet in closer and reset the straight line before holding again.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Trunk Rotation",
@@ -10265,7 +11079,12 @@
     "name": "Thoracic Rotation",
     "reason": "Both mobilize the thoracic spine through rotation"
    }
-  ]
+  ],
+  "form_cue": "Stand tall with knees soft and turn from your ribs and chest, letting your head follow. Keep it smooth and easy; let your hips turn a little too, but do not swing or bounce at the end of the range.",
+  "stop_condition": "Stop if you feel dizzy, sharp or pinching back pain, or pain travelling into a leg. If you have been told to avoid twisting your spine, check with a clinician first. A gentle sense of loosening is normal.",
+  "regression": "Make the turns smaller and slower, or do them sitting tall on a sturdy chair with your arms crossed over your chest. Fewer rotations are fine.",
+  "remediation": "If you are flinging your arms and using momentum, slow down and turn only as far as you can control. If your knees twist, let your heels lift a little so the feet can pivot.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Shoulder Behind-the-Back Reach",
@@ -10304,7 +11123,12 @@
     "reason": "Behind-back reach tests and improves internal rotation"
    }
   ],
-  "builds_on": "Cross-Body Shoulder Stretch"
+  "builds_on": "Cross-Body Shoulder Stretch",
+  "form_cue": "Top elbow points to the ceiling beside your head, bottom hand slides up the middle of your back. Stand tall and reach the hands toward each other without arching or leaning. Feel a stretch in the back of the top arm and the front of the lower shoulder.",
+  "stop_condition": "Stop with pinching or sharp pain in either shoulder, a slipping or unstable feeling, numbness or tingling in the arm or hand, or neck strain. Do not yank on the towel. A firm but comfortable stretch is normal.",
+  "regression": "Hold a towel between your hands and leave a wide gap, pulling only lightly. You can also stretch one arm at a time without trying to join the hands. Use a shorter hold.",
+  "remediation": "If your back arches, your head pushes forward or the lower shoulder rolls forward, ease off and widen the gap on the towel. Go back to Cross-Body Shoulder Stretch if either arm will not reach its position comfortably.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Foam Roller IT Band",
@@ -10351,7 +11175,12 @@
     "reason": "Release then strengthen the lateral hip"
    }
   ],
-  "builds_on": "Standing IT Band Stretch"
+  "builds_on": "Standing IT Band Stretch",
+  "form_cue": "Support yourself on your forearm and put the top foot on the floor in front to take some weight. Roll slowly along the fleshy outer thigh only, staying off the bony point of the hip and off the knee joint.",
+  "stop_condition": "Firm, tolerable pressure is expected; sharp pain, numbness, tingling or pain that makes you hold your breath is not. Stop then, and stop with shoulder or wrist pain from propping. Skip bruised or swollen areas.",
+  "regression": "Take more weight through the top foot and supporting arm so the pressure is light, roll a shorter stretch of thigh and use a shorter time. A softer roller also helps.",
+  "remediation": "If you tense up, hold your breath or cannot support yourself, the pressure is too much. Lighten it, or leave the roller today and do Standing IT Band Stretch.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lying Abduction with Band",
@@ -10398,7 +11227,12 @@
     "reason": "Both use bands for hip abduction"
    }
   ],
-  "builds_on": "Side-Lying Leg Raise"
+  "builds_on": "Side-Lying Leg Raise",
+  "form_cue": "Keep hips stacked and the top leg in line with your body, toes forward. Lift against the band without rolling backward, hold, then lower slowly so the band does not pull the leg down. Feel it in the side of the top hip.",
+  "stop_condition": "Stop with pinching or sharp pain in the hip or groin, low-back pain, pain in the hip you are lying on, or if the band rolls or slips. Lower under control every rep. A strong working feeling in the outer hip is normal.",
+  "regression": "Use the lightest band or none, lift a shorter distance without the hold and do fewer reps. Bend the bottom knee for a steadier base.",
+  "remediation": "If you roll back or the leg swings forward to beat the band, the band is too strong. Take it off and get Side-Lying Leg Raise smooth first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Calf Pump",
@@ -10436,7 +11270,12 @@
     "name": "Standing March",
     "reason": "Both get blood moving after sitting"
    }
-  ]
+  ],
+  "form_cue": "Rise onto the balls of both feet and lower in a quick, even rhythm, staying tall with your heels coming down softly each time. Feel the calves warming up. Keep a hand near a wall or chair.",
+  "stop_condition": "Warm, lightly tired calves are normal. Stop with a calf or foot cramp, sharp pain in the heel or behind the ankle, dizziness, or unsteadiness. Hold a wall or chair back if balance is at all uncertain.",
+  "regression": "Slow the pace right down, rise only partway and hold a counter. Or do the pumps sitting, lifting and lowering your heels. Fewer pumps is fine.",
+  "remediation": "If you bounce, bang your heels down or rock forward and back, slow down until each rep is controlled. The slower Calf Raise is the place to practise the movement first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Protraction and Retraction",
@@ -10519,7 +11358,12 @@
     "name": "Cat-Cow",
     "reason": "Both alternate between flexion and extension"
    }
-  ]
+  ],
+  "form_cue": "From sphinx, press through your forearms and hands and ease the hips back toward your heels, then slide forward and lower the hips again. Move slowly with your breath and let the spine change shape gradually.",
+  "stop_condition": "Stop with sharp or pinching back pain, pain or tingling into a leg, knee pain when sitting back, or dizziness as your head lowers. A gentle stretch at each end is normal.",
+  "regression": "Make both ends smaller: a low sphinx and only a partial sit back. Put a pillow between your heels and buttocks, and do fewer flows.",
+  "remediation": "If you rush or drop into either position, pause on hands and knees between the two. If one direction is uncomfortable, stay with the other shape on its own.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Seated Scapular Depression",
@@ -10602,7 +11446,12 @@
     "reason": "Both stretch the inner thigh area"
    }
   ],
-  "builds_on": "Standing Forward Fold"
+  "builds_on": "Standing Forward Fold",
+  "form_cue": "Feet wide and parallel, knees soft, and fold from the hips with a long back before letting the head hang. Feel the stretch in the backs and insides of the thighs. Bend your knees and come up slowly.",
+  "stop_condition": "A pull in the hamstrings and inner thighs is normal. Stop with dizziness, pressure in the head, sharp groin or low-back pain, or feet starting to slide. Use a non-slip floor and rise slowly.",
+  "regression": "Narrow your stance, bend your knees and rest your hands on a chair seat, your thighs or your shins so you fold only partway. A shorter hold is fine.",
+  "remediation": "If your back rounds, your knees lock or your feet slip outward, step the feet closer and support your hands higher. Standing Forward Fold is the gentler version to practise first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Plank with Leg Lift",
@@ -10677,7 +11526,12 @@
     "reason": "Both challenge core stability with limb movement"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "form_cue": "Set a solid forearm plank first. Lift one straight leg only a few inches by squeezing the buttock, keeping your hips level and square to the floor. Keep breathing. Feel your belly and the buttock of the lifted leg.",
+  "stop_condition": "This is a hard exercise. Stop if your lower back arches or hurts, your hips twist or sag, or you feel shoulder pain or hold your breath. Lower to your knees to rest. Hard effort is normal; back pain is not.",
+  "regression": "Lift the foot just an inch with a shorter hold, or do the leg lift from hands and knees instead of a plank. Fewer lifts are fine.",
+  "remediation": "The usual fault is the hips rolling open or the back sagging as the leg lifts. Lift less high, or take the feet a little wider. Return to Plank Hold until you can hold it steadily first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Ankle Band Strengthening",
@@ -10762,7 +11616,12 @@
     "reason": "Both use bands for glute medius activation"
    }
   ],
-  "builds_on": "Sumo Squat"
+  "builds_on": "Sumo Squat",
+  "form_cue": "Sit the hips back and down with chest lifted and heels down, pressing the knees out so they stay over the toes against the band. Stand up fully and tighten the glutes without leaning back. Feel it in the glutes and outer hips.",
+  "stop_condition": "Stop with knee pain, pinching in the front of the hip, low-back pain or lightheadedness. Breathe out as you stand rather than holding your breath. Working, burning muscles in the hips and thighs are normal effort.",
+  "regression": "Take the band off, squat only part of the way or down to a sturdy chair, and keep a hand on a counter. Fewer reps is fine.",
+  "remediation": "If your knees cave in against the band or your heels lift, use a lighter band or none and a shallower squat. Get Sumo Squat comfortable first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Wall Sit Abductor Press",
@@ -10801,7 +11660,12 @@
     "reason": "Both use bands for hip abductor strength"
    }
   ],
-  "builds_on": "Wall Sit"
+  "builds_on": "Wall Sit",
+  "form_cue": "Keep your whole back and head against the wall, feet flat and far enough out that knees stay over ankles. Press the knees gently outward against the band without the feet rolling. Feel it in the thighs and outer hips.",
+  "stop_condition": "Stop with knee pain or dizziness, and stand up before your legs give out. Keep breathing steadily and never hold your breath. Wear grippy shoes on a non-slip floor so your feet cannot slide. Burning thighs are normal effort.",
+  "regression": "Sit higher on the wall with only a small knee bend, use a light band or none and hold for a shorter time. Rest longer between holds.",
+  "remediation": "If your knees drift in, your back peels off the wall or you hold your breath, slide up higher and ease the press. Get plain Wall Sit steady first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Neck Flexion Stretch",
@@ -10891,7 +11755,12 @@
     "name": "Pelvic Tilt",
     "reason": "Both are gentle supine lower back exercises"
    }
-  ]
+  ],
+  "form_cue": "Lie on your back with knees bent and together, feet flat. Let both knees sway a few inches to one side and bring them back with control, keeping both shoulders and both feet on the floor. It should feel like easy movement in the low back.",
+  "stop_condition": "Stop with sharp or pinching back pain, hip pain, or pain or tingling down a leg. This should feel like easy movement, not a stretch you have to push into.",
+  "regression": "Make the drops smaller and do fewer of them. A pillow under your head and a cushion between your knees can make it more comfortable.",
+  "remediation": "If your shoulders lift or the knees fall instead of lowering, slow down and shorten the drop. Keep your arms out to the sides for a steadier base.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Resistance Band Overhead Press",
@@ -10930,7 +11799,12 @@
     "reason": "Both work overhead shoulder function"
    }
   ],
-  "builds_on": "Wall Angel"
+  "builds_on": "Wall Angel",
+  "form_cue": "Stand tall with the band under the middle of both feet, hands at shoulder height, wrists straight. Press up until the arms are nearly straight and slightly in front of your ears, ribs down, then lower slowly. Feel it in the shoulders and arms.",
+  "stop_condition": "Stop with pinching at the top of the shoulder, sharp pain, neck strain, chest pain or pressure, dizziness, or numbness or tingling. Keep the band secure under both feet and check it for nicks, as a band that slips or snaps can hit your face.",
+  "regression": "Use a lighter band, press only part of the way up, press one arm at a time, or do fewer reps. Sitting on a firm chair with the band under the seat or your feet also makes it steadier.",
+  "remediation": "If your lower back arches, your ribs flare or your shoulders shrug to your ears, the band is too strong or you are short of overhead range. Lighten the band, and practise Wall Angel first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Suitcase Carry",
@@ -10978,7 +11852,12 @@
     "reason": "Suitcase carry also builds grip endurance"
    }
   ],
-  "builds_on": "Standing Anti-Rotation Hold"
+  "builds_on": "Standing Anti-Rotation Hold",
+  "form_cue": "Stand tall with shoulders level and ribs stacked over hips, weight hanging by your side, not resting on your leg. Walk with normal, unhurried steps. You should feel the side of your waist opposite the weight working.",
+  "stop_condition": "Use a light weight you can lift and set down easily, on a clear floor. Stop if you feel sharp pain in your lower back, shoulder or grip hand, lose balance, or hold your breath. Bend your knees to pick it up and put it down.",
+  "regression": "Use a lighter weight, such as a small bag with a book in it, and take fewer steps. Walk alongside a counter or wall.",
+  "remediation": "If you lean toward or away from the weight, or the shoulder drags down or hikes up, the weight is too heavy or you are tired: put it down. Practise Standing Anti-Rotation Hold for trunk control.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Quadruped Thoracic Rotation",
@@ -11025,7 +11904,12 @@
     "reason": "Warm up with cat-cow, then add rotation"
    }
   ],
-  "builds_on": "Thoracic Rotation"
+  "builds_on": "Thoracic Rotation",
+  "form_cue": "On hands and knees, rest one hand lightly behind your head without pulling. Turn the elbow down toward the opposite hand, then open it toward the ceiling, eyes following. The turn comes from the upper back; hips stay over the knees.",
+  "stop_condition": "Stop with sharp or pinching back pain, shoulder or neck pain, wrist pain, dizziness, or tingling in the arm. A stretch through the mid-back and chest is normal.",
+  "regression": "Sit your hips back partway toward your heels and make smaller rotations, or place the hand on your shoulder instead of behind your head. Fewer reps are fine.",
+  "remediation": "If your hips sway or your supporting elbow bends, the range is too big. Make it smaller and press the floor away with the supporting hand, or practise Thoracic Rotation first.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Band-Assisted Squat",
@@ -11064,7 +11948,12 @@
     "name": "Deep Squat Hold",
     "reason": "Band assistance helps achieve deep squat position"
    }
-  ]
+  ],
+  "form_cue": "Hold the band with arms long, sit the hips back and down with chest up, heels down and knees in line with your toes. Let the band steady you, not haul you up. Feel the work in the thighs and glutes.",
+  "stop_condition": "Muscle effort in the thighs is normal. Stop with sharp knee pain, hip pinching, low-back pain, dizziness, or if the band or anchor slips or looks worn. Check the anchor holds your weight before every set.",
+  "regression": "Use a thicker band or stand so there is more tension, and squat only partway to a chair placed behind you. Fewer reps is fine.",
+  "remediation": "If you hang back on the band, your heels lift or your knees cave in, shorten the depth and squat down to a chair so you have a target. Lean on the band less as control improves.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Standing Pec Minor Stretch",
@@ -11111,7 +12000,12 @@
     "reason": "Stretch pec minor, strengthen the opposing muscles"
    }
   ],
-  "builds_on": "Doorway Pec Stretch"
+  "builds_on": "Doorway Pec Stretch",
+  "form_cue": "Forearm on the frame with the elbow above shoulder height. Step through gently, keeping your ribs down and the shoulder away from your ear. Feel the stretch high in the chest and the front of the shoulder or armpit.",
+  "stop_condition": "Stop with pinching at the top or front of the shoulder, sharp pain, or numbness or tingling in the arm or hand, which can come on quickly with the arm high. A steady pull in the chest is the normal stretch feeling.",
+  "regression": "Lower the elbow toward shoulder height, take a smaller step, or use a shorter hold.",
+  "remediation": "If the shoulder shrugs up or your lower back arches, you have stepped too far or set the arm too high. Step back, lower the arm a little, and return to Doorway Pec Stretch if the high position keeps pinching.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Dead Hang",
@@ -11151,7 +12045,12 @@
     "reason": "Dead hang also builds serious grip endurance"
    }
   ],
-  "builds_on": "Overhead Reach"
+  "builds_on": "Overhead Reach",
+  "form_cue": "Grip the bar with both hands about shoulder-width apart, arms straight, and let your body hang long and still. Keep a little tension in the shoulders rather than sinking fully into the joints. Breathe steadily. Feel a stretch in the shoulders, sides and back.",
+  "stop_condition": "Stop with sharp shoulder, elbow or wrist pain, a slipping or unstable feeling in the shoulder, numbness or tingling in the hands, or a failing grip. Use only a bar rated for your body weight, low enough to step down from. Do not drop off.",
+  "regression": "Keep your feet on the floor or on a sturdy step and bend your knees to take only part of your weight through your arms. Use a shorter hold.",
+  "remediation": "If your grip gives out, your shoulders jam up by your ears or you start to swing, put your feet down straight away. Build up with the feet-supported version and practise Overhead Reach for the overhead position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Lateral Lunge",
@@ -11199,7 +12098,12 @@
     "reason": "Both work the hips in a wide stance"
    }
   ],
-  "builds_on": "Standing Adductor Stretch"
+  "builds_on": "Standing Adductor Stretch",
+  "form_cue": "Keep both feet flat and pointing forward, sit the hips back as the stepping knee bends in line with its toes, and keep your chest up. Feel it in the glute and thigh of the bent leg, with a stretch in the inner thigh of the straight leg.",
+  "stop_condition": "Stop with knee pain, sharp or pulling pain in the groin, low-back pain or unsteadiness. Work on a non-slip floor with a counter or chair within reach. Muscle effort and a mild inner-thigh stretch are normal.",
+  "regression": "Take a smaller step and bend the knee only a little, with a hand on a counter or chair back. Fewer reps is fine.",
+  "remediation": "If the bent knee caves inward, the heel lifts or you cannot push back to centre in one go, shorten the step and the depth. Practise Standing Adductor Stretch to get used to the position.",
+  "validation": "draft_pending_pt"
  },
  {
   "name": "Plank to Downward Dog",
@@ -11240,6 +12144,11 @@
    }
   ],
   "builds_on": "Plank Hold",
+  "form_cue": "In the plank, hands are under shoulders and your body is one straight line. Push the floor away and lift your hips up and back, knees bending if needed, then return forward with control so your hips do not sag.",
+  "stop_condition": "Stop at once with dizziness, pressure in your head or eyes, sharp wrist, shoulder or low-back pain, or tingling in the hands. Rest on hands and knees and rise slowly. If head-down positions are a problem for you, check with a clinician first.",
+  "regression": "Start from hands and knees instead of a full plank, keep your knees bent as your hips lift, and do fewer reps. Hands on a sturdy chair seat also works.",
+  "remediation": "If your hips sag or your low back arches coming back to plank, drop your knees for that part and slow down. Practise Plank Hold until you can keep a straight line.",
+  "validation": "draft_pending_pt",
   "insight_categories": [
    "strength",
    "flexibility"
@@ -11282,6 +12191,11 @@
     "reason": "Both are intense core stability challenges"
    }
   ],
-  "builds_on": "Plank Hold"
+  "builds_on": "Plank Hold",
+  "form_cue": "Hands under shoulders, arms straight, body in one line from head to heels. Draw one knee forward slowly without your hips lifting or your back rounding much, then place the foot back quietly. Feel your belly and shoulders.",
+  "stop_condition": "This is a hard exercise. Stop if you feel sharp pain in your wrists, shoulders or lower back, if your hips sag, or if you hold your breath. Lower your knees to rest. Hard effort is normal; joint pain is not.",
+  "regression": "Put your hands on a sturdy bench, counter or the seat of a chair pushed against a wall, so your body is on a slope. Bring the knee only part of the way and do fewer reps.",
+  "remediation": "If your hips pike up, bounce or sag as the knee comes in, slow down and shorten the knee drive. Return to Plank Hold until you can hold a steady line first.",
+  "validation": "draft_pending_pt"
  }
 ]
