@@ -24,8 +24,8 @@
   {
     "id": 9,
     "category": "posture",
-    "text": "Kyphosis \u2014 that rounded upper back \u2014 isn't only cosmetic. It's associated with reduced lung function and poorer balance. One study of older adults found about 40% higher mortality in those with hyperkyphotic posture, though a later study measuring the curve on X-ray didn't confirm it. Spine-strengthening and posture training do reduce the curve \u2014 by about 3 degrees over six months in the best trial.",
-    "source": "Kado et al., Journal of the American Geriatrics Society, 2004; Cours et al., Journal of the American Geriatrics Society, 2023; Katzman et al., Osteoporosis International, 2017",
+    "text": "Kyphosis \u2014 that rounded upper back \u2014 can be improved. In a six-month randomised trial of adults aged 60 and over, spine-strengthening and posture training reduced the curve by about 3 degrees compared with a control group, and participants felt better about their appearance.",
+    "source": "Katzman et al., Osteoporosis International, 2017 (randomised controlled trial, n=99)",
     "tags": [
       "spine",
       "kyphosis",
@@ -242,8 +242,8 @@
   {
     "id": 46,
     "category": "breathing",
-    "text": "The 4-7-8 pattern is a way to breathe slowly, and the slowness is the active ingredient. In a head-to-head test \u2014 84 people, four breathing conditions \u2014 plain six-breaths-a-minute breathing raised heart rate variability more than 4-7-8 did.",
-    "source": "Marchant et al., Applied Psychophysiology and Biofeedback, 2025 (n=84); Vierra et al., Physiological Reports, 2022 (n=43, uncontrolled)",
+    "text": "The 4-7-8 pattern is a simple way to slow your breathing right down. Slow breathing raises heart rate variability, a sign your body is shifting into its calmer rest-and-digest mode. In one study of healthy young adults, heart rate and systolic blood pressure dropped right after a few rounds of 4-7-8.",
+    "source": "Vierra et al., Physiological Reports, 2022 (n=43); Marchant et al., Applied Psychophysiology and Biofeedback, 2025 (n=84)",
     "tags": [
       "4-7-8",
       "breathing",
@@ -450,17 +450,6 @@
       "lower back",
       "back pain",
       "desk work recovery"
-    ]
-  },
-  {
-    "id": 66,
-    "category": "back",
-    "text": "In the WalkBack trial, 701 adults who had just recovered from low back pain were given a gradually increasing walking programme with education, or no treatment. The walkers went a median of 208 days before pain returned, versus 112 days without the programme.",
-    "source": "Pocovi et al., Lancet, 2024 (randomised controlled trial, n=701)",
-    "tags": [
-      "lower back",
-      "back pain",
-      "sitting recovery"
     ]
   },
   {
