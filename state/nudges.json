@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-24",
-      "time": "2026-09-24T08:03:09.228576-04:00",
-      "exercise": "Grapevine Walk",
-      "exercise_index": 133
-    },
-    {
       "date": "2026-09-25",
       "time": "2026-09-25T08:03:57.219639-04:00",
       "exercise": "Diaphragmatic Breathing",
@@ -89,6 +83,12 @@
       "time": "2026-10-08T08:06:36.535349-04:00",
       "exercise": "Desk Reset Sequence",
       "exercise_index": 147
+    },
+    {
+      "date": "2026-10-09",
+      "time": "2026-10-09T08:07:12.071131-04:00",
+      "exercise": "Morning Wake-Up Flow",
+      "exercise_index": 148
     }
   ]
 }
