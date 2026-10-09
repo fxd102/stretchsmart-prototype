@@ -648,5 +648,16 @@
       "stretching"
     ],
     "id": 84
+  },
+  {
+    "id": 85,
+    "category": "back",
+    "text": "Which exercises help a sore back most? A review of 118 trials (9,710 adults with long-lasting low back pain) found that core-based exercise and Pilates ranked among the most effective for reducing both pain and disability. Programmes of 3 to 9 weeks did best.",
+    "source": "Fern\u00e1ndez-Rodr\u00edguez et al., Journal of Orthopaedic & Sports Physical Therapy, 2022 (network meta-analysis of 118 RCTs, n=9,710)",
+    "tags": [
+      "lower back",
+      "back pain",
+      "core strength"
+    ]
   }
 ]
