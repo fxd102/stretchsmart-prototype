@@ -7228,9 +7228,12 @@
   "remediation": "See each individual exercise's cues if any part feels off.",
   "validation": "draft_pending_pt",
   "insight_categories": [
+   "flexibility",
    "neck",
-   "upper back",
-   "flexibility"
+   "upper back"
+  ],
+  "suppress_insights": [
+   4
   ]
  },
  {
