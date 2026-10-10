@@ -7194,16 +7194,8 @@
   "desc": "Chin tuck (10 sec), shoulder shrug release (5 reps), wrist circles (10 each way), seated twist (10 sec each side), ankle circles (10 each way). A 2-minute desk break.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 57
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 57
+    "label": "Work through the five moves in order",
+    "seconds": 119
    }
   ],
   "progression": [
@@ -7303,16 +7295,8 @@
   "desc": "Stand with feet wide, arms out in a T. Rotate and reach one hand to the opposite foot while the other arm points up. Alternate 8 reps each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Alternate sides: left, right, left, right",
+    "seconds": 59
    }
   ],
   "progression": [
@@ -7523,16 +7507,8 @@
   "desc": "Step into a lunge, then rotate your torso toward the front leg. Return and step into a lunge on the other side. 8 lunges total (4 each side).",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 42
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 42
+    "label": "Alternate legs with each lunge",
+    "seconds": 89
    }
   ],
   "progression": [
@@ -9312,16 +9288,8 @@
   "desc": "Sit on the floor with a foam roller behind you under your upper back. Hug yourself and rotate over the roller to one side, then the other. 8 reps each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 42
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 42
+    "label": "Alternate sides: one way, then the other",
+    "seconds": 89
    }
   ],
   "progression": [
@@ -9565,16 +9533,8 @@
   "desc": "Hold a bridge position with feet further from hips (more hamstring emphasis). March by lifting one foot at a time while maintaining hip height. 8 marches each side.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Hold the bridge and alternate feet",
+    "seconds": 59
    }
   ],
   "progression": [
@@ -10178,16 +10138,8 @@
   "desc": "Walk forward kicking each leg straight up while reaching the opposite hand toward the lifted toes. 10 kicks each leg. Dynamic hamstring stretch.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 27
-   },
-   {
-    "label": "Switch sides",
-    "seconds": 5
-   },
-   {
-    "label": "Other side",
-    "seconds": 27
+    "label": "Alternate legs with each kick",
+    "seconds": 59
    }
   ],
   "progression": [
