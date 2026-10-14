@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-09-29",
-      "time": "2026-09-29T08:07:46.733194-04:00",
-      "exercise": "Rib Expansion Breathing",
-      "exercise_index": 138
-    },
-    {
       "date": "2026-09-30",
       "time": "2026-09-30T08:08:46.707376-04:00",
       "exercise": "Crocodile Breathing",
@@ -89,6 +83,12 @@
       "time": "2026-10-13T08:09:51.455494-04:00",
       "exercise": "Warrior II Pose",
       "exercise_index": 152
+    },
+    {
+      "date": "2026-10-14",
+      "time": "2026-10-14T08:00:38.464532-04:00",
+      "exercise": "Walking Lunge with Twist",
+      "exercise_index": 153
     }
   ]
 }
