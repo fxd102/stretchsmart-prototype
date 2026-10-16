@@ -455,7 +455,10 @@ function showDetail() {
   runPhase(0);
 }
 
-function runPhase(phaseIdx) {
+// carryIn: seconds already spent on the pause between steps. They count against this step,
+// so the countdown's total equals the sum of the steps (Aster, 2026-10-14: the 0.6 s pause
+// was uncounted, and a 16-step exercise showed 80 s but took 89).
+function runPhase(phaseIdx, carryIn = 0) {
   const phases = exercise.phases;
   if (phaseIdx >= phases.length) {
     document.getElementById('timer-wrap').classList.remove('show');
@@ -484,7 +487,7 @@ function runPhase(phaseIdx) {
   void document.getElementById('ring').offsetWidth;
   document.getElementById('ring').style.transition = 'stroke-dashoffset 0.25s linear';
 
-  const startTime = Date.now();
+  const startTime = Date.now() - carryIn * 1000;
 
   function tick() {
     const elapsed = (Date.now() - startTime) / 1000;
@@ -499,7 +502,7 @@ function runPhase(phaseIdx) {
       clearInterval(timerId);
       if (phaseIdx < phases.length - 1) {
         playDing();
-        setTimeout(() => runPhase(phaseIdx + 1), 600);
+        setTimeout(() => runPhase(phaseIdx + 1, 0.6), 600);
       } else {
         runPhase(phaseIdx + 1);
       }
