@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-01",
-      "time": "2026-10-01T08:09:27.121644-04:00",
-      "exercise": "Sighing Exhale",
-      "exercise_index": 140
-    },
-    {
       "date": "2026-10-02",
       "time": "2026-10-02T08:00:23.927565-04:00",
       "exercise": "Alternate Nostril Breathing",
@@ -89,6 +83,12 @@
       "time": "2026-10-15T08:01:30.574658-04:00",
       "exercise": "Burpee (Modified)",
       "exercise_index": 154
+    },
+    {
+      "date": "2026-10-16",
+      "time": "2026-10-16T08:02:10.943937-04:00",
+      "exercise": "Turkish Get-Up (Half)",
+      "exercise_index": 155
     }
   ]
 }
