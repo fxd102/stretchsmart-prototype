@@ -695,8 +695,12 @@
   "desc": "Extend arms to the sides and make small circles, gradually increasing to large circles. Do 15 seconds forward, 15 seconds backward.",
   "phases": [
    {
-    "label": "Extend arms to the sides and make small circles...",
-    "seconds": 45
+    "label": "Circles forward",
+    "seconds": 15
+   },
+   {
+    "label": "Circles backward",
+    "seconds": 15
    }
   ],
   "progression": [
@@ -722,8 +726,16 @@
   "remediation": "If your shoulders hike up or your back sways, the circles are too big or too fast. Lower the arms, go smaller and slower, and go back to Shoulder Rolls until that is easy.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 45,
-   "label": "Extend arms to the sides and make small circles..."
+   "steps": [
+    {
+     "label": "Circles forward",
+     "seconds": 15
+    },
+    {
+     "label": "Circles backward",
+     "seconds": 15
+    }
+   ]
   }
  },
  {
@@ -4745,8 +4757,8 @@
   "desc": "Lean against a wall and slide down until your thighs are parallel to the floor, knees at 90 degrees. Hold as long as you can up to 45 seconds.",
   "phases": [
    {
-    "label": "Lean against a wall and slide down until your t...",
-    "seconds": 60
+    "label": "Go",
+    "seconds": 45
    }
   ],
   "progression": [
@@ -4771,8 +4783,7 @@
   "remediation": "If your knees move past your toes or fall inward, walk your feet further from the wall and press the knees gently out in line with the toes. If your back lifts off the wall, come up higher.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 60,
-   "label": "Lean against a wall and slide down until your t..."
+   "hold": 45
   }
  },
  {
@@ -9986,8 +9997,12 @@
   "desc": "Stand on a step with your heels hanging off the edge. Let your heels drop below the step level. Hold 20 seconds. Switch to bent-knee for 20 more seconds.",
   "phases": [
    {
-    "label": "Stand on a step with your heels hanging off the...",
-    "seconds": 60
+    "label": "Knees straight",
+    "seconds": 20
+   },
+   {
+    "label": "Bend your knees slightly",
+    "seconds": 20
    }
   ],
   "progression": [
@@ -10013,8 +10028,16 @@
   "remediation": "If you bounce, grip with your toes or cannot relax into it, come up a little and hold more firmly. If your feet slide on the step, switch to Wall Calf Stretch instead.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 60,
-   "label": "Stand on a step with your heels hanging off the..."
+   "steps": [
+    {
+     "label": "Knees straight",
+     "seconds": 20
+    },
+    {
+     "label": "Bend your knees slightly",
+     "seconds": 20
+    }
+   ]
   }
  },
  {
@@ -10200,8 +10223,16 @@
   "desc": "In a push-up position on your knees, rock gently forward and backward over your wrists. Then flip hands so fingers point toward knees and rock back. 30 seconds each position.",
   "phases": [
    {
-    "label": "In a push-up position on your knees, rock gentl...",
-    "seconds": 45
+    "label": "Fingers forward — rock gently",
+    "seconds": 30
+   },
+   {
+    "label": "Flip your hands",
+    "seconds": 3
+   },
+   {
+    "label": "Fingers toward your knees — rock back",
+    "seconds": 30
    }
   ],
   "progression": [
@@ -10227,8 +10258,21 @@
   "remediation": "If the heels of your hands lift or your elbows bend, you have gone too far: back off until the palms are flat. Practise Tabletop Wrist Stretch first.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 45,
-   "label": "In a push-up position on your knees, rock gentl..."
+   "steps": [
+    {
+     "label": "Fingers forward — rock gently",
+     "seconds": 30
+    },
+    {
+     "label": "Flip your hands",
+     "seconds": 3
+    },
+    {
+     "label": "Fingers toward your knees — rock back",
+     "seconds": 30
+    }
+   ],
+   "text_ok": {}
   }
  },
  {
@@ -11471,16 +11515,24 @@
   "desc": "Lean forward holding a table with one hand. Let the other arm hang down and swing it gently in small circles. 15 seconds each direction, each arm. Very gentle shoulder mobilizer.",
   "phases": [
    {
-    "label": "First side",
-    "seconds": 20
+    "label": "First arm — circles one way",
+    "seconds": 15
    },
    {
-    "label": "Switch sides",
+    "label": "First arm — circles the other way",
+    "seconds": 15
+   },
+   {
+    "label": "Switch arms",
     "seconds": 2
    },
    {
-    "label": "Other side",
-    "seconds": 20
+    "label": "Other arm — circles one way",
+    "seconds": 15
+   },
+   {
+    "label": "Other arm — circles the other way",
+    "seconds": 15
    }
   ],
   "progression": [
@@ -11505,9 +11557,28 @@
   "remediation": "If you find you are lifting or steering the arm with your shoulder muscles, stop and let it hang still, then restart with a smaller body sway. Bend your knees and keep weight on the table hand if your back tires.",
   "validation": "draft_pending_pt",
   "dose": {
-   "sides": "each",
-   "switch": 2,
-   "seconds": 20
+   "steps": [
+    {
+     "label": "First arm — circles one way",
+     "seconds": 15
+    },
+    {
+     "label": "First arm — circles the other way",
+     "seconds": 15
+    },
+    {
+     "label": "Switch arms",
+     "seconds": 2
+    },
+    {
+     "label": "Other arm — circles one way",
+     "seconds": 15
+    },
+    {
+     "label": "Other arm — circles the other way",
+     "seconds": 15
+    }
+   ]
   }
  },
  {
@@ -12148,8 +12219,16 @@
   "desc": "Stand with one foot directly in front of the other (heel to toe). Hold this position for 15 seconds, then switch which foot is in front. A beginner balance challenge.",
   "phases": [
    {
-    "label": "Stand with one foot directly in front of the ot...",
-    "seconds": 45
+    "label": "First side",
+    "seconds": 15
+   },
+   {
+    "label": "Switch feet",
+    "seconds": 2
+   },
+   {
+    "label": "Other side",
+    "seconds": 15
    }
   ],
   "progression": [
@@ -12174,8 +12253,10 @@
   "remediation": "If you sway, lean on one leg or keep stepping out, widen the stance slightly until you can stand still. Bring the feet closer into line only as it gets steady.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 45,
-   "label": "Stand with one foot directly in front of the ot..."
+   "sides": "each",
+   "switch": 2,
+   "seconds": 15,
+   "switch_label": "Switch feet"
   }
  },
  {
@@ -12388,8 +12469,16 @@
   "desc": "Reach one arm overhead and the other behind your back, trying to touch your fingers. Use a towel to bridge the gap if needed. Hold 15 seconds each way.",
   "phases": [
    {
-    "label": "Reach one arm overhead and the other behind you...",
-    "seconds": 60
+    "label": "First side",
+    "seconds": 15
+   },
+   {
+    "label": "Switch arms",
+    "seconds": 2
+   },
+   {
+    "label": "Other side",
+    "seconds": 15
    }
   ],
   "progression": [
@@ -12415,8 +12504,10 @@
   "remediation": "If your back arches, your head pushes forward or the lower shoulder rolls forward, ease off and widen the gap on the towel. Go back to Cross-Body Shoulder Stretch if either arm will not reach its position comfortably.",
   "validation": "draft_pending_pt",
   "dose": {
-   "seconds": 60,
-   "label": "Reach one arm overhead and the other behind you..."
+   "sides": "each",
+   "switch": 2,
+   "seconds": 15,
+   "switch_label": "Switch arms"
   }
  },
  {

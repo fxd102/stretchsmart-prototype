@@ -1,5 +1,4 @@
 # Text/timer disagreements waiting on Faith's decision (2026-10-16). One per line, exactly as --list prints it.
-Arm Circles: text says 15 seconds; the timer has no 15-second part
 Breath Hold Walk: text says 60 seconds; the timer has no 60-second part
 Chest Squeeze Isometric: 5 reps need at least 50 s but the timer gives 45 s
 Chin Tuck: text says 5 seconds; the timer has no 5-second part
@@ -14,12 +13,6 @@ Seated Ankle Pumps: 20 reps need at least 40 s but the timer gives 30 s
 Seated Core Brace: 5 reps need at least 50 s but the timer gives 45 s
 Seated Scapular Depression: 8 reps need at least 40 s but the timer gives 30 s
 Seated Shoulder Blade Pinch: 8 reps need at least 40 s but the timer gives 30 s
-Shoulder Behind-the-Back Reach: text says 15 seconds; the timer has no 15-second part
-Shoulder Pendulum: text says 15 seconds; the timer has no 15-second part
-Staggered Stance Balance: text says 15 seconds; the timer has no 15-second part
-Standing Calf Stretch on Step: text says 20 seconds; the timer has no 20-second part
 Standing Glute Squeeze: 8 reps need at least 40 s but the timer gives 30 s
 Tendon Glide Sequence: text says 5 seconds; the timer has no 5-second part
 Thumb Stretch and Opposition: text says 10 seconds; the timer has no 10-second part
-Wall Sit: text says 45 seconds; the timer has no 45-second part
-Wrist Push-Up Position Stretch: text says 30 seconds; the timer has no 30-second part
