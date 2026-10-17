@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-02",
-      "time": "2026-10-02T08:00:23.927565-04:00",
-      "exercise": "Alternate Nostril Breathing",
-      "exercise_index": 141
-    },
-    {
       "date": "2026-10-03",
       "time": "2026-10-03T08:01:15.468675-04:00",
       "exercise": "Side Bend Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-10-16T08:02:10.943937-04:00",
       "exercise": "Turkish Get-Up (Half)",
       "exercise_index": 155
+    },
+    {
+      "date": "2026-10-17",
+      "time": "2026-10-17T08:02:57.853882-04:00",
+      "exercise": "Progressive Muscle Relaxation",
+      "exercise_index": 156
     }
   ]
 }
