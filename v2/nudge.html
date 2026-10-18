@@ -86,6 +86,10 @@
   .total-remaining {
     font-size: 12px; color: #666; margin-top: 4px;
   }
+  .sound-toggle {
+    margin-top: 10px; background: none; border: 1px solid #2a2a4a; color: #aaa;
+    border-radius: 16px; padding: 6px 14px; font-size: 13px; cursor: pointer;
+  }
   .feedback {
     display: none; gap: 8px; width: 100%; margin-top: 16px;
   }
@@ -204,6 +208,7 @@
           <div class="timer-text" id="timer-text">—</div>
         </div>
         <div class="total-remaining" id="total-remaining"></div>
+        <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()"></button>
       </div>
 
       <div class="card">
@@ -372,7 +377,60 @@ function switchTo(pos) {
   location.href = url;
 }
 
+// Audio cues (Blake, 2026-10-17): a voice names each step as it starts, short beeps count
+// down the last 3 seconds of each step, and the voice says "Done" at the end. One toggle
+// turns all sound on or off; the choice is remembered on this device.
+let soundOn = true;
+try { soundOn = localStorage.getItem('ss_sound') !== 'off'; } catch (e) {}
+
+function renderSoundToggle() {
+  const b = document.getElementById('sound-toggle');
+  if (b) b.textContent = soundOn ? '🔊 Sound on' : '🔇 Sound off';
+}
+
+function toggleSound() {
+  soundOn = !soundOn;
+  try { localStorage.setItem('ss_sound', soundOn ? 'on' : 'off'); } catch (e) {}
+  if (!soundOn) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+  renderSoundToggle();
+}
+
+function say(text) {
+  if (!soundOn || !text) return;
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 1.0;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+function beep(freq = 660, len = 0.12) {
+  if (!soundOn) return;
+  try {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + len);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + len);
+  } catch (e) {}
+}
+
+// What the voice says when a step starts: the step's own label for multi-step exercises
+// (dashes read as pauses), or the total time for a single block.
+function spokenCue(phases, idx) {
+  if (phases.length > 1) return phases[idx].label.replace(/\s*—\s*/g, ', ');
+  return 'Go. ' + phases[idx].seconds + ' seconds.';
+}
+
 function playDing() {
+  if (!soundOn) return;
   try {
     if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const osc = audioCtx.createOscillator();
@@ -452,6 +510,7 @@ function showDetail() {
   document.getElementById('nudge-screen').classList.add('hide');
   document.getElementById('detail-screen').classList.add('show');
   document.getElementById('timer-wrap').classList.add('show');
+  renderSoundToggle();
   runPhase(0);
 }
 
@@ -464,6 +523,7 @@ function runPhase(phaseIdx, carryIn = 0) {
     document.getElementById('timer-wrap').classList.remove('show');
     document.getElementById('feedback').classList.add('show');
     playDing();
+    say('Done');
     return;
   }
 
@@ -488,10 +548,17 @@ function runPhase(phaseIdx, carryIn = 0) {
   document.getElementById('ring').style.transition = 'stroke-dashoffset 0.25s linear';
 
   const startTime = Date.now() - carryIn * 1000;
+  say(spokenCue(phases, phaseIdx));
+  let lastBeep = null;
 
   function tick() {
     const elapsed = (Date.now() - startTime) / 1000;
     const left = Math.max(0, Math.ceil(phase.seconds - elapsed));
+    // Count down the last 3 seconds of any step long enough to need it.
+    if (phase.seconds >= 6 && left >= 1 && left <= 3 && left !== lastBeep) {
+      lastBeep = left;
+      beep();
+    }
     document.getElementById('timer-text').textContent = left;
     const frac = Math.min(1, elapsed / phase.seconds);
     document.getElementById('ring').style.strokeDashoffset = (CIRC * frac).toFixed(1);
