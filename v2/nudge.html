@@ -378,10 +378,12 @@ function switchTo(pos) {
 }
 
 // Audio cues (Blake, 2026-10-17): a voice names each step as it starts, short beeps count
-// down the last 3 seconds of each step, and the voice says "Done" at the end. One toggle
-// turns all sound on or off; the choice is remembered on this device.
-let soundOn = true;
-try { soundOn = localStorage.getItem('ss_sound') !== 'off'; } catch (e) {}
+// down the last 3 seconds of each step, and the voice says "Done" at the end.
+// Faith, 2026-10-18: the DEFAULT comes from the master setting (preferences: audio_cues,
+// set in onboarding; unset = off). The toggle under the timer changes sound for this
+// exercise only, in real time, and never changes the default.
+let soundOn = false;
+try { soundOn = !!(window.StretchPrefs && StretchPrefs.load().audio_cues === true); } catch (e) {}
 
 function renderSoundToggle() {
   const b = document.getElementById('sound-toggle');
@@ -390,7 +392,6 @@ function renderSoundToggle() {
 
 function toggleSound() {
   soundOn = !soundOn;
-  try { localStorage.setItem('ss_sound', soundOn ? 'on' : 'off'); } catch (e) {}
   if (!soundOn) { try { window.speechSynthesis.cancel(); } catch (e) {} }
   renderSoundToggle();
 }

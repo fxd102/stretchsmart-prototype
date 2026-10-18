@@ -168,6 +168,11 @@
               <p style="font-size:14px;color:#ccc;margin-bottom:6px;">Minimum gap between reminders</p>
               <div style="display:flex;gap:6px;" id="ob-gap"></div>
             </div>
+            <div style="margin-bottom:20px;">
+              <p style="font-size:14px;color:#ccc;margin-bottom:6px;">Audio prompts during exercises</p>
+              <p style="font-size:12px;color:#888;margin:0 0 6px;">A voice names each step and beeps count down the last seconds. You can still switch sound on or off on any exercise.</p>
+              <div style="display:flex;gap:6px;" id="ob-audio"></div>
+            </div>
             <button class="btn btn-primary" onclick="obStep3Exercise()">Next</button>
           </div>
 
@@ -238,7 +243,24 @@
         let obSelected = new Set();
         // Captured answers (previously the pickers only restyled a button and
         // discarded the value, so nothing could be persisted). 2026-09-12.
-        let obAge = null, obTailoring = null, obMaxNudges = null, obGapHours = null;
+        let obAge = null, obTailoring = null, obMaxNudges = null, obGapHours = null, obAudio = null;
+        function renderObAudio() {
+          var el = document.getElementById('ob-audio');
+          var cur = window.StretchPrefs ? StretchPrefs.load().audio_cues : null;
+          if (cur !== null) obAudio = cur;
+          [['Off', false], ['On', true]].forEach(function(pair) {
+            var btn = document.createElement('button');
+            btn.className = 'btn btn-secondary';
+            btn.textContent = pair[0];
+            btn.style.fontSize = '13px';
+            btn.style.padding = '10px 14px';
+            function paint() { var on = (obAudio === pair[1]) || (obAudio === null && pair[1] === false);
+              btn.style.background = on ? '#e94560' : '#2a2a4a'; btn.style.color = on ? 'white' : '#aaa'; }
+            btn.onclick = function() { obAudio = pair[1]; el.querySelectorAll('button').forEach(function(b){ b._paint(); }); obSave(); };
+            btn._paint = paint; paint();
+            el.appendChild(btn);
+          });
+        }
 
         function renderObConcerns() {
           var el = document.getElementById('ob-concerns');
@@ -337,7 +359,8 @@
           var saved = StretchPrefs.save({
             concerns: Array.from(obSelected),
             age_range: obAge, tailoring: obTailoring,
-            max_nudges_per_day: obMaxNudges, min_gap_hours: obGapHours
+            max_nudges_per_day: obMaxNudges, min_gap_hours: obGapHours,
+            audio_cues: obAudio
           });
           renderPrefsPanel();
           return saved;
@@ -399,7 +422,7 @@
           btn.onclick = function () {
             StretchPrefs.clear();
             obSelected = new Set();
-            obAge = obTailoring = obMaxNudges = obGapHours = null;
+            obAge = obTailoring = obMaxNudges = obGapHours = obAudio = null;
             renderPrefsPanel();
             document.getElementById('prefs-msg').textContent =
               'Wiped — reload to clear the buttons too.';
@@ -407,6 +430,7 @@
         })();
 
         renderObConcerns();
+        renderObAudio();
         renderObAges();
         renderObGender();
         renderObFreq();

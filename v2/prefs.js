@@ -31,7 +31,8 @@
       age_range: null,         // "Under 30" | "30s" | ... | "70+"
       tailoring: null,         // "Female" | "Male" | "Prefer not to say"
       max_nudges_per_day: null,// 2..5  — mirrors MAX_NUDGES_PER_DAY in scan_and_nudge.py
-      min_gap_hours: null      // 1 | 1.5 | 2 | 3 — mirrors MIN_HOURS_BETWEEN
+      min_gap_hours: null,     // 1 | 1.5 | 2 | 3 — mirrors MIN_HOURS_BETWEEN
+      audio_cues: null         // true | false — default for spoken/beep cues on the exercise timer; null = off
     };
   }
 
@@ -70,7 +71,7 @@
   function isSet() {
     var p = load();
     return !!(p.updated && (p.concerns.length || p.age_range || p.tailoring ||
-                            p.max_nudges_per_day || p.min_gap_hours));
+                            p.max_nudges_per_day || p.min_gap_hours || p.audio_cues !== null));
   }
 
   /* Human-readable dump, so a tester can SEE what is stored rather than
@@ -84,6 +85,7 @@
     bits.push('tailoring: ' + (p.tailoring || '(skipped)'));
     bits.push('max nudges/day: ' + (p.max_nudges_per_day || '(unset)'));
     bits.push('min gap: ' + (p.min_gap_hours ? p.min_gap_hours + 'h' : '(unset)'));
+    bits.push('audio prompts: ' + (p.audio_cues === true ? 'on' : p.audio_cues === false ? 'off' : '(unset, so off)'));
     bits.push('saved: ' + p.updated);
     return bits.join('\n');
   }
