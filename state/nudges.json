@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-04",
-      "time": "2026-10-04T08:02:09.667576-04:00",
-      "exercise": "Sun Salutation Modified",
-      "exercise_index": 143
-    },
-    {
       "date": "2026-10-05",
       "time": "2026-10-05T08:02:58.107716-04:00",
       "exercise": "World's Greatest Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-10-18T08:03:53.100232-04:00",
       "exercise": "Jaw Release",
       "exercise_index": 157
+    },
+    {
+      "date": "2026-10-19",
+      "time": "2026-10-19T08:04:42.658125-04:00",
+      "exercise": "Eye Circles",
+      "exercise_index": 158
     }
   ]
 }
