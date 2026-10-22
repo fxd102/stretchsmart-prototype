@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-07",
-      "time": "2026-10-07T08:06:05.132470-04:00",
-      "exercise": "Standing Full Body Shake",
-      "exercise_index": 146
-    },
-    {
       "date": "2026-10-08",
       "time": "2026-10-08T08:06:36.535349-04:00",
       "exercise": "Desk Reset Sequence",
@@ -89,6 +83,12 @@
       "time": "2026-10-21T08:06:14.470834-04:00",
       "exercise": "Wall Squat with Calf Raise",
       "exercise_index": 160
+    },
+    {
+      "date": "2026-10-22",
+      "time": "2026-10-22T08:06:38.233781-04:00",
+      "exercise": "Stork Stand with Hip Hinge",
+      "exercise_index": 161
     }
   ]
 }
