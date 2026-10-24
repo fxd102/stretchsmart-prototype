@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-09",
-      "time": "2026-10-09T08:07:12.071131-04:00",
-      "exercise": "Morning Wake-Up Flow",
-      "exercise_index": 148
-    },
-    {
       "date": "2026-10-10",
       "time": "2026-10-10T08:07:44.549945-04:00",
       "exercise": "Windmill Stretch",
@@ -89,6 +83,12 @@
       "time": "2026-10-23T08:07:37.604044-04:00",
       "exercise": "Squat to Overhead Press",
       "exercise_index": 162
+    },
+    {
+      "date": "2026-10-24",
+      "time": "2026-10-24T08:08:36.000652-04:00",
+      "exercise": "Reverse Lunge to Knee Drive",
+      "exercise_index": 163
     }
   ]
 }
