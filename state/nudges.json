@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-10",
-      "time": "2026-10-10T08:07:44.549945-04:00",
-      "exercise": "Windmill Stretch",
-      "exercise_index": 149
-    },
-    {
       "date": "2026-10-11",
       "time": "2026-10-11T08:08:19.063592-04:00",
       "exercise": "Downward Dog",
@@ -89,6 +83,12 @@
       "time": "2026-10-24T08:08:36.000652-04:00",
       "exercise": "Reverse Lunge to Knee Drive",
       "exercise_index": 163
+    },
+    {
+      "date": "2026-10-25",
+      "time": "2026-10-25T08:09:30.881829-04:00",
+      "exercise": "Pelvic Floor Elevator",
+      "exercise_index": 164
     }
   ]
 }
