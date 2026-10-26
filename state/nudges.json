@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-11",
-      "time": "2026-10-11T08:08:19.063592-04:00",
-      "exercise": "Downward Dog",
-      "exercise_index": 150
-    },
-    {
       "date": "2026-10-12",
       "time": "2026-10-12T08:09:06.545558-04:00",
       "exercise": "Cobra/Upward Dog",
@@ -89,6 +83,12 @@
       "time": "2026-10-25T08:09:30.881829-04:00",
       "exercise": "Pelvic Floor Elevator",
       "exercise_index": 164
+    },
+    {
+      "date": "2026-10-26",
+      "time": "2026-10-26T13:01:58.990846-04:00",
+      "exercise": "Standing Hip Abduction",
+      "exercise_index": 165
     }
   ]
 }
