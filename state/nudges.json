@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-12",
-      "time": "2026-10-12T08:09:06.545558-04:00",
-      "exercise": "Cobra/Upward Dog",
-      "exercise_index": 151
-    },
-    {
       "date": "2026-10-13",
       "time": "2026-10-13T08:09:51.455494-04:00",
       "exercise": "Warrior II Pose",
@@ -89,6 +83,12 @@
       "time": "2026-10-26T13:01:58.990846-04:00",
       "exercise": "Standing Hip Abduction",
       "exercise_index": 165
+    },
+    {
+      "date": "2026-10-27",
+      "time": "2026-10-27T08:01:22.405723-04:00",
+      "exercise": "Seated Ankle Pumps",
+      "exercise_index": 166
     }
   ]
 }
