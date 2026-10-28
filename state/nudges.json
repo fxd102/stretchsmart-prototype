@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-13",
-      "time": "2026-10-13T08:09:51.455494-04:00",
-      "exercise": "Warrior II Pose",
-      "exercise_index": 152
-    },
-    {
       "date": "2026-10-14",
       "time": "2026-10-14T08:00:38.464532-04:00",
       "exercise": "Walking Lunge with Twist",
@@ -89,6 +83,12 @@
       "time": "2026-10-27T08:01:22.405723-04:00",
       "exercise": "Seated Ankle Pumps",
       "exercise_index": 166
+    },
+    {
+      "date": "2026-10-28",
+      "time": "2026-10-28T08:09:55.291868-04:00",
+      "exercise": "Standing Chest Fly",
+      "exercise_index": 167
     }
   ]
 }
