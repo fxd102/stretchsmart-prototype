@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise Modes Mockup</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+  .wrap { max-width: 460px; margin: 0 auto; padding: 18px 16px 48px; }
+  .intro { font-size: 13px; color: #999; line-height: 1.5; margin-bottom: 14px; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .tab { flex: 1 1 45%; padding: 10px 8px; border-radius: 10px; border: 1px solid #0f3460;
+    background: #16213e; color: #bbb; font-size: 13px; cursor: pointer; text-align: center; }
+  .tab.on { background: #e94560; color: #fff; border-color: #e94560; }
+  .card { background: #16213e; border-radius: 14px; padding: 18px; }
+  .kind { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #4ecdc4; }
+  h2 { font-size: 20px; margin: 4px 0 6px; }
+  .desc { font-size: 14px; color: #bbb; line-height: 1.5; }
+  .target { font-size: 30px; font-weight: 700; text-align: center; margin: 18px 0 4px; }
+  .sub { font-size: 13px; color: #888; text-align: center; }
+  .ring { position: relative; width: 170px; height: 170px; margin: 16px auto 6px; }
+  .ring svg { transform: rotate(-90deg); }
+  .ring .t { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 42px; font-weight: 700; }
+  .btn { display: block; width: 100%; padding: 15px; border-radius: 12px; border: none;
+    font-size: 17px; font-weight: 600; cursor: pointer; margin-top: 12px; }
+  .primary { background: #e94560; color: #fff; }
+  .secondary { background: #2a2a4a; color: #ddd; }
+  .tap { background: #0f3460; color: #fff; font-size: 40px; padding: 28px; border-radius: 16px; }
+  .row { display: flex; gap: 8px; }
+  .row .btn { flex: 1; }
+  .tally { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 4px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; background: #2a2a4a; }
+  .dot.full { background: #4ecdc4; }
+  .step { display: flex; gap: 10px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #222a4a; }
+  .step input { width: 22px; height: 22px; margin-top: 2px; accent-color: #4ecdc4; }
+  .step .s-t { font-size: 15px; } .step .s-d { font-size: 12px; color: #888; margin-top: 2px; }
+  .mini { margin-left: auto; font-size: 12px; padding: 6px 10px; border-radius: 8px; border: 1px solid #0f3460;
+    background: none; color: #4ecdc4; cursor: pointer; white-space: nowrap; }
+  .fb { display: none; margin-top: 16px; }
+  .fb.show { display: block; }
+  .fb p { text-align: center; color: #4ecdc4; font-weight: 600; margin-bottom: 4px; }
+  .note { margin-top: 14px; font-size: 12px; color: #777; line-height: 1.5; border-top: 1px solid #222a4a; padding-top: 10px; }
+  .elapsed { font-size: 12px; color: #666; text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="intro"><b>Mockup only</b> — nothing in the real app has changed. Each exercise picks its screen
+    from what kind of exercise it is. Tap the four kinds below and try them.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="card" id="card"></div>
+</div>
+
+<script>
+// Four real exercises from the library, one per kind.
+const DEMOS = [
+  { key: 'timed', tab: 'Timed hold', kind: 'Timed — the time is the instruction',
+    name: 'Downward Dog',
+    desc: 'From hands and knees, push hips up and back to form an inverted V. Press heels toward the floor, straighten legs. Hold 45 seconds.',
+    seconds: 45,
+    note: '72 exercises work like this: stretches and holds that say "hold N seconds", breathing, walks. They keep the countdown, because the time is what you are being asked to do.' },
+  { key: 'reps', tab: 'Reps', kind: 'Reps — do it N times, no clock',
+    name: 'Seated Ankle Pumps',
+    desc: 'Sit with feet flat on the floor. Alternate pointing toes down then pulling toes up, pumping the ankle joint. 20 pumps each foot.',
+    reps: 20, per: 'each foot',
+    note: '106 exercises (plus about 10 untimed movements now on a countdown) would work like this. No countdown: just the target, an optional tap counter, and Done whenever you are done. Nobody has to guess how many seconds a rep takes.' },
+  { key: 'hold', tab: 'Hold & repeat', kind: 'Hold and repeat — short holds, your pace',
+    name: 'Scapular Squeeze',
+    desc: 'Sit tall, squeeze your shoulder blades together as if pinching a pencil between them. Hold 5 seconds, release. Repeat 10 times.',
+    hold: 5, reps: 10,
+    note: '53 exercises work like this. You start each hold yourself, so the rest between holds is as long as you need; the dots fill in as you go.' },
+  { key: 'steps', tab: 'Sequence', kind: 'Sequence — a short list of moves',
+    name: 'Desk Reset Sequence',
+    steps: [
+      { t: 'Chin tuck', d: 'Hold 10 seconds', secs: 10 },
+      { t: 'Shoulder shrug release', d: '5 reps' },
+      { t: 'Wrist circles', d: '10 each way' },
+      { t: 'Seated twist', d: 'Hold 10 seconds each side', secs: 10 },
+      { t: 'Ankle circles', d: '10 each way' } ],
+    note: 'The handful of multi-part exercises become a checklist. A step that has a hold gets its own small timer; the rest you just tick off.' },
+];
+
+let timers = [];
+function clearTimers() { timers.forEach(clearInterval); timers = []; }
+const el = (h) => { const d = document.createElement('div'); d.innerHTML = h.trim(); return d.firstChild; };
+
+function ringSVG(frac) {
+  const C = 2 * Math.PI * 76;
+  return `<svg width="170" height="170"><circle cx="85" cy="85" r="76" fill="none" stroke="#2a2a4a" stroke-width="8"/>
+    <circle cx="85" cy="85" r="76" fill="none" stroke="#e94560" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="${C}" stroke-dashoffset="${C * frac}"/></svg>`;
+}
+
+function countdown(box, secs, onEnd) {
+  const start = Date.now();
+  const draw = () => {
+    const el = (Date.now() - start) / 1000, left = Math.max(0, Math.ceil(secs - el));
+    box.innerHTML = ringSVG(Math.min(1, el / secs)) + `<div class="t">${left}</div>`;
+    if (left <= 0) { clearInterval(id); onEnd && onEnd(); }
+  };
+  const id = setInterval(draw, 100); timers.push(id); draw();
+}
+
+function feedback(card) {
+  const fb = card.querySelector('.fb'); fb.classList.add('show');
+}
+
+const FB = `<div class="fb"><p>Nice work.</p><div class="row">
+  <button class="btn secondary">Easy</button><button class="btn secondary">Doable</button>
+  <button class="btn secondary">Couldn't</button></div></div>`;
+
+function render(key) {
+  clearTimers();
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.dataset.k === key));
+  const d = DEMOS.find(x => x.key === key), card = document.getElementById('card');
+  let body = '';
+  if (key === 'timed') body = `<div class="ring" id="ring">${ringSVG(0)}<div class="t">${d.seconds}</div></div>
+      <button class="btn primary" id="go">Start</button>`;
+  if (key === 'reps') body = `<div class="target">${d.reps} <span style="font-size:18px;color:#aaa">${d.per}</span></div>
+      <p class="sub">Go at your own pace.</p>
+      <button class="btn tap" id="tap">0</button>
+      <p class="sub" style="margin-top:6px">Tap to count, if you like</p>
+      <button class="btn primary" id="done">Done</button>
+      <p class="elapsed" id="elapsed"></p>`;
+  if (key === 'hold') body = `<div class="target">Hold ${d.hold}s <span style="font-size:18px;color:#aaa">× ${d.reps}</span></div>
+      <div class="tally" id="tally">${'<span class="dot"></span>'.repeat(d.reps)}</div>
+      <div class="ring" id="ring" style="display:none"></div>
+      <button class="btn primary" id="go">Start hold 1</button>
+      <button class="btn secondary" id="done">Done</button>`;
+  if (key === 'steps') body = d.steps.map((s, i) => `<div class="step"><input type="checkbox" id="s${i}">
+      <div><div class="s-t">${s.t}</div><div class="s-d">${s.d}</div></div>
+      ${s.secs ? `<button class="mini" data-i="${i}">⏱ ${s.secs}s</button>` : ''}</div>`).join('') +
+      `<div class="ring" id="ring" style="display:none"></div>
+       <button class="btn primary" id="done">Done</button>`;
+  card.innerHTML = `<div class="kind">${d.kind}</div><h2>${d.name}</h2>
+    ${d.desc ? `<p class="desc">${d.desc}</p>` : ''}${body}${FB}<p class="note">${d.note}</p>`;
+
+  const $ = (s) => card.querySelector(s);
+  if (key === 'timed') $('#go').onclick = (e) => { e.target.style.display = 'none';
+    countdown($('#ring'), d.seconds, () => feedback(card)); };
+  if (key === 'reps') {
+    let n = 0; const t0 = Date.now();
+    $('#tap').onclick = () => { n++; $('#tap').textContent = n; };
+    timers.push(setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000);
+      $('#elapsed').textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0') + ' so far'; }, 500));
+    $('#done').onclick = () => { $('#done').style.display = 'none'; feedback(card); };
+  }
+  if (key === 'hold') {
+    let k = 0; const go = $('#go'), ring = $('#ring'), dots = card.querySelectorAll('.dot');
+    go.onclick = () => { go.style.display = 'none'; ring.style.display = 'block';
+      countdown(ring, d.hold, () => { dots[k].classList.add('full'); k++; ring.style.display = 'none';
+        if (k >= d.reps) { $('#done').style.display = 'none'; feedback(card); }
+        else { go.textContent = 'Start hold ' + (k + 1); go.style.display = 'block'; } }); };
+    $('#done').onclick = () => { go.style.display = 'none'; $('#done').style.display = 'none'; feedback(card); };
+  }
+  if (key === 'steps') {
+    card.querySelectorAll('.mini').forEach(b => b.onclick = () => {
+      const i = +b.dataset.i, ring = $('#ring'); ring.style.display = 'block';
+      countdown(ring, d.steps[i].secs, () => { ring.style.display = 'none'; $('#s' + i).checked = true; }); });
+    $('#done').onclick = () => { $('#done').style.display = 'none'; feedback(card); };
+  }
+}
+
+const tabs = document.getElementById('tabs');
+DEMOS.forEach(d => { const b = el(`<button class="tab" data-k="${d.key}">${d.tab}</button>`);
+  b.onclick = () => render(d.key); tabs.appendChild(b); });
+render('reps');
+</script>
+</body>
+</html>
