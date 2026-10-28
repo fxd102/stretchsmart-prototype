@@ -71,7 +71,8 @@ const DEMOS = [
     name: 'Scapular Squeeze',
     desc: 'Sit tall, squeeze your shoulder blades together as if pinching a pencil between them. Hold 5 seconds, release. Repeat 10 times.',
     hold: 5, reps: 10,
-    note: '53 exercises work like this. You start each hold yourself, so the rest between holds is as long as you need; the dots fill in as you go.' },
+    rest: 3,
+    note: '53 exercises work like this. Most are done on the floor, in a plank, on one leg or with your hands busy, so after one Start they run hands-free: hold, rest, hold, rest. Tap anywhere on the screen to pause (an elbow works). The rest is set by you, not prescribed.' },
   { key: 'steps', tab: 'Sequence', kind: 'Sequence — a short list of moves',
     name: 'Desk Reset Sequence',
     steps: [
@@ -114,6 +115,7 @@ const FB = `<div class="fb"><p>Nice work.</p><div class="row">
 
 function render(key) {
   clearTimers();
+  document.getElementById('card').onclick = null;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.dataset.k === key));
   const d = DEMOS.find(x => x.key === key), card = document.getElementById('card');
   let body = '';
@@ -122,13 +124,14 @@ function render(key) {
   if (key === 'reps') body = `<div class="target">${d.reps} <span style="font-size:18px;color:#aaa">${d.per}</span></div>
       <p class="sub">Go at your own pace.</p>
       <button class="btn tap" id="tap">0</button>
-      <p class="sub" style="margin-top:6px">Tap to count, if you like</p>
+      <p class="sub" style="margin-top:6px">Tap to keep count</p>
       <button class="btn primary" id="done">Done</button>
       <p class="elapsed" id="elapsed"></p>`;
   if (key === 'hold') body = `<div class="target">Hold ${d.hold}s <span style="font-size:18px;color:#aaa">× ${d.reps}</span></div>
       <div class="tally" id="tally">${'<span class="dot"></span>'.repeat(d.reps)}</div>
-      <div class="ring" id="ring" style="display:none"></div>
-      <button class="btn primary" id="go">Start hold 1</button>
+      <p class="sub" id="phase">Rest between holds: <button class="mini" id="rminus">−</button> <b id="rest">${d.rest}</b>s <button class="mini" id="rplus">+</button></p>
+      <div class="ring" id="ring"></div>
+      <button class="btn primary" id="go">Start</button>
       <button class="btn secondary" id="done">Done</button>`;
   if (key === 'steps') body = d.steps.map((s, i) => `<div class="step"><input type="checkbox" id="s${i}">
       <div><div class="s-t">${s.t}</div><div class="s-d">${s.d}</div></div>
@@ -149,12 +152,29 @@ function render(key) {
     $('#done').onclick = () => { $('#done').style.display = 'none'; feedback(card); };
   }
   if (key === 'hold') {
-    let k = 0; const go = $('#go'), ring = $('#ring'), dots = card.querySelectorAll('.dot');
-    go.onclick = () => { go.style.display = 'none'; ring.style.display = 'block';
-      countdown(ring, d.hold, () => { dots[k].classList.add('full'); k++; ring.style.display = 'none';
-        if (k >= d.reps) { $('#done').style.display = 'none'; feedback(card); }
-        else { go.textContent = 'Start hold ' + (k + 1); go.style.display = 'block'; } }); };
-    $('#done').onclick = () => { go.style.display = 'none'; $('#done').style.display = 'none'; feedback(card); };
+    // Hands-free: one Start, then hold and rest alternate on their own. Tap anywhere to pause.
+    let rest = d.rest, k = 0, paused = false, running = false, phase = 'hold', left = d.hold, last = 0;
+    const go = $('#go'), ring = $('#ring'), dots = card.querySelectorAll('.dot'), ph = $('#phase');
+    ring.innerHTML = ringSVG(0) + `<div class="t">${d.hold}</div>`;
+    $('#rminus').onclick = (e) => { e.stopPropagation(); rest = Math.max(1, rest - 1); $('#rest').textContent = rest; };
+    $('#rplus').onclick = (e) => { e.stopPropagation(); rest = Math.min(30, rest + 1); $('#rest').textContent = rest; };
+    const finish = () => { running = false; go.style.display = 'none'; $('#done').style.display = 'none';
+      ph.textContent = 'All ' + d.reps + ' done.'; feedback(card); };
+    const tick = () => {
+      const now = Date.now(); if (!paused) left -= (now - last) / 1000; last = now;
+      const total = phase === 'hold' ? d.hold : rest;
+      ring.innerHTML = ringSVG(Math.min(1, 1 - left / total)).replace('#e94560', phase === 'hold' ? '#e94560' : '#4ecdc4')
+        + `<div class="t">${Math.max(0, Math.ceil(left))}</div>`;
+      ph.innerHTML = paused ? '<b>Paused</b> — tap anywhere to carry on' : (phase === 'hold' ? `<b>Hold</b> ${k + 1} of ${d.reps}` : '<b>Rest</b>');
+      if (left > 0) return;
+      if (phase === 'hold') { dots[k].classList.add('full'); k++;
+        if (k >= d.reps) { clearTimers(); return finish(); }
+        phase = 'rest'; left = rest; } else { phase = 'hold'; left = d.hold; }
+    };
+    go.onclick = (e) => { e.stopPropagation(); go.style.display = 'none'; running = true; last = Date.now();
+      timers.push(setInterval(tick, 100)); };
+    card.onclick = (e) => { if (!running || e.target.closest('.fb') || e.target.id === 'done') return; paused = !paused; };
+    $('#done').onclick = (e) => { e.stopPropagation(); clearTimers(); finish(); };
   }
   if (key === 'steps') {
     card.querySelectorAll('.mini').forEach(b => b.onclick = () => {
