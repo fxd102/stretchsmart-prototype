@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-14",
-      "time": "2026-10-14T08:00:38.464532-04:00",
-      "exercise": "Walking Lunge with Twist",
-      "exercise_index": 153
-    },
-    {
       "date": "2026-10-15",
       "time": "2026-10-15T08:01:30.574658-04:00",
       "exercise": "Burpee (Modified)",
@@ -89,6 +83,12 @@
       "time": "2026-10-28T08:09:55.291868-04:00",
       "exercise": "Standing Chest Fly",
       "exercise_index": 167
+    },
+    {
+      "date": "2026-10-29",
+      "time": "2026-10-29T08:00:55.845078-04:00",
+      "exercise": "Neck Retraction (Wall)",
+      "exercise_index": 168
     }
   ]
 }
