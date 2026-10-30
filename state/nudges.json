@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-15",
-      "time": "2026-10-15T08:01:30.574658-04:00",
-      "exercise": "Burpee (Modified)",
-      "exercise_index": 154
-    },
-    {
       "date": "2026-10-16",
       "time": "2026-10-16T08:02:10.943937-04:00",
       "exercise": "Turkish Get-Up (Half)",
@@ -89,6 +83,12 @@
       "time": "2026-10-29T08:00:55.845078-04:00",
       "exercise": "Neck Retraction (Wall)",
       "exercise_index": 168
+    },
+    {
+      "date": "2026-10-30",
+      "time": "2026-10-30T08:01:52.256535-04:00",
+      "exercise": "Scapular Push-Up",
+      "exercise_index": 169
     }
   ]
 }
