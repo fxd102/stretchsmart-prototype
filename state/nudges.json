@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-16",
-      "time": "2026-10-16T08:02:10.943937-04:00",
-      "exercise": "Turkish Get-Up (Half)",
-      "exercise_index": 155
-    },
-    {
       "date": "2026-10-17",
       "time": "2026-10-17T08:02:57.853882-04:00",
       "exercise": "Progressive Muscle Relaxation",
@@ -89,6 +83,12 @@
       "time": "2026-10-30T08:01:52.256535-04:00",
       "exercise": "Scapular Push-Up",
       "exercise_index": 169
+    },
+    {
+      "date": "2026-10-31",
+      "time": "2026-10-31T08:02:39.076211-04:00",
+      "exercise": "Hip Hike",
+      "exercise_index": 170
     }
   ]
 }
