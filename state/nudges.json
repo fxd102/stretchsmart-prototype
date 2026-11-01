@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-17",
-      "time": "2026-10-17T08:02:57.853882-04:00",
-      "exercise": "Progressive Muscle Relaxation",
-      "exercise_index": 156
-    },
-    {
       "date": "2026-10-18",
       "time": "2026-10-18T08:03:53.100232-04:00",
       "exercise": "Jaw Release",
@@ -89,6 +83,12 @@
       "time": "2026-10-31T08:02:39.076211-04:00",
       "exercise": "Hip Hike",
       "exercise_index": 170
+    },
+    {
+      "date": "2026-11-01",
+      "time": "2026-11-01T08:03:33.413513-05:00",
+      "exercise": "Hamstring Curl (Standing)",
+      "exercise_index": 171
     }
   ]
 }
