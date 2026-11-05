@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-21",
-      "time": "2026-10-21T08:06:14.470834-04:00",
-      "exercise": "Wall Squat with Calf Raise",
-      "exercise_index": 160
-    },
-    {
       "date": "2026-10-22",
       "time": "2026-10-22T08:06:38.233781-04:00",
       "exercise": "Stork Stand with Hip Hinge",
@@ -89,6 +83,12 @@
       "time": "2026-11-04T08:06:20.370047-05:00",
       "exercise": "Wrist Roller",
       "exercise_index": 174
+    },
+    {
+      "date": "2026-11-05",
+      "time": "2026-11-05T08:06:47.552463-05:00",
+      "exercise": "Tree Pose",
+      "exercise_index": 175
     }
   ]
 }
