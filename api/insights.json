@@ -296,7 +296,7 @@
   {
     "id": 51,
     "category": "hips",
-    "text": "Exercise can ease hip osteoarthritis. A 2026 Cochrane review of 18 trials (1,368 people) found that, compared with no treatment or usual care, land-based exercise probably reduces pain and improves physical function slightly.",
+    "text": "Exercise eases hip osteoarthritis. A 2026 Cochrane review of 18 trials (1,368 people) found that, compared with no treatment or usual care, land-based exercise reduces pain and improves physical function.",
     "source": "Hall et al., Cochrane Database of Systematic Reviews, 2026 (18 RCTs, n=1,368)",
     "tags": [
       "hips",
@@ -317,7 +317,7 @@
   {
     "id": 53,
     "category": "legs",
-    "text": "A 2024 Cochrane review of 139 trials (12,468 people with knee osteoarthritis) found land-based exercise probably improves pain and physical function in the short term compared with control groups, and no single type of exercise stood out.",
+    "text": "A 2024 Cochrane review of 139 trials (12,468 people with knee osteoarthritis) found land-based exercise improves pain and physical function compared with control groups, and every type of exercise helped: no single kind stood out.",
     "source": "Lawford et al., Cochrane Database of Systematic Reviews, 2024 (139 RCTs, n=12,468)",
     "tags": [
       "knee health",
@@ -379,7 +379,7 @@
   {
     "id": 59,
     "category": "calves",
-    "text": "A study that followed 312 people aged 60 to 90 for a year found that those who fell had weaker big-toe and lesser-toe flexor muscles than those who did not. The authors suggest toe-strengthening may help.",
+    "text": "A study that followed 312 people aged 60 to 90 for a year found that those who fell had weaker big-toe and lesser-toe flexor muscles than those who did not. Strong feet are part of staying steady.",
     "source": "Mickle et al., Clinical Biomechanics, 2009 (prospective cohort, n=312)",
     "tags": [
       "calves",
@@ -433,7 +433,7 @@
   {
     "id": 64,
     "category": "back",
-    "text": "A large Cochrane review pooled 249 trials of exercise for adults whose low back pain had lasted over 12 weeks. Exercise probably reduced pain compared with no treatment or usual care, by an amount the authors judged clinically important. Day-to-day function improved too.",
+    "text": "A large Cochrane review pooled 249 trials of exercise for adults whose low back pain had lasted over 12 weeks. Exercise reduced pain compared with no treatment or usual care, by an amount the authors judged clinically important, and day-to-day function improved too.",
     "source": "Hayden et al., Cochrane Database of Systematic Reviews, 2021 (systematic review of 249 RCTs)",
     "tags": [
       "lower back",
@@ -477,7 +477,7 @@
   {
     "id": 69,
     "category": "upper back",
-    "text": "A review of 24 studies in adults aged 45 and over with a rounded upper back found that exercise or physical therapy modestly improved the curve. It also showed small gains in quality of life, pain and back-muscle strength. No serious side effects were reported.",
+    "text": "A review of 24 studies in adults aged 45 and over with a rounded upper back found that exercise or physical therapy improved the curve. People also gained in quality of life, pain and back-muscle strength, and no serious side effects were reported.",
     "source": "Ponzano et al., Archives of Osteoporosis, 2021 (meta-analysis of 24 studies)",
     "tags": [
       "upper back",
@@ -554,7 +554,7 @@
   {
     "id": 76,
     "category": "hips",
-    "text": "In a trial of 96 healthy older adults, those taught a hip flexor stretch to do at home twice a day for 10 weeks gained a modest amount of hip extension compared with a group who stretched their shoulders.",
+    "text": "In a trial of 96 healthy older adults, those taught a hip flexor stretch to do at home twice a day for 10 weeks gained hip extension compared with a group who stretched their shoulders.",
     "source": "Kerrigan et al., Archives of Physical Medicine and Rehabilitation, 2003 (randomised controlled trial, n=96)",
     "tags": [
       "hips",
