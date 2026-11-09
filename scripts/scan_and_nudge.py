@@ -199,17 +199,35 @@ def pick_exercise(now: datetime) -> tuple[int | None, dict | None]:
     return idx, exercises[idx]
 
 
+def dose_summary(exercise: dict) -> str:
+    """What the nudge line shows next to the name. Mirrors modeSummary() in v2/nudge.html:
+    rep exercises show the target, hold-and-repeat shows the hold, timed ones the seconds."""
+    d = exercise.get("dose") or {}
+    sides = d.get("sides", "none")
+    sw = " each side" if sides == "each" else " each side, alternating" if sides == "alternate" else ""
+    total = sum(p.get("seconds", 0) for p in exercise.get("phases", []))
+    if d.get("steps") or (exercise.get("body_area") or "").lower() == "breathing":
+        return f"{total}s"
+    hold = d.get("rep_hold") or (d.get("hold") if d.get("rounds") else None)
+    count = d.get("reps") or (d.get("rounds") if d.get("hold") else None)
+    if hold and count:
+        return f"hold {hold}s × {count}{sw}"
+    if d.get("reps"):
+        import re
+        m = re.search(rf"\b{d['reps']}\s+(reps|waves|breaths|pumps|marches|kicks|lifts|drops|rotations|swings|circles|flows|lunges|steps|shifts|cycles|rounds|times)\b", exercise.get("desc", ""), re.I)
+        unit = m.group(1).lower() if m and m.group(1).lower() not in ("times", "rounds") else "reps"
+        return f"{d['reps']} {unit}{sw}"
+    return f"{total}s"
+
+
 def post_discord(
     webhook_url: str, exercise: dict, exercise_idx: int, now: datetime
 ) -> bool:
     time_str = now.strftime("%-I:%M %p")
     nudge_url = f"{SITE_BASE}/v2/nudge.html?e={exercise_idx}"
-    dur = exercise.get("duration") or sum(
-        p.get("seconds", 0) for p in exercise.get("phases", [])
-    )
     content = (
         f"**StretchSmart** — {time_str}\n"
-        f"**{exercise['name']}** · {dur}s\n"
+        f"**{exercise['name']}** · {dose_summary(exercise)}\n"
         f"{exercise.get('desc', '')}\n"
         f"→ {nudge_url}"
     )

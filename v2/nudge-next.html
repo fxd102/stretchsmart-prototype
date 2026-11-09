@@ -226,7 +226,7 @@
         <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()"></button>
       </div>
 
-      <!-- TEST COPY (2026-10-28): rep and hold-and-repeat screens, chosen from the exercise's dose. -->
+      <!-- Live since 2026-11-09 (Faith): rep and hold-and-repeat screens, chosen from the exercise's dose. -->
       <div class="mode-panel" id="reps-panel">
         <div class="mp-target" id="reps-target"></div>
         <div class="mp-sub">Go at your own pace.</div>
@@ -536,7 +536,7 @@ function toggleCue(f, chip) {
 }
 
 // "Let's Go" → reveal the detail screen (instructions + parameters) and run the timer.
-// ---- Exercise modes (TEST COPY, 2026-10-28; Faith + Aster) -----------------------------
+// ---- Exercise modes (live 2026-11-09; designed 10-28 with Faith + Aster; old page kept as nudge-classic.html) -----------------------------
 // The screen is chosen from the exercise's dose, not from its timer:
 //   timed  - the time IS the instruction: the countdown, unchanged.
 //   reps   - "do it N times": target, optional tap counter, Done. No clock.
@@ -545,6 +545,8 @@ function toggleCue(f, chip) {
 function exerciseMode(ex) {
   const d = ex.dose || {};
   if (d.steps) return {mode: 'timed'};
+  // Breathing keeps its countdown: the pace is part of the prescription (Faith, 2026-09-29).
+  if ((ex.body_area || '').toLowerCase() === 'breathing') return {mode: 'timed'};
   const holdS = d.rep_hold || (d.hold && d.rounds ? d.hold : null);
   const count = d.reps || (d.hold && d.rounds ? d.rounds : null);
   if (holdS && count) return {mode: 'hold', hold: holdS, count: count, sides: d.sides || 'none',
@@ -552,12 +554,18 @@ function exerciseMode(ex) {
   if (d.reps) return {mode: 'reps', count: d.reps, sides: d.sides || 'none'};
   return {mode: 'timed'};
 }
+// The word the exercise itself uses for a rep ("8 waves", "10 breaths"), or "reps".
+function repUnit(ex, n) {
+  const m = new RegExp('\\b' + n + '\\s+(reps|waves|breaths|pumps|marches|kicks|lifts|drops|rotations|swings|circles|flows|lunges|steps|shifts|cycles|rounds|times)\\b', 'i').exec(ex.desc || '');
+  const u = m ? m[1].toLowerCase() : 'reps';
+  return (u === 'times' || u === 'rounds') ? 'reps' : u;
+}
 function sidesWord(sides) {
   return sides === 'each' ? ' each side' : sides === 'alternate' ? ' each side, alternating' : '';
 }
 function modeSummary(ex) {
   const m = exerciseMode(ex);
-  if (m.mode === 'reps') return m.count + (m.sides === 'none' ? ' reps' : sidesWord(m.sides));
+  if (m.mode === 'reps') return m.count + ' ' + repUnit(ex, m.count) + sidesWord(m.sides);
   if (m.mode === 'hold') return 'Hold ' + m.hold + 's × ' + m.count + sidesWord(m.sides);
   return totalDuration(ex) + ' seconds';
 }
@@ -571,7 +579,7 @@ function finishExercise() {
 function startReps(m) {
   const panel = document.getElementById('reps-panel'), tap = document.getElementById('reps-tap');
   document.getElementById('reps-target').innerHTML =
-    m.count + (m.sides === 'none' ? ' <small>reps</small>' : ' <small>' + sidesWord(m.sides).trim() + '</small>');
+    m.count + ' <small>' + repUnit(exercise, m.count) + sidesWord(m.sides) + '</small>';
   let n = 0; tap.textContent = '0';
   tap.onclick = () => { n++; tap.textContent = n; };
   document.getElementById('reps-done').onclick = finishExercise;

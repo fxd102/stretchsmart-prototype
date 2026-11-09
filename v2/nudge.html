@@ -86,6 +86,21 @@
   .total-remaining {
     font-size: 12px; color: #666; margin-top: 4px;
   }
+  .mode-panel { display: none; text-align: center; margin: 6px 0 14px; }
+  .mode-panel.show { display: block; }
+  .mp-target { font-size: 30px; font-weight: 700; margin: 6px 0 2px; }
+  .mp-target small { font-size: 17px; color: #aaa; font-weight: 600; }
+  .mp-sub { font-size: 13px; color: #888; }
+  .mp-tap { display: block; width: 100%; margin: 14px 0 4px; padding: 26px; font-size: 40px; font-weight: 700;
+    color: #fff; background: #0f3460; border: none; border-radius: 16px; cursor: pointer; }
+  .mp-done { display: block; width: 100%; margin-top: 12px; padding: 15px; font-size: 17px; font-weight: 600;
+    color: #fff; background: #e94560; border: none; border-radius: 12px; cursor: pointer; }
+  .mp-done.ghost { background: #2a2a4a; color: #ddd; }
+  .mp-dots { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 10px 0 4px; }
+  .mp-dot { width: 13px; height: 13px; border-radius: 50%; background: #2a2a4a; }
+  .mp-dot.full { background: #4ecdc4; }
+  .mp-rest button { background: none; border: 1px solid #2a2a4a; color: #4ecdc4; border-radius: 8px;
+    padding: 2px 10px; font-size: 15px; cursor: pointer; }
   .sound-toggle {
     margin-top: 10px; background: none; border: 1px solid #2a2a4a; color: #aaa;
     border-radius: 16px; padding: 6px 14px; font-size: 13px; cursor: pointer;
@@ -211,6 +226,24 @@
         <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()"></button>
       </div>
 
+      <!-- Live since 2026-11-09 (Faith): rep and hold-and-repeat screens, chosen from the exercise's dose. -->
+      <div class="mode-panel" id="reps-panel">
+        <div class="mp-target" id="reps-target"></div>
+        <div class="mp-sub">Go at your own pace.</div>
+        <button class="mp-tap" id="reps-tap">0</button>
+        <div class="mp-sub">Tap to keep count</div>
+        <button class="mp-done" id="reps-done">Done</button>
+      </div>
+      <div class="mode-panel" id="hold-panel">
+        <div class="mp-target" id="hold-target"></div>
+        <div class="mp-dots" id="hold-dots"></div>
+        <div class="mp-sub mp-rest" id="hold-rest">Rest between holds:
+          <button id="rest-minus">−</button> <b id="rest-val">3</b>s <button id="rest-plus">+</button></div>
+        <button class="mp-done" id="hold-start">Start</button>
+        <div class="mp-sub" id="hold-pausehint" style="display:none;margin-top:8px">Tap anywhere to pause</div>
+        <button class="mp-done ghost" id="hold-done">Done</button>
+      </div>
+
       <div class="card">
         <p class="desc" id="ex-desc">&nbsp;</p>
       </div>
@@ -306,7 +339,7 @@ async function loadExercise() {
 
   document.getElementById('ex-name').textContent = exercise.name;
   document.getElementById('detail-name').textContent = exercise.name;
-  document.getElementById('ex-duration').textContent = totalDuration(exercise) + ' seconds';
+  document.getElementById('ex-duration').textContent = modeSummary(exercise);
   document.getElementById('ex-desc').textContent = exercise.desc;
   if (chosenFor) {
     var cf = document.getElementById('chosen-for');
@@ -503,7 +536,144 @@ function toggleCue(f, chip) {
 }
 
 // "Let's Go" → reveal the detail screen (instructions + parameters) and run the timer.
+// ---- Exercise modes (live 2026-11-09; designed 10-28 with Faith + Aster; old page kept as nudge-classic.html) -----------------------------
+// The screen is chosen from the exercise's dose, not from its timer:
+//   timed  - the time IS the instruction: the countdown, unchanged.
+//   reps   - "do it N times": target, optional tap counter, Done. No clock.
+//   hold   - "hold N s, R times": one Start, then hold / rest run hands-free; the rest is the
+//            user's choice (not prescribed); tap anywhere to pause.
+function exerciseMode(ex) {
+  const d = ex.dose || {};
+  if (d.steps) return {mode: 'timed'};
+  // Breathing keeps its countdown: the pace is part of the prescription (Faith, 2026-09-29).
+  if ((ex.body_area || '').toLowerCase() === 'breathing') return {mode: 'timed'};
+  const holdS = d.rep_hold || (d.hold && d.rounds ? d.hold : null);
+  const count = d.reps || (d.hold && d.rounds ? d.rounds : null);
+  if (holdS && count) return {mode: 'hold', hold: holdS, count: count, sides: d.sides || 'none',
+                               labels: d.labels || ['Right', 'Left']};
+  if (d.reps) return {mode: 'reps', count: d.reps, sides: d.sides || 'none'};
+  return {mode: 'timed'};
+}
+// The word the exercise itself uses for a rep ("8 waves", "10 breaths"), or "reps".
+function repUnit(ex, n) {
+  const m = new RegExp('\\b' + n + '\\s+(reps|waves|breaths|pumps|marches|kicks|lifts|drops|rotations|swings|circles|flows|lunges|steps|shifts|cycles|rounds|times)\\b', 'i').exec(ex.desc || '');
+  const u = m ? m[1].toLowerCase() : 'reps';
+  return (u === 'times' || u === 'rounds') ? 'reps' : u;
+}
+function sidesWord(sides) {
+  return sides === 'each' ? ' each side' : sides === 'alternate' ? ' each side, alternating' : '';
+}
+function modeSummary(ex) {
+  const m = exerciseMode(ex);
+  if (m.mode === 'reps') return m.count + ' ' + repUnit(ex, m.count) + sidesWord(m.sides);
+  if (m.mode === 'hold') return 'Hold ' + m.hold + 's × ' + m.count + sidesWord(m.sides);
+  return totalDuration(ex) + ' seconds';
+}
+function finishExercise() {
+  document.querySelectorAll('.mode-panel').forEach(p => p.classList.remove('show'));
+  document.getElementById('timer-wrap').classList.remove('show');
+  document.getElementById('feedback').classList.add('show');
+  playDing();
+  say('Done');
+}
+function startReps(m) {
+  const panel = document.getElementById('reps-panel'), tap = document.getElementById('reps-tap');
+  document.getElementById('reps-target').innerHTML =
+    m.count + ' <small>' + repUnit(exercise, m.count) + sidesWord(m.sides) + '</small>';
+  let n = 0; tap.textContent = '0';
+  tap.onclick = () => { n++; tap.textContent = n; };
+  document.getElementById('reps-done').onclick = finishExercise;
+  panel.classList.add('show');
+}
+function holdPlan(m) {
+  const H = m.hold, R = m.count, out = [];
+  if (m.sides === 'alternate') {
+    for (let k = 1; k <= R; k++) { out.push(m.labels[0] + ' — hold ' + k + ' of ' + R); out.push(m.labels[1] + ' — hold ' + k + ' of ' + R); }
+  } else if (m.sides === 'each') {
+    for (let k = 1; k <= R; k++) out.push('First side — hold ' + k + ' of ' + R);
+    out.push('SWITCH');
+    for (let k = 1; k <= R; k++) out.push('Other side — hold ' + k + ' of ' + R);
+  } else {
+    for (let k = 1; k <= R; k++) out.push('Hold ' + k + ' of ' + R);
+  }
+  return out;
+}
+function startHold(m) {
+  const panel = document.getElementById('hold-panel');
+  const plan = holdPlan(m), holds = plan.filter(p => p !== 'SWITCH');
+  let rest = 3;
+  try { rest = Math.max(1, Math.min(30, parseInt(localStorage.getItem('ss_rest') || '3', 10) || 3)); } catch (e) {}
+  const restVal = document.getElementById('rest-val'); restVal.textContent = rest;
+  const setRest = (v) => { rest = Math.max(1, Math.min(30, v)); restVal.textContent = rest;
+    try { localStorage.setItem('ss_rest', String(rest)); } catch (e) {} };
+  document.getElementById('rest-minus').onclick = (e) => { e.stopPropagation(); setRest(rest - 1); };
+  document.getElementById('rest-plus').onclick = (e) => { e.stopPropagation(); setRest(rest + 1); };
+  document.getElementById('hold-target').innerHTML =
+    'Hold ' + m.hold + 's <small>× ' + m.count + sidesWord(m.sides) + '</small>';
+  const dots = document.getElementById('hold-dots');
+  dots.innerHTML = holds.map(() => '<span class="mp-dot"></span>').join('');
+  const dotEls = dots.querySelectorAll('.mp-dot');
+  const startBtn = document.getElementById('hold-start'), hint = document.getElementById('hold-pausehint');
+  startBtn.style.display = ''; hint.style.display = 'none';
+  panel.classList.add('show');
+
+  let i = 0, done = 0, phase = 'hold', left = 0, total = 0, last = 0, paused = false, running = false, id = null;
+  const ring = document.getElementById('ring'), txt = document.getElementById('timer-text');
+  const label = document.getElementById('phase-label'), prog = document.getElementById('phase-progress');
+  function enter(ph, secs, text, speak) {
+    phase = ph; left = total = secs; label.textContent = text; label.style.display = '';
+    ring.style.stroke = ph === 'hold' ? '#e94560' : '#4ecdc4';
+    if (speak) say(speak);
+  }
+  function next() {
+    if (i >= plan.length) { stop(); finishExercise(); return; }
+    const p = plan[i++];
+    if (p === 'SWITCH') { enter('rest', Math.max(rest, 2), 'Switch sides', 'Switch sides'); return; }
+    enter('hold', m.hold, p, done === 0 ? p.replace(/\s*—\s*/g, ', ') : 'Hold');
+  }
+  let lastBeep = null;
+  function tick() {
+    const now = Date.now(); if (!paused) left -= (now - last) / 1000; last = now;
+    const show = Math.max(0, Math.ceil(left));
+    txt.textContent = paused ? '❚❚' : show;
+    ring.style.strokeDashoffset = (CIRC * Math.min(1, 1 - left / total)).toFixed(1);
+    prog.textContent = paused ? 'Paused — tap anywhere to carry on' : (phase === 'hold' ? 'Hold' : 'Rest');
+    if (!paused && phase === 'hold' && total >= 6 && show >= 1 && show <= 3 && show !== lastBeep) { lastBeep = show; beep(); }
+    if (paused || left > 0) return;
+    if (phase === 'hold') {
+      dotEls[done].classList.add('full'); done++;
+      if (i < plan.length && plan[i] !== 'SWITCH') { playDing(); enter('rest', rest, 'Rest', 'Rest'); }
+      else next();
+    } else next();
+  }
+  function stop() { running = false; if (id) clearInterval(id); id = null;
+    document.getElementById('detail-screen').onclick = null; }
+  startBtn.onclick = (e) => {
+    e.stopPropagation(); startBtn.style.display = 'none'; hint.style.display = '';
+    document.getElementById('hold-rest').style.display = 'none';
+    document.getElementById('timer-wrap').classList.add('show');
+    document.getElementById('total-remaining').textContent = '';
+    running = true; last = Date.now(); next(); id = setInterval(tick, 100); timerId = id;
+    document.getElementById('detail-screen').onclick = (ev) => {
+      if (!running || ev.target.closest('button') || ev.target.closest('.cues') || ev.target.closest('.cue-panel')) return;
+      paused = !paused;
+    };
+  };
+  document.getElementById('hold-done').onclick = (e) => { e.stopPropagation(); stop(); finishExercise(); };
+}
+
 function showDetail() {
+  const m = exerciseMode(exercise);
+  if (m.mode === 'timed') return showDetailTimed();
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  document.getElementById('nudge-screen').classList.add('hide');
+  document.getElementById('detail-screen').classList.add('show');
+  renderSoundToggle();
+  if (m.mode === 'reps') startReps(m); else startHold(m);
+}
+
+function showDetailTimed() {
   // Unlock audio context on user gesture (mobile Safari)
   if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   if (audioCtx.state === 'suspended') audioCtx.resume();
