@@ -1326,7 +1326,11 @@
    "label": "Sit on a chair, clasp hands behind your head, a...",
    "reps": 8,
    "rep_hold": 5
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Thoracic Rotation",
@@ -1434,7 +1438,11 @@
    "sides": "alternate",
    "hold": 5,
    "rounds": 8
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Cat-Cow",
@@ -1484,7 +1492,11 @@
    "seconds": 60,
    "label": "10 cycles — arch up, dip down, breathe",
    "reps": 10
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Foam Roller Thoracic Extension",
@@ -1532,7 +1544,11 @@
   "dose": {
    "seconds": 120,
    "label": "Lie on a foam roller placed across your upper back"
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Thread the Needle",
@@ -1592,7 +1608,11 @@
    "label": "5 holds of 10 seconds",
    "reps": 5,
    "rep_hold": 10
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Open Book Stretch",
@@ -1649,7 +1669,11 @@
    "sides": "each",
    "switch": 5,
    "seconds": 15
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Prone Y Raise",
@@ -1796,7 +1820,11 @@
   "dose": {
    "hold": 30,
    "label": "Lie face down, prop up on your forearms with el..."
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Seated Twist",
@@ -1852,7 +1880,11 @@
    "sides": "each",
    "switch": 2,
    "seconds": 15
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Standing Back Extension",
@@ -9920,7 +9952,11 @@
    "switch": 5,
    "seconds": 42,
    "reps": 8
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Single-Leg Deadlift to Row",
@@ -10493,7 +10529,11 @@
    "sides": "alternate",
    "label": "Alternate sides: one way, then the other",
    "reps": 8
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Jefferson Curl",
@@ -13374,7 +13414,11 @@
    "switch": 2,
    "seconds": 27,
    "reps": 8
-  }
+  },
+  "suppress_insights": [
+   67,
+   68
+  ]
  },
  {
   "name": "Band-Assisted Squat",
