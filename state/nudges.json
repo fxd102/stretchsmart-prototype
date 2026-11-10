@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-26",
-      "time": "2026-10-26T13:01:58.990846-04:00",
-      "exercise": "Standing Hip Abduction",
-      "exercise_index": 165
-    },
-    {
       "date": "2026-10-27",
       "time": "2026-10-27T08:01:22.405723-04:00",
       "exercise": "Seated Ankle Pumps",
@@ -89,6 +83,12 @@
       "time": "2026-11-09T08:09:45.978390-05:00",
       "exercise": "Wall Hamstring Stretch",
       "exercise_index": 179
+    },
+    {
+      "date": "2026-11-10",
+      "time": "2026-11-10T08:00:40.810607-05:00",
+      "exercise": "Thoracic Spine Windmill",
+      "exercise_index": 180
     }
   ]
 }
