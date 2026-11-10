@@ -13740,5 +13740,61 @@
    "reps": 8,
    "rep_hold": 2
   }
+ },
+ {
+  "name": "Tortoise and Crane",
+  "position": "seated",
+  "body_area": "Upper Back",
+  "difficulty": 1,
+  "setting": "Seated",
+  "tags": [
+   "upper back"
+  ],
+  "concerns": [
+   "upper back mobility",
+   "neck tension",
+   "better posture"
+  ],
+  "desc": "A pair of opposite moves from qigong. Sit tall at the front of your chair, feet flat. TORTOISE: tuck your chin, then slowly roll your spine forward from the top down, as if gazing at your navel, and roll back up to tall in reverse. CRANE: the opposite: lift your chin a little, open and lift your chest, and gently arch your upper back, then return to tall. Move slowly with your breath. 5 rounds of each, alternating.",
+  "phases": [
+   {
+    "label": "Sit tall at the front of your chair",
+    "seconds": 60
+   }
+  ],
+  "progression": [
+   "Small movements, upper back only",
+   "Roll further down through the mid-back",
+   "Slow each roll to the length of a full breath",
+   "Do it standing, with knees soft"
+  ],
+  "pairs_with": [
+   {
+    "name": "Seated Spinal Wave",
+    "reason": "Same forward-and-back spinal motion, led from the pelvis instead of the head"
+   },
+   {
+    "name": "Chin Tuck",
+    "reason": "Practise the tortoise's chin tuck on its own first"
+   }
+  ],
+  "form_cue": "Let the head lead: chin tucks first in tortoise and lifts first in crane, then the spine follows one section at a time. Smooth and slow, never a drop or a fling.",
+  "stop_condition": "Stop with dizziness, sharp neck or back pain, or tingling in the arms or hands. Keep the crane's head tilt small: lift your chest, don't crank your neck back.",
+  "regression": "Make both moves smaller: just a chin tuck with a gentle round of the upper back, then a small chest lift.",
+  "remediation": "If rolling one section at a time is hard, practise chin tucks and a seated slouch-and-sit-tall separately first.",
+  "validation": "draft_pending_pt",
+  "insight_categories": [
+   "upper back",
+   "posture"
+  ],
+  "suppress_insights": [
+   67,
+   68
+  ],
+  "dose": {
+   "seconds": 60,
+   "label": "Sit tall at the front of your chair",
+   "reps": 5
+  }
  }
 ]
