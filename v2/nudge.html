@@ -223,6 +223,7 @@
           <div class="timer-text" id="timer-text">—</div>
         </div>
         <div class="total-remaining" id="total-remaining"></div>
+        <button class="mp-done" id="timed-start" style="display:none">Start</button>
         <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()"></button>
       </div>
 
@@ -682,7 +683,19 @@ function showDetailTimed() {
   document.getElementById('detail-screen').classList.add('show');
   document.getElementById('timer-wrap').classList.add('show');
   renderSoundToggle();
-  runPhase(0);
+  // Nothing runs until Start, so there is time to read the instructions first (Faith, 2026-11-11).
+  const phases = exercise.phases, first = phases[0];
+  const lbl = document.getElementById('phase-label');
+  lbl.textContent = phases.length > 1 ? first.label : '';
+  lbl.style.display = phases.length > 1 ? '' : 'none';
+  document.getElementById('phase-progress').textContent =
+    phases.length > 1 ? 'Step 1 of ' + phases.length : '';
+  document.getElementById('timer-text').textContent = first.seconds;
+  document.getElementById('ring').style.strokeDashoffset = '0';
+  document.getElementById('total-remaining').textContent = totalDuration(exercise) + 's total';
+  const go = document.getElementById('timed-start');
+  go.style.display = '';
+  go.onclick = () => { go.style.display = 'none'; runPhase(0); };
 }
 
 // carryIn: seconds already spent on the pause between steps. They count against this step,
