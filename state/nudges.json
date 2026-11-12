@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-28",
-      "time": "2026-10-28T08:09:55.291868-04:00",
-      "exercise": "Standing Chest Fly",
-      "exercise_index": 167
-    },
-    {
       "date": "2026-10-29",
       "time": "2026-10-29T08:00:55.845078-04:00",
       "exercise": "Neck Retraction (Wall)",
@@ -89,6 +83,12 @@
       "time": "2026-11-11T08:01:32.408687-05:00",
       "exercise": "Wide-Leg Forward Fold",
       "exercise_index": 234
+    },
+    {
+      "date": "2026-11-12",
+      "time": "2026-11-12T13:37:48.030024-05:00",
+      "exercise": "Plank with Leg Lift",
+      "exercise_index": 235
     }
   ]
 }
