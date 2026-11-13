@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-29",
-      "time": "2026-10-29T08:00:55.845078-04:00",
-      "exercise": "Neck Retraction (Wall)",
-      "exercise_index": 168
-    },
-    {
       "date": "2026-10-30",
       "time": "2026-10-30T08:01:52.256535-04:00",
       "exercise": "Scapular Push-Up",
@@ -89,6 +83,12 @@
       "time": "2026-11-12T13:37:48.030024-05:00",
       "exercise": "Plank with Leg Lift",
       "exercise_index": 235
+    },
+    {
+      "date": "2026-11-13",
+      "time": "2026-11-13T08:03:24.172903-05:00",
+      "exercise": "Ankle Band Strengthening",
+      "exercise_index": 236
     }
   ]
 }
