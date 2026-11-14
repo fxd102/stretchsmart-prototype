@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-30",
-      "time": "2026-10-30T08:01:52.256535-04:00",
-      "exercise": "Scapular Push-Up",
-      "exercise_index": 169
-    },
-    {
       "date": "2026-10-31",
       "time": "2026-10-31T08:02:39.076211-04:00",
       "exercise": "Hip Hike",
@@ -89,6 +83,12 @@
       "time": "2026-11-13T08:03:24.172903-05:00",
       "exercise": "Ankle Band Strengthening",
       "exercise_index": 236
+    },
+    {
+      "date": "2026-11-14",
+      "time": "2026-11-14T08:04:28.199299-05:00",
+      "exercise": "Glute-Focused Squat",
+      "exercise_index": 237
     }
   ]
 }
