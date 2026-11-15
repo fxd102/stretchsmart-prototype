@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-10-31",
-      "time": "2026-10-31T08:02:39.076211-04:00",
-      "exercise": "Hip Hike",
-      "exercise_index": 170
-    },
-    {
       "date": "2026-11-01",
       "time": "2026-11-01T08:03:33.413513-05:00",
       "exercise": "Hamstring Curl (Standing)",
@@ -89,6 +83,12 @@
       "time": "2026-11-14T08:04:28.199299-05:00",
       "exercise": "Glute-Focused Squat",
       "exercise_index": 237
+    },
+    {
+      "date": "2026-11-15",
+      "time": "2026-11-15T08:05:21.605575-05:00",
+      "exercise": "Wall Sit Abductor Press",
+      "exercise_index": 238
     }
   ]
 }
