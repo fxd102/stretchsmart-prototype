@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-11-06",
-      "time": "2026-11-06T08:07:37.309776-05:00",
-      "exercise": "Deep Breathing with Arm Raise",
-      "exercise_index": 176
-    },
-    {
       "date": "2026-11-07",
       "time": "2026-11-07T08:08:22.378514-05:00",
       "exercise": "Resistance Band Row",
@@ -89,6 +83,12 @@
       "time": "2026-11-20T08:00:06.809500-05:00",
       "exercise": "Quadruped Thoracic Rotation",
       "exercise_index": 243
+    },
+    {
+      "date": "2026-11-21",
+      "time": "2026-11-21T08:01:02.340790-05:00",
+      "exercise": "Band-Assisted Squat",
+      "exercise_index": 244
     }
   ]
 }
