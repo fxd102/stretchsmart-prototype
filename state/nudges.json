@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-11-07",
-      "time": "2026-11-07T08:08:22.378514-05:00",
-      "exercise": "Resistance Band Row",
-      "exercise_index": 177
-    },
-    {
       "date": "2026-11-08",
       "time": "2026-11-08T08:09:12.157321-05:00",
       "exercise": "Seated Spinal Wave",
@@ -89,6 +83,12 @@
       "time": "2026-11-21T08:01:02.340790-05:00",
       "exercise": "Band-Assisted Squat",
       "exercise_index": 244
+    },
+    {
+      "date": "2026-11-22",
+      "time": "2026-11-22T08:01:54.426289-05:00",
+      "exercise": "Standing Pec Minor Stretch",
+      "exercise_index": 245
     }
   ]
 }
