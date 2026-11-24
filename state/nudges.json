@@ -1,12 +1,6 @@
 {
   "fired": [
     {
-      "date": "2026-11-09",
-      "time": "2026-11-09T08:09:45.978390-05:00",
-      "exercise": "Wall Hamstring Stretch",
-      "exercise_index": 179
-    },
-    {
       "date": "2026-11-10",
       "time": "2026-11-10T08:00:40.810607-05:00",
       "exercise": "Thoracic Spine Windmill",
@@ -89,6 +83,12 @@
       "time": "2026-11-23T08:03:00.058496-05:00",
       "exercise": "Dead Hang",
       "exercise_index": 246
+    },
+    {
+      "date": "2026-11-24",
+      "time": "2026-11-24T08:04:02.229483-05:00",
+      "exercise": "Lateral Lunge",
+      "exercise_index": 247
     }
   ]
 }
